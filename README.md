@@ -9,19 +9,19 @@ Wrapper module to test and release combined client SDK modules for PayPal and Br
 
 **Warning:** only use exact module versions.
 
-```javascript
+```bash
 npm install --save --save-exact my-sdk-component
 ```
 
 ### Updating all components
 
-```javascript
+```bash
 npm run update-modules
 ```
 
 ### Updating specific components
 
-```javascript
+```bash
 npm run update-modules -- --filter=paypal-checkout
 npm run update-modules -- --filter=braintree-hosted-fields
 npm run update-modules -- --filter=paypal-checkout,braintree-hosted-fields
@@ -31,6 +31,6 @@ npm run update-modules -- --filter=paypal-checkout,braintree-hosted-fields
 
 **Warning:** this will trigger a production deploy.
 
-```javascript
+```bash
 npm run release
 ```
