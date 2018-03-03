@@ -1,7 +1,7 @@
 {
-  "name": "grumbler",
-  "version": "1.0.1",
-  "description": "Javascript module template.",
+  "name": "paypal-braintree-client-sdk",
+  "version": "1.0.0",
+  "description": "Unified SDK wrapper module for tests, shared build config, and deploy.",
   "main": "index.js",
   "scripts": {
     "setup": "npm install && npm run flow-typed",
@@ -20,7 +20,8 @@
     "release:major": "./publish.sh major",
     "clean": "rimraf dist coverage",
     "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
-    "debug": "cross-env NODE_ENV=debug"
+    "debug": "cross-env NODE_ENV=debug",
+    "update-modules": "npm-check-updates --prod --upgrade"
   },
   "files": [
     "dist/",
@@ -49,5 +50,8 @@
   "readmeFilename": "README.md",
   "devDependencies": {
     "grumbler-scripts": "^1.0.0"
+  },
+  "dependencies": {
+    "paypal-checkout": "4.0.178"
   }
 }
