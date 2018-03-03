@@ -7,6 +7,8 @@ Wrapper module to test and release combined client SDK modules for PayPal and Br
 
 ### Adding a new component module
 
+**Warning:** only use exact module versions.
+
 ```javascript
 npm install --save --save-exact my-sdk-component
 ```
