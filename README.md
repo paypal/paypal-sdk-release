@@ -7,6 +7,7 @@ Wrapper module to test and release combined client SDK modules for PayPal and Br
 
 ### Adding a new component module
 
+TODO: Why save exact module versions?
 **Warning:** only use exact module versions.
 
 ```bash
