@@ -4,7 +4,8 @@
   "description": "Unified SDK wrapper module for tests, shared build config, and deploy.",
   "main": "index.js",
   "scripts": {
-    "setup": "npm install && npm run flow-typed",
+    "postinstall": "npm run flow-typed",
+    "setup": "npm install #TODO we could remove this alias",
     "lint": "eslint src/ test/ *.js",
     "flow-typed": "flow-typed install",
     "flow": "flow",
@@ -19,7 +20,7 @@
     "release:minor": "./publish.sh minor",
     "release:major": "./publish.sh major",
     "clean": "rimraf dist coverage",
-    "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+    "reinstall": "rimraf flow-typed && rimraf node_modules && npm install",
     "debug": "cross-env NODE_ENV=debug",
     "update-modules": "npm-check-updates --prod --upgrade",
     "prepublish": "npm run babel",
@@ -50,6 +51,7 @@
   ],
   "readmeFilename": "README.md",
   "devDependencies": {
+    "flow-bin": "^0.66.0",
     "grumbler-scripts": "^1.0.0"
   },
   "dependencies": {
