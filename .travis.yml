@@ -1,4 +1,4 @@
 language: node_js
 node_js:
-   - "6"
+   - $TRAVIS_NODE_VERSION
 script: npm run build
