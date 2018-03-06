@@ -22,7 +22,7 @@
     "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
     "debug": "cross-env NODE_ENV=debug",
     "update-modules": "npm-check-updates --prod --upgrade",
-    "prepublish": "npm run babel",
+    "prepublish": "in-publish && npm run babel",
     "postpublish": "git checkout ."
   },
   "files": [
