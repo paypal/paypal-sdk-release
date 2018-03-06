@@ -12,7 +12,8 @@ if ! git diff-index --quiet --cached HEAD; then
     exit 1;
 fi;
 
-npm version patch
+npm run test;
+npm version patch;
 
 git push;
 git push --tags;
