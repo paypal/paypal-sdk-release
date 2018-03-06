@@ -24,8 +24,7 @@
     "update-modules": "npm-check-updates --prod --upgrade"
   },
   "files": [
-    "dist/",
-    "src/"
+    "webpack.config.js"
   ],
   "browserslist": [
     "IE >= 9",

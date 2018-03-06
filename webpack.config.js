@@ -7,7 +7,7 @@ import pkg from './package.json';
 
 const MODULE_NAME = 'paypal';
 
-export let WEBPACK_CONFIG_TEST = getWebpackConfig({
+export let WEBPACK_CONFIG = getWebpackConfig({
     options: {
         entry: Object.keys(pkg.dependencies).map(dependency => `${ dependency }/src/index`)
     },
@@ -16,5 +16,5 @@ export let WEBPACK_CONFIG_TEST = getWebpackConfig({
 });
 
 export default [
-    WEBPACK_CONFIG_TEST
+    WEBPACK_CONFIG
 ];
