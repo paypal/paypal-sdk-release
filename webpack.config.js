@@ -2,6 +2,7 @@
 /* eslint import/no-nodejs-modules: off */
 
 import { getWebpackConfig } from 'grumbler-scripts/config/webpack.config';
+
 import pkg from './package.json';
 
 const MODULE_NAME = 'paypal';

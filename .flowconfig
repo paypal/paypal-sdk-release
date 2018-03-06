@@ -1,6 +1,5 @@
 [ignore]
-.*/node_modules/babel-plugin-flow-runtime
-.*/node_modules/flow-runtime
+.*/node_modules/**
 [include]
 [libs]
 flow-typed
