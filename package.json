@@ -53,7 +53,6 @@
     "grumbler-scripts": "^1.0.0"
   },
   "dependencies": {
-    "paypal-braintree-example-component": "1.0.1",
-    "paypal-checkout": "4.0.178"
+    "paypal-braintree-example-component": "1.0.1"
   }
 }
