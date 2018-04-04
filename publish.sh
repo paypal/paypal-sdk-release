@@ -12,7 +12,23 @@ if ! git diff-index --quiet --cached HEAD; then
     exit 1;
 fi;
 
-npm run test;
+if [ -z "$1" ]; then
+    echo "Provide module name to update"
+    exit 1;
+fi;
+
+if ! npm ls "$1"; then
+    echo "Can not find module $1"
+    exit 1;
+fi;
+
+npm run update-modules -- --filter="$1";
+npm install;
+npm test;
+
+git add package.json;
+git commit -m "Update version of $1"
+
 npm version patch;
 
 git push;
