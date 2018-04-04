@@ -17,6 +17,9 @@ if [ -z "$1" ]; then
     exit 1;
 fi;
 
+rm -rf ./node_modules;
+npm install;
+
 if ! npm ls "$1"; then
     echo "Can not find module $1"
     exit 1;
