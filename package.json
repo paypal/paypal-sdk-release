@@ -4,11 +4,13 @@
   "description": "Unified SDK wrapper module for tests, shared build config, and deploy.",
   "main": "index.js",
   "scripts": {
+    "validate-components": "npm ls --production && babel-node test/validate-components",
     "setup": "npm install && npm run flow-typed",
     "lint": "eslint src/ test/ *.js",
     "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
-    "test": "npm run lint",
-    "update-modules": "npm-check-updates --prod --upgrade"
+    "test": "npm run lint && npm run validate-components",
+    "update-modules": "npm-check-updates --prod --upgrade",
+    "prepublish": "in-publish && npm test || not-in-publish"
   },
   "files": [
     "webpack.config.js"
@@ -35,7 +37,8 @@
   ],
   "readmeFilename": "README.md",
   "devDependencies": {
-    "grumbler-scripts": "^1.0.0"
+    "fs-extra": "^5.0.0",
+    "grumbler-scripts": "^2"
   },
   "dependencies": {
     "paypal-braintree-example-component": "1.0.12"

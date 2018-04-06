@@ -1,5 +1,5 @@
 /* @flow */
 
 module.exports = {
-    'extends': './node_modules/grumbler-scripts/config/.eslintrc.js'
+    'extends': './node_modules/grumbler-scripts/config/.eslintrc-node.js'
 };
