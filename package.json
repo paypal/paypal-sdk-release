@@ -12,7 +12,7 @@
     "npm-check-updates": "npm-check-updates --prod --upgrade",
     "add": "./scripts/add.sh $1",
     "upgrade": "./scripts/upgrade.sh $1",
-    "prepublish": "in-publish && npm test || not-in-publish"
+    "publish": "./scripts/publish.sh"
   },
   "files": [
     "webpack.config.js"
