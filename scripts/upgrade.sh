@@ -12,11 +12,29 @@ if ! git diff-index --quiet --cached HEAD; then
     exit 1;
 fi;
 
+UPSTREAM='origin'
+LOCAL=$(git rev-parse @)
+REMOTE=$(git rev-parse "$UPSTREAM")
+BASE=$(git merge-base @ "$UPSTREAM")
+
+if [ $LOCAL != $REMOTE ]; then
+    if [ $LOCAL = $BASE ]; then
+        echo "Local repo behind upstream"
+        exit 1;
+    elif [ $REMOTE = $BASE ]; then
+        echo "Local repo ahead of upstream"
+        exit 1;
+    else
+        echo "Local repo diverged from upstream"
+        exit 1;
+    fi
+fi
+
 if [ -z "$1" ]; then
     read -r -p "Upgrade all modules? [y/N] " response
     if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]
     then
-        npm run npm-check-updates
+        $(npm bin)/npm-check-updates --prod --upgrade
     else
         exit 0;
     fi
@@ -25,18 +43,10 @@ else
         npm install --production --save --save-exact "$1"
     fi;
 
-    npm run npm-check-updates -- --filter="$1"
+    $(npm bin)/npm-check-updates --prod --upgrade --filter="$1"
 fi;
 
-rm package-lock.json;
-rm -rf ./node_modules;
 npm install;
-
-if [ ! -f ./package-lock.json ]; then
-    echo "Expected package-lock.json to be generated - are you using npm5+?"
-    exit 1;
-fi
-
 npm test;
 
 rm package-lock.json;
@@ -51,12 +61,14 @@ fi
 git add package.json;
 git add package-lock.json;
 
-echo 'this is where we would commit';
+if [ -z "$1" ]; then
+    git commit -m "Update version of all modules"
+else
+    git commit -m "Update version of $1"
+fi;
 
-exit;
+git push;
 
-#if [ -z "$1" ]; then
-#    git commit -m "Update version of $1"
-#else
-#    git commit -m "Update version of all modules"
-#fi;
+rm -rf ./node_modules;
+npm install;
+git checkout ./package-lock.json

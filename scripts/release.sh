@@ -12,8 +12,12 @@ if ! git diff-index --quiet --cached HEAD; then
     exit 1;
 fi;
 
-npm version patch;
+read -r -p "Publish new npm version? [y/N] " response
+if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]
+then
+    npm version patch;
 
-git push;
-git push --tags;
-npm publish;
+    git push;
+    git push --tags;
+    npm publish;
+fi
