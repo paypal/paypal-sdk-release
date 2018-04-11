@@ -9,12 +9,20 @@
     "lint": "eslint src/ test/ *.js",
     "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
     "test": "npm run lint && npm run validate-components",
-    "update-modules": "npm-check-updates --prod --upgrade",
+    "npm-check-updates": "npm-check-updates --prod --upgrade",
+    "add": "./scripts/add.sh $1",
+    "upgrade": "./scripts/upgrade.sh $1",
     "prepublish": "in-publish && npm test || not-in-publish"
   },
   "files": [
     "webpack.config.js"
   ],
+  "engines": {
+    "node": ">=8"
+  },
+  "config": {
+    "engine-strict": true
+  },
   "browserslist": [
     "IE >= 9",
     "chrome >= 27",
