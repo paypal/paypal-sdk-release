@@ -13,9 +13,7 @@
     "upgrade": "./scripts/upgrade.sh $1",
     "release": "./scripts/release.sh",
     "activate": "./scripts/activate.sh",
-    "flatten": "./scripts/flatten.sh",
-    "prepublish": "in-publish && npm run flatten || not-in-publish",
-    "postpublish": "git checkout package.json"
+    "flatten": "./scripts/flatten.sh"
   },
   "files": [
     "package-lock.json"

@@ -19,5 +19,7 @@ then
 
     git push;
     git push --tags;
+    npm run flatten;
     npm publish;
+    git checkout package.json;
 fi
