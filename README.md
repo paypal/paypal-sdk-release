@@ -7,30 +7,41 @@ Wrapper module to test and release combined client SDK modules for PayPal and Br
 
 ### Adding a new component module
 
-**Warning:** only use exact module versions.
-
 ```bash
-npm install --save --save-exact my-sdk-component
+npm run add my-sdk-component
 ```
 
 ### Updating all components
 
 ```bash
-npm run update-modules
+npm run upgrade
 ```
 
 ### Updating specific components
 
 ```bash
-npm run update-modules -- --filter=paypal-checkout
-npm run update-modules -- --filter=braintree-hosted-fields
-npm run update-modules -- --filter=paypal-checkout,braintree-hosted-fields
+npm run upgrade paypal-checkout
+npm run upgrade braintree-hosted-fields
 ```
 
 ### Release
 
-**Warning:** this will trigger a production deploy.
+**Warning:** this will trigger an npm publish and production deploy.
 
 ```bash
 npm run release
+```
+
+### Activate
+
+**Warning:** this will move the published version into traffic.
+
+```bash
+npm run activate
+```
+
+To roll back, or activate a specific version:
+
+```bash
+npm run activate x.x.x
 ```
