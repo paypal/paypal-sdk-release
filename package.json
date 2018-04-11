@@ -16,7 +16,7 @@
     "activate": "./scripts/activate.sh"
   },
   "files": [
-    "webpack.config.js"
+    "package-lock.json"
   ],
   "engines": {
     "node": ">=8"
