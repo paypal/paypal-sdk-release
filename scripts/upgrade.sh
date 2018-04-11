@@ -18,7 +18,7 @@ if [ -z "$1" ]; then
     then
         npm run npm-check-updates
     else
-        exit 1;
+        exit 0;
     fi
 else
     if ! npm ls "$1"; then

@@ -12,7 +12,8 @@
     "npm-check-updates": "npm-check-updates --prod --upgrade",
     "add": "./scripts/add.sh $1",
     "upgrade": "./scripts/upgrade.sh $1",
-    "release": "./scripts/release.sh"
+    "release": "./scripts/release.sh",
+    "activate": "./scripts/activate.sh"
   },
   "files": [
     "webpack.config.js"
