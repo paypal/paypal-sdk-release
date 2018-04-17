@@ -30,8 +30,18 @@ async function validateComponents() : Promise<void> {
         // $FlowFixMe
         let componentMeta = require(join(dependencyName, SDK_JS)); // eslint-disable-line security/detect-non-literal-require
 
-        if (!componentMeta.modules) {
-            throw new Error(`Expected ${ dependencyName } ${ SDK_JS } to contain modules key`);
+        let moduleNames = Object.keys(componentMeta);
+
+        if (!moduleNames.length) {
+            throw new Error(`Expected ${ dependencyName } ${ SDK_JS } to define a least one module`);
+        }
+
+        for (let moduleName of moduleNames) {
+            let moduleMeta = componentMeta[moduleName];
+            
+            if (!moduleMeta.entry) {
+                throw new Error(`Expected ${ dependencyName } ${ SDK_JS } ${ moduleName } to contain entry key`);
+            }
         }
 
         for (let babelrc of BABELRC_NAMES) {
