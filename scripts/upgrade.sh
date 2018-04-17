@@ -17,6 +17,8 @@ LOCAL=$(git rev-parse @)
 REMOTE=$(git rev-parse "$UPSTREAM")
 BASE=$(git merge-base @ "$UPSTREAM")
 
+node $(npm bin)/check-node-version --node='>=8' --npm='>=5';
+
 if [ $LOCAL != $REMOTE ]; then
     if [ $LOCAL = $BASE ]; then
         echo "Local repo behind upstream"

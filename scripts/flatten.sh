@@ -12,6 +12,8 @@ if ! git diff-index --quiet --cached HEAD; then
     exit 1;
 fi;
 
+node $(npm bin)/check-node-version --node='>=8' --npm='>=5';
+
 cat << EOF | node
 
     let fs = require('fs');
