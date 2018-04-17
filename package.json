@@ -48,10 +48,11 @@
   "devDependencies": {
     "check-node-version": "^3.2.0",
     "fs-extra": "^5.0.0",
-    "grumbler-scripts": "^2"
+    "grumbler-scripts": "^2",
+    "npm": "^5.8.0"
   },
   "dependencies": {
-    "paypal-braintree-example-component": "1.0.12",
+    "paypal-braintree-example-component": "1.0.14",
     "paypal-checkout": "4.0.191"
   }
 }
