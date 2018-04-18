@@ -52,7 +52,7 @@
     "npm": "^5.8.0"
   },
   "dependencies": {
-    "paypal-braintree-example-component": "1.0.14",
-    "paypal-checkout": "4.0.191"
+    "paypal-braintree-example-component": "1.0.15",
+    "paypal-checkout": "4.0.193"
   }
 }
