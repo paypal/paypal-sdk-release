@@ -2,17 +2,8 @@
 
 set -e;
 
-if ! git diff-files --quiet; then
-    echo "Can not publish with unstaged uncommited changes";
-    exit 1;
-fi;
-
-if ! git diff-index --quiet --cached HEAD; then
-    echo "Can not publish with staged uncommited changes";
-    exit 1;
-fi;
-
-node $(npm bin)/check-node-version --node='>=8' --npm='>=5';
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )";
+$DIR/validate.sh;
 
 read -r -p "Publish new npm version? [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]

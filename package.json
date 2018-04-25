@@ -9,7 +9,7 @@
     "setup": "npm install && npm run flow-typed",
     "lint": "eslint src/ test/ *.js",
     "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
-    "test": "npm run lint && npm run validate-components",
+    "test": "npm run lint && npm run validate-components && npm run validate-flat",
     "add": "./scripts/add.sh $1",
     "upgrade": "./scripts/upgrade.sh $1",
     "release": "./scripts/release.sh",

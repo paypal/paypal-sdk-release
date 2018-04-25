@@ -2,17 +2,10 @@
 
 set -e;
 
-if ! git diff-files --quiet; then
-    echo "Can not flatten with unstaged uncommited changes";
-    exit 1;
-fi;
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )";
+$DIR/validate.sh;
 
-if ! git diff-index --quiet --cached HEAD; then
-    echo "Can not flatten with staged uncommited changes";
-    exit 1;
-fi;
-
-node $(npm bin)/check-node-version --node='>=8' --npm='>=5';
+node $(npm bin)/check-node-version --node='>=8' --npm='>=5.8';
 
 npm run validate-flat;
 
@@ -38,6 +31,11 @@ cat << EOF | node
     
     for (let depName of Object.keys(pkgLock.dependencies)) {
         let dep = pkgLock.dependencies[depName];
+
+        if (dep.dev) {
+            continue;
+        }
+
         flattenedDependencies[depName] = dep.version;
     }
 

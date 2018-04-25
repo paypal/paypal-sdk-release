@@ -2,12 +2,15 @@
 
 set -e;
 
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )";
+$DIR/validate.sh;
+
 module="paypal-braintree-web-sdk";
 version="$1";
 tag="active";
 defenvs="test local stage sandbox production";
 
-node $(npm bin)/check-node-version --node='>=8' --npm='>=5';
+node $(npm bin)/check-node-version --node='>=8' --npm='>=5.8';
 
 if [ -z "$version" ]; then
     version=$(npm view $module version);
