@@ -14,6 +14,8 @@ fi;
 
 node $(npm bin)/check-node-version --node='>=8' --npm='>=5';
 
+npm run validate-flat;
+
 cat << EOF | node
 
     let fs = require('fs');
@@ -37,16 +39,9 @@ cat << EOF | node
     for (let depName of Object.keys(pkgLock.dependencies)) {
         let dep = pkgLock.dependencies[depName];
         flattenedDependencies[depName] = dep.version;
-
-        if (dep.dependencies) {
-            throw new Error('Expected ' + depName +
-                ' to not have any unflattened sub-dependencies - found ' +
-                Object.keys(dep.dependencies).join(', '));
-        }
     }
 
     pkg.dependencies = flattenedDependencies;
-
     fs.writeFileSync(PACKAGE, JSON.stringify(pkg, null, 2));
 
 EOF

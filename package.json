@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "validate-components": "npm ls --production && babel-node test/validate-components",
+    "validate-flat": "babel-node test/validate-flat",
     "setup": "npm install && npm run flow-typed",
     "lint": "eslint src/ test/ *.js",
     "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",

@@ -55,6 +55,8 @@ rm package-lock.json;
 rm -rf ./node_modules;
 npm install --production;
 
+npm run validate-flat;
+
 if [ ! -f ./package-lock.json ]; then
     echo "Expected package-lock.json to be generated - are you using npm5+?"
     exit 1;
