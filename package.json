@@ -54,6 +54,6 @@
   },
   "dependencies": {
     "paypal-braintree-example-component": "1.0.18",
-    "paypal-checkout": "4.0.198"
+    "paypal-checkout": "4.0.201"
   }
 }
