@@ -21,7 +21,7 @@ npm run upgrade
 
 ```bash
 npm run upgrade paypal-checkout
-npm run upgrade braintree-hosted-fields
+npm run upgrade paypal-braintree-hosted-fields-component
 ```
 
 ### Release
