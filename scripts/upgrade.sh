@@ -22,7 +22,7 @@ else
 fi;
 
 rm -rf ./node_modules;
-npm install;
+$(which npm) install;
 npm test;
 
 if [ ! -f ./package-lock.json ]; then
