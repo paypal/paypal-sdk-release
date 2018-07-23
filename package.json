@@ -12,6 +12,7 @@
     "test": "npm run lint && npm run validate-components && npm run validate-flat",
     "add": "./scripts/add.sh $1",
     "upgrade": "./scripts/upgrade.sh $1",
+    "remove": "./scripts/remove.sh $1",
     "release": "./scripts/release.sh",
     "activate": "./scripts/activate.sh",
     "flatten": "./scripts/flatten.sh"
