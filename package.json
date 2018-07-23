@@ -1,6 +1,6 @@
 {
   "name": "paypal-braintree-web-sdk",
-  "version": "1.0.40",
+  "version": "1.0.41",
   "description": "Unified SDK wrapper module for tests, shared build config, and deploy.",
   "main": "index.js",
   "scripts": {
