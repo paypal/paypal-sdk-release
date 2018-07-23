@@ -53,6 +53,7 @@
     "npm": "^5.8.0"
   },
   "dependencies": {
+    "paypal-braintree-example-component": "1.0.21",
     "paypal-braintree-hosted-fields-component": "1.0.7",
     "paypal-checkout": "4.0.202"
   }
