@@ -22,6 +22,8 @@ else
 fi;
 
 rm -rf ./node_modules;
+rm -rf ./package-lock.json;
+
 $(which npm) install;
 npm test;
 
