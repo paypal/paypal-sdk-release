@@ -8,8 +8,9 @@
     "validate-flat": "babel-node test/validate-flat",
     "setup": "npm install && npm run flow-typed",
     "lint": "eslint src/ test/ *.js",
+    "flow": "flow check",
     "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
-    "test": "npm run lint && npm run validate-components && npm run validate-flat",
+    "test": "npm run lint && npm run flow && npm run validate-components && npm run validate-flat",
     "add": "./scripts/add.sh $1",
     "upgrade": "./scripts/upgrade.sh $1",
     "remove": "./scripts/remove.sh $1",
@@ -18,7 +19,8 @@
     "flatten": "./scripts/flatten.sh"
   },
   "files": [
-    "package-lock.json"
+    "package-lock.json",
+    "index.js"
   ],
   "engines": {
     "node": ">=8",
