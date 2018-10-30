@@ -59,7 +59,7 @@
   "dependencies": {
     "paypal-braintree-example-component": "1.0.26",
     "paypal-braintree-hosted-fields-component": "1.0.16",
-    "paypal-checkout-components": "4.1.18",
+    "paypal-checkout-components": "4.1.19",
     "paypal-session-recovery-component": "1.0.2"
   }
 }
