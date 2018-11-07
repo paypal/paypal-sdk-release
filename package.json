@@ -6,11 +6,11 @@
   "scripts": {
     "validate-components": "npm ls --production && babel-node test/validate-components",
     "validate-flat": "babel-node test/validate-flat",
-    "setup": "npm install && npm run flow-typed",
+    "flow-typed": "rm -rf ./flow-typed && flow-typed install",
     "lint": "eslint src/ test/ *.js",
     "flow": "flow check",
     "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
-    "test": "npm run lint && npm run flow && npm run validate-components && npm run validate-flat",
+    "test": "npm run lint && npm run flow-typed && npm run flow && npm run validate-components && npm run validate-flat",
     "add": "./scripts/add.sh $1",
     "upgrade": "./scripts/upgrade.sh $1",
     "remove": "./scripts/remove.sh $1",
@@ -54,7 +54,8 @@
     "check-node-version": "^3.2.0",
     "fs-extra": "^5.0.0",
     "grumbler-scripts": "^2",
-    "npm": "^5.8.0"
+    "npm": "^5.8.0",
+    "flow-bin": "^0.85.0"
   },
   "dependencies": {
     "paypal-braintree-example-component": "1.0.26",
