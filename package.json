@@ -16,7 +16,8 @@
     "remove": "./scripts/remove.sh $1",
     "release": "./scripts/release.sh",
     "activate": "./scripts/activate.sh",
-    "flatten": "./scripts/flatten.sh"
+    "flatten": "./scripts/flatten.sh",
+    "full-release": "npm run upgrade && npm run release && npm run activate"
   },
   "files": [
     "package-lock.json",
