@@ -15,4 +15,6 @@ then
     npm run flatten;
     npm publish;
     git checkout package.json;
+else
+    exit 1;
 fi

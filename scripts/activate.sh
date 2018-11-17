@@ -35,4 +35,6 @@ then
     for env in $envs; do
         npm dist-tag add $module@$version "$tag-$env";
     done;
+else
+    exit 1;
 fi

@@ -11,7 +11,7 @@ if [ -z "$1" ]; then
     then
         $(npm bin)/npm-check-updates --prod --upgrade
     else
-        exit 0;
+        exit 1;
     fi
 else
     if ! npm ls "$1"; then
