@@ -52,3 +52,5 @@ rm -rf ./node_modules;
 rm -rf ./package-lock.json;
 
 $(which npm) install;
+
+git checkout package-lock.json;
