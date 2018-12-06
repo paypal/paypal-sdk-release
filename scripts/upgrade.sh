@@ -32,6 +32,11 @@ if [ ! -f ./package-lock.json ]; then
     exit 1;
 fi
 
+rm -rf ./node_modules;
+rm -rf ./package-lock.json;
+
+$(which npm) install --production;
+
 git add package.json;
 git add package-lock.json;
 
@@ -42,3 +47,8 @@ else
 fi;
 
 git push;
+
+rm -rf ./node_modules;
+rm -rf ./package-lock.json;
+
+$(which npm) install;

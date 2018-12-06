@@ -12,6 +12,11 @@ if ! git diff-index --quiet --cached HEAD; then
     exit 1;
 fi;
 
+rm -rf ./node_modules;
+rm -rf ./package-lock.json;
+
+$(which npm) install;
+
 node $(npm bin)/check-node-version --node='>=8' --npm='>=5.8';
 
 UPSTREAM='origin'
