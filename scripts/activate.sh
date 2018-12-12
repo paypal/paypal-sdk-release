@@ -5,7 +5,7 @@ set -e;
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )";
 $DIR/validate.sh;
 
-module="paypal-braintree-web-sdk";
+module="@paypal/sdk-release";
 version="$1";
 tag="active";
 defenvs="test local stage sandbox production";
