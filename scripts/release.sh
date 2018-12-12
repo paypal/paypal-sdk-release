@@ -5,7 +5,7 @@ set -e;
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )";
 $DIR/validate.sh;
 
-read -r -p "Publish new npm version? [y/N] " response
+read -r -p "Release new version? [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]
 then
     npm version patch;

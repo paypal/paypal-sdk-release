@@ -29,7 +29,7 @@ else
     done;
 fi;
 
-read -r -p "Upgrade $module to $version for env $envs? [y/N] " response
+read -r -p "Activate $module at version $version for env $envs? [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]
 then
     for env in $envs; do
