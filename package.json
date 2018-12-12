@@ -1,5 +1,5 @@
 {
-  "name": "paypal-braintree-web-sdk",
+  "name": "@paypal/sdk-release",
   "version": "1.0.94",
   "description": "Unified SDK wrapper module for tests, shared build config, and deploy.",
   "main": "index.js",
@@ -59,9 +59,8 @@
     "flow-bin": "^0.85.0"
   },
   "dependencies": {
-    "paypal-braintree-example-component": "1.0.26",
-    "paypal-braintree-hosted-fields-component": "1.0.19",
-    "paypal-checkout-components": "4.1.35",
-    "paypal-session-recovery-component": "1.0.2"
+    "@paypal/checkout-components": "4.1.35",
+    "@paypal/card-components": "1.0.19",
+    "@paypal/example-components": "1.0.26"
   }
 }
