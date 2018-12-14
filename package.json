@@ -59,7 +59,7 @@
     "flow-bin": "^0.85.0"
   },
   "dependencies": {
-    "@paypal/checkout-components": "4.1.38",
+    "@paypal/checkout-components": "4.1.39",
     "@paypal/card-components": "1.0.20",
     "@paypal/example-components": "1.0.27"
   }
