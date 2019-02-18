@@ -1,4 +1,7 @@
 /* @flow */
 
-import { setupSDK } from '@paypal/sdk-client/src';
-export default setupSDK;
+import { setupSDK, type SetupComponent } from '@paypal/sdk-client/src';
+
+export default (namespace : string, verison : string, components : $ReadOnlyArray<SetupComponent<mixed>>) => {
+    return setupSDK(components);
+};
