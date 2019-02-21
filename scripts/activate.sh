@@ -22,7 +22,7 @@ else
     envs="$2"
 
     for env in $envs; do
-        if [[ $env != "local" && $env != "stage" && $env != "standbox" && $env != "production" && $env != "test" ]]; then
+        if [[ $env != "local" && $env != "stage" && $env != "sandbox" && $env != "production" && $env != "test" ]]; then
             echo "Invalid env: $envs"
             exit 1;
         fi;
