@@ -60,7 +60,7 @@
   },
   "dependencies": {
     "@paypal/card-components": "1.0.25",
-    "@paypal/checkout-components": "5.0.6",
+    "@paypal/checkout-components": "5.0.7",
     "@paypal/example-components": "1.0.27",
     "@paypal/muse-components": "1.0.3",
     "@paypal/sdk-client": "4.0.61"
