@@ -63,6 +63,6 @@
     "@paypal/checkout-components": "5.0.11",
     "@paypal/example-components": "1.0.27",
     "@paypal/muse-components": "1.0.3",
-    "@paypal/sdk-client": "4.0.62"
+    "@paypal/sdk-client": "4.0.63"
   }
 }
