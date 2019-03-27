@@ -62,7 +62,7 @@
     "@paypal/card-components": "1.0.25",
     "@paypal/checkout-components": "5.0.15",
     "@paypal/example-components": "1.0.27",
-    "@paypal/muse-components": "1.0.7",
+    "@paypal/muse-components": "1.0.9",
     "@paypal/sdk-client": "4.0.64"
   }
 }
