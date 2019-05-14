@@ -61,6 +61,7 @@
   "dependencies": {
     "@paypal/card-components": "1.0.25",
     "@paypal/checkout-components": "5.0.25",
+    "@paypal/common-components": "1.0.0",
     "@paypal/example-components": "1.0.27",
     "@paypal/muse-components": "1.0.12",
     "@paypal/sdk-client": "4.0.74"
