@@ -64,6 +64,6 @@
     "@paypal/common-components": "1.0.2",
     "@paypal/example-components": "1.0.27",
     "@paypal/muse-components": "1.0.15",
-    "@paypal/sdk-client": "4.0.80"
+    "@paypal/sdk-client": "^4.0.81"
   }
 }
