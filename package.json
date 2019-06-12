@@ -59,12 +59,12 @@
     "flow-bin": "^0.85.0"
   },
   "dependencies": {
-    "@paypal/card-components": "1.0.25",
-    "@paypal/checkout-components": "5.0.37",
-    "@paypal/common-components": "1.0.2",
+    "@paypal/card-components": "1.0.26",
+    "@paypal/checkout-components": "5.0.38",
+    "@paypal/common-components": "1.0.3",
     "@paypal/example-components": "1.0.27",
-    "@paypal/funding-components": "1.0.6",
-    "@paypal/muse-components": "1.0.15",
-    "@paypal/sdk-client": "4.0.86"
+    "@paypal/funding-components": "1.0.7",
+    "@paypal/muse-components": "1.0.17",
+    "@paypal/sdk-client": "4.0.90"
   }
 }
