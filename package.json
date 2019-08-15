@@ -60,12 +60,12 @@
   },
   "dependencies": {
     "@paypal/card-components": "1.0.27",
-    "@paypal/checkout-components": "5.0.52",
+    "@paypal/checkout-components": "5.0.53",
     "@paypal/common-components": "1.0.3",
     "@paypal/example-components": "1.0.27",
     "@paypal/funding-components": "1.0.9",
-    "@paypal/messaging-components": "1.0.3",
+    "@paypal/messaging-components": "1.1.0",
     "@paypal/muse-components": "1.0.28",
-    "@paypal/sdk-client": "4.0.92"
+    "@paypal/sdk-client": "4.0.93"
   }
 }
