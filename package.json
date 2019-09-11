@@ -66,6 +66,6 @@
     "@paypal/funding-components": "1.0.9",
     "@paypal/messaging-components": "1.1.4",
     "@paypal/muse-components": "1.0.31",
-    "@paypal/sdk-client": "4.0.96"
+    "@paypal/sdk-client": "4.0.97"
   }
 }
