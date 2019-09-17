@@ -60,7 +60,7 @@
   },
   "dependencies": {
     "@paypal/card-components": "1.0.28",
-    "@paypal/checkout-components": "5.0.55",
+    "@paypal/checkout-components": "5.0.57",
     "@paypal/common-components": "1.0.3",
     "@paypal/example-components": "1.0.27",
     "@paypal/funding-components": "1.0.9",
