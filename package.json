@@ -63,9 +63,9 @@
     "@paypal/checkout-components": "5.0.78",
     "@paypal/common-components": "1.0.8",
     "@paypal/example-components": "1.0.27",
-    "@paypal/funding-components": "1.0.14",
+    "@paypal/funding-components": "1.0.15",
     "@paypal/messaging-components": "1.6.1",
     "@paypal/muse-components": "1.3.8",
-    "@paypal/sdk-client": "4.0.108"
+    "@paypal/sdk-client": "4.0.109"
   }
 }
