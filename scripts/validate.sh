@@ -16,8 +16,8 @@ node $(npm bin)/check-node-version --node='>=8' --npm='>=5.8';
 
 UPSTREAM='origin'
 LOCAL=$(git rev-parse @)
-REMOTE=$(git rev-parse "$UPSTREAM")
-BASE=$(git merge-base @ "$UPSTREAM")
+REMOTE=$(git rev-parse "$UPSTREAM" "$( git rev-parse --abbrev-ref HEAD )" | tail -1)
+BASE=$(git merge-base @ "$UPSTREAM" "$( git rev-parse --abbrev-ref HEAD )")
 
 if [ $LOCAL != $REMOTE ]; then
     if [ $LOCAL = $BASE ]; then
