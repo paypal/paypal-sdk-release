@@ -5,10 +5,15 @@ set -e;
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )";
 $DIR/validate.sh;
 
-module="@paypal/sdk-release";
 version="$1";
 tag="active";
 defenvs="test local stage sandbox production";
+
+module=$(cat << EOF | node
+    const PACKAGE = './package.json';
+    let pkg = require(PACKAGE);
+    console.log(pkg.name);
+EOF);
 
 node $(npm bin)/check-node-version --node='>=8' --npm='>=5.8';
 
