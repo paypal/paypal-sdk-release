@@ -59,7 +59,7 @@
     "flow-bin": "^0.85.0"
   },
   "dependencies": {
-    "@paypal/card-components": "1.0.37",
+    "@paypal/card-components": "1.0.39",
     "@paypal/checkout-components": "5.0.86",
     "@paypal/common-components": "1.0.8",
     "@paypal/example-components": "1.0.27",
@@ -67,6 +67,6 @@
     "@paypal/identity-components": "5.0.3",
     "@paypal/messaging-components": "1.7.11",
     "@paypal/muse-components": "1.3.15",
-    "@paypal/sdk-client": "4.0.113"
+    "@paypal/sdk-client": "4.0.115"
   }
 }
