@@ -34,14 +34,8 @@ else
     done;
 fi;
 
-read -r -p "Activate $module at version $version for env $envs? [y/N] " response
-if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]
-then
-    read -p "NPM 2FA Code: " twofactorcode
+read -p "NPM 2FA Code: " twofactorcode
 
-    for env in $envs; do
-        npm dist-tag add $module@$version "$tag-$env" --otp="$twofactorcode";
-    done;
-else
-    exit 1;
-fi
+for env in $envs; do
+    npm dist-tag add $module@$version "$tag-$env" --otp="$twofactorcode";
+done;

@@ -6,13 +6,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )";
 $DIR/validate.sh;
 
 if [ -z "$1" ]; then
-    read -r -p "Upgrade all modules? [y/N] " response
-    if [[ "$response" =~ ^([yY][eE][sS]|[yY])+$ ]]
-    then
-        $(npm bin)/npm-check-updates --prod --upgrade
-    else
-        exit 1;
-    fi
+    $(npm bin)/npm-check-updates --prod --upgrade
 else
     if ! npm ls "$1"; then
         npm install --production --save --save-exact "$1"
