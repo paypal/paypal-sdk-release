@@ -39,6 +39,12 @@ cat << EOF | node
         flattenedDependencies[depName] = dep.version;
     }
 
+    for (let depName of Object.keys(pkg.dependencies)) {
+        if (!pkg.dependencies[depName].match(/^\d+\.\d+\.\d+$/)) {
+            throw new Error('Invalid dependency: ' + depName + '@' + pkg.dependencies[depName]);
+        }
+    }
+
     pkg.dependencies = flattenedDependencies;
     fs.writeFileSync(PACKAGE, JSON.stringify(pkg, null, 2));
 
