@@ -1,4 +1,6 @@
 language: node_js
 node_js:
-   - "10"
+  - "10"
+before_install:
+  - rm -f package-lock.json
 script: npm run build
