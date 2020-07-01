@@ -3,4 +3,4 @@ node_js:
   - "10"
 before_install:
   - rm -f package-lock.json
-script: npm run build
+script: npm test
