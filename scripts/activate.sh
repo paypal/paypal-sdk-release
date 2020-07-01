@@ -15,8 +15,6 @@ module=$(cat << EOF | node
     console.log(pkg.name);
 EOF);
 
-node $(npm bin)/check-node-version --node='>=8' --npm='>=5.8';
-
 if [ -z "$version" ]; then
     version=$(npm view $module version);
 fi;
