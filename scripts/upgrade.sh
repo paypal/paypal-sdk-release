@@ -9,7 +9,8 @@ if [ -z "$1" ]; then
     $(npm bin)/npm-check-updates --prod --upgrade
 else
     if ! npm ls "$1"; then
-        npm install --production --save --save-exact "$1"
+        npm install --only=production --production --save --save-exact "$1"
+        $DIR/prune.sh;
     else
         $(npm bin)/npm-check-updates --prod --upgrade --filter="$1"
     fi;
@@ -30,6 +31,7 @@ rm -rf ./node_modules;
 rm -rf ./package-lock.json;
 
 $(which npm) install --production;
+$DIR/prune.sh;
 
 git add package.json;
 git add package-lock.json;
