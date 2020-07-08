@@ -12,7 +12,7 @@ if ! git diff-index --quiet --cached HEAD; then
     exit 1;
 fi;
 
-node $(npm bin)/check-node-version --node='>=12' --npm='>=6.14';
+npx check-node-version --node='>=12' --npm='>=6.14';
 
 UPSTREAM='origin'
 LOCAL=$(git rev-parse @)

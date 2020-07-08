@@ -6,13 +6,13 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )";
 $DIR/validate.sh;
 
 if [ -z "$1" ]; then
-    $(npm bin)/npm-check-updates --prod --upgrade
+    npx npm-check-updates --prod --upgrade
 else
     if ! npm ls "$1"; then
         npm install --only=production --production --save --save-exact "$1"
         $DIR/prune.sh;
     else
-        $(npm bin)/npm-check-updates --prod --upgrade --filter="$1"
+        npx npm-check-updates --prod --upgrade --filter="$1"
     fi;
 fi;
 

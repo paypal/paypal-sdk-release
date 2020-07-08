@@ -9,11 +9,11 @@ version="$1";
 tag="active";
 defenvs="test local stage sandbox production";
 
-module=$(cat << EOF | node
+module=$(node --eval "
     const PACKAGE = './package.json';
     let pkg = require(PACKAGE);
     console.log(pkg.name);
-EOF);
+")
 
 if [ -z "$version" ]; then
     version=$(npm view $module version);
