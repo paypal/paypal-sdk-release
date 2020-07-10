@@ -10,28 +10,28 @@ if [ -z "$1" ]; then
 else
     if ! npm ls "$1"; then
         npm install --only=production --production --save --save-exact "$1"
-        $DIR/prune.sh;
+        node $DIR/prune.js;
     else
         npx npm-check-updates --prod --upgrade --filter="$1"
     fi;
 fi;
 
 rm -rf ./node_modules;
-rm -rf ./package-lock.json;
+rm -f ./package-lock.json;
 
-$(which npm) install;
+npm install;
 npm test;
 
 if [ ! -f ./package-lock.json ]; then
-    echo "Expected package-lock.json to be generated - are you using npm5+?"
+    echo "ERROR: Expected package-lock.json to be generated - are you using npm5+?"
     exit 1;
 fi
 
 rm -rf ./node_modules;
-rm -rf ./package-lock.json;
+rm -f ./package-lock.json;
 
-$(which npm) install --production;
-$DIR/prune.sh;
+npm install --production;
+node $DIR/prune.js;
 
 git add package.json;
 git add package-lock.json;
@@ -45,8 +45,8 @@ fi;
 git push;
 
 rm -rf ./node_modules;
-rm -rf ./package-lock.json;
+rm -f ./package-lock.json;
 
-$(which npm) install;
+npm install;
 
 git checkout package-lock.json;
