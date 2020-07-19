@@ -38,6 +38,13 @@ for env in $envs; do
     npm dist-tag add $module@$version "$tag-$env" --otp="$twofactorcode";
 done;
 
+sleep 5;
+
+npm run cdnify;
+git add cdn;
+git commit -m "Activate CDN packages";
+git push;
+
 # TODO:
 # - Validate CDNX command available
 # - Trigger CDN release
