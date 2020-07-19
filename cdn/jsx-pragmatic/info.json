@@ -1,0 +1,2248 @@
+{
+    "_id": "jsx-pragmatic",
+    "_rev": "26-9606d315d6a4f8597f6386a4886733d8",
+    "name": "jsx-pragmatic",
+    "dist-tags": {
+        "latest": "2.0.12"
+    },
+    "versions": {
+        "1.0.1": {
+            "name": "jsx-pragmatic",
+            "version": "1.0.1",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install react@6 && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/grumbler.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.85",
+                "grumbler-scripts": "^3",
+                "mocha": "^4.1.0"
+            },
+            "gitHead": "6ce37bb45228813cb72fed51cef743a216710573",
+            "bugs": {
+                "url": "https://github.com/krakenjs/grumbler/issues"
+            },
+            "homepage": "https://github.com/krakenjs/grumbler#readme",
+            "_id": "jsx-pragmatic@1.0.1",
+            "_npmVersion": "5.10.0",
+            "_nodeVersion": "8.9.4",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-EVAbP5tv5Isx9iWSgAHpr/PjhVF04cxCoI3TJZNABtYG/FF7A5wAOzo6QQS9jN2823vpJhNsKsg+K+PENepxzw==",
+                "shasum": "91f585bd937fadd6240b59ef996ea73c345d083c",
+                "tarball": "https://registry.npmjs.org/jsx-pragmatic/-/jsx-pragmatic-1.0.1.tgz",
+                "fileCount": 26,
+                "unpackedSize": 67546,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJb4AVhCRA9TVsSAnZWagAALF0P/jTow2P3kZYfJYZsmKA8\nNJtU+e6UMoeKvrXe+WofWx9oBBevdBQ/z7H/TFDXcc9ldRzv+HM9QtGGkBOA\n0GGXUKeRTQaa+3YW2gX4Lm8neDUWSbvf11ns7MdthEKHzzcp5vLYMqIbO1eU\n6HovKa4Fl4y8QJvZxt+agHfFkt5OEuhHNIGNI1bTtd6hnuUfaxCGMgUblgKm\nXQg/FdH9A5YZHSs+Wb10JY2iZkgUqNc6VRALKynv1mnuCPXSk3gP8PYg2zkL\nqaqUAuHzMOrz1GUeaLj5iAFQR1xkWeH2f/NQaBNOmWiCORYcrpEfm0IY9p9l\nK5sXk1fIpqVoptTiwkYJidawtyEnTgG1oe8mICZk4aD+y7L/2otSUgrQ6rDI\nTd8sCPANtk24w/KEWDscgop/x9yyEVsh1V8zzCKTNMox4QehMAo0Prgwzkmk\nrm2bbNeM5dQY8Drh7QqdlPG3klnA9rEvTk0pIXYJpEdWnG9pHBpE7o+CW9Kn\nhcgxXhjGNUqlIUeaAXnzIX/3x1tS8+aU55mbuihXiFQrVmeOPVg9Rj6783nh\nUNWqMbBZj86Hmu//NyKQbMA6r3bDgKhXilinDeZC9SElSOlUiuFrdyDQ2Yah\nmYMNqaPLKF/3quQBH1Kjl1Vs+QHr3UvZzrVJUrHLc5D4S2AYZNss754VTHOz\nmRj8\r\n=h2Gj\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/jsx-pragmatic_1.0.1_1541408096778_0.49193060586373605"
+            },
+            "_hasShrinkwrap": false
+        },
+        "1.0.2": {
+            "name": "jsx-pragmatic",
+            "version": "1.0.2",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install react@6 && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/grumbler.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.85",
+                "grumbler-scripts": "^3",
+                "mocha": "^4.1.0"
+            },
+            "gitHead": "69158deae0795ba5cd147c68af0d19eaa3cd7579",
+            "bugs": {
+                "url": "https://github.com/krakenjs/grumbler/issues"
+            },
+            "homepage": "https://github.com/krakenjs/grumbler#readme",
+            "_id": "jsx-pragmatic@1.0.2",
+            "_npmVersion": "5.10.0",
+            "_nodeVersion": "8.9.4",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-BZf2PbCpTj5uPzgt1q4RMakEqt4IjR6v+bLZ5FnGxKIJTBnefr0nsPiafqzQmdDf4YuQIUL9KhVN/sxIHfblZQ==",
+                "shasum": "1c822e295ada6caa21c36e20a3d8f054f204c1fc",
+                "tarball": "https://registry.npmjs.org/jsx-pragmatic/-/jsx-pragmatic-1.0.2.tgz",
+                "fileCount": 23,
+                "unpackedSize": 65800,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJb4AsPCRA9TVsSAnZWagAAjjEP/A5LQ/6bC//Itkb97QWx\ndIyduVAhDFVm49y5st7oD/cK7T98YVk1JRLHpfeUbUGGLGlZTIlh/bsdqfNl\nfXPYUQrEoGbp5GknL+eESAyXZs3Eykd1IpGg0QQbdetAfw/AZZ9obC6OSD+V\nYQjMfBoZuXjgu/iqkJkQ5BHtNbr/9q0S9g5q5ZYsXKgnaAQuu4Yl8og9qfmf\nIdifMvDy14M/+S1dQOXoHNnrmAqXkWQZ/roBAGS2NC60K+DnUpbDhtuy9BfS\nJdlKBxCOeFgwdyymy/VZDqteqAojyKJanN/aJ+SlCXYQvHkGRXLPv1ClPhSR\n8pS73tfh+bKCPiDH69FEGP8if4LgfSxUrmYco4PTIiD4RrWVg/Dt7TjHl3n5\n0kBNNTciz06VGoMRItGklWDnAvYr1FQVvku0COYGt5maG6+e/aj9TbDDpvb+\nZlRWIBwrU20P9Aefn1Y9L5Q0c93hosS+xIf/iJWJZ0t3Fwr/wYvqf7OtJoht\nzcCJtxyNl32OIhsWxBm2TY2YHxowInyKPnj5jwCD79zIZCAnnGRrCgWVdgx7\nCe2nyKmDKQ3GMPYpn5ShSFmvsFrUHmcSANhkIu8JAm5/8EiJ6DPaAj7oEjTK\nFDfxwGEejbDlQtMX5juOREbEBhXyd2J75zddUcS9ofrW+gSbC2zBLIdetN+y\ncWUT\r\n=lbYV\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/jsx-pragmatic_1.0.2_1541409551168_0.23670818523852977"
+            },
+            "_hasShrinkwrap": false
+        },
+        "1.0.3": {
+            "name": "jsx-pragmatic",
+            "version": "1.0.3",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install react@6 && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/grumbler.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.85",
+                "grumbler-scripts": "^3",
+                "mocha": "^4.1.0"
+            },
+            "gitHead": "35c4c9003126ae1d0335c06b799f97907fce0815",
+            "bugs": {
+                "url": "https://github.com/krakenjs/grumbler/issues"
+            },
+            "homepage": "https://github.com/krakenjs/grumbler#readme",
+            "_id": "jsx-pragmatic@1.0.3",
+            "_npmVersion": "5.10.0",
+            "_nodeVersion": "8.9.4",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-XLNolAwrMFHW4jmOXkoBJty/dJwmOXw2zZmOCCOtkfMvoWhlOnxQFExQhvkM+LGps8y6OOwwnt3idukrkciM8w==",
+                "shasum": "33c2caf797cb9617533a18eafbcb2a57328c0de0",
+                "tarball": "https://registry.npmjs.org/jsx-pragmatic/-/jsx-pragmatic-1.0.3.tgz",
+                "fileCount": 23,
+                "unpackedSize": 75736,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJb4AvNCRA9TVsSAnZWagAA8YUP/0FyJmn8bxrGq76Ou4iX\nueZmOky98tzjWiwJmSaeK38QZYRtzaRkF+3D7PpYzDHYVFyLeRVqxCRhu6rU\noO5H+0TqEs/efiGklwU5AhDYlr9Xrwi+trjKyoOUKINFMJiTWeP3hmXH5lek\nG0JK5k+DI9ViknxRswkqxQONDIpwjebTqkopdEliwjn+JLJt6UA8xbn2h+fQ\npZzhP4ZtE2DG6pexXlSpNRZAPkXVz7tF9EKW1FAV9VZ8BnrdWC05361g6Fxz\nQ0+KJ8EBJ/ALx/XZNBQQq06rCVjoqxEESz6LlwfPvADD1Gq3fZFwzO8QzZ0C\ndCrpvpl3gcDTzc8laskoDyO+vTraVYtYL+IZHBfjSML9uFfHlsbarw/5woFZ\nWh3W8LjCxRedQAEK1aeDOAt3RvvqutL2xJaMZVwsxBi6R5bzESOzE5A0tmmB\n0COLkHZrK8Zfdp13fSkApfGILsZDtwh6/u1WWHaoRphTMbi+tLbfcTC9JB7I\nf0Mxz1KT3adT8NBm6Td715uYQ8uBCBwkMk8I/Aae0vlh/futl49aI8dGmM0O\nCfHSB6sBLGM+Bx0ZAd5z7itmx2KRsKwG8WgVTI7u+UKHJNeeP0rLLXXPnMDp\na5XgW4KE+WVdijk1BARfHwzwdUF9BWX7v42QohTwV3DdsvSidN440w0sF0eS\nX3K9\r\n=6EGd\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/jsx-pragmatic_1.0.3_1541409740913_0.6299853525150245"
+            },
+            "_hasShrinkwrap": false
+        },
+        "1.0.4": {
+            "name": "jsx-pragmatic",
+            "version": "1.0.4",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js --ext .js,.jsx",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install react@6 && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/grumbler.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.85",
+                "grumbler-scripts": "^3",
+                "mocha": "^4.1.0"
+            },
+            "gitHead": "12339e5cc3f1b3f865b39f09fc91bc64d0206f75",
+            "bugs": {
+                "url": "https://github.com/krakenjs/grumbler/issues"
+            },
+            "homepage": "https://github.com/krakenjs/grumbler#readme",
+            "_id": "jsx-pragmatic@1.0.4",
+            "_npmVersion": "5.10.0",
+            "_nodeVersion": "8.9.4",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-c+BMu3tPgKkujoQJCWWwvjYEgvEUqocIy2t1kVv+hK5hcsNwB2b9YTr6oM4fwDU7XO2GbZJJ4F1HKN+fBJnSsw==",
+                "shasum": "bf7f47def71f5e8eff83e64ecb48a52548f07dbb",
+                "tarball": "https://registry.npmjs.org/jsx-pragmatic/-/jsx-pragmatic-1.0.4.tgz",
+                "fileCount": 23,
+                "unpackedSize": 76148,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJb4Sz4CRA9TVsSAnZWagAANsEP/i4MhE3ypA+Q6GsqzUUO\nZe/NMEAo5pl34ejpQ29r5nsxjwO1+fDyMY1WX4/9wJrZ0JzLxKfjlzNpEqVf\nS9tfKasKSZq+vWRnrhPDmvBsiqm2dlUX98VInGygAplV87+oLPZllh16iLlZ\nVUDf0ruWJ16jwxTGPj2ui9qIrRZvrDm/quF4jmaE2ykIsRkuMyLkxF+s+o3E\nl6XA5D05XSacI6p96uQY1Sg1okRHRZ7cS0Imu1+t5jm6cSznzxaeDOCSqtSb\nGcIxUAEd+AQSbBmvODXyJVD9t6dIf1a8KXx0t6qmH2Hm+8hIlWhjC1QN/+XP\nqGLs5a7izJaHk2C4pKWnk2eLlPU9z7zotsB9Rw5jJ1J3Q6wpTNxmSvsvsVN0\ndVqWciLAuHgutlchify4hj7X2Sfm6YJkJVTtvVlNcQysI56M4uD6OF4pVeCq\nBnkKvQMcP0IWrzAf+v+zvONGb7qBjBuhJQ131BjajMg41qTBHMK3d0kkrny+\nk/y1oilXLR0VJTDF/S55c1Ge1houOtJ7S7uu/lh6eSgFeIuT96AYJdNjhO7y\nZPG7LjiWx2UpqxKu39RQ0KnOjJgi+kbAykxdSpzD5wLl5P4MENHefNFh03vC\n4s9tQXKl6voXypZdzKnC69y4iNLVjVCFYGEs6ioVUeXRq6pOu8EShgX4W43X\nRmyv\r\n=e4aU\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/jsx-pragmatic_1.0.4_1541483767375_0.09007595077894881"
+            },
+            "_hasShrinkwrap": false
+        },
+        "1.0.5": {
+            "name": "jsx-pragmatic",
+            "version": "1.0.5",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js --ext .js,.jsx",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install react@6 && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/grumbler.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.85",
+                "grumbler-scripts": "^3",
+                "mocha": "^4.1.0"
+            },
+            "gitHead": "b9c75b27aa5d0226829c9e7d27034d23219034bd",
+            "bugs": {
+                "url": "https://github.com/krakenjs/grumbler/issues"
+            },
+            "homepage": "https://github.com/krakenjs/grumbler#readme",
+            "_id": "jsx-pragmatic@1.0.5",
+            "_npmVersion": "5.6.0",
+            "_nodeVersion": "8.12.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-slxKVV5jV3+6qJntBroGf8PHoXD2lplhid3r2BwJhwmMbxAE6kV42ZtGn1yjhn+2vEplcNFK21ymN/PXVhYVww==",
+                "shasum": "706ae6b7842ebd26b3ad17ace4c7f813002834e8",
+                "tarball": "https://registry.npmjs.org/jsx-pragmatic/-/jsx-pragmatic-1.0.5.tgz",
+                "fileCount": 23,
+                "unpackedSize": 77179,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJb4lpCCRA9TVsSAnZWagAAKJsP/iqNhEhzdRhjF2WyAEjP\nJJoqxcjuz8ddJHCNvn/+3nHnIaLRD2x+b9U/huMZJidN5G1ZJdcXiTtHhzI6\n/XBhTRuTW+aSp5Ti2COHJoICzn3wS36HB9NlNbtPkpk7lt0LtIjoAlFPoYwt\nUJInzgiDJI6ESCq3VYKMxvLAl7/cJU1L4fde9eO+qdHNZktUdV6V0xCn2DGT\nHe2XYa/piU76LBynmRq5DK8Xdnf+7OFrVBfje6X3FXHZigDvXmcA2X/YAouq\nAH/pqWo3DljoCWf/p/Tu1B1+B2b2lKlu3Oj2C/hgUsF53Y3PWhTvETwxS38C\nFSf4AwCEnZf3qmr0CAKWqswGNL6QYw28MSbywzrk3M0nERVZkAaReTEIoukj\nkTNOym7MkbrNL8tyT6/kNrL78xX3U/YLefh73hWh2aogfu0OQHB7D/eIOYXZ\nLfcDadt+30oAF40IAm4Xm3stXI2iq8dAN628UauULQ3R0DlwpR6L2WQ/1g3V\nppi/LL4jec31BH20qfUOiT9/F258UyWm/OlXoc8M406PNrOaBz+gcGeZww3s\n+1jSN0frtNkhj1STb2ysfo9dICRGFnk7l4SSgzfHpHvBf8Wd/KVCT9u3t6QD\n7VmfXBfRa+XJPaHUzQKG28vmEf8L166rC2/FsyHVBdh7Erktx33H4+Npug4m\nKnAQ\r\n=T2ml\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/jsx-pragmatic_1.0.5_1541560897959_0.9855715377742547"
+            },
+            "_hasShrinkwrap": false
+        },
+        "1.0.6": {
+            "name": "jsx-pragmatic",
+            "version": "1.0.6",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js --ext .js,.jsx",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install react@6 && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/grumbler.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.85",
+                "grumbler-scripts": "^3",
+                "mocha": "^4.1.0"
+            },
+            "gitHead": "a77a3e0e2fb3a159d431949bc02b458c6afdada7",
+            "bugs": {
+                "url": "https://github.com/krakenjs/grumbler/issues"
+            },
+            "homepage": "https://github.com/krakenjs/grumbler#readme",
+            "_id": "jsx-pragmatic@1.0.6",
+            "_npmVersion": "5.6.0",
+            "_nodeVersion": "8.12.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-8qWaBXkMDlHHpv/WMGr/50a95ODfQmbS9kwkYbc7khHV/caHD/a+ATuD54UayYrkH3weyt3XpsrlyH5Yl+XRVA==",
+                "shasum": "41002c6fee25b3dc2e379735f77daed8edd16dc1",
+                "tarball": "https://registry.npmjs.org/jsx-pragmatic/-/jsx-pragmatic-1.0.6.tgz",
+                "fileCount": 23,
+                "unpackedSize": 77241,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJb4nJcCRA9TVsSAnZWagAAeScP/0EoTJIWNT77RFcnqC2s\nCOWp+FbLYbrPPMTxc+1IQrCJ6839EHELtdhoIQF3PNTxLdDv+KqixTNdLLDQ\n5Rcqtrr64KFlEb1dJTES8rE1SM+AKuAZANEsfJc2ImboUoz+YFHedVHcVag1\nYaX6SepHVW/dLI4iVSULyS0r46/gwkEZegyDnHl/3TPOLYngpdZhkNdP9B2Q\nZ9kEK0ds03LkH9hrbfVHUWcAZTF+Cq8VeVzS1jaT2cYITS+wwk6xXumtz0rU\nHz4sN6pwIKl2XebgvzLgbBp4TIsZguo1QZaXSURZqPRJxdO8KsjJ788jvmn5\nSCQ3qu1y7pgUUd38sk1R1wCmvogY0meRC9Yv0pxeKf+sf/hlvQbf8Sw8R/Ts\nWN1oKT7FhoS+vk3CZc/Zf+corW1w8v52vo/eJ7KEMbH8KRZbOKsG7+m9Zup3\n8DHoR1IqYWqeVX8eaJhJ+kyFfyrGDyooDEQ4fsSrxWBE6rbj1rzP646zujPB\nkJt8Kac2eYq3cW97fLote3+ccQUAGWMmySYRb9+7lKwsHGGOjyQCapYrjkvE\nM2JPzo5JxFzJytuFwwEZJ1mW1izoDg+4Wm56A+9nWjOiyX0LgdhXs5lZRBAs\nz/R29rvhyOQUPHUxRlfioK54p9kyZyWcgZQekMd6aKOARcE5BeZeGiacUt9S\nXHwK\r\n=Kk5B\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/jsx-pragmatic_1.0.6_1541567068005_0.8414801186743099"
+            },
+            "_hasShrinkwrap": false
+        },
+        "1.0.7": {
+            "name": "jsx-pragmatic",
+            "version": "1.0.7",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js --ext .js,.jsx",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install react@6 && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/grumbler.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.85",
+                "grumbler-scripts": "^3",
+                "mocha": "^4.1.0"
+            },
+            "gitHead": "449d52bca49efdb767a660dbb75d01f54f8fcb73",
+            "bugs": {
+                "url": "https://github.com/krakenjs/grumbler/issues"
+            },
+            "homepage": "https://github.com/krakenjs/grumbler#readme",
+            "_id": "jsx-pragmatic@1.0.7",
+            "_npmVersion": "5.6.0",
+            "_nodeVersion": "8.12.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-VffcDEoZHTWLZvBxaE0N20nPlHDX9WXZtaCBvF1t1lbe8c8Kw0tRViMoKscgUdevydajfco7eZXww5K0ouskaA==",
+                "shasum": "9c0e27e740f962f8b450c7549d2226d1057bf76f",
+                "tarball": "https://registry.npmjs.org/jsx-pragmatic/-/jsx-pragmatic-1.0.7.tgz",
+                "fileCount": 23,
+                "unpackedSize": 80124,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJb4ooMCRA9TVsSAnZWagAALQ8QAIadJLG94ZnXdfuJz8n3\n70J6rgld+ktD3MfcSMFOaCX67lN4mCb0qw4TTwiUvWdho06tBDVISJ7xLaab\n3lDfFDFa2DVZgR2/CMWY/Dxv4cfHCzQytMwnhKVAe/oSfv8uSshUv0w3hfo4\neAybeWWBuJ6WUP3I34jo2F2a86njGe2mah4/rWsZD5n7I2rcMy+/Io4i3Xok\notbH7oqH+LgPd2pCVZHgkHFZTDQvzsq0OPn7mesq2cNgOp1BnksBTWglHL8w\nOQEGdZuR7jgNh/I/zTXki42+J3jb27+79RChioAx+eEkhV561l+BjkLUqV16\n0e/eN5+/BD13jenSN1FeXA/4W1rSXhQM8vaJCpuUa4WH8Gm20NTUhVijFOm2\nRJ1nAB4bhQKcT2vL27pnewFcZPPhSi5s3906w7g7HzlB2OwiLex1kC2B+nMB\noev3gNSVtyJ0SAhiqL03oqi19brIdQoUKOLKXIJ0lB+omL/R/HEsMd4hlCmq\nBikrznjjNT8cItRsfQxl8bmB61FwxOur3pv+eusX799UibeRrp1cnT+Sx9Dj\nEWuntkuvCGtVZC1qrECzpqHkzBLdj7K3hw8zzQ+YvMeV4bSJINOFm3gw8QZy\ngd7915A7r16GgQdDyECOzA5KnrWwD6CCVFt4WnX9fzRi0Y0hfv2wheQsUUvx\nmlcv\r\n=QDD1\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/jsx-pragmatic_1.0.7_1541573132303_0.7895059203351418"
+            },
+            "_hasShrinkwrap": false
+        },
+        "1.0.8": {
+            "name": "jsx-pragmatic",
+            "version": "1.0.8",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js --ext .js,.jsx",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install react@6 && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/grumbler.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.85",
+                "grumbler-scripts": "^3",
+                "mocha": "^4.1.0"
+            },
+            "gitHead": "197d25223045fd433ba6911eaf6a34d10fbf5efc",
+            "bugs": {
+                "url": "https://github.com/krakenjs/grumbler/issues"
+            },
+            "homepage": "https://github.com/krakenjs/grumbler#readme",
+            "_id": "jsx-pragmatic@1.0.8",
+            "_npmVersion": "5.6.0",
+            "_nodeVersion": "8.12.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-9EJ/ALLFTAJHptGUo4NtIO10dpJpIFjZ4CX/RxmfYa43BKVyc5HGd8rTG4IsUDK8FxWcs8bqa8qJ1xTozE6XcA==",
+                "shasum": "825c459ca6bb17a1d2aa0bcba4422c629973379d",
+                "tarball": "https://registry.npmjs.org/jsx-pragmatic/-/jsx-pragmatic-1.0.8.tgz",
+                "fileCount": 23,
+                "unpackedSize": 80427,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJb5jx/CRA9TVsSAnZWagAAELEQAIy2YA2ZlggEQTsoL+aO\nYb7wApjOea33f1dcvtdEKWZ2swtJ6gcVc3aUVDS1V50cyHB0Rx0zewEifTc8\nNy14nWaISjpFYQ/g7BudmundQdDeIEAqNSNMAzx0F7KVlVj4qqp2OrZZqUt3\nxDISBdA3YC1bsWZp67GcUQntu1o87vOZbet1ByrnplcUKbkfKaKNc6lOFpME\nhkBRpyPHz3TdWCekJjXxZNWIte355ScWOAKaQ3df9b5wyZWiWAVgDfzIHbby\nH4FfK9hBhHBRnt0tjrR5u4zWcd9tnUfAepUOcHk+390bfeteT+keeY87ZyXB\nYfNLvRFah6dtXqumYbw27bBUrYi8Wge/giBMSNVRTVV7zqyDID7mZXuwSRDk\nhiQKcDvXIUtAXC3F4XeZnS0BI4latkyKWQBRsnjLs2/YpeWjlmvX2i8YVDmf\n2aIK3TXK6dRBXm7EwRK45olyOE7/GFOORZQIn/cdY4F6sBh4Ae1DHEkoiE8x\nBLp01d9U8ClyiBuRrHt2BcRzc4NI8uxBTSOCkuX7XtyZCId2o3+7QDcBSBTt\nba2UDf+xK51boOO+uZmmWeF+EAddg5yDbDwXa8trLSorvVxoSB89L+U7NamV\nmDiwtMuwEtGOY9k2FWUwZBydSgFihxA2LN2uS8LW/jtLdW08Xtj+DKOsP3Ll\nFggS\r\n=kM+E\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/jsx-pragmatic_1.0.8_1541815423051_0.02668525029297486"
+            },
+            "_hasShrinkwrap": false
+        },
+        "1.0.9": {
+            "name": "jsx-pragmatic",
+            "version": "1.0.9",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js --ext .js,.jsx",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install react@6 && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/grumbler.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.85",
+                "grumbler-scripts": "^3",
+                "mocha": "^4.1.0"
+            },
+            "gitHead": "bf54fa541170956374b67e902527f7ff442fb03f",
+            "bugs": {
+                "url": "https://github.com/krakenjs/grumbler/issues"
+            },
+            "homepage": "https://github.com/krakenjs/grumbler#readme",
+            "_id": "jsx-pragmatic@1.0.9",
+            "_npmVersion": "5.6.0",
+            "_nodeVersion": "8.12.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-btPHTHpNiB9cP2CO7e5XJpNF74AgTq+lf5CqtD9DTx+mwAYzmTKNlX6I+MuqfQEONKYCKUleDxzLdfMphJ6Vwg==",
+                "shasum": "1d116602f6be93527cd57fa44cdb144701aeb005",
+                "tarball": "https://registry.npmjs.org/jsx-pragmatic/-/jsx-pragmatic-1.0.9.tgz",
+                "fileCount": 23,
+                "unpackedSize": 83948,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJb6fWGCRA9TVsSAnZWagAAYj4P/2vNwZLf1E6Bkyb3LPFB\nv54csVxGzU+3f7VSMd1vO0HDvdzF1FP8DD5b0XBuosU4EOdkYUllMgFguWGy\nGYzaZ+stBoH4rUOfRjXR5k9Wz6e1ddKg4FQW+Dae2xBbSHi0k9MA8/ZEYVC+\n/XhieVfg9K0caD/bZPP6Wv7EDSb02+j2IW3jv2ILCM2KLcphVf3dUN/q+7/m\n7n5BLBTrED1XDjXdXA7OxLj3v0o7adYjscnF2WfCWE/XWbmyU94DiXgljWbD\nPD7ERaUK6RSl11EsAMAOBEdM+hslmR/zIhETUe4DmfJ5foc0iuPkXeskVyfe\n0q2CQ0RqZMwvqE8oK6RWfeNBKMuOBBHXG9myIXx7Och9qGIoqwCYcAdWxhiR\nWtSTLGue9KOwYDG3J+9BOZLju/g8XuQp7wQ8l6PzyUwfYncrvlJs9r1wbIPf\n5kbxL92MIbM78jDuEWxp/41UFc7T5Z11PwS//Y7gKPQ7blo1Y0+yL0CMkhfG\nTe6PErqM8W8BdzGUmFdMW9SLaWBF1G2OKQUZwoZhp34f0OOU9wyzKa7GBSQB\n6HAsWyvcUYAUgqOlKQSXCCKbyAOCtjhIbgfzFhmyxHnOaUSeizbHOuBjfeVA\ntjUwLf3UlQ7CistPSQWH84M+aywU1bedylPq1PAH3zzGy6i4HAJ2eDWIqXHc\nUPkv\r\n=qLYD\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/jsx-pragmatic_1.0.9_1542059397398_0.5839278511674695"
+            },
+            "_hasShrinkwrap": false
+        },
+        "1.0.10": {
+            "name": "jsx-pragmatic",
+            "version": "1.0.10",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js --ext .js,.jsx",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install react@6 && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/jsx-pragmatic.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.85",
+                "grumbler-scripts": "^3",
+                "mocha": "^4.1.0"
+            },
+            "gitHead": "3ca041f2886b3a4b96772f7683a47faf08e3aa59",
+            "bugs": {
+                "url": "https://github.com/krakenjs/jsx-pragmatic/issues"
+            },
+            "homepage": "https://github.com/krakenjs/jsx-pragmatic#readme",
+            "_id": "jsx-pragmatic@1.0.10",
+            "_npmVersion": "5.10.0",
+            "_nodeVersion": "8.9.4",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-6OAbCih8EUF676o7f+PFPZZ3lVV4A+EKlGo0+yasdRhTAbRtzb0nrfu8EF9cwfBwTKEAQZVRmduoI6kseI0deQ==",
+                "shasum": "cfdc45c0423987531cd08bdab4268b243fd85b98",
+                "tarball": "https://registry.npmjs.org/jsx-pragmatic/-/jsx-pragmatic-1.0.10.tgz",
+                "fileCount": 23,
+                "unpackedSize": 153552,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJb80DpCRA9TVsSAnZWagAAmC4P/30HvQTU7stjBfGn7s1K\nnd+eo7gNv5V11uLzDArnmF1mu+DZQU7WFO2tyW8jOv9TfATqtnm8LuA2fWsQ\n8U/c75D4hb2fK3x52JVuESq1wCg5V6Ms9zxBCCf6sCoEsPmi28w/puve8Vj4\nWee4Bv5yFkx7l38rCqOtvdH5NfBjrKhvqAI4ABV8Z8vGxfj1MWu/EeuotAb6\n3zqM0xTxsyyQcBtpb9lVc6+bdwFLp1iw014GWOuquRixHp4wR0oD4uKQiiog\nemuNum5Ap7p/c3sv5NRWa7A5xIjmqhm/pPx9QwTaJU27Hh9EEb9Too5QyJyt\n9jU4tNm0HFR26ZumvcKZoMbqkeJqfLOylhhj4+r3z3oYLCt3XwBEOBxG+Z6d\nDSNPBArZKseYrX/Gp9l7XSVhOf9JlfQzEB313mkdqqyBNWftMYJxYlrtpEiL\nj1diguC6sAa3fhT838h1BMf6lC04Hi2cl82kzzbf0ltM313KDKL0kk6Kllu3\n6va/zhlqs5Sc9E35AV7GpnMwll9oPACflgvyzHLzgHLl4gnTFUi7QqAILvOo\n/yf4hZtLnmvWOHiBxmCERarPA1c3XucUGuOWYMV0W3oiCIYmZzSF1A0vZXOR\n8ToJOhZVJuOkR7EXkux4iogaFQPLeBmzA/W54AWfpBX9i5fC3hJgDW6vvKAX\nFR/l\r\n=MsEd\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/jsx-pragmatic_1.0.10_1542668520756_0.5194908392237716"
+            },
+            "_hasShrinkwrap": false
+        },
+        "1.0.11": {
+            "name": "jsx-pragmatic",
+            "version": "1.0.11",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js --ext .js,.jsx",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install react@6 && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/jsx-pragmatic.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.85",
+                "grumbler-scripts": "^3",
+                "mocha": "^4.1.0"
+            },
+            "gitHead": "a999b7adcfe62eaf905a8d881bfccf26cee2a18b",
+            "bugs": {
+                "url": "https://github.com/krakenjs/jsx-pragmatic/issues"
+            },
+            "homepage": "https://github.com/krakenjs/jsx-pragmatic#readme",
+            "_id": "jsx-pragmatic@1.0.11",
+            "_npmVersion": "6.4.1",
+            "_nodeVersion": "10.13.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-09B9DyfqllgWcRjU2lJxth2l4NSA3stc7Bursbjz0FgfGjinRkLSor1C/ZKkujFuLzdZ2kiuW11YbYSkulh7hA==",
+                "shasum": "e4b7f288311e7489671b1eb8b18031083b6e2584",
+                "tarball": "https://registry.npmjs.org/jsx-pragmatic/-/jsx-pragmatic-1.0.11.tgz",
+                "fileCount": 23,
+                "unpackedSize": 153728,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcBvNfCRA9TVsSAnZWagAAARoP/0VegmrvX+k7T16WjUWn\nzPjZEShkEwngWinWmsqrJI/K1eArOCR0h9gjXOqkxfw/bjkaX5CxJb4k1ttd\nn7t1vr5K28sEtL5X9ZLt/ybojsNCiJPIIdeRRZfEdkz/8UkT/SlO7vnLl340\nO3apMpdnCOFpv1nQ2yL+5xyYAqYl/Z6YTg461yGlnoHDMhSfB4NMKZr6HQjM\n8mAYrOdl7voap0W9kRdDSYdVGiiCNzmuWeAX2rzIjqcBC/zLZvYfmrO1HXf1\nwsr87vaB+zqU2yxzKOtr9xo/SCaPFwxIpvyTw9jHVLhLDtFpJTzIo2LRYKmG\njRz7bPP1p8i/EZyIXiRSea5bKYxGriC69mWU8VDvwBem7ZaTE9iH0xMKD7fO\n3cyoTAs0KWfrgYwQAhvkhjWh2RVymbZCZ5grizkj43BK7RDskuhTisRUT/tE\nZotlUXJMJIlaWi0KKVxrQ+1tvezLlAI5WSV4K52NEiUGYwuwyxtD+TXQEfob\nSzTjevHFJE1gj2a9mcAyVFm220r6Be2YwPdmxLrUTDyWMWsURQ0fvYODOYUV\nuef+jK4Cqvy43Q8n28r8p9bsc8xig+o4WeOiF7dmewutDZQ0q/EVgQAPvbB/\n4RPwwfrchZWRbqW0uWkNZ/uSeDGp5uU57PiaODfzFrReww6EhYNhD7pxxs9B\n/NO7\r\n=Yfcb\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/jsx-pragmatic_1.0.11_1543959391021_0.0790956670215417"
+            },
+            "_hasShrinkwrap": false
+        },
+        "1.0.12": {
+            "name": "jsx-pragmatic",
+            "version": "1.0.12",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js --ext .js,.jsx",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install react@6 && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/jsx-pragmatic.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.85",
+                "grumbler-scripts": "^3",
+                "mocha": "^4.1.0"
+            },
+            "gitHead": "08557d97c6e4fbb41fb41318ad3ca9f4ee15d291",
+            "bugs": {
+                "url": "https://github.com/krakenjs/jsx-pragmatic/issues"
+            },
+            "homepage": "https://github.com/krakenjs/jsx-pragmatic#readme",
+            "_id": "jsx-pragmatic@1.0.12",
+            "_npmVersion": "6.4.1",
+            "_nodeVersion": "10.13.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-m+bWuBddINd+AQEnuGFV2sLpPgMwMuPQ+GtmEfXKsatStdWTHFgj3afA65oDe0YiwB++JyrpGB98f7vhhY7Pvg==",
+                "shasum": "067333ae95c2117e4451f5ab48bbe87520fcb6ee",
+                "tarball": "https://registry.npmjs.org/jsx-pragmatic/-/jsx-pragmatic-1.0.12.tgz",
+                "fileCount": 23,
+                "unpackedSize": 133883,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcTjvBCRA9TVsSAnZWagAAhOkP/0D8Xi5qWiTeXjM1wE2H\ng0ImcaQnb6yJStqfK+NTk386sesJTE0d8ShVEvdNuV5xsQFUqFOKSu1V+2a2\n4ChH1JEGZf+cxppyaS8vPHhU/c1OOfh66P4UTgLhpEfJxpmWPTLrCcqWxmk9\n3j+13T+i/L8wqa+aLgSorH/+RM2LlhVd7T0Muy7IfsPH4FFXdH2OVtosUTD5\nIHRv26wl3z3rzKlBEw0zRFjnHOBZvnfVTm6P13gRksOlqhhIdZCczliJIZYh\nCqkmPEkAR8ltkqDC34IaNJ2COiJH2+Ul7+/hduyRTTDtu7i9op/NrLNcynq8\ny3GsBYQG/ZE/X5WGDHbcFD16hBMOhknXebWJrXm1ZXeEe8GgRMjLJwlrWcvH\nJtZj4ejtMDHhnOVULrBP98p6qhWqOMxTmM8FX0I7CZaVEhaUQNBSCd1LiAuK\n2PYlVzDWvWDFeCFOEgEN/cjSg7y90ykJRxfDKQeLLb9DVdqNLcK/urFD6n0b\nyffftt7H4xiaeZ6MZHDwlQRS1Q4p15jpmMtAf1woFw74W0iKOekb/Rhr1YBF\nRbYFrypvgBA5/4PVfuPyQSSKqwGePUCSIwKNkuc/yIKvhEP+g0M6wHCmQuPB\nb4o68tGfVLvojk8S4XF5I+QtTnPmWH4/OzDn4afo3AktpuJQGjbNNa02w43A\nCr0v\r\n=YFdi\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/jsx-pragmatic_1.0.12_1548630976469_0.3704686480300723"
+            },
+            "_hasShrinkwrap": false
+        },
+        "1.0.13": {
+            "name": "jsx-pragmatic",
+            "version": "1.0.13",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js --ext .js,.jsx",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install react@6 && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/jsx-pragmatic.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.85",
+                "grumbler-scripts": "^3",
+                "mocha": "^4.1.0"
+            },
+            "gitHead": "9c606628476224bfde03f1865f8435dcba39cc20",
+            "bugs": {
+                "url": "https://github.com/krakenjs/jsx-pragmatic/issues"
+            },
+            "homepage": "https://github.com/krakenjs/jsx-pragmatic#readme",
+            "_id": "jsx-pragmatic@1.0.13",
+            "_npmVersion": "6.4.1",
+            "_nodeVersion": "10.13.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-bSEC08Sh0hmCkkyYxCc87OMPAxf+FTfeuIphjGKK3rqC2Cnlz2zhRcznLe5IXT4eRtkfM2nyebOczR2dGuV5fQ==",
+                "shasum": "7bf73e4f3fef8694971a304cadc4e639f8f9279a",
+                "tarball": "https://registry.npmjs.org/jsx-pragmatic/-/jsx-pragmatic-1.0.13.tgz",
+                "fileCount": 23,
+                "unpackedSize": 135210,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcVOH8CRA9TVsSAnZWagAAX6cQAJIm+b+uGVG08rSqZhcz\niwWRF5nhwfgXg6gbLqsiqt4EQ3UefswiaNaRSqqtKS0LtRzsyqSBOvoeiwA2\nl7qyqAnRYF1JfiPo+X4ZUptTAfdvKn443+BmlRc+U1GQJoNucYfKirVdWMvt\nH6HYUpBiYqA/SRL1RucYC1HraolR0hM3hBmuo91mssp2MOAU9VL9cZ8E1NJy\nYENVz7hXSZI8+Jq28dX6LUG0qUK9sDCumRy8mEI1IyZkouQpulgExkhC1UJZ\nRQM+UK6rNs6qw+48U/dUYoU6gDvVkmBJfluLyb9jR/VOSZLn4zp/T9H2/C54\nrpzkldl91FdmWONBG/Wb8A8MjP15X00BOgCrcyQGP5vAw4AB8cgbanDE/6Zr\nL5Wi5J571yjuEi4P31vztynGbh1juSwj0aboYlPn7Z1wna3g2FX0Zz/m6Ceq\nLw6QHykmyk8/8v16CZ6v/7dl6/u8AvN27RiAFdEflR4nOFkFbI8HgL+ZNpDX\nab8EvzDsTc9YiEWUr174p/NkoPaHIxVIHmEYiXiur/RPM6TYAnb/cYVookBh\nGgW1IAPAJwzLEWHKx/667kxtk4KZT038Z0d82YAfKZUyiYQOXbT2/A4hhFA4\n40svhXDnfY3rbyb+xEj81c+YqQeA6kEST3l1qtsAWwrc4FPrfK9Dr3vqZDYm\nO79Y\r\n=ASJx\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/jsx-pragmatic_1.0.13_1549066747387_0.5786217043151725"
+            },
+            "_hasShrinkwrap": false
+        },
+        "1.0.14": {
+            "name": "jsx-pragmatic",
+            "version": "1.0.14",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js --ext .js,.jsx",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install react@6 && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/jsx-pragmatic.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.85",
+                "grumbler-scripts": "^3",
+                "mocha": "^4.1.0"
+            },
+            "gitHead": "55eb25bb2a09256e54ee77b968b113a3da2842cf",
+            "bugs": {
+                "url": "https://github.com/krakenjs/jsx-pragmatic/issues"
+            },
+            "homepage": "https://github.com/krakenjs/jsx-pragmatic#readme",
+            "_id": "jsx-pragmatic@1.0.14",
+            "_npmVersion": "5.6.0",
+            "_nodeVersion": "8.12.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-YFyd1coNboBOmUYAsCj6JSLEtlM/+NDIaLuZURjGvTV/OsqNDe3+3cy0FMrqn8vo0PT2ygJCxuSIuEWGr+CeCA==",
+                "shasum": "f7a44a685384a96f6ec923b81bd2bb480812fbd9",
+                "tarball": "https://registry.npmjs.org/jsx-pragmatic/-/jsx-pragmatic-1.0.14.tgz",
+                "fileCount": 25,
+                "unpackedSize": 136688,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcY5yWCRA9TVsSAnZWagAAVyUP/13OCLxS3ShUXwO1+5qx\nq5/1HBed0gqSShU+1JnHX5oKW3gbjJuHQ/XF0jpcV6xCOZPhB+Cas/hh1gFO\nWayCDNwDDR1vDe/gD4HDmAzgYefGn5DG0HaMkV3UvuJQ/CEB6tIolR2/QW70\nlQhE5fHAHkOWfAP/+HU1EHwvidRPriYQiE4Wc1dnD+jQ73QpfXPD/dZKIROm\nUqQpOBd/qSdarYed4GTKrEbED+ryIm6dfAQ3rm5GgSCvAxrIrzh25fyGNqQC\njkZjCjJpEAP5af4i/tWhU2zC9uZdthbdWb35DNUXgKfAS9h0Fk+j9ldg9vuJ\nxmlXgiG/4NeQhOZYjpBzDG7i4x/YMOOTUlpYjhRoJvtC6NOFlaSTW50CSmrq\noM4KoxZA3kEj+3T+YOtW01cshZyr0B36qmt+k9MF9XTwjqnNagFxpRLTb+qH\n5bCWqkXZEa0IuWSrmgrqSJXz9L2RIDmj29Zs2+jH2MycgKqPCkhyGLnMLsXq\n6sxUFCUFUoLJSDkJcxJgaiAMeioR6+Cn0P7Ft4gwa7sYqwe7rhR2UDfYqDHl\nxRdFnbtEG4dN6eEk9u2K59d+NuNwUxUlKH6DURDdvPnR7r3i5q93+ilAOqLD\nooL6Fw2H+5j9D/AV1DQydgi4eFz+9D1fnK2/mZa5ELAsZ2sHhWBtOSqc1tlP\njN2Z\r\n=ILYK\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/jsx-pragmatic_1.0.14_1550032021594_0.9164049025030627"
+            },
+            "_hasShrinkwrap": false
+        },
+        "2.0.0": {
+            "name": "jsx-pragmatic",
+            "version": "2.0.0",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js --ext .js,.jsx",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install react@6 && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/jsx-pragmatic.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.85",
+                "grumbler-scripts": "^3",
+                "mocha": "^4.1.0"
+            },
+            "gitHead": "47187408c3e89988c72fef84e79085cf73b819e5",
+            "bugs": {
+                "url": "https://github.com/krakenjs/jsx-pragmatic/issues"
+            },
+            "homepage": "https://github.com/krakenjs/jsx-pragmatic#readme",
+            "_id": "jsx-pragmatic@2.0.0",
+            "_npmVersion": "6.4.1",
+            "_nodeVersion": "10.13.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-0US2WIJqfHAp4O/cFikzlfZtZU3vSpOmblQamGLK1MeWDqlYLP3FXAgYuEaTeALKHsBZTYOjTnAqukOk5CGQUQ==",
+                "shasum": "dc3daeadbe9b83bb2112f9bde0c9768b08de6ffb",
+                "tarball": "https://registry.npmjs.org/jsx-pragmatic/-/jsx-pragmatic-2.0.0.tgz",
+                "fileCount": 25,
+                "unpackedSize": 136687,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcbHAJCRA9TVsSAnZWagAAW10P/RLhqPkXKB5w97V4+DCm\n4hhcmKSLiaZKP7SN9k8UrR7UmJtZmkjau4vaQlIeVMeLUiYjkKXu+1D6G5a/\nsZ8kBDTVE22e7UE5tRJxYJf2xbsMmv25xrLG3gjw0P+oecb2+43TJrJ34Cuz\nGVLgPDOVLTttq+dJw9lomg7XrVvwuekzZvR7rYnzT3t12BxO0o7kYLULnKlb\nlCcBRnwJj2OrxVeImn1rzN+adMDgAc/5tpcQfzFgcojbwNaJZJCnaC4OKf2a\nqU5+gEJ0PO4gXGTy++FzPxqATO8bE+/hP/iczGc+tnNuwDIUivIpDhGOJ0Ze\n6I0lu8V1cFS628RXP8YoKJxa0JOSnUfvlJAGpW5TeCoO9Kb7NLn0hGx+hggm\nk5jx9+1E96dkdJo/TXTbrq7jc14otR6HZr7rkrgqqaOlN3akC0hwHOIO6dFA\nIXcrqhqd50W07X/vPv43uhYblMkUTGfjSes1suB9TyoUJXM2y5MKaZ6O7ik4\n+6K524+mBdcaWECHU/vlOHhPz0R5ywFEh3pqSgqREWRLwDHAQts0OYIW8Lwe\nTpjUR8W8NnexIJI73DLL6S2Zz7ICf7EvqerfY4TWBpCx/eZ/ivE84bXRfx0+\nB+Y2boGYUUiMRWYiifb898r4EcoTjYb0BALMHdwp/I7nI52q70YDPLkuKLHv\n2ojN\r\n=w60r\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/jsx-pragmatic_2.0.0_1550610440932_0.6329645404335023"
+            },
+            "_hasShrinkwrap": false
+        },
+        "2.0.1": {
+            "name": "jsx-pragmatic",
+            "version": "2.0.1",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js --ext .js,.jsx",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install react@6 && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/jsx-pragmatic.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.85",
+                "grumbler-scripts": "^3",
+                "mocha": "^4.1.0"
+            },
+            "gitHead": "593d0f634ef3e33dd2dbeb1c424c3d309752537f",
+            "bugs": {
+                "url": "https://github.com/krakenjs/jsx-pragmatic/issues"
+            },
+            "homepage": "https://github.com/krakenjs/jsx-pragmatic#readme",
+            "_id": "jsx-pragmatic@2.0.1",
+            "_npmVersion": "6.4.1",
+            "_nodeVersion": "10.13.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-uqph+zzlufmA187rTLKfJvtfJqpELW2WubfQhCWw1IaoosMpUYa26hk1eZfUGZ0NbneuAz92OxpCOmpu4DNRJw==",
+                "shasum": "c14d1da9746c1d5dd8f12b6c4bd457e7d0965887",
+                "tarball": "https://registry.npmjs.org/jsx-pragmatic/-/jsx-pragmatic-2.0.1.tgz",
+                "fileCount": 27,
+                "unpackedSize": 137130,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcbHJOCRA9TVsSAnZWagAA7UQP/0xSo2oFa8EjRTTy9+Dq\nmxr+UjEhLR3941A1kAKFfQ8SDroAjQ6wjkHrTx3iIAxGxiyjQdQn1hYG9Pur\nd+RwUc+JRr159YloyjHD+vu+zSgEiAwvhxBgMLVKOKDoYLB9T6JONiZuJGDw\nUC2fg1y/YvUT2n9/nfZw2+UUKg5Kr9jZATxr/AxYClAzh4RNER2y0AoF3zU9\n7rsLjmtVBJGmgDSteiRbt4N3kCcjMFNu4Qn0OprH3jhllHmY2MO9SyzfU6Lu\n+4qzt3z+UmOMZQeBq8XEgBaQlNKsrC4OwlZbWnKTSfzbryKGm6Q+Ueqd5buU\n99wWpNCvQbbaqaMxi3i+kUn+qhu8nCVBUiLx/VAsvO6y9uHeXBmnN7oljj/7\n8B2tSgPdr/ctmeqn+dmKJBrSbIBBS8rc0TMAeaGTRmT8NlXNCGnR7lrN7POc\nx5htr6R5KEgdf9M+M6Ht4RwwsabyIdq+7/ovIaaXCPfvSPCboV70UhUaH5X9\nXmsXtQ5MFXdJYwBZnIHnKg098F2ljEV9SXlCbLeHvCB4I/d6NQGtVGwEY3ve\nT1SkeFEiybkU4UEid3N5hAVcULvDTQySIsjbi26t4j/KEmkQY2VFcmbMqMXf\nzoMFuXPOmdXKt9CBSLlf57gmWEGzv+FVeot46XtLsMjHe3bb5O3fm5Zrq98E\nVCpT\r\n=63Ff\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/jsx-pragmatic_2.0.1_1550611021528_0.0020829741661123613"
+            },
+            "_hasShrinkwrap": false
+        },
+        "2.0.2": {
+            "name": "jsx-pragmatic",
+            "version": "2.0.2",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js --ext .js,.jsx",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install react@6 && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/jsx-pragmatic.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.85",
+                "grumbler-scripts": "^3",
+                "mocha": "^4.1.0"
+            },
+            "gitHead": "fe547eb78d0349bbb348e962c138832b218227e5",
+            "bugs": {
+                "url": "https://github.com/krakenjs/jsx-pragmatic/issues"
+            },
+            "homepage": "https://github.com/krakenjs/jsx-pragmatic#readme",
+            "_id": "jsx-pragmatic@2.0.2",
+            "_npmVersion": "5.6.0",
+            "_nodeVersion": "8.12.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-VXy70Hu4C86RluGNhNCTbBrWwg3Xs1CEFjiPrD8OiWuo8p5MPTVc6s7QnWssUwpZOt4ZX6WmyqLRJy+NzC7i9g==",
+                "shasum": "014857492beffe93daccba957e33f142a23cf9b5",
+                "tarball": "https://registry.npmjs.org/jsx-pragmatic/-/jsx-pragmatic-2.0.2.tgz",
+                "fileCount": 27,
+                "unpackedSize": 137535,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcbcorCRA9TVsSAnZWagAAYtYP/0fuY41THIlOtBweWBH2\nG0Xb2SWSrlYvmVlSp5OF27D/rRJDGGopDFiEvbl0iw9Eu06vvxGN0saCkbRr\nptwGkxaWF+GT4e7HqOkfV+87WAZ6SF+ibVjJCBuR039nz/SAyKNWXoCbmWBf\nEVoDmc11TVphWqg5eUGtO2rB9yyvIDzziK3c9A06UoX50BGl+Rw44Vg4eUcC\nLbqj6mxiVkOW0Oya1kwzNR6b//1TqgLZQSKzjO0q1jApDXoiMsnuJMBjkfsK\nhxXyme3yM9Y4gy9xSGM0AmAIzc45rRtbyp7RxLAB64ETzLwB4vAtIFQUmGNH\nY5WbpWhpwqT2En0nSRsrPq/WWUVHPcsniidzhxvmuUsLui6N90baWhzGnWnU\njFbmb5Qp0YF5SJixRAXHkISTAgfskzGcrPe3MtEzfRb1T4MerGjP+OWB+gxd\nuKvB1lI+3BGnNHjmUcon6gvLVi5Rwb6oB0/d2RfxlSXmVBUEHKTOgiuVV9dy\nVXTJj1W45HhFLCblwF/3RG7EtB8gbtCAh1irtGsNErkhyYWqX3po9Fy21QCj\nMWQ5IoAR8TKp/I6ILo8NuxeNzww2YtzJYZ1kqsYCbrzHVoqc62xWXoHEmmNY\nhp6T6V8S3JLONJ0g45B/omVj912ra37DoMlF+fAzGG6r8p+b8vBt/zx03o+7\n5uT9\r\n=xi5h\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/jsx-pragmatic_2.0.2_1550699050567_0.03860038469355942"
+            },
+            "_hasShrinkwrap": false
+        },
+        "2.0.3": {
+            "name": "jsx-pragmatic",
+            "version": "2.0.3",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js --ext .js,.jsx",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install react@6 && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/jsx-pragmatic.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.85",
+                "grumbler-scripts": "^3",
+                "mocha": "^4.1.0"
+            },
+            "gitHead": "52c8d2004546d350842f5f85a3759ebb2f23260e",
+            "bugs": {
+                "url": "https://github.com/krakenjs/jsx-pragmatic/issues"
+            },
+            "homepage": "https://github.com/krakenjs/jsx-pragmatic#readme",
+            "_id": "jsx-pragmatic@2.0.3",
+            "_npmVersion": "5.6.0",
+            "_nodeVersion": "8.12.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-XW35pRmCJ7EyXSAg42QQbjrW739wrajnzlDFVdo+ZjzT3arUNVjYqtG63lHZrfxjBtPcJ98MucqVWYzV/J8JeQ==",
+                "shasum": "19a11ebf828e7deba22b06879c3e0b0075e50778",
+                "tarball": "https://registry.npmjs.org/jsx-pragmatic/-/jsx-pragmatic-2.0.3.tgz",
+                "fileCount": 27,
+                "unpackedSize": 143949,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcf10yCRA9TVsSAnZWagAAcyoP/2BAAQ2H/6JfLyG6tSkP\nFeUKPJCSqUNU34v75uvTh4o9RkAS3Tof5oOM4Se5lKlFameGBnSAyCx/2g9m\ncdGgT1nxeZdP6qxBDU6hp+mcEyyqSMTxBrIdlPLlE8RwRFXqA5Ia3lu2GQ2L\n23IidA9Tv7rqBdPI+SxLGM7xPzb3e1QSLyZhLRHp9bS8APsP7RbZ3MLz/Nek\nLi4pH39rRrEsncFs4dcxufXVNzO0VTZl65EK53xACe0PTRKguWYoBl7zAhLE\nQpHe4vbA8GnsBVR/jIxv4mrk1xVT3CeF/0h7QPtO7fEfah/T/cHptIbhqPX6\nar0WC5TgaYXs+0r+Flq9E71zwsS/rrtx7lTAKhhX7ltg0ng8DtLWKf3+kzcV\nLXBNmtidc+SkO87ODED19BZ0zF502fDytBFuPqrexjJr40Lvu6EHeGbDuj9h\nbR3+IobXH5n2SnXy8VLnHgUKMqga+prufOPzD560puUdP3WzbeZ3ubezHF3A\nOUoNdvUM9prYUMMCyZ2yt+fnafFl5RPuUJaJi7REO28LRyqPe59o4XP0IaAe\nX3JuquugO31TT2rVKelTNRwHRwtAYQ7PpeE5N5LNxFr93gjCIA0qvj7GKn1g\niZ79EMhNXNjL8UbDwFSxnu06UcAEunaKb48zy6Fdb4CN1wXnZG9SFbyyFrie\n5qLs\r\n=ruOU\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/jsx-pragmatic_2.0.3_1551850800811_0.36775315860339086"
+            },
+            "_hasShrinkwrap": false
+        },
+        "2.0.4": {
+            "name": "jsx-pragmatic",
+            "version": "2.0.4",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js --ext .js,.jsx",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install react@6 && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/jsx-pragmatic.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.85",
+                "grumbler-scripts": "^3",
+                "mocha": "^4.1.0"
+            },
+            "gitHead": "6d140ec8dc7ecf2dbbad8de34e31b8a1057a39d6",
+            "bugs": {
+                "url": "https://github.com/krakenjs/jsx-pragmatic/issues"
+            },
+            "homepage": "https://github.com/krakenjs/jsx-pragmatic#readme",
+            "_id": "jsx-pragmatic@2.0.4",
+            "_npmVersion": "5.6.0",
+            "_nodeVersion": "8.12.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-uF81q+U9yBkBUuXAltmTWiHgT/oVWTXC1paKDeCnOSiQx1fLeTS0axrv0RyK72p8GwkroU2iuCm8uPgJDqS7Tw==",
+                "shasum": "ee6b715f87b2e61eb28abda34756e8c5d5589781",
+                "tarball": "https://registry.npmjs.org/jsx-pragmatic/-/jsx-pragmatic-2.0.4.tgz",
+                "fileCount": 27,
+                "unpackedSize": 145565,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJckoMzCRA9TVsSAnZWagAA9g0QAKIlxohnaceST6RlfbgA\nXcYMp2D3m/9I03uckM0Hpxw3s3phXLbUgdtSjSzYD02G5KEjaSg6kyiFYADx\nf9+vHvr0UaiwPyfQCPXdRsNhc5bljfTv0xXcmcFGSeRE/FLM9eh1ziszIQ4t\nYu7Bpm/NgvP1i93sDokBsr4qaHMpbgx7q7HhBmKgVKX01bpAkz6srS+A/A+D\nAjkOzdiDS8ptIEt6xrF8yAZiOebyGO1xv9ZRIG1TYtLyZpSdqFzqDhoMVp4F\njN96KzDfrteaH+dv9mUnsHwJ9tEvx517cuDc9BwKafydU8Qjj29zHmVMLIcA\n38a8j+OtP+Lt5D2zY1Mq/CBOJbwza36/0h6sjJqxlszWelkxp+I8rXicPTop\nPg7h2g0OacQPjXwRVFE5X43TWBdRZ7FJgxB3iAFOi9LF0X+nfrwh3hVoQpa0\nJ6o1JUMHX14Saptc94xDOHX+ZQW8YBUVC7x0VpkyCFOUInasU/Vc6EwnXSEx\n773tJvC/ch9dw/e++MV4QHQWPp85BOR/KNr1I21ltaC+98L69v2tVm03+tck\n7LnvQfGNdGXxj271fUbFMP8UR1tj634SBiNQvRme9EXv5wiaayqA6vTuW7VJ\nVi8w3T6tvR0BmlqjQC7Dj5/TnCtPKuuBDHo+MylrmCi92lJtVLQbspRdOal8\np9NU\r\n=qGA/\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/jsx-pragmatic_2.0.4_1553105714090_0.27796128820163846"
+            },
+            "_hasShrinkwrap": false
+        },
+        "2.0.5": {
+            "name": "jsx-pragmatic",
+            "version": "2.0.5",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js --ext .js,.jsx",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install react@6 && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/jsx-pragmatic.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.85",
+                "grumbler-scripts": "^3",
+                "mocha": "^4.1.0"
+            },
+            "gitHead": "e666d4e289df3e2d78a773e7fb3a32927e2fa9f7",
+            "bugs": {
+                "url": "https://github.com/krakenjs/jsx-pragmatic/issues"
+            },
+            "homepage": "https://github.com/krakenjs/jsx-pragmatic#readme",
+            "_id": "jsx-pragmatic@2.0.5",
+            "_npmVersion": "5.6.0",
+            "_nodeVersion": "8.12.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-h8ByylKtJsG6zjquVf+gYlAXwu6SKcRBgP3QoY64hBc6XIaDKy9CEK5zfShdkrWQzencKLIjP0LwPXziV41OuA==",
+                "shasum": "d6965945f21f642d0cfc9c4020c58a141596adb2",
+                "tarball": "https://registry.npmjs.org/jsx-pragmatic/-/jsx-pragmatic-2.0.5.tgz",
+                "fileCount": 27,
+                "unpackedSize": 145600,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJctTF5CRA9TVsSAnZWagAA/s0QAIT+/UlT1P4WEzCr0dVa\ngJlhnKSvCKu/w3EXl7N1cS2FMtCMLfGGEc4qf15ycMcTjfMTu8H9s2KDtSs0\n6p3Kh+GNojLFQJf04yJjhnHubePWBldXgG0/b8K+vmWv4ZNFemJodWBEtuwj\nO7dv6XrzB2Ep6AdgvBz36hW5J9fo9DPF2RzQVocjX2eVorJEAZcuTwIwABta\nji5cL8R5CV/k5fmnT2UZM06aw6RkM4kzDmqMfkL0IiIuKtEYNOtD7MKeuhDR\nShUL53HZeB1U5pveiJCInnrp6Pvh+H7jsEPqlHozUHBDOiFV6ccmZ4mokK+c\nfoRsKVuuvt67FCQTcNJcML5X16AltUgENrwdcE4eBELCGIotK3nMIjqmBeF1\nCwa0yf0c9WbOzYNdykANbpl6Jq1CTzYEUfiQSDfLNcMV3hxlCRy/SXPePPWI\n73DEQRAUk2T0tPOZME+AMOCE/RsjrxSyJWbzhI3Rhyak3N0xu56mLszD5new\n3QuGwA2S1UC4681hF963fjwBtpGuXYZzYVLYdxUitcPaT+70AArcx4fZWCLa\nHgukR8PH3PP3nM8PqMkbWaIYEOrA3ZpG9YQr8PiUB/qmsyIrjY5EJroI1jAa\n7aeP4DfI/ms8ml4BydlvZsA46n+rmEMjQB05+kR1cleEUOW7AphfxqXOjDOa\n90Dk\r\n=HBm3\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/jsx-pragmatic_2.0.5_1555378552631_0.625191064052862"
+            },
+            "_hasShrinkwrap": false
+        },
+        "2.0.6": {
+            "name": "jsx-pragmatic",
+            "version": "2.0.6",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js --ext .js,.jsx",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install react@6 && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/jsx-pragmatic.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.85",
+                "grumbler-scripts": "^3",
+                "mocha": "^4.1.0"
+            },
+            "gitHead": "4b564b9acc9ca06d9ac96a56bfb1be3164040550",
+            "bugs": {
+                "url": "https://github.com/krakenjs/jsx-pragmatic/issues"
+            },
+            "homepage": "https://github.com/krakenjs/jsx-pragmatic#readme",
+            "_id": "jsx-pragmatic@2.0.6",
+            "_npmVersion": "5.6.0",
+            "_nodeVersion": "8.12.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-qJahm3HuXe63PgQxGMdZqwtINmaXkM8Z73rbYO2tkMNfBJRTzZnnJbK10PGybL/k0v5924/uqfFMLzwwY9EEkA==",
+                "shasum": "02ce9e672725329d167fc06c0c809a74df2cb2bd",
+                "tarball": "https://registry.npmjs.org/jsx-pragmatic/-/jsx-pragmatic-2.0.6.tgz",
+                "fileCount": 27,
+                "unpackedSize": 144745,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcv4CdCRA9TVsSAnZWagAAYN0QAIE4dfvprnTZDYbIEdRv\nzgc+BsULs3YtSKYyL/QStDHe7rsuO7nyNo1j1fqTwqanC/PijIZh1b9xJu46\nE65o/0ryZDEs5zFNBSuWysry00ozQtb6CeKZ0E/qhyInGFpRnASYlx2ZL+hZ\n67PqSAdw2fEMmV5FpeuF4u8hxrAaagEx7aVk7TfvizBgHRlqtnb9sj06zSOn\nuQd1OAcOiFVzDFnHmQXWQqnZrVropoceuOE/HJU0NlP5XTIsjnnmhhrmhof+\nJHqXl2N9MQmhWsJoA+8wmcospxXBcmC56SA12b4SdzvImsy8LorP6upyohAd\n4AH58W1EXieL7BEQNYAxuHuirS2TORP3qAYYybjx8Urdsf02kdBjUcFNm+N4\nHobGHC8UMX392YgoTS1mVaQSOEMbMoxcKyLLb67Zm9X2Y52p5XkffbwlbNRO\nImKogXOJ3yThROXDcFuQMgvDmZmeKFFzHizpLbKTtryuTEIhzFIlKPdAEe9L\nC21InGSDvG4krzilt1eWHXUl4YoYp0pfzuIn3deBFoIARjhXwZDHJEQJN6PV\nuH2ScmbCy0K9G86j/J+gkVS2muiavLoCsWsgyLnukIhjAlzFB4Y21uq3Pd2H\ngk2EWZKIRB9EFKpBZJNJQEx5G7W0PRmjgbK8rtm4AZ/XZW6QW1z4EIrebbyA\n8D8S\r\n=43XJ\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/jsx-pragmatic_2.0.6_1556054172333_0.10544684206660282"
+            },
+            "_hasShrinkwrap": false
+        },
+        "2.0.7": {
+            "name": "jsx-pragmatic",
+            "version": "2.0.7",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js --ext .js,.jsx",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install react@6 && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/jsx-pragmatic.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.100.0",
+                "grumbler-scripts": "^3",
+                "mocha": "^4.1.0"
+            },
+            "gitHead": "84275b112e4447edffd03a0e93993a210e21808b",
+            "bugs": {
+                "url": "https://github.com/krakenjs/jsx-pragmatic/issues"
+            },
+            "homepage": "https://github.com/krakenjs/jsx-pragmatic#readme",
+            "_id": "jsx-pragmatic@2.0.7",
+            "_npmVersion": "6.5.0",
+            "_nodeVersion": "11.9.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-DHLZhfteR4R5q9QA27j6LP5VM4kLN9O4eAdVgGKGz5K1InEFmZDAyxiym4kxeVhhY718zKxTMq65x2m8VwphAQ==",
+                "shasum": "79133762c735695b0846cc2d571c0702b87f43d5",
+                "tarball": "https://registry.npmjs.org/jsx-pragmatic/-/jsx-pragmatic-2.0.7.tgz",
+                "fileCount": 27,
+                "unpackedSize": 144920,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJc81E1CRA9TVsSAnZWagAAmOsP/2MfQqIC1YGZCrA6ToFE\n3yxC7oPwXJSOZjlUSSMjnaSo7N2DAoTtuUH09fcg54Yib00PvhCU0xpem5K+\nt+l89FAIeoIJM4sNaQt8NmmPfiONS50AGeQKsObR9BNe77Mtdqq0xkDVVX/f\nlLnjvFL9R1LeOYcr6MX8Z2wU3BsJZsE/Z39MkqpEJ8nCeKS29ygwR0FtDOR6\nRys0YOM3ENPQOgKpmqA3p4Wfm+bd+soyEhxX3D33q1sBzjUlYhCJZfbPoV2J\n875SNjUOPm4iLYo15G60wj0MROb4a+uOQQ9tVdp38CiGr6CwVDnL132hHDWF\nntiHwjjdMJrNB7hO3gd44EbFFeaBjRKJAsXD5cKsJdxmVJZZGOPYlP7sHNGL\nh8lNgbbDHsq/j78Z1KgYMDRt8BFIKGLt1UBXBe3ShOnV6uQ+wovuSnH4Lfg7\nsHF6czUzAfPBYdowd0HMwJf8ClRwV2xqjX44qrJsXTlls3tKcEnMJKrhFxuF\nR7cyPkTuSC1QAyMKoeFTPFTksASoGAk2wB8rAHNCAIPyVtUBoKTaCJNYiVa7\nwg1/VY1Xc5ffCn7TqIsRrBGcsIHnez1i/whm2yuPz5abqR/Wf5Pkq8A7ecXu\nju1zwMMfkWK/mAr5AtvoEVm0UOcHjlgl4NQW+diePGDRHoi0ENNmSkdqZwCR\nwzTk\r\n=19td\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/jsx-pragmatic_2.0.7_1559449908683_0.36465313869937344"
+            },
+            "_hasShrinkwrap": false
+        },
+        "2.0.8": {
+            "name": "jsx-pragmatic",
+            "version": "2.0.8",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js --ext .js,.jsx",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install react@6 && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/jsx-pragmatic.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.100.0",
+                "grumbler-scripts": "^3",
+                "mocha": "^4.1.0"
+            },
+            "gitHead": "a1dcc99fa5847dc2cad1ddb01bf2e30ea968f8e9",
+            "bugs": {
+                "url": "https://github.com/krakenjs/jsx-pragmatic/issues"
+            },
+            "homepage": "https://github.com/krakenjs/jsx-pragmatic#readme",
+            "_id": "jsx-pragmatic@2.0.8",
+            "_npmVersion": "5.6.0",
+            "_nodeVersion": "8.12.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-GW/useY0fQOEXI/6LfxJHgRkhs/KHwaN9wQco+tZ3xh4uUPgb6egKtKDlqbymg4By4HLKHNtN6O2wnDyutvZUA==",
+                "shasum": "f2b173d2544d4ec663db98aed7d9c3645f441a25",
+                "tarball": "https://registry.npmjs.org/jsx-pragmatic/-/jsx-pragmatic-2.0.8.tgz",
+                "fileCount": 29,
+                "unpackedSize": 160941,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJd7yEBCRA9TVsSAnZWagAAxGcP/i6jpxaMW58pXqv5Nzd9\noZNKNNr1ipXNEbFIRn62qCC9fPCjX9lkkNRshRpLaoIMuG/KqFxjV5mCJbzh\ndUAHWcOMquL7DoqZjYQbLbRFg1r59Izc2zBoeSUscIrQo7JbbiBCIxAP9V9q\njWn5zNUXtRAjkSYbWXUJ4UqFfm3xHQDCUSj76BUCWCUy7dX7w7dLHo7C+0r8\nF2tVAcHjBVwWLSxWzF+Vb/U8OABjT1p0NDRYggx5bg8xMEYqeNWJ3guq6MII\nt9FT5dnZcZWDJdD1J33dF+moaA2pOSnEaiqDluJ6MNI18EJROGeGmk78H9+Y\nNfKIuCVeS16rEG8aMCYhOa31TY2Nzsa8qIWSKUz6Y27C8PKYj8i2lHfn+SLx\nYqTT5+gXim3Rb8Uc73o+cPighMN5iP6xKkqf95zzt26KPm+R1RWTFeCoFwOc\nG998ISi+JTHJ/70Kpa9WEqwN9HqTJN3GML7XUKv+b0021OhZfgR6wnoQDOU0\njtH3y2yEd34zTuMJwlvZ5c8AhTMSr4ywUrmHFvved0sFhKv3lmlb7W0PRu4x\nl3lNk0lUrRbIK9oxw/yfGskkdVIfY2rSgGWvwAKp53FYXGVJfUAetWK86ySn\nLnQa07MPkQdP/dPD6niZtM3fDPmFRqCuP2DF/d8WcO+MqMYhYT0ezt2IQGxv\nacST\r\n=L1ij\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/jsx-pragmatic_2.0.8_1575952638997_0.9847128276751891"
+            },
+            "_hasShrinkwrap": false
+        },
+        "2.0.9": {
+            "name": "jsx-pragmatic",
+            "version": "2.0.9",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js --ext .js,.jsx",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install react@6 && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/jsx-pragmatic.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.100.0",
+                "grumbler-scripts": "^3",
+                "mocha": "^4.1.0"
+            },
+            "gitHead": "1db919c4e09261d35ffb14bbf019cffc30be3952",
+            "bugs": {
+                "url": "https://github.com/krakenjs/jsx-pragmatic/issues"
+            },
+            "homepage": "https://github.com/krakenjs/jsx-pragmatic#readme",
+            "_id": "jsx-pragmatic@2.0.9",
+            "_npmVersion": "6.4.1",
+            "_nodeVersion": "10.11.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-JxqOUYGOSFyZpdHWGy73SRE+Tc7eO1ujgSVj81IlYqk0A/lhB+brWj9Qi56KOpiHS2WAu8/QNBjeUeTySv7F5g==",
+                "shasum": "9cc6ddd25e1ef04484bfb9964ccab4efb484e29b",
+                "tarball": "https://registry.npmjs.org/jsx-pragmatic/-/jsx-pragmatic-2.0.9.tgz",
+                "fileCount": 31,
+                "unpackedSize": 159302,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJemlrHCRA9TVsSAnZWagAACzIP/AknYl44q04RrGROJY4g\ndQMxgcF891l2njZOy7bT9FOLaD3KTjCm6ueiR4S7jGhFEd2IAKUEVYexX/G3\n9hdEDyLU8nUxoj6V5HgCGQ/etGis6YJrMzdLiVd5bTY0CFWvDy6707iATHzn\n4ezDwmvs/Ow5ZjrJVZKX9b+pkFVtR7DuhX1Ar+t+rdVlxwRRdluXB2o+3Eaa\nUeaWfE8BBK4Odbd7xlkAbwbJ50ZhlJFgyOt9/VandxqH89ksvPbJ1oFbdi/W\nL/PPGjgU62OO7nfHDYk6ujajISgQWk82XoSXJ/KX8gWKTD4NqARzHaJowwp6\nkhnW4KU2S2LRj5B2S8YL42x54qz8nFC1FjtjyiAL/UDQrYUDUtEs+KU+9cgD\nMU3R3j+o2kqdGvBMy8oiFBaf1haS5VP/sfeS4uO3dRR1U82Ggde203DwB56L\nFaULlGZK9cKNN+1jgPysV5up+xVhMLxyTUO6/HzPL/jT2MiZPXNi9Y3X6mW9\nyld/mw4+sgd8U+/kJPubRrTMy4tJsUdeEdw1siB697ZgXXQMGCgsTPWoG9nr\nENCt03vAn/mUO5OKBl6VQ+wCyx9om5pbaThDHd+bJ3hFlo7RIm0WVrELr1KG\n8/Tjg2exYyL/wIGpbTRbh8m78mMRv+T1PB2hGAlqs3uYfsulgxPH3U5N1Px5\nTUSj\r\n=xfnm\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/jsx-pragmatic_2.0.9_1587174086829_0.6173098510467676"
+            },
+            "_hasShrinkwrap": false
+        },
+        "2.0.10": {
+            "name": "jsx-pragmatic",
+            "version": "2.0.10",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js --ext .js,.jsx",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install react@6 && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/jsx-pragmatic.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.100.0",
+                "grumbler-scripts": "^3",
+                "mocha": "^4.1.0"
+            },
+            "gitHead": "14f3123706f9c3f911d552a79e1ee04c2ae98740",
+            "bugs": {
+                "url": "https://github.com/krakenjs/jsx-pragmatic/issues"
+            },
+            "homepage": "https://github.com/krakenjs/jsx-pragmatic#readme",
+            "_id": "jsx-pragmatic@2.0.10",
+            "_npmVersion": "5.6.0",
+            "_nodeVersion": "8.12.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-c40rd7XC1PxlKzwk7zfhaoVExZAJOJ7fjA+pD/PTayUKgZYl/zj8u1Hv5bFBZcLZcSTMyMxvrsEdsQdL2c0ung==",
+                "shasum": "6d7bb33e8e549c9cc877ef566bf92644f4f6f780",
+                "tarball": "https://registry.npmjs.org/jsx-pragmatic/-/jsx-pragmatic-2.0.10.tgz",
+                "fileCount": 31,
+                "unpackedSize": 159474,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJeoNhbCRA9TVsSAnZWagAA9GgP/A6oPvfefUDuvKsn0bVK\nQylvp625NHpeAtVnpgtHhVmKPikHmzwCmJtVwFV+3C6JzR1I88DIVGlHyY36\nkGg8ZQdxzwuu/NrnlR80wRSODybTvAJfFf8wTbJ8LNNX0TeRjTlQY9gna1os\ngsYC7+ewoP1WLFEHJ+8hkMT1E7aDvFGdgVNCugMzP2U+2Z3KBnK1HE9gcEle\nEnaiW/r7lIEoQF6slRvPDgkHsSVMssUpVK+TGyP6MIxPb+VqCUHk5t/xVNbL\ncTA3qrzf1WG57zQX3xNpMa8qmch62wyr0ogVcdDahmwih9s9vmSU0xVWmsKU\nfHX013pbV+QL27K5/x1rVo29Mv9B3cvV6gFQVbIfywIuwscBbGCF6nnS1kWP\nTF9UMovtELiaDLmk1hZDLXuVJ2JELlLdcSciOKzxX504BwoqRJR68azqn3rj\nwReHkHB9iRhNpvm73CLTolTxXVnwzAJ17CQqL/Adlwrl1on5s02UpQTdFJkw\nkk73WlKpufT3gbI/h6II9kgbzjkkRGEsYKK7mfpT7AVsR/7wA5W1WHyLKQ09\nea4Ul9XAIL3ig0xg5UAV9cS0FjDokSNJSwuN/ospLJWG4js/LmqRmvS5e1SE\n05zlCeszo9ckvokEuuRzul6VNKzvmSEstelKaQftRdqKb5fQoGHECoCGMYru\nevWN\r\n=dhhx\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/jsx-pragmatic_2.0.10_1587599451088_0.4050139870927536"
+            },
+            "_hasShrinkwrap": false
+        },
+        "2.0.11": {
+            "name": "jsx-pragmatic",
+            "version": "2.0.11",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js --ext .js,.jsx",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install react@6 && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/jsx-pragmatic.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.100.0",
+                "grumbler-scripts": "^3",
+                "mocha": "^4.1.0"
+            },
+            "gitHead": "d72bca80841351cd587dcb6819cd5958459c0ee5",
+            "bugs": {
+                "url": "https://github.com/krakenjs/jsx-pragmatic/issues"
+            },
+            "homepage": "https://github.com/krakenjs/jsx-pragmatic#readme",
+            "_id": "jsx-pragmatic@2.0.11",
+            "_npmVersion": "5.6.0",
+            "_nodeVersion": "8.12.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-McCFSuOOolXKpSYfjma9sX5BCTmNS9r49sIxl3I0NbGO0KojT8Q/je20MxomvZDxaXEDCcs9+WOkYy29MaRYaQ==",
+                "shasum": "8e31c235e0466482e2c6fd119e255d2fdcf0b3f8",
+                "tarball": "https://registry.npmjs.org/jsx-pragmatic/-/jsx-pragmatic-2.0.11.tgz",
+                "fileCount": 31,
+                "unpackedSize": 159870,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJep3hQCRA9TVsSAnZWagAA1jgP/A2NsYw/yJMxjQEygJ1o\nOM4HmOKejtCS0GuY+Hy+2t1gXAqIYXcNHnaJtiLpY5cnRjKFoU314gv9FjYW\nIjAVzPqFotBSzqtVHaP3dd/kD3HH3XkYiXNSCwRbMwXOt3hVXFpnBcq7RgWY\nbVo4NG7o/Lz96Bh81lL21mgVG1+xgH5KEjQotrPTGLNMf4irFhkM7wt38tS8\nkgJ2UcnpDgEOQ37jSXhOvXYwZTgs8oFZtraspK6q7a20hBSD3mgQB6kamNmV\nGNEx1px0PXSAyNSJOlOmC3oPEl0XzJAKz8eol9E+S89rfoCzpEcDiKJNfBg0\nkyDL4/GXGv4c067iA2SHa/MpJG3oOFnq5jHRgCpCTLODayHOP7NBCMz6NtNQ\n/iP8qRkPpIK5l1HigEB0ds3wPhdNKFQGoFPDMkFwXPu1PxGd7iBFc2ydL9u1\n6aelX8R8DtistXR6Vw7I3bt9OYJn1ORTJSkuNE8xG9UmhPGXUTkaGN7XlxQk\nxcWzVWbNeBhjKEWBW+IU2GmkCOiEh1cH/PjzGeagmVXWIg4WjNu5SNimulL5\nyMSmYTmEiWfxPYk/pR7xMSLtk611TQd7BI11/NeY4+K2cA0rtisCXN5gAqCf\new6pAm0WymqsK4Yc+o/2Me3+I0HXHWZikihc1PEBbWYVPFnDJhNV4qL5zD3C\n9V/C\r\n=1Fbp\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/jsx-pragmatic_2.0.11_1588033615590_0.5589650721861172"
+            },
+            "_hasShrinkwrap": false
+        },
+        "2.0.12": {
+            "name": "jsx-pragmatic",
+            "version": "2.0.12",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js --ext .js,.jsx",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install react@6 && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/jsx-pragmatic.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.100.0",
+                "grumbler-scripts": "^3",
+                "mocha": "^4.1.0"
+            },
+            "gitHead": "531cd8181edbc4d3c69143a4a79e0de8866321e3",
+            "bugs": {
+                "url": "https://github.com/krakenjs/jsx-pragmatic/issues"
+            },
+            "homepage": "https://github.com/krakenjs/jsx-pragmatic#readme",
+            "_id": "jsx-pragmatic@2.0.12",
+            "_npmVersion": "5.6.0",
+            "_nodeVersion": "8.12.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-Be2dCN7VSK9DA70O4K54t3NxgHbWmdlizydFO8IT70NMbt5kRQEaMLCR62YHmtyPZDwxg4Bvh6O3MFw4XgMjmw==",
+                "shasum": "d0aeb197ec6eafec9feb135020f3b4fe0c9b7dad",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/jsx-pragmatic/tarballs/2.0.12.tgz",
+                "fileCount": 31,
+                "unpackedSize": 160431,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJep49yCRA9TVsSAnZWagAAFjYP/RyIvj76Fs+UDJleQjuB\nqYivvHCTX54vr8E1HkdvEnt1MLHe7B6J8Kw3ycM56oQ17IKQrWiDMnNU30yg\n1MkbJTiJhW0ZgS7WICKDuRrhf0Rg5qSNeNjRUfH1tQ5530/iMrZjf4OVQ2ia\nrg9p+UglANU8NcrgVfUvEJdjafXEc81wJXgoZWLzhSqKSEobjeGA0wrQFFF/\nZjSRHxu9Xmmis4m+6N2pcSItoYgpWoQX5WISI3Wmftudhzt2eAcQ/Ke6+JRg\n/XQJX9s18fwt51aFb1Rq/aUGS3qFQRQ7hW5hLEjSL6LozJMz3gVZpSrxbq5w\njHT8YFaDcl2pJQBmj44DLfPZN88ljzp85b2Qy5nYvQ9hhezSnYlb0wefrBVx\nM/uV3J79Dbt8HnqKTYHUwwXUfxNIAjVTlBo7t26NVcdOB6hwT92KsFVukKnK\nLmeWi9IaD7grSnMquy98P75K+lYSjPkOBEY573elv+Kfseq+z3OR6zAqMf2d\n/QHD/ll4shCv2MjTGI1oAF9lE7q7tBbaaFjAFGAEOUvnAYSdSj3iwJwgdzCu\nf5ZNKOCkw8qN+eTyYDI5PGvWn3qQf7jFTCa/KR0CgZ5E0dbsJehqsPQls+xj\nC9WlLmyj43jxjJcdmgN0N1c7ZzfyIbwEV63heButQJ6tmVWSsd7eokf7n7cs\nI5PP\r\n=GIzy\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/jsx-pragmatic_2.0.12_1588039537772_0.6578624685255574"
+            },
+            "_hasShrinkwrap": false
+        }
+    },
+    "time": {
+        "created": "2018-11-05T08:54:56.777Z",
+        "1.0.1": "2018-11-05T08:54:57.080Z",
+        "modified": "2020-04-28T02:05:40.289Z",
+        "1.0.2": "2018-11-05T09:19:11.280Z",
+        "1.0.3": "2018-11-05T09:22:21.113Z",
+        "1.0.4": "2018-11-06T05:56:07.574Z",
+        "1.0.5": "2018-11-07T03:21:38.103Z",
+        "1.0.6": "2018-11-07T05:04:28.192Z",
+        "1.0.7": "2018-11-07T06:45:32.441Z",
+        "1.0.8": "2018-11-10T02:03:43.240Z",
+        "1.0.9": "2018-11-12T21:49:57.690Z",
+        "1.0.10": "2018-11-19T23:02:00.900Z",
+        "1.0.11": "2018-12-04T21:36:31.204Z",
+        "1.0.12": "2019-01-27T23:16:16.573Z",
+        "1.0.13": "2019-02-02T00:19:07.473Z",
+        "1.0.14": "2019-02-13T04:27:01.769Z",
+        "2.0.0": "2019-02-19T21:07:21.128Z",
+        "2.0.1": "2019-02-19T21:17:01.664Z",
+        "2.0.2": "2019-02-20T21:44:10.750Z",
+        "2.0.3": "2019-03-06T05:40:00.946Z",
+        "2.0.4": "2019-03-20T18:15:14.579Z",
+        "2.0.5": "2019-04-16T01:35:52.776Z",
+        "2.0.6": "2019-04-23T21:16:12.767Z",
+        "2.0.7": "2019-06-02T04:31:48.870Z",
+        "2.0.8": "2019-12-10T04:37:19.158Z",
+        "2.0.9": "2020-04-18T01:41:26.983Z",
+        "2.0.10": "2020-04-22T23:50:51.212Z",
+        "2.0.11": "2020-04-28T00:26:55.759Z",
+        "2.0.12": "2020-04-28T02:05:37.925Z"
+    },
+    "maintainers": [
+        {
+            "name": "bluepnume",
+            "email": "daniel@bluesuncorp.co.uk"
+        }
+    ],
+    "description": "Javascript module template.",
+    "homepage": "https://github.com/krakenjs/jsx-pragmatic#readme",
+    "keywords": [
+        "template"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/krakenjs/jsx-pragmatic.git"
+    },
+    "bugs": {
+        "url": "https://github.com/krakenjs/jsx-pragmatic/issues"
+    },
+    "readme": "JSX Pragmatic\n-------------\n\n- Build JSX templates\n- Decide at runtime how you want to render them\n- Easily build custom renderers - render to HTML, DOM, or anything else!\n\nBecause JSX is pretty useful, even without React!\n\n#### Build an abstract jsx component\n\nFirst we'll build a small component. We're not tying ourselves to any particular framework yet, or any render target.\n\n```javascript\n/* @jsx node */\n\nimport { node } from 'jsx-pragmatic';\n\nfunction Login({ prefilledEmail }) {\n  return (\n    <section>\n      <input type=\"text\" placeholder=\"email\" value={prefilledEmail} />\n      <input type=\"password\" placeholder=\"password\" />\n      <button>Log In</button>\n    </section>\n  );\n}\n```\n\n#### Render on the server\n\nLet's say we're on the server-side, and we want to render the jsx to html to serve to a client. Just pass `html()` to the renderer:\n\n```javascript\n/* @jsx node */\n\nimport { node, html } from 'jsx-pragmatic';\nimport { Login } from './components'\n\nfunction render() {\n  return (\n    <Login prefilledEmail='foo@bar.com' />\n  ).render(html());\n}\n```\n\n#### Render on the client\n\nNow let's render the same jsx template on the client-side, directly to a DOM element:\n\n```javascript\n/* @jsx node */\n\nimport { node, dom } from 'jsx-pragmatic';\nimport { Login } from './components'\n\nfunction render() {\n  return (\n    <Login prefilledEmail='foo@bar.com' />\n  ).render(dom());\n}\n```\n\n#### Render in a React app\n\nOr if we're using the same component in React, we can render it as a React component:\n\n```javascript\n/* @jsx node */\n\nimport { node, react } from 'jsx-pragmatic';\nimport { Login } from './components'\n\nfunction render() {\n  return (\n    <Login prefilledEmail='foo@bar.com' />\n  ).render(react({ React }));\n}\n```\n\n### Write your own renderer\n\nRenderers are just functions!\n\n- Write a factory like `customDom`. This will take some options and return our renderer.\n- Return a renderer which takes `name`, `props` and `children` and renders them in whatever way you want!\n\nThis example renders the jsx directly to DOM elements:\n\n```javascript\n/* @jsx node */\n\nimport { node, NODE_TYPE } from 'jsx-pragmatic';\nimport { Login } from './components'\n\nfunction customDom({ removeScriptTags = false } = {}) {\n\n  let domRenderer = (node) => {\n    if (node.type === NODE_TYPE.COMPONENT) {\n      return node.renderComponent(domRenderer);\n    }\n\n    if (node.type === NODE_TYPE.TEXT) {\n      return document.createTextNode(node.text);\n    }\n\n    if (node.type === NODE_TYPE.ELEMENT) {\n      if (removeScriptTags && name === 'script') {\n        return;\n      }\n\n      let el = document.createElement(node.name);\n\n      for (let [ key, val ] of Object.entries(node.props)) {\n        el.setAttribute(key, val);\n      }\n\n      for (let child of node.children) {\n        el.appendChild(child.render(domRenderer));\n      }\n\n      return el;\n    }\n  }\n\n  return domRenderer;\n}\n```\n\nThen when you're ready to use your renderer, just pass it into `.render()` and pass any options you want to use to configure the renderer.\n\n```javascript\nfunction render() {\n  return (\n    <Login prefilledEmail='foo@bar.com' />\n  ).render(customDom({ stripScriptTags: true }));\n}\n```\n\n### Use Fragments\n\nYou can either import `Fragment` from `jsx-pragmatic`:\n\n```javascript\n/* @jsx node */\n\nimport { node, Fragment } from 'jsx-pragmatic';\n\nfunction Login({ prefilledEmail }) {\n  return (\n    <Fragment>\n      <input type=\"text\" placeholder=\"email\" value={prefilledEmail} />\n      <input type=\"password\" placeholder=\"password\" />\n      <button>Log In</button>\n    </Fragment>\n  );\n}\n```\n\nOr use the `@jsxFrag` comment, and the new `<>` `</>` syntax for Fragments, providing you're using Babel 7:\n\n```javascript\n/* @jsx node */\n/* @jsxFrag Fragment */\n\nimport { node, Fragment } from 'jsx-pragmatic';\n\nfunction Login({ prefilledEmail }) {\n  return (\n    <>\n      <input type=\"text\" placeholder=\"email\" value={prefilledEmail} />\n      <input type=\"password\" placeholder=\"password\" />\n      <button>Log In</button>\n    </>\n  );\n}\n```\n\n### Why?\n\n[JSX](https://reactjs.org/docs/introducing-jsx.html) is a neat way of parsing and compiling templates to vanilla javascript. Right now most people use JSX with [React](https://reactjs.org/). But in reality, the technology is decoupled enough from React that it can be used to render anything:\n\n- HTML\n- XML\n- DOM Nodes\n\nThis library helps you do that.\n\n### Can't you do that with Babel?\n\nYep, Babel provides a neat `pragma` [option](https://babeljs.io/docs/en/babel-plugin-transform-react-jsx#pragma) which lets you choose what your jsx is compiled to; if you don't want to use `React.createElement`, you can write your own pragma to convert the jsx to anything else.\n\nThe only problem with that is, the decision of which pragma to use is made entirely at build-time. Let's say you have a template which needs to be:\n\n- Rendered as an html string on the server side.\n- Rendered directly as a DOM element in some client environments.\n- Rendered as a React component in other client environments.\n\n`jsx-pragmatic` helps you achieve that by allowing you decide when you render what your jsx should be transformed into.\n\nIt also abstracts away some of the stuff in jsx that's a little tricky to deal with; like nested children arrays, dealing with basic element vs function components, and fragments -- leaving you to focus on the renderer logic.\n\nQuick Start\n-----------\n\n#### Install\n\n```bash\nnpm install --save jsx-pragmatic\n```\n\n#### Getting Started\n\n- Fork the module\n- Run setup: `npm run setup`\n- Start editing code in `./src` and writing tests in `./tests`\n- `npm run build`\n\n#### Building\n\n```bash\nnpm run build\n```\n\n#### Tests\n\n- Edit tests in `./test/tests`\n- Run the tests:\n\n  ```bash\n  npm run test\n  ```\n\n#### Testing with different/multiple browsers\n\n```bash\nnpm run karma -- --browser=PhantomJS\nnpm run karma -- --browser=Chrome\nnpm run karma -- --browser=Safari\nnpm run karma -- --browser=Firefox\nnpm run karma -- --browser=PhantomJS,Chrome,Safari,Firefox\n```\n\n#### Keeping the browser open after tests\n\n```bash\nnpm run karma -- --browser=Chrome --keep-open\n```\n\n#### Publishing\n\n##### Before you publish for the first time:\n\n- Delete the example code in `./src`, `./test/tests` and `./demo`\n- Edit the module name in `package.json`\n- Edit `README.md` and `CONTRIBUTING.md`\n\n##### Then:\n\n- Publish your code: `npm run release` to add a patch\n  - Or `npm run release:path`, `npm run release:minor`, `npm run release:major`",
+    "readmeFilename": "README.md"
+}

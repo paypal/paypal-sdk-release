@@ -1,0 +1,1696 @@
+{
+    "_id": "credit-card-type",
+    "_rev": "30-3b6ebdfce98de748018bbb0512085253",
+    "name": "credit-card-type",
+    "description": "A library for determining credit card type",
+    "dist-tags": {
+        "latest": "9.0.0"
+    },
+    "versions": {
+        "0.0.1": {
+            "name": "credit-card-type",
+            "version": "0.0.1",
+            "description": "A library for determining credit card type",
+            "main": "index.js",
+            "scripts": {
+                "test": "gulp lint && mocha test/**/*.js",
+                "build": "gulp build"
+            },
+            "author": "",
+            "license": "MIT",
+            "devDependencies": {
+                "browserify": "^6.1.0",
+                "chai": "^2.1.2",
+                "del": "^1.1.0",
+                "gulp": "^3.8.8",
+                "gulp-eslint": "^0.6.0",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^1.0.2",
+                "gulp-watch": "^0.6.8",
+                "karma": "^0.12.31",
+                "karma-browserify": "^4.0.0",
+                "karma-chai-sinon": "^0.1.4",
+                "karma-es5-shim": "0.0.4",
+                "karma-mocha": "^0.1.10",
+                "karma-phantomjs-launcher": "^0.1.4",
+                "mocha": "^2.2.1",
+                "phantomjs": "^1.9.16",
+                "sinon": "^1.14.1",
+                "sinon-chai": "^2.7.0",
+                "vinyl-source-stream": "^1.0.0"
+            },
+            "dependencies": {
+                "lodash.clonedeep": "^3.0.0",
+                "lodash.isstring": "^3.0.1"
+            },
+            "gitHead": "554eb02ce1535b66149e2fe7f8727ed9b88962e1",
+            "_id": "credit-card-type@0.0.1",
+            "_shasum": "810da75e83b272f470eb5fbe614f22f48c6a5fda",
+            "_from": ".",
+            "_npmVersion": "1.4.28",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "code@getbraintree.com"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "code@getbraintree.com"
+                }
+            ],
+            "dist": {
+                "shasum": "810da75e83b272f470eb5fbe614f22f48c6a5fda",
+                "tarball": "https://registry.npmjs.org/credit-card-type/-/credit-card-type-0.0.1.tgz"
+            },
+            "directories": {}
+        },
+        "1.0.0": {
+            "name": "credit-card-type",
+            "version": "1.0.0",
+            "description": "A library for determining credit card type",
+            "main": "index.js",
+            "scripts": {
+                "test": "gulp lint && mocha test/**/*.js",
+                "build": "gulp build"
+            },
+            "author": "",
+            "license": "MIT",
+            "devDependencies": {
+                "browserify": "^6.1.0",
+                "chai": "^2.1.2",
+                "del": "^1.1.0",
+                "gulp": "^3.8.8",
+                "gulp-eslint": "^0.6.0",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^1.0.2",
+                "gulp-watch": "^0.6.8",
+                "karma": "^0.12.31",
+                "karma-browserify": "^4.0.0",
+                "karma-chai-sinon": "^0.1.4",
+                "karma-es5-shim": "0.0.4",
+                "karma-mocha": "^0.1.10",
+                "karma-phantomjs-launcher": "^0.1.4",
+                "mocha": "^2.2.1",
+                "phantomjs": "^1.9.16",
+                "sinon": "^1.14.1",
+                "sinon-chai": "^2.7.0",
+                "vinyl-source-stream": "^1.0.0"
+            },
+            "dependencies": {
+                "lodash.clonedeep": "^3.0.0",
+                "lodash.isstring": "^3.0.1"
+            },
+            "gitHead": "2405d12b158dc5bcd06bf06d9586473cb978e1b7",
+            "_id": "credit-card-type@1.0.0",
+            "_shasum": "37bad9d93bc5be9099078d6983b849386ffa9d5b",
+            "_from": ".",
+            "_npmVersion": "1.4.28",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "code@getbraintree.com"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "dist": {
+                "shasum": "37bad9d93bc5be9099078d6983b849386ffa9d5b",
+                "tarball": "https://registry.npmjs.org/credit-card-type/-/credit-card-type-1.0.0.tgz"
+            },
+            "directories": {}
+        },
+        "2.0.0": {
+            "name": "credit-card-type",
+            "version": "2.0.0",
+            "description": "A library for determining credit card type",
+            "main": "index.js",
+            "scripts": {
+                "test": "gulp lint && mocha test/**/*.js",
+                "build": "gulp build"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git@github.com:braintree/credit-card-type"
+            },
+            "homepage": "https://github.com/braintree/credit-card-type",
+            "author": "",
+            "license": "MIT",
+            "devDependencies": {
+                "browserify": "^6.1.0",
+                "chai": "^2.1.2",
+                "del": "^1.1.0",
+                "gulp": "^3.8.8",
+                "gulp-eslint": "^0.6.0",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^1.0.2",
+                "gulp-watch": "^0.6.8",
+                "karma": "^0.12.31",
+                "karma-browserify": "^4.0.0",
+                "karma-chai-sinon": "^0.1.4",
+                "karma-es5-shim": "0.0.4",
+                "karma-mocha": "^0.1.10",
+                "karma-phantomjs-launcher": "^0.1.4",
+                "mocha": "^2.2.1",
+                "phantomjs": "^1.9.16",
+                "sinon": "^1.14.1",
+                "sinon-chai": "^2.7.0",
+                "vinyl-source-stream": "^1.0.0"
+            },
+            "dependencies": {
+                "lodash.clonedeep": "^3.0.0",
+                "lodash.isstring": "^3.0.1"
+            },
+            "gitHead": "10933eb5a2cc8a94f9b295b2fbfcbcc8f71c1349",
+            "bugs": {
+                "url": "https://github.com/braintree/credit-card-type/issues"
+            },
+            "_id": "credit-card-type@2.0.0",
+            "_shasum": "f449c5660e23e1f830b64bb0c566a6e876fe9f27",
+            "_from": ".",
+            "_npmVersion": "1.4.28",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "dist": {
+                "shasum": "f449c5660e23e1f830b64bb0c566a6e876fe9f27",
+                "tarball": "https://registry.npmjs.org/credit-card-type/-/credit-card-type-2.0.0.tgz"
+            },
+            "directories": {}
+        },
+        "3.0.0": {
+            "name": "credit-card-type",
+            "version": "3.0.0",
+            "description": "A library for determining credit card type",
+            "main": "index.js",
+            "scripts": {
+                "test": "gulp lint && mocha test/**/*.js",
+                "build": "gulp build"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git@github.com:braintree/credit-card-type"
+            },
+            "homepage": "https://github.com/braintree/credit-card-type",
+            "author": "",
+            "license": "MIT",
+            "devDependencies": {
+                "browserify": "^6.1.0",
+                "chai": "^2.1.2",
+                "del": "^1.1.0",
+                "gulp": "^3.8.8",
+                "gulp-eslint": "^0.14.0",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^1.0.2",
+                "gulp-watch": "^0.6.8",
+                "karma": "^0.12.31",
+                "karma-browserify": "^4.0.0",
+                "karma-chai-sinon": "^0.1.4",
+                "karma-es5-shim": "0.0.4",
+                "karma-mocha": "^0.1.10",
+                "karma-phantomjs-launcher": "^0.1.4",
+                "mocha": "^2.2.1",
+                "phantomjs": "^1.9.16",
+                "sinon": "^1.14.1",
+                "sinon-chai": "^2.7.0",
+                "vinyl-source-stream": "^1.0.0"
+            },
+            "dependencies": {
+                "lodash.clonedeep": "^3.0.0",
+                "lodash.isstring": "^3.0.1"
+            },
+            "gitHead": "c7c995a9ce1aa0d15f56ffa77d164b77746edfff",
+            "bugs": {
+                "url": "https://github.com/braintree/credit-card-type/issues"
+            },
+            "_id": "credit-card-type@3.0.0",
+            "_shasum": "08b291a26c81828cf6b5e95cdba976b4078fd963",
+            "_from": ".",
+            "_npmVersion": "1.4.28",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "dist": {
+                "shasum": "08b291a26c81828cf6b5e95cdba976b4078fd963",
+                "tarball": "https://registry.npmjs.org/credit-card-type/-/credit-card-type-3.0.0.tgz"
+            },
+            "directories": {}
+        },
+        "4.0.0": {
+            "name": "credit-card-type",
+            "version": "4.0.0",
+            "description": "A library for determining credit card type",
+            "main": "index.js",
+            "scripts": {
+                "test": "gulp lint && mocha test/**/*.js",
+                "build": "gulp build"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git@github.com:braintree/credit-card-type"
+            },
+            "homepage": "https://github.com/braintree/credit-card-type",
+            "author": "",
+            "license": "MIT",
+            "devDependencies": {
+                "browserify": "^6.1.0",
+                "chai": "^2.1.2",
+                "del": "^1.1.0",
+                "gulp": "^3.8.8",
+                "gulp-eslint": "^0.14.0",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^1.0.2",
+                "gulp-watch": "^0.6.8",
+                "karma": "^0.12.31",
+                "karma-browserify": "^4.0.0",
+                "karma-chai-sinon": "^0.1.4",
+                "karma-es5-shim": "0.0.4",
+                "karma-mocha": "^0.1.10",
+                "karma-phantomjs-launcher": "^0.1.4",
+                "mocha": "^2.2.1",
+                "phantomjs": "^1.9.16",
+                "sinon": "^1.14.1",
+                "sinon-chai": "^2.7.0",
+                "vinyl-source-stream": "^1.0.0"
+            },
+            "dependencies": {
+                "lodash.clonedeep": "^3.0.0",
+                "lodash.isstring": "^3.0.1"
+            },
+            "gitHead": "8d37a36e7dea13bfe87afb9d136ae7e38f412590",
+            "bugs": {
+                "url": "https://github.com/braintree/credit-card-type/issues"
+            },
+            "_id": "credit-card-type@4.0.0",
+            "_shasum": "38f403733bd7222db01b40d716da7703b9475ac1",
+            "_from": ".",
+            "_npmVersion": "1.4.28",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "dist": {
+                "shasum": "38f403733bd7222db01b40d716da7703b9475ac1",
+                "tarball": "https://registry.npmjs.org/credit-card-type/-/credit-card-type-4.0.0.tgz"
+            },
+            "directories": {}
+        },
+        "4.0.1": {
+            "name": "credit-card-type",
+            "version": "4.0.1",
+            "description": "A library for determining credit card type",
+            "main": "index.js",
+            "scripts": {
+                "test": "gulp lint && mocha test/**/*.js",
+                "build": "gulp build"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/credit-card-type.git"
+            },
+            "homepage": "https://github.com/braintree/credit-card-type",
+            "author": "",
+            "license": "MIT",
+            "devDependencies": {
+                "browserify": "^6.1.0",
+                "chai": "^2.1.2",
+                "del": "^1.1.0",
+                "gulp": "^3.8.8",
+                "gulp-eslint": "^0.14.0",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^1.0.2",
+                "gulp-watch": "^0.6.8",
+                "karma": "^0.12.31",
+                "karma-browserify": "^4.0.0",
+                "karma-chai-sinon": "^0.1.4",
+                "karma-es5-shim": "0.0.4",
+                "karma-mocha": "^0.1.10",
+                "karma-phantomjs-launcher": "^0.1.4",
+                "mocha": "^2.2.1",
+                "phantomjs": "^1.9.16",
+                "sinon": "^1.14.1",
+                "sinon-chai": "^2.7.0",
+                "vinyl-source-stream": "^1.0.0"
+            },
+            "dependencies": {
+                "lodash": "3.10.1"
+            },
+            "gitHead": "3ed22f6555391a9d084c5aba03cb47924a518fe9",
+            "bugs": {
+                "url": "https://github.com/braintree/credit-card-type/issues"
+            },
+            "_id": "credit-card-type@4.0.1",
+            "_shasum": "67d67ae163714c1eb115024bda1c97e98fccf7d0",
+            "_from": ".",
+            "_npmVersion": "2.14.7",
+            "_nodeVersion": "0.10.36",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "67d67ae163714c1eb115024bda1c97e98fccf7d0",
+                "tarball": "https://registry.npmjs.org/credit-card-type/-/credit-card-type-4.0.1.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "directories": {}
+        },
+        "4.0.2": {
+            "name": "credit-card-type",
+            "version": "4.0.2",
+            "description": "A library for determining credit card type",
+            "main": "index.js",
+            "scripts": {
+                "lint": "eslint .",
+                "test": "npm run lint && mocha test/**/*.js",
+                "build": "npm run lint && gulp build"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/credit-card-type.git"
+            },
+            "homepage": "https://github.com/braintree/credit-card-type",
+            "author": "",
+            "license": "MIT",
+            "devDependencies": {
+                "browserify": "^6.1.0",
+                "chai": "^2.1.2",
+                "del": "^1.1.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.0",
+                "gulp": "^3.8.8",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^1.0.2",
+                "gulp-watch": "^0.6.8",
+                "mocha": "^2.2.1",
+                "sinon": "^1.14.1",
+                "sinon-chai": "^2.7.0",
+                "vinyl-source-stream": "^1.0.0"
+            },
+            "gitHead": "5ea6067328f9db49852ba16f41c541f673e1c618",
+            "bugs": {
+                "url": "https://github.com/braintree/credit-card-type/issues"
+            },
+            "_id": "credit-card-type@4.0.2",
+            "_shasum": "4fdad507fea5fc16387048b4ab7db3af7af7ffec",
+            "_from": ".",
+            "_npmVersion": "2.15.1",
+            "_nodeVersion": "4.4.3",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "dist": {
+                "shasum": "4fdad507fea5fc16387048b4ab7db3af7af7ffec",
+                "tarball": "https://registry.npmjs.org/credit-card-type/-/credit-card-type-4.0.2.tgz"
+            },
+            "_npmOperationalInternal": {
+                "host": "packages-16-east.internal.npmjs.com",
+                "tmp": "tmp/credit-card-type-4.0.2.tgz_1461865213788_0.19050306593999267"
+            },
+            "directories": {}
+        },
+        "4.0.3": {
+            "name": "credit-card-type",
+            "version": "4.0.3",
+            "description": "A library for determining credit card type",
+            "main": "index.js",
+            "scripts": {
+                "lint": "eslint .",
+                "test": "npm run lint && mocha test/**/*.js",
+                "build": "npm run lint && gulp build"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git@github.com:braintree/credit-card-type"
+            },
+            "homepage": "https://github.com/braintree/credit-card-type",
+            "author": "",
+            "license": "MIT",
+            "devDependencies": {
+                "browserify": "^6.1.0",
+                "chai": "^2.1.2",
+                "del": "^1.1.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.0",
+                "gulp": "^3.8.8",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^1.0.2",
+                "gulp-watch": "^0.6.8",
+                "mocha": "^2.2.1",
+                "sinon": "^1.14.1",
+                "sinon-chai": "^2.7.0",
+                "vinyl-source-stream": "^1.0.0"
+            },
+            "gitHead": "17726faa6846d0330a5bb66118f2912d7958ef1a",
+            "bugs": {
+                "url": "https://github.com/braintree/credit-card-type/issues"
+            },
+            "_id": "credit-card-type@4.0.3",
+            "_shasum": "346ba36a4e189bce310f5cb27e8eed84266cd004",
+            "_from": ".",
+            "_npmVersion": "1.4.28",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "dist": {
+                "shasum": "346ba36a4e189bce310f5cb27e8eed84266cd004",
+                "tarball": "https://registry.npmjs.org/credit-card-type/-/credit-card-type-4.0.3.tgz"
+            },
+            "_npmOperationalInternal": {
+                "host": "packages-16-east.internal.npmjs.com",
+                "tmp": "tmp/credit-card-type-4.0.3.tgz_1462372284613_0.5808107012417167"
+            },
+            "directories": {}
+        },
+        "4.1.0": {
+            "name": "credit-card-type",
+            "version": "4.1.0",
+            "description": "A library for determining credit card type",
+            "main": "index.js",
+            "scripts": {
+                "lint": "eslint .",
+                "test": "npm run lint && mocha test/**/*.js",
+                "build": "npm run lint && gulp build"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git@github.com:braintree/credit-card-type"
+            },
+            "homepage": "https://github.com/braintree/credit-card-type",
+            "author": "",
+            "license": "MIT",
+            "devDependencies": {
+                "browserify": "^6.1.0",
+                "chai": "^2.1.2",
+                "del": "^1.1.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.0",
+                "gulp": "^3.8.8",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^1.0.2",
+                "gulp-watch": "^0.6.8",
+                "mocha": "^2.2.1",
+                "sinon": "^1.14.1",
+                "sinon-chai": "^2.7.0",
+                "vinyl-source-stream": "^1.0.0"
+            },
+            "gitHead": "0fb3db9d3465f15a990a1c01154e9ac564b23d47",
+            "bugs": {
+                "url": "https://github.com/braintree/credit-card-type/issues"
+            },
+            "_id": "credit-card-type@4.1.0",
+            "_shasum": "c6f4688fed64b2d85589d7c49e4bec405b0fa3b0",
+            "_from": ".",
+            "_npmVersion": "1.4.28",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "dist": {
+                "shasum": "c6f4688fed64b2d85589d7c49e4bec405b0fa3b0",
+                "tarball": "https://registry.npmjs.org/credit-card-type/-/credit-card-type-4.1.0.tgz"
+            },
+            "_npmOperationalInternal": {
+                "host": "packages-12-west.internal.npmjs.com",
+                "tmp": "tmp/credit-card-type-4.1.0.tgz_1467418601577_0.31115533597767353"
+            },
+            "directories": {}
+        },
+        "5.0.0": {
+            "name": "credit-card-type",
+            "version": "5.0.0",
+            "description": "A library for determining credit card type",
+            "main": "index.js",
+            "scripts": {
+                "lint": "eslint .",
+                "test": "npm run lint && mocha test/**/*.js",
+                "build": "npm run lint && gulp build"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/credit-card-type.git"
+            },
+            "homepage": "https://github.com/braintree/credit-card-type",
+            "author": "",
+            "license": "MIT",
+            "devDependencies": {
+                "browserify": "^6.1.0",
+                "chai": "^2.1.2",
+                "del": "^1.1.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.0",
+                "gulp": "^3.8.8",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^1.0.2",
+                "gulp-watch": "^0.6.8",
+                "mocha": "^3.0.0",
+                "sinon": "^1.14.1",
+                "sinon-chai": "^2.7.0",
+                "vinyl-source-stream": "^1.0.0"
+            },
+            "gitHead": "f188a04ba825974e71b5eed01867a156daecdc41",
+            "bugs": {
+                "url": "https://github.com/braintree/credit-card-type/issues"
+            },
+            "_id": "credit-card-type@5.0.0",
+            "_shasum": "a1a4a1e7e21ee53c773fe5fb15267a28879cabee",
+            "_from": ".",
+            "_npmVersion": "2.15.9",
+            "_nodeVersion": "4.5.0",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "a1a4a1e7e21ee53c773fe5fb15267a28879cabee",
+                "tarball": "https://registry.npmjs.org/credit-card-type/-/credit-card-type-5.0.0.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "packages-12-west.internal.npmjs.com",
+                "tmp": "tmp/credit-card-type-5.0.0.tgz_1474061298517_0.6314814579673111"
+            },
+            "directories": {}
+        },
+        "5.0.1": {
+            "name": "credit-card-type",
+            "version": "5.0.1",
+            "description": "A library for determining credit card type",
+            "main": "index.js",
+            "scripts": {
+                "lint": "eslint .",
+                "test": "npm run lint && mocha test/**/*.js",
+                "build": "npm run lint && gulp build"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/credit-card-type.git"
+            },
+            "homepage": "https://github.com/braintree/credit-card-type",
+            "author": "",
+            "license": "MIT",
+            "devDependencies": {
+                "browserify": "^6.1.0",
+                "chai": "^2.1.2",
+                "del": "^1.1.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.0",
+                "gulp": "^3.8.8",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^1.0.2",
+                "mocha": "^3.0.0",
+                "vinyl-source-stream": "^1.0.0"
+            },
+            "gitHead": "d08a1f794a4f2da2426e294a3669b4fc94436a5c",
+            "bugs": {
+                "url": "https://github.com/braintree/credit-card-type/issues"
+            },
+            "_id": "credit-card-type@5.0.1",
+            "_shasum": "0e35efa17c7d36ea44c659de992b1d13072a587b",
+            "_from": ".",
+            "_npmVersion": "3.10.10",
+            "_nodeVersion": "6.9.5",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "0e35efa17c7d36ea44c659de992b1d13072a587b",
+                "tarball": "https://registry.npmjs.org/credit-card-type/-/credit-card-type-5.0.1.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "packages-12-west.internal.npmjs.com",
+                "tmp": "tmp/credit-card-type-5.0.1.tgz_1486416627063_0.6167341859545559"
+            },
+            "directories": {}
+        },
+        "5.0.2": {
+            "name": "credit-card-type",
+            "version": "5.0.2",
+            "description": "A library for determining credit card type",
+            "main": "index.js",
+            "scripts": {
+                "lint": "eslint .",
+                "test": "npm run lint && mocha test/**/*.js",
+                "build": "npm run lint && gulp build"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/credit-card-type.git"
+            },
+            "homepage": "https://github.com/braintree/credit-card-type",
+            "author": "",
+            "license": "MIT",
+            "devDependencies": {
+                "browserify": "^6.1.0",
+                "chai": "^2.1.2",
+                "del": "^1.1.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.0",
+                "gulp": "^3.8.8",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^1.0.2",
+                "mocha": "^3.0.0",
+                "vinyl-source-stream": "^1.0.0"
+            },
+            "gitHead": "95ac1d7e49dc006e14d904a04ac85fb6709ef575",
+            "bugs": {
+                "url": "https://github.com/braintree/credit-card-type/issues"
+            },
+            "_id": "credit-card-type@5.0.2",
+            "_shasum": "c6fa93830cbfdfc2b53b9e849d019c48f2884da3",
+            "_from": ".",
+            "_npmVersion": "2.14.12",
+            "_nodeVersion": "4.3.1",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "c6fa93830cbfdfc2b53b9e849d019c48f2884da3",
+                "tarball": "https://registry.npmjs.org/credit-card-type/-/credit-card-type-5.0.2.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/credit-card-type-5.0.2.tgz_1495642994931_0.5110752996988595"
+            },
+            "directories": {}
+        },
+        "5.0.3": {
+            "name": "credit-card-type",
+            "version": "5.0.3",
+            "description": "A library for determining credit card type",
+            "main": "index.js",
+            "scripts": {
+                "lint": "eslint .",
+                "test": "npm run lint && mocha test/**/*.js",
+                "build": "npm run lint && gulp build"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/credit-card-type.git"
+            },
+            "homepage": "https://github.com/braintree/credit-card-type",
+            "author": "",
+            "license": "MIT",
+            "devDependencies": {
+                "browserify": "^6.1.0",
+                "chai": "^2.1.2",
+                "del": "^1.1.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.0",
+                "gulp": "^3.8.8",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^1.0.2",
+                "mocha": "^3.0.0",
+                "vinyl-source-stream": "^1.0.0"
+            },
+            "gitHead": "65a2593ed9310370cf1533a1a267ce87af503d08",
+            "bugs": {
+                "url": "https://github.com/braintree/credit-card-type/issues"
+            },
+            "_id": "credit-card-type@5.0.3",
+            "_shasum": "2122f0191920e278c15518dd43ef3abb3f69359d",
+            "_from": ".",
+            "_npmVersion": "3.10.10",
+            "_nodeVersion": "6.11.0",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "2122f0191920e278c15518dd43ef3abb3f69359d",
+                "tarball": "https://registry.npmjs.org/credit-card-type/-/credit-card-type-5.0.3.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/credit-card-type-5.0.3.tgz_1498231872394_0.913502843817696"
+            },
+            "directories": {}
+        },
+        "5.0.4": {
+            "name": "credit-card-type",
+            "version": "5.0.4",
+            "description": "A library for determining credit card type",
+            "main": "index.js",
+            "scripts": {
+                "lint": "eslint .",
+                "test": "npm run lint && mocha test/**/*.js",
+                "build": "npm run lint && gulp build"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/credit-card-type.git"
+            },
+            "homepage": "https://github.com/braintree/credit-card-type",
+            "author": "",
+            "license": "MIT",
+            "devDependencies": {
+                "browserify": "^6.1.0",
+                "chai": "^2.1.2",
+                "del": "^1.1.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.0",
+                "gulp": "^3.8.8",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^1.0.2",
+                "mocha": "^3.0.0",
+                "vinyl-source-stream": "^1.0.0"
+            },
+            "gitHead": "902bfc8151fcccf4ad8e2ec735e900a1d2105a5a",
+            "bugs": {
+                "url": "https://github.com/braintree/credit-card-type/issues"
+            },
+            "_id": "credit-card-type@5.0.4",
+            "_shasum": "2dd9df280411ce2bb91ed95ac31e814605717aed",
+            "_from": ".",
+            "_npmVersion": "3.10.10",
+            "_nodeVersion": "6.11.2",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "2dd9df280411ce2bb91ed95ac31e814605717aed",
+                "tarball": "https://registry.npmjs.org/credit-card-type/-/credit-card-type-5.0.4.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/credit-card-type-5.0.4.tgz_1503004427126_0.3959196691866964"
+            },
+            "directories": {}
+        },
+        "6.0.0": {
+            "name": "credit-card-type",
+            "version": "6.0.0",
+            "description": "A library for determining credit card type",
+            "main": "index.js",
+            "scripts": {
+                "lint": "eslint .",
+                "test": "npm run lint && mocha test/**/*.js",
+                "build": "npm run lint && gulp build"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/credit-card-type.git"
+            },
+            "homepage": "https://github.com/braintree/credit-card-type",
+            "author": "",
+            "license": "MIT",
+            "devDependencies": {
+                "browserify": "^6.1.0",
+                "chai": "^2.1.2",
+                "del": "^1.1.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.0",
+                "gulp": "^3.8.8",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^1.0.2",
+                "mocha": "^3.0.0",
+                "vinyl-source-stream": "^1.0.0"
+            },
+            "gitHead": "c169e1988577d3a2286ea0a1d4f4a32852e1e8b4",
+            "bugs": {
+                "url": "https://github.com/braintree/credit-card-type/issues"
+            },
+            "_id": "credit-card-type@6.0.0",
+            "_shasum": "02e3c3320d493109470269ecd1f73ad53769c607",
+            "_from": ".",
+            "_npmVersion": "3.10.10",
+            "_nodeVersion": "6.11.4",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "02e3c3320d493109470269ecd1f73ad53769c607",
+                "tarball": "https://registry.npmjs.org/credit-card-type/-/credit-card-type-6.0.0.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/credit-card-type-6.0.0.tgz_1508341378749_0.808028447907418"
+            },
+            "directories": {}
+        },
+        "6.1.0": {
+            "name": "credit-card-type",
+            "version": "6.1.0",
+            "description": "A library for determining credit card type",
+            "main": "index.js",
+            "scripts": {
+                "lint": "eslint .",
+                "test": "npm run lint && mocha test/**/*.js",
+                "build": "npm run lint && gulp build"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/credit-card-type.git"
+            },
+            "homepage": "https://github.com/braintree/credit-card-type",
+            "author": "",
+            "license": "MIT",
+            "devDependencies": {
+                "browserify": "^6.1.0",
+                "chai": "^2.1.2",
+                "del": "^1.1.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.0",
+                "gulp": "^3.8.8",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^1.0.2",
+                "mocha": "^3.0.0",
+                "vinyl-source-stream": "^1.0.0"
+            },
+            "gitHead": "9ff00528b709a861ed702694156739d7695a441b",
+            "bugs": {
+                "url": "https://github.com/braintree/credit-card-type/issues"
+            },
+            "_id": "credit-card-type@6.1.0",
+            "_shasum": "f1acd3d47cf8202a66b60a9c90cbf9738d57ef40",
+            "_from": ".",
+            "_npmVersion": "3.10.10",
+            "_nodeVersion": "6.12.0",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "f1acd3d47cf8202a66b60a9c90cbf9738d57ef40",
+                "tarball": "https://registry.npmjs.org/credit-card-type/-/credit-card-type-6.1.0.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/credit-card-type-6.1.0.tgz_1510584669163_0.8218809235841036"
+            },
+            "directories": {}
+        },
+        "6.1.1": {
+            "name": "credit-card-type",
+            "version": "6.1.1",
+            "description": "A library for determining credit card type",
+            "main": "index.js",
+            "scripts": {
+                "lint": "eslint .",
+                "test": "npm run lint && mocha test/**/*.js",
+                "build": "npm run lint && gulp build"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/credit-card-type.git"
+            },
+            "homepage": "https://github.com/braintree/credit-card-type",
+            "author": "",
+            "license": "MIT",
+            "devDependencies": {
+                "browserify": "^6.1.0",
+                "chai": "^2.1.2",
+                "del": "^1.1.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.0",
+                "gulp": "^3.8.8",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^1.0.2",
+                "mocha": "^3.0.0",
+                "vinyl-source-stream": "^1.0.0"
+            },
+            "gitHead": "2b36b2405ee1dd2dc9802db1553795d8dcb811c5",
+            "bugs": {
+                "url": "https://github.com/braintree/credit-card-type/issues"
+            },
+            "_id": "credit-card-type@6.1.1",
+            "_shasum": "f6e5ac1ab20609c793790c5b5488a900633d8a60",
+            "_from": ".",
+            "_npmVersion": "3.10.10",
+            "_nodeVersion": "6.12.3",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "f6e5ac1ab20609c793790c5b5488a900633d8a60",
+                "tarball": "https://registry.npmjs.org/credit-card-type/-/credit-card-type-6.1.1.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/credit-card-type-6.1.1.tgz_1516997548790_0.04107136419042945"
+            },
+            "directories": {}
+        },
+        "6.2.0": {
+            "name": "credit-card-type",
+            "version": "6.2.0",
+            "description": "A library for determining credit card type",
+            "main": "index.js",
+            "scripts": {
+                "lint": "eslint .",
+                "test": "npm run lint && mocha test/**/*.js",
+                "build": "npm run lint && gulp build"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/credit-card-type.git"
+            },
+            "homepage": "https://github.com/braintree/credit-card-type",
+            "author": "",
+            "license": "MIT",
+            "devDependencies": {
+                "browserify": "^6.1.0",
+                "chai": "^2.1.2",
+                "del": "^1.1.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.0",
+                "gulp": "^3.8.8",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^1.0.2",
+                "mocha": "^3.0.0",
+                "vinyl-source-stream": "^1.0.0"
+            },
+            "gitHead": "d8f9a2affdbd1347267fe67ef076cbc348bf3711",
+            "bugs": {
+                "url": "https://github.com/braintree/credit-card-type/issues"
+            },
+            "_id": "credit-card-type@6.2.0",
+            "_shasum": "1b7cc4abb8860f089bdfe7b6ca5654327933a19e",
+            "_from": ".",
+            "_npmVersion": "3.10.10",
+            "_nodeVersion": "6.12.3",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "1b7cc4abb8860f089bdfe7b6ca5654327933a19e",
+                "tarball": "https://registry.npmjs.org/credit-card-type/-/credit-card-type-6.2.0.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/credit-card-type_6.2.0_1517977363720_0.9360480919325564"
+            }
+        },
+        "6.3.0": {
+            "name": "credit-card-type",
+            "version": "6.3.0",
+            "description": "A library for determining credit card type",
+            "main": "index.js",
+            "scripts": {
+                "lint": "eslint .",
+                "test": "npm run lint && mocha test/**/*.js",
+                "build": "npm run lint && gulp build"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/credit-card-type.git"
+            },
+            "homepage": "https://github.com/braintree/credit-card-type",
+            "author": "",
+            "license": "MIT",
+            "devDependencies": {
+                "browserify": "^6.1.0",
+                "chai": "^2.1.2",
+                "del": "^1.1.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.0",
+                "gulp": "^3.8.8",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^1.0.2",
+                "mocha": "^3.0.0",
+                "vinyl-source-stream": "^1.0.0"
+            },
+            "gitHead": "020373e89f76cd068604f5b209956cd6549c9e73",
+            "bugs": {
+                "url": "https://github.com/braintree/credit-card-type/issues"
+            },
+            "_id": "credit-card-type@6.3.0",
+            "_shasum": "6e6c13e7e592f83b067c24429486a4f250eaa030",
+            "_from": ".",
+            "_npmVersion": "2.14.12",
+            "_nodeVersion": "4.3.1",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "6e6c13e7e592f83b067c24429486a4f250eaa030",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/credit-card-type/tarballs/6.3.0.tgz",
+                "fileCount": 8,
+                "unpackedSize": 28121,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJa1hdPCRA9TVsSAnZWagAABR0P/12iClwKzaMjohWahmVe\nZWcxWSxU+qww1cBkYYobGo6R8O/soku9eJVLEN4iknUbXgGoarexHcmbq3gV\nTAgSbGMe/2cKRfgFwD75U6QT+8tlufqT/GzZ6n/7WA72L3RjbcaotaAYl5T/\nMtX7CGbXI3RlaAnyPIR2wPNkJM0jq8wWhKLsOTfu+wqYzAN4naytHFnCUeRb\nvUTR1CSeUiOVxYXekpfWdUSSgLZ0x1/WPkfKWHpLO1LfBV0tNgGyqeDBid8G\nGLz5U1Dx9VxbCzumgAukndqV3VRz7rKgJ1wZEf5FA5KivQy501SP17Fkk+c2\n2oPT/OmV+TiBdtQcRo3ttTWTqtmoK8tc3Aip/JlbYfP6UC/ef92+2kk+QQvk\noepZSHg6qe8XJYqf9sZk2tEJgghn6lekd5NMhwI+oKzTU33pyHycXWSHvQEa\nVozfhpvyvHHbmx6xlgK86Bv36LggEP3qlQGj3DICEAqXyDx7NbAi/hEoFOY3\nIbvNZoZYHTz+VoiSWHafWcYW7G1q4aDx9xpgTtBWjyZxIc0ipIm5unrGlz2i\nNvA7WSKHGtG50JsPHUavAhl5Lo3qEOMf3gD7xMwx9BEbXAfgBznqi4yYZJ89\nPYSnzX8MMNSkeRBTImdGlqD/8R9d3Vf/GuzJeX3FU42qR5MUEUBZ1+9SXBLx\nM1DJ\r\n=8PqD\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/credit-card-type_6.3.0_1523980110082_0.8060870137527538"
+            },
+            "_hasShrinkwrap": false
+        },
+        "7.0.0": {
+            "name": "credit-card-type",
+            "version": "7.0.0",
+            "description": "A library for determining credit card type",
+            "main": "index.js",
+            "scripts": {
+                "lint": "eslint .",
+                "test": "npm run lint && mocha test/**/*.js",
+                "build": "npm run lint && gulp build"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/credit-card-type.git"
+            },
+            "homepage": "https://github.com/braintree/credit-card-type",
+            "author": "",
+            "license": "MIT",
+            "devDependencies": {
+                "browserify": "^6.1.0",
+                "chai": "^2.1.2",
+                "del": "^1.1.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.0",
+                "gulp": "^3.8.8",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^1.0.2",
+                "mocha": "^3.0.0",
+                "vinyl-source-stream": "^1.0.0"
+            },
+            "gitHead": "c525b8ccfb4ea5274a8942b4e61ac58f8357e163",
+            "bugs": {
+                "url": "https://github.com/braintree/credit-card-type/issues"
+            },
+            "_id": "credit-card-type@7.0.0",
+            "_shasum": "92b693bb24837fb2351f4b16f68ec9c56e13e9ae",
+            "_from": ".",
+            "_npmVersion": "3.10.10",
+            "_nodeVersion": "6.14.2",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "92b693bb24837fb2351f4b16f68ec9c56e13e9ae",
+                "tarball": "https://registry.npmjs.org/credit-card-type/-/credit-card-type-7.0.0.tgz",
+                "fileCount": 8,
+                "unpackedSize": 28144,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJa9elvCRA9TVsSAnZWagAAPvkP/RkHiCw3/Bvb1vfubvgy\naYXHHimN50DIx3cTe4V1HuD5kBVkOMrFmCGtDjWJ1pa1AocjT9wJBY1OJ4Hr\nKRByK4JoDX11cl0/K+lECiHB2W2wIQ5cS2i3wbCiatP7Cmc1bS4rGNO56Dk2\nl9RUNP/K6Y+8mQVc9WNzwr/14kLfqr/LTUh48NgZeIBPa9ceBya99R8ZJRj9\ny7utJdwy9YQC2DC4QC3hN3gbmawotoZuzs1cxqhM0tlcU8AUzCrrEITfs/Lv\n7WgsILmc6SOpq1ZbPbysEzQX2IW8k2/g9ZGxgizxe6k+Do+A6Vj90SkRnFv3\nd0NNB6oSlf+Wc9n/Oz0OjXMfD/RnsQ9ScYB8nlaKtb6oXm2NGfafReT5MMJn\nx2ZrZMa7GxIz/QjpLAN/OD0ehcm9KHbGY77xqdNpFRE0LwubCgLy/0upgte9\nMUXnYn9LcmZ5hMg2HzUMyU6L1Vqiz/bxMh1U8r7KsZ4N7an/Fd20607Lpfzw\nJmczmK//6s4WNuHdCn7CEX/qjWurw52c9i/7U//Ct6VFtA5jvnphI9BAF7gC\nxHaVv8LLId9WP/gl5mQz9KYGLaXTH3MQ5RObGNbtutR4u2bw3R1erCJKNkeh\nvv/VZsstiNE149jYKL69ui/MuVbxw8YIdFdgl++MRP6lPMARPktelTFaCNBg\nxOGb\r\n=J3Ie\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/credit-card-type_7.0.0_1526065518352_0.4321358425124262"
+            },
+            "_hasShrinkwrap": false
+        },
+        "7.1.0": {
+            "name": "credit-card-type",
+            "version": "7.1.0",
+            "description": "A library for determining credit card type",
+            "main": "index.js",
+            "scripts": {
+                "lint": "eslint .",
+                "test": "npm run lint && mocha test/**/*.js",
+                "build": "npm run lint && gulp build"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/credit-card-type.git"
+            },
+            "homepage": "https://github.com/braintree/credit-card-type",
+            "author": "",
+            "license": "MIT",
+            "devDependencies": {
+                "browserify": "^6.1.0",
+                "chai": "^2.1.2",
+                "del": "^1.1.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.0",
+                "gulp": "^3.8.8",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^1.0.2",
+                "mocha": "^3.0.0",
+                "vinyl-source-stream": "^1.0.0"
+            },
+            "gitHead": "aa6661a0a828229032ec90c684af413a227578c9",
+            "bugs": {
+                "url": "https://github.com/braintree/credit-card-type/issues"
+            },
+            "_id": "credit-card-type@7.1.0",
+            "_npmVersion": "6.3.0",
+            "_nodeVersion": "8.9.4",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "integrity": "sha512-ialkYKVSbPLvOSL0ev5SM5ApWJy9lyG8wYLdPbqm5ASSmCQ3Hxr1BWZysIPEWlTQl6fGU0jB8MY58UMtLzI6TA==",
+                "shasum": "8b367c7e5a0bcb59aa12826e684b8963718f2221",
+                "tarball": "https://registry.npmjs.org/credit-card-type/-/credit-card-type-7.1.0.tgz",
+                "fileCount": 8,
+                "unpackedSize": 40224,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbjtQRCRA9TVsSAnZWagAAz/AP/A2PcNC/jGPVZ5CeZMsy\nNNk4Bk/B1ntS2VUfdsjiaFgwdMGXgZeCdDIYMP1Flc2golv6+rt8X0c/zIn0\npj02qm8wB8HiFGrpq0C+zVa/a96QFWf90i9VT+lk6VixBFj5OFZxB+W9jkH3\nGKeWGktIAnwcEq5MJwgJs2eSsWNpxYrjNZ723TsSn62r5pHRxe5mp/36eZD1\nkEHMCg9YaBXTBYEbRkw4iJJNArmBMFvnpzK0PhByW+E1b451Hl5XFyEJmAUw\nfPypcXwgJcqHW/951ldI8XSrM4UzH3FmUtYxyvmH97g0wzmHHbGL0JMtEWcZ\ntQsb9alpuTJAcS/f5NxZKTbbNJHMC6ZcxqiV/AG5reZzlZ3Skm7506T1LvjE\nF6J9WwcetStY3wDZe2YRvPk+Z+fv2dx59cGe5BnK/Xf0FS4GrWiNx9OOiB/9\nzUOqfR1lnEZfb9x3DDW6e0Pxc+Nst+28EENJuWTRej97dJUVwRUsxuQo6GE+\nM1QagdWuhR0HEpZOgaOyYShIbAYD84lcxKJxOwp4kJsYD44oZwEJzjYhu+jU\ntM1qpAFyPq0L0x5fNIg3HzGWJEj0dS8pb/Ndt7/ZG1Xf+lucL4zwJsN3+3Cn\ncj2/NYIfAxTWEOI4HGc5DuP6eC7arRo9vtfrqmOmMzElHfnEfYgdy1VZhxEZ\nJmN5\r\n=JuVy\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/credit-card-type_7.1.0_1536087056700_0.17902039570980555"
+            },
+            "_hasShrinkwrap": false
+        },
+        "8.0.0": {
+            "name": "credit-card-type",
+            "version": "8.0.0",
+            "description": "A library for determining credit card type",
+            "main": "index.js",
+            "scripts": {
+                "lint": "eslint .",
+                "pretest": "npm run lint",
+                "test": "mocha test/**/*.js",
+                "build": "npm run lint && gulp build"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/credit-card-type.git"
+            },
+            "homepage": "https://github.com/braintree/credit-card-type",
+            "author": "",
+            "license": "MIT",
+            "devDependencies": {
+                "browserify": "^6.1.0",
+                "chai": "^2.1.2",
+                "del": "^1.1.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.0",
+                "gulp": "^3.8.8",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^1.0.2",
+                "mocha": "^3.0.0",
+                "vinyl-source-stream": "^1.0.0"
+            },
+            "gitHead": "0aa6a667c32acb2d102e5bae3a9688c9753e5f18",
+            "bugs": {
+                "url": "https://github.com/braintree/credit-card-type/issues"
+            },
+            "_id": "credit-card-type@8.0.0",
+            "_npmVersion": "6.4.0",
+            "_nodeVersion": "8.11.4",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "integrity": "sha512-q3k5fbLJJIkPTBLr03Wo2Ui8cF5vHE8eTT/3K7BUW1ROoyns2vHoglWrzjmU/8JKA0X7JFlYlUVuDRwn7l2ldw==",
+                "shasum": "e65347bcdb979b4deb3107cd43a1cd9da802cd50",
+                "tarball": "https://registry.npmjs.org/credit-card-type/-/credit-card-type-8.0.0.tgz",
+                "fileCount": 8,
+                "unpackedSize": 38582,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbvMbkCRA9TVsSAnZWagAALKMQAIHXqf1OTitgsxgYLBGZ\nKmnpnjWED3dYLFOmj6vM7Fk4y8CmRGh4hJpmezDAuw55TB0Hi+0w3a0HJVhD\ncVnM7JzCVSLy4V/I89gs1DGmimxq213Tho+Hw48iv+GEAUxvqd5fI2LnRxJ1\nM0xR/3X6AO+yu9kJqY75pPL3VHreigq74NcbF+9Y2hsY3P4f89vMkw5Rj7MC\nEYnEhtESklkHdU/vMWcww38apXAxFZkcyq4F4g0iHm4j9Rz/st+IxKxjqaRM\npCaOEAv9SIXsPp6OacRPvYL3BFJkepRVonZULrDzuvruFwOmapSPHDWyZSMD\n9Cf6BrsilWQYMIsz1WcJD+BYC/OBMeSX2f9/rY4FJpA8PFtF0xrTmtR0xv+8\nllBCV1pRf0CgihspiAS5tr4NVFeCD0y8bFoxiHvsNRB6uuu1Uy+frD9gi91A\n/AlLggBZdZHGDQtxo5jJDjcWx3+Wq53KuATAATpe73i6Nc2s35bvcPhHYXEb\nJHZS9yRRGxBoLR2ZqUY3kLdhV5GB9e/9FfTZXwsxH76S9bOJOJ1HMkrTSJF0\n0mXjwLCqpELj/FehQMryPX/yizCU3WZiQSIpP+WkCmGhO1C6CUwlut1lG6Mz\nuKQC0TjdH4Oi2ADSxCCHNVBOCoVvyRwB2UUABvxa4YOTDx0Ss5jQAaCEs4Nq\nEXmd\r\n=kD8Q\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/credit-card-type_8.0.0_1539098339301_0.05011716975329561"
+            },
+            "_hasShrinkwrap": false
+        },
+        "8.1.0": {
+            "name": "credit-card-type",
+            "version": "8.1.0",
+            "description": "A library for determining credit card type",
+            "main": "index.js",
+            "scripts": {
+                "lint": "eslint .",
+                "pretest": "npm run lint",
+                "test": "mocha test/**/*.js",
+                "build": "npm run lint && gulp build"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/credit-card-type.git"
+            },
+            "homepage": "https://github.com/braintree/credit-card-type",
+            "author": "",
+            "license": "MIT",
+            "devDependencies": {
+                "browserify": "^6.1.0",
+                "chai": "^2.1.2",
+                "del": "^1.1.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.0",
+                "gulp": "^3.8.8",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^1.0.2",
+                "mocha": "^3.0.0",
+                "vinyl-source-stream": "^1.0.0"
+            },
+            "gitHead": "49359c747ceff01dc296fe43f38140ca4ae6cb24",
+            "bugs": {
+                "url": "https://github.com/braintree/credit-card-type/issues"
+            },
+            "_id": "credit-card-type@8.1.0",
+            "_npmVersion": "6.4.1",
+            "_nodeVersion": "10.13.0",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "integrity": "sha512-Z2dBLgH04EYiGkOM7phfLFqRPJK42LRTdivOYIZRVQLBZiGswWhw3dbtFhszZQrlGF8vXtAEfm+seAWn4bETLQ==",
+                "shasum": "141ffe6ea6516d6c62357dfd5278e512da06fc43",
+                "tarball": "https://registry.npmjs.org/credit-card-type/-/credit-card-type-8.1.0.tgz",
+                "fileCount": 14,
+                "unpackedSize": 42962,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcSd3DCRA9TVsSAnZWagAACXQQAIRYDKZUwdSxOWoc0k53\nRFhDg3QUtKAi+97mKVx2+6aLVnYHy+bbOeSSPtIZaQdyZYpR2rSbu41lgb0/\nmkMwg4Q5+bO0D5loSYOu/8LemOd/7pl7PgaFpG36/u0BtIoykGDH2eoswueu\nt9KoVqo0S6aZc/VifTeE07o5xK10p9Yme9OyXriYMkIyZO5YEhy7rCJxPe0s\n1fVR0LyHn4OjKeeLeqNkTtvVA/xTAsb0GQCV2vSrunaXi5go58d2FaqMfK9b\nGDdi/eiiskTTLisqnAlXXq+h38KAG8//avKPhyt4kAFCBFXtUeqTIguDtqYk\nsm0FMT7X2DuJYrSj1oLY2BtTqsYVyXnA6tSC579WCJEPj3XY/DwoKDGd6yOu\nGGUI/I7DqCVZfHHM6ppONuENYWkTwz2A3Q7f38jenM+boCyFcx479OlrFhic\nBEZ1YEcOmt5bUdFPGvSV9eUb71N8H69cuXDqi9NGsFEEguDSiuO0v8tMJFSB\nun0H11xEcFqnKHFRCoaxNn6vHZNntJPqFJqLfQ+bmBM2Ox8pb+k7HCtAQZFR\np4i4qY2eKOezNzHSdEbKb3YLko11dnjDoioqTo7sZ+t934IozD3Mc4abeGVi\nT8jZq9dsF4FSUgtzitaBZovkd4xO3SRYAF4ueHG9BHnyhl4aua/0m+ZXbVUp\npiqo\r\n=BDrP\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/credit-card-type_8.1.0_1548344770284_0.4454696066882098"
+            },
+            "_hasShrinkwrap": false
+        },
+        "8.2.0": {
+            "name": "credit-card-type",
+            "version": "8.2.0",
+            "description": "A library for determining credit card type",
+            "main": "index.js",
+            "scripts": {
+                "lint": "eslint .",
+                "pretest": "npm run lint",
+                "test": "mocha test/**/*.js",
+                "build": "npm run lint && gulp build"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/credit-card-type.git"
+            },
+            "homepage": "https://github.com/braintree/credit-card-type",
+            "author": "",
+            "license": "MIT",
+            "devDependencies": {
+                "browserify": "^6.1.0",
+                "chai": "^2.1.2",
+                "del": "^1.1.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.0",
+                "gulp": "^3.8.8",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^1.0.2",
+                "mocha": "^3.0.0",
+                "vinyl-source-stream": "^1.0.0"
+            },
+            "gitHead": "9c944d40b4f4670ec9d9a0b15d9c2a888e69e524",
+            "bugs": {
+                "url": "https://github.com/braintree/credit-card-type/issues"
+            },
+            "_id": "credit-card-type@8.2.0",
+            "_npmVersion": "6.4.1",
+            "_nodeVersion": "10.13.0",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs+npm@getbraintree.com"
+            },
+            "dist": {
+                "integrity": "sha512-+1kZKW717eDTbZ1/EjkEi4+UrD2SygU2Iujn/VlrMHXloGW/y5GqPlQ/KgT4gaoDmWyufBfm/CAzNkpeccfMtA==",
+                "shasum": "507a43b257f0f3b8bd4d4b339a419741fc7e6236",
+                "tarball": "https://registry.npmjs.org/credit-card-type/-/credit-card-type-8.2.0.tgz",
+                "fileCount": 14,
+                "unpackedSize": 43053,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcpA3WCRA9TVsSAnZWagAATxoP/1f1mZ6i57BR37JpDdPP\nq6A/DXVxIuxHXHcWvqMpdSfyimDi1XfDXK9wcDDwTFi7TuGFfegxWM/6sE2i\noTha9t5dc7uMWh5k45p2+BLOCwCNd5X3FzmTe1EVWGzbwZgDaQnJAAefWsYB\nLEKDttCr409VIUJ15vRIWuKqJqWbipsM3PlbVIRBNJ3ZK4/XPOR1SQfJ1NqB\njayWJZMCBMoXB9nW0ZNzGveZqK7vYvXAwIf2Ft08STh9hIBIvD8OZm2YL625\nMmujtnA4cDYhuNFma+p4aMiiarxtQkY3Y7y42EJy2GMyYXwgAPJQ+d4+Dwzx\nazKKxhq/l4kPnvluUNpcHauhj+ovSjjWHVi4sJABkniudsMqtFtEPC0CSzJw\nsElDzAZGdzfmCh4LOJBM2QZhlQ1Rr63V5jnkiJ95f1ioejZJQR42p2L5BYTI\ngTXZ6fZ3tlrKpDHMwWaOO/wKyR1e9umnalosB4nBz2Km51FHl6g8kKV7m0PG\n+x+vCjoYVyumZBapMolxqDqYtiV73i9YgPSlujg2M3Ai8pz+g5cHZ2oxA46r\na4gVL/gQEsHrOgpYkTDXe+thVjhfBzs6cerjoTk6OJq6ezfMvvD7+WLFpiro\nw2IT6wPmw6Ddd7x1O7jI/begcrIsNtL7S7fdx7M8nRBKuObhmLhZufI2yZcx\npIG7\r\n=6Jqo\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/credit-card-type_8.2.0_1554255317978_0.5959108731283178"
+            },
+            "_hasShrinkwrap": false
+        },
+        "8.3.0": {
+            "name": "credit-card-type",
+            "version": "8.3.0",
+            "description": "A library for determining credit card type",
+            "main": "index.js",
+            "scripts": {
+                "lint": "eslint .",
+                "pretest": "npm run lint",
+                "test": "mocha test/**/*.js",
+                "build": "npm run lint && gulp build"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/credit-card-type.git"
+            },
+            "homepage": "https://github.com/braintree/credit-card-type",
+            "author": "",
+            "license": "MIT",
+            "devDependencies": {
+                "browserify": "^16.5.0",
+                "chai": "^4.2.0",
+                "del": "^5.1.0",
+                "eslint": "^6.3.0",
+                "eslint-config-braintree": "^4.0.0",
+                "gulp": "^4.0.2",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^3.0.0",
+                "gulp-streamify": "^1.0.2",
+                "gulp-uglify": "^3.0.2",
+                "mocha": "^6.2.0",
+                "vinyl-source-stream": "^2.0.0"
+            },
+            "gitHead": "763c41dc1c5b60645246f001e7abb19e67529793",
+            "bugs": {
+                "url": "https://github.com/braintree/credit-card-type/issues"
+            },
+            "_id": "credit-card-type@8.3.0",
+            "_nodeVersion": "10.16.2",
+            "_npmVersion": "6.9.0",
+            "dist": {
+                "integrity": "sha512-czfZUpQ7W9CDxZL4yFLb1kFtM/q2lTOY975hL2aO+DC8+GRNDVSXVCHXhVFZPxiUKmQCZbFP8vIhxx5TBQaThw==",
+                "shasum": "f93c187c9362411544158c91d552efcc443aa87a",
+                "tarball": "https://registry.npmjs.org/credit-card-type/-/credit-card-type-8.3.0.tgz",
+                "fileCount": 14,
+                "unpackedSize": 43198,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdcr2ECRA9TVsSAnZWagAA5ZEP/i28Cp7aGohHYVm5jk1A\nhlpuvrLISIL2WRm6nd390NEDBMU3TEe6P4LqbrcwGgr8THOUg90OPtpHxpK2\nvZSQNXGbrcZULHGJ99TtdOfUcToNFDIMYWQOt2qL4Qsh//7dDZO+xxNuskOq\nc2kbH3iI3cNziB5xvh+51LxQBECh5ax5jLUIszY2kK2kv592oijZc83KRjdh\nuaruqDMaVIqBXgCS1e8GF1AJbW9jJ9pM6QHcGtktbyUt1fbFTa8Yd/cIF2lQ\nxdeLKz4CVC+oUuGdE0XlKBkc4/oL1fRo0G5k+t11F2drmqf2LYQkgQWrPZss\nx8Gpi11ej9ISaEIFtnN/dkdMN+AaIcrtuqmKth5khmP0DgTz5Kbju0fnnkUK\nEdw+CAYWMNw0KkiI5cQ8VxTYM7JorLWXCFLWRbzZvrRq2zlfJU8Qoarj8onF\n+olfIbTFNT3YEstnQ7GtX2i85phfRrjBcqpyXGosmEKo/xzFM7RxHL3Yqv40\nikJfJGvs+pqIZ8z70HmnBoPX5xxdq884vAV4GrstJdhD7/Btwt4rSitUx4nI\nNUjaDgs0YujnoggdC1InWJcMDD3E5iKhXFiRxjTH+eHVmoqByc7R1nDOVnkb\nQZAlGykPy3H5Tmuod9IhrFVfcN7yRmTuZnfQTvX7e3bi1v//pBwiL/eKj+nT\nuVeV\r\n=cemd\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs+npm@getbraintree.com"
+            },
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/credit-card-type_8.3.0_1567800707576_0.437183764861774"
+            },
+            "_hasShrinkwrap": false
+        },
+        "9.0.0": {
+            "name": "credit-card-type",
+            "version": "9.0.0",
+            "description": "A library for determining credit card type",
+            "main": "dist/index.js",
+            "types": "dist/index.d.ts",
+            "scripts": {
+                "lint": "eslint --ext js,ts .",
+                "posttest": "npm run lint",
+                "test": "jest",
+                "prepublishOnly": "npm run build",
+                "prebuild": "prettier --write .",
+                "build": "tsc --declaration"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/credit-card-type.git"
+            },
+            "homepage": "https://github.com/braintree/credit-card-type",
+            "author": "",
+            "license": "MIT",
+            "devDependencies": {
+                "@types/jest": "^25.2.1",
+                "eslint": "^6.8.0",
+                "eslint-config-braintree": "5.0.0-typescript-prep-rc.17",
+                "jest": "^25.3.0",
+                "prettier": "^2.0.4",
+                "ts-jest": "^25.3.1",
+                "typescript": "^3.8.3"
+            },
+            "jest": {
+                "preset": "ts-jest",
+                "testEnvironment": "node",
+                "testPathIgnorePatterns": [
+                    "<rootDir>/src/__tests__/helper.ts"
+                ]
+            },
+            "gitHead": "c5148c4fdc894348f87d0f45e274742abe0157b9",
+            "bugs": {
+                "url": "https://github.com/braintree/credit-card-type/issues"
+            },
+            "_id": "credit-card-type@9.0.0",
+            "_nodeVersion": "12.18.2",
+            "_npmVersion": "6.14.5",
+            "dist": {
+                "integrity": "sha512-+q527CIkkF7U26FXS5nFTs0bSlR8MkDaK210WdPpMuJq32M7KDinQA397/D7xt9AYL0JeZn2ikZWvzY4q7riLg==",
+                "shasum": "484603f142831456a47f56f0bdcd602665060b5e",
+                "tarball": "https://registry.npmjs.org/credit-card-type/-/credit-card-type-9.0.0.tgz",
+                "fileCount": 30,
+                "unpackedSize": 42345,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfCNEzCRA9TVsSAnZWagAAzvYP/0j6DuhGwHclqseDILRx\nvlPyqt5hx/tXd7DLg9qItEC4nhXxaGtdN3GcQgCZw3eGMq7H11O4dqG8I4tT\nTdOVNRMN2+nWqxGtVGKTVMuG/Pihw5EdV4522Rw2CXvuGecYoIjIIZ83MnU6\nKJfJ6EKLzKFt3rXVFng/sWydH8ZaHO0nUbCNgiGdh7wxWehWUpCAUsCQcVmW\noV+keqZDCMZOcUSD7Drb1mK+Y8auOiy4p20l3b698hgKof0zmPMz5Po3aHlz\ncENwF7C0sVynKZq2PtqkEIu5Uq8FB3kQl0B31oHfn36AHvIqkvL9AY7HTx/E\nv0rHUbKUR2g/yE/t9Usj4Lq2oVvy94Isuc8JAKAW56aPQ8fLt/sstrtXXi72\n6oYgRpBIP2qUL2R8jTsc7JqG/0mIsFGYTYWiD0GLg4bQXorggda/x7FJmr7j\nJs26wsrofXjl0CpC3gHAywcnP6GLMyRbVFl7qXLWolwTwm4SiFykCO2iI7K2\ns/VLDo2UaPAreYA5vHfuEY4y/5wSvFrn6D49k0qPr++tVTDryyhmBWwVtidq\nifp0pLk2qsqvbCXz1lrlQX4HgGkLrinBatolq/FSnOmJHRPuHctoHjhmoJuQ\nhYsnJlew67D8NNx0R9vGfZJ5dNQKvdLO2w4BSxW57G4Aww60hkjmZcG6wtyI\nfyvI\r\n=inCt\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmUser": {
+                "name": "braintree",
+                "email": "team-sdk@getbraintree.com"
+            },
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/credit-card-type_9.0.0_1594413362988_0.2975390323772631"
+            },
+            "_hasShrinkwrap": false
+        }
+    },
+    "readme": "# Credit Card Type [![Build Status](https://travis-ci.org/braintree/credit-card-type.svg)](https://travis-ci.org/braintree/credit-card-type) [![npm version](https://badge.fury.io/js/credit-card-type.svg)](http://badge.fury.io/js/credit-card-type) [![Bower](https://badge.fury.io/bo/credit-card-type.svg)](http://badge.fury.io/bo/credit-card-type)\n\nCredit Card Type provides a useful utility method for determining a credit card type from both fully qualified and partial numbers. This is not a validation library but rather a smaller component to help you build your own validation or UI library.\n\nThis library is designed for type-as-you-go detection (supports partial numbers) and is written in CommonJS so you can use it in Node, io.js, and the [browser](http://browserify.org).\n\n## Download\n\nTo install via npm:\n\n```bash\nnpm install credit-card-type\n```\n\n## Example\n\n```javascript\nvar creditCardType = require(\"credit-card-type\");\n\nvar visaCards = creditCardType(\"4111\");\nconsole.log(visaCards[0].type); // 'visa'\n\nvar ambiguousCards = creditCardType(\"6\");\nconsole.log(ambiguousCards.length); // 3\nconsole.log(ambiguousCards[0].niceType); // 'Discover'\nconsole.log(ambiguousCards[1].niceType); // 'UnionPay'\nconsole.log(ambiguousCards[2].niceType); // 'Maestro'\n```\n\n## API\n\n### `creditCardType(number: String)`\n\n`creditCardType` will return an array of objects, each with the following data:\n\n| Key        | Type     | Description                                                                                                                                                                                                                                                                                                                                                                  |\n| ---------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| `niceType` | `String` | A pretty printed representation of the card brand.<br/>- `Visa`<br />- `Mastercard`<br />- `American Express`<br />- `Diners Club`<br />- `Discover`<br />- `JCB`<br />- `UnionPay`<br />- `Maestro`<br />- `Mir`<br />- `Elo`<br />- `Hiper`<br />- `Hipercard`                                                                                                             |\n| `type`     | `String` | A code-friendly presentation of the card brand (useful to class names in CSS). Please refer to Card Type \"Constants\" below for the list of possible values.<br/>- `visa`<br />- `mastercard`<br />- `american-express`<br />- `diners-club`<br />- `discover`<br />- `jcb`<br />- `unionpay`<br />- `maestro`<br />- `mir`<br /> - `elo`<br /> - `hiper`<br /> - `hipercard` |\n| `gaps`     | `Array`  | The expected indices of gaps in a string representation of the card number. For example, in a Visa card, `4111 1111 1111 1111`, there are expected spaces in the 4th, 8th, and 12th positions. This is useful in setting your own formatting rules.                                                                                                                          |\n| `lengths`  | `Array`  | The expected lengths of the card number as an array of strings (excluding spaces and `/` characters).                                                                                                                                                                                                                                                                        |\n| `code`     | `Object` | The information regarding the security code for the determined card. Learn more about the [code object](#code) below.                                                                                                                                                                                                                                                        |\n\nIf no card types are found, this returns an empty array.\n\n### `creditCardType.getTypeInfo(type: String)`\n\n`getTypeInfo` will return a singular object (with the same structure as `creditCardType`) corresponding with the specified `type`, or undefined if the specified `type` is invalid/unknown.\n\n### Card Type \"Constants\"\n\nNamed variables are provided for each of the supported card types:\n\n- `AMERICAN_EXPRESS`\n- `DINERS_CLUB`\n- `DISCOVER`\n- `ELO`\n- `HIPERCARD`\n- `HIPER`\n- `JCB`\n- `MAESTRO`\n- `MASTERCARD`\n- `MIR`\n- `UNIONPAY`\n- `VISA`\n\n#### `code`\n\nCard brands provide different nomenclature for their security codes as well as varying lengths.\n\n| Brand              | Name   | Size |\n| ------------------ | ------ | ---- |\n| `Visa`             | `CVV`  | 3    |\n| `Mastercard`       | `CVC`  | 3    |\n| `American Express` | `CID`  | 4    |\n| `Diners Club`      | `CVV`  | 3    |\n| `Discover`         | `CID`  | 3    |\n| `JCB`              | `CVV`  | 3    |\n| `UnionPay`         | `CVN`  | 3    |\n| `Maestro`          | `CVC`  | 3    |\n| `Mir`              | `CVP2` | 3    |\n| `Elo`              | `CVE`  | 3    |\n| `Hiper`            | `CVC`  | 3    |\n| `Hipercard`        | `CVC`  | 4    |\n\nA full response for a `Visa` card will look like this:\n\n```json\n{\n  \"niceType\": \"Visa\",\n  \"type\": \"visa\",\n  \"gaps\": [4, 8, 12],\n  \"lengths\": [16],\n  \"code\": { \"name\": \"CVV\", \"size\": 3 }\n}\n```\n\n### Advanced Usage\n\nCommonJS:\n\n```javascript\nvar creditCardType = require(\"credit-card-type\");\nvar getTypeInfo = require(\"credit-card-type\").getTypeInfo;\nvar CardType = require(\"credit-card-type\").types;\n```\n\nES6:\n\n```javascript\nimport creditCardType, {\n  getTypeInfo,\n  types as CardType,\n} from \"credit-card-type\";\n```\n\n#### Filtering\n\n```javascript\ncreditCardType(cardNumber).filter(function (card) {\n  return card.type === CardType.MASTERCARD || card.type === CardType.VISA;\n});\n```\n\n#### Pattern Detection\n\nEach card type has a `patterns` attribute that is an array of numbers and ranges of numbers (represented by an array of 2 values, a min and a max).\n\nIf the pattern is a number, the modules compares it against the card number. Partial matches for card numbers that are shorter than the pattern also match. Given the pattern `123`, then the card numbers `1`, `12`, `123`, `1234` will all match, but `2`, `13`, and `124` will not.\n\nIf the pattern is an array of numbers, then the card number is checked to be within the range of those numbers. Again, partial matches are accepted. Given the range `[100, 123]`, then the card numbers `1`, `10`, `100`, `12`, `120`,\n`123` will all match, but `2`, `13`, and `124` will not.\n\nFor detection, the module loops over each card type's `patterns` array, and if a match occurs, that card type is added to the array of results.\n\nIn the case where multiple matches are made, if the entirety of the pattern is matched, the card type with the stronger pattern is preferred. For instance, Visa cards match anything that starts with a 4, but there are\nsome Elo cards that begin with a 4. One example is `401178`. So for the card\nnumbers, `4`, `40`, `401`, `4011`, `40117`, the module will report that this\ncard is _either_ a Visa or an Elo card. Once the card number becomes `401178`,\nthe modules sees that an exact match for the ELO bin has been made, and the module reports\nthat the card can only be an Elo card.\n\n#### Adding Card Types\n\nYou can add additional card brands not supported by the module with `addCard`. Pass in the configuration object.\n\n```javascript\ncreditCardType.addCard({\n  niceType: \"NewCard\",\n  type: \"new-card\",\n  patterns: [2345, 2376],\n  gaps: [4, 8, 12],\n  lengths: [16],\n  code: {\n    name: \"CVV\",\n    size: 3,\n  },\n});\n```\n\nIf you add a card that already exists in the module, it will overwrite it.\n\n```javascript\ncreditCardType.addCard({\n  niceType: \"Visa with Custom Nice Type\",\n  type: creditCardType.types.VISA,\n  patterns: [41111, [44, 47]],\n  gaps: [4, 8, 12],\n  lengths: [13, 16, 19], // add support for old, deprecated 13 digit visas\n  code: {\n    name: \"CVV\",\n    size: 3,\n  },\n});\n```\n\nAdding new cards puts them at the bottom of the priority for testing. Priority is determined by an array. By default, the priority looks like:\n\n```javascript\n[\n  creditCardType.types.VISA,\n  creditCardType.types.MASTERCARD,\n  creditCardType.types.AMERICAN_EXPRESS,\n  creditCardType.types.DINERS_CLUB,\n  creditCardType.types.DISCOVER,\n  creditCardType.types.JCB,\n  creditCardType.types.UNIONPAY,\n  creditCardType.types.MAESTRO,\n  creditCardType.types.ELO,\n  creditCardType.types.MIR,\n  creditCardType.types.HIPER,\n  creditCardType.types.HIPERCARD,\n];\n```\n\nYou can adjust the order using `changeOrder`. The number you pass in as the second argument is where the card is inserted into the array. The closer to the beginning of the array, the higher priority it has.\n\n```javascript\ncreditCardType.changeOrder(\"my-new-card\", 0); // give custom card type the highest priority\ncreditCardType.changeOrder(\"my-new-card\", 3); // give it a priority at position 3 in the test order array\n```\n\nYou can also remove cards with `removeCard`.\n\n```javscript\ncreditCardType.removeCard(creditCardType.types.VISA);\n```\n\nIf you need to reset the modifications you have created, simply call `resetModifications`:\n\n```javascript\ncreditCardType.resetModifications();\n```\n\n#### Updating Card Types\n\nYou can update cards with `updateCard`. Pass in the card type and the configuration object. Any properties left off will inherit from the original card object.\n\n```javascript\ncreditCardType.updateCard(creditCardType.types.VISA, {\n  niceType: \"Fancy Visa\",\n  lengths: [11, 16],\n});\n\nvar visa = creditCardType.getTypeInfo(creditCardType.types.VISA);\n\n// overwritten properties\nvisa.niceType; // 'Fancy Visa'\nvisa.length; // [11, 16]\n\n// unchanged properties\nvisa.gaps; // [4, 8, 12]\nvisa.code.name; // 'CVV'\n```\n\nIf you need to reset the modifications you have created, simply call `resetModifications`:\n\n```javascript\ncreditCardType.resetModifications();\n```\n\n#### Pretty Card Numbers\n\n```javascript\nfunction prettyCardNumber(cardNumber, cardType) {\n  var card = getTypeInfo(cardType);\n\n  if (card) {\n    var offsets = [].concat(0, card.gaps, cardNumber.length);\n    var components = [];\n\n    for (var i = 0; offsets[i] < cardNumber.length; i++) {\n      var start = offsets[i];\n      var end = Math.min(offsets[i + 1], cardNumber.length);\n      components.push(cardNumber.substring(start, end));\n    }\n\n    return components.join(\" \");\n  }\n\n  return cardNumber;\n}\n\nprettyCardNumber(\"xxxxxxxxxx343\", CardType.AMERICAN_EXPRESS); // 'xxxx xxxxxx 343'\n```\n\n### Development\n\nWe use `nvm` for managing our node versions, but you do not have to. Replace any `nvm` references with the tool of your choice below.\n\n```bash\nnvm install\nnpm install\n```\n\nAll testing dependencies will be installed upon `npm install` and the test suite executed with `npm test`.\n",
+    "maintainers": [
+        {
+            "name": "braintree",
+            "email": "devs@getbraintree.com"
+        }
+    ],
+    "time": {
+        "modified": "2020-07-10T20:36:05.961Z",
+        "created": "2015-04-16T22:28:41.048Z",
+        "0.0.1": "2015-04-16T22:28:41.048Z",
+        "1.0.0": "2015-04-16T22:44:42.135Z",
+        "2.0.0": "2015-05-08T16:53:27.451Z",
+        "3.0.0": "2015-06-17T21:12:27.247Z",
+        "4.0.0": "2015-06-18T20:20:34.383Z",
+        "4.0.1": "2015-10-13T20:57:44.008Z",
+        "4.0.2": "2016-04-28T17:40:15.073Z",
+        "4.0.3": "2016-05-04T14:31:25.883Z",
+        "4.1.0": "2016-07-02T00:16:44.099Z",
+        "5.0.0": "2016-09-16T21:28:20.287Z",
+        "5.0.1": "2017-02-06T21:30:29.045Z",
+        "5.0.2": "2017-05-24T16:23:15.934Z",
+        "5.0.3": "2017-06-23T15:31:13.568Z",
+        "5.0.4": "2017-08-17T21:13:48.196Z",
+        "6.0.0": "2017-10-18T15:42:59.717Z",
+        "6.1.0": "2017-11-13T14:51:10.173Z",
+        "6.1.1": "2018-01-26T20:12:29.730Z",
+        "6.2.0": "2018-02-07T04:22:44.413Z",
+        "6.3.0": "2018-04-17T15:48:30.200Z",
+        "7.0.0": "2018-05-11T19:05:18.432Z",
+        "7.1.0": "2018-09-04T18:50:56.900Z",
+        "8.0.0": "2018-10-09T15:18:59.432Z",
+        "8.1.0": "2019-01-24T15:46:10.600Z",
+        "8.2.0": "2019-04-03T01:35:18.176Z",
+        "8.3.0": "2019-09-06T20:11:47.793Z",
+        "9.0.0": "2020-07-10T20:36:03.078Z"
+    },
+    "license": "MIT",
+    "readmeFilename": "README.md",
+    "homepage": "https://github.com/braintree/credit-card-type",
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/braintree/credit-card-type.git"
+    },
+    "bugs": {
+        "url": "https://github.com/braintree/credit-card-type/issues"
+    },
+    "users": {
+        "nichoth": true,
+        "pgabronis": true,
+        "lmyrtil": true,
+        "luhalvesbr": true
+    }
+}

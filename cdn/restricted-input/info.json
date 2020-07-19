@@ -1,0 +1,2689 @@
+{
+    "_id": "restricted-input",
+    "_rev": "28-d33333db146623370a59d0153f4a5c78",
+    "name": "restricted-input",
+    "description": "Restrict inputs to certain valid characters (e.g. formatting phone or card numbers)",
+    "dist-tags": {
+        "latest": "3.0.1"
+    },
+    "versions": {
+        "1.0.0": {
+            "name": "restricted-input",
+            "version": "1.0.0",
+            "description": "Restrict inputs to certain valid characters (e.g. formatting phone or card numbers)",
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com",
+                "url": "https://www.braintreepayments.com/"
+            },
+            "license": "MIT",
+            "main": "main.js",
+            "homepage": "https://github.com/braintree/restricted-input",
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/braintree/restricted-input.git"
+            },
+            "bugs": {
+                "url": "https://github.com/braintree/restricted-input/issues"
+            },
+            "keywords": [
+                "input",
+                "formatting",
+                "filtering",
+                "text",
+                "spacing",
+                "restrict"
+            ],
+            "scripts": {
+                "build": "mkdir -p dist; browserify ./main.js -o dist/restricted-input.js -s RestrictedInput -v",
+                "doc": "jsdoc -r -R README.md -d jsdoc lib/",
+                "doc:watch": "npm run doc && chokidar 'lib/**/*.js' -c 'npm run doc'",
+                "start": "node ./test/support/server.js",
+                "development": "npm run build & npm start & chokidar 'lib/**/*.js' -c 'npm run build; echo $(tput setaf 2)rebuilt$(tput sgr0)'",
+                "lint": "eslint lib test",
+                "test": "npm run lint && karma start config/karma.js --single-run",
+                "test:watch": "karma start config/karma.js",
+                "test:integration": ". ./.env && bundle exec rake sauce:spec test_files=spec",
+                "test:all": "npm run test && npm run test:integration"
+            },
+            "devDependencies": {
+                "browserify": "10.2.4",
+                "chai": "3.0.0",
+                "chokidar-cli": "1.2.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.0",
+                "express": "4.13.0",
+                "jsdoc": "3.4.0",
+                "karma": "0.12.37",
+                "karma-browserify": "4.2.1",
+                "karma-chai-sinon": "0.1.5",
+                "karma-mocha": "0.2.0",
+                "karma-mocha-reporter": "1.0.2",
+                "karma-phantomjs-launcher": "0.2.0",
+                "lodash.assign": "3.2.0",
+                "mocha": "2.2.5",
+                "phantomjs-prebuilt": "2.1.7",
+                "sauce-connect-launcher": "0.14.0",
+                "sinon": "1.15.4",
+                "sinon-chai": "2.8.0"
+            },
+            "gitHead": "c0379e35568b60ae37f917688254fc36464b676c",
+            "_id": "restricted-input@1.0.0",
+            "_shasum": "d7dc2caf2130371d66907c8fd75951094a4515ec",
+            "_from": ".",
+            "_npmVersion": "3.8.9",
+            "_nodeVersion": "6.2.0",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "d7dc2caf2130371d66907c8fd75951094a4515ec",
+                "tarball": "https://registry.npmjs.org/restricted-input/-/restricted-input-1.0.0.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "packages-12-west.internal.npmjs.com",
+                "tmp": "tmp/restricted-input-1.0.0.tgz_1464388195446_0.4360795116517693"
+            },
+            "directories": {}
+        },
+        "1.0.1": {
+            "name": "restricted-input",
+            "version": "1.0.1",
+            "description": "Restrict inputs to certain valid characters (e.g. formatting phone or card numbers)",
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com",
+                "url": "https://www.braintreepayments.com/"
+            },
+            "license": "MIT",
+            "main": "main.js",
+            "homepage": "https://github.com/braintree/restricted-input",
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/braintree/restricted-input.git"
+            },
+            "bugs": {
+                "url": "https://github.com/braintree/restricted-input/issues"
+            },
+            "keywords": [
+                "input",
+                "formatting",
+                "filtering",
+                "text",
+                "spacing",
+                "restrict"
+            ],
+            "scripts": {
+                "build": "mkdir -p dist; browserify ./main.js -o dist/restricted-input.js -s RestrictedInput -v",
+                "doc": "jsdoc -r -R README.md -d jsdoc lib/",
+                "doc:watch": "npm run doc && chokidar 'lib/**/*.js' -c 'npm run doc'",
+                "start": "node ./test/support/server.js",
+                "development": "npm run build & npm start & chokidar 'lib/**/*.js' -c 'npm run build; echo $(tput setaf 2)rebuilt$(tput sgr0)'",
+                "lint": "eslint lib test",
+                "test": "npm run lint && karma start config/karma.js --single-run",
+                "test:watch": "karma start config/karma.js",
+                "test:integration": ". ./.env && bundle exec rake sauce:spec test_files=spec",
+                "test:all": "npm run test && npm run test:integration"
+            },
+            "devDependencies": {
+                "browserify": "13.0.1",
+                "chai": "3.5.0",
+                "chokidar-cli": "1.2.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.2",
+                "express": "4.14.0",
+                "jsdoc": "3.4.0",
+                "karma": "1.1.1",
+                "karma-browserify": "5.1.0",
+                "karma-chai-sinon": "0.1.5",
+                "karma-mocha": "1.1.1",
+                "karma-mocha-reporter": "2.0.4",
+                "karma-phantomjs-launcher": "1.0.1",
+                "lodash.assign": "4.0.9",
+                "mocha": "3.0.0",
+                "phantomjs-prebuilt": "2.1.7",
+                "sauce-connect-launcher": "0.14.0",
+                "sinon": "1.17.4",
+                "sinon-chai": "2.8.0",
+                "watchify": "^3.7.0"
+            },
+            "gitHead": "69004b903c41a280e3d4da038eb0edfd76c623a8",
+            "_id": "restricted-input@1.0.1",
+            "_shasum": "650dc955864f2f97d48ac2d36e38da4d9a0372c6",
+            "_from": ".",
+            "_npmVersion": "2.15.9",
+            "_nodeVersion": "4.5.0",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "dist": {
+                "shasum": "650dc955864f2f97d48ac2d36e38da4d9a0372c6",
+                "tarball": "https://registry.npmjs.org/restricted-input/-/restricted-input-1.0.1.tgz"
+            },
+            "_npmOperationalInternal": {
+                "host": "packages-16-east.internal.npmjs.com",
+                "tmp": "tmp/restricted-input-1.0.1.tgz_1472566510417_0.09970003250055015"
+            },
+            "directories": {}
+        },
+        "1.0.2": {
+            "name": "restricted-input",
+            "version": "1.0.2",
+            "description": "Restrict inputs to certain valid characters (e.g. formatting phone or card numbers)",
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com",
+                "url": "https://www.braintreepayments.com/"
+            },
+            "license": "MIT",
+            "main": "main.js",
+            "homepage": "https://github.com/braintree/restricted-input",
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/braintree/restricted-input.git"
+            },
+            "bugs": {
+                "url": "https://github.com/braintree/restricted-input/issues"
+            },
+            "keywords": [
+                "input",
+                "formatting",
+                "filtering",
+                "text",
+                "spacing",
+                "restrict"
+            ],
+            "scripts": {
+                "build": "mkdir -p dist; browserify ./main.js -o dist/restricted-input.js -s RestrictedInput -v",
+                "doc": "jsdoc -r -R README.md -d jsdoc lib/",
+                "doc:watch": "npm run doc && chokidar 'lib/**/*.js' -c 'npm run doc'",
+                "start": "node ./test/support/server.js",
+                "development": "npm run build & npm start & chokidar 'lib/**/*.js' -c 'npm run build; echo $(tput setaf 2)rebuilt$(tput sgr0)'",
+                "lint": "eslint lib test",
+                "test": "npm run lint && karma start config/karma.js --single-run",
+                "test:watch": "karma start config/karma.js",
+                "test:integration": ". ./.env && bundle exec rake sauce:spec test_files=spec",
+                "test:all": "npm run test && npm run test:integration"
+            },
+            "devDependencies": {
+                "browserify": "13.0.1",
+                "chai": "3.5.0",
+                "chokidar-cli": "1.2.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.2",
+                "express": "4.14.0",
+                "jsdoc": "3.4.0",
+                "karma": "1.1.1",
+                "karma-browserify": "5.1.0",
+                "karma-chai-sinon": "0.1.5",
+                "karma-mocha": "1.1.1",
+                "karma-mocha-reporter": "2.0.4",
+                "karma-phantomjs-launcher": "1.0.1",
+                "lodash.assign": "4.0.9",
+                "mocha": "3.0.0",
+                "phantomjs-prebuilt": "2.1.7",
+                "sauce-connect-launcher": "0.14.0",
+                "sinon": "1.17.4",
+                "sinon-chai": "2.8.0",
+                "watchify": "^3.7.0"
+            },
+            "gitHead": "48756fe92b38cee8031903b5e7bdb38aa1609b16",
+            "_id": "restricted-input@1.0.2",
+            "_shasum": "958a0ac468a65260a6f39500c0cf63a1068991d2",
+            "_from": ".",
+            "_npmVersion": "2.15.9",
+            "_nodeVersion": "4.5.0",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "958a0ac468a65260a6f39500c0cf63a1068991d2",
+                "tarball": "https://registry.npmjs.org/restricted-input/-/restricted-input-1.0.2.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "packages-12-west.internal.npmjs.com",
+                "tmp": "tmp/restricted-input-1.0.2.tgz_1474059279946_0.4116279522422701"
+            },
+            "directories": {}
+        },
+        "1.0.3": {
+            "name": "restricted-input",
+            "version": "1.0.3",
+            "description": "Restrict inputs to certain valid characters (e.g. formatting phone or card numbers)",
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com",
+                "url": "https://www.braintreepayments.com/"
+            },
+            "license": "MIT",
+            "main": "main.js",
+            "homepage": "https://github.com/braintree/restricted-input",
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/braintree/restricted-input.git"
+            },
+            "bugs": {
+                "url": "https://github.com/braintree/restricted-input/issues"
+            },
+            "keywords": [
+                "input",
+                "formatting",
+                "filtering",
+                "text",
+                "spacing",
+                "restrict"
+            ],
+            "scripts": {
+                "build": "mkdir -p dist; browserify ./main.js -o dist/restricted-input.js -s RestrictedInput -v",
+                "doc": "jsdoc -r -R README.md -d jsdoc lib/",
+                "doc:watch": "npm run doc && chokidar 'lib/**/*.js' -c 'npm run doc'",
+                "start": "node ./test/support/server.js",
+                "development": "npm run build & npm start & chokidar 'lib/**/*.js' -c 'npm run build; echo $(tput setaf 2)rebuilt$(tput sgr0)'",
+                "lint": "eslint lib test",
+                "test": "npm run lint && karma start config/karma.js --single-run",
+                "test:watch": "karma start config/karma.js",
+                "test:integration": ". ./.env && bundle exec rake sauce:spec test_files=spec",
+                "test:all": "npm run test && npm run test:integration"
+            },
+            "devDependencies": {
+                "browserify": "13.0.1",
+                "chai": "3.5.0",
+                "chokidar-cli": "1.2.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.2",
+                "express": "4.14.0",
+                "jsdoc": "3.4.0",
+                "karma": "1.1.1",
+                "karma-browserify": "5.1.0",
+                "karma-chai-sinon": "0.1.5",
+                "karma-mocha": "1.1.1",
+                "karma-mocha-reporter": "2.0.4",
+                "karma-phantomjs-launcher": "1.0.1",
+                "lodash.assign": "4.0.9",
+                "mocha": "3.0.0",
+                "phantomjs-prebuilt": "2.1.7",
+                "sauce-connect-launcher": "0.14.0",
+                "sinon": "1.17.4",
+                "sinon-chai": "2.8.0",
+                "watchify": "^3.7.0"
+            },
+            "gitHead": "a0f28a1c6de3193924cbee825c4130bd32684db3",
+            "_id": "restricted-input@1.0.3",
+            "_shasum": "6e2ac87d2754b7b1b9bd1f69afc5a915dc22b0df",
+            "_from": ".",
+            "_npmVersion": "2.14.12",
+            "_nodeVersion": "4.3.1",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "6e2ac87d2754b7b1b9bd1f69afc5a915dc22b0df",
+                "tarball": "https://registry.npmjs.org/restricted-input/-/restricted-input-1.0.3.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "packages-12-west.internal.npmjs.com",
+                "tmp": "tmp/restricted-input-1.0.3.tgz_1475084238122_0.7389997977297753"
+            },
+            "directories": {}
+        },
+        "1.0.4": {
+            "name": "restricted-input",
+            "version": "1.0.4",
+            "description": "Restrict inputs to certain valid characters (e.g. formatting phone or card numbers)",
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com",
+                "url": "https://www.braintreepayments.com/"
+            },
+            "license": "MIT",
+            "main": "main.js",
+            "homepage": "https://github.com/braintree/restricted-input",
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/braintree/restricted-input.git"
+            },
+            "bugs": {
+                "url": "https://github.com/braintree/restricted-input/issues"
+            },
+            "keywords": [
+                "input",
+                "formatting",
+                "filtering",
+                "text",
+                "spacing",
+                "restrict"
+            ],
+            "scripts": {
+                "build": "mkdir -p dist; browserify ./main.js -o dist/restricted-input.js -s RestrictedInput -v",
+                "doc": "jsdoc -r -R README.md -d jsdoc lib/",
+                "doc:watch": "npm run doc && chokidar 'lib/**/*.js' -c 'npm run doc'",
+                "start": "node ./test/support/server.js",
+                "development": "npm run build & npm start & chokidar 'lib/**/*.js' -c 'npm run build; echo $(tput setaf 2)rebuilt$(tput sgr0)'",
+                "lint": "eslint lib test",
+                "test": "npm run lint && npm run test:unit",
+                "test:watch": "karma start config/karma.js",
+                "test:unit": "karma start config/karma.js --single-run",
+                "test:integration": ". ./.env && bundle exec rake sauce:spec test_files=spec",
+                "test:all": "npm run test && npm run test:integration"
+            },
+            "devDependencies": {
+                "browserify": "13.0.1",
+                "chai": "3.5.0",
+                "chokidar-cli": "1.2.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.2",
+                "express": "4.14.0",
+                "jsdoc": "3.4.0",
+                "karma": "1.1.1",
+                "karma-browserify": "5.1.0",
+                "karma-chai-sinon": "0.1.5",
+                "karma-mocha": "1.1.1",
+                "karma-mocha-reporter": "2.0.4",
+                "karma-phantomjs-launcher": "1.0.1",
+                "lodash.assign": "4.0.9",
+                "mocha": "3.0.0",
+                "phantomjs-prebuilt": "2.1.7",
+                "sauce-connect-launcher": "0.14.0",
+                "sinon": "1.17.4",
+                "sinon-chai": "2.8.0",
+                "watchify": "^3.7.0"
+            },
+            "gitHead": "d2405088a9b5cece2c305ec611bbbebfa2751674",
+            "_id": "restricted-input@1.0.4",
+            "_shasum": "79fe86973d8c6ab4ac7c804e0b0b4702271ba1d8",
+            "_from": ".",
+            "_npmVersion": "2.15.9",
+            "_nodeVersion": "4.6.1",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "79fe86973d8c6ab4ac7c804e0b0b4702271ba1d8",
+                "tarball": "https://registry.npmjs.org/restricted-input/-/restricted-input-1.0.4.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "packages-18-east.internal.npmjs.com",
+                "tmp": "tmp/restricted-input-1.0.4.tgz_1478349777233_0.8779183272272348"
+            },
+            "directories": {}
+        },
+        "1.0.5": {
+            "name": "restricted-input",
+            "version": "1.0.5",
+            "description": "Restrict inputs to certain valid characters (e.g. formatting phone or card numbers)",
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com",
+                "url": "https://www.braintreepayments.com/"
+            },
+            "license": "MIT",
+            "main": "main.js",
+            "homepage": "https://github.com/braintree/restricted-input",
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/braintree/restricted-input.git"
+            },
+            "bugs": {
+                "url": "https://github.com/braintree/restricted-input/issues"
+            },
+            "keywords": [
+                "input",
+                "formatting",
+                "filtering",
+                "text",
+                "spacing",
+                "restrict"
+            ],
+            "scripts": {
+                "build": "mkdir -p dist; browserify ./main.js -o dist/restricted-input.js -s RestrictedInput -v",
+                "doc": "jsdoc -r -R README.md -d jsdoc lib/",
+                "doc:watch": "npm run doc && chokidar 'lib/**/*.js' -c 'npm run doc'",
+                "start": "node ./test/support/server.js",
+                "development": "npm run build & npm start & chokidar 'lib/**/*.js' -c 'npm run build; echo $(tput setaf 2)rebuilt$(tput sgr0)'",
+                "lint": "eslint lib test",
+                "test": "npm run lint && npm run test:unit",
+                "test:watch": "karma start config/karma.js",
+                "test:unit": "karma start config/karma.js --single-run",
+                "test:integration": ". ./.env && bundle exec rake sauce:spec test_files=spec",
+                "test:all": "npm run test && npm run test:integration"
+            },
+            "devDependencies": {
+                "browserify": "13.0.1",
+                "chai": "3.5.0",
+                "chokidar-cli": "1.2.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.2",
+                "express": "4.14.0",
+                "jsdoc": "3.4.0",
+                "karma": "1.1.1",
+                "karma-browserify": "5.1.0",
+                "karma-chai-sinon": "0.1.5",
+                "karma-mocha": "1.1.1",
+                "karma-mocha-reporter": "2.0.4",
+                "karma-phantomjs-launcher": "1.0.1",
+                "lodash.assign": "4.0.9",
+                "mocha": "3.0.0",
+                "phantomjs-prebuilt": "2.1.7",
+                "sauce-connect-launcher": "0.14.0",
+                "sinon": "1.17.4",
+                "sinon-chai": "2.8.0",
+                "watchify": "^3.7.0"
+            },
+            "gitHead": "eff5d1501fa9a054dbed0117b17ec6ebf10a32c6",
+            "_id": "restricted-input@1.0.5",
+            "_shasum": "a20b145514637169bb15905d507d39c5f9933e1a",
+            "_from": ".",
+            "_npmVersion": "3.10.8",
+            "_nodeVersion": "6.9.1",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "a20b145514637169bb15905d507d39c5f9933e1a",
+                "tarball": "https://registry.npmjs.org/restricted-input/-/restricted-input-1.0.5.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "packages-18-east.internal.npmjs.com",
+                "tmp": "tmp/restricted-input-1.0.5.tgz_1479245090144_0.494284198153764"
+            },
+            "directories": {}
+        },
+        "1.0.6": {
+            "name": "restricted-input",
+            "version": "1.0.6",
+            "description": "Restrict inputs to certain valid characters (e.g. formatting phone or card numbers)",
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com",
+                "url": "https://www.braintreepayments.com/"
+            },
+            "license": "MIT",
+            "main": "main.js",
+            "homepage": "https://github.com/braintree/restricted-input",
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/braintree/restricted-input.git"
+            },
+            "bugs": {
+                "url": "https://github.com/braintree/restricted-input/issues"
+            },
+            "keywords": [
+                "input",
+                "formatting",
+                "filtering",
+                "text",
+                "spacing",
+                "restrict"
+            ],
+            "scripts": {
+                "build": "mkdir -p dist; browserify ./main.js -o dist/restricted-input.js -s RestrictedInput -v",
+                "doc": "jsdoc -r -R README.md -d jsdoc lib/",
+                "doc:watch": "npm run doc && chokidar 'lib/**/*.js' -c 'npm run doc'",
+                "start": "node ./test/support/server.js",
+                "development": "npm run build & npm start & chokidar 'lib/**/*.js' -c 'npm run build; echo $(tput setaf 2)rebuilt$(tput sgr0)'",
+                "lint": "eslint lib test",
+                "test": "npm run lint && npm run test:unit",
+                "test:watch": "karma start config/karma.js",
+                "test:unit": "karma start config/karma.js --single-run",
+                "test:integration": ". ./.env && bundle exec rake sauce:spec test_files=spec",
+                "test:all": "npm run test && npm run test:integration"
+            },
+            "devDependencies": {
+                "browserify": "13.0.1",
+                "chai": "3.5.0",
+                "chokidar-cli": "1.2.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.2",
+                "express": "4.14.0",
+                "jsdoc": "3.4.0",
+                "karma": "1.1.1",
+                "karma-browserify": "5.1.0",
+                "karma-chai-sinon": "0.1.5",
+                "karma-mocha": "1.1.1",
+                "karma-mocha-reporter": "2.0.4",
+                "karma-phantomjs-launcher": "1.0.1",
+                "lodash.assign": "4.0.9",
+                "mocha": "3.0.0",
+                "phantomjs-prebuilt": "2.1.7",
+                "sauce-connect-launcher": "0.14.0",
+                "sinon": "1.17.4",
+                "sinon-chai": "2.8.0",
+                "watchify": "^3.7.0"
+            },
+            "gitHead": "b84954b0a17097ccb02edbe736906163e8c4e23d",
+            "_id": "restricted-input@1.0.6",
+            "_shasum": "39a03905eb25561e830bdc6d915a619cb4f9f1ec",
+            "_from": ".",
+            "_npmVersion": "2.14.12",
+            "_nodeVersion": "4.3.1",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "39a03905eb25561e830bdc6d915a619cb4f9f1ec",
+                "tarball": "https://registry.npmjs.org/restricted-input/-/restricted-input-1.0.6.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "packages-18-east.internal.npmjs.com",
+                "tmp": "tmp/restricted-input-1.0.6.tgz_1481586527210_0.9531813419889659"
+            },
+            "directories": {}
+        },
+        "1.0.7": {
+            "name": "restricted-input",
+            "version": "1.0.7",
+            "description": "Restrict inputs to certain valid characters (e.g. formatting phone or card numbers)",
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com",
+                "url": "https://www.braintreepayments.com/"
+            },
+            "license": "MIT",
+            "main": "main.js",
+            "homepage": "https://github.com/braintree/restricted-input",
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/braintree/restricted-input.git"
+            },
+            "bugs": {
+                "url": "https://github.com/braintree/restricted-input/issues"
+            },
+            "keywords": [
+                "input",
+                "formatting",
+                "filtering",
+                "text",
+                "spacing",
+                "restrict"
+            ],
+            "scripts": {
+                "build": "mkdir -p dist; browserify ./main.js -o dist/restricted-input.js -s RestrictedInput -v",
+                "doc": "jsdoc -r -R README.md -d jsdoc lib/",
+                "doc:watch": "npm run doc && chokidar 'lib/**/*.js' -c 'npm run doc'",
+                "start": "node ./test/support/server.js",
+                "development": "npm run build & npm start & chokidar 'lib/**/*.js' -c 'npm run build; echo $(tput setaf 2)rebuilt$(tput sgr0)'",
+                "lint": "eslint lib test",
+                "test": "npm run lint && npm run test:unit",
+                "test:watch": "karma start config/karma.js",
+                "test:unit": "karma start config/karma.js --single-run",
+                "test:integration": ". ./.env && bundle exec rake sauce:spec test_files=spec",
+                "test:all": "npm run test && npm run test:integration"
+            },
+            "devDependencies": {
+                "browserify": "13.0.1",
+                "chai": "3.5.0",
+                "chokidar-cli": "1.2.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.2",
+                "express": "4.14.0",
+                "jsdoc": "3.4.0",
+                "karma": "1.1.1",
+                "karma-browserify": "5.1.0",
+                "karma-chai-sinon": "0.1.5",
+                "karma-mocha": "1.1.1",
+                "karma-mocha-reporter": "2.0.4",
+                "karma-phantomjs-launcher": "1.0.1",
+                "lodash.assign": "4.0.9",
+                "mocha": "3.0.0",
+                "phantomjs-prebuilt": "2.1.7",
+                "sauce-connect-launcher": "0.14.0",
+                "sinon": "1.17.4",
+                "sinon-chai": "2.8.0",
+                "watchify": "^3.7.0"
+            },
+            "gitHead": "c76de9ca6b78e9db5389f7056f8d43ab98151162",
+            "_id": "restricted-input@1.0.7",
+            "_shasum": "5af17876fd96801ab2efd5f28d6822277e446d06",
+            "_from": ".",
+            "_npmVersion": "3.10.9",
+            "_nodeVersion": "6.9.2",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "5af17876fd96801ab2efd5f28d6822277e446d06",
+                "tarball": "https://registry.npmjs.org/restricted-input/-/restricted-input-1.0.7.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "packages-18-east.internal.npmjs.com",
+                "tmp": "tmp/restricted-input-1.0.7.tgz_1481926530330_0.9440117680933326"
+            },
+            "directories": {}
+        },
+        "1.0.8": {
+            "name": "restricted-input",
+            "version": "1.0.8",
+            "description": "Restrict inputs to certain valid characters (e.g. formatting phone or card numbers)",
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com",
+                "url": "https://www.braintreepayments.com/"
+            },
+            "license": "MIT",
+            "main": "main.js",
+            "homepage": "https://github.com/braintree/restricted-input",
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/braintree/restricted-input.git"
+            },
+            "bugs": {
+                "url": "https://github.com/braintree/restricted-input/issues"
+            },
+            "keywords": [
+                "input",
+                "formatting",
+                "filtering",
+                "text",
+                "spacing",
+                "restrict"
+            ],
+            "scripts": {
+                "build": "mkdir -p dist; browserify ./main.js -o dist/restricted-input.js -s RestrictedInput -v",
+                "doc": "jsdoc -r -R README.md -d jsdoc lib/",
+                "doc:watch": "npm run doc && chokidar 'lib/**/*.js' -c 'npm run doc'",
+                "start": "node ./test/support/server.js",
+                "development": "npm run build & npm start & chokidar 'lib/**/*.js' -c 'npm run build; echo $(tput setaf 2)rebuilt$(tput sgr0)'",
+                "lint": "eslint lib test",
+                "test": "npm run lint && npm run test:unit",
+                "test:watch": "karma start config/karma.js",
+                "test:unit": "karma start config/karma.js --single-run",
+                "test:integration": ". ./.env && bundle exec rake sauce:spec test_files=spec",
+                "test:all": "npm run test && npm run test:integration"
+            },
+            "devDependencies": {
+                "browserify": "13.0.1",
+                "chai": "3.5.0",
+                "chokidar-cli": "1.2.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.2",
+                "express": "4.14.0",
+                "jsdoc": "3.4.0",
+                "karma": "1.1.1",
+                "karma-browserify": "5.1.0",
+                "karma-chai-sinon": "0.1.5",
+                "karma-mocha": "1.1.1",
+                "karma-mocha-reporter": "2.0.4",
+                "karma-phantomjs-launcher": "1.0.1",
+                "lodash.assign": "4.0.9",
+                "mocha": "3.0.0",
+                "phantomjs-prebuilt": "2.1.7",
+                "sauce-connect-launcher": "0.14.0",
+                "sinon": "1.17.4",
+                "sinon-chai": "2.8.0",
+                "watchify": "^3.7.0"
+            },
+            "gitHead": "943157b6ff20c4da7479470e46d67c0be682ddde",
+            "_id": "restricted-input@1.0.8",
+            "_shasum": "750cff047d90cf5f78b4a0197bbb2f8784d2d374",
+            "_from": ".",
+            "_npmVersion": "3.10.10",
+            "_nodeVersion": "6.9.4",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "750cff047d90cf5f78b4a0197bbb2f8784d2d374",
+                "tarball": "https://registry.npmjs.org/restricted-input/-/restricted-input-1.0.8.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "packages-18-east.internal.npmjs.com",
+                "tmp": "tmp/restricted-input-1.0.8.tgz_1484764395082_0.23086978448554873"
+            },
+            "directories": {}
+        },
+        "1.0.9": {
+            "name": "restricted-input",
+            "version": "1.0.9",
+            "description": "Restrict inputs to certain valid characters (e.g. formatting phone or card numbers)",
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com",
+                "url": "https://www.braintreepayments.com/"
+            },
+            "license": "MIT",
+            "main": "main.js",
+            "homepage": "https://github.com/braintree/restricted-input",
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/braintree/restricted-input.git"
+            },
+            "bugs": {
+                "url": "https://github.com/braintree/restricted-input/issues"
+            },
+            "keywords": [
+                "input",
+                "formatting",
+                "filtering",
+                "text",
+                "spacing",
+                "restrict"
+            ],
+            "scripts": {
+                "build": "mkdir -p dist; browserify ./main.js -o dist/restricted-input.js -s RestrictedInput -v",
+                "doc": "jsdoc -r -R README.md -d jsdoc lib/",
+                "doc:watch": "npm run doc && chokidar 'lib/**/*.js' -c 'npm run doc'",
+                "start": "node ./test/support/server.js",
+                "development": "npm run build & npm start & chokidar 'lib/**/*.js' -c 'npm run build; echo $(tput setaf 2)rebuilt$(tput sgr0)'",
+                "lint": "eslint lib test",
+                "test": "npm run lint && npm run test:unit",
+                "test:watch": "karma start config/karma.js",
+                "test:unit": "karma start config/karma.js --single-run",
+                "test:integration": ". ./.env && bundle exec rake sauce:spec test_files=spec",
+                "test:all": "npm run test && npm run test:integration",
+                "publish:demo": "./publish-gh-pages.sh"
+            },
+            "devDependencies": {
+                "browserify": "13.0.1",
+                "chai": "3.5.0",
+                "chokidar-cli": "1.2.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.2",
+                "express": "4.14.0",
+                "jsdoc": "3.4.0",
+                "karma": "1.1.1",
+                "karma-browserify": "5.1.0",
+                "karma-chai-sinon": "0.1.5",
+                "karma-mocha": "1.1.1",
+                "karma-mocha-reporter": "2.0.4",
+                "karma-phantomjs-launcher": "1.0.1",
+                "lodash.assign": "4.0.9",
+                "mocha": "3.0.0",
+                "phantomjs-prebuilt": "2.1.7",
+                "sauce-connect-launcher": "0.14.0",
+                "sinon": "1.17.4",
+                "sinon-chai": "2.8.0",
+                "watchify": "^3.7.0"
+            },
+            "gitHead": "ea5e16748b2e662186b6800342e8d67023086bfe",
+            "_id": "restricted-input@1.0.9",
+            "_shasum": "d604aedc6a697e77bdd257d38ee2abdc030d7f61",
+            "_from": ".",
+            "_npmVersion": "3.10.10",
+            "_nodeVersion": "6.9.4",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "d604aedc6a697e77bdd257d38ee2abdc030d7f61",
+                "tarball": "https://registry.npmjs.org/restricted-input/-/restricted-input-1.0.9.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "packages-12-west.internal.npmjs.com",
+                "tmp": "tmp/restricted-input-1.0.9.tgz_1485372839497_0.06551372399553657"
+            },
+            "directories": {}
+        },
+        "1.0.10": {
+            "name": "restricted-input",
+            "version": "1.0.10",
+            "description": "Restrict inputs to certain valid characters (e.g. formatting phone or card numbers)",
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com",
+                "url": "https://www.braintreepayments.com/"
+            },
+            "license": "MIT",
+            "main": "main.js",
+            "homepage": "https://github.com/braintree/restricted-input",
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/braintree/restricted-input.git"
+            },
+            "bugs": {
+                "url": "https://github.com/braintree/restricted-input/issues"
+            },
+            "keywords": [
+                "input",
+                "formatting",
+                "filtering",
+                "text",
+                "spacing",
+                "restrict"
+            ],
+            "scripts": {
+                "build": "mkdir -p dist; browserify ./main.js -o dist/restricted-input.js -s RestrictedInput -v",
+                "doc": "jsdoc -r -R README.md -d jsdoc lib/",
+                "doc:watch": "npm run doc && chokidar 'lib/**/*.js' -c 'npm run doc'",
+                "start": "node ./test/support/server.js",
+                "development": "npm run build & npm start & chokidar 'lib/**/*.js' -c 'npm run build; echo $(tput setaf 2)rebuilt$(tput sgr0)'",
+                "lint": "eslint lib test",
+                "test": "npm run lint && npm run test:unit",
+                "test:watch": "karma start config/karma.js",
+                "test:unit": "karma start config/karma.js --single-run",
+                "test:integration": ". ./.env && bundle exec rake sauce:spec test_files=spec",
+                "test:all": "npm run test && npm run test:integration",
+                "publish:demo": "./publish-gh-pages.sh"
+            },
+            "devDependencies": {
+                "browserify": "13.0.1",
+                "chai": "3.5.0",
+                "chokidar-cli": "1.2.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.2",
+                "express": "4.14.0",
+                "jsdoc": "3.4.0",
+                "karma": "1.1.1",
+                "karma-browserify": "5.1.0",
+                "karma-chai-sinon": "0.1.5",
+                "karma-mocha": "1.1.1",
+                "karma-mocha-reporter": "2.0.4",
+                "karma-phantomjs-launcher": "1.0.1",
+                "lodash.assign": "4.0.9",
+                "mocha": "3.0.0",
+                "phantomjs-prebuilt": "2.1.7",
+                "sauce-connect-launcher": "0.14.0",
+                "sinon": "1.17.4",
+                "sinon-chai": "2.8.0",
+                "watchify": "^3.7.0"
+            },
+            "gitHead": "a23b1040d5c2c068cba7c9ff44a027d6d4b1ea3b",
+            "_id": "restricted-input@1.0.10",
+            "_shasum": "3a9866c9c2a9382bc66049e56f4540c6de418069",
+            "_from": ".",
+            "_npmVersion": "2.14.12",
+            "_nodeVersion": "4.3.1",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "3a9866c9c2a9382bc66049e56f4540c6de418069",
+                "tarball": "https://registry.npmjs.org/restricted-input/-/restricted-input-1.0.10.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "packages-18-east.internal.npmjs.com",
+                "tmp": "tmp/restricted-input-1.0.10.tgz_1487125978317_0.9826788315549493"
+            },
+            "directories": {}
+        },
+        "1.0.11": {
+            "name": "restricted-input",
+            "version": "1.0.11",
+            "description": "Restrict inputs to certain valid characters (e.g. formatting phone or card numbers)",
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com",
+                "url": "https://www.braintreepayments.com/"
+            },
+            "license": "MIT",
+            "main": "main.js",
+            "homepage": "https://github.com/braintree/restricted-input",
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/braintree/restricted-input.git"
+            },
+            "bugs": {
+                "url": "https://github.com/braintree/restricted-input/issues"
+            },
+            "keywords": [
+                "input",
+                "formatting",
+                "filtering",
+                "text",
+                "spacing",
+                "restrict"
+            ],
+            "scripts": {
+                "build": "mkdir -p dist; browserify ./main.js -o dist/restricted-input.js -s RestrictedInput -v",
+                "doc": "jsdoc -r -R README.md -d jsdoc lib/",
+                "doc:watch": "npm run doc && chokidar 'lib/**/*.js' -c 'npm run doc'",
+                "start": "node ./test/support/server.js",
+                "development": "npm run build & npm start & chokidar 'lib/**/*.js' -c 'npm run build; echo $(tput setaf 2)rebuilt$(tput sgr0)'",
+                "lint": "eslint lib test",
+                "test": "npm run lint && npm run test:unit",
+                "test:watch": "karma start config/karma.js",
+                "test:unit": "karma start config/karma.js --single-run",
+                "test:integration": ". ./.env && bundle exec rake sauce:spec test_files=spec",
+                "test:all": "npm run test && npm run test:integration",
+                "publish:demo": "./publish-gh-pages.sh"
+            },
+            "devDependencies": {
+                "browserify": "13.0.1",
+                "chai": "3.5.0",
+                "chokidar-cli": "1.2.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.2",
+                "express": "4.14.0",
+                "jsdoc": "3.4.0",
+                "karma": "1.1.1",
+                "karma-browserify": "5.1.0",
+                "karma-chai-sinon": "0.1.5",
+                "karma-mocha": "1.1.1",
+                "karma-mocha-reporter": "2.0.4",
+                "karma-phantomjs-launcher": "1.0.1",
+                "lodash.assign": "4.0.9",
+                "mocha": "3.0.0",
+                "phantomjs-prebuilt": "2.1.7",
+                "sauce-connect-launcher": "0.14.0",
+                "sinon": "1.17.4",
+                "sinon-chai": "2.8.0",
+                "watchify": "^3.7.0"
+            },
+            "gitHead": "437e2377470677dbf9b52d360b3d20309bf80c9e",
+            "_id": "restricted-input@1.0.11",
+            "_shasum": "f2b2beab211296ce529feb86e1e90ac80c7fbb72",
+            "_from": ".",
+            "_npmVersion": "2.14.12",
+            "_nodeVersion": "4.3.1",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "f2b2beab211296ce529feb86e1e90ac80c7fbb72",
+                "tarball": "https://registry.npmjs.org/restricted-input/-/restricted-input-1.0.11.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "packages-12-west.internal.npmjs.com",
+                "tmp": "tmp/restricted-input-1.0.11.tgz_1487783560206_0.09834003751166165"
+            },
+            "directories": {}
+        },
+        "1.1.0": {
+            "name": "restricted-input",
+            "version": "1.1.0",
+            "description": "Restrict inputs to certain valid characters (e.g. formatting phone or card numbers)",
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com",
+                "url": "https://www.braintreepayments.com/"
+            },
+            "license": "MIT",
+            "main": "main.js",
+            "homepage": "https://github.com/braintree/restricted-input",
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/braintree/restricted-input.git"
+            },
+            "bugs": {
+                "url": "https://github.com/braintree/restricted-input/issues"
+            },
+            "keywords": [
+                "input",
+                "formatting",
+                "filtering",
+                "text",
+                "spacing",
+                "restrict"
+            ],
+            "scripts": {
+                "build": "mkdir -p dist; browserify ./main.js -o dist/restricted-input.js -s RestrictedInput -v",
+                "doc": "jsdoc -r -R README.md -d jsdoc lib/",
+                "doc:watch": "npm run doc && chokidar 'lib/**/*.js' -c 'npm run doc'",
+                "start": "node ./test/support/server.js",
+                "development": "npm run build & npm start & chokidar 'lib/**/*.js' -c 'npm run build; echo $(tput setaf 2)rebuilt$(tput sgr0)'",
+                "lint": "eslint lib test",
+                "test": "npm run lint && npm run test:unit",
+                "test:watch": "karma start config/karma.js",
+                "test:unit": "karma start config/karma.js --single-run",
+                "test:integration": ". ./.env && bundle exec rake sauce:spec test_files=spec",
+                "test:all": "npm run test && npm run test:integration",
+                "publish:demo": "./publish-gh-pages.sh"
+            },
+            "dependencies": {
+                "browser-detection": "github:braintree/browser-detection#1.1.0"
+            },
+            "devDependencies": {
+                "browserify": "13.0.1",
+                "chai": "3.5.0",
+                "chokidar-cli": "1.2.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.2",
+                "express": "4.14.0",
+                "jsdoc": "3.4.0",
+                "karma": "1.1.1",
+                "karma-browserify": "5.1.0",
+                "karma-chai-sinon": "0.1.5",
+                "karma-mocha": "1.1.1",
+                "karma-mocha-reporter": "2.0.4",
+                "karma-phantomjs-launcher": "1.0.1",
+                "lodash.assign": "4.0.9",
+                "mocha": "3.0.0",
+                "phantomjs-prebuilt": "2.1.7",
+                "sauce-connect-launcher": "0.14.0",
+                "sinon": "1.17.4",
+                "sinon-chai": "2.8.0",
+                "watchify": "^3.7.0"
+            },
+            "gitHead": "c00de1a39bf6969300797a4bc8e86bd296788dd9",
+            "_id": "restricted-input@1.1.0",
+            "_shasum": "746172322e7dbba36cd8135f293968dc802389e0",
+            "_from": ".",
+            "_npmVersion": "2.14.12",
+            "_nodeVersion": "4.3.1",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "746172322e7dbba36cd8135f293968dc802389e0",
+                "tarball": "https://registry.npmjs.org/restricted-input/-/restricted-input-1.1.0.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "packages-18-east.internal.npmjs.com",
+                "tmp": "tmp/restricted-input-1.1.0.tgz_1493934499936_0.06178015028126538"
+            },
+            "directories": {}
+        },
+        "1.2.0": {
+            "name": "restricted-input",
+            "version": "1.2.0",
+            "description": "Restrict inputs to certain valid characters (e.g. formatting phone or card numbers)",
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com",
+                "url": "https://www.braintreepayments.com/"
+            },
+            "license": "MIT",
+            "main": "main.js",
+            "homepage": "https://github.com/braintree/restricted-input",
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/braintree/restricted-input.git"
+            },
+            "bugs": {
+                "url": "https://github.com/braintree/restricted-input/issues"
+            },
+            "keywords": [
+                "input",
+                "formatting",
+                "filtering",
+                "text",
+                "spacing",
+                "restrict"
+            ],
+            "scripts": {
+                "build": "mkdir -p dist; browserify ./main.js -o dist/restricted-input.js -s RestrictedInput -v",
+                "doc": "jsdoc -r -R README.md -d jsdoc lib/",
+                "doc:watch": "npm run doc && chokidar 'lib/**/*.js' -c 'npm run doc'",
+                "start": "node ./test/support/server.js",
+                "development": "npm run build & npm start & chokidar 'lib/**/*.js' -c 'npm run build; echo $(tput setaf 2)rebuilt$(tput sgr0)'",
+                "lint": "eslint lib test",
+                "test": "npm run lint && npm run test:unit",
+                "test:watch": "karma start config/karma.js",
+                "test:unit": "karma start config/karma.js --single-run",
+                "test:integration": ". ./.env && bundle exec rake sauce:spec test_files=spec",
+                "test:all": "npm run test && npm run test:integration",
+                "publish:demo": "./publish-gh-pages.sh"
+            },
+            "dependencies": {
+                "browser-detection": "github:braintree/browser-detection#1.1.0"
+            },
+            "devDependencies": {
+                "browserify": "13.0.1",
+                "chai": "3.5.0",
+                "chokidar-cli": "1.2.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.2",
+                "express": "4.14.0",
+                "jsdoc": "3.4.0",
+                "karma": "1.1.1",
+                "karma-browserify": "5.1.0",
+                "karma-chai-sinon": "0.1.5",
+                "karma-mocha": "1.1.1",
+                "karma-mocha-reporter": "2.0.4",
+                "karma-phantomjs-launcher": "1.0.1",
+                "lodash.assign": "4.0.9",
+                "mocha": "3.0.0",
+                "phantomjs-prebuilt": "2.1.7",
+                "sauce-connect-launcher": "0.14.0",
+                "sinon": "1.17.4",
+                "sinon-chai": "2.8.0",
+                "watchify": "^3.7.0"
+            },
+            "gitHead": "a25f91c57b57b13f598806724314d339be50ac6c",
+            "_id": "restricted-input@1.2.0",
+            "_shasum": "bed4d21e1e773f0809513db53f30bf0cb0c0c7f7",
+            "_from": ".",
+            "_npmVersion": "3.10.10",
+            "_nodeVersion": "6.10.3",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "bed4d21e1e773f0809513db53f30bf0cb0c0c7f7",
+                "tarball": "https://registry.npmjs.org/restricted-input/-/restricted-input-1.2.0.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "packages-18-east.internal.npmjs.com",
+                "tmp": "tmp/restricted-input-1.2.0.tgz_1494275500313_0.8395324184093624"
+            },
+            "directories": {}
+        },
+        "1.2.1": {
+            "name": "restricted-input",
+            "version": "1.2.1",
+            "description": "Restrict inputs to certain valid characters (e.g. formatting phone or card numbers)",
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com",
+                "url": "https://www.braintreepayments.com/"
+            },
+            "license": "MIT",
+            "main": "main.js",
+            "homepage": "https://github.com/braintree/restricted-input",
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/braintree/restricted-input.git"
+            },
+            "bugs": {
+                "url": "https://github.com/braintree/restricted-input/issues"
+            },
+            "keywords": [
+                "input",
+                "formatting",
+                "filtering",
+                "text",
+                "spacing",
+                "restrict"
+            ],
+            "scripts": {
+                "build": "mkdir -p dist; browserify ./main.js -o dist/restricted-input.js -s RestrictedInput -v",
+                "doc": "jsdoc -r -R README.md -d jsdoc lib/",
+                "doc:watch": "npm run doc && chokidar 'lib/**/*.js' -c 'npm run doc'",
+                "start": "node ./test/support/server.js",
+                "development": "npm run build & npm start & chokidar 'lib/**/*.js' -c 'npm run build; echo $(tput setaf 2)rebuilt$(tput sgr0)'",
+                "lint": "eslint lib test",
+                "test": "npm run lint && npm run test:unit",
+                "test:watch": "karma start config/karma.js",
+                "test:unit": "karma start config/karma.js --single-run",
+                "test:integration": ". ./.env && bundle exec rake sauce:spec test_files=spec",
+                "test:all": "npm run test && npm run test:integration",
+                "publish:demo": "./publish-gh-pages.sh"
+            },
+            "dependencies": {
+                "browser-detection": "github:braintree/browser-detection#1.4.0"
+            },
+            "devDependencies": {
+                "browserify": "13.0.1",
+                "chai": "3.5.0",
+                "chokidar-cli": "1.2.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.2",
+                "express": "4.14.0",
+                "jsdoc": "3.4.0",
+                "karma": "1.1.1",
+                "karma-browserify": "5.1.0",
+                "karma-chai-sinon": "0.1.5",
+                "karma-mocha": "1.1.1",
+                "karma-mocha-reporter": "2.0.4",
+                "karma-phantomjs-launcher": "1.0.1",
+                "lodash.assign": "4.0.9",
+                "mocha": "3.0.0",
+                "phantomjs-prebuilt": "2.1.7",
+                "sauce-connect-launcher": "0.14.0",
+                "sinon": "1.17.4",
+                "sinon-chai": "2.8.0",
+                "watchify": "^3.7.0"
+            },
+            "gitHead": "67e830586a9873a0b68815d5c416ac75eb423a3b",
+            "_id": "restricted-input@1.2.1",
+            "_shasum": "6d9e053a3814b56e126abad759d9523c315abd3a",
+            "_from": ".",
+            "_npmVersion": "2.14.12",
+            "_nodeVersion": "4.3.1",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "6d9e053a3814b56e126abad759d9523c315abd3a",
+                "tarball": "https://registry.npmjs.org/restricted-input/-/restricted-input-1.2.1.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/restricted-input-1.2.1.tgz_1495660930584_0.11913649248890579"
+            },
+            "directories": {}
+        },
+        "1.2.2": {
+            "name": "restricted-input",
+            "version": "1.2.2",
+            "description": "Restrict inputs to certain valid characters (e.g. formatting phone or card numbers)",
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com",
+                "url": "https://www.braintreepayments.com/"
+            },
+            "license": "MIT",
+            "main": "main.js",
+            "homepage": "https://github.com/braintree/restricted-input",
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/braintree/restricted-input.git"
+            },
+            "bugs": {
+                "url": "https://github.com/braintree/restricted-input/issues"
+            },
+            "keywords": [
+                "input",
+                "formatting",
+                "filtering",
+                "text",
+                "spacing",
+                "restrict"
+            ],
+            "scripts": {
+                "build": "mkdir -p dist; browserify ./main.js -o dist/restricted-input.js -s RestrictedInput -v",
+                "doc": "jsdoc -r -R README.md -d jsdoc lib/",
+                "doc:watch": "npm run doc && chokidar 'lib/**/*.js' -c 'npm run doc'",
+                "start": "node ./test/support/server.js",
+                "development": "npm run build & npm start & chokidar 'lib/**/*.js' -c 'npm run build; echo $(tput setaf 2)rebuilt$(tput sgr0)'",
+                "lint": "eslint lib test",
+                "test": "npm run lint && npm run test:unit",
+                "test:watch": "karma start config/karma.js",
+                "test:unit": "karma start config/karma.js --single-run",
+                "test:integration": ". ./.env && bundle exec rake sauce:spec test_files=spec",
+                "test:all": "npm run test && npm run test:integration",
+                "publish:demo": "./publish-gh-pages.sh"
+            },
+            "dependencies": {
+                "browser-detection": "github:braintree/browser-detection#1.4.0"
+            },
+            "devDependencies": {
+                "browserify": "13.0.1",
+                "chai": "3.5.0",
+                "chokidar-cli": "1.2.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.2",
+                "express": "4.14.0",
+                "jsdoc": "3.4.0",
+                "karma": "1.1.1",
+                "karma-browserify": "5.1.0",
+                "karma-chai-sinon": "0.1.5",
+                "karma-mocha": "1.1.1",
+                "karma-mocha-reporter": "2.0.4",
+                "karma-phantomjs-launcher": "1.0.1",
+                "lodash.assign": "4.0.9",
+                "mocha": "3.0.0",
+                "phantomjs-prebuilt": "2.1.7",
+                "sauce-connect-launcher": "0.14.0",
+                "sinon": "1.17.4",
+                "sinon-chai": "2.8.0",
+                "watchify": "^3.7.0"
+            },
+            "gitHead": "ddbbacbbe403a7c52bcd1bf2b58728b936a7bf61",
+            "_id": "restricted-input@1.2.2",
+            "_shasum": "7ff25510f7baf5b36577c17f892adc8d82452b2f",
+            "_from": ".",
+            "_npmVersion": "2.14.12",
+            "_nodeVersion": "4.3.1",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "7ff25510f7baf5b36577c17f892adc8d82452b2f",
+                "tarball": "https://registry.npmjs.org/restricted-input/-/restricted-input-1.2.2.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/restricted-input-1.2.2.tgz_1496329259114_0.8849335284903646"
+            },
+            "directories": {}
+        },
+        "1.2.3": {
+            "name": "restricted-input",
+            "version": "1.2.3",
+            "description": "Restrict inputs to certain valid characters (e.g. formatting phone or card numbers)",
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com",
+                "url": "https://www.braintreepayments.com/"
+            },
+            "license": "MIT",
+            "main": "main.js",
+            "homepage": "https://github.com/braintree/restricted-input",
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/braintree/restricted-input.git"
+            },
+            "bugs": {
+                "url": "https://github.com/braintree/restricted-input/issues"
+            },
+            "keywords": [
+                "input",
+                "formatting",
+                "filtering",
+                "text",
+                "spacing",
+                "restrict"
+            ],
+            "scripts": {
+                "build": "mkdir -p dist; browserify ./main.js -o dist/restricted-input.js -s RestrictedInput -v",
+                "doc": "jsdoc -r -R README.md -d jsdoc lib/",
+                "doc:watch": "npm run doc && chokidar 'lib/**/*.js' -c 'npm run doc'",
+                "start": "node ./test/support/server.js",
+                "development": "npm run build & npm start & chokidar 'lib/**/*.js' -c 'npm run build; echo $(tput setaf 2)rebuilt$(tput sgr0)'",
+                "lint": "eslint lib test",
+                "test": "npm run lint && npm run test:unit",
+                "test:watch": "karma start config/karma.js",
+                "test:unit": "karma start config/karma.js --single-run",
+                "test:integration": ". ./.env && bundle exec rake sauce:spec test_files=spec",
+                "test:all": "npm run test && npm run test:integration",
+                "publish:demo": "./publish-gh-pages.sh"
+            },
+            "dependencies": {
+                "@braintree/browser-detection": "1.4.1"
+            },
+            "devDependencies": {
+                "browserify": "13.0.1",
+                "chai": "3.5.0",
+                "chokidar-cli": "1.2.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.2",
+                "express": "4.14.0",
+                "jsdoc": "3.4.0",
+                "karma": "1.1.1",
+                "karma-browserify": "5.1.0",
+                "karma-chai-sinon": "0.1.5",
+                "karma-mocha": "1.1.1",
+                "karma-mocha-reporter": "2.0.4",
+                "karma-phantomjs-launcher": "1.0.1",
+                "lodash.assign": "4.0.9",
+                "mocha": "3.0.0",
+                "phantomjs-prebuilt": "2.1.7",
+                "sauce-connect-launcher": "0.14.0",
+                "sinon": "1.17.4",
+                "sinon-chai": "2.8.0",
+                "watchify": "^3.7.0"
+            },
+            "gitHead": "c5fd911f05a832f1866b3d490f9045757eaabd2d",
+            "_id": "restricted-input@1.2.3",
+            "_shasum": "0efd467351a0aedd07f2c9e9bbde31c43706b01b",
+            "_from": ".",
+            "_npmVersion": "2.14.12",
+            "_nodeVersion": "4.3.1",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "0efd467351a0aedd07f2c9e9bbde31c43706b01b",
+                "tarball": "https://registry.npmjs.org/restricted-input/-/restricted-input-1.2.3.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/restricted-input-1.2.3.tgz_1496345549318_0.6811619666405022"
+            },
+            "directories": {}
+        },
+        "1.2.4": {
+            "name": "restricted-input",
+            "version": "1.2.4",
+            "description": "Restrict inputs to certain valid characters (e.g. formatting phone or card numbers)",
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com",
+                "url": "https://www.braintreepayments.com/"
+            },
+            "license": "MIT",
+            "main": "main.js",
+            "homepage": "https://github.com/braintree/restricted-input",
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/braintree/restricted-input.git"
+            },
+            "bugs": {
+                "url": "https://github.com/braintree/restricted-input/issues"
+            },
+            "keywords": [
+                "input",
+                "formatting",
+                "filtering",
+                "text",
+                "spacing",
+                "restrict"
+            ],
+            "scripts": {
+                "build": "mkdir -p dist; browserify ./main.js -o dist/restricted-input.js -s RestrictedInput -v",
+                "doc": "jsdoc -r -R README.md -d jsdoc lib/",
+                "doc:watch": "npm run doc && chokidar 'lib/**/*.js' -c 'npm run doc'",
+                "start": "node ./test/support/server.js",
+                "development": "npm run build & npm start & chokidar 'lib/**/*.js' -c 'npm run build; echo $(tput setaf 2)rebuilt$(tput sgr0)'",
+                "lint": "eslint lib test",
+                "test": "npm run lint && npm run test:unit",
+                "test:watch": "karma start config/karma.js",
+                "test:unit": "karma start config/karma.js --single-run",
+                "test:integration": ". ./.env && bundle exec rake sauce:spec test_files=spec",
+                "test:all": "npm run test && npm run test:integration",
+                "publish:demo": "./publish-gh-pages.sh"
+            },
+            "dependencies": {
+                "@braintree/browser-detection": "1.4.1"
+            },
+            "devDependencies": {
+                "browserify": "13.0.1",
+                "chai": "3.5.0",
+                "chokidar-cli": "1.2.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.2",
+                "express": "4.14.0",
+                "jsdoc": "3.4.0",
+                "karma": "1.1.1",
+                "karma-browserify": "5.1.0",
+                "karma-chai-sinon": "0.1.5",
+                "karma-mocha": "1.1.1",
+                "karma-mocha-reporter": "2.0.4",
+                "karma-phantomjs-launcher": "1.0.1",
+                "lodash.assign": "4.0.9",
+                "mocha": "3.0.0",
+                "phantomjs-prebuilt": "2.1.7",
+                "sauce-connect-launcher": "0.14.0",
+                "sinon": "1.17.4",
+                "sinon-chai": "2.8.0",
+                "watchify": "^3.7.0"
+            },
+            "gitHead": "83db10f99d421666eba36da9aca4031e9b2f3c1b",
+            "_id": "restricted-input@1.2.4",
+            "_shasum": "9311e208253c191d3284b58dcdf66283c3031c2d",
+            "_from": ".",
+            "_npmVersion": "2.14.12",
+            "_nodeVersion": "4.3.1",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "9311e208253c191d3284b58dcdf66283c3031c2d",
+                "tarball": "https://registry.npmjs.org/restricted-input/-/restricted-input-1.2.4.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/restricted-input-1.2.4.tgz_1496436538813_0.5561889223754406"
+            },
+            "directories": {}
+        },
+        "1.2.5": {
+            "name": "restricted-input",
+            "version": "1.2.5",
+            "description": "Restrict inputs to certain valid characters (e.g. formatting phone or card numbers)",
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com",
+                "url": "https://www.braintreepayments.com/"
+            },
+            "license": "MIT",
+            "main": "main.js",
+            "homepage": "https://github.com/braintree/restricted-input",
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/braintree/restricted-input.git"
+            },
+            "bugs": {
+                "url": "https://github.com/braintree/restricted-input/issues"
+            },
+            "keywords": [
+                "input",
+                "formatting",
+                "filtering",
+                "text",
+                "spacing",
+                "restrict"
+            ],
+            "scripts": {
+                "build": "mkdir -p dist; browserify ./main.js -o dist/restricted-input.js -s RestrictedInput -v",
+                "doc": "jsdoc -r -R README.md -d jsdoc lib/",
+                "doc:watch": "npm run doc && chokidar 'lib/**/*.js' -c 'npm run doc'",
+                "start": "node ./test/support/server.js",
+                "development": "npm run build & npm start & chokidar 'lib/**/*.js' -c 'npm run build; echo $(tput setaf 2)rebuilt$(tput sgr0)'",
+                "lint": "eslint lib test",
+                "test": "npm run lint && npm run test:unit",
+                "test:watch": "karma start config/karma.js",
+                "test:unit": "karma start config/karma.js --single-run",
+                "test:integration": ". ./.env && bundle exec rake sauce:spec test_files=spec",
+                "test:all": "npm run test && npm run test:integration",
+                "publish:demo": "./publish-gh-pages.sh"
+            },
+            "dependencies": {
+                "@braintree/browser-detection": "^1.5.0"
+            },
+            "devDependencies": {
+                "browserify": "13.0.1",
+                "chai": "3.5.0",
+                "chokidar-cli": "1.2.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.2",
+                "express": "4.14.0",
+                "jsdoc": "3.4.0",
+                "karma": "1.1.1",
+                "karma-browserify": "5.1.0",
+                "karma-chai-sinon": "0.1.5",
+                "karma-mocha": "1.1.1",
+                "karma-mocha-reporter": "2.0.4",
+                "karma-phantomjs-launcher": "1.0.1",
+                "lodash.assign": "4.0.9",
+                "mocha": "3.0.0",
+                "phantomjs-prebuilt": "2.1.7",
+                "sauce-connect-launcher": "0.14.0",
+                "sinon": "1.17.4",
+                "sinon-chai": "2.8.0",
+                "watchify": "^3.7.0"
+            },
+            "gitHead": "5a8b5cff0ae6301203a181225ef044e3fb853af3",
+            "_id": "restricted-input@1.2.5",
+            "_shasum": "e4e430b909f1e22afa41c5171904c6fc167e5e2a",
+            "_from": ".",
+            "_npmVersion": "2.14.12",
+            "_nodeVersion": "4.3.1",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "e4e430b909f1e22afa41c5171904c6fc167e5e2a",
+                "tarball": "https://registry.npmjs.org/restricted-input/-/restricted-input-1.2.5.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/restricted-input-1.2.5.tgz_1499463267485_0.3271280045155436"
+            },
+            "directories": {}
+        },
+        "1.2.6": {
+            "name": "restricted-input",
+            "version": "1.2.6",
+            "description": "Restrict inputs to certain valid characters (e.g. formatting phone or card numbers)",
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com",
+                "url": "https://www.braintreepayments.com/"
+            },
+            "license": "MIT",
+            "main": "main.js",
+            "homepage": "https://github.com/braintree/restricted-input",
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/braintree/restricted-input.git"
+            },
+            "bugs": {
+                "url": "https://github.com/braintree/restricted-input/issues"
+            },
+            "keywords": [
+                "input",
+                "formatting",
+                "filtering",
+                "text",
+                "spacing",
+                "restrict"
+            ],
+            "scripts": {
+                "build": "mkdir -p dist; browserify ./main.js -o dist/restricted-input.js -s RestrictedInput -v",
+                "doc": "jsdoc -r -R README.md -d jsdoc lib/",
+                "doc:watch": "npm run doc && chokidar 'lib/**/*.js' -c 'npm run doc'",
+                "start": "node ./test/support/server.js",
+                "development": "npm run build & npm start & chokidar 'lib/**/*.js' -c 'npm run build; echo $(tput setaf 2)rebuilt$(tput sgr0)'",
+                "lint": "eslint lib test",
+                "test": "npm run lint && npm run test:unit",
+                "test:watch": "karma start config/karma.js",
+                "test:unit": "karma start config/karma.js --single-run",
+                "test:integration": ". ./.env && bundle exec rake sauce:spec test_files=spec",
+                "test:all": "npm run test && npm run test:integration",
+                "publish:demo": "./publish-gh-pages.sh",
+                "prepublish": "npm run build"
+            },
+            "dependencies": {
+                "@braintree/browser-detection": "^1.5.0"
+            },
+            "devDependencies": {
+                "browserify": "13.0.1",
+                "chai": "3.5.0",
+                "chokidar-cli": "1.2.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.2",
+                "express": "4.14.0",
+                "jsdoc": "3.4.0",
+                "karma": "1.1.1",
+                "karma-browserify": "5.1.0",
+                "karma-chai-sinon": "0.1.5",
+                "karma-mocha": "1.1.1",
+                "karma-mocha-reporter": "2.0.4",
+                "karma-phantomjs-launcher": "1.0.1",
+                "lodash.assign": "4.0.9",
+                "mocha": "3.0.0",
+                "phantomjs-prebuilt": "2.1.7",
+                "sauce-connect-launcher": "0.14.0",
+                "sinon": "1.17.4",
+                "sinon-chai": "2.8.0",
+                "watchify": "^3.7.0"
+            },
+            "gitHead": "508decaf9bdbd93de1881fa27d030530e3145e79",
+            "_id": "restricted-input@1.2.6",
+            "_shasum": "eee32c181b86d9bd4f2d07fc369b2b9123d4ee36",
+            "_from": ".",
+            "_npmVersion": "2.14.12",
+            "_nodeVersion": "4.3.1",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "eee32c181b86d9bd4f2d07fc369b2b9123d4ee36",
+                "tarball": "https://registry.npmjs.org/restricted-input/-/restricted-input-1.2.6.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/restricted-input-1.2.6.tgz_1504109676542_0.8039341915864497"
+            },
+            "directories": {}
+        },
+        "1.2.7": {
+            "name": "restricted-input",
+            "version": "1.2.7",
+            "description": "Restrict inputs to certain valid characters (e.g. formatting phone or card numbers)",
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com",
+                "url": "https://www.braintreepayments.com/"
+            },
+            "license": "MIT",
+            "main": "main.js",
+            "homepage": "https://github.com/braintree/restricted-input",
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/braintree/restricted-input.git"
+            },
+            "bugs": {
+                "url": "https://github.com/braintree/restricted-input/issues"
+            },
+            "keywords": [
+                "input",
+                "formatting",
+                "filtering",
+                "text",
+                "spacing",
+                "restrict"
+            ],
+            "scripts": {
+                "build": "mkdir -p dist; browserify ./main.js -o dist/restricted-input.js -s RestrictedInput -v",
+                "doc": "jsdoc -r -R README.md -d jsdoc lib/",
+                "doc:watch": "npm run doc && chokidar 'lib/**/*.js' -c 'npm run doc'",
+                "start": "node ./test/support/server.js",
+                "development": "npm run build & npm start & chokidar 'lib/**/*.js' -c 'npm run build; echo $(tput setaf 2)rebuilt$(tput sgr0)'",
+                "lint": "eslint lib test",
+                "test": "npm run lint && npm run test:unit",
+                "test:watch": "karma start config/karma.js",
+                "test:unit": "karma start config/karma.js --single-run",
+                "test:integration": ". ./.env && bundle exec rake sauce:spec test_files=spec",
+                "test:all": "npm run test && npm run test:integration",
+                "publish:demo": "./publish-gh-pages.sh",
+                "prepublish": "npm run build"
+            },
+            "dependencies": {
+                "@braintree/browser-detection": "^1.5.0"
+            },
+            "devDependencies": {
+                "browserify": "13.0.1",
+                "chai": "3.5.0",
+                "chokidar-cli": "1.2.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.2",
+                "express": "4.14.0",
+                "jsdoc": "3.4.0",
+                "karma": "1.1.1",
+                "karma-browserify": "5.1.0",
+                "karma-chai-sinon": "0.1.5",
+                "karma-mocha": "1.1.1",
+                "karma-mocha-reporter": "2.0.4",
+                "karma-phantomjs-launcher": "1.0.1",
+                "lodash.assign": "4.0.9",
+                "mocha": "3.0.0",
+                "phantomjs-prebuilt": "2.1.7",
+                "sauce-connect-launcher": "0.14.0",
+                "sinon": "1.17.4",
+                "sinon-chai": "2.8.0",
+                "watchify": "^3.7.0"
+            },
+            "gitHead": "806d27a488119b0c8671ae8db609892c2be55382",
+            "_id": "restricted-input@1.2.7",
+            "_shasum": "e1298f5fd8c430cc2d8e6bb1175524023205cb34",
+            "_from": ".",
+            "_npmVersion": "3.10.10",
+            "_nodeVersion": "6.11.5",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "e1298f5fd8c430cc2d8e6bb1175524023205cb34",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/restricted-input/tarballs/1.2.7.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/restricted-input-1.2.7.tgz_1509572381088_0.7131478008814156"
+            },
+            "directories": {}
+        },
+        "2.0.0": {
+            "name": "restricted-input",
+            "version": "2.0.0",
+            "description": "Restrict inputs to certain valid characters (e.g. formatting phone or card numbers)",
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com",
+                "url": "https://www.braintreepayments.com/"
+            },
+            "license": "MIT",
+            "main": "main.js",
+            "homepage": "https://github.com/braintree/restricted-input",
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/braintree/restricted-input.git"
+            },
+            "bugs": {
+                "url": "https://github.com/braintree/restricted-input/issues"
+            },
+            "keywords": [
+                "input",
+                "formatting",
+                "filtering",
+                "text",
+                "spacing",
+                "restrict"
+            ],
+            "scripts": {
+                "build": "mkdir -p dist; browserify ./main.js -o dist/restricted-input.js -s RestrictedInput -v",
+                "doc": "jsdoc -r -R README.md -d jsdoc lib/",
+                "doc:watch": "npm run doc && chokidar 'lib/**/*.js' -c 'npm run doc'",
+                "start": "node ./test/support/server.js",
+                "development": "npm run build & npm start & chokidar 'lib/**/*.js' -c 'npm run build; echo $(tput setaf 2)rebuilt$(tput sgr0)'",
+                "lint": "eslint lib test",
+                "test": "npm run lint && npm run test:unit",
+                "test:watch": "karma start config/karma.js",
+                "test:unit": "karma start config/karma.js --single-run",
+                "test:integration": ". ./.env && bundle exec rake sauce:spec test_files=spec",
+                "test:all": "npm run test && npm run test:integration",
+                "publish:demo": "./publish-gh-pages.sh",
+                "prepublish": "npm run build"
+            },
+            "dependencies": {
+                "@braintree/browser-detection": "^1.5.0"
+            },
+            "devDependencies": {
+                "browserify": "^16.2.3",
+                "chai": "^4.2.0",
+                "chokidar-cli": "^1.2.2",
+                "eslint": "^5.16.0",
+                "eslint-config-braintree": "^2.0.0",
+                "express": "^4.16.4",
+                "jsdoc": "^3.6.1",
+                "karma": "^4.1.0",
+                "karma-browserify": "^6.0.0",
+                "karma-chai-sinon": "0.1.5",
+                "karma-mocha": "^1.3.0",
+                "karma-mocha-reporter": "^2.2.5",
+                "karma-phantomjs-launcher": "^1.0.4",
+                "lodash.assign": "^4.2.0",
+                "mocha": "^6.1.4",
+                "phantomjs-prebuilt": "^2.1.16",
+                "sauce-connect-launcher": "0.14.0",
+                "sinon": "^7.3.2",
+                "sinon-chai": "^3.3.0",
+                "watchify": "^3.7.0"
+            },
+            "gitHead": "fa76c439efc9abd87d8a18c20bd75bc87717a5af",
+            "_id": "restricted-input@2.0.0",
+            "_npmVersion": "6.4.1",
+            "_nodeVersion": "10.15.3",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs+npm@getbraintree.com"
+            },
+            "dist": {
+                "integrity": "sha512-dalQS4cmC/N2WZeRNJIEA2LDyG6pZwJrF/bLDO7DZykCiOjhgIuyeSS4Sp+iFii2U5VWbPXNgUsV7IlgLXgHvw==",
+                "shasum": "2b2006e8ecdc159210bc2d08cfc35a0258aae69f",
+                "tarball": "https://registry.npmjs.org/restricted-input/-/restricted-input-2.0.0.tgz",
+                "fileCount": 28,
+                "unpackedSize": 66367,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJc2uMcCRA9TVsSAnZWagAAzJsP/ROBWAlJ88UkuWgzFlz2\nj+WgziKkqewpMYAi0SYWb+uCQOR48LnmMiJJaHmHFwjG1K15SAcsbTfErOz5\n849l/RNAPF6R8Lw2HEGJB2FRv+Jq6oJPY2Z4M+9pdgtegEIMcVdlG842s2Tu\nygKQnWCwEM5J9SGxxTpr/yImd4zBNcPTzXia63uEfbG3WVrBfiBqzuXIayR5\nlXFQc82PvC1JrSiWKj/unhzEfveFcNhlIYPIqsoYiO4pv27BQO/xkGFUPw48\ne+2cM03iGTcTWDjjI4wR61LzYGWjN8Bxa8Zdamy4In7S4vw+JpkiGBbKDvxK\nrKDPcWQUia7t9QkNy0b09cHoEPndG+IrEtMTNiuHzEzWSv+ysSNvX86Lv9uG\nLr/4AKKrmmorYOwbvXo2aenWLTl/dP5tSPu/6Sfw0Q40Qc1q53CJXYJTrHEw\nk1d/cC8QHrOQVJZzS+lIfeIVu0hHSbwISIG9P4cwE4OtmX0pOWJABj2vOJws\nHD8OcLxF4jiw6KwTlD56StoVT7sxWkoJqpA1JEnuJJ3CD9Mpxbxs4bHYXoyy\nxoF6z6uJ9v3Au5sjc/ggY+rGeij1bz3DDDo649tNTkDy94cgSD1FYFObGQNQ\nw9kSxriNBSbzzO3/LnBsthqZMfVUtGMLSflAGsE8ZDmm3T2FmLG5r0QqiGPR\n+dQT\r\n=92YC\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/restricted-input_2.0.0_1557848860256_0.725847970095159"
+            },
+            "_hasShrinkwrap": false
+        },
+        "2.0.1": {
+            "name": "restricted-input",
+            "version": "2.0.1",
+            "description": "Restrict inputs to certain valid characters (e.g. formatting phone or card numbers)",
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com",
+                "url": "https://www.braintreepayments.com/"
+            },
+            "license": "MIT",
+            "main": "main.js",
+            "homepage": "https://github.com/braintree/restricted-input",
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/braintree/restricted-input.git"
+            },
+            "bugs": {
+                "url": "https://github.com/braintree/restricted-input/issues"
+            },
+            "keywords": [
+                "input",
+                "formatting",
+                "filtering",
+                "text",
+                "spacing",
+                "restrict"
+            ],
+            "scripts": {
+                "build": "mkdir -p dist; browserify ./main.js -o dist/restricted-input.js -s RestrictedInput -v",
+                "doc": "jsdoc -r -R README.md -d jsdoc lib/",
+                "doc:watch": "npm run doc && chokidar 'lib/**/*.js' -c 'npm run doc'",
+                "prestart": "npm run build",
+                "start": "node ./test/support/server.js",
+                "development": "npm start & chokidar 'lib/**/*.js' -c 'npm run build; echo $(tput setaf 2)rebuilt$(tput sgr0)'",
+                "lint": "eslint lib test",
+                "sauceconnect": "node scripts/sauce-connect.js",
+                "test": "npm run lint && npm run test:unit",
+                "test:watch": "karma start config/karma.js",
+                "test:unit": "karma start config/karma.js --single-run",
+                "test:integration": "bundle exec rake test",
+                "test:all": "npm run test && npm run test:integration",
+                "publish:demo": "./publish-gh-pages.sh",
+                "prepublish": "npm run build",
+                "postpublish": "npm run publish:demo"
+            },
+            "dependencies": {
+                "@braintree/browser-detection": "^1.5.0"
+            },
+            "devDependencies": {
+                "browserify": "^16.2.3",
+                "chai": "^4.2.0",
+                "chokidar-cli": "^1.2.2",
+                "dotenv": "^8.0.0",
+                "eslint": "^5.16.0",
+                "eslint-config-braintree": "^2.0.0",
+                "express": "^4.16.4",
+                "jsdoc": "^3.6.1",
+                "karma": "^4.1.0",
+                "karma-browserify": "^6.0.0",
+                "karma-chai-sinon": "0.1.5",
+                "karma-mocha": "^1.3.0",
+                "karma-mocha-reporter": "^2.2.5",
+                "karma-phantomjs-launcher": "^1.0.4",
+                "lodash.assign": "^4.2.0",
+                "mocha": "^6.1.4",
+                "phantomjs-prebuilt": "^2.1.16",
+                "sauce-connect-launcher": "^1.2.6",
+                "sinon": "^7.3.2",
+                "sinon-chai": "^3.3.0",
+                "watchify": "^3.7.0"
+            },
+            "gitHead": "8e7b0c462ed9c87432268cd6470a795d7c3f4343",
+            "_id": "restricted-input@2.0.1",
+            "_npmVersion": "6.4.1",
+            "_nodeVersion": "10.15.3",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs+npm@getbraintree.com"
+            },
+            "dist": {
+                "integrity": "sha512-pmthWjcDpHlbMoLcJjsGeftAaEJl89uKLYaaAsGnRshXCx7/A3oPGzyqNCcsWfmk/qvOvDOtrI44VG1tcJkDjg==",
+                "shasum": "1cc6919f39f2b707cd553db947856a681e35ad36",
+                "tarball": "https://registry.npmjs.org/restricted-input/-/restricted-input-2.0.1.tgz",
+                "fileCount": 23,
+                "unpackedSize": 66396,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJc5ECLCRA9TVsSAnZWagAAzwgP/j2uxWRf5HFUT4OchSkX\ni/7oBD7P4GNaFO2vwSbP2vvtqEkYRPtDi+DoqDAw9nYaYU7XrhUv9rY85qlk\nvlD1e7VocfXykdZCN+E0LhiBnC9BxfvjEVwB/VV2VNKqVItJyd2GnUEBT6/c\nHLTJOuFwp4SNHBNUm3h8ROnLqORrJ0JIylh4UoDoXbZ7gVsk6b8OWOHTDdUv\nQ6Dvirr9cBN3zHYJdV6SV1LlKdK/sQkyPCenAzR+URGApXfZuTiFwkh+MFxm\n9uFjAb3Wozk1DvNIUuxw+uGd86WMStmbVaHRtS5oVHmsCZqY7N16A3cLQsfz\nMqxHfkfe0qfZC6F1TIzX+PYYDhuBztpT15jUyjT3QuypXrJdjbzmjn+aOeRY\nJp1W/NPBPpb3+QisTZx0zg+6ISATWEO8Fd6JzHe0lzQ/fHkmalEc3rNdWkml\nxtoCbXdhbgLPtZQFh2NT1MMUMOYYT3WsE8D/TEH07nZSMF242Zr6Geg5hsfj\n+V8Nn8s4KRj/5dxsTimez2olOcC2vw99n9KhRvHDj9IFiiSDEpPCPzA+Ek4t\nTRIN/xrdXPJ8Lh7tlFlmpW6sTnXRysDJ587zcgHQc2pXn0DhhhXdLQ60ObYt\nJPr6XkzhjgMyYLRbzdpdqhppNlXXHaU81CFVXkqtKdO3x6MJaFgmjRbkklCP\npIY9\r\n=skY9\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/restricted-input_2.0.1_1558462603010_0.08629502232912989"
+            },
+            "_hasShrinkwrap": false
+        },
+        "2.0.2": {
+            "name": "restricted-input",
+            "version": "2.0.2",
+            "description": "Restrict inputs to certain valid characters (e.g. formatting phone or card numbers)",
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com",
+                "url": "https://www.braintreepayments.com/"
+            },
+            "license": "MIT",
+            "main": "main.js",
+            "homepage": "https://github.com/braintree/restricted-input",
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/braintree/restricted-input.git"
+            },
+            "bugs": {
+                "url": "https://github.com/braintree/restricted-input/issues"
+            },
+            "keywords": [
+                "input",
+                "formatting",
+                "filtering",
+                "text",
+                "spacing",
+                "restrict"
+            ],
+            "scripts": {
+                "build": "mkdir -p dist; browserify ./main.js -o dist/restricted-input.js -s RestrictedInput -v",
+                "doc": "jsdoc -r -R README.md -d jsdoc lib/",
+                "doc:watch": "npm run doc && chokidar 'lib/**/*.js' -c 'npm run doc'",
+                "prestart": "npm run build",
+                "start": "node ./test/support/server.js",
+                "development": "npm start & chokidar 'lib/**/*.js' -c 'npm run build; echo $(tput setaf 2)rebuilt$(tput sgr0)'",
+                "lint": "eslint lib test",
+                "sauceconnect": "node scripts/sauce-connect.js",
+                "test": "npm run lint && npm run test:unit",
+                "test:watch": "karma start config/karma.js",
+                "test:unit": "karma start config/karma.js --single-run",
+                "test:integration": "bundle exec rake test",
+                "test:all": "npm run test && npm run test:integration",
+                "publish:demo": "./publish-gh-pages.sh",
+                "prepublish": "npm run build",
+                "postpublish": "npm run publish:demo"
+            },
+            "dependencies": {
+                "@braintree/browser-detection": "^1.8.0"
+            },
+            "devDependencies": {
+                "browserify": "^16.4.0",
+                "chai": "^4.2.0",
+                "chokidar-cli": "^2.0.0",
+                "dotenv": "^8.0.0",
+                "eslint": "^5.16.0",
+                "eslint-config-braintree": "^3.0.1",
+                "express": "^4.17.1",
+                "jsdoc": "^3.6.3",
+                "karma": "^4.1.0",
+                "karma-browserify": "^6.1.0",
+                "karma-chai-sinon": "0.1.5",
+                "karma-mocha": "^1.3.0",
+                "karma-mocha-reporter": "^2.2.5",
+                "karma-phantomjs-launcher": "^1.0.4",
+                "lodash.assign": "^4.2.0",
+                "mocha": "^6.2.0",
+                "phantomjs-prebuilt": "^2.1.16",
+                "sauce-connect-launcher": "^1.2.7",
+                "sinon": "^7.4.1",
+                "sinon-chai": "^3.3.0",
+                "watchify": "^3.7.0"
+            },
+            "gitHead": "7fb9766032554bdad9d896687dfcd6afa20519fd",
+            "_id": "restricted-input@2.0.2",
+            "_npmVersion": "6.4.1",
+            "_nodeVersion": "10.15.3",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs+npm@getbraintree.com"
+            },
+            "dist": {
+                "integrity": "sha512-SER1EIVnefoHM8fu7SqNeCfB9nphfD0q45s0iUv2zy5soKiB4knCmFziEmpa9aunmW4A9V1Bszx6AK03/HMVYQ==",
+                "shasum": "b0c170414c5c7329a6e66d45d3675ab85d554495",
+                "tarball": "https://registry.npmjs.org/restricted-input/-/restricted-input-2.0.2.tgz",
+                "fileCount": 23,
+                "unpackedSize": 67263,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdUuPtCRA9TVsSAnZWagAABOsP/RnIE775UXoKEWDnI9Bl\ne1k95fYvzUxN6U7PtLWxhrv5Jz/RIKHKoVnTY3YoFiCJnsDJ3qzAdH3eHazP\ny5+f5dulMvG4uDDPoOESseuL085HmhHG8iz3FC+/hvYvfK2Nkot03Lj5+3Si\nrzGhTcQthcnGwunZ5bytakrA8iiqlj+tVxc9NUn9PzchIR/rSjeCwhwTfT0M\nxLiDVIpAuRBEOGDcIyqhTJI8aVzjN5OnHVgWjcDuXahead0GTeVTWWuv/Olh\nYMxt8HPtXTG/F30tXA6lMRwElFVCG+G688hX9LV3Ay/42uBs8sgkdpSI6DW2\nGepCRSmvD4sjnaTFGuYL5F2y7dCFETe1ovHhu0cdEfKn6C3YHydS2JCf+iB2\nRv6Srd1h9JC8yf60mZzQdxge5/hon2UORJiVchBR+R2sYHcPFRbws4V1FgC6\nXojOqNwYKOabgUF9K1s1i9w6bJRjz67JEOn/0qEhwdGGDP8t+Da76eOMIuAf\n9aUICQJOOkyBFuGGKubiJia/eMflxtxsxf9LHeS9TnjTaId7TkH9c1c8VKAS\nTO0sywJ2qDjqjdnk8t2Wyt/B/vjYTEG/DcaDa+w90GqQhaqrjCQybcY88+Sf\ncb5yI3jkewKhpp4mkPkwxPq6juYAFI4MVn9edoAi8waGfx8bLyvA0gfi4xBD\nsg63\r\n=Dzz+\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/restricted-input_2.0.2_1565713389086_0.4847040041660404"
+            },
+            "_hasShrinkwrap": false
+        },
+        "2.1.0": {
+            "name": "restricted-input",
+            "version": "2.1.0",
+            "description": "Restrict inputs to certain valid characters (e.g. formatting phone or card numbers)",
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com",
+                "url": "https://www.braintreepayments.com/"
+            },
+            "license": "MIT",
+            "main": "main.js",
+            "homepage": "https://github.com/braintree/restricted-input",
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/braintree/restricted-input.git"
+            },
+            "bugs": {
+                "url": "https://github.com/braintree/restricted-input/issues"
+            },
+            "keywords": [
+                "input",
+                "formatting",
+                "filtering",
+                "text",
+                "spacing",
+                "restrict"
+            ],
+            "scripts": {
+                "build": "mkdir -p dist; browserify ./main.js -o dist/restricted-input.js -s RestrictedInput -v",
+                "doc": "jsdoc -r -R README.md -d jsdoc lib/",
+                "doc:watch": "npm run doc && chokidar 'lib/**/*.js' -c 'npm run doc'",
+                "prestart": "npm run build",
+                "start": "node ./test/support/server.js",
+                "development": "npm start & chokidar 'lib/**/*.js' -c 'npm run build; echo $(tput setaf 2)rebuilt$(tput sgr0)'",
+                "lint": "eslint lib test",
+                "test": "npm run lint && npm run test:unit",
+                "test:watch": "karma start config/karma.js",
+                "test:unit": "karma start config/karma.js --single-run",
+                "test:integration": "wdio wdio.conf.js",
+                "test:all": "npm run test && npm run test:integration",
+                "publish:demo": "./publish-gh-pages.sh",
+                "prepublish": "npm run build",
+                "postpublish": "npm run publish:demo"
+            },
+            "dependencies": {
+                "@braintree/browser-detection": "^1.9.0"
+            },
+            "devDependencies": {
+                "@wdio/browserstack-service": "^5.8.0",
+                "@wdio/cli": "^5.8.3",
+                "@wdio/local-runner": "^5.8.3",
+                "@wdio/mocha-framework": "^5.8.1",
+                "@wdio/spec-reporter": "^5.8.0",
+                "@wdio/sync": "^5.8.1",
+                "browserify": "^16.5.0",
+                "browserstack-local": "^1.4.0",
+                "chai": "^4.2.0",
+                "chokidar-cli": "^2.0.0",
+                "dotenv": "^8.1.0",
+                "eslint": "^6.4.0",
+                "eslint-config-braintree": "^4.0.0",
+                "express": "^4.17.1",
+                "jsdoc": "^3.6.3",
+                "karma": "^4.3.0",
+                "karma-browserify": "^6.1.0",
+                "karma-chai-sinon": "0.1.5",
+                "karma-mocha": "^1.3.0",
+                "karma-mocha-reporter": "^2.2.5",
+                "karma-phantomjs-launcher": "^1.0.4",
+                "lodash.assign": "^4.2.0",
+                "mocha": "^6.2.0",
+                "phantomjs-prebuilt": "^2.1.16",
+                "sinon": "^7.4.2",
+                "sinon-chai": "^3.3.0",
+                "uuid": "^3.3.3",
+                "watchify": "^3.7.0",
+                "webdriverio": "^5.8.3"
+            },
+            "gitHead": "b2860a9154b839fec53b29366fa251451602e2dd",
+            "_id": "restricted-input@2.1.0",
+            "_npmVersion": "6.4.1",
+            "_nodeVersion": "10.13.0",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs+npm@getbraintree.com"
+            },
+            "dist": {
+                "integrity": "sha512-dH4cNfdTgChSlqYGff0zMtLSPWj3oU4oph9GvHgWhDEiHftk7/B9Ci5y5mCts2atvcm2a0gTZ8XqNaP9cVzMwg==",
+                "shasum": "3e2ff79e8fee53d3152cf859063701ded206582f",
+                "tarball": "https://registry.npmjs.org/restricted-input/-/restricted-input-2.1.0.tgz",
+                "fileCount": 26,
+                "unpackedSize": 75969,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdrhCLCRA9TVsSAnZWagAA/GYP/2YLA21LNM8bzRc3TNQk\n4vMWQQ1GH92aOe+Iq/zDJpXrPAWdwzZ/O5tHg6XYbheoq0Nbw6ZG4cOeMH90\n1XSlJqC2WdEN87F7UD33Sj0lWfjjTXrA8Bkdb+QxR2OQQly/Rl9m34jvUkrV\nCiGj3nws5dedWYRGSPkbxOVpRy8Aq6u3HLL0cDujoBaADBiPL4ByI91rou9i\ntQh3OBiovJNTpZrfwBwkxkdQsPPeHOLOlBpbFxscqZRwREGkxv68VRHUAwXj\n3m0jG66TPb9Mxt/Q6ZgfBsbZJ7bygKTCHGIN+78/VNDITeYigy/WlTHv1xdo\npepx/tCCC5HR+R+dNjXMReJBUFBePCCtgIzZpzkOF5tGFziW8MJiH3Fi6i1N\nLV+8Kds35eUheJzCg077OaHnxX+YR0GkeUkU3qgtH0usoGoB3YDOkmCH+itC\n/AQq2eZ0q/NZ8FFW7Wygtsrik7TLL4IvLApsSz4qI8KH6tZo7IChAtaNZ9jH\ngYlDS9NpucsxkMMCK0oCPnpdoZ843kqDY3AkhYylzvr0tzc4HyE3ZwL//bj/\n9hv+KEVdVT9TbP8aSGh6QRXJj/kBFBLyw2YVXvkgXK6HcDXsjJ6oUCbxOt79\ntX2uUX+PNXE93Uwkd85w/LRW9zkkWH6j1b5Hz6vigYxRSYyzqCnjV5YXFbYy\nAULx\r\n=Lfip\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/restricted-input_2.1.0_1571688586424_0.8861272796712687"
+            },
+            "_hasShrinkwrap": false
+        },
+        "2.1.1": {
+            "name": "restricted-input",
+            "version": "2.1.1",
+            "description": "Restrict inputs to certain valid characters (e.g. formatting phone or card numbers)",
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com",
+                "url": "https://www.braintreepayments.com/"
+            },
+            "license": "MIT",
+            "main": "main.js",
+            "homepage": "https://github.com/braintree/restricted-input",
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/braintree/restricted-input.git"
+            },
+            "bugs": {
+                "url": "https://github.com/braintree/restricted-input/issues"
+            },
+            "keywords": [
+                "input",
+                "formatting",
+                "filtering",
+                "text",
+                "spacing",
+                "restrict"
+            ],
+            "scripts": {
+                "build": "mkdir -p dist; browserify ./main.js -o dist/restricted-input.js -s RestrictedInput -v",
+                "doc": "jsdoc -r -R README.md -d jsdoc lib/",
+                "doc:watch": "npm run doc && chokidar 'lib/**/*.js' -c 'npm run doc'",
+                "prestart": "npm run build",
+                "start": "node ./test/support/server.js",
+                "development": "npm start & chokidar 'lib/**/*.js' -c 'npm run build; echo $(tput setaf 2)rebuilt$(tput sgr0)'",
+                "lint": "eslint lib test",
+                "test": "npm run lint && npm run test:unit",
+                "test:watch": "jest --watchAll",
+                "test:unit": "jest test/unit",
+                "test:integration": "wdio wdio.conf.js",
+                "test:all": "npm run test && npm run test:integration",
+                "publish:demo": "./publish-gh-pages.sh",
+                "prepublish": "npm run build",
+                "postpublish": "npm run publish:demo"
+            },
+            "dependencies": {
+                "@braintree/browser-detection": "^1.9.0"
+            },
+            "devDependencies": {
+                "@wdio/browserstack-service": "^6.1.4",
+                "@wdio/cli": "^6.1.8",
+                "@wdio/local-runner": "^6.1.8",
+                "@wdio/mocha-framework": "^6.1.8",
+                "@wdio/spec-reporter": "^6.1.5",
+                "@wdio/sync": "^6.1.8",
+                "browserify": "^16.5.0",
+                "browserstack-local": "^1.4.5",
+                "chai": "^4.2.0",
+                "chokidar-cli": "^2.1.0",
+                "dotenv": "^8.2.0",
+                "eslint": "^6.8.0",
+                "eslint-config-braintree": "^4.0.0",
+                "express": "^4.17.1",
+                "jest": "^26.0.1",
+                "jsdoc": "^3.6.4",
+                "uuid": "^8.0.0",
+                "webdriverio": "^6.1.8"
+            },
+            "jest": {
+                "setupFilesAfterEnv": [
+                    "./test/unit/global.js"
+                ]
+            },
+            "gitHead": "0b06ef115d9dad083b2a3b067121f11e4c179767",
+            "_id": "restricted-input@2.1.1",
+            "_nodeVersion": "12.14.0",
+            "_npmVersion": "6.13.4",
+            "dist": {
+                "integrity": "sha512-uMQLSfirbhvVGyGiBxWIMwVLw1a839BX5VWqehYxH38r8eKIwIp0WmgzlIpjdM7CH4TG8ymw6GYIkXXC7dgwBQ==",
+                "shasum": "8bdb8c924972b73f1bc3f9a91759ecf2ef34c805",
+                "tarball": "https://registry.npmjs.org/restricted-input/-/restricted-input-2.1.1.tgz",
+                "fileCount": 24,
+                "unpackedSize": 74593,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJe/eLqCRA9TVsSAnZWagAApGEQAJ4b+UGJvqmtwHw9/qYB\n2u5MXvYbkxPLbAF4R/iZtSZvfMuEHYk1afCEao/X0TDw+H7VSuEkBPzOBjm7\nldvBq8UXMpXNDQ2I00kpozPip2dPPEuzaUtv6NUzqIMHgg5KaCr0ixJT1caC\n9OOzGMVoqn6L4UTqnotup7SdMFYxtjyt9gJaUk8FjQzhjAkbp2YuEXjYypdv\nUktxI+1u1h86O76TfnXR5u4/qx5/93wJjeZY8p08/7e43HFUdeFgIYeakPdb\njAI9CkwailN07ZdWFcX3viwUFB5jSviJw1U8ReHuOvvADVxBzf5EsKpsY5A4\nFaMyy9DSHC0DLmiPZ/HwN2zQ4tLDSUQ2VAXA05T8pLNiapL6LAgaeRgjwhem\nCLgfLCGn85ZL8S3LDq1nTT5+IQ1de7jVSdye0smiM/GT4WpdsSiLM6/5Q1qT\nXvcNt9uLoPLRqh+QdATTObHRJlqYpDzIeHPLd39g5WvZjCodEkgpascGPekR\nkjLXNLiKFEIHwjLWqehDH5nLk9tCPUokureigvvTfLHOjI/LTQ8sdMQZ3h+E\nmpoke4Ck+P9ojPdli/jxgHCAJR/otClohNKIwVDNl5CXmYZxeIiEFvS826H7\ntNFMHJmzMRLA3phlnQkAQGppLSUF75ABcxeiNO6JtQ1sHZ79WRyMFsxYGKGO\nceZB\r\n=si+W\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmUser": {
+                "name": "braintree",
+                "email": "team-sdk@getbraintree.com"
+            },
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/restricted-input_2.1.1_1593697001894_0.10684299414229459"
+            },
+            "_hasShrinkwrap": false
+        },
+        "3.0.0": {
+            "name": "restricted-input",
+            "version": "3.0.0",
+            "description": "Restrict inputs to certain valid characters (e.g. formatting phone or card numbers)",
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com",
+                "url": "https://www.braintreepayments.com/"
+            },
+            "license": "MIT",
+            "main": "dist/main.js",
+            "homepage": "https://github.com/braintree/restricted-input",
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/braintree/restricted-input.git"
+            },
+            "bugs": {
+                "url": "https://github.com/braintree/restricted-input/issues"
+            },
+            "keywords": [
+                "input",
+                "formatting",
+                "filtering",
+                "text",
+                "spacing",
+                "restrict"
+            ],
+            "scripts": {
+                "prebuild": "prettier --write .",
+                "build": "tsc --declaration",
+                "build:app": "mkdir -p dist-app; browserify ./src/main.ts -p [ tsify --strict ] -o dist-app/restricted-input.js -s RestrictedInput -v",
+                "predoc": "npm run build",
+                "doc": "jsdoc -r -R README.md -d jsdoc dist/lib/",
+                "doc:watch": "npm run doc && chokidar 'src/lib/**/*.ts' -c 'npm run doc'",
+                "prestart": "npm run build:app",
+                "start": "node ./test/support/server.js",
+                "development": "npm start & chokidar 'src/lib/**/*.ts' -c 'npm run build:app; echo $(tput setaf 2)rebuilt$(tput sgr0)'",
+                "lint": "eslint --ext js,ts src test",
+                "posttest": "npm run lint",
+                "test": "npm run test:unit",
+                "test:watch": "jest --watchAll",
+                "test:unit": "jest test/unit",
+                "test:integration": "wdio wdio.conf.js",
+                "test:all": "npm run test && npm run test:integration",
+                "publish:demo": "./publish-gh-pages.sh",
+                "prepublishOnly": "npm run build && npm run build:app",
+                "postpublish": "npm run publish:demo"
+            },
+            "dependencies": {
+                "@braintree/browser-detection": "^1.9.0"
+            },
+            "devDependencies": {
+                "@types/jest": "^26.0.3",
+                "@wdio/browserstack-service": "^6.1.15",
+                "@wdio/cli": "^6.1.23",
+                "@wdio/local-runner": "^6.1.23",
+                "@wdio/mocha-framework": "^6.1.19",
+                "@wdio/spec-reporter": "^6.1.23",
+                "@wdio/sync": "^6.1.14",
+                "browserify": "^16.5.0",
+                "browserstack-local": "^1.4.5",
+                "chai": "^4.2.0",
+                "chokidar-cli": "^2.1.0",
+                "dotenv": "^8.2.0",
+                "eslint": "^7.3.1",
+                "eslint-config-braintree": "^5.0.0-typescript-prep-rc.17",
+                "express": "^4.17.1",
+                "jest": "^26.1.0",
+                "jsdoc": "^3.6.4",
+                "prettier": "^2.0.5",
+                "ts-jest": "^26.1.1",
+                "tsify": "^4.0.2",
+                "typescript": "^3.9.5",
+                "uuid": "^8.2.0",
+                "webdriverio": "^6.1.23"
+            },
+            "jest": {
+                "preset": "ts-jest",
+                "setupFilesAfterEnv": [
+                    "./test/unit/global.ts"
+                ],
+                "testPathIgnorePatterns": [
+                    "<rootDir>/dist"
+                ]
+            },
+            "gitHead": "62647e08e35a1fe6f863700c3e1b998537ef7963",
+            "_id": "restricted-input@3.0.0",
+            "_nodeVersion": "12.18.2",
+            "_npmVersion": "6.14.5",
+            "dist": {
+                "integrity": "sha512-ctchtUbSHshtuotosvbvksva7UdPo5dqTsYhIY57jhOCBQRggMf2aa44qGXt2jlvWwVNtn9nq31bl2xk39+iKg==",
+                "shasum": "8037e8e26478587315618b9bc9ce5f5e51ea0868",
+                "tarball": "https://registry.npmjs.org/restricted-input/-/restricted-input-3.0.0.tgz",
+                "fileCount": 40,
+                "unpackedSize": 55572,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfCIQ0CRA9TVsSAnZWagAAQEQQAITZGj1jWwLZXFMKCitC\n/J0JqJhQElAiyJpV/ua6415zTq72COnkFlYwcvRmMwH/Mq6jkzhOEmxtWncU\neczalGZDvNHuQJpurWFzyxLtrckN1e9KdA4ruhEXf4dfTHMSLjYiaefgQA6p\na4uO0DVgN5TwjImcvWlnu4uQElq48UxOfbt96GDqbF1uArhXTn78rvhMCiha\nTyJG0490sIqzzkvw2z/q10Ioq7Tf+nsWuei4UYpcyom/7vhB48cFHc9wvMS4\nrwFCpLVbYQddbU3oFpT/HSvbRWawv/nopv0e8kS1W3azAiC1ZZ1SvjGSLrTN\nVZcae0L4IxG9p3XHgrxOzd25sJMoDxDmgta3PmIO6nQJS9rKcJzLo5XkNFpI\nN/z9aNFNjEOFft0TEgzgnWHGJd1bppDnezPo4+49TB1uuH8m9ku1P2AKWcj3\nEqjgO50PJUb3nfGYN9wjoSKWvv3vOkz3uCKRtu7kwYxZBq5cPTj3cGh5aH8d\nb6LruQemtruLSLlNUm6FeT99xIwXLY+9ef4Ef93YLvZZHqkni7LmV0Dj9fln\n747fd94Q0hB45OcsQ+IJB0fZil2vJ1LiUWaF+hYze6rfA3v7bjuX2Fnvvsn9\nnKKT5nR/TxJ1/fxWMnLsKWBX1ZDbsfsY0m9g+QzYK1xFU8/evtiLxmcjOkUn\n+yDw\r\n=BulU\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmUser": {
+                "name": "braintree",
+                "email": "team-sdk@getbraintree.com"
+            },
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/restricted-input_3.0.0_1594393652134_0.6479543692022844"
+            },
+            "_hasShrinkwrap": false
+        },
+        "3.0.1": {
+            "name": "restricted-input",
+            "version": "3.0.1",
+            "description": "Restrict inputs to certain valid characters (e.g. formatting phone or card numbers)",
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com",
+                "url": "https://www.braintreepayments.com/"
+            },
+            "license": "MIT",
+            "main": "dist/main.js",
+            "homepage": "https://github.com/braintree/restricted-input",
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/braintree/restricted-input.git"
+            },
+            "bugs": {
+                "url": "https://github.com/braintree/restricted-input/issues"
+            },
+            "keywords": [
+                "input",
+                "formatting",
+                "filtering",
+                "text",
+                "spacing",
+                "restrict"
+            ],
+            "scripts": {
+                "prebuild": "prettier --write .",
+                "build": "tsc --declaration",
+                "build:app": "mkdir -p dist-app; browserify ./src/main.ts -p [ tsify --strict ] -o dist-app/restricted-input.js -s RestrictedInput -v",
+                "predoc": "npm run build",
+                "doc": "jsdoc -r -R README.md -d jsdoc dist/lib/",
+                "doc:watch": "npm run doc && chokidar 'src/lib/**/*.ts' -c 'npm run doc'",
+                "prestart": "npm run build:app",
+                "start": "node ./test/support/server.js",
+                "development": "npm start & chokidar 'src/lib/**/*.ts' -c 'npm run build:app; echo $(tput setaf 2)rebuilt$(tput sgr0)'",
+                "lint": "eslint --ext js,ts src test",
+                "posttest": "npm run lint",
+                "test": "npm run test:unit",
+                "test:watch": "jest --watchAll",
+                "test:unit": "jest test/unit",
+                "test:integration": "wdio wdio.conf.js",
+                "test:all": "npm run test && npm run test:integration",
+                "publish:demo": "./publish-gh-pages.sh",
+                "prepublishOnly": "npm run build && npm run build:app",
+                "postpublish": "npm run publish:demo"
+            },
+            "dependencies": {
+                "@braintree/browser-detection": "^1.9.0"
+            },
+            "devDependencies": {
+                "@types/jest": "^26.0.3",
+                "@wdio/browserstack-service": "^6.1.15",
+                "@wdio/cli": "^6.1.23",
+                "@wdio/local-runner": "^6.1.23",
+                "@wdio/mocha-framework": "^6.1.19",
+                "@wdio/spec-reporter": "^6.1.23",
+                "@wdio/sync": "^6.1.14",
+                "browserify": "^16.5.0",
+                "browserstack-local": "^1.4.5",
+                "chai": "^4.2.0",
+                "chokidar-cli": "^2.1.0",
+                "dotenv": "^8.2.0",
+                "eslint": "^7.3.1",
+                "eslint-config-braintree": "^5.0.0-typescript-prep-rc.17",
+                "express": "^4.17.1",
+                "jest": "^26.1.0",
+                "jsdoc": "^3.6.4",
+                "prettier": "^2.0.5",
+                "ts-jest": "^26.1.1",
+                "tsify": "^4.0.2",
+                "typescript": "^3.9.5",
+                "uuid": "^8.2.0",
+                "webdriverio": "^6.1.23"
+            },
+            "jest": {
+                "preset": "ts-jest",
+                "setupFilesAfterEnv": [
+                    "./test/unit/global.ts"
+                ],
+                "testPathIgnorePatterns": [
+                    "<rootDir>/dist"
+                ]
+            },
+            "gitHead": "fac7adeefeb8784fc85e61c2fddc1f6d373d5533",
+            "_id": "restricted-input@3.0.1",
+            "_nodeVersion": "12.18.2",
+            "_npmVersion": "6.14.5",
+            "dist": {
+                "integrity": "sha512-0PpLzSVG4WFDUaimQlqrukF1aQn3DqFNlRKBPZc/f3SwekujTo5ztYN5nwzBkLwK/PnLX6nfE2tghdUa03262Q==",
+                "shasum": "6f827da0a63bc382731cb76e1ea12be17be167b2",
+                "tarball": "https://registry.npmjs.org/restricted-input/-/restricted-input-3.0.1.tgz",
+                "fileCount": 41,
+                "unpackedSize": 55743,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfCN0hCRA9TVsSAnZWagAAoWAP+wSnRN4plE0kin1PU9em\nVChA3XiuUSGOw/Xv0zK6c32Zjqjz6Wx9feKIPeG8QjjpcPPzHAFZbm32/HXs\nYo0fM5dGi4BYcndcmrt7mMDW/J500JBr/PKTyBwd9+1pT1oi7CGZJnEcUYW+\nF9a/fEIgezKJCkDrRCi/dl8uCzeihSw6t2ssuFLlNJHeOx4jLrexAUA1yWtZ\nZ/76DMno5UuSm4rxU1Xb4FLeL323z395SlZ2LvDOkQ44XHSSVl/ycldlUtjN\nsgNWGhu4r9Nv/djdOXC68MZhcE1WHW7ba+dENN5CxlwPpG/YGMFsa8toKvBY\nmSsvYfJrKKBDdpXBkQf/GCANr8EYCmD/LKwx80H3Yngt/Wu5n+AUeQ4eCe3/\n94Q8ih/RHqsozkdmMYKgPfr7wV1Hx5lQ+fMmxWPUL+agI3x24A3qtMb981hP\nrCYQ17JVZ5PdYcD5IKfHuJ+ahD6VabRWNALRZq3NuJ8wHeG8Ez+aQMpvEmHq\nkXUhqFSLRKXNWjHgB4o81UWLDaV9HlwQ9BzX719FCZjrChEgfnNWb4eEuX4j\nwlyo+8cxFuBg0D8sIwdBR7XY7TjpUUM3VQ4YjJFr3PcVsHS7oww+P8/cFFuH\npTKv+q7TYIa/YcRUqAHxRBfWITIkjcn0JhB/2P/wlntzBNVnJrlhfV3i947/\nzWur\r\n=azFh\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmUser": {
+                "name": "braintree",
+                "email": "team-sdk@getbraintree.com"
+            },
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/restricted-input_3.0.1_1594416416804_0.15042413107422292"
+            },
+            "_hasShrinkwrap": false
+        }
+    },
+    "readme": "# Restricted Input\n\n[![BrowserStack Status](https://automate.browserstack.com/badge.svg?badge_key=UUlSMGtaQWNkL3lEdlZ2NmFzcnh4OWcvNGFkQjZjcExhQmFPb1cydlJEOD0tLVNlQ3JSUDgzR20ySUs4SFc4L2x1TXc9PQ==--7e53bf426e69647ff4cda6a50460759494986d49)](https://automate.browserstack.com/public-build/UUlSMGtaQWNkL3lEdlZ2NmFzcnh4OWcvNGFkQjZjcExhQmFPb1cydlJEOD0tLVNlQ3JSUDgzR20ySUs4SFc4L2x1TXc9PQ==--7e53bf426e69647ff4cda6a50460759494986d49)\n\nAllow restricted character sets in `input` elements.\n\n## Demo\n\nTry the latest version of Restricted Input [here](https://braintree.github.io/restricted-input/).\n\n## Features\n\n- Disallow arbitrary characters based on patterns\n- Maintains caret position\n- Format/Update on paste\n- Works in IE11+\n\n## Development\n\n**Install dependencies**\n\n```bash\nnvm use # if you have node version manager installed\nnpm i\n```\n\n**Watch files and run demo server**\n\n```bash\nnpm run development\n```\n\nThis will start a server on port `3099` which can be overridden with the `PORT` env var.\n\n**Unit tests**\n\nThe following command will run the linting task and the unit tests.\n\n```sh\nnpm test\n```\n\n**Integration tests**\n\nWe use [Browserstack](https://www.browserstack.com) to automate end to end testing on Google Chrome, Safari, Firefox, Microsoft Edge, and Internet Explorer 11.\n\nFirst, [sign up for a free open source Browserstack account](https://www.browserstack.com/open-source?ref=pricing).\n\nCopy the `.env.example` file to `.env`\n\n```sh\ncp .env.example .env\n```\n\nFill in the BROWSERSTACK_USERNAME and BROWSERSTACK_ACCESS_KEY environmental variables with your credentials:\n\n```sh\nBROWSERSTACK_USERNAME=username\nBROWSERSTACK_ACCESS_KEY=access_key\n```\n\nTo run the integration tests in Safari, Google Chrome, Firefox, IE11 and Microsoft Edge:\n\n```sh\nnpm run development # in another terminal window\nnpm run test:integration\n```\n\nTo run tests in only one browser, prefix the test command with an `ONLY_BROWSERS` env variable:\n\n```sh\n# run only in edge browser\nONLY_BROWSERS=edge npm run test:integration\n\n# run only in chrome browser\nONLY_BROWSERS=chrome npm run test:integration\n\n# run only in ie 11 browser\nONLY_BROWSERS=ie npm run test:integration\n\n# run only in safari browser\nONLY_BROWSERS=safari npm run test:integration\n\n# run only in firefox browser\nONLY_BROWSERS=firefox npm run test:integration\n```\n\nTo run tests in certain browsers, prefix the test command with an `ONLY_BROWSERS` env variable, with each browser comma separated:\n\n```sh\n# run only in edge and chrome browsers\nONLY_BROWSERS=edge,chrome npm run test:integration\n```\n\nTo run only certain tests, add the `.only` property before running the test:\n\n```js\nit.only('does something', function () {\n```\n\n## Usage\n\n```javascript\nimport RestrictedInput from \"restricted-input\";\n\nconst formattedCreditCardInput = new RestrictedInput({\n  element: document.querySelector(\"#credit-card\"),\n  pattern: \"{{9999}} {{9999}} {{9999}} {{9999}}\",\n});\n```\n\n## Patterns\n\nPatterns are a mixture of [`Placeholder`](#placeholder)s and [`PermaChar`](#permachar)s.\n\n### Placeholder\n\nA `Placeholder` is the part of the pattern that accepts user input based on some restrictions. A placeholder is defined in the pattern using two open curly brackets, the placeholder, followed by two closing curly brackets e.g. `{{Abc123}}`.\n\nThe patterns a `Placeholder` can be are:\n\n- a single alpha character that matches the alpha regex `/[A-Za-z]/`. e.g. `{{C}}` will match one alpha character.\n- a single digit that matches the digit regex `/[0-9]/`. e.g. `{{3}}` will match one digit.\n- a `*` character that matches `/./`. e.g. `{{*}}` will match the next character.\n\n### PermaChar\n\nA `PermaChar` is the part of the pattern that is automatically inserted. `PermaChar`s are defined in the pattern as any characters other than `Placeholder`s.\n\n### Example patterns\n\nSome example patterns with behavior are listed:\n\n- `12{{3}}`\n  - Inserts `12`.\n  - Waits for a single digit from the user.\n- `{{A}}BC`\n  - Waits for a single alpha from the user.\n  - Inserts `BC`.\n- `${{*2L}}E`\n  - Inserts `$`.\n  - Waits for any single character input from the user.\n  - Waits for a single digit from the user.\n  - Waits for a single alpha from the user.\n  - Inserts `E`.\n\n## Paste Event\n\nIf an input is changed via a paste event, you may want to adjust the pattern before input formatting occurs. In this case, pass an `onPasteEvent` callback:\n\n```js\nconst formattedCreditCardInput = new RestrictedInput({\n  element: document.querySelector('#credit-card'),\n  pattern: '{{9999}} {{9999}} {{9999}} {{9999}}',\n  onPasteEvent: function (payload) {\n    var value = payload.unformattedInputValue;\n\n    if (requiresAmexPattern(value)) {\n      formattedCreditCardInput.setPattern('{{9999}} {{999999}} {{99999}}')\n    } else {\n      formattedCreditCardInput.setPattern('{{9999}} {{9999}} {{9999}} {{9999}}')\n    }\n  })\n});\n```\n\n## API\n\n### options\n\n| Key          | Type                                        | Description                                                                                                              |\n| ------------ | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |\n| element      | `HTMLInputElement` or `HTMLTextAreaElement` | A valid reference to an `input` or `textarea` DOM node                                                                   |\n| pattern      | `String`                                    | Pattern describing the allowed character set you wish for entry into corresponding field. See [Patterns](#patterns).     |\n| onPasteEvent | `Function` (optional)                       | A callback function to inspect the unformatted value of the input during a paste event. See [Paste Event](#paste-event). |\n\n## Browser Support\n\n**Desktop**\n\n- Chrome (latest)\n- Firefox (17+)\n- Safari (8+)\n- IE11 (desktop/metro)\n- IE10 (desktop/metro)\n- IE9\n\n## Browsers Where Formatting is Turned Off Automatically\n\nOld versions of Samsung Android browsers are incompatible with formatting. These will not attempt to intercept the values and format the input.\n\n## TODO\n\n- [ ] Improve jsdoc\n- [ ] Add example guides/pages\n",
+    "maintainers": [
+        {
+            "name": "braintree",
+            "email": "devs@getbraintree.com"
+        }
+    ],
+    "time": {
+        "modified": "2020-07-10T21:26:59.313Z",
+        "created": "2016-05-27T22:29:58.337Z",
+        "1.0.0": "2016-05-27T22:29:58.337Z",
+        "1.0.1": "2016-08-30T14:15:11.917Z",
+        "1.0.2": "2016-09-16T20:54:41.933Z",
+        "1.0.3": "2016-09-28T17:37:20.128Z",
+        "1.0.4": "2016-11-05T12:42:57.825Z",
+        "1.0.5": "2016-11-15T21:24:50.686Z",
+        "1.0.6": "2016-12-12T23:48:47.812Z",
+        "1.0.7": "2016-12-16T22:15:31.027Z",
+        "1.0.8": "2017-01-18T18:33:15.757Z",
+        "1.0.9": "2017-01-25T19:34:01.481Z",
+        "1.0.10": "2017-02-15T02:32:58.881Z",
+        "1.0.11": "2017-02-22T17:12:42.221Z",
+        "1.1.0": "2017-05-04T21:48:20.897Z",
+        "1.2.0": "2017-05-08T20:31:41.322Z",
+        "1.2.1": "2017-05-24T21:22:11.521Z",
+        "1.2.2": "2017-06-01T15:01:00.129Z",
+        "1.2.3": "2017-06-01T19:32:30.311Z",
+        "1.2.4": "2017-06-02T20:48:59.843Z",
+        "1.2.5": "2017-07-07T21:34:28.540Z",
+        "1.2.6": "2017-08-30T16:14:37.570Z",
+        "1.2.7": "2017-11-01T21:39:42.108Z",
+        "2.0.0": "2019-05-14T15:47:40.412Z",
+        "2.0.1": "2019-05-21T18:16:43.173Z",
+        "2.0.2": "2019-08-13T16:23:09.233Z",
+        "2.1.0": "2019-10-21T20:09:46.579Z",
+        "2.1.1": "2020-07-02T13:36:42.129Z",
+        "3.0.0": "2020-07-10T15:07:32.279Z",
+        "3.0.1": "2020-07-10T21:26:56.944Z"
+    },
+    "homepage": "https://github.com/braintree/restricted-input",
+    "keywords": [
+        "input",
+        "formatting",
+        "filtering",
+        "text",
+        "spacing",
+        "restrict"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/braintree/restricted-input.git"
+    },
+    "author": {
+        "name": "Braintree",
+        "email": "code@getbraintree.com",
+        "url": "https://www.braintreepayments.com/"
+    },
+    "bugs": {
+        "url": "https://github.com/braintree/restricted-input/issues"
+    },
+    "license": "MIT",
+    "readmeFilename": "README.md"
+}

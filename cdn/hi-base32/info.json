@@ -1,0 +1,411 @@
+{
+    "_id": "hi-base32",
+    "_rev": "8-612967e73c1814c0518a8d6f181b1ffc",
+    "name": "hi-base32",
+    "description": "A simple Base32 encode / decode function for JavaScript supports UTF-8 encoding.",
+    "dist-tags": {
+        "latest": "0.5.0"
+    },
+    "versions": {
+        "0.1.0": {
+            "name": "hi-base32",
+            "version": "0.1.0",
+            "description": "A simple Base32 encode / decode function for JavaScript supports UTF-8 encoding.",
+            "main": "src/base32.js",
+            "devDependencies": {
+                "expect.js": "~0.3.1",
+                "jscoverage": "~0.5.9"
+            },
+            "scripts": {
+                "test": "mocha tests/node-test.js -r jscoverage",
+                "coveralls": "mocha tests/node-test.js -R mocha-lcov-reporter -r jscoverage | coveralls"
+            },
+            "repository": {
+                "type": "git",
+                "url": "https://github.com/emn178/hi-base32.git"
+            },
+            "keywords": [
+                "base32",
+                "encode",
+                "decode"
+            ],
+            "license": "MIT",
+            "author": {
+                "name": "emn178",
+                "email": "emn178@gmail.com"
+            },
+            "homepage": "https://github.com/emn178/hi-base32",
+            "bugs": {
+                "url": "https://github.com/emn178/hi-base32/issues"
+            },
+            "gitHead": "d3f5297bb34ccee78ed552dd1b94fc2189a48811",
+            "_id": "hi-base32@0.1.0",
+            "_shasum": "5502d66cf92b875b7b582f0e07e8f5d63c621d02",
+            "_from": ".",
+            "_npmVersion": "2.1.18",
+            "_nodeVersion": "0.10.35",
+            "_npmUser": {
+                "name": "emn178",
+                "email": "emn178@gmail.com"
+            },
+            "maintainers": [
+                {
+                    "name": "emn178",
+                    "email": "emn178@gmail.com"
+                }
+            ],
+            "dist": {
+                "shasum": "5502d66cf92b875b7b582f0e07e8f5d63c621d02",
+                "tarball": "https://registry.npmjs.org/hi-base32/-/hi-base32-0.1.0.tgz"
+            },
+            "directories": {}
+        },
+        "0.1.1": {
+            "name": "hi-base32",
+            "version": "0.1.1",
+            "description": "A simple Base32 encode / decode function for JavaScript supports UTF-8 encoding.",
+            "main": "src/base32.js",
+            "devDependencies": {
+                "expect.js": "~0.3.1",
+                "jscoverage": "~0.5.9"
+            },
+            "scripts": {
+                "test": "mocha tests/node-test.js -r jscoverage",
+                "coveralls": "mocha tests/node-test.js -R mocha-lcov-reporter -r jscoverage | coveralls"
+            },
+            "repository": {
+                "type": "git",
+                "url": "https://github.com/emn178/hi-base32.git"
+            },
+            "keywords": [
+                "base32",
+                "encode",
+                "decode"
+            ],
+            "license": "MIT",
+            "author": {
+                "name": "emn178",
+                "email": "emn178@gmail.com"
+            },
+            "homepage": "https://github.com/emn178/hi-base32",
+            "bugs": {
+                "url": "https://github.com/emn178/hi-base32/issues"
+            },
+            "gitHead": "bda8e3aba1086622198eb7fe47fc8afd0e92e205",
+            "_id": "hi-base32@0.1.1",
+            "_shasum": "a30fcb56e7362cf5ef6f543e4c280d50647e5e80",
+            "_from": ".",
+            "_npmVersion": "2.1.18",
+            "_nodeVersion": "0.10.35",
+            "_npmUser": {
+                "name": "emn178",
+                "email": "emn178@gmail.com"
+            },
+            "maintainers": [
+                {
+                    "name": "emn178",
+                    "email": "emn178@gmail.com"
+                }
+            ],
+            "dist": {
+                "shasum": "a30fcb56e7362cf5ef6f543e4c280d50647e5e80",
+                "tarball": "https://registry.npmjs.org/hi-base32/-/hi-base32-0.1.1.tgz"
+            },
+            "directories": {}
+        },
+        "0.2.0": {
+            "name": "hi-base32",
+            "version": "0.2.0",
+            "description": "A simple Base32 encode / decode function for JavaScript supports UTF-8 encoding.",
+            "main": "src/base32.js",
+            "devDependencies": {
+                "expect.js": "~0.3.1",
+                "jscoverage": "~0.5.9",
+                "mocha": "~2.3.4",
+                "uglifyjs": "~2.4.10"
+            },
+            "scripts": {
+                "test": "mocha tests/node-test.js -r jscoverage",
+                "report": "mocha tests/node-test.js -r jscoverage --covout=html",
+                "coveralls": "mocha tests/node-test.js -R mocha-lcov-reporter -r jscoverage | coveralls",
+                "build": "uglifyjs src/base32.js --compress --mangle --comments --output build/base32.min.js"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+https://github.com/emn178/hi-base32.git"
+            },
+            "keywords": [
+                "base32",
+                "encode",
+                "decode"
+            ],
+            "license": "MIT",
+            "author": {
+                "name": "Chen, Yi-Cyuan",
+                "email": "emn178@gmail.com"
+            },
+            "homepage": "https://github.com/emn178/hi-base32",
+            "bugs": {
+                "url": "https://github.com/emn178/hi-base32/issues"
+            },
+            "gitHead": "0fa730142a6a18e26d483869a84f8c7fe6c4876a",
+            "_id": "hi-base32@0.2.0",
+            "_shasum": "ab9eadaef623f0505ab868ff64223c671a675d5e",
+            "_from": ".",
+            "_npmVersion": "3.10.3",
+            "_nodeVersion": "6.5.0",
+            "_npmUser": {
+                "name": "emn178",
+                "email": "emn178@gmail.com"
+            },
+            "dist": {
+                "shasum": "ab9eadaef623f0505ab868ff64223c671a675d5e",
+                "tarball": "https://registry.npmjs.org/hi-base32/-/hi-base32-0.2.0.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "emn178",
+                    "email": "emn178@gmail.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "packages-12-west.internal.npmjs.com",
+                "tmp": "tmp/hi-base32-0.2.0.tgz_1485152195967_0.8625063961371779"
+            },
+            "directories": {}
+        },
+        "0.3.0": {
+            "name": "hi-base32",
+            "version": "0.3.0",
+            "description": "A simple Base32 encode / decode function for JavaScript supports UTF-8 encoding.",
+            "main": "src/base32.js",
+            "types": "index.d.ts",
+            "devDependencies": {
+                "expect.js": "~0.3.1",
+                "jscoverage": "~0.5.9",
+                "mocha": "~2.3.4",
+                "uglify-js": "~2.4.10"
+            },
+            "scripts": {
+                "test": "mocha tests/node-test.js -r jscoverage",
+                "report": "mocha tests/node-test.js -r jscoverage --covout=html",
+                "coveralls": "mocha tests/node-test.js -R mocha-lcov-reporter -r jscoverage | coveralls",
+                "build": "uglifyjs src/base32.js --compress --mangle --comments --output build/base32.min.js"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+https://github.com/emn178/hi-base32.git"
+            },
+            "keywords": [
+                "base32",
+                "encode",
+                "decode"
+            ],
+            "license": "MIT",
+            "author": {
+                "name": "Chen, Yi-Cyuan",
+                "email": "emn178@gmail.com"
+            },
+            "homepage": "https://github.com/emn178/hi-base32",
+            "bugs": {
+                "url": "https://github.com/emn178/hi-base32/issues"
+            },
+            "gitHead": "0c418b26499a984bf192e18863fcb970388efc76",
+            "_id": "hi-base32@0.3.0",
+            "_shasum": "2a6bc75c2c938bdec59ddeca47baaa28371ec8bc",
+            "_from": ".",
+            "_npmVersion": "3.10.3",
+            "_nodeVersion": "6.5.0",
+            "_npmUser": {
+                "name": "emn178",
+                "email": "emn178@gmail.com"
+            },
+            "dist": {
+                "shasum": "2a6bc75c2c938bdec59ddeca47baaa28371ec8bc",
+                "tarball": "https://registry.npmjs.org/hi-base32/-/hi-base32-0.3.0.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "emn178",
+                    "email": "emn178@gmail.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/hi-base32-0.3.0.tgz_1502848851513_0.5606001857668161"
+            },
+            "directories": {}
+        },
+        "0.4.0": {
+            "name": "hi-base32",
+            "version": "0.4.0",
+            "description": "A simple Base32 encode / decode function for JavaScript supports UTF-8 encoding.",
+            "main": "src/base32.js",
+            "types": "index.d.ts",
+            "devDependencies": {
+                "expect.js": "~0.3.1",
+                "mocha": "~2.3.4",
+                "nyc": "^11.3.0",
+                "uglify-js": "^3.1.9"
+            },
+            "scripts": {
+                "test": "nyc mocha tests/node-test.js",
+                "report": "nyc --reporter=html --reporter=text mocha tests/node-test.js",
+                "coveralls": "nyc report --reporter=text-lcov | coveralls",
+                "build": "uglifyjs src/base32.js -c -m --comments -o build/base32.min.js"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+https://github.com/emn178/hi-base32.git"
+            },
+            "keywords": [
+                "base32",
+                "encode",
+                "decode"
+            ],
+            "license": "MIT",
+            "author": {
+                "name": "Chen, Yi-Cyuan",
+                "email": "emn178@gmail.com"
+            },
+            "homepage": "https://github.com/emn178/hi-base32",
+            "bugs": {
+                "url": "https://github.com/emn178/hi-base32/issues"
+            },
+            "nyc": {
+                "exclude": [
+                    "tests"
+                ]
+            },
+            "gitHead": "b376f50c4b338a8117c0169636174fd68446e4d4",
+            "_id": "hi-base32@0.4.0",
+            "_npmVersion": "5.3.0",
+            "_nodeVersion": "8.2.1",
+            "_npmUser": {
+                "name": "emn178",
+                "email": "emn178@gmail.com"
+            },
+            "dist": {
+                "integrity": "sha512-EX6y56ROwZaQd1Kd0xYVsPzVqza2sdM6H9jAZ1DqJxMbX/7j25WIdj788g+HiIIhMtLGL+NbMJnHMpHas4zTZw==",
+                "shasum": "6c3fddd6d42bd6a4ccb25f8a6415de7652f33d27",
+                "tarball": "https://registry.npmjs.org/hi-base32/-/hi-base32-0.4.0.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "emn178",
+                    "email": "emn178@gmail.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/hi-base32-0.4.0.tgz_1516626819842_0.4636779746506363"
+            },
+            "directories": {}
+        },
+        "0.5.0": {
+            "name": "hi-base32",
+            "version": "0.5.0",
+            "description": "A simple Base32 encode / decode function for JavaScript supports UTF-8 encoding.",
+            "main": "src/base32.js",
+            "types": "index.d.ts",
+            "devDependencies": {
+                "expect.js": "~0.3.1",
+                "mocha": "~2.3.4",
+                "nyc": "^11.3.0",
+                "uglify-js": "^3.1.9"
+            },
+            "scripts": {
+                "test": "nyc mocha tests/node-test.js",
+                "report": "nyc --reporter=html --reporter=text mocha tests/node-test.js",
+                "coveralls": "nyc report --reporter=text-lcov | coveralls",
+                "build": "uglifyjs src/base32.js -c -m --comments -o build/base32.min.js"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+https://github.com/emn178/hi-base32.git"
+            },
+            "keywords": [
+                "base32",
+                "encode",
+                "decode"
+            ],
+            "license": "MIT",
+            "author": {
+                "name": "Chen, Yi-Cyuan",
+                "email": "emn178@gmail.com"
+            },
+            "homepage": "https://github.com/emn178/hi-base32",
+            "bugs": {
+                "url": "https://github.com/emn178/hi-base32/issues"
+            },
+            "nyc": {
+                "exclude": [
+                    "tests"
+                ]
+            },
+            "gitHead": "523417423e1fa7bf0c83af6898586e91220c9986",
+            "_id": "hi-base32@0.5.0",
+            "_npmVersion": "5.3.0",
+            "_nodeVersion": "8.2.1",
+            "_npmUser": {
+                "name": "emn178",
+                "email": "emn178@gmail.com"
+            },
+            "dist": {
+                "integrity": "sha512-DDRmxSyoYuvjUb9EnXdoiMChBZ7ZcUVJsK5Frd3kqMhuBxvmZdnBeynAVfj7/ECbn++CekcoprvC/rprHPAtow==",
+                "shasum": "61329f76a31f31008533f1c36f2473e259d64571",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/hi-base32/tarballs/0.5.0.tgz",
+                "fileCount": 7,
+                "unpackedSize": 29656
+            },
+            "maintainers": [
+                {
+                    "name": "emn178",
+                    "email": "emn178@gmail.com"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/hi-base32_0.5.0_1522895461375_0.5975777308535404"
+            }
+        }
+    },
+    "readme": "# hi-base32\nA simple Base32(RFC 4648) encode / decode function for JavaScript supports UTF-8 encoding.  \n[![Build Status](https://api.travis-ci.org/emn178/hi-base32.png)](https://travis-ci.org/emn178/hi-base32)\n[![Build Status](https://coveralls.io/repos/emn178/hi-base32/badge.png?branch=master)](https://coveralls.io/r/emn178/hi-base32?branch=master)  \n[![NPM](https://nodei.co/npm/hi-base32.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/hi-base32)\n\n## Demo\n[Base32 Encode Online](http://emn178.github.io/online-tools/base32_encode.html)  \n[Base32 Decode Online](http://emn178.github.io/online-tools/base32_decode.html)  \n\n## Download\n[Compress](https://raw.github.com/emn178/hi-base32/master/build/base32.min.js)  \n[Uncompress](https://raw.github.com/emn178/hi-base32/master/src/base32.js)\n\n## Installation\nYou can also install hi-base32 by using Bower.\n\n    bower install hi-base32\n\nFor node.js, you can use this command to install:\n\n    npm install hi-base32\n\n## Usage\nYou could use like this:\n```JavaScript\nbase32.encode('String to encode');\nbase32.decode('Base32 string to decode');\n```\nIf you use node.js, you should require the module first:\n```JavaScript\nvar base32 = require('hi-base32');\n```\nIt supports AMD:\n```JavaScript\nrequire(['your/path/hi-baes32.js'], function (baes32) {\n// ...\n});\n```\n\n## TypeScript\n```TypeScript\nimport * as base32 from 'hi-base32';\n// or\n// import { encode, decode } from 'hi-base32';\n\nbase32.encode('String to encode');\nbase32.decode('Base32 string to decode');\n```\n\n### Methods\n\n#### base32.encode(input, asciiOnly)\n\nEncode string or bytes to base32, set asciiOnly to true for better performace if it is.\n\n##### *input: `String`, `Array`, `Uint8Array` or `ArrayBuffer`*\n\nInput string or bytes to encode.\n\n##### *asciiOnly: `Boolean` (default: `false`)*\n\nSpecify the string encoding is ASCII. It only works when string input.\n\n#### base32.decode(base32Str, asciiOnly)\n\nDecode base32 string, set asciiOnly to true for better performace.\n\n##### *base32Str: `String`*\n\nBase32 string to decode.\n\n##### *asciiOnly: `Boolean` (default: `false`)*\n\nSpecify the string encoding is ASCII.\n\n#### base32.decode.asBytes(base32Str)\n\nDecode base32 string and return byte `Array`\n\n##### *base32Str: `String`*\n\nBase32 string to decode.\n\n## Example\n```JavaScript\nbase32.encode('Man is distinguished, not only by his reason, but by this singular passion from other animals, which is a lust of the mind, that by a perseverance of delight in the continued and indefatigable generation of knowledge, exceeds the short vehemence of any carnal pleasure.');\n// JVQW4IDJOMQGI2LTORUW4Z3VNFZWQZLEFQQG433UEBXW43DZEBRHSIDINFZSA4TFMFZW63RMEBRHK5BAMJ4SA5DINFZSA43JNZTXK3DBOIQHAYLTONUW63RAMZZG63JAN52GQZLSEBQW42LNMFWHGLBAO5UGSY3IEBUXGIDBEBWHK43UEBXWMIDUNBSSA3LJNZSCYIDUNBQXIIDCPEQGCIDQMVZHGZLWMVZGC3TDMUQG6ZRAMRSWY2LHNB2CA2LOEB2GQZJAMNXW45DJNZ2WKZBAMFXGIIDJNZSGKZTBORUWOYLCNRSSAZ3FNZSXEYLUNFXW4IDPMYQGW3TPO5WGKZDHMUWCAZLYMNSWKZDTEB2GQZJAONUG64TUEB3GK2DFNVSW4Y3FEBXWMIDBNZ4SAY3BOJXGC3BAOBWGKYLTOVZGKLQ=\nbase32.decode('JBSWY3DP'); // Hello\nbase32.decode.asBytes('JBSWY3DP'); // [72, 101, 108, 108, 111]\n\n// It also supports UTF-8 encoding\nbase32.encode('中文'); // 4S4K3ZUWQ4======\n```\n\n## License\nThe project is released under the [MIT license](http://www.opensource.org/licenses/MIT).\n\n## Contact\nThe project's website is located at https://github.com/emn178/hi-base32  \nAuthor: Chen, Yi-Cyuan <emn178@gmail.com>\n",
+    "maintainers": [
+        {
+            "name": "emn178",
+            "email": "emn178@gmail.com"
+        }
+    ],
+    "time": {
+        "modified": "2018-04-05T02:31:02.488Z",
+        "created": "2015-03-14T14:26:02.171Z",
+        "0.1.0": "2015-03-14T14:26:02.171Z",
+        "0.1.1": "2015-03-15T10:37:30.010Z",
+        "0.2.0": "2017-01-23T06:16:36.201Z",
+        "0.3.0": "2017-08-16T02:00:51.745Z",
+        "0.4.0": "2018-01-22T13:13:39.905Z",
+        "0.5.0": "2018-04-05T02:31:01.461Z"
+    },
+    "homepage": "https://github.com/emn178/hi-base32",
+    "keywords": [
+        "base32",
+        "encode",
+        "decode"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/emn178/hi-base32.git"
+    },
+    "author": {
+        "name": "Chen, Yi-Cyuan",
+        "email": "emn178@gmail.com"
+    },
+    "bugs": {
+        "url": "https://github.com/emn178/hi-base32/issues"
+    },
+    "license": "MIT",
+    "readmeFilename": "README.md",
+    "_attachments": {}
+}

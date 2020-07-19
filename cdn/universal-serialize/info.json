@@ -1,0 +1,439 @@
+{
+    "_id": "universal-serialize",
+    "_rev": "4-76d7fde42e121dd61fb6ffbf3afb3ae2",
+    "name": "universal-serialize",
+    "dist-tags": {
+        "latest": "1.0.8"
+    },
+    "versions": {
+        "1.0.4": {
+            "name": "universal-serialize",
+            "version": "1.0.4",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js --ext .js,.jsx",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/universal-serialize.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.85",
+                "grumbler-scripts": "^3"
+            },
+            "gitHead": "36646375c8cf0e91befd446e4c2fc85c22146b9d",
+            "bugs": {
+                "url": "https://github.com/krakenjs/universal-serialize/issues"
+            },
+            "homepage": "https://github.com/krakenjs/universal-serialize#readme",
+            "_id": "universal-serialize@1.0.4",
+            "_npmVersion": "5.10.0",
+            "_nodeVersion": "8.9.4",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-v6DUiaTq6A/QW3UPmt28e1/drZna477/Govt2zaUDkfzOOstQ1hbDj5SaWywK9ZmVYR6g54oqG9CJe/PD2flZQ==",
+                "shasum": "562cb8058b5226db8d3a0dec8edfb2f4d260a7cb",
+                "tarball": "https://registry.npmjs.org/universal-serialize/-/universal-serialize-1.0.4.tgz",
+                "fileCount": 48,
+                "unpackedSize": 90851,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJb80TmCRA9TVsSAnZWagAArx4P/0+/xF8MO1x8lTdHXavC\n7bSCKDeO8WCxRjPjJ+IuKjIriRuNPrJBnm8NafMhk29s2DKF5+qSDzfeBQOs\nkpMcJSkYMnaRCOyjr74L3tIH+qHzctkPsJ/rVooEvU10L3H9DEJ+n5N1f8HC\nQXi6E0YaKLQGTgXGCoFBolcRs5pmAcs27W3OEKqLlpdmippssZdAgIk1y6oQ\nAyUBwECJUx1g3Pgcw8DfqiHHwl4CYDqGFD5Eb3i4GI2LTySjoBAVczkelNXH\n8rW2ysTjzCpCxI1dZAYUkf7EwEdHzkoxpBju+U79sD295KKKaERE5KbB1TXW\ny4uFIpBw4OT6xOoNug974IecCP1slnCPxlzvZ2k7Sf6M5KS25yukdmmCt2ah\nab+pz+ryAVIPAMZTdd2Qy9WYAqNxNmXPWJ2z+TnxJk10+yeRPnN/YsWK1rKC\n5ckVOp485fxDpW/seqL2/ftCvMX28Kxyg+nJUFLeDzlOUrVnVCYk5YQ6FTjO\nMJRz9HmbNgy+I0xuD31AP5d+Q4GzZe+RF2orXvGpUKI9+JhZ+myV6HWv7Gzi\noKrR9gdyPsWkc5hsLRQ5OL53rh63+uoNb3IcJUqe2PozglTo5PGrh5+kJ6nq\nSO7Tyu3lbDM1gFgtwhHL7J//fAHqz3puPt9N39/o3TZMvBK+ItuquGiRf5m1\ncOsj\r\n=3jtq\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/universal-serialize_1.0.4_1542669541818_0.6324680932056501"
+            },
+            "_hasShrinkwrap": false
+        },
+        "1.0.5": {
+            "name": "universal-serialize",
+            "version": "1.0.5",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js --ext .js,.jsx",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/universal-serialize.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.85",
+                "grumbler-scripts": "^3"
+            },
+            "gitHead": "dc6443d388da8c310ac4836580595d106c894689",
+            "bugs": {
+                "url": "https://github.com/krakenjs/universal-serialize/issues"
+            },
+            "homepage": "https://github.com/krakenjs/universal-serialize#readme",
+            "_id": "universal-serialize@1.0.5",
+            "_npmVersion": "5.10.0",
+            "_nodeVersion": "8.9.4",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-MCyFz/sJ1y8WKK56mlUhR2jekDGwSASIuzpYIY7euJwwC39IKmDr2uUsBdaXWpRq80iBUykf9bPaDNGEznRgGQ==",
+                "shasum": "513d7bfd17d3228ecde58453419614d83744d2dc",
+                "tarball": "https://registry.npmjs.org/universal-serialize/-/universal-serialize-1.0.5.tgz",
+                "fileCount": 48,
+                "unpackedSize": 90953,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJb81xACRA9TVsSAnZWagAACpAP/ivt8aT1nOJEKuuUb8JI\nEN0UPU++drmFbh2CTVpGq32rpkBVMdk1bw0WXZl2RLJatp/iHXzZhexdNMpx\nkd26KOrGUgF4OdE3JwfvMD70hKzfoDYDgsv4pbo4fmAjsaIdI2OXUOzQbPwW\nsMeQlNZzf+mhqwNF76qi9YALH3bunSh+VtULFHCkOolCE+FYj2kVQB+SRpZn\nWZh+14h+qRb3mH7eJ1nBvUUz6Rf5ynO/68w65CDxjgzSKF0spvHcpIk/iSoS\nV/mAFs9NPzjw0ZCu2aTxLvk3a0jCbFif+EvtveXls0/7n3UVb+yej5sT7nlE\n5s89iOoQzsSitLzAyqXhGPm4tqOkR8lhhzsa8XhnfrvzfFF7J92YzDpRFLgQ\nDF+4+pLOxj5aJvUCpMgau69bWJvozOqI519wArdeOsMg2qGRyluCfc/cHpOE\n741mIg6hykdfQ4drx/vC4iPjd/5T2my+NSbLLv0AAyzXFBVeuINO+jrHzGZs\nby5lmuQFdlJtTZgd7iU3RkVkOWMDVheW0nzAp/LPs1cKZRvFrF8Xs+UGU4tr\n/85IWa3t3bsfYR+bC7SO+EHodXq1J8IWQp37lC2rkuKH/nhNBBZi3+Ub3Y7I\nVy7HOr+2Tv7sgUnajyhpRd8tGCATxiyCzsL/djFc2NyCPXjJwyeK0YEKThEO\nydqN\r\n=W8Lg\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/universal-serialize_1.0.5_1542675519957_0.5771961075400356"
+            },
+            "_hasShrinkwrap": false
+        },
+        "1.0.6": {
+            "name": "universal-serialize",
+            "version": "1.0.6",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js --ext .js,.jsx",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/universal-serialize.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.85",
+                "grumbler-scripts": "^3"
+            },
+            "gitHead": "665025990792391e2b162d874e9b9a9cdaf3535a",
+            "bugs": {
+                "url": "https://github.com/krakenjs/universal-serialize/issues"
+            },
+            "homepage": "https://github.com/krakenjs/universal-serialize#readme",
+            "_id": "universal-serialize@1.0.6",
+            "_npmVersion": "5.10.0",
+            "_nodeVersion": "8.9.4",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-X7VUgs4rXraJ0MmXBr0smrfwryQ8hK4zoLnM/MYHGgw0XO+hlQhsupM33jg3Cy6Hs4cwBE4D4/Lhezx1OLN2PQ==",
+                "shasum": "3fd9c4807a6203f7b89b94000775d219e20a5e00",
+                "tarball": "https://registry.npmjs.org/universal-serialize/-/universal-serialize-1.0.6.tgz",
+                "fileCount": 48,
+                "unpackedSize": 95299,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJb83WLCRA9TVsSAnZWagAAmhYP/3bENZQjBSDxz/OkK7hw\nY9C04oIJqrclbhy02bQW1W+wHu1NfkL/1b/NUmSr4pd/2aW9ZjlrAHZOL2dY\nX3SiAZV9V/T2UHmCl5tu5+mYf9cQ4k/lIcxE7bOtsSnIsZFhtoVTbNjSsD5O\nAzK3Vfwf/FibC8OpvSDpK9mqc4gykTF/8cwQHxI2O5VkOy5owL+fR6fcb92m\nLMZL0m1pMabOo4dvvzzTO83GTlSR0x/RjOvrXMe5nDIuM86/uaDE5pHHig4L\nw75asakhi7VykW0b0hUkto8XXidBjCqKuzE0VS+uGxxLVNgD6l+4pBTDUq3W\nWhLxMjCSaAoBPMKci/5uGn9UAXL0T1u/nX974WCzaJouGucHrUgih7J2PbYz\nVf/o0Ei1B6UJXU3nYt8wJ6gk5LxFx962TzsazwavYBtCLreq6hrnRHGWG4/J\nSS2NiZ09m6XKenwzsbMaU+hD+SN+9oFmvGilm+raNIkrDDbpq48EgK/LO5W5\nn50uxEWXtpDgIaiFPYuJ6aGMWXblaNxTlkD+eS5oMh1LONRV7JQkyhrkv8r2\nJmOEVBFJcyrNNlQgorHeIzr/y0JoF9/9VOJ2NUwlm9l1NTiUyrzV+oGV70S1\nfUL0kx/w9AFlSnu4jhz7xJkFjOVLPCQlZOZh2ujMsuuiNO3urPJLyBxhNvS4\nS/pd\r\n=HWJP\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/universal-serialize_1.0.6_1542681994908_0.3011233176327368"
+            },
+            "_hasShrinkwrap": false
+        },
+        "1.0.7": {
+            "name": "universal-serialize",
+            "version": "1.0.7",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js --ext .js,.jsx",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/universal-serialize.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.85",
+                "grumbler-scripts": "^3"
+            },
+            "gitHead": "a01a64292a16399acd8328d9611ffcccd6161abf",
+            "bugs": {
+                "url": "https://github.com/krakenjs/universal-serialize/issues"
+            },
+            "homepage": "https://github.com/krakenjs/universal-serialize#readme",
+            "_id": "universal-serialize@1.0.7",
+            "_npmVersion": "6.4.1",
+            "_nodeVersion": "10.13.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-rHWw4zdhPqKqbBu3GbNzdicHRc+0byzAFFcImDMo8x+S9yYfyqYQQcr749NV8jO/0YisMzd+LjeivdbHUzA67A==",
+                "shasum": "5e64607c3c941c88f76e77f2b095fafc2f37abed",
+                "tarball": "https://registry.npmjs.org/universal-serialize/-/universal-serialize-1.0.7.tgz",
+                "fileCount": 48,
+                "unpackedSize": 97101,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcVOnTCRA9TVsSAnZWagAAK34P/07mA5XS07lWz31HNiTc\n5JX1E2yDgyK8L4xY5uW+QE4CvRo7ibNX0iIwUUw9n39sLG4MRVVeT4WA6MCK\nws13orFBnHjeL+pWuYEOOU8QxnK/Z0FjlFExeVf4QPfJFcJ1agwz9XPT8oz9\nR0eyKjo3N4mqldAoDz91aMWyL3kYn1zIlU/YwbTSrb45bG2tm/aD8GFoh9uJ\n+uzL4ihVkj3jR+YjKB0hBFq768rKzD+MTHOelQIb5D+H4KTPJ+uP7YJyKNLq\nj5RiV+nGBWTqzoL48jrvrF7Xyv+nH5oXI+undHalLSSfdi8s2PHegt2ND4bN\ncG8stpxCUYUqAzHD/11mVod3d7xnz4aAlQhIEUfBDmBvicgvyDwdLCHe0+c4\ncvgqHJwDxNvoJEXX+uUOs6+j5HzUYvL9hWM1+4o2rhWUzFZSfxhebOgCgWqX\nJWb/bugIiAYEyKn1H3c2UAqAmTzd0mHeEIB5kT74SuxGBNplg1HcZEs1x3Y5\nf5kTJ6AcO4bAyfLTjpq2gTNbREUd+uNQy56TtByxUq9nND2cup3YMDGdOf5P\nP3TKOeVBeLAFsPCDrSB8FZ5Bk68IYyuS8hj20lz6SgB9hwhJQB5XAVMMfUVi\nHhXc6D6r4XJ7sMdMBoKYehjaNHGf/OT1bPM4Lo8OAiq/a2ygYXoZnRFZvsa3\n+vNx\r\n=qJ/n\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/universal-serialize_1.0.7_1549068754668_0.20728172133300515"
+            },
+            "_hasShrinkwrap": false
+        },
+        "1.0.8": {
+            "name": "universal-serialize",
+            "version": "1.0.8",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js --ext .js,.jsx",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/universal-serialize.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.85",
+                "grumbler-scripts": "^3"
+            },
+            "gitHead": "c28c79ec5ba690658e25a1cca2161a7eede9937b",
+            "bugs": {
+                "url": "https://github.com/krakenjs/universal-serialize/issues"
+            },
+            "homepage": "https://github.com/krakenjs/universal-serialize#readme",
+            "_id": "universal-serialize@1.0.8",
+            "_npmVersion": "5.6.0",
+            "_nodeVersion": "8.12.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-AhC3D26asmMkxAadYjCUJh98AUV/Fpp9uStVz4OuigpaGqIwY+i95EWE392P+4ObOPFHw8TUk/GazyiSGDtxhA==",
+                "shasum": "93470f043a9ed30094104824c02d21f607b61e6a",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/universal-serialize/tarballs/1.0.8.tgz",
+                "fileCount": 48,
+                "unpackedSize": 95611,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJeqjaMCRA9TVsSAnZWagAAlYwP/2SgNWPiAnkzz+B4XoX6\nn4YnYJo6lMaGcIXXxGsgFDmqtSo57PHfWJTwX0TgUFPTWvl00j4HJrFyM2xg\nfzvqZFZZDldlCnxPKLLUAgCxdtgGFV3CDtbgbDlhqlEGzXBPqwjVNbMCTOT5\nBm88SJDqL3a2gpFs20Rz8qjQe/oSXi9sgQ8GYxZhPC5VlrIXRhH+4iz31xtF\nRfG7dUTsLq71uGSLM0eEcBngVeD1bQmKfLpJFAZjBmfglzvrBt7WPcxKOTs9\nLzaOT83P2Fvddv3J3YAxhWXimpr1QAjnhICMgr5O03qpqaRrWdF78ZFXp6vK\n7BsG9bXN6lmXg8H25/Dv6OOKhTD5UQ2gPMaFVEaZzl34fcXveAQOKu7YphM2\n1MJuB59toJUK/yyskmKh/KNZF+Ackdr52JavDsFM/35v9pazAewXLcqVpGy5\nqjkL1UdqFXhnrZ2P21ymXKvKRMwJ94FRSWi2eu4EHj4ggygydV0WeP/8f5go\nmKDD3OwdkSv3ONyKfsIKp06HJ/XcfmfbpTVPVIIFWoXDg4oV2sKNwq2qEAov\nJKqHIGE6UZrCGgM4+bhTZHzDOeisAuH3lqTkLhA5cTrHKSxGffodcq/MjT3C\nGl8nVScUOJHy4Rg/XhDKVENF5i9Kzo/Z8zjOssmNBcu5COcVgxDtc/kDf9xg\nx4L/\r\n=2Hmu\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/universal-serialize_1.0.8_1588213387993_0.8856376781384425"
+            },
+            "_hasShrinkwrap": false
+        }
+    },
+    "time": {
+        "created": "2018-11-19T23:19:01.818Z",
+        "1.0.4": "2018-11-19T23:19:01.958Z",
+        "modified": "2020-04-30T02:23:11.473Z",
+        "1.0.5": "2018-11-20T00:58:40.258Z",
+        "1.0.6": "2018-11-20T02:46:35.023Z",
+        "1.0.7": "2019-02-02T00:52:34.811Z",
+        "1.0.8": "2020-04-30T02:23:08.128Z"
+    },
+    "maintainers": [
+        {
+            "name": "bluepnume",
+            "email": "daniel@bluesuncorp.co.uk"
+        }
+    ],
+    "description": "Javascript module template.",
+    "homepage": "https://github.com/krakenjs/universal-serialize#readme",
+    "keywords": [
+        "template"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/krakenjs/universal-serialize.git"
+    },
+    "bugs": {
+        "url": "https://github.com/krakenjs/universal-serialize/issues"
+    },
+    "readme": "Universal Serialize\n-------------------\n\nUniversal serializer and deserializer, which supports many build-in javascript types, and any number of custom types you want to support\n\n## Simple serialization\n\n```javascript\nimport { serialize, deserialize } from 'universal-serialize';\n\n\n// Define a complex object\nconst originalObject = {\n  foo: 'bar',\n  date: new Date(),\n  error: new Error('world')\n};\n\n// Serialize the complex object\nconst jsonString = serialize();\n\n// Deserialize the object\nconst deserializedObject = deserialize(jsonString);\n\n// Make use of the deserialized data and objects\nconsole.log(\n  deserializedObject.foo,\n  deserializedObject.date.toUTCString(),\n  deserializedObject.error.stack\n);\n```\n\nBy default universal serialize will serialize:\n\n- Errors\n- Regexes\n- Dates\n- Arrays\n- Objects\n- Strings\n- Numbers\n- Booleans\n- Nulls\n\n## Custom serialization\n\n```javascript\nimport { serialize, deserialize, serializeType, TYPE } from 'universal-serialize';\n\n// Define a new serialization type\nconst SERIALIZED_FUNCTION = 'SERIALIZED_FUNCTION';\n\n// Define a complex object containing a function\nconst originalObject = {\n    sayHello: () => {\n        console.log('Hello world!');\n    };\n};\n\n// Serialize the object with a special handler to serialize function types\nconst jsonString = serialize(originalObject, {\n    [ TYPE.FUNCTION ]: (val) => {\n        // Serialize the function as a 'serialized function'\n        return serializeType(SERIALIZED_FUNCTION, val.toString());\n    }\n});\n\n// Deserialize any `SERIALIZED_FUNCTION` types from the serialized object\nconst deserializedObject = deserialize(jsonString, {\n    [ SERIALIZED_FUNCTION ]: (fnString) => {\n      return eval(fnString);\n    }\n});\n\n// Call the deserialized functionn\ndeserializedObject.sayHello();\n```\n\nQuick Start\n-----------\n\n#### Getting Started\n\n- Fork the module\n- Run setup: `npm install`\n- Start editing code in `./src` and writing tests in `./tests`\n- `npm run build`\n\n#### Building\n\n```bash\nnpm run build\n```\n\n#### Tests\n\n- Edit tests in `./test/tests`\n- Run the tests:\n\n  ```bash\n  npm run test\n  ```\n\n#### Testing with different/multiple browsers\n\n```bash\nnpm run karma -- --browser=PhantomJS\nnpm run karma -- --browser=Chrome\nnpm run karma -- --browser=Safari\nnpm run karma -- --browser=Firefox\nnpm run karma -- --browser=PhantomJS,Chrome,Safari,Firefox\n```\n\n#### Keeping the browser open after tests\n\n```bash\nnpm run karma -- --browser=Chrome --keep-open\n```\n\n#### Publishing\n\n##### Before you publish for the first time:\n\n- Delete the example code in `./src`, `./test/tests` and `./demo`\n- Edit the module name in `package.json`\n- Edit `README.md` and `CONTRIBUTING.md`\n\n##### Then:\n\n- Publish your code: `npm run release` to add a patch\n  - Or `npm run release:path`, `npm run release:minor`, `npm run release:major`",
+    "readmeFilename": "README.md"
+}
