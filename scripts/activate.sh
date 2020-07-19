@@ -37,3 +37,8 @@ read -p "NPM 2FA Code: " twofactorcode
 for env in $envs; do
     npm dist-tag add $module@$version "$tag-$env" --otp="$twofactorcode";
 done;
+
+# TODO:
+# - Validate CDNX command available
+# - Trigger CDN release
+# - Automate CDN approval (as much as possible)

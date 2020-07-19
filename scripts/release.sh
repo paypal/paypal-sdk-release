@@ -31,3 +31,14 @@ git push --tags;
 npm run flatten;
 npm publish;
 git checkout package.json;
+git checkout package-lock.json;
+
+npm run cdnify;
+git add cdn;
+git commit -m "Bundle CDN packages";
+git push;
+
+# TODO:
+# - Validate CDNX command available
+# - Trigger CDN release
+# - Automate CDN approval (as much as possible)
