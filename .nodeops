@@ -1,0 +1,8 @@
+{
+  "PROJECT_TYPE": "front-tier",
+  "web": {
+    "projectName": "@paypal/sdk-release",
+    "staticDirectory": "cdn",
+    "staticNamespace": "js-sdk-release"
+  }
+}
