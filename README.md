@@ -1,6 +1,10 @@
 PayPal Braintree Client SDK
 ---------------------------
 
+[![npm version](https://img.shields.io/npm/v/@paypal/sdk-release.svg?style=flat-square)](https://www.npmjs.com/package/@paypal/sdk-release) [![build status](https://img.shields.io/travis/paypal/paypal-sdk-release/master.svg?style=flat-square)](https://travis-ci.org/paypal/paypal-sdk-release)
+
+[![dependencies Status](https://david-dm.org/paypal/paypal-sdk-release/status.svg)](https://david-dm.org/paypal/paypal-sdk-release) [![devDependencies Status](https://david-dm.org/paypal/paypal-sdk-release/dev-status.svg)](https://david-dm.org/paypal/paypal-sdk-release?type=dev)
+
 Wrapper module to test and release combined client SDK modules for PayPal and Braintree.
 
 ## Quick Start
