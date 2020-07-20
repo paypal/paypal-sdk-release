@@ -6,7 +6,7 @@
   "scripts": {
     "validate-components": "npm ls --production && babel-node test/validate-components",
     "validate-flat": "babel-node test/validate-flat",
-    "cdnify": "babel-node scripts/cdnify.js",
+    "cdnify": "babel-node scripts/cdnify.js --recursive",
     "flow-typed": "rm -rf ./flow-typed && flow-typed install",
     "lint": "eslint src/ test/ *.js",
     "flow": "flow check",
@@ -54,6 +54,7 @@
   "readmeFilename": "README.md",
   "devDependencies": {
     "check-node-version": "^4.0.3",
+    "command-line-args": "^5.1.1",
     "download": "^8.0.0",
     "flow-bin": "^0.85.0",
     "fs-extra": "^5.0.0",
