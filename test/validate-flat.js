@@ -2,8 +2,8 @@
 
 import pkgLock from '../package-lock.json';
 
-for (let depName of Object.keys(pkgLock.dependencies)) {
-    let dep = pkgLock.dependencies[depName];
+for (const depName of Object.keys(pkgLock.dependencies)) {
+    const dep = pkgLock.dependencies[depName];
 
     if (dep.dev) {
         continue;

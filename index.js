@@ -1,4 +1,5 @@
 /* @flow */
+/* eslint import/no-default-export: off */
 
 import { setupSDK, type SetupComponent } from '@paypal/sdk-client/src';
 

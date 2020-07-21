@@ -16,8 +16,8 @@ const BABELRC_NAMES = [
 ];
 
 async function validateComponents() : Promise<void> {
-    for (let dependencyName of Object.keys(pkg.dependencies)) {
-        let dependencyPath = join(NODE_MODULES, dependencyName);
+    for (const dependencyName of Object.keys(pkg.dependencies)) {
+        const dependencyPath = join(NODE_MODULES, dependencyName);
 
         if (!await exists(join(dependencyPath, SDK_JS))) {
             throw new Error(`Expected ${ dependencyName } to have ${ SDK_JS }`);
@@ -28,23 +28,23 @@ async function validateComponents() : Promise<void> {
         }
 
         // $FlowFixMe
-        let componentMeta = require(join(dependencyName, SDK_JS)); // eslint-disable-line security/detect-non-literal-require
+        const componentMeta = require(join(dependencyName, SDK_JS)); // eslint-disable-line security/detect-non-literal-require
 
-        let moduleNames = Object.keys(componentMeta);
+        const moduleNames = Object.keys(componentMeta);
 
         if (!moduleNames.length) {
             throw new Error(`Expected ${ dependencyName } ${ SDK_JS } to define a least one module`);
         }
 
-        for (let moduleName of moduleNames) {
-            let moduleMeta = componentMeta[moduleName];
+        for (const moduleName of moduleNames) {
+            const moduleMeta = componentMeta[moduleName];
             
             if (!moduleMeta.entry) {
                 throw new Error(`Expected ${ dependencyName } ${ SDK_JS } ${ moduleName } to contain entry key`);
             }
         }
 
-        for (let babelrc of BABELRC_NAMES) {
+        for (const babelrc of BABELRC_NAMES) {
             if (await exists(join(dependencyPath, babelrc))) {
                 throw new Error(`Expected ${ dependencyName } to not contain ${ babelrc }`);
             }
