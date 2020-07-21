@@ -1941,7 +1941,7 @@
             "dist": {
                 "integrity": "sha512-iKg9hghcMQQOnb/n12cR/zs4WBEM3f9s4gOBHH7pSt+XhZQrwIHAvuN+P541hy1kiBQggZiX874BOSgHgt90Vw==",
                 "shasum": "9d54ffae166e2aea840ff5b8d8f5da9834331771",
-                "tarball": "https://www.mycdn.com/js-sdk-release/promise-polyfill/tarballs/7.0.2.tgz"
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/promise-polyfill/tarballs/7.0.2.tgz"
             },
             "maintainers": [
                 {
