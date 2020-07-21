@@ -10341,7 +10341,7 @@
             "dist": {
                 "integrity": "sha512-x5EvoFeQfa8L3JU95OiZssLcNYiBQYKMnuarjgOePMe1+zh0NYkLJrkvY62DTevxj5ozPtOt5x7sAHqRFiOgeg==",
                 "shasum": "7810aaa22f68306fbfb6f7fd8c0de9ce5090b381",
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/belter/tarballs/1.0.121.tgz",
+                "tarball": "https://www.mycdn.com/js-sdk-release/belter/tarballs/1.0.121.tgz",
                 "fileCount": 34,
                 "unpackedSize": 521655,
                 "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJezx4JCRA9TVsSAnZWagAAfywP/jLbLtvSNQljhQRMjamm\njjjjRFAwa/PszX92JGGKi09S7ijD61v9GxhhxAJx4q2eohrl+LQ9Ny439tpw\nXZcenaU4pYrEcGN1n7Py4+YlGkc7hJ8eYpx6OEEM9e8egS2sDT3ogoDsNKPG\nRmV2aHIwOJCAoGaao/50oAXWJAt3Zh/EM2ylrjJRHprO+sQ8Py9SAFufOW73\nhxhbtfKn5Y5CghUDHN492TZsu7RxgXFEwmLR9FHVMAZjtYGnEYtuFW2/V+zW\n5KKfeaFRxZex+Jq/70i6eWVP9LFaOQp2372dELIDz7Ko8gDy9wG0BWqD1vin\n7hQUGnEuwJk/MgCW/5X2m8OEBzoVZmGvq1Ofuwc1+ObQHeCa0mah2rFmkI12\nrV6zyB5X72qzsywFn0lkxlv1v1zev6NLuG1B1xI4INBS0z2yLFgR7+GFAdR0\nqlkR2hCI7EJdxU04C+LJwnKPwcUeZhxf4WzbWHVj8yocziyk/Jntlv2OPyWh\n0rAgpW9+cODmyK+7SzL010ok28P4K56aagg93+RhoqdLVxXh5ldHoyA/lUPl\nm5lXB+SJD1LHDWvlBCb4JKaX6m0WQndZMvmOVNfkhH6skmuOqQ30JvGdglUp\n7vzaoKDkIMRr9gogHvbx3giBqa09HrHOdFKhC4geWNl5vyngplEWmUCzjmSl\n5MG8\r\n=xl2q\r\n-----END PGP SIGNATURE-----\r\n"

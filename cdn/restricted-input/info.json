@@ -1877,7 +1877,7 @@
             },
             "dist": {
                 "shasum": "e1298f5fd8c430cc2d8e6bb1175524023205cb34",
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/restricted-input/tarballs/1.2.7.tgz"
+                "tarball": "https://www.mycdn.com/js-sdk-release/restricted-input/tarballs/1.2.7.tgz"
             },
             "maintainers": [
                 {

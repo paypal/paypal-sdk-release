@@ -1,11 +1,11 @@
 {
     "_id": "@paypal/sdk-release",
-    "_rev": "982-59cb0ff5db70918732e203b0d5d3bda1",
+    "_rev": "985-2dbcec168ec8cf4aa99f5b19584b9737",
     "name": "@paypal/sdk-release",
     "dist-tags": {
         "latest": "5.0.138",
         "active-test": "5.0.138",
-        "active-local": "5.0.138",
+        "active-local": "5.0.137",
         "active-stage": "5.0.138",
         "active-sandbox": "5.0.138",
         "active-production": "5.0.138"
@@ -24822,7 +24822,7 @@
             "dist": {
                 "integrity": "sha512-5OKmY8Q4wMiI4BjhHj6eNOcF4SNYBNi7dh9q3hTWwLHGV5DRzYqVM3vNfw07oSEn/FV+WSedt9HGEb962cJt8Q==",
                 "shasum": "9479ddf669afee0532772bdb897026ea0ae713ef",
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/@paypal/sdk-release/tarballs/5.0.138.tgz",
+                "tarball": "https://www.mycdn.com/js-sdk-release/@paypal/sdk-release/tarballs/5.0.138.tgz",
                 "fileCount": 5,
                 "unpackedSize": 28840,
                 "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfD2OwCRA9TVsSAnZWagAANYsQAJ8XPAa3nIdchjDOJae2\nl87GX409vKn4ixjnXC+XP14WZYTG0FMm8BYPylvy7PVXrpNnRTFNM33K5cGA\nvIeNqCzWnvDivt5dXxpgeInZVGJB9wdV3vMFLn/MwXDTqwsO0XuBU+leBj/h\nwSMtXrg/yBUn+Z1Kk9lM0LMiE2Wq/yHqWTTgzB4WaP6lfuMeQtXR+RA/E9n3\nHrjoLyDyctMzCI3G/IHTRjoVSBQTLZ01+4A2o65O0lRlQ24Pp5m819nL6JxY\nkAr2UrtAidhJZo6vx5HyDp5Ffn7goNJyvlZav6rSvSc4eAu+GuOhPDI6EE6Q\n12KkjYuVsWC/7cRYKc6AbzAonlEykc6pPv53dlZTLeo+iIJ1O96F+zRqlMJM\ngaH2+HhPexmRceeh8ivmpHrbA7a09pry6qrdbbTFEOTOKdMjbnZRxt8chRsJ\nLW+ZJcttE3ZokyTV+KiC1Kn2YvtqT7PpXQQDJ3dIclN5O2lqxVzcMigQ47V4\nTwZZmI9WPb0e2oZKCaK3fcgdK1HkDq9f7PnEu4LaTeqDUH0gyyeEjwcabgJ6\n6/WukMHEMzNDbfS+cgk2O4nCOD+5k0oPfGkHBwYMLTOi+eWvgBC1zBGDsWL/\n2C1tlfCE27XnbziY8EQNrsDknIhPjnhlY6gp08bwYzyBmEbyFNdhjwl53shs\nQxuf\r\n=Ala9\r\n-----END PGP SIGNATURE-----\r\n"
@@ -24920,7 +24920,7 @@
     "time": {
         "created": "2018-12-12T00:58:06.226Z",
         "1.0.95": "2018-12-12T00:58:06.565Z",
-        "modified": "2020-07-15T22:52:08.946Z",
+        "modified": "2020-07-21T01:11:36.311Z",
         "1.0.96": "2018-12-14T00:02:55.955Z",
         "1.0.97": "2018-12-14T00:48:39.328Z",
         "1.0.98": "2018-12-14T02:01:48.346Z",

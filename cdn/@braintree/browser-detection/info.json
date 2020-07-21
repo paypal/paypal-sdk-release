@@ -233,7 +233,7 @@
             },
             "dist": {
                 "shasum": "895ba64b700c3f36cab5c54591caf71a41171dd8",
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/@braintree/browser-detection/tarballs/1.7.0.tgz"
+                "tarball": "https://www.mycdn.com/js-sdk-release/@braintree/browser-detection/tarballs/1.7.0.tgz"
             },
             "maintainers": [
                 {

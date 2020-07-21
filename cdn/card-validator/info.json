@@ -1416,7 +1416,7 @@
             },
             "dist": {
                 "shasum": "c7099055ae572eb0dd5e35c6b88414cefcb95d23",
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/card-validator/tarballs/4.3.0.tgz",
+                "tarball": "https://www.mycdn.com/js-sdk-release/card-validator/tarballs/4.3.0.tgz",
                 "fileCount": 14,
                 "unpackedSize": 23841
             },
