@@ -16,8 +16,8 @@
     "add": "grabthar-add",
     "upgrade": "grabthar-upgrade",
     "remove": "grabthar-remove",
-    "release": "grabthar-release",
-    "activate": "grabthar-activate",
+    "release": "CDN='https://www.paypalobjects.com' grabthar-release",
+    "activate": "CDN='https://www.paypalobjects.com' grabthar-activate",
     "flatten": "grabthar-flatten",
     "full-release": "npm run upgrade && npm run release && npm run activate"
   },
