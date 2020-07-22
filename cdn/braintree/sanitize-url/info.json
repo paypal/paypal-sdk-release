@@ -1,10 +1,10 @@
 {
     "_id": "@braintree/sanitize-url",
-    "_rev": "9-09bed54bbc4d47be302ab00ea2874eef",
+    "_rev": "10-02d5abd15f3ccb9856f210f8705a9b47",
     "name": "@braintree/sanitize-url",
     "description": "A url sanitizer",
     "dist-tags": {
-        "latest": "4.1.0"
+        "latest": "4.1.1"
     },
     "versions": {
         "1.0.0": {
@@ -539,6 +539,78 @@
                 "tmp": "tmp/sanitize-url_4.1.0_1594831416377_0.6350470621835758"
             },
             "_hasShrinkwrap": false
+        },
+        "4.1.1": {
+            "name": "@braintree/sanitize-url",
+            "version": "4.1.1",
+            "description": "A url sanitizer",
+            "main": "dist/index.js",
+            "types": "dist/index.d.ts",
+            "author": "",
+            "scripts": {
+                "prepublishOnly": "npm run build",
+                "prebuild": "prettier --write .",
+                "build": "tsc --declaration",
+                "lint": "eslint --ext js,ts .",
+                "posttest": "npm run lint",
+                "test": "jest"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+https://github.com/braintree/sanitize-url.git"
+            },
+            "keywords": [],
+            "license": "MIT",
+            "bugs": {
+                "url": "https://github.com/braintree/sanitize-url/issues"
+            },
+            "homepage": "https://github.com/braintree/sanitize-url#readme",
+            "devDependencies": {
+                "@types/jest": "^26.0.4",
+                "chai": "^4.1.0",
+                "eslint": "^7.4.0",
+                "eslint-config-braintree": "^5.0.0-typescript-prep-rc.17",
+                "jest": "^26.1.0",
+                "prettier": "^2.0.5",
+                "ts-jest": "^26.1.3",
+                "typescript": "^3.9.7"
+            },
+            "jest": {
+                "preset": "ts-jest",
+                "globals": {
+                    "ts-jest": {
+                        "tsConfig": "src/__tests__/tsconfig.json"
+                    }
+                }
+            },
+            "gitHead": "7cadadcef499835df979de97d0a65fc89cf89b99",
+            "_id": "@braintree/sanitize-url@4.1.1",
+            "_nodeVersion": "12.14.0",
+            "_npmVersion": "6.13.4",
+            "dist": {
+                "integrity": "sha512-epVksusKVEpwBs2vRg3SWssxn9KXs9CxEYNOcgeSRLRjq070ABj5bLPxkmtQpVeSPCHj8kfAE9J6z2WsLr4wZg==",
+                "shasum": "671b3cfdbcc40d1449036ce586e882ab6150828e",
+                "tarball": "https://registry.npmjs.org/@braintree/sanitize-url/-/sanitize-url-4.1.1.tgz",
+                "fileCount": 15,
+                "unpackedSize": 11249,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfF09RCRA9TVsSAnZWagAANGAQAIrT+z5BUg5dKb/48mRP\n3aw/aQAzo/pFxAv8GbAyic/zY1rU6knnnWoMiBZJBbsNDp3Uso6MKxhdzlD9\nUUUugehRLpNZpIJRRYXQAmC8b1mjsn3gmMm2eTh70ui4ym1tnI/2CJicHqUT\nLDC25u4x48vRqKX7e/CDiaX0wufTPeUWt09spVRWbVPz6fwq91wa6aqAkGOI\n8t7od94VQk6lcxgFZ8Qxf9JiXZonKhy1AIQY3oiwGEXtfE8Rzcv47c2RzQBa\npIMW8irZGUvR9oWnCrFJo2B4UOULnS/G5qHwTI1eKo79q+yML8BmoStjPLwm\nq4j5ZWJxMcargUccYolZe2zgeJhjCDrz+JHfYlNJ31lJuo90/W+zLH/pNuYg\nJVAJ1T3wI6yFauXaLurWbcBZpa9kG2jcrg3TmW4idefUm64yqj9mZbzMHq99\nOcncu1KiHTeyTRxVZGuFCm+VkswK7y6wg6ej/5UM2/j47+TsVuWvkCF+lN4z\nHxmHzTjtIM0WKSOuYRo1vsw2L6P0AKn+MgK72PhvoPVNZMkcxDEc1P45WJ4B\ny3N0zTzgynTk2osp3A3+6eiBtASry3SIvEhNIoKVrWJ5Fx1BJNP823Dgo6h0\n2MsDywihid2UmdmgX8Lwv0gDQoGkgfCsZqdrZknLHHuUP33jbC/OfR11hs+x\n4WPb\r\n=Lkcz\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmUser": {
+                "name": "braintree",
+                "email": "team-sdk@getbraintree.com"
+            },
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/sanitize-url_4.1.1_1595363153294_0.9776528752742519"
+            },
+            "_hasShrinkwrap": false
         }
     },
     "readme": "# sanitize-url\n\n## Installation\n\n```sh\nnpm install -S @braintree/sanitize-url\n```\n\n## Usage\n\n```js\nvar sanitizeUrl = require(\"@braintree/sanitize-url\").sanitizeUrl;\n\nsanitizeUrl(\"https://example.com\"); // 'https://example.com'\nsanitizeUrl(\"http://example.com\"); // 'http://example.com'\nsanitizeUrl(\"www.example.com\"); // 'www.example.com'\nsanitizeUrl(\"mailto:hello@example.com\"); // 'mailto:hello@example.com'\n\nsanitizeUrl(\"javascript:alert(document.domain)\"); // 'about:blank'\nsanitizeUrl(\"jAvasCrIPT:alert(document.domain)\"); // 'about:blank'\nsanitizeUrl(decodeURIComponent(\"JaVaScRiP%0at:alert(document.domain)\")); // 'about:blank'\n```\n",
@@ -549,7 +621,7 @@
         }
     ],
     "time": {
-        "modified": "2020-07-15T16:43:44.442Z",
+        "modified": "2020-07-21T20:25:56.155Z",
         "created": "2017-08-08T21:33:28.289Z",
         "1.0.0": "2017-08-08T21:33:28.289Z",
         "2.0.0": "2017-08-15T21:07:29.446Z",
@@ -560,7 +632,8 @@
         "3.1.0": "2019-04-05T16:19:50.956Z",
         "4.0.0": "2019-10-10T14:52:57.819Z",
         "4.0.1": "2020-04-06T20:09:13.541Z",
-        "4.1.0": "2020-07-15T16:43:36.520Z"
+        "4.1.0": "2020-07-15T16:43:36.520Z",
+        "4.1.1": "2020-07-21T20:25:53.394Z"
     },
     "homepage": "https://github.com/braintree/sanitize-url#readme",
     "keywords": [],

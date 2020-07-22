@@ -1,10 +1,10 @@
 {
     "_id": "card-validator",
-    "_rev": "32-8f10a313d9af2b82f76b34700d4bdee8",
+    "_rev": "34-156667e9b8b7bf8398fb3b2d44be6ac4",
     "name": "card-validator",
     "description": "A library for validating credit card fields",
     "dist-tags": {
-        "latest": "7.0.1"
+        "latest": "8.0.0"
     },
     "versions": {
         "1.0.0": {
@@ -1904,6 +1904,162 @@
                 "tmp": "tmp/card-validator_7.0.1_1594740492697_0.08883888329059664"
             },
             "_hasShrinkwrap": false
+        },
+        "7.1.0": {
+            "name": "card-validator",
+            "version": "7.1.0",
+            "description": "A library for validating credit card fields",
+            "main": "dist/index.js",
+            "types": "dist/index.d.ts",
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/card-validator.git"
+            },
+            "homepage": "https://github.com/braintree/card-validator",
+            "scripts": {
+                "prepublishOnly": "npm run build",
+                "prebuild": "prettier --write .",
+                "build": "tsc --declaration",
+                "lint": "eslint --ext js,ts .",
+                "posttest": "npm run lint",
+                "test": "jest"
+            },
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com",
+                "url": "https://www.braintreepayments.com/"
+            },
+            "license": "MIT",
+            "devDependencies": {
+                "@types/jest": "^26.0.4",
+                "@types/node": "^14.0.23",
+                "eslint": "^7.4.0",
+                "eslint-config-braintree": "^5.0.0-typescript-prep-rc.17",
+                "jest": "^26.1.0",
+                "prettier": "^2.0.5",
+                "ts-jest": "^26.1.3",
+                "typescript": "^3.9.7"
+            },
+            "dependencies": {
+                "credit-card-type": "^9.0.0"
+            },
+            "jest": {
+                "preset": "ts-jest",
+                "globals": {
+                    "ts-jest": {
+                        "tsConfig": "src/__tests__/tsconfig.json"
+                    }
+                }
+            },
+            "gitHead": "f5916948f3db118935f17d44c95f0bb875eb7285",
+            "bugs": {
+                "url": "https://github.com/braintree/card-validator/issues"
+            },
+            "_id": "card-validator@7.1.0",
+            "_nodeVersion": "12.14.0",
+            "_npmVersion": "6.13.4",
+            "dist": {
+                "integrity": "sha512-IjPHslYv0jr7LJRIX09NcLJdKCVbEGFVB6mjASNgC9zAytOXzxgfwu2PcZtJ5a6EnrIvgccfvFiFt5JrR/KRqQ==",
+                "shasum": "10eacf512d6c8daac590fcda7ddae643fbccd3aa",
+                "tarball": "https://registry.npmjs.org/card-validator/-/card-validator-7.1.0.tgz",
+                "fileCount": 50,
+                "unpackedSize": 113779,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfF1GtCRA9TVsSAnZWagAA4YgP/3FaUE92T9YPC2OrHxPm\n6WXPJuJl2TVsZqkLjytgqVbfgEvzEq/VI9/QGqAdAJ5OW/7Xc8BsEdbKMdXg\n1WD3hFQCyumUBbDiXtaY8xEOkmapvybNrCjxCYSf+hVFs61sXp6MHnr7Y6B1\nWQ+rlrppP122fD7wPIEty/gyTHTrgQIixs8Q0YliAeiZJRoqNyz+KQiO+uQD\nIkhut4WIDzPQEP39P9i+tO3vts0aJcx/WmCFuwdjLcQ2BJp6yynbwyLecRlU\ncW6CqZrwUtk09Ap83+RiityQdan3hL5W37Y2tD5wF6xnMTYX+f7y+HipfMz6\nk74MBlPp4+a13FQXNB9tV/vLfUEVgodqu0PyVZAZoGPGaKHNZ2i7OUw7Ydzg\nvjMNxHpJBw1CI/38PGPaQnmc+9YTcdwwOlneS9w7wMvPCO7bsrSDRCoKq/Kp\njgBhU/AmkMkcSRhe9b1VCRLonWZo13tGnZwtZkV97yrlpodRaLC6RiDEGoXJ\nWGuCkURzmBuBSMRvyIWji3kTPNUzUVOTo1RNY3OWaHRZXGvRL30hJywfXssu\nMI5+f02th7FYNx2kfkiajpNBN17wQWlM2sXB7DTCs5y8H+WlNX/q4D8t0cb6\nhJhtc/A2+MzG08T4IuDNJLh5R1b38ZTBG9NbjxGLYqcxgFJhpUQRLaO5ixI9\nJ1dC\r\n=PZZL\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmUser": {
+                "name": "braintree",
+                "email": "team-sdk@getbraintree.com"
+            },
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/card-validator_7.1.0_1595363756688_0.7786892663206071"
+            },
+            "_hasShrinkwrap": false
+        },
+        "8.0.0": {
+            "name": "card-validator",
+            "version": "8.0.0",
+            "description": "A library for validating credit card fields",
+            "main": "dist/index.js",
+            "types": "dist/index.d.ts",
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/card-validator.git"
+            },
+            "homepage": "https://github.com/braintree/card-validator",
+            "scripts": {
+                "prepublishOnly": "npm run build",
+                "prebuild": "prettier --write .",
+                "build": "tsc --declaration",
+                "lint": "eslint --ext js,ts .",
+                "posttest": "npm run lint",
+                "test": "jest"
+            },
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com",
+                "url": "https://www.braintreepayments.com/"
+            },
+            "license": "MIT",
+            "devDependencies": {
+                "@types/jest": "^26.0.4",
+                "@types/node": "^14.0.23",
+                "eslint": "^7.4.0",
+                "eslint-config-braintree": "^5.0.0-typescript-prep-rc.17",
+                "jest": "^26.1.0",
+                "prettier": "^2.0.5",
+                "ts-jest": "^26.1.3",
+                "typescript": "^3.9.7"
+            },
+            "dependencies": {
+                "credit-card-type": "^9.0.0"
+            },
+            "jest": {
+                "preset": "ts-jest",
+                "globals": {
+                    "ts-jest": {
+                        "tsConfig": "src/__tests__/tsconfig.json"
+                    }
+                }
+            },
+            "gitHead": "8f4c703d5c7955377ab5e7ca6c23459b719400c2",
+            "bugs": {
+                "url": "https://github.com/braintree/card-validator/issues"
+            },
+            "_id": "card-validator@8.0.0",
+            "_nodeVersion": "12.14.0",
+            "_npmVersion": "6.13.4",
+            "dist": {
+                "integrity": "sha512-rVXogmcENwpKmxo/PZdswrFu0in6L5qz2b+pt+8LMiEuW3FIvkSyO7l1ueJmIoQ/V2M3qEBic3F13o1IdvTyjw==",
+                "shasum": "ee68db00c4351f9bf72dee5aad78cafbfc35d79b",
+                "tarball": "https://registry.npmjs.org/card-validator/-/card-validator-8.0.0.tgz",
+                "fileCount": 50,
+                "unpackedSize": 113610,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfF1XoCRA9TVsSAnZWagAA+wUP/0yA5ezo9c0xa7DC4e6D\nPPFZ0lpmegVXAbRg9DqcBhz5IRWruv0PwktoSIVOGg6t0kLOBvpNCR9E046+\nJJMRV7G9w+KZ6b337gl6dpG9XyXUMDPFXQW/4S+CrS4v9xqHJCQs3HlgOPdB\nGIyHGDm0VHbrlYn8KL2v9wf9mvQqzS1tJ16n+afQ/XKVb1IpoUayp69f4KI+\n8aGYo+1il5+3CDoUnM1wknZ+En+Mp6if9C6vFmxQibKixnY6gIunIFKmgwTs\nJLjgl4F/QOZ6JukEjuerjNfJUE/dRPKiXev/rLpsF9Le7KZslfiBIBOemOBO\nKMD6piyP/O5z8zNFrOtDooxYqlM6xKQerw+QWDp3nEd/VYnypdzQ/KctbGqe\nWhLwdv5+ckWNfT9hOY9/294vkqKGskb1ayIn4PZFhx78Sp9/Jm31LPMo9N4w\nQ9tqCF24XkYjPV7Bj/+EgNpktoRljBBTY03cz0pf5cV5q7mYh9PeDpIAknZa\nj3TggotisRCLUzC5Ku9xNwtc9yKZ9OMb1uIuyn6qHsvGwh3sM35txQf4DINQ\nllwjPJGoq4to8SdzJ+O9wg6txkL/a/oVcpxwLp4lMkhp5xbpsF4AKmq923Ig\nfM0T0fTcTZGa4noR2ZVtY6EircONYwgLziqLdPZf26Hoaof9TcSnBPZOf4ty\noKw1\r\n=5U7n\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmUser": {
+                "name": "braintree",
+                "email": "team-sdk@getbraintree.com"
+            },
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/card-validator_8.0.0_1595364839885_0.6807645955074153"
+            },
+            "_hasShrinkwrap": false
         }
     },
     "readme": "# Credit Card Validator [![Build Status](https://travis-ci.org/braintree/card-validator.svg)](https://travis-ci.org/braintree/card-validator) [![npm version](https://badge.fury.io/js/card-validator.svg)](http://badge.fury.io/js/card-validator)\n\nCredit Card Validator provides validation utilities for credit card data inputs. It is designed as a CommonJS module for use in Node.js, io.js, or the [browser](http://browserify.org/). It includes first class support for 'potential' validity so you can use it to present appropriate UI to your user as they type.\n\nA typical use case in a credit card form is to notify the user if the data they are entering is invalid. In a credit card field, entering “411” is not necessarily valid for submission, but it is still potentially valid. Conversely, if a user enters “41x” that value can no longer pass strict validation and you can provide a response immediately.\n\nCredit Card Validator will also provide a determined card type (using [credit-card-type](https://github.com/braintree/credit-card-type)). This is useful for scenarios in which you wish to render an accompanying payment method icon (Visa, MasterCard, etc.). Additionally, by having access to the current card type, you can better manage the state of your credit card form as a whole. For example, if you detect a user is entering (or has entered) an American Express card number, you can update the `maxlength` attribute of your `CVV` input element from 3 to 4 and even update the corresponding `label` from 'CVV' to 'CID'.\n\n## Download\n\nYou can install `card-validator` through `npm`.\n\n```\nnpm install card-validator\n```\n\n## Example\n\n### Using a CommonJS build tool (browserify, webpack, etc)\n\n```javascript\nvar valid = require(\"card-validator\");\n\nvar numberValidation = valid.number(\"4111\");\n\nif (!numberValidation.isPotentiallyValid) {\n  renderInvalidCardNumber();\n}\n\nif (numberValidation.card) {\n  console.log(numberValidation.card.type); // 'visa'\n}\n```\n\n## API\n\n### `var valid = require('card-validator');`\n\n---\n\n#### `valid.number(value: string, [options: object]): object`\n\n```javascript\n{\n  card: {\n    niceType: 'American Express',\n    type: 'american-express',\n    gaps: [4, 10],\n    lengths: [15],\n    code: {name: 'CID', size: 4}\n  },\n  isPotentiallyValid: true, // if false, indicates there is no way the card could be valid\n  isValid: true // if true, number is valid for submission\n}\n```\n\nYou can optionally pass `luhnValidateUnionPay` as a property of an object as a second argument. This will override the default behavior to ignore luhn validity of UnionPay cards.\n\n```javascript\nvalid.number(<Luhn Invalid UnionPay Card Number>, {luhnValidateUnionPay: true});\n\n{\n  card: {\n    niceType: 'UnionPay',\n    type: 'unionpay',\n    gaps: [4, 8, 12],\n    lengths: [16, 17, 18, 19],\n    code: {name: 'CVN', size: 3}\n  },\n  isPotentiallyValid: true,\n  isValid: false // Would be true if no options were included\n}\n```\n\nYou can optionally pass `maxLength` as a property of an object as a second argument. This will override the default behavior to use the card type's max length property and mark any cards that exceed the max length as invalid.\n\nIf a card brand has a normal max length that is shorter than the passed in max length, the validator will use the shorter one. For instance, if a `maxLength` of `16` is provided, the validator will still use `15` as the max length for American Express cards.\n\n```javascript\nvalid.number(<Maestro Card with 19 Digits>, {maxLength: 16});\n\n{\n  card: {\n    // Maestro card data\n  },\n  isPotentiallyValid: false,\n  isValid: false\n}\n```\n\nIf a valid card type cannot be determined, the `card` field in the response will be `null`.\n\nA fake session where a user is entering a card number may look like:\n\n<table>\n  <thead>\n    <tr>\n      <th colspan=1>Input</th>\n      <th colspan=3>Output</th>\n      <th colspan=2>Suggested Handling</th>\n    </tr>\n  </thead>\n  <thead>\n    <tr>\n      <th>Value</th>\n      <th><code>card.type</code></th>\n      <th><code>isPotentiallyValid</code></th>\n      <th><code>isValid</code></th>\n      <th>Render Invalid UI</th>\n      <th>Allow Submit</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td><code>''</code></td>\n      <td><code>null</code></td>\n      <td><strong>true</strong></td>\n      <td>false</td>\n      <td>no</td>\n      <td>no</td>\n    </tr>\n    <tr>\n      <td><code>'6'</code></td>\n      <td><code>null</code></td>\n      <td><strong>true</strong></td>\n      <td>false</td>\n      <td>no</td>\n      <td>no</td>\n    </tr>\n    <tr>\n      <td><code>'60'</code></td>\n      <td><code>'discover'</code></td>\n      <td><strong>true</strong></td>\n      <td>false</td>\n      <td>no</td>\n      <td>no</td>\n    </tr>\n    <tr>\n      <td><code>'601'</code></td>\n      <td><code>'discover'</code></td>\n      <td><strong>true</strong></td>\n      <td>false</td>\n      <td>no</td>\n      <td>no</td>\n    </tr>\n    <tr>\n      <td><code>'6011'</code></td>\n      <td><code>'discover'</code></td>\n      <td><strong>true</strong></td>\n      <td>false</td>\n      <td>no</td>\n      <td>no</td>\n    </tr>\n    <tr>\n      <td><code>'601'</code></td>\n      <td><code>'discover'</code></td>\n      <td><strong>true</strong></td>\n      <td>false</td>\n      <td>no</td>\n      <td>no</td>\n    </tr>\n    <tr>\n      <td><code>'60'</code></td>\n      <td><code>'discover'</code></td>\n      <td><strong>true</strong></td>\n      <td>false</td>\n      <td>no</td>\n      <td>no</td>\n    </tr>\n    <tr>\n      <td><code>'6'</code></td>\n      <td><code>null</code></td>\n      <td><strong>true</strong></td>\n      <td>false</td>\n      <td>no</td>\n      <td>no</td>\n    </tr>\n    <tr>\n      <td><code>''</code></td>\n      <td><code>null</code></td>\n      <td><strong>true</strong></td>\n      <td>false</td>\n      <td>no</td>\n      <td>no</td>\n    </tr>\n    <tr>\n      <td><code>'x'</code></td>\n      <td><code>null</code></td>\n      <td>false</td>\n      <td>false</td>\n      <td><strong>yes</strong></td>\n      <td>no</td>\n    </tr>\n    <tr>\n      <td><code>''</code></td>\n      <td><code>null</code></td>\n      <td><strong>true</strong></td>\n      <td>false</td>\n      <td>no</td>\n      <td>no</td>\n    </tr>\n    <tr>\n      <td><code>'4'</code></td>\n      <td><code>'visa'</code></td>\n      <td><strong>true</strong></td>\n      <td>false</td>\n      <td>no</td>\n      <td>no</td>\n    </tr>\n    <tr>\n      <td><code>'41'</code></td>\n      <td><code>'visa'</code></td>\n      <td><strong>true</strong></td>\n      <td>false</td>\n      <td>no</td>\n      <td>no</td>\n    </tr>\n    <tr>\n      <td><code>'411'</code></td>\n      <td><code>'visa'</code></td>\n      <td><strong>true</strong></td>\n      <td>false</td>\n      <td>no</td>\n      <td>no</td>\n    </tr>\n    <tr>\n      <td><code>'4111111111111111'</code></td>\n      <td><code>'visa'</code></td>\n      <td><strong>true</strong></td>\n      <td><strong>true</strong></td>\n      <td>no</td>\n      <td><strong>yes</strong></td>\n    </tr>\n    <tr>\n      <td><code>'411x'</code></td>\n      <td><code>null</code></td>\n      <td>false</td>\n      <td>false</td>\n      <td><strong>yes</strong></td>\n      <td>no</td>\n    </tr>\n  </tbody>\n</table>\n\n---\n\n#### `valid.expirationDate(value: string|object, maxElapsedYear: integer): object`\n\nThe `maxElapsedYear` parameter determines how many years in the future a card's expiration date should be considered valid. It has a default value of 19, so cards with an expiration date 20 or more years in the future would not be considered valid. It can be overridden by passing in an `integer` as a second argument.\n\n```javascript\n{\n  isPotentiallyValid: true, // if false, indicates there is no way this could be valid in the future\n  isValid: true,\n  month: '10', // a string with the parsed month if valid, null if either month or year are invalid\n  year: '2016' // a string with the parsed year if valid, null if either month or year are invalid\n}\n```\n\n`expirationDate` will parse strings in a variety of formats:\n\n| Input                                                                                       | Output                        |\n| ------------------------------------------------------------------------------------------- | ----------------------------- |\n| `'10/19'`<br/>`'10 / 19'`<br />`'1019'`<br/>`'10 19'`                                       | `{month: '10', year: '19'}`   |\n| `'10/2019'`<br/>`'10 / 2019'`<br />`'102019'`<br/>`'10 2019'`<br/>`'10 19'`                 | `{month: '10', year: '2019'}` |\n| `'2019-10'`                                                                                 | `{month: '10', year: '2019'}` |\n| `{month: '01', year: '19'}`<br/>`{month: '1', year: '19'}`<br/>`{month: 1, year: 19}`       | `{month: '01', year: '19'}`   |\n| `{month: '01', year: '2019'}`<br/>`{month: '1', year: '2019'}`<br/>`{month: 1, year: 2019}` | `{month: '01', year: '2019'}` |\n\n---\n\n#### `valid.expirationMonth(value: string): object`\n\n`expirationMonth` accepts 1 or 2 digit months. `1`, `01`, `10` are all valid entries.\n\n```javascript\n{\n  isValidForThisYear: false,\n  isPotentiallyValid: true,\n  isValid: true\n}\n```\n\n---\n\n#### `valid.expirationYear(value: string, maxElapsedYear: integer): object`\n\n`expirationYear` accepts 2 or 4 digit years. `16` and `2016` are both valid entries.\n\nThe `maxElapsedYear` parameter determines how many years in the future a card's expiration date should be considered valid. It has a default value of 19, so cards with an expiration date 20 or more years in the future would not be considered valid. It can be overridden by passing in an `integer` as a second argument.\n\n```javascript\n{\n  isCurrentYear: false,\n  isPotentiallyValid: true,\n  isValid: true\n}\n```\n\n---\n\n#### `valid.cvv(value: string, maxLength: integer): object`\n\nThe `cvv` validation by default tests for a numeric string of 3 characters in length. The `maxLength` can be overridden by passing in an `integer` as a second argument. You would typically switch this length from 3 to 4 in the case of an American Express card which expects a 4 digit CID.\n\n```javascript\n{\n  isPotentiallyValid: true,\n  isValid: true\n}\n```\n\n---\n\n#### `valid.postalCode(value: string, [options: object]): object`\n\nThe `postalCode` validation essentially tests for a valid string greater than 3 characters in length.\n\n```javascript\n{\n  isPotentiallyValid: true,\n  isValid: true\n}\n```\n\nYou can optionally pass `minLength` as a property of an object as a second argument. This will override the default min length of 3.\n\n```javascript\nvalid.postalCode('123', {minLength: 5});\n\n{\n  isPotentiallyValid: true,\n  isValid: false\n}\n```\n\n## Custom Card Brands\n\nCard Validator exposes the [`credit-card-type` module](https://github.com/braintree/credit-card-type) as `creditCardType`. You can add custom card brands by [utilizing the `addCard` method](https://github.com/braintree/credit-card-type#adding-card-types).\n\n```javascript\nvalid.creditCardType.addCard({\n  niceType: \"NewCard\",\n  type: \"new-card\",\n  patterns: [1234],\n  gaps: [4, 8, 12],\n  lengths: [16],\n  code: {\n    name: \"CVV\",\n    size: 3,\n  },\n});\n```\n\n## Design decisions\n\n- The default maximum expiration year is 19 years from now.\n- `valid.expirationDate` will only return `month:` and `year:` as strings if the two are valid, otherwise they will be `null`.\n- Since non-US postal codes are alpha-numeric, the `postalCode` will allow non-number characters to be used in validation.\n\n## Development\n\nWe use `nvm` for managing our node versions, but you do not have to. Replace any `nvm` references with the tool of your choice below.\n\n```sh\nnvm install\nnpm install\n```\n\nAll testing dependencies will be installed upon `npm install`. Run the test suite with `npm test`.\n",
@@ -1914,7 +2070,7 @@
         }
     ],
     "time": {
-        "modified": "2020-07-14T15:28:15.059Z",
+        "modified": "2020-07-21T20:54:05.200Z",
         "created": "2015-04-16T23:45:09.435Z",
         "1.0.0": "2015-04-16T23:45:09.435Z",
         "2.0.0": "2015-05-11T20:20:22.377Z",
@@ -1944,7 +2100,9 @@
         "6.1.0": "2018-12-12T21:39:23.742Z",
         "6.2.0": "2019-06-06T19:47:14.628Z",
         "7.0.0": "2020-07-10T20:54:24.430Z",
-        "7.0.1": "2020-07-14T15:28:12.823Z"
+        "7.0.1": "2020-07-14T15:28:12.823Z",
+        "7.1.0": "2020-07-21T20:35:56.805Z",
+        "8.0.0": "2020-07-21T20:54:00.081Z"
     },
     "license": "MIT",
     "readmeFilename": "README.md",
