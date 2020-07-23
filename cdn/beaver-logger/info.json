@@ -7507,7 +7507,7 @@
             "dist": {
                 "integrity": "sha512-VtBche5Nd0uWd5AuXmXuRqTwlhR6pHQJaqvLS5+7xDyLTftfJcl/KCqY1HRPntcjJ/9FYH0em04HBeor6oei5Q==",
                 "shasum": "741eec52dba67603f86f898980e8c174101120b5",
-                "tarball": "https://registry.npmjs.org/beaver-logger/-/beaver-logger-4.0.15.tgz",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/beaver-logger/tarballs/4.0.15.tgz",
                 "fileCount": 27,
                 "unpackedSize": 895228,
                 "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfEefNCRA9TVsSAnZWagAArdcQAJMN10c3Bru+8vZTuBo5\nANaYOPOLkVOPrRzj810rhCW1L0VlAaOdT4UAwXjDNF+rDbvIuE9hcetqnKWe\nXl0dAaWRtaxCApnM5fU9RHO1ksWj1dEwISkKTxAzFILfS6WjTxWIMCQmi++W\nmiY/a9p+9khtHMwjd1/bTTMNfLQh25hwo9GH4mZ6Y9qkvjl04InXbnzLRyhg\nF86QFbmD0g73hTdNg6D5dS6jmIPT8zdswY1hHxEe4NwDPQPuKuIOKzqP2Hb6\nMEAOLmfaF/bH2c91Jvi2AzciL+gyh7zhf5JYOTgq2MG/JFVdlhj4Bm9q72Bx\ndZrKVL+Y7jZU7D3Z5evETiv1eFROHGd12kiQCwY5M+YvSibpcJ+te2gDcBEB\n+9QDlciqjmMpIIZmRq92O5ArYck3953UXMt7TEimptuMfRunkwM4d593Xqom\nk7ZV5EaxEUPY6bk4jTlv4YKZE4znijk90U36zEsTPzZDA0KIc/JSydwcQhVx\nSh4JZBo+tL38zsMGMz1uvY3YP2OVRZaP6CkWAN4ZyO+KuKL1rWx8iWFd3V86\nt7E2ngKbkdb70ulIwZCtXHs3IM59Hgs+3DtNGgoojgCookhf/bRO5iLA4Pn5\nDu5gGWpErbGHP5qfLA8jx6uC4JYp0aGokYeuN5xio+aixyK/pitD5oRxvB6d\nRUY9\r\n=d6XV\r\n-----END PGP SIGNATURE-----\r\n"

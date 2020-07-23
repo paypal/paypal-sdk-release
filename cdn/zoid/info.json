@@ -9964,7 +9964,7 @@
             "dist": {
                 "integrity": "sha512-TRTBxZqQPJ3Tsmm2JGDEemDd3pLwhz5I48x04RvXBqFqnHkH+Uk58UVV5eton5RAP9yUVkCLlqbd8oYUBbsP2w==",
                 "shasum": "313490647b5d0fc65a67b8bcfe3d17710c69c852",
-                "tarball": "https://registry.npmjs.org/zoid/-/zoid-9.0.47.tgz",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/zoid/tarballs/9.0.47.tgz",
                 "fileCount": 44,
                 "unpackedSize": 2914334,
                 "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfFRXsCRA9TVsSAnZWagAAjnAP/jYMUCTRmcntOpafCpRd\ngei0N3XJXxbOjBpioHKWmQOikIb/cKp2c58rqFr85fgjCp0uI6uMUWUWtu7J\nmqKQkH4CsjEtCaik6hDKbwr0J1AdjWpiwNfDn8qg9qBYO2WqxfbzNcpiz0oR\n1MyKZPRMQiSoXuf+gKe0F2xjDK+grdPdFufQzxpK7hUutzcdvRd8eSEVj2zG\nf1RcnNx6BWWkfk+GNNGrT/DBhc3UyspGmYMCPqDEaIhA85NkxeL9SW1lLXa/\niAENXyR8i4AEfiLaUuJV1MwLMFbnqaLNm3MyjJMPiol5oNQHSEPIPAxWS5cn\ng3vBRg58PitEOk1E+B7tGB29ycr1zKAuzNT+cf+/GAJicqogeFviKKFivL5S\nEY7JbQpjj2CvqLBIr1y/mp9+PdhQBIqhT+lPpNTwX4Idorf50ICVnonDxzuv\nTdzMa0t9kLCFIuNWC44FyU6RUuAvI0tTWSgoMYnAw6iwDmVcNi4huTZ5H9Lh\n5SbbC2TUsJke4U6Wq6uiZ2baxZPZ9/MAVJtUqOydx+b3tvtDYlICecIUoblN\nexQEUmUBsYrZdAiLGiexVW4EI0KuTX443Xrp0AE8UMCggs6JJ6JfbbjF+hnl\niQgItauYuIRO4FCwKv4aV7a25FQPFY1cf0RDFDyj0JhyxBV02DDQqzd6BxLM\nXXGU\r\n=m4AG\r\n-----END PGP SIGNATURE-----\r\n"
