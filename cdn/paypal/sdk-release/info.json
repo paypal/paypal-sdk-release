@@ -3,12 +3,12 @@
     "_rev": "991-4b52cf817635c724c724e2c6bb62dd5a",
     "name": "@paypal/sdk-release",
     "dist-tags": {
-        "latest": "5.0.144",
-        "active-test": "5.0.144",
-        "active-local": "5.0.144",
-        "active-stage": "5.0.144",
-        "active-sandbox": "5.0.144",
-        "active-production": "5.0.144",
+        "latest": "5.0.138",
+        "active-test": "5.0.138",
+        "active-local": "5.0.138",
+        "active-stage": "5.0.138",
+        "active-sandbox": "5.0.138",
+        "active-production": "5.0.138",
         "noop": "5.0.144"
     },
     "versions": {
