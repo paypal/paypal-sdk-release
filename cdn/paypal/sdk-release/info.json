@@ -1,15 +1,15 @@
 {
     "_id": "@paypal/sdk-release",
-    "_rev": "990-0474a23f6c199fdfb6d873ec2dfa26b1",
+    "_rev": "991-4b52cf817635c724c724e2c6bb62dd5a",
     "name": "@paypal/sdk-release",
     "dist-tags": {
-        "latest": "5.0.142",
-        "active-test": "5.0.142",
-        "active-local": "5.0.142",
-        "active-stage": "5.0.142",
-        "active-sandbox": "5.0.142",
-        "active-production": "5.0.142",
-        "noop": "5.0.142"
+        "latest": "5.0.144",
+        "active-test": "5.0.138",
+        "active-local": "5.0.138",
+        "active-stage": "5.0.138",
+        "active-sandbox": "5.0.138",
+        "active-production": "5.0.138",
+        "noop": "5.0.144"
     },
     "versions": {
         "1.0.95": {
@@ -25732,12 +25732,216 @@
                 "tmp": "tmp/sdk-release_5.0.142_1595381443618_0.5629638081435151"
             },
             "_hasShrinkwrap": false
+        },
+        "5.0.144": {
+            "name": "@paypal/sdk-release",
+            "version": "5.0.144",
+            "description": "Unified SDK wrapper module for tests, shared build config, and deploy.",
+            "main": "index.js",
+            "scripts": {
+                "validate-components": "babel-node test/validate-components",
+                "validate-flat": "babel-node test/validate-flat",
+                "cdnify": "grabthar-cdnify --recursive --cdn=https://www.paypalobjects.com",
+                "reinstall": "rm ./package-lock.json && rm -rf ./node_modules && npm install && git checkout package-lock.json && git checkout package.json",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install",
+                "lint": "eslint test/ *.js",
+                "flow": "flow check",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run validate-components && npm run validate-flat",
+                "add": "grabthar-add",
+                "upgrade": "grabthar-upgrade",
+                "remove": "grabthar-remove",
+                "release": "CDN='https://www.paypalobjects.com' grabthar-release",
+                "activate": "CDN='https://www.paypalobjects.com' grabthar-activate",
+                "flatten": "grabthar-flatten",
+                "full-release": "npm run upgrade && npm run release && npm run activate"
+            },
+            "engines": {
+                "node": ">=12",
+                "npm": ">=6"
+            },
+            "config": {
+                "engine-strict": true
+            },
+            "browserslist": [
+                "IE >= 9",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 5",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/grumbler.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "readmeFilename": "README.md",
+            "devDependencies": {
+                "grabthar-release": "^1",
+                "flow-bin": "^0.85.0",
+                "grumbler-scripts": "^3"
+            },
+            "dependencies": {
+                "@braintree/browser-detection": "1.7.0",
+                "@braintree/iframer": "1.0.3",
+                "@braintree/sanitize-url": "2.1.0",
+                "@braintree/wrap-promise": "1.1.1",
+                "@paypal/card-components": "1.0.45",
+                "@paypal/checkout-components": "5.0.101",
+                "@paypal/common-components": "1.0.10",
+                "@paypal/example-components": "1.0.27",
+                "@paypal/funding-components": "1.0.17",
+                "@paypal/identity-components": "5.0.3",
+                "@paypal/messaging-components": "1.12.0",
+                "@paypal/muse-components": "1.3.31",
+                "@paypal/risk-data-collector": "1.0.6",
+                "@paypal/sdk-client": "4.0.124",
+                "@paypal/sdk-constants": "1.0.60",
+                "@paypal/sdk-logos": "1.0.26",
+                "beaver-logger": "4.0.14",
+                "belter": "1.0.121",
+                "bowser": "1.9.4",
+                "braintree-web": "3.33.0",
+                "card-validator": "4.3.0",
+                "core-js-pure": "3.6.5",
+                "credit-card-type": "6.3.0",
+                "cross-domain-safe-weakmap": "1.0.27",
+                "cross-domain-utils": "2.0.33",
+                "framebus": "3.0.1",
+                "hi-base32": "0.5.0",
+                "inject-stylesheet": "1.0.0",
+                "jsx-pragmatic": "2.0.12",
+                "post-robot": "10.0.37",
+                "promise-polyfill": "7.0.2",
+                "restricted-input": "1.2.7",
+                "universal-serialize": "1.0.8",
+                "whatwg-fetch": "3.2.0",
+                "zalgo-promise": "1.0.44",
+                "zoid": "9.0.46"
+            },
+            "readme": "PayPal Braintree Client SDK\n---------------------------\n\n[![npm version](https://img.shields.io/npm/v/@paypal/sdk-release.svg?style=flat-square)](https://www.npmjs.com/package/@paypal/sdk-release) [![build status](https://img.shields.io/travis/paypal/paypal-sdk-release/master.svg?style=flat-square)](https://travis-ci.org/paypal/paypal-sdk-release)\n\n[![dependencies Status](https://david-dm.org/paypal/paypal-sdk-release/status.svg)](https://david-dm.org/paypal/paypal-sdk-release) [![devDependencies Status](https://david-dm.org/paypal/paypal-sdk-release/dev-status.svg)](https://david-dm.org/paypal/paypal-sdk-release?type=dev)\n\nWrapper module to test and release combined client SDK modules for PayPal and Braintree.\n\n## Quick Start\n\n### Adding a new component module\n\n```bash\nnpm run add my-sdk-component\n```\n\n### Updating all components\n\n```bash\nnpm run upgrade\n```\n\n### Updating specific components\n\n```bash\nnpm run upgrade paypal-checkout-components\nnpm run upgrade paypal-braintree-hosted-fields-component\n```\n\n### Removing specific components\n\n```bash\nnpm run remove paypal-checkout-components\n```\n\n### Release\n\n**Warning:** this will trigger an npm publish and production deploy.\n\n```bash\nnpm run release\n```\n\n### Activate\n\n**Warning:** this will move the published version into traffic.\n\n```bash\nnpm run activate\n```\n\nTo roll back, or activate a specific version:\n\n```bash\nnpm run activate x.x.x\n```\n",
+            "gitHead": "b792112775920a5ba3c409b562abdd263cf6ed75",
+            "bugs": {
+                "url": "https://github.com/krakenjs/grumbler/issues"
+            },
+            "homepage": "https://github.com/krakenjs/grumbler#readme",
+            "_id": "@paypal/sdk-release@5.0.144",
+            "_nodeVersion": "12.18.2",
+            "_npmVersion": "6.14.7",
+            "dist": {
+                "integrity": "sha512-ysQhEIAX+xx+iiz3XXXN/Ax3T8FkVWPXaQYyPCQqcu8cK5uq7Kl1QUnsbgjH3G253iwt3J64ui5+r21jbGiNwA==",
+                "shasum": "ee1d31a8e381582154f2b91a309673645be08eec",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/sdk-release/tarballs/5.0.144.tgz",
+                "fileCount": 5,
+                "unpackedSize": 29642,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfGL86CRA9TVsSAnZWagAAaSwQAIzem+H5nBah+DMjJ6XI\nlt3nvEOUP1c732G1T/KDlBeIR3sMbjBwfmig9qFl84TFUXoCldt3srrcs79I\nzub6AggKphy7MF3Vo3VA3+aIS+v3BWZKIeHM6yolPffGw/j57Q5k10mVYVeb\nSTxjGahSTHMi7cX8DgQW3pcJuYU69NfG5c5s6RPvINOtOBtVMAzjJjkzOHji\n/NL0bw7MK58YJ3XJBS3fHBWtFGROOizEKdfjlpTaotXsOPZ6PRnNqEA9MYjk\nGzoHzCa9PaZlYELjhC++WUWgGerLk+G9l8z813HchyP3BpKTAXL20r6zDoGC\n9mYkmNWmYrk/W6ZyaikaWbVy0gfAk/8F4poyqJqPoSWRLtIXtW8mzljqtRMX\nb062GQWEvg1K2Yacw5blnkYcjiO7KNH8sPDBBgQ8lIG5kngjTyoELI3/iD2h\nGfVJpkaBLaG4BlbqtkwDZyrh0wN0hTccim3ClbH4O2sC+EPQrYflsK8/nQOP\nFBw3ysD15j06PIOwEwqFo5AF9/AC9oDek67jQ2fw2WuPsTYVZUVQco/bUeXD\nGKtnEPqI2SB+quBdf5Ir10NwJNJ8JKHl5Oofuy5E+gIekm8a51nbxhT1wSuM\n4EH6b2Gvx+J2up3yhlZEFsvTTuYHAmgj3/wcFMZVzSOyzoZSgHYV4uLECXCN\n0g1r\r\n=XK9m\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "email": "blade@crookedneighbor.com",
+                    "name": "bladebarringer"
+                },
+                {
+                    "email": "daniel@bluesuncorp.co.uk",
+                    "name": "bluepnume"
+                },
+                {
+                    "email": "team-sdk@getbraintree.com",
+                    "name": "braintree"
+                },
+                {
+                    "email": "bryanjenningz@gmail.com",
+                    "name": "bryanjenningz"
+                },
+                {
+                    "email": "grjopa@gmail.com",
+                    "name": "gregjopa"
+                },
+                {
+                    "email": "mpscqw@gmail.com",
+                    "name": "jfurman"
+                },
+                {
+                    "email": "joshua.a.beam@gmail.com",
+                    "name": "joshbeam"
+                },
+                {
+                    "email": "merlinpatt@gmail.com",
+                    "name": "merlinpatt"
+                },
+                {
+                    "email": "stuartmark@gmail.com",
+                    "name": "mstuart"
+                },
+                {
+                    "email": "DL-PP-NODEJS-SDK@paypal.com",
+                    "name": "paypal-user"
+                },
+                {
+                    "email": "prajarameee@gmail.com",
+                    "name": "rajarampadmanathan"
+                },
+                {
+                    "email": "ravi_shekhar00@yahoo.com",
+                    "name": "ravishekhar00"
+                },
+                {
+                    "email": "rpalanikumar@paypal.com",
+                    "name": "rpalanikumar"
+                },
+                {
+                    "email": "rygilbert@paypal.com",
+                    "name": "rygilbert_paypal"
+                },
+                {
+                    "email": "nschott@paypal.com",
+                    "name": "seavenly"
+                },
+                {
+                    "email": "song@zheng.club",
+                    "name": "songz"
+                },
+                {
+                    "email": "tifzhou@paypal.com",
+                    "name": "tifzhou"
+                },
+                {
+                    "email": "vishakha94@outlook.com",
+                    "name": "visheei94"
+                },
+                {
+                    "email": "weihou@paypal.com",
+                    "name": "weihou"
+                },
+                {
+                    "email": "zach@zacharyhill.xyz",
+                    "name": "zhillb"
+                }
+            ],
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/sdk-release_5.0.144_1595457337983_0.42290312503874605"
+            },
+            "_hasShrinkwrap": false
         }
     },
     "time": {
         "created": "2018-12-12T00:58:06.226Z",
         "1.0.95": "2018-12-12T00:58:06.565Z",
-        "modified": "2020-07-22T01:30:45.985Z",
+        "modified": "2020-07-22T22:35:40.499Z",
         "1.0.96": "2018-12-14T00:02:55.955Z",
         "1.0.97": "2018-12-14T00:48:39.328Z",
         "1.0.98": "2018-12-14T02:01:48.346Z",
@@ -25892,7 +26096,8 @@
         "5.0.139": "2020-07-21T23:51:43.233Z",
         "5.0.140": "2020-07-22T00:04:47.844Z",
         "5.0.141": "2020-07-22T00:46:32.430Z",
-        "5.0.142": "2020-07-22T01:30:43.786Z"
+        "5.0.142": "2020-07-22T01:30:43.786Z",
+        "5.0.144": "2020-07-22T22:35:38.223Z"
     },
     "maintainers": [
         {
