@@ -1,10 +1,10 @@
 {
     "_id": "credit-card-type",
-    "_rev": "30-3b6ebdfce98de748018bbb0512085253",
+    "_rev": "31-252fa9c8969aac10ba58ebda4e8dc033",
     "name": "credit-card-type",
     "description": "A library for determining credit card type",
     "dist-tags": {
-        "latest": "9.0.0"
+        "latest": "9.0.1"
     },
     "versions": {
         "0.0.1": {
@@ -1638,6 +1638,75 @@
                 "tmp": "tmp/credit-card-type_9.0.0_1594413362988_0.2975390323772631"
             },
             "_hasShrinkwrap": false
+        },
+        "9.0.1": {
+            "name": "credit-card-type",
+            "version": "9.0.1",
+            "description": "A library for determining credit card type",
+            "main": "dist/index.js",
+            "types": "dist/index.d.ts",
+            "scripts": {
+                "lint": "eslint --ext js,ts .",
+                "posttest": "npm run lint",
+                "test": "jest",
+                "prepublishOnly": "npm run build",
+                "prebuild": "prettier --write .",
+                "build": "tsc --declaration"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/credit-card-type.git"
+            },
+            "homepage": "https://github.com/braintree/credit-card-type",
+            "author": "",
+            "license": "MIT",
+            "devDependencies": {
+                "@types/jest": "^26.0.5",
+                "eslint": "^7.5.0",
+                "eslint-config-braintree": "5.0.0-typescript-prep-rc.17",
+                "jest": "^26.1.0",
+                "prettier": "^2.0.5",
+                "ts-jest": "^26.1.3",
+                "typescript": "^3.9.7"
+            },
+            "jest": {
+                "preset": "ts-jest",
+                "testEnvironment": "node",
+                "testPathIgnorePatterns": [
+                    "<rootDir>/src/__tests__/helper.ts"
+                ]
+            },
+            "gitHead": "3ed356e5fe5db5f4af55446d4ad5c48ea8292cd9",
+            "bugs": {
+                "url": "https://github.com/braintree/credit-card-type/issues"
+            },
+            "_id": "credit-card-type@9.0.1",
+            "_nodeVersion": "12.18.2",
+            "_npmVersion": "6.14.5",
+            "dist": {
+                "integrity": "sha512-GtJr+IyIUN67fRXJGIFTw192kgAAneqZ0DDpKKM78Nh32jwfcuTVzJRe3xioECPZybiKHGIHGsbXg//Hu6PKSQ==",
+                "shasum": "b800ae4089ece5e9362626ff1bb44fb3bb8757ed",
+                "tarball": "https://registry.npmjs.org/credit-card-type/-/credit-card-type-9.0.1.tgz",
+                "fileCount": 30,
+                "unpackedSize": 42805,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfGvO+CRA9TVsSAnZWagAA3zIP/iXO/A2AMGJ0zBafq0nJ\nW8iN8GjBqqyXx9APQxnULsr6CN8BKyNEeDTWk8PI/DNurbG2JBwlch222who\n0saIu3YJsr37Hw/Nl6Z2RgSL1J7E8LA4ZlbiGUUcDnfh1NRr1xoBGqWmumIp\nXXQC7EzIOeZvcuWtkwO8wXgrQoliu1lSYaoC8H/ApXQzJ8l6foJqv5n90vBW\nhKk0yIYzhs32nkAB0aaZdU1px9R6l4XS571dn+UFiPXJjb/hriqPZmJm9+26\n2TlsYkU8FgX+ycW0Kxj5RZNRO7vPXtguSFlJPuDM7c4oxVwaMIVFyQYnRhHW\nlmjIC6ELZfGfBBPP6cRFyUy0ZWBaWNeb3jNh4NvMEy2igXfwz3urRxY6Dnnp\nsMkAiUm2f+VyVsSYQepyFD8WZcpGQinMJfDSkTNNjRrheFqDNdimBF6s0CV3\nFvLmjdUd55gxHyZZ/GhD/GO4gAhr/Yz9cYs2ab7YwbafSfZrQQ/3WVMjNNdP\njKNdW4eC/ALdvbCZjSfRvf9hT+pdhnfnbOuLOxbHRJvXbGAXsCVlJkfOCUQu\n0Eq5b+VmMC6NFBm2Z5VleglKODgX0FPbe8fmKOCDPtRbAwlJophbGr9XD8Jt\nDHm4Pcg+4d6C2DwvRk/4nYz1tgoOeIsiYvpJt/MqV0GyM+blzHbMMDi7jZrL\nuGNU\r\n=dBHj\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmUser": {
+                "name": "braintree",
+                "email": "team-sdk@getbraintree.com"
+            },
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/credit-card-type_9.0.1_1595601854254_0.34955992484993104"
+            },
+            "_hasShrinkwrap": false
         }
     },
     "readme": "# Credit Card Type [![Build Status](https://travis-ci.org/braintree/credit-card-type.svg)](https://travis-ci.org/braintree/credit-card-type) [![npm version](https://badge.fury.io/js/credit-card-type.svg)](http://badge.fury.io/js/credit-card-type) [![Bower](https://badge.fury.io/bo/credit-card-type.svg)](http://badge.fury.io/bo/credit-card-type)\n\nCredit Card Type provides a useful utility method for determining a credit card type from both fully qualified and partial numbers. This is not a validation library but rather a smaller component to help you build your own validation or UI library.\n\nThis library is designed for type-as-you-go detection (supports partial numbers) and is written in CommonJS so you can use it in Node, io.js, and the [browser](http://browserify.org).\n\n## Download\n\nTo install via npm:\n\n```bash\nnpm install credit-card-type\n```\n\n## Example\n\n```javascript\nvar creditCardType = require(\"credit-card-type\");\n\nvar visaCards = creditCardType(\"4111\");\nconsole.log(visaCards[0].type); // 'visa'\n\nvar ambiguousCards = creditCardType(\"6\");\nconsole.log(ambiguousCards.length); // 3\nconsole.log(ambiguousCards[0].niceType); // 'Discover'\nconsole.log(ambiguousCards[1].niceType); // 'UnionPay'\nconsole.log(ambiguousCards[2].niceType); // 'Maestro'\n```\n\n## API\n\n### `creditCardType(number: String)`\n\n`creditCardType` will return an array of objects, each with the following data:\n\n| Key        | Type     | Description                                                                                                                                                                                                                                                                                                                                                                  |\n| ---------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| `niceType` | `String` | A pretty printed representation of the card brand.<br/>- `Visa`<br />- `Mastercard`<br />- `American Express`<br />- `Diners Club`<br />- `Discover`<br />- `JCB`<br />- `UnionPay`<br />- `Maestro`<br />- `Mir`<br />- `Elo`<br />- `Hiper`<br />- `Hipercard`                                                                                                             |\n| `type`     | `String` | A code-friendly presentation of the card brand (useful to class names in CSS). Please refer to Card Type \"Constants\" below for the list of possible values.<br/>- `visa`<br />- `mastercard`<br />- `american-express`<br />- `diners-club`<br />- `discover`<br />- `jcb`<br />- `unionpay`<br />- `maestro`<br />- `mir`<br /> - `elo`<br /> - `hiper`<br /> - `hipercard` |\n| `gaps`     | `Array`  | The expected indices of gaps in a string representation of the card number. For example, in a Visa card, `4111 1111 1111 1111`, there are expected spaces in the 4th, 8th, and 12th positions. This is useful in setting your own formatting rules.                                                                                                                          |\n| `lengths`  | `Array`  | The expected lengths of the card number as an array of strings (excluding spaces and `/` characters).                                                                                                                                                                                                                                                                        |\n| `code`     | `Object` | The information regarding the security code for the determined card. Learn more about the [code object](#code) below.                                                                                                                                                                                                                                                        |\n\nIf no card types are found, this returns an empty array.\n\n### `creditCardType.getTypeInfo(type: String)`\n\n`getTypeInfo` will return a singular object (with the same structure as `creditCardType`) corresponding with the specified `type`, or undefined if the specified `type` is invalid/unknown.\n\n### Card Type \"Constants\"\n\nNamed variables are provided for each of the supported card types:\n\n- `AMERICAN_EXPRESS`\n- `DINERS_CLUB`\n- `DISCOVER`\n- `ELO`\n- `HIPERCARD`\n- `HIPER`\n- `JCB`\n- `MAESTRO`\n- `MASTERCARD`\n- `MIR`\n- `UNIONPAY`\n- `VISA`\n\n#### `code`\n\nCard brands provide different nomenclature for their security codes as well as varying lengths.\n\n| Brand              | Name   | Size |\n| ------------------ | ------ | ---- |\n| `Visa`             | `CVV`  | 3    |\n| `Mastercard`       | `CVC`  | 3    |\n| `American Express` | `CID`  | 4    |\n| `Diners Club`      | `CVV`  | 3    |\n| `Discover`         | `CID`  | 3    |\n| `JCB`              | `CVV`  | 3    |\n| `UnionPay`         | `CVN`  | 3    |\n| `Maestro`          | `CVC`  | 3    |\n| `Mir`              | `CVP2` | 3    |\n| `Elo`              | `CVE`  | 3    |\n| `Hiper`            | `CVC`  | 3    |\n| `Hipercard`        | `CVC`  | 4    |\n\nA full response for a `Visa` card will look like this:\n\n```json\n{\n  \"niceType\": \"Visa\",\n  \"type\": \"visa\",\n  \"gaps\": [4, 8, 12],\n  \"lengths\": [16],\n  \"code\": { \"name\": \"CVV\", \"size\": 3 }\n}\n```\n\n### Advanced Usage\n\nCommonJS:\n\n```javascript\nvar creditCardType = require(\"credit-card-type\");\nvar getTypeInfo = require(\"credit-card-type\").getTypeInfo;\nvar CardType = require(\"credit-card-type\").types;\n```\n\nES6:\n\n```javascript\nimport creditCardType, {\n  getTypeInfo,\n  types as CardType,\n} from \"credit-card-type\";\n```\n\n#### Filtering\n\n```javascript\ncreditCardType(cardNumber).filter(function (card) {\n  return card.type === CardType.MASTERCARD || card.type === CardType.VISA;\n});\n```\n\n#### Pattern Detection\n\nEach card type has a `patterns` attribute that is an array of numbers and ranges of numbers (represented by an array of 2 values, a min and a max).\n\nIf the pattern is a number, the modules compares it against the card number. Partial matches for card numbers that are shorter than the pattern also match. Given the pattern `123`, then the card numbers `1`, `12`, `123`, `1234` will all match, but `2`, `13`, and `124` will not.\n\nIf the pattern is an array of numbers, then the card number is checked to be within the range of those numbers. Again, partial matches are accepted. Given the range `[100, 123]`, then the card numbers `1`, `10`, `100`, `12`, `120`,\n`123` will all match, but `2`, `13`, and `124` will not.\n\nFor detection, the module loops over each card type's `patterns` array, and if a match occurs, that card type is added to the array of results.\n\nIn the case where multiple matches are made, if the entirety of the pattern is matched, the card type with the stronger pattern is preferred. For instance, Visa cards match anything that starts with a 4, but there are\nsome Elo cards that begin with a 4. One example is `401178`. So for the card\nnumbers, `4`, `40`, `401`, `4011`, `40117`, the module will report that this\ncard is _either_ a Visa or an Elo card. Once the card number becomes `401178`,\nthe modules sees that an exact match for the ELO bin has been made, and the module reports\nthat the card can only be an Elo card.\n\n#### Adding Card Types\n\nYou can add additional card brands not supported by the module with `addCard`. Pass in the configuration object.\n\n```javascript\ncreditCardType.addCard({\n  niceType: \"NewCard\",\n  type: \"new-card\",\n  patterns: [2345, 2376],\n  gaps: [4, 8, 12],\n  lengths: [16],\n  code: {\n    name: \"CVV\",\n    size: 3,\n  },\n});\n```\n\nIf you add a card that already exists in the module, it will overwrite it.\n\n```javascript\ncreditCardType.addCard({\n  niceType: \"Visa with Custom Nice Type\",\n  type: creditCardType.types.VISA,\n  patterns: [41111, [44, 47]],\n  gaps: [4, 8, 12],\n  lengths: [13, 16, 19], // add support for old, deprecated 13 digit visas\n  code: {\n    name: \"CVV\",\n    size: 3,\n  },\n});\n```\n\nAdding new cards puts them at the bottom of the priority for testing. Priority is determined by an array. By default, the priority looks like:\n\n```javascript\n[\n  creditCardType.types.VISA,\n  creditCardType.types.MASTERCARD,\n  creditCardType.types.AMERICAN_EXPRESS,\n  creditCardType.types.DINERS_CLUB,\n  creditCardType.types.DISCOVER,\n  creditCardType.types.JCB,\n  creditCardType.types.UNIONPAY,\n  creditCardType.types.MAESTRO,\n  creditCardType.types.ELO,\n  creditCardType.types.MIR,\n  creditCardType.types.HIPER,\n  creditCardType.types.HIPERCARD,\n];\n```\n\nYou can adjust the order using `changeOrder`. The number you pass in as the second argument is where the card is inserted into the array. The closer to the beginning of the array, the higher priority it has.\n\n```javascript\ncreditCardType.changeOrder(\"my-new-card\", 0); // give custom card type the highest priority\ncreditCardType.changeOrder(\"my-new-card\", 3); // give it a priority at position 3 in the test order array\n```\n\nYou can also remove cards with `removeCard`.\n\n```javscript\ncreditCardType.removeCard(creditCardType.types.VISA);\n```\n\nIf you need to reset the modifications you have created, simply call `resetModifications`:\n\n```javascript\ncreditCardType.resetModifications();\n```\n\n#### Updating Card Types\n\nYou can update cards with `updateCard`. Pass in the card type and the configuration object. Any properties left off will inherit from the original card object.\n\n```javascript\ncreditCardType.updateCard(creditCardType.types.VISA, {\n  niceType: \"Fancy Visa\",\n  lengths: [11, 16],\n});\n\nvar visa = creditCardType.getTypeInfo(creditCardType.types.VISA);\n\n// overwritten properties\nvisa.niceType; // 'Fancy Visa'\nvisa.length; // [11, 16]\n\n// unchanged properties\nvisa.gaps; // [4, 8, 12]\nvisa.code.name; // 'CVV'\n```\n\nIf you need to reset the modifications you have created, simply call `resetModifications`:\n\n```javascript\ncreditCardType.resetModifications();\n```\n\n#### Pretty Card Numbers\n\n```javascript\nfunction prettyCardNumber(cardNumber, cardType) {\n  var card = getTypeInfo(cardType);\n\n  if (card) {\n    var offsets = [].concat(0, card.gaps, cardNumber.length);\n    var components = [];\n\n    for (var i = 0; offsets[i] < cardNumber.length; i++) {\n      var start = offsets[i];\n      var end = Math.min(offsets[i + 1], cardNumber.length);\n      components.push(cardNumber.substring(start, end));\n    }\n\n    return components.join(\" \");\n  }\n\n  return cardNumber;\n}\n\nprettyCardNumber(\"xxxxxxxxxx343\", CardType.AMERICAN_EXPRESS); // 'xxxx xxxxxx 343'\n```\n\n### Development\n\nWe use `nvm` for managing our node versions, but you do not have to. Replace any `nvm` references with the tool of your choice below.\n\n```bash\nnvm install\nnpm install\n```\n\nAll testing dependencies will be installed upon `npm install` and the test suite executed with `npm test`.\n",
@@ -1648,7 +1717,7 @@
         }
     ],
     "time": {
-        "modified": "2020-07-10T20:36:05.961Z",
+        "modified": "2020-07-24T14:44:16.667Z",
         "created": "2015-04-16T22:28:41.048Z",
         "0.0.1": "2015-04-16T22:28:41.048Z",
         "1.0.0": "2015-04-16T22:44:42.135Z",
@@ -1675,7 +1744,8 @@
         "8.1.0": "2019-01-24T15:46:10.600Z",
         "8.2.0": "2019-04-03T01:35:18.176Z",
         "8.3.0": "2019-09-06T20:11:47.793Z",
-        "9.0.0": "2020-07-10T20:36:03.078Z"
+        "9.0.0": "2020-07-10T20:36:03.078Z",
+        "9.0.1": "2020-07-24T14:44:14.385Z"
     },
     "license": "MIT",
     "readmeFilename": "README.md",
