@@ -3,7 +3,7 @@
     "_rev": "1004-a4ace3f7c8f25e0ce17a1f7b3dfa8c70",
     "name": "@paypal/sdk-release",
     "dist-tags": {
-        "latest": "5.0.147",
+        "latest": "5.0.146",
         "active-test": "5.0.146",
         "active-local": "5.0.146",
         "active-stage": "5.0.146",
