@@ -6019,7 +6019,7 @@
             "dist": {
                 "integrity": "sha512-OCsqTQboTEWWsUjcp5jLSw2ZHsBiv2C105iFs61bOT0Hnwi9p7/uuXdd7mu8RYcarREfdjNN+8LitmEHATsLYg==",
                 "shasum": "be3736f161c4bb8b10958027ab99465d2a811198",
-                "tarball": "https://registry.npmjs.org/bowser/-/bowser-2.10.0.tgz",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/bowser/tarballs/2.10.0.tgz",
                 "fileCount": 15,
                 "unpackedSize": 215715,
                 "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfB23OCRA9TVsSAnZWagAAoAwQAJg2mUo0SpePrrV7znZB\n3IxKziA532a+uLTrqefGj8rK9h9Albv/f0UaeYrHm9bD/3ZpHOLs62Rng0P7\n1LCc+8Ai2IMC8qgCShccbDQlCCGWRJVPLoaArMdbKGwrMBiw6PyrNQNs3hRS\nS8sGBDiivYeLpDhJjqboFviSJRDGMb1qh7pbOO6rXuGAG43qy+1s9yUl0ucR\n+TQEoNQUD7yMCWPfzOORMFSJPxRzWT4UAYMYtJLrXfVs0opFfhDCdxpMFZwi\nZPfKneH8k3tpUT+rc660HvN+4g3bplc8Ns4RBUNm18H0nUsxGy+ZHq2hv6P5\n1kqvQtodEKDUJ3x9IPiTji8aCqX/IGSmLmrfVlNCB0tBa9VsuSjJOWttDdeU\nei3yDTJdNkiDUuhCkPEAlh275Js1WTHNU+5fXR5RGzFDhTJ4BuTXF+2OFj0A\nDhPriKI4f6CjEYDQeGcHnho4e4/Ew8Gu7qGXj6HhjMn+IbcXUiUmx1mYTETs\neOEPSwywlJ0BGm5pn+QD85WxYoelIvn+MhV3KPsGEUDh0wOexB8Kwqx2XNI0\nDjAxpr0tW7IC09jCqUwfTnSY02C3GH/xv0JRFYlcMRzAu3s1MzvJ04DX/XFr\nu+ZF6NrcTDcJrFuMpvZfv3NX7KFGqFxRUkHRTEJb1Qe/Lmmk8+GFWy7HSxnd\nWQIJ\r\n=Fnvt\r\n-----END PGP SIGNATURE-----\r\n"

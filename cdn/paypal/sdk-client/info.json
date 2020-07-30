@@ -1,9 +1,9 @@
 {
     "_id": "@paypal/sdk-client",
-    "_rev": "102-dfa6a9c33a7fd99e2995ce3186b45482",
+    "_rev": "103-cb945809aab80347cc36ba84ef42cf1e",
     "name": "@paypal/sdk-client",
     "dist-tags": {
-        "latest": "4.0.125"
+        "latest": "4.0.126"
     },
     "versions": {
         "4.0.42": {
@@ -10960,12 +10960,187 @@
                 "tmp": "tmp/sdk-client_4.0.125_1595100916575_0.7828554593886168"
             },
             "_hasShrinkwrap": false
+        },
+        "4.0.126": {
+            "name": "@paypal/sdk-client",
+            "version": "4.0.126",
+            "description": "Shared config between PayPal/Braintree.",
+            "main": "index.js",
+            "scripts": {
+                "babel": "babel ./server --ignore=node_modules --out-dir ./server",
+                "build": "npm run test && npm run doc",
+                "clean": "rimraf dist coverage",
+                "debug": "cross-env NODE_ENV=debug",
+                "doc": "esdoc",
+                "flow": "flow",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "lint": "eslint src/ server/ test/ *.js",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "release": "./publish.sh",
+                "release:major": "./publish.sh major",
+                "release:minor": "./publish.sh minor",
+                "release:patch": "./publish.sh patch",
+                "setup": "npm install && npm run flow-typed",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run jest && npm run karma",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "jest": "jest test/server --env=node --no-cache --collectCoverageFrom='server/' --coverage --verbose --runInBand --silent=false",
+                "prepublish": "in-publish && npm run babel || not-in-publish",
+                "postpublish": "rm -rf ./server && git checkout ./server"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/paypal/paypal-sdk-client.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "dependencies": {
+                "@paypal/sdk-constants": "^1.0.61",
+                "beaver-logger": "^4.0.0",
+                "belter": "^1.0.16",
+                "bowser": "^2.0.0",
+                "jsx-pragmatic": "^2",
+                "zalgo-promise": "^1.0.22"
+            },
+            "devDependencies": {
+                "babel-core": "7.0.0-bridge.0",
+                "cheerio": "1.0.0-rc.3",
+                "esdoc": "1.1.0",
+                "esdoc-flow-type-plugin": "1.1.0",
+                "esdoc-standard-plugin": "1.0.0",
+                "flow-bin": "0.100.0",
+                "grumbler-scripts": "3.0.70",
+                "mocha": "4.1.0",
+                "sync-browser-mocks": "2.0.8"
+            },
+            "gitHead": "15fa69e78fa96af293889cdd13bbcf3e1ac3a207",
+            "bugs": {
+                "url": "https://github.com/paypal/paypal-sdk-client/issues"
+            },
+            "homepage": "https://github.com/paypal/paypal-sdk-client#readme",
+            "_id": "@paypal/sdk-client@4.0.126",
+            "_nodeVersion": "12.18.2",
+            "_npmVersion": "6.14.5",
+            "dist": {
+                "integrity": "sha512-rDPUSXDeuAyPdSb7Z6ZIWcUfGP5RkEgbH4qpwJGzvfdIPoJp++iRvPUP2j5PqzsEvO9lvIYZqnAfM44QqIDw9A==",
+                "shasum": "b77d2e4fd6629e81f5335ef66b46358e54f9eeb4",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/sdk-client/tarballs/4.0.126.tgz",
+                "fileCount": 29,
+                "unpackedSize": 76556,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfIwcbCRA9TVsSAnZWagAAR6YP/A4Gfk7rOPEeDdc3qWJ0\n2AKuYimyq4i73Q35+VSaDCZWFBSQJVgjy5tSLp+tvuaakhfsAv8LrberYmCM\nV08PaGfePDeuWoPokTsIcdZbnomCwuEBrZRVOJxPOWcY0rOwLDfIji1uphGF\nM50XmtzTqOZL9DBqomviYHbn8tUdlqqmxcHb2PbBu+ObrG2aLSmSrjVH964P\n90px/RX8JBD83Mui+ljw3GEbWJjw+XQUaUjCZCMzkz2k2Zvpr9aDONK1uYqG\nIp9eWFWE4jaG/Y2/9/beAVVtr3Zx/pMcN3KyvNak8CJQxrYjpQ9+adEcDUJS\nfID02v0JR4D2SFGnwrBvVvhisyrXxvpIgpeDh3HmhLycjZ/YPDb4dqGomqvY\n52LDlcAwxXNZQ2MG3QVf3VgGI0atDlG+P+BZl6zHCL8J7gDmowBBfv0RBhtO\n0WDn1e4dExHAJBc7O+jTV/qv5ZGeBA2UseBEhxBlfeGtVzwR3+Uo+eOXG0Md\nMEc/w2eutwRHjd/BTzFJUoKhGX6Igmrix0RrPzX/H+xVvY8Qms3cOKLv3A4W\nx0PPtBc9WNWBRFa5uCliF+/SLM2hXOjsST3e/qCSLktAAaa70T7l7A7NZc6+\nFF5bqslH+FD4Ij0hcynuYc14pufpj0ce3G1beN3DtM/6S/e+RsoKZYRJmpfJ\nYGRq\r\n=wIsV\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "email": "blade@crookedneighbor.com",
+                    "name": "bladebarringer"
+                },
+                {
+                    "email": "daniel@bluesuncorp.co.uk",
+                    "name": "bluepnume"
+                },
+                {
+                    "email": "team-sdk@getbraintree.com",
+                    "name": "braintree"
+                },
+                {
+                    "email": "bryanjenningz@gmail.com",
+                    "name": "bryanjenningz"
+                },
+                {
+                    "email": "grjopa@gmail.com",
+                    "name": "gregjopa"
+                },
+                {
+                    "email": "mpscqw@gmail.com",
+                    "name": "jfurman"
+                },
+                {
+                    "email": "joshua.a.beam@gmail.com",
+                    "name": "joshbeam"
+                },
+                {
+                    "email": "merlinpatt@gmail.com",
+                    "name": "merlinpatt"
+                },
+                {
+                    "email": "stuartmark@gmail.com",
+                    "name": "mstuart"
+                },
+                {
+                    "email": "DL-PP-NODEJS-SDK@paypal.com",
+                    "name": "paypal-user"
+                },
+                {
+                    "email": "prajarameee@gmail.com",
+                    "name": "rajarampadmanathan"
+                },
+                {
+                    "email": "ravi_shekhar00@yahoo.com",
+                    "name": "ravishekhar00"
+                },
+                {
+                    "email": "rpalanikumar@paypal.com",
+                    "name": "rpalanikumar"
+                },
+                {
+                    "email": "rygilbert@paypal.com",
+                    "name": "rygilbert_paypal"
+                },
+                {
+                    "email": "nschott@paypal.com",
+                    "name": "seavenly"
+                },
+                {
+                    "email": "song@zheng.club",
+                    "name": "songz"
+                },
+                {
+                    "email": "tifzhou@paypal.com",
+                    "name": "tifzhou"
+                },
+                {
+                    "email": "vishakha94@outlook.com",
+                    "name": "visheei94"
+                },
+                {
+                    "email": "weihou@paypal.com",
+                    "name": "weihou"
+                },
+                {
+                    "email": "zach@zacharyhill.xyz",
+                    "name": "zhillb"
+                }
+            ],
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/sdk-client_4.0.126_1596131098882_0.4930953805487497"
+            },
+            "_hasShrinkwrap": false
         }
     },
     "time": {
         "created": "2018-12-11T22:14:20.675Z",
         "4.0.42": "2018-12-11T22:14:20.977Z",
-        "modified": "2020-07-18T19:35:18.943Z",
+        "modified": "2020-07-30T17:45:01.383Z",
         "4.0.43": "2018-12-11T22:23:00.985Z",
         "4.0.44": "2018-12-11T22:35:28.564Z",
         "4.0.45": "2018-12-13T19:41:56.635Z",
@@ -11045,7 +11220,8 @@
         "4.0.122": "2020-05-15T21:33:43.899Z",
         "4.0.123": "2020-05-28T19:31:35.924Z",
         "4.0.124": "2020-06-01T21:49:06.227Z",
-        "4.0.125": "2020-07-18T19:35:16.717Z"
+        "4.0.125": "2020-07-18T19:35:16.717Z",
+        "4.0.126": "2020-07-30T17:44:59.068Z"
     },
     "maintainers": [
         {
@@ -11137,7 +11313,7 @@
         "type": "git",
         "url": "git://github.com/paypal/paypal-sdk-client.git"
     },
-    "readme": "PayPal SDK Client\n-----------------\n\nA shared client for PayPal/Braintree client sdk modules. Has both client-side and server-side bindings to help you build and integrate an sdk component.\n\n## Client\n\nYour client-side sdk component can take advantage of any common utilities or functionality exposed by this module. For example:\n\n- Determining the current paypal url\n- Getting the merchant's client-id\n- Running experiments.\n\n```javascript\nimport { getClientID } from '@paypal/sdk-client/src';\n\nfetch('https://api.paypal.com/v1/foo', {\n  headers: {\n    'client-id': getClientID()\n  }\n});\n```\n\n## Server\n\nThis module helps you load the payments sdk in a child window, matching the url from the parent.\n\n### Rationale\n\n- You're building a component that is rendered into an iframe or popup window.\n- Your component uses [zoid](https://github.com/krakenjs/zoid) to construct the component, and to communicate between the component and the parent page and vice-versa.\n- You want to make sure the version of the component between the parent and child, to prevent any incompatibilities in the messaging protocol zoid defines (trust me on this one)\n- You also want to take advantage of browser caching benefits, and not download dependencies like zoid multiple times in each new frame or window being rendered\n- You can't just load `<script src=\"https://www.paypal.com/sdk/js?client-id=CLIENT_ID\"></script>` in the child frame or popup, because different query params could have been passed on the top level page, and to take advantage of any caching benefits you need to match the url exactly as it appeared in the parent.\n- You also probably want to avoid passing down all of the query params from `/sdk/js`, but that's a lot to keep track of, and you would need to update your code every time a new parameter is added.\n- Or, you could pass the entire `https://www.paypal.com/sdk/js?client-id=xyz&...` url down from the parent to each new child; meaning we'll get an exact match each time, with exact the same version of the code, and any new url params will automatically be included without any more integration work.\n- And of course, if we're doing that, we need to validate the url before we throw it into a script tag, to prevent xss or injection attacks\n\nThis module helps with that.\n\n### On your server\n\n1. Import `unpackSDKMeta`:\n\n```javascript\nimport { unpackSDKMeta } from '@paypal/sdk-client';\n```\n\n2. Call `unpackSDKMeta` with `req.query.sdkMeta`, passed from the client in the query string, and pass the script tag in the page render.\n\n```javascript\n// Listen for requests to your app\napp.get('/my-app', (req, res) => {\n\n    // Unpack the sdk meta payload from the client\n    const { getSDKLoader } = unpackSDKMeta(req.query.sdkMeta);\n\n    // Call getSDKLoader to build a script tag, passing in csp nonce, if applicable\n    const sdkScriptTag = getSDKLoader({ nonce });\n\n    // Insert script tag into response\n    res.send(`\n        <body>\n            <h1>My App</h1>\n            ${ sdkScriptTag }\n        </body>\n    `);\n})\n```\n\n3. Ensure the `sdkMeta` payload is passed to the child window from the parent. If you are using [zoid](https://github.com/krakenjs/zoid) to construct your component, please add the following:\n\n```javascript\nimport { getSdkMeta } from '@paypal/sdk-client/src';\n\nlet MyComponent = zoid.create({\n    tag: 'my-component',\n    url: 'https://www.paypal.com/my-component',\n    props: {\n        sdkMeta: {\n            type: 'string',\n            value: getSdkMeta,\n            queryParam: true\n        }\n    }\n})\n```\n\nIf you are not using zoid, please use `getSdkMeta()` to construct the `sdkMeta` payload, and pass it to your child-window or frame in a different way.\n\n**Notes:**\n\n- The script tag should not introduce any extra latency. It has already been downloaded, pre-cached, and pre-parsed in the parent window. So it is usually safe to put in the `<head>` tag.\n- Assuming a [zoid](https://github.com/krakenjs/zoid) component integration, `window.xprops`, containing the props used to receive data from the parent and used to send callbacks back to the parent window, will only be available after the script tag has completed loading on the client. If any other scripts require `window.xprops` immediately, please ensure the sdk script tag is placed before those scripts.\n- `unpackSDKMeta` will throw an error if `req.query.sdkMeta` does not validate. This should be handled and translated into a 500 server error, indicating that the payload has been tampered with.\n- `unpackSDKMeta` may be passed `undefined` if `req.query.sdkMeta` is not present. This is necessary for some legacy integrations where the sdk metadata is passed via `window.name` entirely on the client-side.\n\nQuick Start\n-----------\n\n#### Installing\n\n```bash\nnpm install --save @paypal/sdk-client\n```\n\n#### Getting Started\n\n- Fork the module\n- Run setup: `npm run setup`\n- Start editing code in `./src` and writing tests in `./tests`\n- `npm run build`\n\n#### Building\n\n```bash\nnpm run build\n```\n\n#### Tests\n\n- Edit tests in `./test/tests`\n- Run the tests:\n\n  ```bash\n  npm test\n  ```\n",
+    "readme": "PayPal SDK Client\n-----------------\n\n[![npm version](https://img.shields.io/npm/v/@paypal/sdk-client.svg?style=flat-square)](https://www.npmjs.com/package/@paypal/sdk-client) [![build status](https://img.shields.io/travis/paypal/paypal-sdk-client/master.svg?style=flat-square)](https://travis-ci.org/paypal/paypal-sdk-client)\n\n[![dependencies Status](https://david-dm.org/paypal/paypal-sdk-client/status.svg)](https://david-dm.org/paypal/paypal-sdk-client) [![devDependencies Status](https://david-dm.org/paypal/paypal-sdk-client/dev-status.svg)](https://david-dm.org/paypal/paypal-sdk-client?type=dev)\n\nA shared client for PayPal/Braintree client sdk modules. Has both client-side and server-side bindings to help you build and integrate an sdk component.\n\n## Client\n\nYour client-side sdk component can take advantage of any common utilities or functionality exposed by this module. For example:\n\n- Determining the current paypal url\n- Getting the merchant's client-id\n- Running experiments.\n\n```javascript\nimport { getClientID } from '@paypal/sdk-client/src';\n\nfetch('https://api.paypal.com/v1/foo', {\n  headers: {\n    'client-id': getClientID()\n  }\n});\n```\n\n## Server\n\nThis module helps you load the payments sdk in a child window, matching the url from the parent.\n\n### Rationale\n\n- You're building a component that is rendered into an iframe or popup window.\n- Your component uses [zoid](https://github.com/krakenjs/zoid) to construct the component, and to communicate between the component and the parent page and vice-versa.\n- You want to make sure the version of the component between the parent and child, to prevent any incompatibilities in the messaging protocol zoid defines (trust me on this one)\n- You also want to take advantage of browser caching benefits, and not download dependencies like zoid multiple times in each new frame or window being rendered\n- You can't just load `<script src=\"https://www.paypal.com/sdk/js?client-id=CLIENT_ID\"></script>` in the child frame or popup, because different query params could have been passed on the top level page, and to take advantage of any caching benefits you need to match the url exactly as it appeared in the parent.\n- You also probably want to avoid passing down all of the query params from `/sdk/js`, but that's a lot to keep track of, and you would need to update your code every time a new parameter is added.\n- Or, you could pass the entire `https://www.paypal.com/sdk/js?client-id=xyz&...` url down from the parent to each new child; meaning we'll get an exact match each time, with exact the same version of the code, and any new url params will automatically be included without any more integration work.\n- And of course, if we're doing that, we need to validate the url before we throw it into a script tag, to prevent xss or injection attacks\n\nThis module helps with that.\n\n### On your server\n\n1. Import `unpackSDKMeta`:\n\n```javascript\nimport { unpackSDKMeta } from '@paypal/sdk-client';\n```\n\n2. Call `unpackSDKMeta` with `req.query.sdkMeta`, passed from the client in the query string, and pass the script tag in the page render.\n\n```javascript\n// Listen for requests to your app\napp.get('/my-app', (req, res) => {\n\n    // Unpack the sdk meta payload from the client\n    const { getSDKLoader } = unpackSDKMeta(req.query.sdkMeta);\n\n    // Call getSDKLoader to build a script tag, passing in csp nonce, if applicable\n    const sdkScriptTag = getSDKLoader({ nonce });\n\n    // Insert script tag into response\n    res.send(`\n        <body>\n            <h1>My App</h1>\n            ${ sdkScriptTag }\n        </body>\n    `);\n})\n```\n\n3. Ensure the `sdkMeta` payload is passed to the child window from the parent. If you are using [zoid](https://github.com/krakenjs/zoid) to construct your component, please add the following:\n\n```javascript\nimport { getSdkMeta } from '@paypal/sdk-client/src';\n\nlet MyComponent = zoid.create({\n    tag: 'my-component',\n    url: 'https://www.paypal.com/my-component',\n    props: {\n        sdkMeta: {\n            type: 'string',\n            value: getSdkMeta,\n            queryParam: true\n        }\n    }\n})\n```\n\nIf you are not using zoid, please use `getSdkMeta()` to construct the `sdkMeta` payload, and pass it to your child-window or frame in a different way.\n\n**Notes:**\n\n- The script tag should not introduce any extra latency. It has already been downloaded, pre-cached, and pre-parsed in the parent window. So it is usually safe to put in the `<head>` tag.\n- Assuming a [zoid](https://github.com/krakenjs/zoid) component integration, `window.xprops`, containing the props used to receive data from the parent and used to send callbacks back to the parent window, will only be available after the script tag has completed loading on the client. If any other scripts require `window.xprops` immediately, please ensure the sdk script tag is placed before those scripts.\n- `unpackSDKMeta` will throw an error if `req.query.sdkMeta` does not validate. This should be handled and translated into a 500 server error, indicating that the payload has been tampered with.\n- `unpackSDKMeta` may be passed `undefined` if `req.query.sdkMeta` is not present. This is necessary for some legacy integrations where the sdk metadata is passed via `window.name` entirely on the client-side.\n\nQuick Start\n-----------\n\n#### Installing\n\n```bash\nnpm install --save @paypal/sdk-client\n```\n\n#### Getting Started\n\n- Fork the module\n- Run setup: `npm run setup`\n- Start editing code in `./src` and writing tests in `./tests`\n- `npm run build`\n\n#### Building\n\n```bash\nnpm run build\n```\n\n#### Tests\n\n- Edit tests in `./test/tests`\n- Run the tests:\n\n  ```bash\n  npm test\n  ```\n",
     "readmeFilename": "README.md",
     "homepage": "https://github.com/paypal/paypal-sdk-client#readme",
     "bugs": {
