@@ -1,10 +1,10 @@
 {
     "_id": "restricted-input",
-    "_rev": "28-d33333db146623370a59d0153f4a5c78",
+    "_rev": "29-8b9d7b770ebf13fe438cd3b48b827809",
     "name": "restricted-input",
     "description": "Restrict inputs to certain valid characters (e.g. formatting phone or card numbers)",
     "dist-tags": {
-        "latest": "3.0.1"
+        "latest": "3.0.2"
     },
     "versions": {
         "1.0.0": {
@@ -2622,6 +2622,120 @@
                 "tmp": "tmp/restricted-input_3.0.1_1594416416804_0.15042413107422292"
             },
             "_hasShrinkwrap": false
+        },
+        "3.0.2": {
+            "name": "restricted-input",
+            "version": "3.0.2",
+            "description": "Restrict inputs to certain valid characters (e.g. formatting phone or card numbers)",
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com",
+                "url": "https://www.braintreepayments.com/"
+            },
+            "license": "MIT",
+            "main": "dist/main.js",
+            "homepage": "https://github.com/braintree/restricted-input",
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/braintree/restricted-input.git"
+            },
+            "bugs": {
+                "url": "https://github.com/braintree/restricted-input/issues"
+            },
+            "keywords": [
+                "input",
+                "formatting",
+                "filtering",
+                "text",
+                "spacing",
+                "restrict"
+            ],
+            "scripts": {
+                "prebuild": "prettier --write .",
+                "build": "tsc --declaration",
+                "build:app": "mkdir -p dist-app; browserify ./src/main.ts -p [ tsify --strict ] -o dist-app/restricted-input.js -s RestrictedInput -v",
+                "predoc": "npm run build",
+                "doc": "jsdoc -r -R README.md -d jsdoc dist/lib/",
+                "doc:watch": "npm run doc && chokidar 'src/lib/**/*.ts' -c 'npm run doc'",
+                "prestart": "npm run build:app",
+                "start": "node ./test/support/server.js",
+                "development": "npm start & chokidar 'src/lib/**/*.ts' -c 'npm run build:app; echo $(tput setaf 2)rebuilt$(tput sgr0)'",
+                "lint": "eslint --ext js,ts src test",
+                "posttest": "npm run lint",
+                "test": "npm run test:unit",
+                "test:watch": "jest --watchAll",
+                "test:unit": "jest test/unit",
+                "test:integration": "wdio wdio.conf.js",
+                "test:all": "npm run test && npm run test:integration",
+                "publish:demo": "./publish-gh-pages.sh",
+                "prepublishOnly": "npm run build && npm run build:app",
+                "postpublish": "npm run publish:demo"
+            },
+            "dependencies": {
+                "@braintree/browser-detection": "^1.10.0"
+            },
+            "devDependencies": {
+                "@types/jest": "^26.0.5",
+                "@wdio/browserstack-service": "^6.1.15",
+                "@wdio/cli": "^6.3.4",
+                "@wdio/local-runner": "^6.3.4",
+                "@wdio/mocha-framework": "^6.3.0",
+                "@wdio/spec-reporter": "^6.3.0",
+                "@wdio/sync": "^6.3.3",
+                "browserify": "^16.5.0",
+                "browserstack-local": "^1.4.5",
+                "chai": "^4.2.0",
+                "chokidar-cli": "^2.1.0",
+                "dotenv": "^8.2.0",
+                "eslint": "^7.5.0",
+                "eslint-config-braintree": "^5.0.0-typescript-prep-rc.17",
+                "express": "^4.17.1",
+                "jest": "^26.1.0",
+                "jsdoc": "^3.6.4",
+                "prettier": "^2.0.5",
+                "ts-jest": "^26.1.3",
+                "tsify": "^4.0.2",
+                "typescript": "^3.9.7",
+                "uuid": "^8.2.0",
+                "webdriverio": "^6.3.4"
+            },
+            "jest": {
+                "preset": "ts-jest",
+                "setupFilesAfterEnv": [
+                    "./test/unit/global.ts"
+                ],
+                "testPathIgnorePatterns": [
+                    "<rootDir>/dist"
+                ]
+            },
+            "gitHead": "df2032d60dbf61de49eee7826e656ec53760f21a",
+            "_id": "restricted-input@3.0.2",
+            "_nodeVersion": "12.14.0",
+            "_npmVersion": "6.13.4",
+            "dist": {
+                "integrity": "sha512-HbS+J0lDZXmLr08oyOCih8QtMvA1q/sMYHeP4G9YMdzzn4yCt9grU6YpeGRpWFzO7+onXhMREeI1m/1C5yhUxw==",
+                "shasum": "7dc6cd3be08f84f83a5bf9f2ed464b67ea79a697",
+                "tarball": "https://registry.npmjs.org/restricted-input/-/restricted-input-3.0.2.tgz",
+                "fileCount": 41,
+                "unpackedSize": 55873,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfIxxkCRA9TVsSAnZWagAAMEIP/Rm+FuEUUp6cys4sf0WL\njtKHwXEeO4KsYvWFETt4qOaJQBBmGInVrAd77I2uIC/4BpIV+3NkswF+PvJ5\nDZ+33gl5wtGDS4zuV1U1kwL6au7lJ9WvLquX0yPVXQqeme+rSxxnrg9m22AO\na7mB/OtAnamcrbLo/A3T6j9bLePyXK2MR5YTg6yN0FbAWuQQoIi14mvB5sti\n6PCd9drRUKg3h8pRoaHzBsMPWiO5ZICdb4ZIbeeZE1qPAQiCbGpimihiB3sG\nlYm7W44RMTtiPEAR4sZ796kCLAsxK1TMIdFFtMmMYpr/ByUGuhTAyt+T41rN\nDKYvT0WZYzaPE+1rYaT2Uzt+imZcpd3RWJJvz/mTJheNOrz4q+eaTo9o3486\n4z9ktYHNWOBGlZK36sD1oVgIi0cgl8zX3L5OcEui6paU9wmLRxs9EMkHDPKp\nCv3+jYNdmMnmojSezVlcJSlpFW6znZv1yeTPpfiUSoB15OLNNSaArkYTTs91\nXt1XgL+0riiz4HV7oBxvlWLD7xbOIw+kGMnnTTMhehIiBxuiMqqjm29RCb+r\nqc9npUI6iNv+Ncdt/yQexxZTmTaADUn5+bZmR+QI5uBVevVlCbmLIxMZ14Ot\nfcmSwJFLSQJ1ReAsL7kjJmQBYvgtc5XRu+4ah18xb8CyYgjKbavfJnvhmYfj\nt7m1\r\n=0Jsh\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmUser": {
+                "name": "braintree",
+                "email": "team-sdk@getbraintree.com"
+            },
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/restricted-input_3.0.2_1596136548417_0.8282745285077548"
+            },
+            "_hasShrinkwrap": false
         }
     },
     "readme": "# Restricted Input\n\n[![BrowserStack Status](https://automate.browserstack.com/badge.svg?badge_key=UUlSMGtaQWNkL3lEdlZ2NmFzcnh4OWcvNGFkQjZjcExhQmFPb1cydlJEOD0tLVNlQ3JSUDgzR20ySUs4SFc4L2x1TXc9PQ==--7e53bf426e69647ff4cda6a50460759494986d49)](https://automate.browserstack.com/public-build/UUlSMGtaQWNkL3lEdlZ2NmFzcnh4OWcvNGFkQjZjcExhQmFPb1cydlJEOD0tLVNlQ3JSUDgzR20ySUs4SFc4L2x1TXc9PQ==--7e53bf426e69647ff4cda6a50460759494986d49)\n\nAllow restricted character sets in `input` elements.\n\n## Demo\n\nTry the latest version of Restricted Input [here](https://braintree.github.io/restricted-input/).\n\n## Features\n\n- Disallow arbitrary characters based on patterns\n- Maintains caret position\n- Format/Update on paste\n- Works in IE11+\n\n## Development\n\n**Install dependencies**\n\n```bash\nnvm use # if you have node version manager installed\nnpm i\n```\n\n**Watch files and run demo server**\n\n```bash\nnpm run development\n```\n\nThis will start a server on port `3099` which can be overridden with the `PORT` env var.\n\n**Unit tests**\n\nThe following command will run the linting task and the unit tests.\n\n```sh\nnpm test\n```\n\n**Integration tests**\n\nWe use [Browserstack](https://www.browserstack.com) to automate end to end testing on Google Chrome, Safari, Firefox, Microsoft Edge, and Internet Explorer 11.\n\nFirst, [sign up for a free open source Browserstack account](https://www.browserstack.com/open-source?ref=pricing).\n\nCopy the `.env.example` file to `.env`\n\n```sh\ncp .env.example .env\n```\n\nFill in the BROWSERSTACK_USERNAME and BROWSERSTACK_ACCESS_KEY environmental variables with your credentials:\n\n```sh\nBROWSERSTACK_USERNAME=username\nBROWSERSTACK_ACCESS_KEY=access_key\n```\n\nTo run the integration tests in Safari, Google Chrome, Firefox, IE11 and Microsoft Edge:\n\n```sh\nnpm run development # in another terminal window\nnpm run test:integration\n```\n\nTo run tests in only one browser, prefix the test command with an `ONLY_BROWSERS` env variable:\n\n```sh\n# run only in edge browser\nONLY_BROWSERS=edge npm run test:integration\n\n# run only in chrome browser\nONLY_BROWSERS=chrome npm run test:integration\n\n# run only in ie 11 browser\nONLY_BROWSERS=ie npm run test:integration\n\n# run only in safari browser\nONLY_BROWSERS=safari npm run test:integration\n\n# run only in firefox browser\nONLY_BROWSERS=firefox npm run test:integration\n```\n\nTo run tests in certain browsers, prefix the test command with an `ONLY_BROWSERS` env variable, with each browser comma separated:\n\n```sh\n# run only in edge and chrome browsers\nONLY_BROWSERS=edge,chrome npm run test:integration\n```\n\nTo run only certain tests, add the `.only` property before running the test:\n\n```js\nit.only('does something', function () {\n```\n\n## Usage\n\n```javascript\nimport RestrictedInput from \"restricted-input\";\n\nconst formattedCreditCardInput = new RestrictedInput({\n  element: document.querySelector(\"#credit-card\"),\n  pattern: \"{{9999}} {{9999}} {{9999}} {{9999}}\",\n});\n```\n\n## Patterns\n\nPatterns are a mixture of [`Placeholder`](#placeholder)s and [`PermaChar`](#permachar)s.\n\n### Placeholder\n\nA `Placeholder` is the part of the pattern that accepts user input based on some restrictions. A placeholder is defined in the pattern using two open curly brackets, the placeholder, followed by two closing curly brackets e.g. `{{Abc123}}`.\n\nThe patterns a `Placeholder` can be are:\n\n- a single alpha character that matches the alpha regex `/[A-Za-z]/`. e.g. `{{C}}` will match one alpha character.\n- a single digit that matches the digit regex `/[0-9]/`. e.g. `{{3}}` will match one digit.\n- a `*` character that matches `/./`. e.g. `{{*}}` will match the next character.\n\n### PermaChar\n\nA `PermaChar` is the part of the pattern that is automatically inserted. `PermaChar`s are defined in the pattern as any characters other than `Placeholder`s.\n\n### Example patterns\n\nSome example patterns with behavior are listed:\n\n- `12{{3}}`\n  - Inserts `12`.\n  - Waits for a single digit from the user.\n- `{{A}}BC`\n  - Waits for a single alpha from the user.\n  - Inserts `BC`.\n- `${{*2L}}E`\n  - Inserts `$`.\n  - Waits for any single character input from the user.\n  - Waits for a single digit from the user.\n  - Waits for a single alpha from the user.\n  - Inserts `E`.\n\n## Paste Event\n\nIf an input is changed via a paste event, you may want to adjust the pattern before input formatting occurs. In this case, pass an `onPasteEvent` callback:\n\n```js\nconst formattedCreditCardInput = new RestrictedInput({\n  element: document.querySelector('#credit-card'),\n  pattern: '{{9999}} {{9999}} {{9999}} {{9999}}',\n  onPasteEvent: function (payload) {\n    var value = payload.unformattedInputValue;\n\n    if (requiresAmexPattern(value)) {\n      formattedCreditCardInput.setPattern('{{9999}} {{999999}} {{99999}}')\n    } else {\n      formattedCreditCardInput.setPattern('{{9999}} {{9999}} {{9999}} {{9999}}')\n    }\n  })\n});\n```\n\n## API\n\n### options\n\n| Key          | Type                                        | Description                                                                                                              |\n| ------------ | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |\n| element      | `HTMLInputElement` or `HTMLTextAreaElement` | A valid reference to an `input` or `textarea` DOM node                                                                   |\n| pattern      | `String`                                    | Pattern describing the allowed character set you wish for entry into corresponding field. See [Patterns](#patterns).     |\n| onPasteEvent | `Function` (optional)                       | A callback function to inspect the unformatted value of the input during a paste event. See [Paste Event](#paste-event). |\n\n## Browser Support\n\n**Desktop**\n\n- Chrome (latest)\n- Firefox (17+)\n- Safari (8+)\n- IE11 (desktop/metro)\n- IE10 (desktop/metro)\n- IE9\n\n## Browsers Where Formatting is Turned Off Automatically\n\nOld versions of Samsung Android browsers are incompatible with formatting. These will not attempt to intercept the values and format the input.\n\n## TODO\n\n- [ ] Improve jsdoc\n- [ ] Add example guides/pages\n",
@@ -2632,7 +2746,7 @@
         }
     ],
     "time": {
-        "modified": "2020-07-10T21:26:59.313Z",
+        "modified": "2020-07-30T19:15:50.765Z",
         "created": "2016-05-27T22:29:58.337Z",
         "1.0.0": "2016-05-27T22:29:58.337Z",
         "1.0.1": "2016-08-30T14:15:11.917Z",
@@ -2661,7 +2775,8 @@
         "2.1.0": "2019-10-21T20:09:46.579Z",
         "2.1.1": "2020-07-02T13:36:42.129Z",
         "3.0.0": "2020-07-10T15:07:32.279Z",
-        "3.0.1": "2020-07-10T21:26:56.944Z"
+        "3.0.1": "2020-07-10T21:26:56.944Z",
+        "3.0.2": "2020-07-30T19:15:48.535Z"
     },
     "homepage": "https://github.com/braintree/restricted-input",
     "keywords": [

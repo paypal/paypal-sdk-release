@@ -1,9 +1,9 @@
 {
     "_id": "@paypal/common-components",
-    "_rev": "27-2cc8414732c4976e999eebe8ee311a17",
+    "_rev": "30-764e0754fcc2549a614750ae54fcfee1",
     "name": "@paypal/common-components",
     "dist-tags": {
-        "latest": "1.0.10"
+        "latest": "1.0.11"
     },
     "versions": {
         "1.0.0": {
@@ -1613,12 +1613,189 @@
                 "tmp": "tmp/common-components_1.0.10_1589913418281_0.6195286499693595"
             },
             "_hasShrinkwrap": false
+        },
+        "1.0.11": {
+            "name": "@paypal/common-components",
+            "version": "1.0.11",
+            "description": "PayPal common components, for integrating checkout products.",
+            "main": "dist/ui.js",
+            "scripts": {
+                "lint": "eslint --ext .js --ext .jsx src/ test/ *.js",
+                "flow-typed": "rm -rf flow-typed && flow-typed install",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node $(npm bin)/karma start",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run webpack",
+                "release": "./scripts/publish.sh",
+                "release:patch": "./scripts/publish.sh patch",
+                "release:minor": "./scripts/publish.sh minor",
+                "release:major": "./scripts/publish.sh major",
+                "preversion": "./scripts/preversion.sh",
+                "version": "./scripts/version.sh",
+                "postversion": "./scripts/postversion.sh",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "eslint-find-rules": "eslint-find-rules --current .eslintrc.js --unused --plugin"
+            },
+            "browserslist": [
+                "IE >= 9",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 5",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.paypal.com/paypal/paypal-checkout.git"
+            },
+            "homepage": "https://developer.paypal.com/",
+            "keywords": [
+                "cross-domain",
+                "cross domain",
+                "components",
+                "component",
+                "krakenjs",
+                "kraken"
+            ],
+            "license": "Apache-2.0",
+            "devDependencies": {
+                "babel-core": "^7.0.0-bridge.0",
+                "conventional-changelog-cli": "^2.0.11",
+                "flow-bin": "^0.130.0",
+                "fs-extra": "^4.0.2",
+                "grumbler-scripts": "^3",
+                "imagemagick": "^0.1.3",
+                "imgur": "^0.2.1",
+                "memory-fs": "^0.4.1",
+                "mocha": "^4",
+                "mocketeer": "^0.3.0",
+                "pixelmatch": "^4.0.2",
+                "pngjs": "^3.3.0",
+                "serve": "^10.1.2",
+                "sync-browser-mocks": "^2.0.0"
+            },
+            "dependencies": {
+                "@paypal/sdk-client": "^4.0.0",
+                "@paypal/sdk-constants": "^1.0.1",
+                "@paypal/sdk-logos": "^1.0.1",
+                "belter": "^1.0.2",
+                "jsx-pragmatic": "^2",
+                "post-robot": "^10.0.0",
+                "zalgo-promise": "^1.0.10",
+                "zoid": "^9.0.0"
+            },
+            "gitHead": "a419d30438fb3317ad944d57c5077a54f8c07189",
+            "_id": "@paypal/common-components@1.0.11",
+            "_nodeVersion": "12.18.2",
+            "_npmVersion": "6.14.5",
+            "dist": {
+                "integrity": "sha512-rCSTcp9WUJwRpqqE+fl+GulC9jssv9BwfDY9qiVDbBznaU5Hs6Xcf/wPRSK0jcQAS39Mmp2Z+CTod4Zc/72Dmw==",
+                "shasum": "d04a46a4963ca817325294a4194afbc37534cd04",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/common-components/tarballs/1.0.11.tgz",
+                "fileCount": 22,
+                "unpackedSize": 62994,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfJ3LRCRA9TVsSAnZWagAA4cYP+wU/aPSVJhiLqiNmP/sW\nBiq0v2bZUXri/ANj8nKNNk1GfwW/O3cKGlInu5K0bz3Jz4LMdm/HbHsgMNcE\nnT0O9FvYrFcoWDtlHCZNCSQmeIMvFUVpoUnxUY8XyQXM6wtazA/K/AHvt6NO\n5+nvtZ3yNXHBQtiuZ/3R2KwnfMKmHvaDWhLVhI2KVYrx/T1O7fwA0ycWkEYG\nkJeWuMxAqgYGTXQ44kKd7iD1DGbMfHR92093JeXHnKLPF5UsVQ+syCYfgq+c\nT83N71wrhQigECVJZIwn9l7DkVBl4J9OftxiV8hzACjBB45cQ7+iDJcVo4/e\nKf/3c3BNokkwO0pspValCVkmP20O31DQXReGwTg2jmJ8oPa8MnDqJ5y8Fad3\nDCVftRFoVxlAXE8fDlagL3Khehe8YqrPUegh1qxUSz0UXPOBP8nkfXPHon9F\n5wtpbqY9AmJTR0xjpCvLsBjuCIDfjS7EsRwtqsiAXkMn7d2f2WBfXaPSMt8O\nGzaL1DeigLrGfr5By1CHgWHtcYcNwpVAmKV68+oJJHwN4RMRSkAZS7bcVMVx\nRJLTLJBiqUkAQguv+J/L4+xTH6d945XUBDUIWeFflQS9TIGJtq9icvDYcdo5\nF5yeJ4t/z/9RJmviNE44j5foJkq2Fr0Y76MKltAB7yS2x0Q22bMQs483Y6lO\ncWdx\r\n=5gBt\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "email": "blade@crookedneighbor.com",
+                    "name": "bladebarringer"
+                },
+                {
+                    "email": "daniel@bluesuncorp.co.uk",
+                    "name": "bluepnume"
+                },
+                {
+                    "email": "team-sdk@getbraintree.com",
+                    "name": "braintree"
+                },
+                {
+                    "email": "bryanjenningz@gmail.com",
+                    "name": "bryanjenningz"
+                },
+                {
+                    "email": "grjopa@gmail.com",
+                    "name": "gregjopa"
+                },
+                {
+                    "email": "mpscqw@gmail.com",
+                    "name": "jfurman"
+                },
+                {
+                    "email": "joshua.a.beam@gmail.com",
+                    "name": "joshbeam"
+                },
+                {
+                    "email": "merlinpatt@gmail.com",
+                    "name": "merlinpatt"
+                },
+                {
+                    "email": "stuartmark@gmail.com",
+                    "name": "mstuart"
+                },
+                {
+                    "email": "DL-PP-NODEJS-SDK@paypal.com",
+                    "name": "paypal-user"
+                },
+                {
+                    "email": "prajarameee@gmail.com",
+                    "name": "rajarampadmanathan"
+                },
+                {
+                    "email": "ravi_shekhar00@yahoo.com",
+                    "name": "ravishekhar00"
+                },
+                {
+                    "email": "rpalanikumar@paypal.com",
+                    "name": "rpalanikumar"
+                },
+                {
+                    "email": "rygilbert@paypal.com",
+                    "name": "rygilbert_paypal"
+                },
+                {
+                    "email": "nschott@paypal.com",
+                    "name": "seavenly"
+                },
+                {
+                    "email": "song@zheng.club",
+                    "name": "songz"
+                },
+                {
+                    "email": "tifzhou@paypal.com",
+                    "name": "tifzhou"
+                },
+                {
+                    "email": "vishakha94@outlook.com",
+                    "name": "visheei94"
+                },
+                {
+                    "email": "weihou@paypal.com",
+                    "name": "weihou"
+                },
+                {
+                    "email": "zach@zacharyhill.xyz",
+                    "name": "zhillb"
+                }
+            ],
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/common-components_1.0.11_1596420817450_0.6094141018485901"
+            },
+            "_hasShrinkwrap": false
         }
     },
     "time": {
         "created": "2019-05-14T01:18:50.006Z",
         "1.0.0": "2019-05-14T01:18:50.323Z",
-        "modified": "2020-07-15T22:51:57.416Z",
+        "modified": "2020-08-05T21:13:36.482Z",
         "1.0.1": "2019-05-14T02:54:17.345Z",
         "1.0.2": "2019-05-14T02:58:10.757Z",
         "1.0.3": "2019-06-11T23:17:20.730Z",
@@ -1628,9 +1805,18 @@
         "1.0.7": "2019-12-18T02:25:36.754Z",
         "1.0.8": "2020-01-13T21:41:40.174Z",
         "1.0.9": "2020-04-22T21:43:29.148Z",
-        "1.0.10": "2020-05-19T18:36:58.385Z"
+        "1.0.10": "2020-05-19T18:36:58.385Z",
+        "1.0.11": "2020-08-03T02:13:37.562Z"
     },
     "maintainers": [
+        {
+            "email": "mnicpt@gmail.com",
+            "name": "mnicpt"
+        },
+        {
+            "email": "antre@paypal.com",
+            "name": "antre"
+        },
         {
             "email": "stuartmark@gmail.com",
             "name": "mstuart"
@@ -1727,6 +1913,6 @@
         "url": "git://github.paypal.com/paypal/paypal-checkout.git"
     },
     "license": "Apache-2.0",
-    "readme": "PayPal Common Components\n------------------------\n\nCommon components for the PayPal JavaScript SDK\n\n## Development\n\nPlease feel free to follow the [Contribution Guidelines](./CONTRIBUTING.md) to contribute to this repository. PRs are welcome, but for major changes please raise an issue first.\n\n### Quick Setup\n\nSet up your env:\n\n```bash\nnpm install\n```\n\nRun tests:\n\n```bash\nnpm test\n```\n\nRun in dev mode:\n\n```bash\nnpm run dev\n```\n\n## Test Tasks\n```\nnpm test\n```\n\n| Flags  | Description |\n| ------------- | ------------- |\n| --clear-cache | Clear Babel Loader and PhantomJS cache |\n| --debug | Debug mode.  PhantomJS, Karma, and CheckoutJS  |\n| --quick | Fastest testing.  Minimal output, no coverage |\n| --browser | Choose Browser |\n",
+    "readme": "PayPal Common Components\n------------------------\n\n[![npm version](https://img.shields.io/npm/v/@paypal/common-components.svg?style=flat-square)](https://www.npmjs.com/package/@paypal/common-components) [![build status](https://img.shields.io/travis/paypal/paypal-common-components/master.svg?style=flat-square)](https://travis-ci.org/paypal/paypal-common-components)\n\n[![dependencies Status](https://david-dm.org/paypal/paypal-common-components/status.svg)](https://david-dm.org/paypal/paypal-common-components) [![devDependencies Status](https://david-dm.org/paypal/paypal-common-components/dev-status.svg)](https://david-dm.org/paypal/paypal-common-components?type=dev)\n\nCommon components for the PayPal JavaScript SDK\n\n## Development\n\nPlease feel free to follow the [Contribution Guidelines](./CONTRIBUTING.md) to contribute to this repository. PRs are welcome, but for major changes please raise an issue first.\n\n### Quick Setup\n\nSet up your env:\n\n```bash\nnpm install\n```\n\nRun tests:\n\n```bash\nnpm test\n```\n\nRun in dev mode:\n\n```bash\nnpm run dev\n```\n\n## Test Tasks\n```\nnpm test\n```\n\n| Flags  | Description |\n| ------------- | ------------- |\n| --clear-cache | Clear Babel Loader and PhantomJS cache |\n| --debug | Debug mode.  PhantomJS, Karma, and CheckoutJS  |\n| --quick | Fastest testing.  Minimal output, no coverage |\n| --browser | Choose Browser |\n",
     "readmeFilename": "README.md"
 }

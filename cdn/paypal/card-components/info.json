@@ -1,6 +1,6 @@
 {
     "_id": "@paypal/card-components",
-    "_rev": "50-7bc8e8bc4a856772c8fab5b7ba080300",
+    "_rev": "52-bda576a47554f799d042cc67b3480402",
     "name": "@paypal/card-components",
     "dist-tags": {
         "latest": "1.0.45"
@@ -3418,7 +3418,7 @@
     "time": {
         "created": "2018-12-12T00:43:25.550Z",
         "1.0.20": "2018-12-12T00:43:25.983Z",
-        "modified": "2020-07-15T22:51:54.020Z",
+        "modified": "2020-08-05T21:13:33.289Z",
         "1.0.21": "2019-01-10T18:51:08.070Z",
         "1.0.22": "2019-01-18T00:24:17.451Z",
         "1.0.23": "2019-01-18T00:30:24.783Z",
@@ -3449,6 +3449,14 @@
         "1.0.45": "2020-06-24T02:26:12.910Z"
     },
     "maintainers": [
+        {
+            "email": "mnicpt@gmail.com",
+            "name": "mnicpt"
+        },
+        {
+            "email": "antre@paypal.com",
+            "name": "antre"
+        },
         {
             "email": "stuartmark@gmail.com",
             "name": "mstuart"
