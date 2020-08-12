@@ -1,10 +1,10 @@
 {
     "_id": "whatwg-fetch",
-    "_rev": "187-49daac1a20229d68343ca0d27f8796d3",
+    "_rev": "188-3a0de6870266de49474e9435ce5c1cfb",
     "name": "whatwg-fetch",
     "description": "A window.fetch polyfill.",
     "dist-tags": {
-        "latest": "3.3.1"
+        "latest": "3.4.0"
     },
     "versions": {
         "0.5.0": {
@@ -1647,6 +1647,83 @@
                 "tmp": "tmp/whatwg-fetch_3.3.1_1596540818630_0.33674305741137744"
             },
             "_hasShrinkwrap": false
+        },
+        "3.4.0": {
+            "name": "whatwg-fetch",
+            "description": "A window.fetch polyfill.",
+            "version": "3.4.0",
+            "main": "./dist/fetch.umd.js",
+            "module": "./fetch.js",
+            "repository": {
+                "type": "git",
+                "url": "git+https://github.com/github/fetch.git"
+            },
+            "license": "MIT",
+            "devDependencies": {
+                "abortcontroller-polyfill": "^1.1.9",
+                "chai": "^4.1.2",
+                "eslint": "^4.19.1",
+                "eslint-plugin-github": "^1.6.0",
+                "karma": "^3.0.0",
+                "karma-chai": "^0.1.0",
+                "karma-chrome-launcher": "^2.2.0",
+                "karma-detect-browsers": "^2.3.2",
+                "karma-firefox-launcher": "^1.1.0",
+                "karma-mocha": "^1.3.0",
+                "karma-safari-launcher": "^1.0.0",
+                "karma-safaritechpreview-launcher": "0.0.6",
+                "mocha": "^4.0.1",
+                "prettier": "^1.19.1",
+                "promise-polyfill": "6.0.2",
+                "rollup": "^0.59.1",
+                "url-search-params": "0.6.1"
+            },
+            "scripts": {
+                "karma": "karma start ./test/karma.config.js --no-single-run --auto-watch",
+                "prepare": "make dist/fetch.umd.js dist/fetch.umd.js.flow",
+                "pretest": "make",
+                "test": "karma start ./test/karma.config.js && karma start ./test/karma-worker.config.js"
+            },
+            "gitHead": "99b26818147a4288429fcd96421cf038dccbc1ac",
+            "bugs": {
+                "url": "https://github.com/github/fetch/issues"
+            },
+            "homepage": "https://github.com/github/fetch#readme",
+            "_id": "whatwg-fetch@3.4.0",
+            "_nodeVersion": "14.5.0",
+            "_npmVersion": "6.14.5",
+            "dist": {
+                "integrity": "sha512-rsum2ulz2iuZH08mJkT0Yi6JnKhwdw4oeyMjokgxd+mmqYSd9cPpOQf01TIWgjxG/U4+QR+AwKq6lSbXVxkyoQ==",
+                "shasum": "e11de14f4878f773fbebcde8871b2c0699af8b30",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/whatwg-fetch/tarballs/3.4.0.tgz",
+                "fileCount": 7,
+                "unpackedSize": 54044,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfLXt2CRA9TVsSAnZWagAAmwgQAJ2cjhR45ay3zcKzlN1k\nQUPd2aX6ONNSnWf/j5xgKCcxA7V/WrnEmv5eI9dUnEUqoeCdfeRRPDwttQcU\nrmCoCRi1GzZG1m3AxFBIIEwws9bs89CimwBt2Z1A35hOVSF44gsW0kKnUuhk\nJBwU3l1pVT9fkIf1382GFG64OBnNfBq2b219EL68sZhSY+f0rFVvY/I+tuI5\n0HUAL+ld9BimReRUTswL/WUz2jUBiQt2sWwMDX/+nHG3K+eb67S97VIW09fk\n/6UCru5hMxO+hs5m/3NKww4juRr6F+cVoxaWr6bKeKDsx7IrV0OaJd72FOte\nUP1Rh7j8khdTTfg0a5sPH7SOoRuw4wzeNZHBn1kh80e2ix2dWRKeGDA0pnIR\nduVhxHluDRsBfi5HY9FmPGnIXn2RI5QRmCUlOO88N+FFPpGFoZSbpCYXnU7a\nL/VeLUPflEweo4tIqWmlJOmCdJFhY0QAiAHlSTQycFGlXdOuND+gE2u+6Rih\nmiFO5cFZnQX8bbXxTDWAdnUoQNQwgOYForw+ZUmBHoI8QrVBPqqM/G33TjAl\nUCNKcCEDaRspj8SJigtavYpn7/OqnQN+uXsF6wqB4kZRzK5J3a18z2MuqP6q\nH+zfFZfGM6vElGSeawzju6wctb9uPT3Ulf80VcwaOkXJltjeEReM7McRHCgL\ndbHY\r\n=ro38\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "email": "me@jakechampion.name",
+                    "name": "jakechampion"
+                },
+                {
+                    "email": "matt@mattandre.ws",
+                    "name": "mattandrews"
+                },
+                {
+                    "email": "mislav.marohnic@gmail.com",
+                    "name": "mislav"
+                }
+            ],
+            "_npmUser": {
+                "name": "jakechampion",
+                "email": "me@jakechampion.name"
+            },
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/whatwg-fetch_3.4.0_1596816246446_0.3125195782599537"
+            },
+            "_hasShrinkwrap": false
         }
     },
     "readme": "# window.fetch polyfill\n\nThe `fetch()` function is a Promise-based mechanism for programmatically making\nweb requests in the browser. This project is a polyfill that implements a subset\nof the standard [Fetch specification][], enough to make `fetch` a viable\nreplacement for most uses of XMLHttpRequest in traditional web applications.\n\n## Table of Contents\n\n* [Read this first](#read-this-first)\n* [Installation](#installation)\n* [Usage](#usage)\n  * [Importing](#importing)\n  * [HTML](#html)\n  * [JSON](#json)\n  * [Response metadata](#response-metadata)\n  * [Post form](#post-form)\n  * [Post JSON](#post-json)\n  * [File upload](#file-upload)\n  * [Caveats](#caveats)\n    * [Handling HTTP error statuses](#handling-http-error-statuses)\n    * [Sending cookies](#sending-cookies)\n    * [Receiving cookies](#receiving-cookies)\n    * [Redirect modes](#redirect-modes)\n    * [Obtaining the Response URL](#obtaining-the-response-url)\n    * [Aborting requests](#aborting-requests)\n* [Browser Support](#browser-support)\n\n## Read this first\n\n* If you believe you found a bug with how `fetch` behaves in your browser,\n  please **don't open an issue in this repository** unless you are testing in\n  an old version of a browser that doesn't support `window.fetch` natively.\n  Make sure you read this _entire_ readme, especially the [Caveats](#caveats)\n  section, as there's probably a known work-around for an issue you've found.\n  This project is a _polyfill_, and since all modern browsers now implement the\n  `fetch` function natively, **no code from this project** actually takes any\n  effect there. See [Browser support](#browser-support) for detailed\n  information.\n\n* If you have trouble **making a request to another domain** (a different\n  subdomain or port number also constitutes another domain), please familiarize\n  yourself with all the intricacies and limitations of [CORS][] requests.\n  Because CORS requires participation of the server by implementing specific\n  HTTP response headers, it is often nontrivial to set up or debug. CORS is\n  exclusively handled by the browser's internal mechanisms which this polyfill\n  cannot influence.\n\n* This project **doesn't work under Node.js environments**. It's meant for web\n  browsers only. You should ensure that your application doesn't try to package\n  and run this on the server.\n\n* If you have an idea for a new feature of `fetch`, **submit your feature\n  requests** to the [specification's repository](https://github.com/whatwg/fetch/issues).\n  We only add features and APIs that are part of the [Fetch specification][].\n\n## Installation\n\n```\nnpm install whatwg-fetch --save\n```\n\nAs an alternative to using npm, you can obtain `fetch.umd.js` from the\n[Releases][] section. The UMD distribution is compatible with AMD and CommonJS\nmodule loaders, as well as loading directly into a page via `<script>` tag.\n\nYou will also need a Promise polyfill for [older browsers](http://caniuse.com/#feat=promises).\nWe recommend [taylorhakes/promise-polyfill](https://github.com/taylorhakes/promise-polyfill)\nfor its small size and Promises/A+ compatibility.\n\n## Usage\n\nFor a more comprehensive API reference that this polyfill supports, refer to\nhttps://github.github.io/fetch/.\n\n### Importing\n\nImporting will automatically polyfill `window.fetch` and related APIs:\n\n```javascript\nimport 'whatwg-fetch'\n\nwindow.fetch(...)\n```\n\nIf for some reason you need to access the polyfill implementation, it is\navailable via exports:\n\n```javascript\nimport {fetch as fetchPolyfill} from 'whatwg-fetch'\n\nwindow.fetch(...)   // use native browser version\nfetchPolyfill(...)  // use polyfill implementation\n```\n\nThis approach can be used to, for example, use [abort\nfunctionality](#aborting-requests) in browsers that implement a native but\noutdated version of fetch that doesn't support aborting.\n\nFor use with webpack, add this package in the `entry` configuration option\nbefore your application entry point:\n\n```javascript\nentry: ['whatwg-fetch', ...]\n```\n\n### HTML\n\n```javascript\nfetch('/users.html')\n  .then(function(response) {\n    return response.text()\n  }).then(function(body) {\n    document.body.innerHTML = body\n  })\n```\n\n### JSON\n\n```javascript\nfetch('/users.json')\n  .then(function(response) {\n    return response.json()\n  }).then(function(json) {\n    console.log('parsed json', json)\n  }).catch(function(ex) {\n    console.log('parsing failed', ex)\n  })\n```\n\n### Response metadata\n\n```javascript\nfetch('/users.json').then(function(response) {\n  console.log(response.headers.get('Content-Type'))\n  console.log(response.headers.get('Date'))\n  console.log(response.status)\n  console.log(response.statusText)\n})\n```\n\n### Post form\n\n```javascript\nvar form = document.querySelector('form')\n\nfetch('/users', {\n  method: 'POST',\n  body: new FormData(form)\n})\n```\n\n### Post JSON\n\n```javascript\nfetch('/users', {\n  method: 'POST',\n  headers: {\n    'Content-Type': 'application/json'\n  },\n  body: JSON.stringify({\n    name: 'Hubot',\n    login: 'hubot',\n  })\n})\n```\n\n### File upload\n\n```javascript\nvar input = document.querySelector('input[type=\"file\"]')\n\nvar data = new FormData()\ndata.append('file', input.files[0])\ndata.append('user', 'hubot')\n\nfetch('/avatars', {\n  method: 'POST',\n  body: data\n})\n```\n\n### Caveats\n\n* The Promise returned from `fetch()` **won't reject on HTTP error status**\n  even if the response is an HTTP 404 or 500. Instead, it will resolve normally,\n  and it will only reject on network failure or if anything prevented the\n  request from completing.\n\n* For maximum browser compatibility when it comes to sending & receiving\n  cookies, always supply the `credentials: 'same-origin'` option instead of\n  relying on the default. See [Sending cookies](#sending-cookies).\n\n* Not all Fetch standard options are supported in this polyfill. For instance,\n  [`redirect`](#redirect-modes) and\n  [`cache`](https://github.github.io/fetch/#caveats) directives are ignored.\n  \n* `keepalive` is not supported because it would involve making a synchronous XHR, which is something this project is not willing to do. See [issue #700](https://github.com/github/fetch/issues/700#issuecomment-484188326) for more information.\n\n#### Handling HTTP error statuses\n\nTo have `fetch` Promise reject on HTTP error statuses, i.e. on any non-2xx\nstatus, define a custom response handler:\n\n```javascript\nfunction checkStatus(response) {\n  if (response.status >= 200 && response.status < 300) {\n    return response\n  } else {\n    var error = new Error(response.statusText)\n    error.response = response\n    throw error\n  }\n}\n\nfunction parseJSON(response) {\n  return response.json()\n}\n\nfetch('/users')\n  .then(checkStatus)\n  .then(parseJSON)\n  .then(function(data) {\n    console.log('request succeeded with JSON response', data)\n  }).catch(function(error) {\n    console.log('request failed', error)\n  })\n```\n\n#### Sending cookies\n\nFor [CORS][] requests, use `credentials: 'include'` to allow sending credentials\nto other domains:\n\n```javascript\nfetch('https://example.com:1234/users', {\n  credentials: 'include'\n})\n```\n\nThe default value for `credentials` is \"same-origin\".\n\nThe default for `credentials` wasn't always the same, though. The following\nversions of browsers implemented an older version of the fetch specification\nwhere the default was \"omit\":\n\n* Firefox 39-60\n* Chrome 42-67\n* Safari 10.1-11.1.2\n\nIf you target these browsers, it's advisable to always specify `credentials:\n'same-origin'` explicitly with all fetch requests instead of relying on the\ndefault:\n\n```javascript\nfetch('/users', {\n  credentials: 'same-origin'\n})\n```\n\nNote: due to [limitations of\nXMLHttpRequest](https://github.com/github/fetch/pull/56#issuecomment-68835992),\nusing `credentials: 'omit'` is not respected for same domains in browsers where\nthis polyfill is active. Cookies will always be sent to same domains in older\nbrowsers.\n\n#### Receiving cookies\n\nAs with XMLHttpRequest, the `Set-Cookie` response header returned from the\nserver is a [forbidden header name][] and therefore can't be programmatically\nread with `response.headers.get()`. Instead, it's the browser's responsibility\nto handle new cookies being set (if applicable to the current URL). Unless they\nare HTTP-only, new cookies will be available through `document.cookie`.\n\n#### Redirect modes\n\nThe Fetch specification defines these values for [the `redirect`\noption](https://fetch.spec.whatwg.org/#concept-request-redirect-mode): \"follow\"\n(the default), \"error\", and \"manual\".\n\nDue to limitations of XMLHttpRequest, only the \"follow\" mode is available in\nbrowsers where this polyfill is active.\n\n#### Obtaining the Response URL\n\nDue to limitations of XMLHttpRequest, the `response.url` value might not be\nreliable after HTTP redirects on older browsers.\n\nThe solution is to configure the server to set the response HTTP header\n`X-Request-URL` to the current URL after any redirect that might have happened.\nIt should be safe to set it unconditionally.\n\n``` ruby\n# Ruby on Rails controller example\nresponse.headers['X-Request-URL'] = request.url\n```\n\nThis server workaround is necessary if you need reliable `response.url` in\nFirefox < 32, Chrome < 37, Safari, or IE.\n\n#### Aborting requests\n\nThis polyfill supports\n[the abortable fetch API](https://developers.google.com/web/updates/2017/09/abortable-fetch).\nHowever, aborting a fetch requires use of two additional DOM APIs:\n[AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) and\n[AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal).\nTypically, browsers that do not support fetch will also not support\nAbortController or AbortSignal. Consequently, you will need to include\n[an additional polyfill](https://www.npmjs.com/package/yet-another-abortcontroller-polyfill)\nfor these APIs to abort fetches:\n\n```js\nimport 'yet-another-abortcontroller-polyfill'\nimport {fetch} from 'whatwg-fetch'\n\n// use native browser implementation if it supports aborting\nconst abortableFetch = ('signal' in new Request('')) ? window.fetch : fetch\n\nconst controller = new AbortController()\n\nabortableFetch('/avatars', {\n  signal: controller.signal\n}).catch(function(ex) {\n  if (ex.name === 'AbortError') {\n    console.log('request aborted')\n  }\n})\n\n// some time later...\ncontroller.abort()\n```\n\n## Browser Support\n\n- Chrome\n- Firefox\n- Safari 6.1+\n- Internet Explorer 10+\n\nNote: modern browsers such as Chrome, Firefox, Microsoft Edge, and Safari contain native\nimplementations of `window.fetch`, therefore the code from this polyfill doesn't\nhave any effect on those browsers. If you believe you've encountered an error\nwith how `window.fetch` is implemented in any of these browsers, you should file\nan issue with that browser vendor instead of this project.\n\n\n  [fetch specification]: https://fetch.spec.whatwg.org\n  [cors]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS\n    \"Cross-origin resource sharing\"\n  [csrf]: https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)_Prevention_Cheat_Sheet\n    \"Cross-site request forgery\"\n  [forbidden header name]: https://developer.mozilla.org/en-US/docs/Glossary/Forbidden_header_name\n  [releases]: https://github.com/github/fetch/releases\n",
@@ -1665,7 +1742,7 @@
         }
     ],
     "time": {
-        "modified": "2020-08-04T11:33:42.363Z",
+        "modified": "2020-08-07T16:04:09.943Z",
         "created": "2015-01-12T23:46:17.785Z",
         "0.5.0": "2015-01-12T23:46:17.785Z",
         "0.6.0": "2015-01-13T00:10:39.303Z",
@@ -1693,7 +1770,8 @@
         "3.1.1": "2020-07-08T16:49:02.082Z",
         "3.2.0": "2020-07-09T15:38:31.814Z",
         "3.3.0": "2020-08-04T11:17:10.320Z",
-        "3.3.1": "2020-08-04T11:33:38.765Z"
+        "3.3.1": "2020-08-04T11:33:38.765Z",
+        "3.4.0": "2020-08-07T16:04:06.553Z"
     },
     "readmeFilename": "README.md",
     "users": {

@@ -1,9 +1,9 @@
 {
     "_id": "jsx-pragmatic",
-    "_rev": "27-2a06ee10e99a3c5932b2b56a5c763852",
+    "_rev": "28-69fdacd4a49f016a0c17f98e29980518",
     "name": "jsx-pragmatic",
     "dist-tags": {
-        "latest": "2.0.15"
+        "latest": "2.0.16"
     },
     "versions": {
         "1.0.1": {
@@ -2273,12 +2273,94 @@
                 "tmp": "tmp/jsx-pragmatic_2.0.15_1596417956423_0.2758155838675831"
             },
             "_hasShrinkwrap": false
+        },
+        "2.0.16": {
+            "name": "jsx-pragmatic",
+            "version": "2.0.16",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "dev": "babel-node --plugins @babel/plugin-transform-modules-commonjs $(npm bin)/webpack-dev-server --config webpack.config.js --port 9000 --open-page demo/dev/index.htm --hot=false --inline=false",
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js --ext .js,.jsx",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install react@6 && flow-typed install mocha@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/jsx-pragmatic.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.130.0",
+                "grumbler-scripts": "^3",
+                "mocha": "^4.1.0"
+            },
+            "gitHead": "c62120e83007549d4fe99b3cb17eef57200a197b",
+            "bugs": {
+                "url": "https://github.com/krakenjs/jsx-pragmatic/issues"
+            },
+            "homepage": "https://github.com/krakenjs/jsx-pragmatic#readme",
+            "_id": "jsx-pragmatic@2.0.16",
+            "_npmVersion": "6.4.1",
+            "_nodeVersion": "10.13.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-4GZDatpLG6g721f5AJjrRm1pgGoO9C/5KT84fZ7QldL6X4r4YArtLtY4dO03J8RaEkuLqlTYMrI9d6Q3+M0qsA==",
+                "shasum": "0fda74e10ebafe36a57e7e80fc7b65774c7d2435",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/jsx-pragmatic/tarballs/2.0.16.tgz",
+                "fileCount": 41,
+                "unpackedSize": 206624,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfMPWhCRA9TVsSAnZWagAAfM0P/REkLGmCxeyWKumvKM6i\nM976XtD/IevX7a9nuiMdGewho8JoeM+EuYpxJzfLWOaDZqAWukBbLHkekFUj\nb1G8jX9nOzPfjicwd1+ToGUKw6y/oCahKV3+FKKP/4KxsDdr54j6WEXuh9Zw\n5y6Q3Vpf5+zO02eTXYXrMpCfSPl0voAywCZ2JBznGAJT2WW2lKvy4Ja3MsgU\nNcF7T46hRe4XeBwAvZ9qYGhE/rRbrwCwR6alo7fzJiD5WMbCpdgX+wjqmTC6\n4TGk9fsNYX5orxPDk/K+MG/G7H6umxOQHs6X5mTKdDKcSAyBgDOlJSSATIh1\nUs9Fx1F+WI7Ac+8a0+ccMtT44WxRo0ERwKeOX5dHx0x3uyCwYJLAsM9Q77u2\ng9ArAubLNhTzoPJ6o/LseRyQeeCZq663+d/ILEETdvKZz+HE7vAi2GtNPaj6\nBq0ibTrPcroeNHw2mTa8uFxxSxy7n7YORqSWYSxN2KyO5nhIrblIuffNYNwj\nH+nr7Jjp9dWv2Sbomp3RO70zNSASNT/P9lIlgQd06CmP3AyTMC3/yBKxKH9o\n4XirHuS4uZhZBhpqUcgZBSovOJK7doTMvpZxSqCp3nLCZX7SnXRBk5YA3Pex\nJPwMmxrQsghIp+xGtf64iKMRxneuABAVtMWCB9XPVcqUAqDxsxAHH+ciCz8J\noVlx\r\n=cci8\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/jsx-pragmatic_2.0.16_1597044129210_0.9757261990733819"
+            },
+            "_hasShrinkwrap": false
         }
     },
     "time": {
         "created": "2018-11-05T08:54:56.777Z",
         "1.0.1": "2018-11-05T08:54:57.080Z",
-        "modified": "2020-08-03T01:25:58.777Z",
+        "modified": "2020-08-10T07:22:12.403Z",
         "1.0.2": "2018-11-05T09:19:11.280Z",
         "1.0.3": "2018-11-05T09:22:21.113Z",
         "1.0.4": "2018-11-06T05:56:07.574Z",
@@ -2305,7 +2387,8 @@
         "2.0.10": "2020-04-22T23:50:51.212Z",
         "2.0.11": "2020-04-28T00:26:55.759Z",
         "2.0.12": "2020-04-28T02:05:37.925Z",
-        "2.0.15": "2020-08-03T01:25:56.569Z"
+        "2.0.15": "2020-08-03T01:25:56.569Z",
+        "2.0.16": "2020-08-10T07:22:09.385Z"
     },
     "maintainers": [
         {
@@ -2325,6 +2408,6 @@
     "bugs": {
         "url": "https://github.com/krakenjs/jsx-pragmatic/issues"
     },
-    "readme": "JSX Pragmatic\n-------------\n\n- Build JSX templates\n- Decide at runtime how you want to render them\n- Easily build custom renderers - render to HTML, DOM, or anything else!\n\nBecause JSX is pretty useful, even without React!\n\n#### Build an abstract jsx component\n\nFirst we'll build a small component. We're not tying ourselves to any particular framework yet, or any render target.\n\n```javascript\n/* @jsx node */\n\nimport { node } from 'jsx-pragmatic';\n\nfunction Login({ prefilledEmail }) {\n  return (\n    <section>\n      <input type=\"text\" placeholder=\"email\" value={prefilledEmail} />\n      <input type=\"password\" placeholder=\"password\" />\n      <button>Log In</button>\n    </section>\n  );\n}\n```\n\n#### Render on the server\n\nLet's say we're on the server-side, and we want to render the jsx to html to serve to a client. Just pass `html()` to the renderer:\n\n```javascript\n/* @jsx node */\n\nimport { node, html } from 'jsx-pragmatic';\nimport { Login } from './components'\n\nfunction render() {\n  return (\n    <Login prefilledEmail='foo@bar.com' />\n  ).render(html());\n}\n```\n\n#### Render on the client\n\nNow let's render the same jsx template on the client-side, directly to a DOM element:\n\n```javascript\n/* @jsx node */\n\nimport { node, dom } from 'jsx-pragmatic';\nimport { Login } from './components'\n\nfunction render() {\n  return (\n    <Login prefilledEmail='foo@bar.com' />\n  ).render(dom());\n}\n```\n\n#### Render in a React app\n\nOr if we're using the same component in React, we can render it as a React component:\n\n```javascript\n/* @jsx node */\n\nimport { node, react } from 'jsx-pragmatic';\nimport { Login } from './components'\n\nfunction render() {\n  return (\n    <Login prefilledEmail='foo@bar.com' />\n  ).render(react({ React }));\n}\n```\n\n### Write your own renderer\n\nRenderers are just functions!\n\n- Write a factory like `customDom`. This will take some options and return our renderer.\n- Return a renderer which takes `name`, `props` and `children` and renders them in whatever way you want!\n\nThis example renders the jsx directly to DOM elements:\n\n```javascript\n/* @jsx node */\n\nimport { node, NODE_TYPE } from 'jsx-pragmatic';\nimport { Login } from './components'\n\nfunction customDom({ removeScriptTags = false } = {}) {\n\n  let domRenderer = (node) => {\n    if (node.type === NODE_TYPE.COMPONENT) {\n      return node.renderComponent(domRenderer);\n    }\n\n    if (node.type === NODE_TYPE.TEXT) {\n      return document.createTextNode(node.text);\n    }\n\n    if (node.type === NODE_TYPE.ELEMENT) {\n      if (removeScriptTags && node.name === 'script') {\n        return;\n      }\n\n      let el = document.createElement(node.name);\n\n      for (let [ key, val ] of Object.entries(node.props)) {\n        el.setAttribute(key, val);\n      }\n\n      for (let child of node.children) {\n        el.appendChild(child.render(domRenderer));\n      }\n\n      return el;\n    }\n  }\n\n  return domRenderer;\n}\n```\n\nThen when you're ready to use your renderer, just pass it into `.render()` and pass any options you want to use to configure the renderer.\n\n```javascript\nfunction render() {\n  return (\n    <Login prefilledEmail='foo@bar.com' />\n  ).render(customDom({ stripScriptTags: true }));\n}\n```\n\n### Use Fragments\n\nYou can either import `Fragment` from `jsx-pragmatic`:\n\n```javascript\n/* @jsx node */\n\nimport { node, Fragment } from 'jsx-pragmatic';\n\nfunction Login({ prefilledEmail }) {\n  return (\n    <Fragment>\n      <input type=\"text\" placeholder=\"email\" value={prefilledEmail} />\n      <input type=\"password\" placeholder=\"password\" />\n      <button>Log In</button>\n    </Fragment>\n  );\n}\n```\n\nOr use the `@jsxFrag` comment, and the new `<>` `</>` syntax for Fragments, providing you're using Babel 7:\n\n```javascript\n/* @jsx node */\n/* @jsxFrag Fragment */\n\nimport { node, Fragment } from 'jsx-pragmatic';\n\nfunction Login({ prefilledEmail }) {\n  return (\n    <>\n      <input type=\"text\" placeholder=\"email\" value={prefilledEmail} />\n      <input type=\"password\" placeholder=\"password\" />\n      <button>Log In</button>\n    </>\n  );\n}\n```\n\n### Why?\n\n[JSX](https://reactjs.org/docs/introducing-jsx.html) is a neat way of parsing and compiling templates to vanilla javascript. Right now most people use JSX with [React](https://reactjs.org/). But in reality, the technology is decoupled enough from React that it can be used to render anything:\n\n- HTML\n- XML\n- DOM Nodes\n\nThis library helps you do that.\n\n### Can't you do that with Babel?\n\nYep, Babel provides a neat `pragma` [option](https://babeljs.io/docs/en/babel-plugin-transform-react-jsx#pragma) which lets you choose what your jsx is compiled to; if you don't want to use `React.createElement`, you can write your own pragma to convert the jsx to anything else.\n\nThe only problem with that is, the decision of which pragma to use is made entirely at build-time. Let's say you have a template which needs to be:\n\n- Rendered as an html string on the server side.\n- Rendered directly as a DOM element in some client environments.\n- Rendered as a React component in other client environments.\n\n`jsx-pragmatic` helps you achieve that by allowing you decide when you render what your jsx should be transformed into.\n\nIt also abstracts away some of the stuff in jsx that's a little tricky to deal with; like nested children arrays, dealing with basic element vs function components, and fragments -- leaving you to focus on the renderer logic.\n\nQuick Start\n-----------\n\n#### Install\n\n```bash\nnpm install --save jsx-pragmatic\n```\n\n#### Getting Started\n\n- Fork the module\n- Run setup: `npm run setup`\n- Start editing code in `./src` and writing tests in `./tests`\n- `npm run build`\n\n#### Building\n\n```bash\nnpm run build\n```\n\n#### Tests\n\n- Edit tests in `./test/tests`\n- Run the tests:\n\n  ```bash\n  npm run test\n  ```\n\n#### Testing with different/multiple browsers\n\n```bash\nnpm run karma -- --browser=PhantomJS\nnpm run karma -- --browser=Chrome\nnpm run karma -- --browser=Safari\nnpm run karma -- --browser=Firefox\nnpm run karma -- --browser=PhantomJS,Chrome,Safari,Firefox\n```\n\n#### Keeping the browser open after tests\n\n```bash\nnpm run karma -- --browser=Chrome --keep-open\n```\n\n#### Publishing\n\n##### Before you publish for the first time:\n\n- Delete the example code in `./src`, `./test/tests` and `./demo`\n- Edit the module name in `package.json`\n- Edit `README.md` and `CONTRIBUTING.md`\n\n##### Then:\n\n- Publish your code: `npm run release` to add a patch\n  - Or `npm run release:path`, `npm run release:minor`, `npm run release:major`\n",
+    "readme": "JSX Pragmatic\n-------------\n\n- Build JSX templates\n- Decide at runtime how you want to render them\n- Easily build custom renderers - render to HTML, DOM, or anything else!\n\nBecause JSX is pretty useful, even without React!\n\n#### Build an abstract jsx component\n\nFirst we'll build a small component. We're not tying ourselves to any particular framework yet, or any render target.\n\n```javascript\n/* @jsx node */\n\nimport { node } from 'jsx-pragmatic';\n\nfunction Login({ prefilledEmail }) {\n  return (\n    <section>\n      <input type=\"text\" placeholder=\"email\" value={prefilledEmail} />\n      <input type=\"password\" placeholder=\"password\" />\n      <button>Log In</button>\n    </section>\n  );\n}\n```\n\n#### Render on the server\n\nLet's say we're on the server-side, and we want to render the jsx to html to serve to a client. Just pass `html()` to the renderer:\n\n```javascript\n/* @jsx node */\n\nimport { node, html } from 'jsx-pragmatic';\nimport { Login } from './components'\n\nfunction render() {\n  return (\n    <Login prefilledEmail='foo@bar.com' />\n  ).render(html());\n}\n```\n\n#### Render on the client\n\nNow let's render the same jsx template on the client-side, directly to a DOM element:\n\n```javascript\n/* @jsx node */\n\nimport { node, dom } from 'jsx-pragmatic';\nimport { Login } from './components'\n\nfunction render() {\n  return (\n    <Login prefilledEmail='foo@bar.com' />\n  ).render(dom());\n}\n```\n\n#### Render in a React app\n\nOr if we're using the same component in React, we can render it as a React component:\n\n```javascript\n/* @jsx node */\n\nimport { node, react } from 'jsx-pragmatic';\nimport { Login } from './components'\n\nfunction render() {\n  return (\n    <Login prefilledEmail='foo@bar.com' />\n  ).render(react({ React }));\n}\n```\n\n#### Render in a Preact app\n\nOr if we're using the same component in Preact, we can render it as a Preact component:\n\n```javascript\n/* @jsx node */\n\nimport { node, preact } from 'jsx-pragmatic';\nimport { Login } from './components'\n\nfunction render() {\n  return (\n    <Login prefilledEmail='foo@bar.com' />\n  ).render(preact({ Preact }));\n}\n```\n\n### Write your own renderer\n\nRenderers are just functions!\n\n- Write a factory like `customDom`. This will take some options and return our renderer.\n- Return a renderer which takes `name`, `props` and `children` and renders them in whatever way you want!\n\nThis example renders the jsx directly to DOM elements:\n\n```javascript\n/* @jsx node */\n\nimport { node, NODE_TYPE } from 'jsx-pragmatic';\nimport { Login } from './components'\n\nfunction customDom({ removeScriptTags } = { removeScriptTags: false }) {\n\n  let domRenderer = (node) => {\n    if (node.type === NODE_TYPE.COMPONENT) {\n      return node.renderComponent(domRenderer);\n    }\n\n    if (node.type === NODE_TYPE.TEXT) {\n      return document.createTextNode(node.text);\n    }\n\n    if (node.type === NODE_TYPE.ELEMENT) {\n      if (removeScriptTags && node.name === 'script') {\n        return;\n      }\n\n      let el = document.createElement(node.name);\n\n      for (let [ key, val ] of Object.entries(node.props)) {\n        el.setAttribute(key, val);\n      }\n\n      for (let child of node.children) {\n        el.appendChild(child.render(domRenderer));\n      }\n\n      return el;\n    }\n  }\n\n  return domRenderer;\n}\n```\n\nThen when you're ready to use your renderer, just pass it into `.render()` and pass any options you want to use to configure the renderer.\n\n```javascript\nfunction render() {\n  return (\n    <Login prefilledEmail='foo@bar.com' />\n  ).render(customDom({ removeScriptTags: true }));\n}\n```\n\n### Use Fragments\n\nYou can either import `Fragment` from `jsx-pragmatic`:\n\n```javascript\n/* @jsx node */\n\nimport { node, Fragment } from 'jsx-pragmatic';\n\nfunction Login({ prefilledEmail }) {\n  return (\n    <Fragment>\n      <input type=\"text\" placeholder=\"email\" value={prefilledEmail} />\n      <input type=\"password\" placeholder=\"password\" />\n      <button>Log In</button>\n    </Fragment>\n  );\n}\n```\n\nOr use the `@jsxFrag` comment, and the new `<>` `</>` syntax for Fragments, providing you're using Babel 7:\n\n```javascript\n/* @jsx node */\n/* @jsxFrag Fragment */\n\nimport { node, Fragment } from 'jsx-pragmatic';\n\nfunction Login({ prefilledEmail }) {\n  return (\n    <>\n      <input type=\"text\" placeholder=\"email\" value={prefilledEmail} />\n      <input type=\"password\" placeholder=\"password\" />\n      <button>Log In</button>\n    </>\n  );\n}\n```\n\n### Why?\n\n[JSX](https://reactjs.org/docs/introducing-jsx.html) is a neat way of parsing and compiling templates to vanilla javascript. Right now most people use JSX with [React](https://reactjs.org/). But in reality, the technology is decoupled enough from React that it can be used to render anything:\n\n- HTML\n- XML\n- DOM Nodes\n\nThis library helps you do that.\n\n### Can't you do that with Babel?\n\nYep, Babel provides a neat `pragma` [option](https://babeljs.io/docs/en/babel-plugin-transform-react-jsx#pragma) which lets you choose what your jsx is compiled to; if you don't want to use `React.createElement`, you can write your own pragma to convert the jsx to anything else.\n\nThe only problem with that is, the decision of which pragma to use is made entirely at build-time. Let's say you have a template which needs to be:\n\n- Rendered as an html string on the server side.\n- Rendered directly as a DOM element in some client environments.\n- Rendered as a React component in other client environments.\n\n`jsx-pragmatic` helps you achieve that by allowing you decide when you render what your jsx should be transformed into.\n\nIt also abstracts away some of the stuff in jsx that's a little tricky to deal with; like nested children arrays, dealing with basic element vs function components, and fragments -- leaving you to focus on the renderer logic.\n\nQuick Start\n-----------\n\n#### Install\n\n```bash\nnpm install --save jsx-pragmatic\n```\n\n#### Getting Started\n\n- Fork the module\n- Run setup: `npm run setup`\n- Start editing code in `./src` and writing tests in `./tests`\n- `npm run build`\n\n#### Building\n\n```bash\nnpm run build\n```\n\n#### Tests\n\n- Edit tests in `./test/tests`\n- Run the tests:\n\n  ```bash\n  npm run test\n  ```\n\n#### Testing with different/multiple browsers\n\n```bash\nnpm run karma -- --browser=PhantomJS\nnpm run karma -- --browser=Chrome\nnpm run karma -- --browser=Safari\nnpm run karma -- --browser=Firefox\nnpm run karma -- --browser=PhantomJS,Chrome,Safari,Firefox\n```\n\n#### Keeping the browser open after tests\n\n```bash\nnpm run karma -- --browser=Chrome --keep-open\n```\n\n#### Publishing\n\n##### Before you publish for the first time:\n\n- Delete the example code in `./src`, `./test/tests` and `./demo`\n- Edit the module name in `package.json`\n- Edit `README.md` and `CONTRIBUTING.md`\n\n##### Then:\n\n- Publish your code: `npm run release` to add a patch\n  - Or `npm run release:path`, `npm run release:minor`, `npm run release:major`\n",
     "readmeFilename": "README.md"
 }
