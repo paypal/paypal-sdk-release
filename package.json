@@ -7,7 +7,7 @@
     "validate-components": "babel-node test/validate-components",
     "validate-flat": "babel-node test/validate-flat",
     "cdnify": "grabthar-cdnify --recursive --cdn='https://www.paypalobjects.com' --npmproxy='http://proxy.prd.plb.paypalcorp.com:8080'",
-    "reinstall": "rm ./package-lock.json && rm -rf ./node_modules && npm install && git checkout package-lock.json && git checkout package.json",
+    "reinstall": "rm -f ./package-lock.json && rm -rf ./node_modules && npm install && git checkout package-lock.json && git checkout package.json",
     "flow-typed": "rm -rf ./flow-typed && flow-typed install",
     "lint": "eslint test/ *.js",
     "flow": "flow check",
