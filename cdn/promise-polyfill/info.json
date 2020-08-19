@@ -1,6 +1,6 @@
 {
     "_id": "promise-polyfill",
-    "_rev": "65-ec6f3788bb15d368e58fc14f3e96a206",
+    "_rev": "66-a79fcfff4231ef07a7394076629373bd",
     "name": "promise-polyfill",
     "description": "Lightweight promise polyfill. A+ compliant",
     "dist-tags": {
@@ -2713,7 +2713,7 @@
         }
     ],
     "time": {
-        "modified": "2019-06-16T21:50:39.406Z",
+        "modified": "2020-08-18T23:29:16.479Z",
         "created": "2014-03-05T13:25:37.426Z",
         "1.0.1": "2014-03-05T13:25:37.426Z",
         "1.0.5": "2014-03-08T21:04:22.356Z",
@@ -2788,6 +2788,7 @@
         "mystaticself": true,
         "xfloops": true,
         "appsparkler": true,
-        "andershl": true
+        "andershl": true,
+        "jalik": true
     }
 }
