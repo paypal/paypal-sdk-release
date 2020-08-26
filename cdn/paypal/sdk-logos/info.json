@@ -1,6 +1,6 @@
 {
     "_id": "@paypal/sdk-logos",
-    "_rev": "50-d8a150cda0a265bd7eb030bd1c190891",
+    "_rev": "51-3f55850f6f5eb2dc24f273af08a92ab5",
     "name": "@paypal/sdk-logos",
     "dist-tags": {
         "latest": "1.0.30"
@@ -3644,7 +3644,7 @@
     "time": {
         "created": "2018-12-11T22:44:52.731Z",
         "1.0.4": "2018-12-11T22:44:53.108Z",
-        "modified": "2020-08-05T21:13:47.196Z",
+        "modified": "2020-08-26T14:38:16.403Z",
         "1.0.5": "2019-02-19T21:26:29.788Z",
         "1.0.6": "2019-03-01T01:22:54.403Z",
         "1.0.7": "2019-04-12T17:45:15.133Z",
@@ -3673,6 +3673,10 @@
         "1.0.30": "2020-08-05T03:49:22.694Z"
     },
     "maintainers": [
+        {
+            "email": "lizzyadeline@gmail.com",
+            "name": "elizabethmv"
+        },
         {
             "email": "mnicpt@gmail.com",
             "name": "mnicpt"

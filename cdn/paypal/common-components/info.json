@@ -1,6 +1,6 @@
 {
     "_id": "@paypal/common-components",
-    "_rev": "30-764e0754fcc2549a614750ae54fcfee1",
+    "_rev": "31-f63aaca58197dbaff83e8361da0ee77f",
     "name": "@paypal/common-components",
     "dist-tags": {
         "latest": "1.0.11"
@@ -1795,7 +1795,7 @@
     "time": {
         "created": "2019-05-14T01:18:50.006Z",
         "1.0.0": "2019-05-14T01:18:50.323Z",
-        "modified": "2020-08-05T21:13:36.482Z",
+        "modified": "2020-08-26T14:34:03.769Z",
         "1.0.1": "2019-05-14T02:54:17.345Z",
         "1.0.2": "2019-05-14T02:58:10.757Z",
         "1.0.3": "2019-06-11T23:17:20.730Z",
@@ -1809,6 +1809,10 @@
         "1.0.11": "2020-08-03T02:13:37.562Z"
     },
     "maintainers": [
+        {
+            "email": "lizzyadeline@gmail.com",
+            "name": "elizabethmv"
+        },
         {
             "email": "mnicpt@gmail.com",
             "name": "mnicpt"

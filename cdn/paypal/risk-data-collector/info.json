@@ -1,6 +1,6 @@
 {
     "_id": "@paypal/risk-data-collector",
-    "_rev": "16-aa197108ca83add2dfa582b92d59c128",
+    "_rev": "17-2f57bc76a8ca110aaf21457e642b4cca",
     "name": "@paypal/risk-data-collector",
     "dist-tags": {
         "latest": "1.0.6"
@@ -982,7 +982,7 @@
     "time": {
         "created": "2020-02-19T17:51:04.290Z",
         "1.0.0": "2020-02-19T17:51:04.665Z",
-        "modified": "2020-08-05T21:13:44.057Z",
+        "modified": "2020-08-26T14:38:12.941Z",
         "1.0.1": "2020-02-19T17:55:52.313Z",
         "1.0.2": "2020-03-14T00:18:08.145Z",
         "1.0.3": "2020-04-10T19:54:40.860Z",
@@ -991,6 +991,10 @@
         "1.0.6": "2020-05-08T21:27:08.465Z"
     },
     "maintainers": [
+        {
+            "email": "lizzyadeline@gmail.com",
+            "name": "elizabethmv"
+        },
         {
             "email": "mnicpt@gmail.com",
             "name": "mnicpt"
