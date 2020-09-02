@@ -1,9 +1,9 @@
 {
     "_id": "zoid",
-    "_rev": "115-f53367efe1c0ef25b8bd239329aa8d93",
+    "_rev": "116-aca84598119ce7b203787e16fb2061db",
     "name": "zoid",
     "dist-tags": {
-        "latest": "9.0.54"
+        "latest": "9.0.55"
     },
     "versions": {
         "1.0.0": {
@@ -10484,12 +10484,112 @@
                 "tmp": "tmp/zoid_6.0.80_1597362676194_0.9277447303519804"
             },
             "_hasShrinkwrap": false
+        },
+        "9.0.55": {
+            "name": "zoid",
+            "version": "9.0.55",
+            "description": "Cross domain components.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "demo": "serve . -l 1337",
+                "lint": "eslint --ext .js --ext .jsx src/ test/ *.js",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "clear-dist": "rm -rf dist/*;",
+                "build": "npm run test && npm run babel && npm run clear-dist && npm run webpack -- $@",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/zoid.git"
+            },
+            "keywords": [
+                "cross-domain",
+                "cross domain",
+                "components",
+                "component",
+                "krakenjs",
+                "kraken"
+            ],
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 41",
+                "firefox >= 43",
+                "safari >= 8",
+                "opera >= 23"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.130.0",
+                "grumbler-scripts": "^3",
+                "jsx-pragmatic": "^2",
+                "mocha": "^4",
+                "serve": "^10.0.0"
+            },
+            "dependencies": {
+                "belter": "^1.0.123",
+                "cross-domain-utils": "^2.0.33",
+                "post-robot": "^10",
+                "zalgo-promise": "^1.0.45"
+            },
+            "gitHead": "f5ce876f54370e3629ceb02bb8c221793a331913",
+            "bugs": {
+                "url": "https://github.com/krakenjs/zoid/issues"
+            },
+            "homepage": "https://github.com/krakenjs/zoid#readme",
+            "_id": "zoid@9.0.55",
+            "_nodeVersion": "12.18.2",
+            "_npmVersion": "6.14.5",
+            "dist": {
+                "integrity": "sha512-+bBLDixIe+D9GB9GxD4Z4pHnTRNnsSBKIIWy/9cqcJpr9OFotlVS2EKFmnnvV/ITrTF2tCXtb55PX83OIX3QJg==",
+                "shasum": "e517c1e9b6d95521a91a42d95ecf9ab4b6c75a79",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/zoid/tarballs/9.0.55.tgz",
+                "fileCount": 44,
+                "unpackedSize": 2970365,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfTwILCRA9TVsSAnZWagAA4ZIP+gPfA6pdgJlvmJy3vtz+\nrSzHWQouZsHNYRMMhXmqBktpQPMgdPWH/WYi3ftrAqOQpVAYGiYtzmtLYHt3\nUu1pM9Mh1woatCHyeUr7MgEg5yxj7fNzsaIfpijbmYcRbHCZEMEYxBLzkAAK\n8XTrJsgd2XLRiCkxD9cF65vmNyKO9OK/Vr9UA0BCwHbQ+3JX7Bmczf0W6sDb\nsIuHQB9OVXsp6ilARUFXo2H3uJVNgvneXsSsrLIohSL7ltey3FGTGNHQEs28\nrzyqfq95soQsj7WMyf+eYUPBLv3clKWkZSwLpzXYNf5isvPmP1eC9GJxfXaO\nWYKIXnsc1qAQ0BdD4MTqm+F6Yx2gHE2vQzSlY9b2ZySrHGjlv3qtAGn2LdGw\nhX9ae1oSzhgyuaYJAjAYXH0eQYx6FRvydodlxjUo8c7h3SnhzpvPBOxgWlp0\nO6KNaM5MUO7M+C4U/yNvIDbFRAbUoMIXErs19NcFvCIAa8AShwLRtpLh1IM/\nGwGUYtaGgRB4PDeBW8LFxcWDGNTLvSIBD355HSHmFfzyaCuCAg0g9Dt77WDB\nOgd4jp2WzIaeMBjYm1RFVn86chrD/iLX/aNAOH2AtUfaVo2OX5xO0wmB82hF\nhZDS9+Vwk0OGhA9Nh2UnIvO/FAlhwWhVQFwdv45aZQV8Re+pHHAKxfBiDeJx\n+bWm\r\n=N9mJ\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "email": "daniel@bluesuncorp.co.uk",
+                    "name": "bluepnume"
+                },
+                {
+                    "email": "stuartmark@gmail.com",
+                    "name": "mstuart"
+                }
+            ],
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/zoid_9.0.55_1599013386963_0.06002552120374527"
+            },
+            "_hasShrinkwrap": false
         }
     },
     "time": {
         "created": "2018-05-17T00:16:28.328Z",
         "1.0.0": "2018-05-17T00:16:28.383Z",
-        "modified": "2020-08-13T23:51:36.701Z",
+        "modified": "2020-09-02T02:23:09.352Z",
         "6.0.61": "2018-05-30T20:58:34.990Z",
         "6.0.62": "2018-05-31T19:40:24.307Z",
         "6.0.63": "2018-05-31T19:50:30.822Z",
@@ -10599,7 +10699,8 @@
         "9.0.51": "2020-08-08T23:00:37.774Z",
         "9.0.53": "2020-08-10T22:09:18.832Z",
         "9.0.54": "2020-08-11T03:32:50.877Z",
-        "6.0.80": "2020-08-13T23:51:16.490Z"
+        "6.0.80": "2020-08-13T23:51:16.490Z",
+        "9.0.55": "2020-09-02T02:23:07.151Z"
     },
     "maintainers": [
         {
@@ -10619,7 +10720,7 @@
     "bugs": {
         "url": "https://github.com/krakenjs/zoid/issues"
     },
-    "readme": "<p align=\"center\"><img width=\"45%\"  src=\"https://cdn.rawgit.com/krakenjs/zoid/master/zoid.png\"></p>\n\n----\n\nA cross-domain component toolkit, supporting:\n\n- Render an iframe or popup on a different domain, and pass down props, including objects and functions\n- Call callbacks natively from the child window without worrying about post-messaging or cross-domain restrictions\n- Create and expose components to share functionality from your site to others!\n\nIt's 'data-down, actions up', but 100% cross-domain! You can even use it directly with libraries like React and Angular.\n\n-----\n\n### [API Docs](./docs/api.md)\n\nPublic options and methods supported by zoid\n\n### [Demos](http://krakenjs.com/zoid/demo/index.htm)\n\nWorking demos of different zoid patterns\n\n### [Demo App](https://github.com/krakenjs/zoid-demo)\n\nForkable demo app with build, test, publishing and demos pre-configured.\n\n### [Example](./docs/example.md)\n\nA full example of a cross-domain component using zoid\n\n-----\n\n### Quick example\n\nDefine a component to be put on both the parent and child pages:\n\n```javascript\nvar MyLoginComponent = zoid.create({\n\n    tag: 'my-login-component',\n    url: 'http://www.my-site.com/my-login-component'\n});\n```\n\nRender the component on the parent page:\n\n```javascript\n<div id=\"container\"></div>\n\n<script src=\"script-where-my-login-component-is-defined.js\"></script>\n<script>\n    MyLoginComponent.render({\n\n        prefilledEmail: 'foo@bar.com',\n\n        onLogin: function(email) {\n            console.log('User logged in with email:', email);\n        }\n\n    }, '#container');\n</script>\n```\n\nImplement the component in the iframe:\n\n```javascript\n<input type=\"text\" id=\"email\" />\n<input type=\"password\" id=\"password\" />\n<button id=\"login\">Log In</button>\n\n<script src=\"script-where-my-login-component-is-defined.js\"></script>\n<script>\n    var email = document.querySelector('#email');\n    var password = document.querySelector('#password');\n    var button = document.querySelector('#login');\n\n    email.value = window.xprops.prefilledEmail;\n\n    function validUser (email, password) {\n      return email && password;\n    }\n\n    button.addEventListener('click', function() {\n        if (validUser(email.value, password.value)) {\n            window.xprops.onLogin(email.value);\n        }\n    });\n</script>\n```\n\n### Useful Links\n\n- [Introducing zoid](https://medium.com/@bluepnume/introducing-zoid-seamless-cross-domain-web-components-from-paypal-c0144f3e82bf#.ikbg9r1ml)\n- [Turn your web-app into a cross-domain component with five lines of code](https://medium.com/@bluepnume/turn-your-web-app-into-a-cross-domain-component-with-5-lines-of-code-ced01e6795f9#.w8ea7h6ky)\n- [A full example of how to implement and use an zoid](./docs/example.md)\n- [Building PayPal's Button with zoid](https://medium.com/@bluepnume/less-is-more-reducing-thousands-of-paypal-buttons-into-a-single-iframe-using-zoid-d902d71d8875#.o3ib7y58n)\n- [PayPal Checkout - zoid powered Button and Checkout components](https://github.com/paypal/paypal-checkout)\n- [Post-Robot - the cross-domain messaging library which powers zoid](https://github.com/krakenjs/post-robot)\n\n#### Framework Specific\n\n- [Build a cross-domain React component](https://medium.com/@bluepnume/creating-a-cross-domain-react-component-with-zoid-fbcccc4778fd#.73jnwv44c)\n- [Introducing support for cross-domain Glimmer components, with zoid](https://medium.com/@bluepnume/introducing-support-for-cross-domain-glimmer-components-with-zoid-21287c9f91f1)\n\n## Rationale\n\n\n**Writing cross domain components is tricky.**\n\nConsider this: I own `foo.com`, you own `bar.com`, and I have some functionality I want to share on your page.\nI could just give you some javascript to load in your page. But then:\n\n- What if I've written a component in React, but you're using some other framework?\n- What if I have secure form fields, or secure data I don't want your site to spy on?\n- What if I need to make secure calls to my back-end, without resorting to CORS?\n\n\n**What about an iframe?**\n\nYou could just use a vanilla iframe for all of this. But:\n\n- You have to pass data down in the url, or with a post-message.\n- You need to set up post-message listeners to get events back up from the child.\n- You need to deal with error cases, like if your iframe fails to load or doesn't respond to a post-message.\n- You need to think carefully about how to expose all this functionality behind a simple, clear interface.\n\n\n**zoid solves all of these problems.**\n\n- You pass data and callbacks down as a javascript object\n- zoid renders the component and passes down the data\n- The child calls your callbacks when it's ready\n\nIt will even automatically generate React and Angular bindings, so people can drop-in your component anywhere and not\nworry about iframes or post-messages.\n\n\n## FAQ\n\n- **Do I need to use a particular framework like React to use zoid?**\n\n  No, zoid is framework agnostic. You can:\n\n  - Use it with vanilla javascript.\n  - Use it with any framework of your choice.\n  - Use it with React or Angular and take advantage of the automatic bindings on the parent page\n\n- **Why write another ui / component library?**\n\n  This isn't designed to replace libraries like React, which are responsible for rendering same-domain components. In fact, the only\n  real rendering zoid does is iframes and popups; the rest is up to you! You can build your components using any framework,\n  library or pattern you want, then use zoid to expose your components cross-domain. It should play nicely with any other framework!\n\n- **Aren't iframes really slow?**\n\n  Yes, but there are a few things to bear in mind here:\n\n  - zoid isn't designed for building components for your own site. For that you should use native component libraries\n    like React, which render quickly onto your page. Use zoid to share functionality with other sites, that you can't\n    share native-javascript components with\n\n  - zoid also provides mechanisms for pre-rendering html and css into iframes and popups, so you can at least render a\n    loading spinner, or maybe something more advanced, while the new window loads its content.\n\n- **I don't want to bother with popups, can I get zoid with just the iframe support?**\n\n  You can indeed. There's an `zoid.frame.js` and `zoid.frame.min.js` in the `dist/` folder. There's a lot of\n  magic that's needed to make popups work with IE, and that's all trimmed out.\n\n- **Can I contribute?**\n\n  By all means! But please raise an issue first if it's more than a small change, to discuss the feasibility.\n\n- **Is this different to [react-frame-component](https://github.com/ryanseddon/react-frame-component)?**\n\n  Yes. `react-frame-component` allows you to render html into a sandboxed iframe on the same domain. `zoid` is geared\n  around sharing functionality from one domain to another, in a cross-domain iframe.\n\n## Browser Support\n\n- Internet Explorer 9+\n- Chrome 27+\n- Firefox 30+\n- Safari 5.1+\n- Opera 23+\n",
+    "readme": "<p align=\"center\"><img width=\"45%\"  src=\"https://cdn.rawgit.com/krakenjs/zoid/master/zoid.png\"></p>\n\n----\n\nA cross-domain component toolkit, supporting:\n\n- Render an iframe or popup on a different domain, and pass down props, including objects and functions\n- Call callbacks natively from the child window without worrying about post-messaging or cross-domain restrictions\n- Create and expose components to share functionality from your site to others!\n- Render your component directly as a React, Vue or Angular component!\n\nIt's 'data-down, actions up' style components, but 100% cross-domain using iframes and popups!\n\n-----\n\n### [API Docs](./docs/api.md)\n\nPublic options and methods supported by zoid\n\n### [Demos](http://krakenjs.com/zoid/demo/index.htm)\n\nWorking demos of different zoid patterns\n\n### [Demo App](https://github.com/krakenjs/zoid-demo)\n\nForkable demo app with build, test, publishing and demos pre-configured.\n\n### [Example](./docs/example.md)\n\nA full example of a cross-domain component using zoid\n\n-----\n\n### Quick example\n\nDefine a component to be put on both the parent and child pages:\n\n```javascript\nvar MyLoginComponent = zoid.create({\n\n    tag: 'my-login-component',\n    url: 'http://www.my-site.com/my-login-component'\n});\n```\n\nRender the component on the parent page:\n\n```javascript\n<div id=\"container\"></div>\n\n<script src=\"script-where-my-login-component-is-defined.js\"></script>\n<script>\n    MyLoginComponent({\n\n        prefilledEmail: 'foo@bar.com',\n\n        onLogin: function(email) {\n            console.log('User logged in with email:', email);\n        }\n\n    }).render('#container');\n</script>\n```\n\nImplement the component in the iframe:\n\n```javascript\n<input type=\"text\" id=\"email\" />\n<input type=\"password\" id=\"password\" />\n<button id=\"login\">Log In</button>\n\n<script src=\"script-where-my-login-component-is-defined.js\"></script>\n<script>\n    var email = document.querySelector('#email');\n    var password = document.querySelector('#password');\n    var button = document.querySelector('#login');\n\n    email.value = window.xprops.prefilledEmail;\n\n    function validUser (email, password) {\n      return email && password;\n    }\n\n    button.addEventListener('click', function() {\n        if (validUser(email.value, password.value)) {\n            window.xprops.onLogin(email.value);\n        }\n    });\n</script>\n```\n\n### Useful Links\n\n- [Introducing zoid](https://medium.com/@bluepnume/introducing-zoid-seamless-cross-domain-web-components-from-paypal-c0144f3e82bf#.ikbg9r1ml)\n- [Turn your web-app into a cross-domain component with five lines of code](https://medium.com/@bluepnume/turn-your-web-app-into-a-cross-domain-component-with-5-lines-of-code-ced01e6795f9#.w8ea7h6ky)\n- [A full example of how to implement and use a zoid](./docs/example.md)\n- [Building PayPal's Button with zoid](https://medium.com/@bluepnume/less-is-more-reducing-thousands-of-paypal-buttons-into-a-single-iframe-using-zoid-d902d71d8875#.o3ib7y58n)\n- [PayPal Checkout - zoid powered Button and Checkout components](https://github.com/paypal/paypal-checkout)\n- [Post-Robot - the cross-domain messaging library which powers zoid](https://github.com/krakenjs/post-robot)\n- [Implementing Zoid video tutorial](https://www.youtube.com/watch?v=UpXavGv7FaI)\n\n#### Framework Specific\n\n- [Build a cross-domain React component](https://medium.com/@bluepnume/creating-a-cross-domain-react-component-with-zoid-fbcccc4778fd#.73jnwv44c)\n- [Introducing support for cross-domain Glimmer components, with zoid](https://medium.com/@bluepnume/introducing-support-for-cross-domain-glimmer-components-with-zoid-21287c9f91f1)\n\n## Rationale\n\n\n**Writing cross domain components is tricky.**\n\nConsider this: I own `foo.com`, you own `bar.com`, and I have some functionality I want to share on your page.\nI could just give you some javascript to load in your page. But then:\n\n- What if I've written a component in React, but you're using some other framework?\n- What if I have secure form fields, or secure data I don't want your site to spy on?\n- What if I need to make secure calls to my back-end, without resorting to CORS?\n\n\n**What about an iframe?**\n\nYou could just use a vanilla iframe for all of this. But:\n\n- You have to pass data down in the url, or with a post-message.\n- You need to set up post-message listeners to get events back up from the child.\n- You need to deal with error cases, like if your iframe fails to load or doesn't respond to a post-message.\n- You need to think carefully about how to expose all this functionality behind a simple, clear interface.\n\n\n**zoid solves all of these problems.**\n\n- You pass data and callbacks down as a javascript object\n- zoid renders the component and passes down the data\n- The child calls your callbacks when it's ready\n\nIt will even automatically generate React and Angular bindings, so people can drop-in your component anywhere and not\nworry about iframes or post-messages.\n\n\n## FAQ\n\n- **Do I need to use a particular framework like React to use zoid?**\n\n  No, zoid is framework agnostic. You can:\n\n  - Use it with vanilla javascript.\n  - Use it with any framework of your choice.\n  - Use it with React or Angular and take advantage of the automatic bindings on the parent page\n\n- **Why write another ui / component library?**\n\n  This isn't designed to replace libraries like React, which are responsible for rendering same-domain components. In fact, the only\n  real rendering zoid does is iframes and popups; the rest is up to you! You can build your components using any framework,\n  library or pattern you want, then use zoid to expose your components cross-domain. It should play nicely with any other framework!\n\n- **Aren't iframes really slow?**\n\n  Yes, but there are a few things to bear in mind here:\n\n  - zoid isn't designed for building components for your own site. For that you should use native component libraries\n    like React, which render quickly onto your page. Use zoid to share functionality with other sites, that you can't\n    share native-javascript components with\n\n  - zoid also provides mechanisms for pre-rendering html and css into iframes and popups, so you can at least render a\n    loading spinner, or maybe something more advanced, while the new window loads its content.\n\n- **I don't want to bother with popups, can I get zoid with just the iframe support?**\n\n  You can indeed. There's an `zoid.frame.js` and `zoid.frame.min.js` in the `dist/` folder. There's a lot of\n  magic that's needed to make popups work with IE, and that's all trimmed out.\n\n- **Can I contribute?**\n\n  By all means! But please raise an issue first if it's more than a small change, to discuss the feasibility.\n\n- **Is this different to [react-frame-component](https://github.com/ryanseddon/react-frame-component)?**\n\n  Yes. `react-frame-component` allows you to render html into a sandboxed iframe on the same domain. `zoid` is geared\n  around sharing functionality from one domain to another, in a cross-domain iframe.\n\n## Browser Support\n\n- Internet Explorer 9+\n- Chrome 27+\n- Firefox 30+\n- Safari 5.1+\n- Opera 23+\n",
     "readmeFilename": "README.md",
     "description": "Cross domain components.",
     "keywords": [
