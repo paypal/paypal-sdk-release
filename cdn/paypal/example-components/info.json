@@ -1,6 +1,6 @@
 {
     "_id": "@paypal/example-components",
-    "_rev": "25-7c6c666fe5885bd0954387038719a99c",
+    "_rev": "28-a24bcebbab117473c8113967b4b5d9c3",
     "name": "@paypal/example-components",
     "dist-tags": {
         "latest": "1.0.27"
@@ -88,9 +88,21 @@
     "time": {
         "created": "2018-12-12T00:40:11.603Z",
         "1.0.27": "2018-12-12T00:40:11.919Z",
-        "modified": "2020-08-26T14:38:04.938Z"
+        "modified": "2020-09-09T20:52:33.553Z"
     },
     "maintainers": [
+        {
+            "email": "shrkapoor@paypal.com",
+            "name": "shrkapoor"
+        },
+        {
+            "email": "brice.shatzer@gmail.com",
+            "name": "briceshatzer"
+        },
+        {
+            "email": "nbierdeman@paypal.com",
+            "name": "nbierdeman"
+        },
         {
             "email": "lizzyadeline@gmail.com",
             "name": "elizabethmv"

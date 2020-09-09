@@ -1,9 +1,9 @@
 {
     "_id": "@paypal/card-components",
-    "_rev": "53-ef027bff9ac5a9f6628522f2bce61460",
+    "_rev": "57-2782bc2a0274abb4b73f59a670b23d84",
     "name": "@paypal/card-components",
     "dist-tags": {
-        "latest": "1.0.45"
+        "latest": "1.0.46"
     },
     "versions": {
         "1.0.20": {
@@ -3413,12 +3413,173 @@
                 "tmp": "tmp/card-components_1.0.45_1592965572753_0.2754103781351793"
             },
             "_hasShrinkwrap": false
+        },
+        "1.0.46": {
+            "name": "@paypal/card-components",
+            "version": "1.0.46",
+            "description": "Hosted Fields component for unified PayPal/Braintree web sdk",
+            "main": "index.js",
+            "scripts": {
+                "release": "npm run release:patch",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install",
+                "flow": "flow",
+                "build": "rm -rf ./vendor && mkdir -p ./vendor/braintree-web && cp -R ~/bt/braintree.js/dist/npm/* ./vendor/braintree-web",
+                "lint": "eslint src/ test/ *.js",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+https://github.com/paypal/paypal-card-components.git"
+            },
+            "author": {
+                "name": "dbrain"
+            },
+            "license": "MIT",
+            "bugs": {
+                "url": "https://github.com/paypal/paypal-card-components/issues"
+            },
+            "homepage": "https://github.com/paypal/paypal-card-components#readme",
+            "devDependencies": {
+                "flow-bin": "^0.100.0",
+                "grumbler-scripts": "^3",
+                "mocha": "^5.0.5",
+                "testdouble": "^3.7.0"
+            },
+            "dependencies": {
+                "@paypal/sdk-client": "^4.0.117",
+                "@paypal/sdk-constants": "^1.0.8",
+                "belter": "^1.0.44",
+                "braintree-web": "3.33.0",
+                "jsx-pragmatic": "^2",
+                "zalgo-promise": "^1.0.34",
+                "zoid": "^9.0.0"
+            },
+            "gitHead": "e6c215329cac0ce001276438aa18fa0b9bc33cab",
+            "_id": "@paypal/card-components@1.0.46",
+            "_nodeVersion": "10.22.0",
+            "_npmVersion": "6.14.8",
+            "dist": {
+                "integrity": "sha512-aZCRyCbEdmF/9Xot57MFmH3MBt34Y4+KLEo+U78I13RnLm49YN2pPhsLRr/YOFxnrJ8RBf4r797359Yl136+Sw==",
+                "shasum": "e2c055353be5b8b4a69be754297aa0045ac0c72e",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/card-components/tarballs/1.0.46.tgz",
+                "fileCount": 153,
+                "unpackedSize": 489801,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfWRzjCRA9TVsSAnZWagAAdesP/iatcoglEhdQFP6AO5OQ\nJw7/xz9X6N1gvCKa6fxVnCNlJewu7PkCT6cG9+z1UqdwEE5yt8kjNtcSIFSr\nAkM/VwnIUJmjrty4GDM6QqgiF+DofvpMWQ9dJiWQj/T6lUM47sriZ+r4D9D5\nsDnRlyCg7oKFCHDk2SBzBuTI4C4/jRCzJU/fxxNFWyLWLrpWuHVsrAW7SKLe\n/kcQQR95iQnIW/asVamgPTrBmD1P3oCyOyRqfPPK0on+sulAdpwnFHW3zqnU\nenMjWk38LGZPwtrc1DHytZfdqUTVDViGrj4XmCYf6eAV+tVf9Ybr+Ku64oon\n7DUG48b+u/XdUTA7v8jK7bVVD3cRd13Zn9vPSNEfFJOdaL5hQjCkhtv5ZhLQ\nh1W74Evmemq5MDd9DmV84+a+7mCx9wprH8/xH0Lw/OdvEMMKlX5lMgU4rtND\nosZ7JPBUx2f0yxlxayDu1ZC3Vma0knTLm4/2HvqwPCxklrKDKLtGgc438Vis\nJ6cP4tQu8yI8xQFu0xHDheDfv9mpAQnxnViHRgawlfgxAg6br3Yq2BH2c7EW\nS5fDmt2vpkG3CM9Ul6Oeoa1i5i3P7/H79CR/jVHk9z6cH8IKlM7qjvx7EYaa\nzwffuxNtuOtETZvFbmlnG6NxSvvVAH+zAsmq8ERhnBmND44ywanJ+35IPdmH\ngrfj\r\n=04mX\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "elizabethmv",
+                    "email": "lizzyadeline@gmail.com"
+                },
+                {
+                    "name": "mnicpt",
+                    "email": "mnicpt@gmail.com"
+                },
+                {
+                    "name": "antre",
+                    "email": "antre@paypal.com"
+                },
+                {
+                    "name": "mstuart",
+                    "email": "stuartmark@gmail.com"
+                },
+                {
+                    "name": "gregjopa",
+                    "email": "grjopa@gmail.com"
+                },
+                {
+                    "name": "visheei94",
+                    "email": "vishakha94@outlook.com"
+                },
+                {
+                    "name": "ravishekhar00",
+                    "email": "ravi_shekhar00@yahoo.com"
+                },
+                {
+                    "name": "jfurman",
+                    "email": "mpscqw@gmail.com"
+                },
+                {
+                    "name": "merlinpatt",
+                    "email": "merlinpatt@gmail.com"
+                },
+                {
+                    "name": "songz",
+                    "email": "song@zheng.club"
+                },
+                {
+                    "name": "rpalanikumar",
+                    "email": "rpalanikumar@paypal.com"
+                },
+                {
+                    "name": "rygilbert_paypal",
+                    "email": "rygilbert@paypal.com"
+                },
+                {
+                    "name": "tifzhou",
+                    "email": "tifzhou@paypal.com"
+                },
+                {
+                    "name": "seavenly",
+                    "email": "nschott@paypal.com"
+                },
+                {
+                    "name": "weihou",
+                    "email": "weihou@paypal.com"
+                },
+                {
+                    "name": "zhillb",
+                    "email": "zach@zacharyhill.xyz"
+                },
+                {
+                    "name": "bryanjenningz",
+                    "email": "bryanjenningz@gmail.com"
+                },
+                {
+                    "name": "joshbeam",
+                    "email": "joshua.a.beam@gmail.com"
+                },
+                {
+                    "name": "rajarampadmanathan",
+                    "email": "prajarameee@gmail.com"
+                },
+                {
+                    "name": "braintree",
+                    "email": "team-sdk@getbraintree.com"
+                },
+                {
+                    "name": "bladebarringer",
+                    "email": "blade@crookedneighbor.com"
+                },
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                },
+                {
+                    "name": "paypal-user",
+                    "email": "DL-PP-NODEJS-SDK@paypal.com"
+                }
+            ],
+            "_npmUser": {
+                "name": "gregjopa",
+                "email": "grjopa@gmail.com"
+            },
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/card-components_1.0.46_1599675618885_0.11056734610419028"
+            },
+            "_hasShrinkwrap": false
         }
     },
     "time": {
         "created": "2018-12-12T00:43:25.550Z",
         "1.0.20": "2018-12-12T00:43:25.983Z",
-        "modified": "2020-08-26T14:38:01.400Z",
+        "modified": "2020-09-09T20:52:30.197Z",
         "1.0.21": "2019-01-10T18:51:08.070Z",
         "1.0.22": "2019-01-18T00:24:17.451Z",
         "1.0.23": "2019-01-18T00:30:24.783Z",
@@ -3446,9 +3607,22 @@
         "1.0.42": "2020-06-02T22:35:38.605Z",
         "1.0.43": "2020-06-17T18:35:58.447Z",
         "1.0.44": "2020-06-22T18:18:01.856Z",
-        "1.0.45": "2020-06-24T02:26:12.910Z"
+        "1.0.45": "2020-06-24T02:26:12.910Z",
+        "1.0.46": "2020-09-09T18:20:19.010Z"
     },
     "maintainers": [
+        {
+            "email": "shrkapoor@paypal.com",
+            "name": "shrkapoor"
+        },
+        {
+            "email": "brice.shatzer@gmail.com",
+            "name": "briceshatzer"
+        },
+        {
+            "email": "nbierdeman@paypal.com",
+            "name": "nbierdeman"
+        },
         {
             "email": "lizzyadeline@gmail.com",
             "name": "elizabethmv"
@@ -3543,18 +3717,18 @@
         }
     ],
     "description": "Hosted Fields component for unified PayPal/Braintree web sdk",
-    "homepage": "https://github.com/paypal/paypal-braintree-hosted-fields-component#readme",
+    "homepage": "https://github.com/paypal/paypal-card-components#readme",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/paypal/paypal-braintree-hosted-fields-component.git"
+        "url": "git+https://github.com/paypal/paypal-card-components.git"
     },
     "author": {
         "name": "dbrain"
     },
     "bugs": {
-        "url": "https://github.com/paypal/paypal-braintree-hosted-fields-component/issues"
+        "url": "https://github.com/paypal/paypal-card-components/issues"
     },
     "license": "MIT",
-    "readme": "Hosted Fields Component\n-----------------------\n\nHosted Fields component to be included in the Payments SDK\n\n### Quick start\n\nSee [src/index.js](./src/index.js)\n\n#### Tests\n\n- Run the tests:\n\n  ```bash\n  npm test\n  ```\n\n#### Testing with different/multiple browsers\n\n```bash\nnpm run karma -- --browser=PhantomJS\nnpm run karma -- --browser=Chrome\nnpm run karma -- --browser=Safari\nnpm run karma -- --browser=Firefox\nnpm run karma -- --browser=PhantomJS,Chrome,Safari,Firefox\n```\n\n#### Keeping the browser open after tests\n\n```bash\nnpm run karma -- --browser=Chrome --keep-open\n```\n\n#### Releasing and Publishing\n\n- Publish your code with a patch version:\n\n```bash\nnpm run release\n```\n\n- Or `npm run release:patch`, `npm run release:minor`, `npm run release:major`\n",
+    "readme": "Hosted Fields Component\n-----------------------\n\n[![npm version](https://img.shields.io/npm/v/@paypal/card-components.svg?style=flat-square)](https://www.npmjs.com/package/@paypal/card-components) [![build status](https://img.shields.io/travis/paypal/paypal-card-components/master.svg?style=flat-square)](https://travis-ci.org/paypal/paypal-card-components)\n\n[![dependencies Status](https://david-dm.org/paypal/paypal-card-components/status.svg)](https://david-dm.org/paypal/paypal-card-components) [![devDependencies Status](https://david-dm.org/paypal/paypal-card-components/dev-status.svg)](https://david-dm.org/paypal/paypal-card-components?type=dev)\n\nHosted Fields component to be included in the Payments SDK\n\n### Quick start\n\nSee [src/index.js](./src/index.js)\n\n#### Tests\n\n- Run the tests:\n\n  ```bash\n  npm test\n  ```\n\n#### Testing with different/multiple browsers\n\n```bash\nnpm run karma -- --browser=PhantomJS\nnpm run karma -- --browser=Chrome\nnpm run karma -- --browser=Safari\nnpm run karma -- --browser=Firefox\nnpm run karma -- --browser=PhantomJS,Chrome,Safari,Firefox\n```\n\n#### Keeping the browser open after tests\n\n```bash\nnpm run karma -- --browser=Chrome --keep-open\n```\n\n#### Releasing and Publishing\n\n- Publish your code with a patch version:\n\n```bash\nnpm run release\n```\n\n- Or `npm run release:patch`, `npm run release:minor`, `npm run release:major`\n",
     "readmeFilename": "README.md"
 }

@@ -1,6 +1,6 @@
 {
     "_id": "@paypal/identity-components",
-    "_rev": "14-315592d09b660caba3a349d8a6b5cad9",
+    "_rev": "17-0b7cac2381ac5c8b52c59ee0da6ebcb9",
     "name": "@paypal/identity-components",
     "dist-tags": {
         "latest": "5.0.3"
@@ -666,12 +666,24 @@
     "time": {
         "created": "2020-02-21T22:32:23.013Z",
         "5.0.0": "2020-02-21T22:32:23.317Z",
-        "modified": "2020-08-26T14:38:08.666Z",
+        "modified": "2020-09-09T20:52:36.396Z",
         "5.0.1": "2020-03-10T18:38:09.163Z",
         "5.0.2": "2020-03-20T20:07:57.594Z",
         "5.0.3": "2020-03-31T19:28:32.661Z"
     },
     "maintainers": [
+        {
+            "email": "shrkapoor@paypal.com",
+            "name": "shrkapoor"
+        },
+        {
+            "email": "brice.shatzer@gmail.com",
+            "name": "briceshatzer"
+        },
+        {
+            "email": "nbierdeman@paypal.com",
+            "name": "nbierdeman"
+        },
         {
             "email": "lizzyadeline@gmail.com",
             "name": "elizabethmv"
