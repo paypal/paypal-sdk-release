@@ -1,6 +1,6 @@
 {
     "_id": "@paypal/example-components",
-    "_rev": "28-a24bcebbab117473c8113967b4b5d9c3",
+    "_rev": "29-55ccf17a616c802814e5fd28dd2b8edd",
     "name": "@paypal/example-components",
     "dist-tags": {
         "latest": "1.0.27"
@@ -88,9 +88,13 @@
     "time": {
         "created": "2018-12-12T00:40:11.603Z",
         "1.0.27": "2018-12-12T00:40:11.919Z",
-        "modified": "2020-09-09T20:52:33.553Z"
+        "modified": "2020-09-09T21:21:05.650Z"
     },
     "maintainers": [
+        {
+            "email": "amy@amyegan.com",
+            "name": "amyegan"
+        },
         {
             "email": "shrkapoor@paypal.com",
             "name": "shrkapoor"

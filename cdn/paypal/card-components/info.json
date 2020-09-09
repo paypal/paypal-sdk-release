@@ -1,6 +1,6 @@
 {
     "_id": "@paypal/card-components",
-    "_rev": "57-2782bc2a0274abb4b73f59a670b23d84",
+    "_rev": "58-8dc83f71591c122a5081e3d2f9a4a284",
     "name": "@paypal/card-components",
     "dist-tags": {
         "latest": "1.0.46"
@@ -3579,7 +3579,7 @@
     "time": {
         "created": "2018-12-12T00:43:25.550Z",
         "1.0.20": "2018-12-12T00:43:25.983Z",
-        "modified": "2020-09-09T20:52:30.197Z",
+        "modified": "2020-09-09T21:21:01.414Z",
         "1.0.21": "2019-01-10T18:51:08.070Z",
         "1.0.22": "2019-01-18T00:24:17.451Z",
         "1.0.23": "2019-01-18T00:30:24.783Z",
@@ -3611,6 +3611,10 @@
         "1.0.46": "2020-09-09T18:20:19.010Z"
     },
     "maintainers": [
+        {
+            "email": "amy@amyegan.com",
+            "name": "amyegan"
+        },
         {
             "email": "shrkapoor@paypal.com",
             "name": "shrkapoor"

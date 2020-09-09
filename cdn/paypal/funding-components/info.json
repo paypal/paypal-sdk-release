@@ -1,6 +1,6 @@
 {
     "_id": "@paypal/funding-components",
-    "_rev": "42-38611435444dd88a9059d05607a7cf59",
+    "_rev": "43-65406f945b0223a0d6e6b6757dbbc6d8",
     "name": "@paypal/funding-components",
     "dist-tags": {
         "latest": "1.0.20"
@@ -2991,7 +2991,7 @@
     "time": {
         "created": "2019-05-29T03:13:16.450Z",
         "1.0.0": "2019-05-29T03:13:16.823Z",
-        "modified": "2020-09-09T20:52:34.938Z",
+        "modified": "2020-09-09T21:21:07.129Z",
         "1.0.1": "2019-05-29T03:14:56.042Z",
         "1.0.2": "2019-05-29T03:36:34.148Z",
         "1.0.3": "2019-05-29T19:34:33.228Z",
@@ -3014,6 +3014,10 @@
         "1.0.20": "2020-08-20T00:20:29.802Z"
     },
     "maintainers": [
+        {
+            "email": "amy@amyegan.com",
+            "name": "amyegan"
+        },
         {
             "email": "shrkapoor@paypal.com",
             "name": "shrkapoor"

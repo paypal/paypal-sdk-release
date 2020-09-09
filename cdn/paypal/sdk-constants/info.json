@@ -1,6 +1,6 @@
 {
     "_id": "@paypal/sdk-constants",
-    "_rev": "83-f676ff0e50336685c2684e95c9d7fbcd",
+    "_rev": "84-2a3f78ac302d5bac755040b8b0d2ca68",
     "name": "@paypal/sdk-constants",
     "dist-tags": {
         "latest": "1.0.74"
@@ -7867,7 +7867,7 @@
     "time": {
         "created": "2018-12-11T22:28:18.174Z",
         "1.0.17": "2018-12-11T22:28:18.513Z",
-        "modified": "2020-09-09T20:52:41.912Z",
+        "modified": "2020-09-09T21:21:15.215Z",
         "1.0.18": "2019-01-25T01:56:12.452Z",
         "1.0.19": "2019-01-31T20:06:32.405Z",
         "1.0.20": "2019-02-15T01:10:58.434Z",
@@ -7925,6 +7925,10 @@
         "1.0.74": "2020-08-31T23:54:25.949Z"
     },
     "maintainers": [
+        {
+            "email": "amy@amyegan.com",
+            "name": "amyegan"
+        },
         {
             "email": "shrkapoor@paypal.com",
             "name": "shrkapoor"

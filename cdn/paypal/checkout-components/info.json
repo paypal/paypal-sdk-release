@@ -1,6 +1,6 @@
 {
     "_id": "@paypal/checkout-components",
-    "_rev": "152-d7bfd7f94da894e20aa707832f92a31c",
+    "_rev": "153-e0e01c2875833b7c5761ce0deca614b8",
     "name": "@paypal/checkout-components",
     "dist-tags": {
         "latest": "5.0.112"
@@ -18895,7 +18895,7 @@
     "time": {
         "created": "2018-12-11T23:08:28.613Z",
         "4.1.37": "2018-12-11T23:08:28.896Z",
-        "modified": "2020-09-09T20:52:31.800Z",
+        "modified": "2020-09-09T21:21:02.892Z",
         "4.1.38": "2018-12-13T23:47:57.129Z",
         "4.1.39": "2018-12-14T00:44:27.016Z",
         "4.1.40": "2019-01-10T18:28:14.984Z",
@@ -19019,6 +19019,10 @@
         "5.0.112": "2020-09-08T20:02:19.171Z"
     },
     "maintainers": [
+        {
+            "email": "amy@amyegan.com",
+            "name": "amyegan"
+        },
         {
             "email": "shrkapoor@paypal.com",
             "name": "shrkapoor"

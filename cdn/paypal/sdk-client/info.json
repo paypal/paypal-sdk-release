@@ -1,6 +1,6 @@
 {
     "_id": "@paypal/sdk-client",
-    "_rev": "115-d52d0f6c3e0be59cf12e8bcd1af0cf47",
+    "_rev": "116-561ee64c3f3fd40966da57a46e855b3f",
     "name": "@paypal/sdk-client",
     "dist-tags": {
         "latest": "4.0.132"
@@ -12234,7 +12234,7 @@
     "time": {
         "created": "2018-12-11T22:14:20.675Z",
         "4.0.42": "2018-12-11T22:14:20.977Z",
-        "modified": "2020-09-09T20:52:37.889Z",
+        "modified": "2020-09-09T21:21:14.815Z",
         "4.0.43": "2018-12-11T22:23:00.985Z",
         "4.0.44": "2018-12-11T22:35:28.564Z",
         "4.0.45": "2018-12-13T19:41:56.635Z",
@@ -12324,6 +12324,10 @@
         "4.0.132": "2020-09-09T18:31:42.168Z"
     },
     "maintainers": [
+        {
+            "email": "amy@amyegan.com",
+            "name": "amyegan"
+        },
         {
             "email": "shrkapoor@paypal.com",
             "name": "shrkapoor"
