@@ -1,6 +1,6 @@
 {
     "_id": "@paypal/muse-components",
-    "_rev": "72-423c652dcbcd2ce9b2c27499b658242a",
+    "_rev": "73-78adc663b272c4c13bba6ae8948b2f7b",
     "name": "@paypal/muse-components",
     "dist-tags": {
         "latest": "1.3.46"
@@ -5474,7 +5474,7 @@
     "time": {
         "created": "2019-02-05T22:37:02.882Z",
         "1.0.0": "2019-02-05T22:37:03.126Z",
-        "modified": "2020-09-09T21:21:09.855Z",
+        "modified": "2020-09-09T21:56:48.858Z",
         "1.0.1": "2019-02-06T00:55:52.049Z",
         "1.0.2": "2019-02-15T03:45:44.825Z",
         "1.0.3": "2019-02-18T21:54:27.988Z",
@@ -5521,7 +5521,11 @@
     },
     "maintainers": [
         {
-            "email": "amy@amyegan.com",
+            "email": "m@mpc.sh",
+            "name": "mpcsh"
+        },
+        {
+            "email": "amyegan@paypal.com",
             "name": "amyegan"
         },
         {

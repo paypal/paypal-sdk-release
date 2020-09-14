@@ -1,6 +1,6 @@
 {
     "_id": "@paypal/common-components",
-    "_rev": "36-5da8dcac540e3cb3ba844523d1b63134",
+    "_rev": "37-d8f013b8063220852ae89e15a59230bb",
     "name": "@paypal/common-components",
     "dist-tags": {
         "latest": "1.0.12"
@@ -1984,7 +1984,7 @@
     "time": {
         "created": "2019-05-14T01:18:50.006Z",
         "1.0.0": "2019-05-14T01:18:50.323Z",
-        "modified": "2020-09-09T21:21:04.898Z",
+        "modified": "2020-09-09T21:56:43.866Z",
         "1.0.1": "2019-05-14T02:54:17.345Z",
         "1.0.2": "2019-05-14T02:58:10.757Z",
         "1.0.3": "2019-06-11T23:17:20.730Z",
@@ -2000,7 +2000,11 @@
     },
     "maintainers": [
         {
-            "email": "amy@amyegan.com",
+            "email": "m@mpc.sh",
+            "name": "mpcsh"
+        },
+        {
+            "email": "amyegan@paypal.com",
             "name": "amyegan"
         },
         {

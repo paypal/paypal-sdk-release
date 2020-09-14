@@ -1,6 +1,6 @@
 {
     "_id": "@paypal/messaging-components",
-    "_rev": "69-63bf51395812d895eb8e5dd0d0408932",
+    "_rev": "70-fc4f882ce13dfa21f3fc16ccf3e89518",
     "name": "@paypal/messaging-components",
     "dist-tags": {
         "latest": "1.13.2"
@@ -7199,7 +7199,7 @@
     "time": {
         "created": "2019-06-06T18:15:09.196Z",
         "0.3.7": "2019-06-06T18:15:09.614Z",
-        "modified": "2020-09-09T21:21:08.288Z",
+        "modified": "2020-09-09T21:56:47.300Z",
         "0.4.1": "2019-07-11T14:54:16.194Z",
         "0.4.2": "2019-07-11T15:24:02.044Z",
         "1.0.0": "2019-07-11T17:27:01.292Z",
@@ -7249,7 +7249,11 @@
     },
     "maintainers": [
         {
-            "email": "amy@amyegan.com",
+            "email": "m@mpc.sh",
+            "name": "mpcsh"
+        },
+        {
+            "email": "amyegan@paypal.com",
             "name": "amyegan"
         },
         {

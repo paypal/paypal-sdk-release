@@ -1,10 +1,10 @@
 {
     "_id": "bowser",
-    "_rev": "132-2db680b0fd1f21e8385500cc7ecc1b53",
+    "_rev": "133-545fe1bfd3579601287d08704a2e0b20",
     "name": "bowser",
     "description": "Lightweight browser detector",
     "dist-tags": {
-        "latest": "2.10.0"
+        "latest": "2.11.0"
     },
     "versions": {
         "0.0.1": {
@@ -6043,20 +6043,130 @@
                 "tmp": "tmp/bowser_2.10.0_1594322381778_0.2122217348389439"
             },
             "_hasShrinkwrap": false
+        },
+        "2.11.0": {
+            "name": "bowser",
+            "version": "2.11.0",
+            "description": "Lightweight browser detector",
+            "keywords": [
+                "browser",
+                "useragent",
+                "user-agent",
+                "parser",
+                "ua",
+                "detection",
+                "ender",
+                "sniff"
+            ],
+            "homepage": "https://github.com/lancedikson/bowser",
+            "author": {
+                "name": "Dustin Diaz",
+                "email": "dustin@dustindiaz.com",
+                "url": "http://dustindiaz.com"
+            },
+            "contributors": [
+                {
+                    "name": "Denis Demchenko",
+                    "url": "http://twitter.com/lancedikson"
+                }
+            ],
+            "main": "es5.js",
+            "browser": "es5.js",
+            "module": "src/bowser.js",
+            "types": "index.d.ts",
+            "repository": {
+                "type": "git",
+                "url": "git+https://github.com/lancedikson/bowser.git"
+            },
+            "devDependencies": {
+                "@babel/cli": "^7.11.6",
+                "@babel/core": "^7.8.0",
+                "@babel/polyfill": "^7.8.3",
+                "@babel/preset-env": "^7.8.2",
+                "@babel/register": "^7.8.3",
+                "ava": "^3.0.0",
+                "babel-eslint": "^10.0.3",
+                "babel-loader": "^8.0.6",
+                "babel-plugin-add-module-exports": "^1.0.2",
+                "babel-plugin-istanbul": "^6.0.0",
+                "compression-webpack-plugin": "^4.0.0",
+                "coveralls": "^3.0.6",
+                "docdash": "^1.1.1",
+                "eslint": "^6.5.1",
+                "eslint-config-airbnb-base": "^13.2.0",
+                "eslint-plugin-ava": "^10.0.0",
+                "eslint-plugin-import": "^2.18.2",
+                "gh-pages": "^3.0.0",
+                "jsdoc": "^3.6.3",
+                "nyc": "^15.0.0",
+                "sinon": "^9.0.0",
+                "testem": "^3.0.0",
+                "webpack": "^4.41.0",
+                "webpack-bundle-analyzer": "^3.5.2",
+                "webpack-cli": "^3.3.9",
+                "yamljs": "^0.3.0"
+            },
+            "ava": {
+                "require": [
+                    "@babel/register"
+                ]
+            },
+            "bugs": {
+                "url": "https://github.com/lancedikson/bowser/issues"
+            },
+            "directories": {
+                "test": "test"
+            },
+            "scripts": {
+                "build": "webpack --config webpack.config.js",
+                "generate-and-deploy-docs": "npm run generate-docs && gh-pages --dist docs --dest docs",
+                "watch": "webpack --watch --config webpack.config.js",
+                "prepublishOnly": "npm run build",
+                "lint": "eslint ./src",
+                "testem": "testem",
+                "test": "nyc --reporter=html --reporter=text ava",
+                "test:watch": "ava --watch",
+                "coverage": "nyc report --reporter=text-lcov | coveralls",
+                "generate-docs": "jsdoc -c jsdoc.json"
+            },
+            "license": "MIT",
+            "gitHead": "e188e8aa73b8522a46137d576b9bb4ff20801e68",
+            "_id": "bowser@2.11.0",
+            "_nodeVersion": "12.3.1",
+            "_npmVersion": "6.13.4",
+            "dist": {
+                "integrity": "sha512-AlcaJBi/pqqJBIQ8U9Mcpc9i8Aqxn88Skv5d+xBX006BY5u8N3mGLHa5Lgppa7L/HfwgwLgZ6NYs+Ag6uUmJRA==",
+                "shasum": "5ca3c35757a7aa5771500c70a73a9f91ef420a8f",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/bowser/tarballs/2.11.0.tgz",
+                "fileCount": 15,
+                "unpackedSize": 216913,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfXIXnCRA9TVsSAnZWagAAVvsP/j8ZJzGGIKfAzZFb7en2\ngc3r+JpD3amuedJEHZuE2cyWYOfXewj54ewyYi8Pe0gFTaO+QhSY8Qobya0a\n2tFNjpuH56ZR7GNQ/0lKSaGICQBV9cwk3jUDh4eZQcKRvHq2lQTb7kTFNfFE\ncfvbGBSzaoz+/fLjNm7pcWJsoD0Km8Mc+zT/ZnwaMDZWfoU682daMpdMz45p\nsmliVLFR68OZY/fgiQayNnegN/IPqwpAjXh20AR+ZZZODegIMKSDruq/i+Ly\nl/G4mVpvXhmPyJewniKkYDepy+gegP76dIcll5ZI5cRYfdgPVJ0qJXhVse59\nlQW58QF5ARFwrITeXVy/wQjHsDh0RxY+HYlszcklqagENWhYRvhj7vljFLEn\ntXvNQ4NT1vUQyjspEtbVgxnaewaIGrIeyG8NkEt1JDACZuq3vESGRMMKvPO1\nduOoV/KMtAjgN9SEYF8f4yYKfQ1gn75tcc5d49AVbosrfGHI+72x2190Yuo9\nE3Q5W7fqKVIQwEOTFc2jd+KVpWmh16jcEy0ZNPEX+B0AIk+9eMzcOhcmrghY\nLMo2/ItxI3O6UxmlwITKeosFvKwha81uurcI7eUPaYN/2HINgQcE/ljozZVN\nA9mKjXWR0rHkJD/ESiSJZzgHz6NGAsdo1FYgTUjeCIP5A3dtb3W6sDe2aClm\nuDXP\r\n=iHJ/\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "lancedikson",
+                    "email": "lancedikson@gmail.com"
+                }
+            ],
+            "_npmUser": {
+                "name": "lancedikson",
+                "email": "lancedikson@gmail.com"
+            },
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/bowser_2.11.0_1599899110799_0.529788644775673"
+            },
+            "_hasShrinkwrap": false
         }
     },
     "maintainers": [
-        {
-            "name": "ded",
-            "email": "polvero@gmail.com"
-        },
         {
             "name": "lancedikson",
             "email": "lancedikson@gmail.com"
         }
     ],
     "time": {
-        "modified": "2020-07-09T19:19:44.191Z",
+        "modified": "2020-09-12T08:25:13.255Z",
         "created": "2011-04-27T22:18:03.301Z",
         "0.0.1": "2011-04-27T22:18:03.579Z",
         "0.0.2": "2011-05-02T20:34:40.504Z",
@@ -6137,7 +6247,8 @@
         "2.8.0": "2019-12-26T14:48:05.210Z",
         "2.8.1": "2019-12-26T21:29:33.896Z",
         "2.9.0": "2020-01-28T20:28:52.374Z",
-        "2.10.0": "2020-07-09T19:19:41.895Z"
+        "2.10.0": "2020-07-09T19:19:41.895Z",
+        "2.11.0": "2020-09-12T08:25:10.987Z"
     },
     "author": {
         "name": "Dustin Diaz",
