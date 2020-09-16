@@ -60,8 +60,8 @@
     "grumbler-scripts": "^3"
   },
   "dependencies": {
-    "@paypal/card-components": "1.0.46",
-    "@paypal/checkout-components": "5.0.115",
+    "@paypal/card-components": "1.0.47",
+    "@paypal/checkout-components": "5.0.117",
     "@paypal/common-components": "1.0.12",
     "@paypal/example-components": "1.0.27",
     "@paypal/funding-components": "1.0.20",
