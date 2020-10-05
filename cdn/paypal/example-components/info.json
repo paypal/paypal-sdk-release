@@ -1,6 +1,6 @@
 {
     "_id": "@paypal/example-components",
-    "_rev": "30-07d10c9b112ad08d3a339d90cfd07957",
+    "_rev": "31-b1bb009dc04d1d5a7c8268ead7fead1d",
     "name": "@paypal/example-components",
     "dist-tags": {
         "latest": "1.0.27"
@@ -88,9 +88,13 @@
     "time": {
         "created": "2018-12-12T00:40:11.603Z",
         "1.0.27": "2018-12-12T00:40:11.919Z",
-        "modified": "2020-09-09T21:56:44.380Z"
+        "modified": "2020-10-05T17:51:36.091Z"
     },
     "maintainers": [
+        {
+            "email": "chetan.jk@gmail.com",
+            "name": "chetanjk"
+        },
         {
             "email": "m@mpc.sh",
             "name": "mpcsh"

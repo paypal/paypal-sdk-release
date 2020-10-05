@@ -1,6 +1,6 @@
 {
     "_id": "@paypal/common-components",
-    "_rev": "38-e20156dda727b0b884b9c848b3bc3274",
+    "_rev": "39-709d09bd439f1c3f44043691c8d90cbe",
     "name": "@paypal/common-components",
     "dist-tags": {
         "latest": "1.0.13"
@@ -2193,7 +2193,7 @@
     "time": {
         "created": "2019-05-14T01:18:50.006Z",
         "1.0.0": "2019-05-14T01:18:50.323Z",
-        "modified": "2020-09-25T19:40:18.946Z",
+        "modified": "2020-10-05T17:51:35.614Z",
         "1.0.1": "2019-05-14T02:54:17.345Z",
         "1.0.2": "2019-05-14T02:58:10.757Z",
         "1.0.3": "2019-06-11T23:17:20.730Z",
@@ -2210,116 +2210,120 @@
     },
     "maintainers": [
         {
-            "name": "mpcsh",
-            "email": "m@mpc.sh"
+            "email": "chetan.jk@gmail.com",
+            "name": "chetanjk"
         },
         {
-            "name": "amyegan",
-            "email": "amyegan@paypal.com"
+            "email": "m@mpc.sh",
+            "name": "mpcsh"
         },
         {
-            "name": "shrkapoor",
-            "email": "shrkapoor@paypal.com"
+            "email": "amyegan@paypal.com",
+            "name": "amyegan"
         },
         {
-            "name": "briceshatzer",
-            "email": "brice.shatzer@gmail.com"
+            "email": "shrkapoor@paypal.com",
+            "name": "shrkapoor"
         },
         {
-            "name": "nbierdeman",
-            "email": "nbierdeman@paypal.com"
+            "email": "brice.shatzer@gmail.com",
+            "name": "briceshatzer"
         },
         {
-            "name": "elizabethmv",
-            "email": "lizzyadeline@gmail.com"
+            "email": "nbierdeman@paypal.com",
+            "name": "nbierdeman"
         },
         {
-            "name": "mnicpt",
-            "email": "mnicpt@gmail.com"
+            "email": "lizzyadeline@gmail.com",
+            "name": "elizabethmv"
         },
         {
-            "name": "antre",
-            "email": "antre@paypal.com"
+            "email": "mnicpt@gmail.com",
+            "name": "mnicpt"
         },
         {
-            "name": "mstuart",
-            "email": "stuartmark@gmail.com"
+            "email": "antre@paypal.com",
+            "name": "antre"
         },
         {
-            "name": "gregjopa",
-            "email": "grjopa@gmail.com"
+            "email": "stuartmark@gmail.com",
+            "name": "mstuart"
         },
         {
-            "name": "visheei94",
-            "email": "vishakha94@outlook.com"
+            "email": "grjopa@gmail.com",
+            "name": "gregjopa"
         },
         {
-            "name": "ravishekhar00",
-            "email": "ravi_shekhar00@yahoo.com"
+            "email": "vishakha94@outlook.com",
+            "name": "visheei94"
         },
         {
-            "name": "jfurman",
-            "email": "mpscqw@gmail.com"
+            "email": "ravi_shekhar00@yahoo.com",
+            "name": "ravishekhar00"
         },
         {
-            "name": "merlinpatt",
-            "email": "merlinpatt@gmail.com"
+            "email": "mpscqw@gmail.com",
+            "name": "jfurman"
         },
         {
-            "name": "songz",
-            "email": "song@zheng.club"
+            "email": "merlinpatt@gmail.com",
+            "name": "merlinpatt"
         },
         {
-            "name": "rpalanikumar",
-            "email": "rpalanikumar@paypal.com"
+            "email": "song@zheng.club",
+            "name": "songz"
         },
         {
-            "name": "rygilbert_paypal",
-            "email": "rygilbert@paypal.com"
+            "email": "rpalanikumar@paypal.com",
+            "name": "rpalanikumar"
         },
         {
-            "name": "tifzhou",
-            "email": "tifzhou@paypal.com"
+            "email": "rygilbert@paypal.com",
+            "name": "rygilbert_paypal"
         },
         {
-            "name": "seavenly",
-            "email": "nschott@paypal.com"
+            "email": "tifzhou@paypal.com",
+            "name": "tifzhou"
         },
         {
-            "name": "weihou",
-            "email": "weihou@paypal.com"
+            "email": "nschott@paypal.com",
+            "name": "seavenly"
         },
         {
-            "name": "zhillb",
-            "email": "zach@zacharyhill.xyz"
+            "email": "weihou@paypal.com",
+            "name": "weihou"
         },
         {
-            "name": "bryanjenningz",
-            "email": "bryanjenningz@gmail.com"
+            "email": "zach@zacharyhill.xyz",
+            "name": "zhillb"
         },
         {
-            "name": "joshbeam",
-            "email": "joshua.a.beam@gmail.com"
+            "email": "bryanjenningz@gmail.com",
+            "name": "bryanjenningz"
         },
         {
-            "name": "rajarampadmanathan",
-            "email": "prajarameee@gmail.com"
+            "email": "joshua.a.beam@gmail.com",
+            "name": "joshbeam"
         },
         {
-            "name": "braintree",
-            "email": "team-sdk@getbraintree.com"
+            "email": "prajarameee@gmail.com",
+            "name": "rajarampadmanathan"
         },
         {
-            "name": "bladebarringer",
-            "email": "blade@crookedneighbor.com"
+            "email": "team-sdk@getbraintree.com",
+            "name": "braintree"
         },
         {
-            "name": "bluepnume",
-            "email": "daniel@bluesuncorp.co.uk"
+            "email": "blade@crookedneighbor.com",
+            "name": "bladebarringer"
         },
         {
-            "name": "paypal-user",
-            "email": "DL-PP-NODEJS-SDK@paypal.com"
+            "email": "daniel@bluesuncorp.co.uk",
+            "name": "bluepnume"
+        },
+        {
+            "email": "DL-PP-NODEJS-SDK@paypal.com",
+            "name": "paypal-user"
         }
     ],
     "description": "PayPal common components, for integrating checkout products.",

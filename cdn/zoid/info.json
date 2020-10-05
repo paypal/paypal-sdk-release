@@ -1,9 +1,9 @@
 {
     "_id": "zoid",
-    "_rev": "121-ae34838f2e27989ee2765a596191b019",
+    "_rev": "123-c44a98d7a765e9afbd94e1706be9243a",
     "name": "zoid",
     "dist-tags": {
-        "latest": "9.0.60"
+        "latest": "9.0.62"
     },
     "versions": {
         "1.0.0": {
@@ -11084,12 +11084,212 @@
                 "tmp": "tmp/zoid_9.0.60_1601494040987_0.9087895849982106"
             },
             "_hasShrinkwrap": false
+        },
+        "9.0.61": {
+            "name": "zoid",
+            "version": "9.0.61",
+            "description": "Cross domain components.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "demo": "serve . -l 1337",
+                "lint": "eslint --ext .js --ext .jsx src/ test/ *.js",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "clear-dist": "rm -rf dist/*;",
+                "build": "npm run test && npm run babel && npm run clear-dist && npm run webpack -- $@",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/zoid.git"
+            },
+            "keywords": [
+                "cross-domain",
+                "cross domain",
+                "components",
+                "component",
+                "krakenjs",
+                "kraken"
+            ],
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 41",
+                "firefox >= 43",
+                "safari >= 8",
+                "opera >= 23"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.135.0",
+                "grumbler-scripts": "^3",
+                "jsx-pragmatic": "^2",
+                "mocha": "^4",
+                "serve": "^10.0.0"
+            },
+            "dependencies": {
+                "belter": "^1.0.123",
+                "cross-domain-utils": "^2.0.33",
+                "post-robot": "^10",
+                "zalgo-promise": "^1.0.45"
+            },
+            "gitHead": "af6de36d39caa9409ee851a67672df931da6ee68",
+            "bugs": {
+                "url": "https://github.com/krakenjs/zoid/issues"
+            },
+            "homepage": "https://github.com/krakenjs/zoid#readme",
+            "_id": "zoid@9.0.61",
+            "_npmVersion": "6.4.1",
+            "_nodeVersion": "10.13.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-9c2NECVc8k2bxMYuiEwicY5uJ9AYmysRCdwZzwVQoYUPreYyUOuLL4GHx86V0afk6sgpNG1864dOS/fk2BCuoA==",
+                "shasum": "2134ab0182d9b6f8532bc936678760a37ee7621f",
+                "tarball": "https://registry.npmjs.org/zoid/-/zoid-9.0.61.tgz",
+                "fileCount": 44,
+                "unpackedSize": 3055779,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfd7t8CRA9TVsSAnZWagAAwMAP/2K6oni0fb1WauDhazNH\nqxqyCPjJuGLKjSaoUblBViH3+ESwL7bQUxM9/PbI9LlxYSxyv3tdBeFminWD\nqVNWKSB6h9mkRn6gcMM2umMsXy1HL/L54UgwStHZdff6Aw6wQ95u5LsTyrqE\nimuch4KU3cM4LddwnTU7+Y9/6z+JIEMtg2SM6U1msJ9hAYKzonkvNy6HbRPa\n4wo4pbELewRZxz1yBgBFYTBBmMEMdnQ52E/IW9h4pwf9y7NbrS7p0K+175Ef\nQWoZtIUZwoZhHoZUKDORv9OgqjGpCTd64TGAqPlhkWphBl8BE+aHMntQp1/W\nZEWJuaCgay2ShsHhXUMxHqHZy54kSMUrePvfxXWgWA1Pm9PQwGqLCyO6n9Ca\nhwtJ+ysIxFBfHsf5HjOeYKdOZlfzkWYMbx4qQDPg5b1ttVBMcIx0vz+odE3s\nwxmXroDpdZy7yJWeHzGyM9kZDWZolGnyU0/lWZkjQw8ADB4dBff/LyHP2Zff\nui05cCQGKznKEdQsoKOj84zRP71+f23Me2j0PkYKsz4o7GOqUNbcAw3xviF7\n+59zKolrKFeSN9mhQQexOoJfyuhF5uBHYjplwueZSkf+IHPCU4MG+VaEUbYf\n3q5gY4MxhgTr7eFlce4+clLqVgX904Ji3NjamksT1pyA+YmWGjcLHgzi1Z+k\naExD\r\n=vOEr\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "mstuart",
+                    "email": "stuartmark@gmail.com"
+                },
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/zoid_9.0.61_1601682300265_0.8805000915798693"
+            },
+            "_hasShrinkwrap": false
+        },
+        "9.0.62": {
+            "name": "zoid",
+            "version": "9.0.62",
+            "description": "Cross domain components.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "demo": "serve . -l 1337",
+                "lint": "eslint --ext .js --ext .jsx src/ test/ *.js",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "clear-dist": "rm -rf dist/*;",
+                "build": "npm run test && npm run babel && npm run clear-dist && npm run webpack -- $@",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/zoid.git"
+            },
+            "keywords": [
+                "cross-domain",
+                "cross domain",
+                "components",
+                "component",
+                "krakenjs",
+                "kraken"
+            ],
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 41",
+                "firefox >= 43",
+                "safari >= 8",
+                "opera >= 23"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.135.0",
+                "grumbler-scripts": "^3",
+                "jsx-pragmatic": "^2",
+                "mocha": "^4",
+                "serve": "^10.0.0"
+            },
+            "dependencies": {
+                "belter": "^1.0.123",
+                "cross-domain-utils": "^2.0.33",
+                "post-robot": "^10",
+                "zalgo-promise": "^1.0.45"
+            },
+            "gitHead": "9b5ddee3f025513a9b426f528f9cbeb57ebb66b6",
+            "bugs": {
+                "url": "https://github.com/krakenjs/zoid/issues"
+            },
+            "homepage": "https://github.com/krakenjs/zoid#readme",
+            "_id": "zoid@9.0.62",
+            "_npmVersion": "6.4.1",
+            "_nodeVersion": "10.13.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-6XmypCmpo/GZftPb7c2PWiD853cHU3CoTmZaHCWcVktnaLxaWyWiV0p/X+zVQix6Kb4QE2yKk7RHNN4q1Ls6AA==",
+                "shasum": "ff06dcb29033ccdc94b1f9095a8c37b708a69be5",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/zoid/tarballs/9.0.62.tgz",
+                "fileCount": 44,
+                "unpackedSize": 3055770,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfekMvCRA9TVsSAnZWagAA7ZIP/18GvT07EcRNDSngeJmk\nsrRbxsgM8nJP4B6KzEIXyUG0UlqVmwR0G8f2peCKWkUAcQPsJbM+VsXpxCti\nLodpKjuZPID6nzYZka9oILlk4sZAaeUxdgcNbzkvleqMfBK98yMHzGQ6tEhu\nF4VMjffXTZjyRxiPp+pTjdwkZCPS7QYK4VyQnn6xWFcZnTjZWgGt6vXc6z0t\n6EoD9TY4IkUazLNvgWXNY3RXtukLEvaKOoIY7X+34lkAxfQoo/V9vpHYqjFu\nWykptKfiLNwB1W8rcr4J1t5u1X4y2YWwC8CZljtmeOdYx/MrPZYDqOGGpeda\n4Y9VBkgc43DzbrU/mjOUXUeUcwurgadC5AkYMMgBKivqjX4gujXKbJaJsio0\n6EliUzfxF24xEWfQPU7QqiiEOKFZgXL9TnPDEy0sv1m8CYAAU4+J9Y0joK+K\nYuJ7Q4PQrwH8DxwV1mw8zvqQb05IlxfXTKdAqZx9jqGPO9BKjENE4qX9Zi4I\nGgJTi2hFvEOi+628iQqOhAAw2wUmBD/d5EJ74HVgxcc8XV8201jiZPcUFUgu\nnKAobeDbvnQP/LI/LsTeif5b+lLo+iwoIEfLzmp46cstbZhJleMl6p2G1EK9\nX8gNhItJzhrPN75j64pkn28G0EqL7OcpjnBAbDSkMCY3zo2m3mbHxllCYRKl\nEbD+\r\n=spaw\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "mstuart",
+                    "email": "stuartmark@gmail.com"
+                },
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/zoid_9.0.62_1601848111084_0.662550229991854"
+            },
+            "_hasShrinkwrap": false
         }
     },
     "time": {
         "created": "2018-05-17T00:16:28.328Z",
         "1.0.0": "2018-05-17T00:16:28.383Z",
-        "modified": "2020-09-30T19:27:26.192Z",
+        "modified": "2020-10-04T21:48:33.706Z",
         "6.0.61": "2018-05-30T20:58:34.990Z",
         "6.0.62": "2018-05-31T19:40:24.307Z",
         "6.0.63": "2018-05-31T19:50:30.822Z",
@@ -11205,7 +11405,9 @@
         "9.0.57": "2020-09-11T01:13:25.813Z",
         "9.0.58": "2020-09-15T22:58:30.064Z",
         "9.0.59": "2020-09-30T02:43:49.443Z",
-        "9.0.60": "2020-09-30T19:27:21.239Z"
+        "9.0.60": "2020-09-30T19:27:21.239Z",
+        "9.0.61": "2020-10-02T23:45:00.442Z",
+        "9.0.62": "2020-10-04T21:48:31.264Z"
     },
     "maintainers": [
         {

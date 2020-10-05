@@ -1,10 +1,10 @@
 {
     "_id": "cross-domain-safe-weakmap",
-    "_rev": "26-637a33a4fd5f9e6ab67f7a8e80687161",
+    "_rev": "27-816e382a632aa6d7a51bcc25d46b43a5",
     "name": "cross-domain-safe-weakmap",
     "description": "Cross domain safe WeakMap.",
     "dist-tags": {
-        "latest": "1.0.27"
+        "latest": "1.0.28"
     },
     "versions": {
         "1.0.1": {
@@ -2687,6 +2687,83 @@
                 "tmp": "tmp/cross-domain-safe-weakmap_1.0.27_1571124734346_0.8453983036978525"
             },
             "_hasShrinkwrap": false
+        },
+        "1.0.28": {
+            "name": "cross-domain-safe-weakmap",
+            "version": "1.0.28",
+            "description": "Cross domain safe WeakMap.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/grumbler.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.135.0",
+                "grumbler-scripts": "^3",
+                "mocha": "^4"
+            },
+            "dependencies": {
+                "cross-domain-utils": "^2.0.0"
+            },
+            "gitHead": "b550dd908d739d8df2da3c14eb2615bffc2da8ea",
+            "bugs": {
+                "url": "https://github.com/krakenjs/grumbler/issues"
+            },
+            "homepage": "https://github.com/krakenjs/grumbler#readme",
+            "_id": "cross-domain-safe-weakmap@1.0.28",
+            "_npmVersion": "6.4.1",
+            "_nodeVersion": "10.13.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-gfQiQYSdWr9cYFVpmzp+b6MyTnefefDHr+fvm+JVv20hQxetV5J6chZOAusrpM/kFpTTbVDnHCziBFaREvgc0Q==",
+                "shasum": "d6c3c5af954340ce5f9d4ee5f3c38dba9513a165",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/cross-domain-safe-weakmap/tarballs/1.0.28.tgz",
+                "fileCount": 19,
+                "unpackedSize": 124640,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfd7NHCRA9TVsSAnZWagAAdlEQAIADdmOkCodQ1MUJE1u5\nrnW5fuRn07dAgUoZFBDl88UOZacXuOe47+l8bGv7M44JCuUG+Twrn24400hx\nDHGHULxzFMzu3QA59RSADD49HVZaxSAJddvc1ja9dXlf4lxVM1LcYZ/aasiG\njQkpiLWPOXuGTCDcd+0jRvpFoinvff0iJC7aLI0QDaQadQxN99+v1RFOaGzm\nKJFQ/NcIXtoiIr9vLKyJYzEOTs7a6hd7zNWF2qWU7xyGm1HFeLSvyEXO0Lt6\ncWldtnPAoSp1QtXtMODehvVEtr3leghLU378k87GUpus1PwCxrc+2Uo74rd0\n7N9PglXASY25qCHAg6hd6NlgjmAf2MQLwhtFeJkjzs10u+p8Mq4FYg0X6i+g\nWvyaA+Qy3bPT55p1QrpGHujCiMJ5ymC6GefNLq0e3pTAqhP5+SOrR26tq0mq\neEssTtrWjEDW8IXFFgkcRXU1oyf13f5GXmAsNpwrGF2BHclvlVKBPMl+uws6\nDEN8Fc4FiKfQcsMH6ObPXt7rV1yuOKyRddffUvdtMh7kQBav4m9KiC0fD3kN\nO/gaRZ/6u38JXGWkSyjHXosBXcnhcMuiXP0S49GNEhyAGHv5dU9rG7b1xQnm\n7qNzifBMIGD9tb03gSMPKw1RVL1FiHyKstFK8RrXNoqFDFuQUCA2W4Rzys7H\nD7aO\r\n=b24N\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/cross-domain-safe-weakmap_1.0.28_1601680198814_0.82064962516772"
+            },
+            "_hasShrinkwrap": false
         }
     },
     "readme": "Cross Domain Safe WeakMap\n-------------------------\n\nWeakMap shim that works with cross-domain windows. Uses native WeakMap when available.\n\n### Rationale\n\nStoring references to window objects is memory-expensive, even after those window objects have closed.\n\nExisting WeakMap shims hang an object of the WeakMap key. This poses a problem when dealing with cross-domain windows, where setting or getting any key other than a pre-defined set of readonly values, will throw a cross-origin error.",
@@ -2697,7 +2774,7 @@
         }
     ],
     "time": {
-        "modified": "2019-10-15T07:32:16.986Z",
+        "modified": "2020-10-02T23:10:01.238Z",
         "created": "2017-03-31T01:52:17.731Z",
         "1.0.1": "2017-03-31T01:52:17.731Z",
         "1.0.2": "2017-03-31T02:20:40.638Z",
@@ -2725,7 +2802,8 @@
         "1.0.24": "2019-05-02T23:17:50.507Z",
         "1.0.25": "2019-05-03T19:09:06.692Z",
         "1.0.26": "2019-08-07T04:05:35.367Z",
-        "1.0.27": "2019-10-15T07:32:14.511Z"
+        "1.0.27": "2019-10-15T07:32:14.511Z",
+        "1.0.28": "2020-10-02T23:09:58.987Z"
     },
     "homepage": "https://github.com/krakenjs/grumbler#readme",
     "keywords": [

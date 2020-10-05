@@ -1,10 +1,10 @@
 {
     "_id": "zalgo-promise",
-    "_rev": "45-b3c48bf8802a1dd321219e63b89dc064",
+    "_rev": "46-69783db2467a8677c27d4e6bd4b47dbe",
     "name": "zalgo-promise",
     "description": "Javascript module template.",
     "dist-tags": {
-        "latest": "1.0.45"
+        "latest": "1.0.46"
     },
     "versions": {
         "1.0.1": {
@@ -4358,6 +4358,81 @@
                 "tmp": "tmp/zalgo-promise_1.0.45_1596502121058_0.32069282647027686"
             },
             "_hasShrinkwrap": false
+        },
+        "1.0.46": {
+            "name": "zalgo-promise",
+            "version": "1.0.46",
+            "description": "Javascript module template.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js",
+                "flow-typed": "flow-typed install",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --display-optimization-bailout --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/zalgo-promise.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "^0.135.0",
+                "grumbler-scripts": "^3",
+                "mocha": "^4"
+            },
+            "dependencies": {},
+            "gitHead": "e8a23b9833191a88850be32fd8af05feab659bf1",
+            "bugs": {
+                "url": "https://github.com/krakenjs/zalgo-promise/issues"
+            },
+            "homepage": "https://github.com/krakenjs/zalgo-promise#readme",
+            "_id": "zalgo-promise@1.0.46",
+            "_npmVersion": "6.4.1",
+            "_nodeVersion": "10.13.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-tzPpQRqaQQavxl17TY98nznvmr+judUg3My7ugsUcRDbdqisYOE2z79HNNDgXnyX3eA0mf2bMOJrqHptt00npg==",
+                "shasum": "325988d75d0be4cd63a266bad5e18f8f6cd85675",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/zalgo-promise/tarballs/1.0.46.tgz",
+                "fileCount": 25,
+                "unpackedSize": 115896,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfd7EdCRA9TVsSAnZWagAAHZcP/ijeydDIUufK75aioABu\n747TcEKDjNVhVbOZKpq3IEFnS5364LI+HiMRYmc3AOkn6/7QF9+DNiZu+GY4\nsNpRURksjDMiqWVgxDxasAi4jAbYrANd7BCL41E3UhQ2TvX7VK5YyorPnwih\n1hv16DEl19IwKji56qzx+2QXpLvaAsT89eib/0wOCW/iYT5H3trmVZPRcV9/\nmFSyWHzkw7PyDz9M8x9krLeR1f+TD08TTCQ3v6SNDbgXltLGad2hpwm62RvG\nco9lhBCwd1GIqDq37cbmKeMRag9L4Dztfqkj6SYAenvw++6rRWl8gkoEAIh+\n871R6n+gVace2Z8bYP1Z1phlpNtOw+19PL4WTxy7mqK1RoBA1RlJDi2C4Y72\nF7N7NHDwIib7VNcoXtjWm3+DwHjIRikjUF30odk9Wup1LsAmn9XwKaIrojbw\nwcmIcnTA47uUXda+lKCwZbXIxsh28qZ7BMhuliseBPCSw7EBQTcWSoHsA81/\nazzHqUmi1mFlGQcu2hehIqX8pj2R9yDEWCt7TILjUeEZ9djBBCJJ4n/ysQxS\n0xKldRdwxH/JQSdeBgeiOVJKgYYFN3yVXbJLQKgKXRLsTNVtjCCWjQ/TyZez\ncsqKDCCMJnQvi7WVTw84dS9bM4i5BZzJLwT2+I1olGAOgAI7WySutgZoVte1\nGAFT\r\n=8ydA\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/zalgo-promise_1.0.46_1601679644622_0.8422221001670318"
+            },
+            "_hasShrinkwrap": false
         }
     },
     "readme": "zalgo-promise\n-------------\n\nA promise library that does not automatically resolve promises asynchronously, unless you do so manually.\n\nhttps://medium.com/@bluepnume/intentionally-unleashing-zalgo-with-promises-ab3f63ead2fd\n\n### Quick Start\n\n`npm install --save zalgo-promise`\n\n#### Global\n\n```javascript\n<script src=\"zalgo-promise.js\"></script>\n<script>\n    new ZalgoPromise( ... );\n</script>\n```\n\n#### CommonJS\n\n```javascript\nvar ZalgoPromise = require('zalgo-promise');\n\nnew ZalgoPromise( ... );\n```\n\n#### ES6\n\n```javascript\nimport { ZalgoPromise } from 'zalgo-promise';\n\nnew ZalgoPromise( ... );\n```\n\n### Rationale\n\nPromises are asynchronous by default. This means that:\n\n```javascript\nPromise.resolve('foo').then(function(result) {\n    console.log(result);\n});\n\nconsole.log('bar');\n```\n\nWill log:\n\n```javascript\nbar\nfoo\n```\n\nEven if we don't do anything explicitly asynchronous in the promise, it becomes asynchronous by default.\n\nThis is, generally speaking, a good thing™\n\nHowever, this is a problem when:\n\n- You're using a browser which doesn't have native Promise support\n- You're using a Promise shim, which has to use `setTimeout()` to guarantee promises are resolved asynchronously\n- You need to deal with cases where the browser deprioritizes `setTimeout()`, for instance, you're in a popup window but still want to communicate with the parent window\n\nIn this case, any promises you run in the unfocused window will try to run `setTimeout()`, the browser will deprioritize those calls, and your code will hang.\n\nZalgoPromise attempts to resolve this problem by introducing promises which are not asynchronous by default, only if you explicitly do something asynchronous like an ajax call, a post-message, a setTimeout or something else.\n\n```javascript\nvar promise = new ZalgoPromise(function(resolve) {\n    resolve();\n});\n\npromise.then(function() {\n    // This function will be called *synchronously*\n});\n```\n\n```javascript\nvar promise = new ZalgoPromise(function(resolve) {\n    setTimeout(resolve, 100);\n});\n\npromise.then(function() {\n    // This function will be called *asynchronously*\n});\n```\n",
@@ -4368,7 +4443,7 @@
         }
     ],
     "time": {
-        "modified": "2020-08-04T00:48:43.670Z",
+        "modified": "2020-10-02T23:00:47.055Z",
         "created": "2017-06-14T05:37:13.874Z",
         "1.0.1": "2017-06-14T05:37:13.874Z",
         "1.0.2": "2017-06-14T18:29:06.479Z",
@@ -4414,7 +4489,8 @@
         "1.0.42": "2019-09-16T19:58:07.232Z",
         "1.0.43": "2019-09-22T03:28:46.484Z",
         "1.0.44": "2019-09-22T18:51:36.318Z",
-        "1.0.45": "2020-08-04T00:48:41.295Z"
+        "1.0.45": "2020-08-04T00:48:41.295Z",
+        "1.0.46": "2020-10-02T23:00:44.799Z"
     },
     "homepage": "https://github.com/krakenjs/zalgo-promise#readme",
     "keywords": [

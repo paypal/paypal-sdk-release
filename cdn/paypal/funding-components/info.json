@@ -1,6 +1,6 @@
 {
     "_id": "@paypal/funding-components",
-    "_rev": "44-68bb84c48ea1842917e061abf8530d4f",
+    "_rev": "45-91566c20541a5b7f5bda621929165c38",
     "name": "@paypal/funding-components",
     "dist-tags": {
         "latest": "1.0.20"
@@ -2991,7 +2991,7 @@
     "time": {
         "created": "2019-05-29T03:13:16.450Z",
         "1.0.0": "2019-05-29T03:13:16.823Z",
-        "modified": "2020-09-09T21:56:45.716Z",
+        "modified": "2020-10-05T17:51:37.439Z",
         "1.0.1": "2019-05-29T03:14:56.042Z",
         "1.0.2": "2019-05-29T03:36:34.148Z",
         "1.0.3": "2019-05-29T19:34:33.228Z",
@@ -3014,6 +3014,10 @@
         "1.0.20": "2020-08-20T00:20:29.802Z"
     },
     "maintainers": [
+        {
+            "email": "chetan.jk@gmail.com",
+            "name": "chetanjk"
+        },
         {
             "email": "m@mpc.sh",
             "name": "mpcsh"

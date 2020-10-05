@@ -1,10 +1,10 @@
 {
     "_id": "cross-domain-utils",
-    "_rev": "60-b43cc176ccbdae2e6111e6a65671510a",
+    "_rev": "61-d8dc0f4b756b97a4f2d744244cc6fb10",
     "name": "cross-domain-utils",
     "description": "Javascript module template.",
     "dist-tags": {
-        "latest": "2.0.33"
+        "latest": "2.0.34"
     },
     "versions": {
         "1.0.1": {
@@ -5927,6 +5927,84 @@
                 "tmp": "tmp/cross-domain-utils_2.0.33_1593145457697_0.9882619243024766"
             },
             "_hasShrinkwrap": false
+        },
+        "2.0.34": {
+            "name": "cross-domain-utils",
+            "version": "2.0.34",
+            "description": "Javascript module template.",
+            "main": "dist/cross-domain-utils.js",
+            "module": "dist/module/index.js",
+            "scripts": {
+                "build": "npm run test && npm run babel && npm run webpack",
+                "webpack": "cross-env NODE_ENV=production babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress --output-path dist",
+                "babel": "cross-env NODE_ENV=production babel src/ --out-dir dist/module",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "lint": "eslint src/ test/",
+                "flow": "flow",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/cross-domain-utils.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "chai": "^4.2.0",
+                "flow-bin": "^0.135.0",
+                "grumbler-scripts": "^3",
+                "mocha": "^4"
+            },
+            "dependencies": {
+                "zalgo-promise": "^1.0.11"
+            },
+            "gitHead": "87164b88ae8d2b59cf97608af9ce68efe66c2c16",
+            "bugs": {
+                "url": "https://github.com/krakenjs/cross-domain-utils/issues"
+            },
+            "homepage": "https://github.com/krakenjs/cross-domain-utils#readme",
+            "_id": "cross-domain-utils@2.0.34",
+            "_npmVersion": "6.4.1",
+            "_nodeVersion": "10.13.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-ke4PirGRXwEElEmE/7k5aCvCW+EqbgseT7AOObzFfaVnOLuEVN9SjVWoOfS/qAT0rDPn3ggmNDW6mguMBy4HgA==",
+                "shasum": "3f8dc8d82a5434213787433f17b76f51c316e382",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/cross-domain-utils/tarballs/2.0.34.tgz",
+                "fileCount": 21,
+                "unpackedSize": 195041,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfd6wsCRA9TVsSAnZWagAAfb8P/2G4Dvv+tAun+Xftaotb\nfJoqWmUiv/XO0f+fQ0mFsKWR1G2BhQZplmgz1NWuXIX6ebAkdkt9BDQ9/cYQ\n9KElC1XwRCurpagIaazg5ieVfNq2twxwsD9tic9dF+x3GjW2gXUxawv5qE9R\ncwsD/UINYUIgnPOKsqjQrFAUNxBnllRxgz2yDcx7AGj/tArpQWdZhIJHQlUU\noV4o3h8S9diwGKWSL948TdK3duM7uL4B7XG+d7h6fDworarseS/kQi4G32Rl\nU0twoVmUu+inrROsOuV0sdiwjQLL5ggNElZdVwKfMgdN4EsaSQYxYgx/Chyr\nq1fzHLjNXRevEOc1kqRjmxI/ltjpAM6La8PTlJrbfa4LzAeWRQb3dj7pqt85\nzUqLvefyUlj+DamBLkCiFSnVrKTJwPTpJd1V3GXypDsAoZVmirHlmX28tpK+\nVK2/1cCUDfE48tL3lBOqeAyPZDmDJ2w5fL7uA3KZ/XwzbrW7+Sqc6YId37RP\n3X9VhW461rDm5roeFafF+58yijYJ8udJB5IK3Ta0KPOvnteRBosJlFdakV8G\njf8Pm2Wb3w3dDlCzMkvm17Eot16u498uk3C/qndIpWMEXOULifMGV2eipZch\nsAYGj3OD3DTABhpG0ez5WBxc92+JfCVpg/S7QlQlUK8H6s2h36L+RijEKdhO\nUOaC\r\n=YX1K\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/cross-domain-utils_2.0.34_1601678380450_0.5585807679397297"
+            },
+            "_hasShrinkwrap": false
         }
     },
     "readme": "Cross Domain Utils\n------------------\n\nA set of utilities for dealing with cross-domain windows\n\n## Public methods\n\n### `getDomain(win : Window) => string`\n\nGet the full domain of the specified window, as a string.\n\n- `win` must be a window on the same domain as the current window, or an exception will be raised\n- This can be overridden / mocked by setting `win.mockDomain = 'mock://some-domain.com';`. `mock://` is required to ensure the window can not spoof actual `http://` or `https://` domains\n\n### `getDomainFromUrl(url : string) => string`\n\nGet the full domain from the specified url, as a string. \n\n- it will try to extract the domain from the url string if it starts with well known protocols (`http://`, `https://`, `file://`, and additionally `mock://` urls)\n- if url string does not contain a known protocol, it will try to extract the domain calling `getDomain` using the current window as input\n\n### `getActualDomain(win : Window) => string`\n\nSame as `getDomain` but overriding / mocking is disabled. it will return the real full domain of the specified window.\n\n### `isBlankDomain(win : Window) => boolean`\n\nReturns if the domain for the specified window is blank, or `about:blank`\n\n- `win` must be a window on the same domain as the current window, or an exception will be raised\n- `win` may be a window or iframe that has been newly opened by the current window\n\n### `isSameDomain(win : Window) => boolean`\n\nReturns if the specified window is on the same domain as the current window.\n\n- Does so without raising any errors or console warnings, even in Safari where wrapping the check `try/catch` still raises a console warning.\n\n### `getParent(win : Window) => ?Window`\n\nGets the parent of the specified window, if the window has a parent.\n\n- Only returns the parent of iframes\n- Returns void if the window is the top-level window\n\n### `getOpener(win : Window) => ?Window`\n\nGets the opener of the specified window, if the window has an opener.\n\n- Only returns the opener of windows opened with `window.open`\n- Returns void if the window is the top-level window\n\n### `getParents(win : Window) => Array<Window>`\n\nGets all of the hierarchical parents of the specified window.\n\n- Only returns the parents of iframes\n- Returns a blank array if the window is the top-level window\n\n### `isAncestorParent(ancestor : Window, win : Window) => boolean`\n\nReturns true if the `ancestor` is a direct or non-direct parent of the specified window.\n\n### `getFrames(win : Window) => Array<Window>`\n\nReturns an array of all direct child frames found in a given window.\n\n- Only returns direct children\n\n### `getAllChildFrames(win : Window) => Array<Window>`\n\nReturns an array of all recursive child frames found in a given window, and in the child-frames of that window.\n\n- Recursively searches for all direct and indirect children\n\n### `getTop(win : Window) => Window`\n\nGets the top-level parent of the specified window.\n\n### `getAllFramesInWindow(win : Window) => Array<Window>`\n\nReturns an array of all recursive child frames found in a given window, and in the child-frames of that window, including the specified window.\n\n- Recursively searches for all direct and indirect children\n\n### `isTop(win : Window) => boolean`\n\nReturns true if the specified window is the top level window, without any parents.\n\n### `isFrameWindowClosed(frame : HTMLIFrameElement) => boolean`\n\nReturns true if the window attached to an iframe element is closed, by checking if the frame is still attached to an open document.\n\n- Prefer `isWindowClosed` when possible\n\n### `isWindowClosed(win : Window) => boolean`\n\nReturns true if a window has been closed\n\n- In IE/Edge, this check is not 100% reliable for frame windows where the frame has been removed from the DOM. Such window objects give no indication that they are closed.\n\n### `getUserAgent(win : Window) => string`\n\nGets the user agent for the specified window\n\n- Window must be on the same domain as the current window\n- Uses `win.navigator.mockUserAgent` if specified, to allow for mocking / tests.\n\n### `getFrameByName(win : Window, name : string) => ?Window`\n\nGets a frame window with the given name, if it exists as a child of the specified window.\n\n### `findChildFrameByName(win : Window, name : string) => ?Window`\n\nRecursively searches for a given frame window inside the children specified window.\n\n### `findFrameByName(win : Window, name : string) => ?Window`\n\nRecursively searches for a given frame window inside the entire frame hierarchy of the specified window.\n\n- Searches both the children and the parent windows recursively for the frame.\n\n### `isParent(parent : Window, child : Window) => boolean`\n\nReturns true if the specified parent window is the parent of the specified child window.\n\n### `isOpener(opener : Window, child : Window) => boolean`\n\nReturns true if the specified opener window is the opener of the specified child window.\n\n### `getAncestor(win : Window) => ?Window`\n\nGets either the parent or the opener of the specified window, if either is present.\n\n### `getAncestors(win : Window) => Array<Window>`\n\nRecursively gets either the parent or the opener of the specified window, if either is present, and returns an array of the entire ancestor hierarchy.\n\n### `isAncestor(ancestor : Window, child : Window) => boolean`\n\nReturns true if the specified ancestor window is the parent or the opener of the specified child window.\n\n### `isPopup(win : Window) => boolean`\n\nReturns true if the specified window has been opened with `window.open` (i.e. if it is a popup window)\n\n### `isIframe(win : Window) => boolean`\n\nReturns true if the specified window has been opened as an iframe.\n\n### `getDistanceFromTop(win : Window) => number`\n\nGets the numerical distance from the specified window to the top level window in that window's hierarchy.\n\n- If the specified window is at the top, this will return 0.\n\n### `getNthParent(win : Window, n : number) => ?Window`\n\nGets the window `n` levels up from the specified window, if it exists.\n\n### `isSameTopWindow(win1 : window, win2 : Window) => boolean`\n\nReturns true if the windows are in the same hierarchy, with the same top level window\n\n- Will return false if one of the windows is a popup and the other window is not a frame inside that popup.\n\n### `isWindow(obj : Window) => boolean`\n\nReturns true if the specified object is a window instance\n\n### `onCloseWindow(win : Window, callback : Function, interval : number) => { cancel : Function }`\n\nCalls the callback when the specified window closes, with checks running on the specified interval.\n\n- Returns a listener object with a `.cancel()` method, to stop the loop\n\n### `matchDomain(pattern : (string | RegExp | Array<string>), domain : string) => boolean`\n\nReturns true if the specified domain matches the pattern. The pattern can be one of:\n\n- A literal string\n- A regular expression\n- An array of possible domains as strings\n\n# Tasks\n\nAll of the tasks are listed in the package.json file under the scripts section\n\n| Command        | Description  |          \n| ------------- |:-------------:|\n| npm run build | Builds the dist files |\n| npm test      | Runs the test suite.  Lint + Type + Karma  |\n\n# Debugging\n\nRun the debug task and pass the next tasks as argument.\n\n```\nnpm run debug -- npm run build\nnpm run debug -- npm test\nnpm run debug -- npm run karma -- --browsers=Chrome\n```\n",
@@ -5937,7 +6015,7 @@
         }
     ],
     "time": {
-        "modified": "2020-06-26T04:24:20.111Z",
+        "modified": "2020-10-02T22:39:42.975Z",
         "created": "2017-06-06T03:08:02.258Z",
         "1.0.1": "2017-06-06T03:08:02.258Z",
         "1.0.2": "2017-06-06T03:16:07.882Z",
@@ -5998,7 +6076,8 @@
         "2.0.30": "2020-03-04T01:22:20.467Z",
         "2.0.31": "2020-03-04T19:04:12.151Z",
         "2.0.32": "2020-03-04T19:57:43.276Z",
-        "2.0.33": "2020-06-26T04:24:17.809Z"
+        "2.0.33": "2020-06-26T04:24:17.809Z",
+        "2.0.34": "2020-10-02T22:39:40.584Z"
     },
     "homepage": "https://github.com/krakenjs/cross-domain-utils#readme",
     "keywords": [
