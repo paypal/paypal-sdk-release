@@ -24,14 +24,14 @@ npm run upgrade
 ### Updating specific components
 
 ```bash
-npm run upgrade paypal-checkout-components
-npm run upgrade paypal-braintree-hosted-fields-component
+npm run upgrade @paypal/checkout-components
+npm run upgrade @paypal/card-components
 ```
 
 ### Removing specific components
 
 ```bash
-npm run remove paypal-checkout-components
+npm run remove @paypal/checkout-components
 ```
 
 ### Release
