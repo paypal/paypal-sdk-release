@@ -16,8 +16,8 @@
     "add": "grabthar-add",
     "upgrade": "grabthar-upgrade",
     "remove": "grabthar-remove",
-    "release": "NPM_PROXY='http://proxy-pzen.prd.plb.paypalcorp.com:80' CDN='https://www.paypalobjects.com' grabthar-release",
-    "activate": "NPM_PROXY='http://proxy-pzen.prd.plb.paypalcorp.com:80' CDN='https://www.paypalobjects.com' grabthar-activate",
+    "release": "CDN='https://www.paypalobjects.com' grabthar-release",
+    "activate": "CDN='https://www.paypalobjects.com' grabthar-activate",
     "flatten": "grabthar-flatten",
     "full-release": "npm run upgrade && npm run release && npm run activate",
     "postinstall": "npm_config_registry=https://npm.paypal.com npm install @paypalcorp/web --no-save --proxy='null' --https-proxy='null' || echo 'Unable to install cdnx cli tools'"
