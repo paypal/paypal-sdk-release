@@ -1,9 +1,9 @@
 {
     "_id": "@paypal/messaging-components",
-    "_rev": "77-2f6b8629cd50f476bb736f15f74a7564",
+    "_rev": "78-9621af59aa5673c7aeeea29247c204ba",
     "name": "@paypal/messaging-components",
     "dist-tags": {
-        "latest": "1.13.8"
+        "latest": "1.14.0"
     },
     "versions": {
         "0.3.7": {
@@ -8542,12 +8542,243 @@
                 "tmp": "tmp/messaging-components_1.13.8_1602005324952_0.12837633854580943"
             },
             "_hasShrinkwrap": false
+        },
+        "1.14.0": {
+            "name": "@paypal/messaging-components",
+            "version": "1.14.0",
+            "description": "PayPal messaging library for integrating PayPal Credit messaging on merchant websites",
+            "homepage": "https://github.com/paypal/paypal-messaging-components",
+            "repository": {
+                "type": "git",
+                "url": "git+https://github.com/paypal/paypal-messaging-components.git"
+            },
+            "main": "dist/messaging.js",
+            "module": "src/index.js",
+            "scripts": {
+                "build": "./scripts/semantic-release/assets.sh",
+                "build:stage": "webpack --env.NODE_ENV=stage",
+                "build:sandbox": "webpack --env.NODE_ENV=sandbox",
+                "build:production": "webpack --env.NODE_ENV=production",
+                "build:analyze": "webpack --env.analyze",
+                "build:demo": "webpack --env.demo",
+                "dev": "webpack-dev-server --config webpack.config.dev.js --env.NODE_ENV=local --env.TARGET=sdk",
+                "dev:standalone": "webpack-dev-server --config webpack.config.dev.js --env.TARGET=standalone --env.NODE_ENV=local",
+                "dev:legacy": "webpack-dev-server --config webpack.config.dev.js --env.TARGET=legacy --env.NODE_ENV=local",
+                "dev:stage": "webpack-dev-server --config webpack.config.dev.js --env.TARGET=standalone --env.NODE_ENV=stage",
+                "dev:sandbox": "webpack-dev-server --config webpack.config.dev.js --env.TARGET=standalone --env.NODE_ENV=sandbox",
+                "dev:production": "webpack-dev-server --config webpack.config.dev.js --env.TARGET=standalone --env.NODE_ENV=production",
+                "lint": "eslint . --ext .js,.jsx",
+                "preinstall": "rm -rf node_modules",
+                "start": "npm run dev",
+                "test": "jest --verbose",
+                "test:func": "jest --verbose --projects tests/functional",
+                "test:func:update": "sed -i '' -e 's/DIRTY_SNAPSHOTS=0/DIRTY_SNAPSHOTS=1/g' .travis.yml"
+            },
+            "dependencies": {
+                "@paypal/sdk-client": "^4.0.80",
+                "@paypal/sdk-logos": "^1.0.26",
+                "beaver-logger": "^4.0.14",
+                "belter": "^1.0.112",
+                "core-js-pure": "^3.0.1",
+                "jsx-pragmatic": "^2.0.7",
+                "post-robot": "^10.0.29",
+                "zalgo-promise": "^1.0.38",
+                "zoid": "^9.0.46"
+            },
+            "devDependencies": {
+                "@babel/register": "^7.10.4",
+                "@semantic-release/changelog": "^3.0.4",
+                "@semantic-release/exec": "^3.3.6",
+                "@semantic-release/git": "^7.0.16",
+                "@testing-library/dom": "^6.2.0",
+                "@testing-library/jest-dom": "^4.1.0",
+                "@testing-library/preact": "^2.0.0",
+                "@testing-library/preact-hooks": "^1.0.6",
+                "babel-eslint": "^10.0.1",
+                "babel-jest": "^25.1.0",
+                "babel-plugin-module-resolver": "^4.0.0",
+                "eslint": "^6.8.0",
+                "eslint-config-airbnb": "^18.0.1",
+                "eslint-config-airbnb-base": "^14.0.0",
+                "eslint-config-prettier": "^6.9.0",
+                "eslint-import-resolver-babel-module": "^5.1.2",
+                "eslint-import-resolver-jest": "^3.0.0",
+                "eslint-plugin-import": "^2.20.0",
+                "eslint-plugin-jsx-a11y": "^6.2.3",
+                "eslint-plugin-prettier": "^3.1.2",
+                "eslint-plugin-react": "^7.17.0",
+                "eslint-plugin-react-hooks": "^1.7.0",
+                "got": "^9.6.0",
+                "grumbler-scripts": "^3.0.46",
+                "husky": "^2.3.0",
+                "imgur": "^0.3.1",
+                "jest": "^26.1.0",
+                "jest-environment-jsdom-sixteen": "^1.0.3",
+                "jest-environment-puppeteer": "^4.3.0",
+                "jest-image-snapshot": "^2.11.1",
+                "lint-staged": "^8.0.4",
+                "preact": "^10.1.1",
+                "preact-render-to-string": "^5.1.9",
+                "prettier": "^1.14.3",
+                "prettier-eslint": "^9.0.1",
+                "puppeteer": "^2.0.0",
+                "qs": "^6.9.3",
+                "webpack": "^4.32.0",
+                "webpack-dev-server": "^3.4.1"
+            },
+            "sideEffects": false,
+            "publishConfig": {
+                "access": "public"
+            },
+            "gitHead": "9d49b224f7ad1a0bfce5abb74bfc7294aae7dc2f",
+            "bugs": {
+                "url": "https://github.com/paypal/paypal-messaging-components/issues"
+            },
+            "_id": "@paypal/messaging-components@1.14.0",
+            "_nodeVersion": "10.18.1",
+            "_npmVersion": "6.13.7",
+            "dist": {
+                "integrity": "sha512-V0gchRq7uDu0h77O/yvvcHAs3BOUXboOcR75ROR/mFIld7ED0/vlHyF5cLelYlqup72M1rV9cVor3GRc/cjcKQ==",
+                "shasum": "01038abd2ca10fb48aada33e1088f253a6610151",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/messaging-components/tarballs/1.14.0.tgz",
+                "fileCount": 606,
+                "unpackedSize": 39151305,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJffhhACRA9TVsSAnZWagAAMJQP/3rINA8UZiA1qPQJSJ8h\ngYtcXbVPDc9o7rDSo5vDHrNg//IX+vBP609htHv7Ankz/G+tURihbd4F5f3F\nPmKEME3aG1/WlWdIjFuOkw82Kqb+CR5zsA5RE9X+tXe9WFUexM55+j+Onhi5\nGolCBP6eOfvIcop+y4yV786sIw+jQ95GHsUWWe35vz089R3SZYSNmUPfSDgn\nKkuBML7iovW8v1/4XPCkjNiPX9GUdzi3gQQDfsi7faykBu51zs90bjUe3LzS\ndOR7hg7rRt6UGpmV+bLRlQGCiGjRUAy9sr+kDJ0Zi3X5xl6TBDW8+S2Xu1pQ\nrgqKnoeLDYCw2PtejgROZzvUnfV5hyfxICsUTBMgA27K0F3LuXEQ/w0PB6JT\nRdeC9a6yRSq7RcM0S8yHJEucGEg9lQ5fHt9qSEEOcxUoLwoTLT1wRTdMoRvo\nqZIAAVCpEokT7mUQNi5IM/DGtLVns1fuWiv6t+zEvUuul2NZXRj9ZQmMXNiF\n2TGN/p2AQg4PhW3dIISHn16NYwSwSHDHeoqjIpNsBvjW7kMJHwC2MVD8qDw3\nyafXuCotmUUVRgI8hg9/NKrTfLAIo4J/HrIdLc5DriqSogma4I6MEQLTXvva\nnpo62Vny9FgyyNN7SDbXJc9xnxFHbjvAv+/FfTdCMFb+7u12GSx/qxo0D/F0\nrmIg\r\n=1K67\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "chetanjk",
+                    "email": "chetan.jk@gmail.com"
+                },
+                {
+                    "name": "mpcsh",
+                    "email": "m@mpc.sh"
+                },
+                {
+                    "name": "amyegan",
+                    "email": "amyegan@paypal.com"
+                },
+                {
+                    "name": "shrkapoor",
+                    "email": "shrkapoor@paypal.com"
+                },
+                {
+                    "name": "briceshatzer",
+                    "email": "brice.shatzer@gmail.com"
+                },
+                {
+                    "name": "nbierdeman",
+                    "email": "nbierdeman@paypal.com"
+                },
+                {
+                    "name": "elizabethmv",
+                    "email": "lizzyadeline@gmail.com"
+                },
+                {
+                    "name": "mnicpt",
+                    "email": "mnicpt@gmail.com"
+                },
+                {
+                    "name": "antre",
+                    "email": "antre@paypal.com"
+                },
+                {
+                    "name": "mstuart",
+                    "email": "stuartmark@gmail.com"
+                },
+                {
+                    "name": "gregjopa",
+                    "email": "grjopa@gmail.com"
+                },
+                {
+                    "name": "visheei94",
+                    "email": "vishakha94@outlook.com"
+                },
+                {
+                    "name": "ravishekhar00",
+                    "email": "ravi_shekhar00@yahoo.com"
+                },
+                {
+                    "name": "jfurman",
+                    "email": "mpscqw@gmail.com"
+                },
+                {
+                    "name": "merlinpatt",
+                    "email": "merlinpatt@gmail.com"
+                },
+                {
+                    "name": "songz",
+                    "email": "song@zheng.club"
+                },
+                {
+                    "name": "rpalanikumar",
+                    "email": "rpalanikumar@paypal.com"
+                },
+                {
+                    "name": "rygilbert_paypal",
+                    "email": "rygilbert@paypal.com"
+                },
+                {
+                    "name": "tifzhou",
+                    "email": "tifzhou@paypal.com"
+                },
+                {
+                    "name": "seavenly",
+                    "email": "nschott@paypal.com"
+                },
+                {
+                    "name": "weihou",
+                    "email": "weihou@paypal.com"
+                },
+                {
+                    "name": "zhillb",
+                    "email": "zach@zacharyhill.xyz"
+                },
+                {
+                    "name": "bryanjenningz",
+                    "email": "bryanjenningz@gmail.com"
+                },
+                {
+                    "name": "joshbeam",
+                    "email": "joshua.a.beam@gmail.com"
+                },
+                {
+                    "name": "rajarampadmanathan",
+                    "email": "prajarameee@gmail.com"
+                },
+                {
+                    "name": "braintree",
+                    "email": "team-sdk@getbraintree.com"
+                },
+                {
+                    "name": "bladebarringer",
+                    "email": "blade@crookedneighbor.com"
+                },
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                },
+                {
+                    "name": "paypal-user",
+                    "email": "DL-PP-NODEJS-SDK@paypal.com"
+                }
+            ],
+            "_npmUser": {
+                "name": "rygilbert_paypal",
+                "email": "rygilbert@paypal.com"
+            },
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/messaging-components_1.14.0_1602099263736_0.3514665205659122"
+            },
+            "_hasShrinkwrap": false
         }
     },
     "time": {
         "created": "2019-06-06T18:15:09.196Z",
         "0.3.7": "2019-06-06T18:15:09.614Z",
-        "modified": "2020-10-06T17:28:52.079Z",
+        "modified": "2020-10-07T19:34:26.649Z",
         "0.4.1": "2019-07-11T14:54:16.194Z",
         "0.4.2": "2019-07-11T15:24:02.044Z",
         "1.0.0": "2019-07-11T17:27:01.292Z",
@@ -8599,7 +8830,8 @@
         "1.13.5": "2020-09-23T18:07:17.993Z",
         "1.13.6": "2020-09-30T18:20:42.545Z",
         "1.13.7": "2020-10-05T17:41:08.840Z",
-        "1.13.8": "2020-10-06T17:28:45.224Z"
+        "1.13.8": "2020-10-06T17:28:45.224Z",
+        "1.14.0": "2020-10-07T19:34:24.181Z"
     },
     "maintainers": [
         {
