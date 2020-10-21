@@ -1,10 +1,10 @@
 {
     "_id": "@braintree/browser-detection",
-    "_rev": "7-d7c6cf0a5528a898d05c08dff196d150",
+    "_rev": "8-d983e272ccc247f30bf40f117fcbad96",
     "name": "@braintree/browser-detection",
     "description": "A small lib to detect browser compatibility for braintree products",
     "dist-tags": {
-        "latest": "1.10.0"
+        "latest": "1.10.1"
     },
     "versions": {
         "1.4.1": {
@@ -441,17 +441,90 @@
                 "tmp": "tmp/browser-detection_1.10.0_1594415324402_0.13531324913711607"
             },
             "_hasShrinkwrap": false
+        },
+        "1.10.1": {
+            "name": "@braintree/browser-detection",
+            "version": "1.10.1",
+            "description": "A small lib to detect browser compatibility for braintree products",
+            "main": "dist/browser-detection.js",
+            "types": "dist/browser-detection.d.ts",
+            "dependencies": {},
+            "devDependencies": {
+                "@types/jest": "^26.0.13",
+                "@types/node": "^14.10.1",
+                "eslint": "^7.8.1",
+                "eslint-config-braintree": "^5.0.0-typescript-prep-rc.18",
+                "jest": "^26.4.2",
+                "prettier": "^2.1.1",
+                "ts-jest": "^26.3.0",
+                "typescript": "^3.9.7"
+            },
+            "scripts": {
+                "prepublishOnly": "npm run build",
+                "prebuild": "prettier --write .",
+                "build": "tsc --declaration",
+                "lint": "eslint --ext js,ts .",
+                "posttest": "npm run lint",
+                "pretest": "npm run build",
+                "test": "jest",
+                "version": "./version"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+https://github.com/braintree/browser-detection.git"
+            },
+            "keywords": [],
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com"
+            },
+            "license": "MIT",
+            "bugs": {
+                "url": "https://github.com/braintree/browser-detection/issues"
+            },
+            "homepage": "https://github.com/braintree/browser-detection#readme",
+            "jest": {
+                "preset": "ts-jest"
+            },
+            "gitHead": "c64b4396daa576d680f1dcc5bace8b7de7976c9d",
+            "_id": "@braintree/browser-detection@1.10.1",
+            "_nodeVersion": "12.14.0",
+            "_npmVersion": "6.13.4",
+            "dist": {
+                "integrity": "sha512-V8zE0iMtSvKWQGRJRLQdG+7Y5g+KPFlY9NTKnTGBf4M0711yfjcTrSksVXkNKcvoU+ER9WjnM7RNg16IyyG5tg==",
+                "shasum": "12b5f209e43f61ba014982201af27cd80c0cf17d",
+                "tarball": "https://registry.npmjs.org/@braintree/browser-detection/-/browser-detection-1.10.1.tgz",
+                "fileCount": 63,
+                "unpackedSize": 17019,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfjc24CRA9TVsSAnZWagAA6CUP/imPoFj2EI75O6mvIpDu\nLXsj/dbQWKVrIewiwgG3R1B+p5moGlKpPP80Qvh65+ZSQsryzX/sZeg87tSr\nRN0gzXi5wNqHC6NPWsLurqke7J9cpZGvG6HFshI5j4odotiZNrCD1iLvqKqf\nTJEH+K1wWhF8g/Gu5lWK/6WQmkbe5lzXPvnxCfLEa8LO6g/zXiLtU/zWnuJK\n2K3D6OR9YzC7i+jdnaj9DKfePjKKiR5dodvhivcXqhGipC4yg/w9sqs+lfz5\nMPl6OvIxRGgKHDC6+8wW8XZpD+3as78Yy2Jhf1gbi25Njutw0Tra4Rkot6sI\nSlxxXNIVG4NdpIk88Ss+jIqaHkqkkKGamOLoIABt5Ieur6O4Orzi0lalQn3v\nZNQsYwDUxQS3qHdOGwBTsPyv+o3hQlF9y3wc/KBNI8/fF2hOXVcuG7l7F+H6\nM2yuT/dLCp3Gc3qqBwp+evXNXPgG+6bqCypVDIrun+R4F0JvH3BTx1npDuH5\nLEHPif/qZVzZauu8scJpvqFH7+YiIxwWg+mmmmSnQr5/tbTQPVtLGn/PBHPT\nGgLXj7dnV5izcd4+6i0VJ0G50EMMvsYuGfHqAxompTeTENCITBs10EkNXLuB\n/v98V90k99KriL0EdqjngvkZDqCARj4V5rWr40wLQZDbgPamn3r84ee2P2Ei\nXYii\r\n=WTQC\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "team-sdk@getbraintree.com"
+                }
+            ],
+            "_npmUser": {
+                "name": "braintree",
+                "email": "team-sdk@getbraintree.com"
+            },
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/browser-detection_1.10.1_1603128760394_0.678649129499745"
+            },
+            "_hasShrinkwrap": false
         }
     },
     "readme": "# Browser Detection\n\nA utility for detecting browser support for Braintree libs.\n\n## Example\n\n```js\nconst browserDetection = require(\"browser-detection\");\n\nbrowserDetection.isAndroid();\nbrowserDetection.isChromeOS();\nbrowserDetection.isChrome();\nbrowserDetection.isEdge();\nbrowserDetection.isFirefox();\nbrowserDetection.isIe();\nbrowserDetection.isIe9();\nbrowserDetection.isIe10();\nbrowserDetection.isIe11();\nbrowserDetection.isIos();\nbrowserDetection.isIosFirefox();\nbrowserDetection.isIosSafari();\nbrowserDetection.isIosWebview();\nbrowserDetection.isIosUIWebview();\nbrowserDetection.isIosWKWebview();\nbrowserDetection.isMobileFirefox();\nbrowserDetection.isSamsungBrowser();\nbrowserDetection.supportsPaymentRequestApi();\nbrowserDetection.supportsPopups();\n```\n\nTo reduce build sizes, you can require just the modules you need:\n\n```js\nconst isAndroid = require(\"browser-detection/is-android\");\nconst isChromeOS = require(\"browser-detection/is-chrome-os\");\nconst isChrome = require(\"browser-detection/is-chrome\");\nconst isEdge = require(\"browser-detection/is-edge\");\nconst isFirefox = require(\"browser-detection/is-firefox\");\nconst isIe = require(\"browser-detection/is-ie\");\nconst isIe9 = require(\"browser-detection/is-ie9\");\nconst isIe10 = require(\"browser-detection/is-ie10\");\nconst isIe11 = require(\"browser-detection/is-ie11\");\nconst isIos = require(\"browser-detection/is-ios\");\nconst isIosFirefox = require(\"browser-detection/is-ios-firefox\");\nconst isIosSafari = require(\"browser-detection/is-ios-safari\");\nconst isIosWebview = require(\"browser-detection/is-ios-webview\");\nconst isIosUIWebview = require(\"browser-detection/is-ios-uiwebview\");\nconst isIosWKWebview = require(\"browser-detection/is-ios-wkwebview\");\nconst isMobileFirefox = require(\"browser-detection/is-mobile-firefox\");\nconst isSamsungBrowser = require(\"browser-detection/is-samsung\");\nconst suportsPaymentRequestApi = require(\"browser-detection/supports-payment-request-api\");\nconst supportsPopups = require(\"browser-detection/supports-popups\");\n```\n\n## Testing\n\n```sh\nnpm test\n```\n",
     "maintainers": [
         {
             "name": "braintree",
-            "email": "devs@getbraintree.com"
+            "email": "team-sdk@getbraintree.com"
         }
     ],
     "time": {
-        "modified": "2020-07-10T21:08:46.672Z",
+        "modified": "2020-10-19T17:32:42.705Z",
         "created": "2017-06-01T19:09:57.767Z",
         "1.4.1": "2017-06-01T19:09:57.767Z",
         "1.5.0": "2017-07-03T14:26:18.199Z",
@@ -459,7 +532,8 @@
         "1.7.0": "2017-10-18T22:22:46.832Z",
         "1.8.0": "2019-08-08T00:32:23.271Z",
         "1.9.0": "2019-09-18T14:23:40.153Z",
-        "1.10.0": "2020-07-10T21:08:44.498Z"
+        "1.10.0": "2020-07-10T21:08:44.498Z",
+        "1.10.1": "2020-10-19T17:32:40.497Z"
     },
     "homepage": "https://github.com/braintree/browser-detection#readme",
     "keywords": [],
