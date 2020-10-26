@@ -1,10 +1,10 @@
 {
     "_id": "promise-polyfill",
-    "_rev": "66-a79fcfff4231ef07a7394076629373bd",
+    "_rev": "67-34833347dcc94ea9ee1e422b1ae8b662",
     "name": "promise-polyfill",
     "description": "Lightweight promise polyfill. A+ compliant",
     "dist-tags": {
-        "latest": "8.1.3",
+        "latest": "8.2.0",
         "beta": "8.0.0"
     },
     "versions": {
@@ -2703,6 +2703,100 @@
                 "tmp": "tmp/promise-polyfill_8.1.3_1560721836820_0.19518319001824325"
             },
             "_hasShrinkwrap": false
+        },
+        "8.2.0": {
+            "name": "promise-polyfill",
+            "version": "8.2.0",
+            "description": "Lightweight promise polyfill. A+ compliant",
+            "main": "lib/index.js",
+            "module": "src/index.js",
+            "jsnext:main": "src/index.js",
+            "unpkg": "dist/polyfill.min.js",
+            "scripts": {
+                "precommit": "lint-staged",
+                "pretest": "npm run build:cjs",
+                "closure": "google-closure-compiler --js=src/*.js --checks_only --module_resolution=node --compilation_level=ADVANCED",
+                "typescript": "tsc --checkJS --allowJS --noEmit src/index.js",
+                "lint": "eslint src && npm run closure && npm run typescript",
+                "test": "npm run lint && mocha && karma start --single-run",
+                "prebuild": "rimraf lib dist",
+                "build": "run-p build:**",
+                "build:cjs": "rollup -i src/index.js -o lib/index.js -f cjs",
+                "build:cjs-polyfill": "rollup -i src/polyfill.js -o lib/polyfill.js -f cjs",
+                "build:umd-polyfill": "cross-env NODE_ENV=development rollup -i src/polyfill.js -o dist/polyfill.js -c rollup.umd.config.js",
+                "build:umd-polyfill:min": "cross-env NODE_ENV=production rollup -i src/polyfill.js -o dist/polyfill.min.js -c rollup.umd.config.js",
+                "prepublish": "test $(npm -v | tr . '\\n' | head -n 1) -ge '4' || exit 1",
+                "prepare": "npm run build"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+https://github.com/taylorhakes/promise-polyfill.git"
+            },
+            "author": {
+                "name": "Taylor Hakes"
+            },
+            "license": "MIT",
+            "bugs": {
+                "url": "https://github.com/taylorhakes/promise-polyfill/issues"
+            },
+            "homepage": "https://github.com/taylorhakes/promise-polyfill",
+            "devDependencies": {
+                "browserify": "^16.2.3",
+                "cross-env": "^5.1.1",
+                "eslint": "^4.11.0",
+                "google-closure-compiler": "^20180610.0.1",
+                "husky": "^0.14.3",
+                "karma": "^4.1.0",
+                "karma-browserify": "^6.0.0",
+                "karma-chrome-launcher": "^0.2.2",
+                "karma-mocha": "^0.2.1",
+                "lint-staged": "^5.0.0",
+                "mocha": "^6.1.4",
+                "npm-run-all": "^4.1.2",
+                "prettier": "^1.8.2",
+                "promises-aplus-tests": "*",
+                "rimraf": "^2.6.2",
+                "rollup": "^0.52.0",
+                "rollup-plugin-uglify": "^2.0.1",
+                "sinon": "^1.17.2",
+                "typescript": "^3.5.1",
+                "watchify": "^3.11.1"
+            },
+            "keywords": [
+                "promise",
+                "promise-polyfill",
+                "ES6",
+                "promises-aplus"
+            ],
+            "dependencies": {},
+            "gitHead": "dcf81d71205eb97344827be5322c53ca70a92a1f",
+            "_id": "promise-polyfill@8.2.0",
+            "_npmVersion": "6.4.1",
+            "_nodeVersion": "10.13.0",
+            "_npmUser": {
+                "name": "taylorhakes",
+                "email": "npm@taylorhakes.com"
+            },
+            "dist": {
+                "integrity": "sha512-k/TC0mIcPVF6yHhUvwAp7cvL6I2fFV7TzF1DuGPI8mBh4QQazf36xCKEHKTZKRysEoTQoQdKyP25J8MPJp7j5g==",
+                "shasum": "367394726da7561457aba2133c9ceefbd6267da0",
+                "tarball": "https://registry.npmjs.org/promise-polyfill/-/promise-polyfill-8.2.0.tgz",
+                "fileCount": 12,
+                "unpackedSize": 49134,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfk0TiCRA9TVsSAnZWagAAen4P/jXRPfIOty9jJO8tFWxE\ncqv3es8/vr39GIoMcFIycwmJVRNW95/cAGIKYAMJUthRQH7HH81fpukdTq/8\nZGOTxiD0UpGCyRUlMTQBzpgcRJY6XLbSWbg4bjNWpfJnkWSdHhzCHMOrJ8IT\nO1pcwehKQpCxZOBuNDQWurkpH+OOg5VhiDOZ1UMQz7fyXvX2McCO9oWOYKxF\nivjAciWTxZFPbBmSz+nix1om/77JtINQoB6YrfQvFw9KKsx1cu0ZPq1kgJjA\nxCL9BcSh5VAJv8VcG3gVRd7YV8obgBe+9u2TgvAmABu2cCPlBt9ZXER7ILmY\nkQIeCAyvFXUQy/Q9XeIyW2kxqIHz3HukIXhW0Mdus9pa7hNxAvEEtkxPvA8u\n2KyhwNx+qDIXz60ERCx/MQD+BOph/EzuHuRyZ64UeRwQaT1/N1aHYxjVgcCj\nWPvgPumv1FiLFzblVoLztZ607WtE0xZw3ssZk1yKoQyb6TRv+VpF5yufrmbg\nx8/TE/8w1tRKW1AIt4fI5cyxKLkX/AtlYMPbN7PbUylgv7OQzMqnlZ585o0h\nOKpd2LKIA36wl6e14nBFfIrGo2+SJ6Hb7iM8K2OYfHr+B06P3yFnEMoh6IYo\nf82rokONcFqtuqkBwww4DgTL9kzdTnQPSrQi0W9UTDxA7zQlaLWaBUP1PDEL\n/YKp\r\n=Y4cO\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "taylorhakes",
+                    "email": "npm@taylorhakes.com"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/promise-polyfill_8.2.0_1603486946160_0.20573273791486302"
+            },
+            "_hasShrinkwrap": false
         }
     },
     "readme": "# Promise Polyfill\n\n[![travis][travis-image]][travis-url]\n\n[travis-image]: https://img.shields.io/travis/taylorhakes/promise-polyfill.svg?style=flat\n[travis-url]: https://travis-ci.org/taylorhakes/promise-polyfill\n\nLightweight ES6 Promise polyfill for the browser and node. Adheres closely to\nthe spec. It is a perfect polyfill IE or any other browser that does\nnot support native promises.\n\nFor API information about Promises, please check out this article\n[HTML5Rocks article](http://www.html5rocks.com/en/tutorials/es6/promises/).\n\nIt is extremely lightweight. **_< 1kb Gzipped_**\n\n## Browser Support\n\nIE8+, Chrome, Firefox, IOS 4+, Safari 5+, Opera\n\n### NPM Use\n\n```\nnpm install promise-polyfill --save-exact\n```\n\n### Bower Use\n\n```\nbower install promise-polyfill\n```\n\n### CDN Polyfill Use\n\nThis will set a global Promise object if the browser doesn't already have `window.Promise`.\n\n```html\n<script src=\"https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js\"></script>\n```\n\n## Downloads\n\n* [Promise](https://raw.github.com/taylorhakes/promise-polyfill/master/dist/polyfill.js)\n* [Promise-min](https://raw.github.com/taylorhakes/promise-polyfill/master/dist/polyfill.min.js)\n\n## Simple use\n\nIf you would like to add a global Promise object (Node or Browser) if native Promise doesn't exist (polyfill Promise). Use the method below. This is useful it you are building a website and want to support older browsers.\nJavascript library authors should _NOT_ use this method.\n\n```js\nimport 'promise-polyfill/src/polyfill';\n```\n\nIf you would like to not affect the global environment (sometimes known as a [ponyfill](https://github.com/sindresorhus/ponyfill), you can import the base module. This is nice for library authors or people working in environment where you don't want\nto affect the global environment.\n\n```js\nimport Promise from 'promise-polyfill';\n```\n\nIf using `require` with Webpack 2+ (rare), you need to specify the default import\n\n```js\nvar Promise = require('promise-polyfill').default;\n```\n\nthen you can use like normal Promises\n\n```js\nvar prom = new Promise(function(resolve, reject) {\n  // do a thing, possibly async, then…\n\n  if (/* everything turned out fine */) {\n    resolve(\"Stuff worked!\");\n  }  else {\n    reject(new Error(\"It broke\"));\n  }\n});\n\nprom.then(function(result) {\n  // Do something when async done\n});\n```\n\n## Performance\n\nBy default promise-polyfill uses `setImmediate`, but falls back to `setTimeout`\nfor executing asynchronously. If a browser does not support `setImmediate`\n(IE/Edge are the only browsers with setImmediate), you may see performance\nissues. Use a `setImmediate` polyfill to fix this issue.\n[setAsap](https://github.com/taylorhakes/setAsap) or\n[setImmediate](https://github.com/YuzuJS/setImmediate) work well.\n\nIf you polyfill `window.setImmediate` or use `Promise._immediateFn = yourImmediateFn` it will be used instead of `window.setTimeout`\n\n```\nnpm install setasap --save\n```\n\n```js\nimport Promise from 'promise-polyfill/src/polyfill';\nimport setAsap from 'setasap';\nPromise._immediateFn = setAsap;\n```\n\n## Unhandled Rejections\n\npromise-polyfill will warn you about possibly unhandled rejections. It will show\na console warning if a Promise is rejected, but no `.catch` is used. You can\nchange this behavior by doing.\n\n-**NOTE: This only works on promise-polyfill Promises. Native Promises do not support this function**\n\n```js\nPromise._unhandledRejectionFn = <your reject error handler>;\n```\n\nIf you would like to disable unhandled rejection messages. Use a noop like\nbelow.\n\n```js\nPromise._unhandledRejectionFn = function(rejectError) {};\n```\n\n## Testing\n\n```\nnpm install\nnpm test\n```\n\n## License\n\nMIT\n",
@@ -2713,7 +2807,7 @@
         }
     ],
     "time": {
-        "modified": "2020-08-18T23:29:16.479Z",
+        "modified": "2020-10-23T21:02:28.565Z",
         "created": "2014-03-05T13:25:37.426Z",
         "1.0.1": "2014-03-05T13:25:37.426Z",
         "1.0.5": "2014-03-08T21:04:22.356Z",
@@ -2755,7 +2849,8 @@
         "8.1.0": "2018-08-12T19:29:13.205Z",
         "8.1.1": "2019-06-14T06:47:30.068Z",
         "8.1.2": "2019-06-15T04:22:36.330Z",
-        "8.1.3": "2019-06-16T21:50:36.936Z"
+        "8.1.3": "2019-06-16T21:50:36.936Z",
+        "8.2.0": "2020-10-23T21:02:26.311Z"
     },
     "homepage": "https://github.com/taylorhakes/promise-polyfill",
     "repository": {
