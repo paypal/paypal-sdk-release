@@ -1,9 +1,9 @@
 {
     "_id": "core-js-pure",
-    "_rev": "58-d30fbfd130e99f69f6180ae0f7812784",
+    "_rev": "59-295721b6175eba83c8b032e7841b409f",
     "name": "core-js-pure",
     "dist-tags": {
-        "latest": "3.6.5",
+        "latest": "3.7.0",
         "alpha": "3.0.0-alpha.4",
         "beta": "3.0.0-beta.20"
     },
@@ -4567,6 +4567,98 @@
                 "tmp": "tmp/core-js-pure_3.6.5_1586535396111_0.8417096469438059"
             },
             "_hasShrinkwrap": false
+        },
+        "3.7.0": {
+            "name": "core-js-pure",
+            "description": "Standard library",
+            "version": "3.7.0",
+            "repository": {
+                "type": "git",
+                "url": "git+https://github.com/zloirock/core-js.git"
+            },
+            "main": "index.js",
+            "funding": {
+                "type": "opencollective",
+                "url": "https://opencollective.com/core-js"
+            },
+            "license": "MIT",
+            "keywords": [
+                "ES3",
+                "ES5",
+                "ES6",
+                "ES7",
+                "ES2015",
+                "ES2016",
+                "ES2017",
+                "ES2018",
+                "ES2019",
+                "ES2020",
+                "ECMAScript 3",
+                "ECMAScript 5",
+                "ECMAScript 6",
+                "ECMAScript 7",
+                "ECMAScript 2015",
+                "ECMAScript 2016",
+                "ECMAScript 2017",
+                "ECMAScript 2018",
+                "ECMAScript 2019",
+                "ECMAScript 2020",
+                "Harmony",
+                "Strawman",
+                "Map",
+                "Set",
+                "WeakMap",
+                "WeakSet",
+                "Promise",
+                "Observable",
+                "Symbol",
+                "TypedArray",
+                "URL",
+                "URLSearchParams",
+                "queueMicrotask",
+                "setImmediate",
+                "polyfill",
+                "ponyfill",
+                "shim"
+            ],
+            "scripts": {
+                "postinstall": "node -e \"try{require('./postinstall')}catch(e){}\""
+            },
+            "bugs": {
+                "url": "https://github.com/zloirock/core-js/issues"
+            },
+            "homepage": "https://github.com/zloirock/core-js#readme",
+            "_id": "core-js-pure@3.7.0",
+            "_nodeVersion": "15.0.1",
+            "_npmVersion": "6.14.8",
+            "dist": {
+                "integrity": "sha512-EZD2ckZysv8MMt4J6HSvS9K2GdtlZtdBncKAmF9lr2n0c9dJUaUN88PSTjvgwCgQPWKTkERXITgS6JJRAnljtg==",
+                "shasum": "28a57c861d5698e053f0ff36905f7a3301b4191e",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/core-js-pure/tarballs/3.7.0.tgz",
+                "fileCount": 1723,
+                "unpackedSize": 579455,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfpWfBCRA9TVsSAnZWagAA3c0QAI6/TveZmV9w3JcjFUx/\nG2+OmGvCgKqgXOfqd9hixrBQilwgbViUmqr9SJcuTzDssDhSzPXqMv4qAhha\n5p6H91sNUlj2idb2beMJa3G/qHu5hiYT4syRjqT75XK6S3flY4P2Av40oPAr\nXHSgN3MwRRC+N3RusbJZfEGf6Szk5gyIxP1lmhdN9pWWN3Vp6V8ovYW8iJ7c\n/vrPFx+lpuXfd22ZPiJEmQlQ85OCLW5Dk4/qAcvJqo0Hx+U5zuexArEhKhga\ndDUOGZ+yA2ze0iqhZdwoNcLky61V2CNxWpC/vfmfuBlbCzLTH5+iUX5W+Noo\nvffrFhLYQ+TVULsrE9v9aMzgN1yfjgfmplLw3EW8qfez2ZOOrAbr+XsxYBWK\nWOk02BKutw/ybDnzOxMoVHxS4sEtK2W/hg248wYp9M9MuNOI/QrdB0He0Wtp\nNp2GfSjnS3GUYM17P09WZiIn7HREhZlJVTQoUcvtLNWh8jwdtC7WbOKA2YkV\nFMJaQ+QPoqFJdLfA2h1h49UzmUYl4ZRYtbndBsI91wSNEO5lfx2/GEUOAxz5\n2ShOS6nmOR7yeVTjE2mUfNPuYjkUiO02KrNgiSV++gZ5tf8svIYalHRVvyyJ\nvNh9CqVYWi0Q39z3HODGxfOnIp4a81q7IeeqOXMVl4vxCx0N83KWUZwhnTyI\nzINj\r\n=gCz9\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "_npmUser": {
+                "name": "zloirock",
+                "email": "zloirock@zloirock.ru"
+            },
+            "directories": {},
+            "maintainers": [
+                {
+                    "name": "zloirock",
+                    "email": "zloirock@zloirock.ru"
+                },
+                {
+                    "name": "slowcheetah",
+                    "email": "slow_cheetah@inbox.ru"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/core-js-pure_3.7.0_1604675521220_0.2599046824492268"
+            },
+            "_hasShrinkwrap": false
         }
     },
     "readme": "# core-js-pure\n\n[![Sponsors on Open Collective](https://opencollective.com/core-js/sponsors/badge.svg)](#sponsors) [![Backers on Open Collective](https://opencollective.com/core-js/backers/badge.svg)](#backers) [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/zloirock/core-js?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![version](https://img.shields.io/npm/v/core-js-pure.svg)](https://www.npmjs.com/package/core-js-pure) [![npm downloads](https://img.shields.io/npm/dm/core-js-pure.svg)](http://npm-stat.com/charts.html?package=core-js-pure&author=&from=2019-03-18) [![Build Status](https://travis-ci.org/zloirock/core-js.svg)](https://travis-ci.org/zloirock/core-js) [![devDependency status](https://david-dm.org/zloirock/core-js/dev-status.svg)](https://david-dm.org/zloirock/core-js?type=dev)\n\n> Modular standard library for JavaScript. Includes polyfills for [ECMAScript up to 2019](https://github.com/zloirock/core-js#ecmascript): [promises](https://github.com/zloirock/core-js#ecmascript-promise), [symbols](https://github.com/zloirock/core-js#ecmascript-symbol), [collections](https://github.com/zloirock/core-js#ecmascript-collections), iterators, [typed arrays](https://github.com/zloirock/core-js#ecmascript-typed-arrays), many other features, [ECMAScript proposals](https://github.com/zloirock/core-js#ecmascript-proposals), [some cross-platform WHATWG / W3C features and proposals](#web-standards) like [`URL`](https://github.com/zloirock/core-js#url-and-urlsearchparams). You can load only required features or use it without global namespace pollution.\n\n## As advertising: the author is looking for a good job -)\n\n## [core-js@3, babel and a look into the future](https://github.com/zloirock/core-js/tree/master/docs/2019-03-19-core-js-3-babel-and-a-look-into-the-future.md)\n\n## Raising funds\n\n`core-js` isn't backed by a company, so the future of this project depends on you. Become a sponsor or a backer [**on Open Collective**](https://opencollective.com/core-js) or [**on Patreon**](https://www.patreon.com/zloirock) if you are interested in `core-js`.\n\n---\n\n<a href=\"https://opencollective.com/core-js/sponsor/0/website\" target=\"_blank\"><img src=\"https://opencollective.com/core-js/sponsor/0/avatar.svg\"></a><a href=\"https://opencollective.com/core-js/sponsor/1/website\" target=\"_blank\"><img src=\"https://opencollective.com/core-js/sponsor/1/avatar.svg\"></a><a href=\"https://opencollective.com/core-js/sponsor/2/website\" target=\"_blank\"><img src=\"https://opencollective.com/core-js/sponsor/2/avatar.svg\"></a><a href=\"https://opencollective.com/core-js/sponsor/3/website\" target=\"_blank\"><img src=\"https://opencollective.com/core-js/sponsor/3/avatar.svg\"></a><a href=\"https://opencollective.com/core-js/sponsor/4/website\" target=\"_blank\"><img src=\"https://opencollective.com/core-js/sponsor/4/avatar.svg\"></a><a href=\"https://opencollective.com/core-js/sponsor/5/website\" target=\"_blank\"><img src=\"https://opencollective.com/core-js/sponsor/5/avatar.svg\"></a><a href=\"https://opencollective.com/core-js/sponsor/6/website\" target=\"_blank\"><img src=\"https://opencollective.com/core-js/sponsor/6/avatar.svg\"></a><a href=\"https://opencollective.com/core-js/sponsor/7/website\" target=\"_blank\"><img src=\"https://opencollective.com/core-js/sponsor/7/avatar.svg\"></a><a href=\"https://opencollective.com/core-js/sponsor/8/website\" target=\"_blank\"><img src=\"https://opencollective.com/core-js/sponsor/8/avatar.svg\"></a><a href=\"https://opencollective.com/core-js/sponsor/9/website\" target=\"_blank\"><img src=\"https://opencollective.com/core-js/sponsor/9/avatar.svg\"></a><a href=\"https://opencollective.com/core-js/sponsor/10/website\" target=\"_blank\"><img src=\"https://opencollective.com/core-js/sponsor/10/avatar.svg\"></a><a href=\"https://opencollective.com/core-js/sponsor/11/website\" target=\"_blank\"><img src=\"https://opencollective.com/core-js/sponsor/11/avatar.svg\"></a>\n\n---\n\n<a href=\"https://opencollective.com/core-js#backers\" target=\"_blank\"><img src=\"https://opencollective.com/core-js/backers.svg?width=890\"></a>\n\n---\n\n[*Example*](http://goo.gl/a2xexl):\n```js\nimport 'core-js'; // <- at the top of your entry point\n\nArray.from(new Set([1, 2, 3, 2, 1]));          // => [1, 2, 3]\n[1, [2, 3], [4, [5]]].flat(2);                 // => [1, 2, 3, 4, 5]\nPromise.resolve(32).then(x => console.log(x)); // => 32\n```\n\n*You can load only required features*:\n```js\nimport 'core-js/features/array/from'; // <- at the top of your entry point\nimport 'core-js/features/array/flat'; // <- at the top of your entry point\nimport 'core-js/features/set';        // <- at the top of your entry point\nimport 'core-js/features/promise';    // <- at the top of your entry point\n\nArray.from(new Set([1, 2, 3, 2, 1]));          // => [1, 2, 3]\n[1, [2, 3], [4, [5]]].flat(2);                 // => [1, 2, 3, 4, 5]\nPromise.resolve(32).then(x => console.log(x)); // => 32\n```\n\n*Or use it without global namespace pollution*:\n```js\nimport from from 'core-js-pure/features/array/from';\nimport flat from 'core-js-pure/features/array/flat';\nimport Set from 'core-js-pure/features/set';\nimport Promise from 'core-js-pure/features/promise';\n\nfrom(new Set([1, 2, 3, 2, 1]));                // => [1, 2, 3]\nflat([1, [2, 3], [4, [5]]], 2);                // => [1, 2, 3, 4, 5]\nPromise.resolve(32).then(x => console.log(x)); // => 32\n```\n\n**It's a version without global namespace pollution (the third example), for more info see [`core-js` documentation](https://github.com/zloirock/core-js/blob/master/README.md)**.\n",
@@ -4574,10 +4666,14 @@
         {
             "name": "zloirock",
             "email": "zloirock@zloirock.ru"
+        },
+        {
+            "name": "slowcheetah",
+            "email": "slow_cheetah@inbox.ru"
         }
     ],
     "time": {
-        "modified": "2020-04-10T16:16:38.666Z",
+        "modified": "2020-11-06T15:12:03.565Z",
         "created": "2018-01-03T09:25:01.637Z",
         "0.0.1": "2018-01-03T09:25:01.637Z",
         "3.0.0-alpha.1": "2018-03-26T00:03:52.558Z",
@@ -4635,7 +4731,8 @@
         "3.6.2": "2020-01-06T17:35:48.807Z",
         "3.6.3": "2020-01-10T23:23:07.923Z",
         "3.6.4": "2020-01-13T23:10:15.728Z",
-        "3.6.5": "2020-04-10T16:16:36.332Z"
+        "3.6.5": "2020-04-10T16:16:36.332Z",
+        "3.7.0": "2020-11-06T15:12:01.394Z"
     },
     "license": "MIT",
     "readmeFilename": "README.md",
