@@ -16,7 +16,7 @@
     "add": "grabthar-add",
     "upgrade": "grabthar-upgrade",
     "remove": "grabthar-remove",
-    "release": "CDN='https://www.paypalobjects.com' RECURSIVE=true grabthar-release",
+    "release": "grabthar-release && npm run cdnify",
     "activate": "CDN='https://www.paypalobjects.com' grabthar-activate",
     "flatten": "grabthar-flatten",
     "full-release": "npm run upgrade && npm run release && npm run activate",
