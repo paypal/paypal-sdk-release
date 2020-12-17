@@ -1,9 +1,9 @@
 {
     "_id": "@paypal/sdk-constants",
-    "_rev": "89-6b9ebcb6778d8594281e0a166f3c9a7c",
+    "_rev": "91-71ec84ca7dfc1db7e7ffa5650ba595af",
     "name": "@paypal/sdk-constants",
     "dist-tags": {
-        "latest": "1.0.77"
+        "latest": "1.0.79"
     },
     "versions": {
         "1.0.17": {
@@ -8452,12 +8452,398 @@
                 "tmp": "tmp/sdk-constants_1.0.77_1605194062696_0.035876236879229806"
             },
             "_hasShrinkwrap": false
+        },
+        "1.0.78": {
+            "name": "@paypal/sdk-constants",
+            "version": "1.0.78",
+            "description": "Utilities.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ *.js",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/paypal/paypal-sdk-constants.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "license": "Apache-2.0",
+            "devDependencies": {
+                "flow-bin": "0.129.0",
+                "grumbler-scripts": "3.0.70",
+                "mocha": "8.0.1"
+            },
+            "dependencies": {
+                "cross-domain-utils": "^2.0.10",
+                "hi-base32": "^0.5.0",
+                "zalgo-promise": "^1.0.28"
+            },
+            "gitHead": "6670299ea570ad7fe3c99c75b096b0c9586a9226",
+            "bugs": {
+                "url": "https://github.com/paypal/paypal-sdk-constants/issues"
+            },
+            "homepage": "https://github.com/paypal/paypal-sdk-constants#readme",
+            "_id": "@paypal/sdk-constants@1.0.78",
+            "_nodeVersion": "12.19.0",
+            "_npmVersion": "6.14.8",
+            "dist": {
+                "integrity": "sha512-bxH4Ta8pD/qTidu6ycRMkfbXMHggniAsq7yng80dBOwj1oO7u7R2HubJTt0Tbjw9ZA9SYys/WFDnb2p4JZjimA==",
+                "shasum": "764d0d09af423971e547b0b11a60258d3831b086",
+                "tarball": "https://registry.npmjs.org/@paypal/sdk-constants/-/sdk-constants-1.0.78.tgz",
+                "fileCount": 32,
+                "unpackedSize": 224703,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJf09YwCRA9TVsSAnZWagAAc7MQAJmkJaUpm68qJdg52fcu\nhVBXRZpuHxo/e7kZTqniot/QC7r1hsHKUdBXOUDlsLSv08+jvp8mre9V2Rs5\nz/h9TX3+XTXtz7IZtDddU7xNl7dJbAtnZEG2VVXgvfe2O+RK66SDxhs5uv5o\n492imnA4pyrDRWFI1ZMTBFQtMsxOufL3nahsk0NV50ix/90RatC1MGPtULWM\nuLz5x7W72T2ih/B2seubUkPSlXIRsxKKmk0Av2TFh2Aq87rHXYsi5/4L/0co\nJaq3DWtuK4DuhukJ8a7MmH/QbYuI1FWtGId70l9i8vXfE9UHkv4+VOjqdDb9\nDNEjrjQzG6XFzBb9awUU2dgERroJZl41pqvz8zAkxqVsGh/SuiYnCRBv/7KY\nhc2GgvLdaaAgmVss7c2gyQdT8PJHBU6C1N0SKocTPSyMPfOVuFh12tFnUZPZ\n1hYz2RKhTetDfFYgtV5YvPD3f45xJ5dW9wR43k6EKmp9vv4I+S5IZL3l9DLr\nJiYN4mXJoofyrv47wJPTkabhdFG0Ufrs1JPTsN8w+Fs0wOoGZxk0TmvY/YGN\nzXnVORY5aAFjMwoVz/zkfC4Avij/1BbYN7A0v5bmlp5RTN7d9VnOJdqbcay8\nasJZRR64S+OsB19YwSSh7qRfB1k/RlpZ+bOvZE9FHAm9SalVVA/WNmbQkDnW\nlgv4\r\n=on6D\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "_npmUser": {
+                "name": "gregjopa",
+                "email": "grjopa@gmail.com"
+            },
+            "directories": {},
+            "maintainers": [
+                {
+                    "name": "chetanjk",
+                    "email": "chetan.jk@gmail.com"
+                },
+                {
+                    "name": "mpcsh",
+                    "email": "m@mpc.sh"
+                },
+                {
+                    "name": "amyegan",
+                    "email": "amyegan@paypal.com"
+                },
+                {
+                    "name": "shrkapoor",
+                    "email": "shrkapoor@paypal.com"
+                },
+                {
+                    "name": "briceshatzer",
+                    "email": "brice.shatzer@gmail.com"
+                },
+                {
+                    "name": "nbierdeman",
+                    "email": "nbierdeman@paypal.com"
+                },
+                {
+                    "name": "elizabethmv",
+                    "email": "lizzyadeline@gmail.com"
+                },
+                {
+                    "name": "mnicpt",
+                    "email": "mnicpt@gmail.com"
+                },
+                {
+                    "name": "antre",
+                    "email": "antre@paypal.com"
+                },
+                {
+                    "name": "mstuart",
+                    "email": "stuartmark@gmail.com"
+                },
+                {
+                    "name": "gregjopa",
+                    "email": "grjopa@gmail.com"
+                },
+                {
+                    "name": "visheei94",
+                    "email": "vishakha94@outlook.com"
+                },
+                {
+                    "name": "ravishekhar00",
+                    "email": "ravi_shekhar00@yahoo.com"
+                },
+                {
+                    "name": "jfurman",
+                    "email": "mpscqw@gmail.com"
+                },
+                {
+                    "name": "merlinpatt",
+                    "email": "merlinpatt@gmail.com"
+                },
+                {
+                    "name": "songz",
+                    "email": "song@zheng.club"
+                },
+                {
+                    "name": "rpalanikumar",
+                    "email": "rpalanikumar@paypal.com"
+                },
+                {
+                    "name": "rygilbert_paypal",
+                    "email": "rygilbert@paypal.com"
+                },
+                {
+                    "name": "tifzhou",
+                    "email": "tifzhou@paypal.com"
+                },
+                {
+                    "name": "seavenly",
+                    "email": "nschott@paypal.com"
+                },
+                {
+                    "name": "weihou",
+                    "email": "weihou@paypal.com"
+                },
+                {
+                    "name": "zhillb",
+                    "email": "zach@zacharyhill.xyz"
+                },
+                {
+                    "name": "bryanjenningz",
+                    "email": "bryanjenningz@gmail.com"
+                },
+                {
+                    "name": "joshbeam",
+                    "email": "joshua.a.beam@gmail.com"
+                },
+                {
+                    "name": "rajarampadmanathan",
+                    "email": "prajarameee@gmail.com"
+                },
+                {
+                    "name": "braintree",
+                    "email": "team-sdk@getbraintree.com"
+                },
+                {
+                    "name": "bladebarringer",
+                    "email": "blade@crookedneighbor.com"
+                },
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                },
+                {
+                    "name": "paypal-user",
+                    "email": "DL-PP-NODEJS-SDK@paypal.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/sdk-constants_1.0.78_1607718448093_0.8255519038200916"
+            },
+            "_hasShrinkwrap": false
+        },
+        "1.0.79": {
+            "name": "@paypal/sdk-constants",
+            "version": "1.0.79",
+            "description": "Utilities.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ *.js",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 7",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/paypal/paypal-sdk-constants.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "license": "Apache-2.0",
+            "devDependencies": {
+                "flow-bin": "0.129.0",
+                "grumbler-scripts": "3.0.70",
+                "mocha": "8.0.1"
+            },
+            "dependencies": {
+                "cross-domain-utils": "^2.0.10",
+                "hi-base32": "^0.5.0",
+                "zalgo-promise": "^1.0.28"
+            },
+            "gitHead": "1c59f1bae02d4d7cfbb9f9fe81c0dc61605853fd",
+            "bugs": {
+                "url": "https://github.com/paypal/paypal-sdk-constants/issues"
+            },
+            "homepage": "https://github.com/paypal/paypal-sdk-constants#readme",
+            "_id": "@paypal/sdk-constants@1.0.79",
+            "_nodeVersion": "12.18.2",
+            "_npmVersion": "6.14.5",
+            "dist": {
+                "integrity": "sha512-UcCjlctjv7mXfdkkGp0Hxr2xS0B6vCrCw6rVv206gVvtY//grsdbpB0jzk8HaR2Ows5M/P8+2Zjxrop/4NMgAQ==",
+                "shasum": "012f295be6885dc1898c42aedf2d89797a7b943b",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/sdk-constants/tarballs/1.0.79.tgz",
+                "fileCount": 32,
+                "unpackedSize": 225079,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJf2rGiCRA9TVsSAnZWagAASqcP/AgZFRYd50JAP0XOtiHY\nQ4VEmghq2ZIwsLEP5o1n7rPYr3JZMcBRAjRMhFS8oxiuWFiA5p4hny5L/v8T\nuWRniS1c6QnCVtWjxor6Ic7bDUR5uAdtzkr9qFyT9meJQhPOMoVM4wbwlN6W\n/EoAn8M9WPF3QLBKIfjj4Q0tZOtGU2zthEGDmqvPc/n4yBQvdwavDVtfa+P5\neSEtVxopvWE4xss4wzFbtLxoFmMwbByaGUyY3+88g8Jdt7aQqIWskzZDmSyU\nf7jF8v+bXzvAwKeqdPyuJCtR6tqs+ICGnWcZy6KurtMdctGTYp1LeG0yvwja\n1l5nhF+IryPQrZnar5Pp0SIN9wA+WZrRcEE2FBqsztsKPlSjMrpqLs53RSok\n+n/544pDeiQayOCfnYJyab9r85sT5cYhWdSANp+S4pn0bl1zfZpjQwC7Wsfx\nS1qZ9tFocwQeh1HFPv3V6mJTXYhoonRudXBS5P040xpXekINRD6YW9TDJANw\nLiNkuUCb0knL72YPUEwA9QIhWTuxRBky1BrVoi4Q8uJgThX1KVl7/3fXdLIR\nwZ+zV2HtXhgvlN6fpAmPP7IWMUSPOkpWwLDTk1RM78WH078MssnoFedffqHi\ncpuNIS9E6rPwTbC8Q4FMviH6R44ve+dIRGprlNJ5sgxCC2i0VVrjguiLlW69\nRX6U\r\n=IBML\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "directories": {},
+            "maintainers": [
+                {
+                    "name": "paypal-user",
+                    "email": "DL-PP-NODEJS-SDK@paypal.com"
+                },
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                },
+                {
+                    "name": "bladebarringer",
+                    "email": "blade@crookedneighbor.com"
+                },
+                {
+                    "name": "braintree",
+                    "email": "team-sdk@getbraintree.com"
+                },
+                {
+                    "name": "rajarampadmanathan",
+                    "email": "prajarameee@gmail.com"
+                },
+                {
+                    "name": "joshbeam",
+                    "email": "joshua.a.beam@gmail.com"
+                },
+                {
+                    "name": "bryanjenningz",
+                    "email": "bryanjenningz@gmail.com"
+                },
+                {
+                    "name": "zhillb",
+                    "email": "zach@zacharyhill.xyz"
+                },
+                {
+                    "name": "weihou",
+                    "email": "weihou@paypal.com"
+                },
+                {
+                    "name": "seavenly",
+                    "email": "nschott@paypal.com"
+                },
+                {
+                    "name": "tifzhou",
+                    "email": "tifzhou@paypal.com"
+                },
+                {
+                    "name": "rygilbert_paypal",
+                    "email": "rygilbert@paypal.com"
+                },
+                {
+                    "name": "rpalanikumar",
+                    "email": "rpalanikumar@paypal.com"
+                },
+                {
+                    "name": "songz",
+                    "email": "song@zheng.club"
+                },
+                {
+                    "name": "merlinpatt",
+                    "email": "merlinpatt@gmail.com"
+                },
+                {
+                    "name": "jfurman",
+                    "email": "mpscqw@gmail.com"
+                },
+                {
+                    "name": "ravishekhar00",
+                    "email": "ravi_shekhar00@yahoo.com"
+                },
+                {
+                    "name": "visheei94",
+                    "email": "vishakha94@outlook.com"
+                },
+                {
+                    "name": "gregjopa",
+                    "email": "grjopa@gmail.com"
+                },
+                {
+                    "name": "mstuart",
+                    "email": "stuartmark@gmail.com"
+                },
+                {
+                    "name": "antre",
+                    "email": "antre@paypal.com"
+                },
+                {
+                    "name": "mnicpt",
+                    "email": "mnicpt@gmail.com"
+                },
+                {
+                    "name": "elizabethmv",
+                    "email": "lizzyadeline@gmail.com"
+                },
+                {
+                    "name": "nbierdeman",
+                    "email": "nbierdeman@paypal.com"
+                },
+                {
+                    "name": "briceshatzer",
+                    "email": "brice.shatzer@gmail.com"
+                },
+                {
+                    "name": "shrkapoor",
+                    "email": "shrkapoor@paypal.com"
+                },
+                {
+                    "name": "amyegan",
+                    "email": "amyegan@paypal.com"
+                },
+                {
+                    "name": "mpcsh",
+                    "email": "m@mpc.sh"
+                },
+                {
+                    "name": "chetanjk",
+                    "email": "chetan.jk@gmail.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/sdk-constants_1.0.79_1608167842409_0.7806102799194161"
+            },
+            "_hasShrinkwrap": false
         }
     },
     "time": {
         "created": "2018-12-11T22:28:18.174Z",
         "1.0.17": "2018-12-11T22:28:18.513Z",
-        "modified": "2020-11-12T15:14:25.292Z",
+        "modified": "2020-12-17T01:17:25.026Z",
         "1.0.18": "2019-01-25T01:56:12.452Z",
         "1.0.19": "2019-01-31T20:06:32.405Z",
         "1.0.20": "2019-02-15T01:10:58.434Z",
@@ -8515,124 +8901,126 @@
         "1.0.74": "2020-08-31T23:54:25.949Z",
         "1.0.75": "2020-09-25T19:43:26.089Z",
         "1.0.76": "2020-11-11T17:03:05.772Z",
-        "1.0.77": "2020-11-12T15:14:22.922Z"
+        "1.0.77": "2020-11-12T15:14:22.922Z",
+        "1.0.78": "2020-12-11T20:27:28.398Z",
+        "1.0.79": "2020-12-17T01:17:22.533Z"
     },
     "maintainers": [
         {
-            "name": "chetanjk",
-            "email": "chetan.jk@gmail.com"
-        },
-        {
-            "name": "mpcsh",
-            "email": "m@mpc.sh"
-        },
-        {
-            "name": "amyegan",
-            "email": "amyegan@paypal.com"
-        },
-        {
-            "name": "shrkapoor",
-            "email": "shrkapoor@paypal.com"
-        },
-        {
-            "name": "briceshatzer",
-            "email": "brice.shatzer@gmail.com"
-        },
-        {
-            "name": "nbierdeman",
-            "email": "nbierdeman@paypal.com"
-        },
-        {
-            "name": "elizabethmv",
-            "email": "lizzyadeline@gmail.com"
-        },
-        {
-            "name": "mnicpt",
-            "email": "mnicpt@gmail.com"
-        },
-        {
-            "name": "antre",
-            "email": "antre@paypal.com"
-        },
-        {
-            "name": "mstuart",
-            "email": "stuartmark@gmail.com"
-        },
-        {
-            "name": "gregjopa",
-            "email": "grjopa@gmail.com"
-        },
-        {
-            "name": "visheei94",
-            "email": "vishakha94@outlook.com"
-        },
-        {
-            "name": "ravishekhar00",
-            "email": "ravi_shekhar00@yahoo.com"
-        },
-        {
-            "name": "jfurman",
-            "email": "mpscqw@gmail.com"
-        },
-        {
-            "name": "merlinpatt",
-            "email": "merlinpatt@gmail.com"
-        },
-        {
-            "name": "songz",
-            "email": "song@zheng.club"
-        },
-        {
-            "name": "rpalanikumar",
-            "email": "rpalanikumar@paypal.com"
-        },
-        {
-            "name": "rygilbert_paypal",
-            "email": "rygilbert@paypal.com"
-        },
-        {
-            "name": "tifzhou",
-            "email": "tifzhou@paypal.com"
-        },
-        {
-            "name": "seavenly",
-            "email": "nschott@paypal.com"
-        },
-        {
-            "name": "weihou",
-            "email": "weihou@paypal.com"
-        },
-        {
-            "name": "zhillb",
-            "email": "zach@zacharyhill.xyz"
-        },
-        {
-            "name": "bryanjenningz",
-            "email": "bryanjenningz@gmail.com"
-        },
-        {
-            "name": "joshbeam",
-            "email": "joshua.a.beam@gmail.com"
-        },
-        {
-            "name": "rajarampadmanathan",
-            "email": "prajarameee@gmail.com"
-        },
-        {
-            "name": "braintree",
-            "email": "team-sdk@getbraintree.com"
-        },
-        {
-            "name": "bladebarringer",
-            "email": "blade@crookedneighbor.com"
+            "name": "paypal-user",
+            "email": "DL-PP-NODEJS-SDK@paypal.com"
         },
         {
             "name": "bluepnume",
             "email": "daniel@bluesuncorp.co.uk"
         },
         {
-            "name": "paypal-user",
-            "email": "DL-PP-NODEJS-SDK@paypal.com"
+            "name": "bladebarringer",
+            "email": "blade@crookedneighbor.com"
+        },
+        {
+            "name": "braintree",
+            "email": "team-sdk@getbraintree.com"
+        },
+        {
+            "name": "rajarampadmanathan",
+            "email": "prajarameee@gmail.com"
+        },
+        {
+            "name": "joshbeam",
+            "email": "joshua.a.beam@gmail.com"
+        },
+        {
+            "name": "bryanjenningz",
+            "email": "bryanjenningz@gmail.com"
+        },
+        {
+            "name": "zhillb",
+            "email": "zach@zacharyhill.xyz"
+        },
+        {
+            "name": "weihou",
+            "email": "weihou@paypal.com"
+        },
+        {
+            "name": "seavenly",
+            "email": "nschott@paypal.com"
+        },
+        {
+            "name": "tifzhou",
+            "email": "tifzhou@paypal.com"
+        },
+        {
+            "name": "rygilbert_paypal",
+            "email": "rygilbert@paypal.com"
+        },
+        {
+            "name": "rpalanikumar",
+            "email": "rpalanikumar@paypal.com"
+        },
+        {
+            "name": "songz",
+            "email": "song@zheng.club"
+        },
+        {
+            "name": "merlinpatt",
+            "email": "merlinpatt@gmail.com"
+        },
+        {
+            "name": "jfurman",
+            "email": "mpscqw@gmail.com"
+        },
+        {
+            "name": "ravishekhar00",
+            "email": "ravi_shekhar00@yahoo.com"
+        },
+        {
+            "name": "visheei94",
+            "email": "vishakha94@outlook.com"
+        },
+        {
+            "name": "gregjopa",
+            "email": "grjopa@gmail.com"
+        },
+        {
+            "name": "mstuart",
+            "email": "stuartmark@gmail.com"
+        },
+        {
+            "name": "antre",
+            "email": "antre@paypal.com"
+        },
+        {
+            "name": "mnicpt",
+            "email": "mnicpt@gmail.com"
+        },
+        {
+            "name": "elizabethmv",
+            "email": "lizzyadeline@gmail.com"
+        },
+        {
+            "name": "nbierdeman",
+            "email": "nbierdeman@paypal.com"
+        },
+        {
+            "name": "briceshatzer",
+            "email": "brice.shatzer@gmail.com"
+        },
+        {
+            "name": "shrkapoor",
+            "email": "shrkapoor@paypal.com"
+        },
+        {
+            "name": "amyegan",
+            "email": "amyegan@paypal.com"
+        },
+        {
+            "name": "mpcsh",
+            "email": "m@mpc.sh"
+        },
+        {
+            "name": "chetanjk",
+            "email": "chetan.jk@gmail.com"
         }
     ],
     "description": "Utilities.",
@@ -8647,6 +9035,7 @@
     "bugs": {
         "url": "https://github.com/paypal/paypal-sdk-constants/issues"
     },
-    "readme": "paypal-sdk-constants\n--------------------\n\n[![npm version](https://img.shields.io/npm/v/@paypal/sdk-constants.svg?style=flat-square)](https://www.npmjs.com/package/@paypal/sdk-constants) [![build status](https://img.shields.io/travis/paypal/paypal-sdk-constants/master.svg?style=flat-square)](https://travis-ci.org/paypal/paypal-sdk-constants)\n\n[![dependencies Status](https://david-dm.org/paypal/paypal-sdk-constants/status.svg)](https://david-dm.org/paypal/paypal-sdk-constants) [![devDependencies Status](https://david-dm.org/paypal/paypal-sdk-constants/dev-status.svg)](https://david-dm.org/paypal/paypal-sdk-constants?type=dev)\n\nConstants for paypal sdk.\n\nQuick Start\n-----------\n\n#### Getting Started\n\n- Fork the module\n- Run setup: `npm run setup`\n- Start editing code in `./src` and writing tests in `./tests`\n- `npm run build`\n\n#### Building\n\n```bash\nnpm run build\n```\n\n#### Publishing\n\n- Publish your code: `npm run release` to add a patch\n  - Or `npm run release:path`, `npm run release:minor`, `npm run release:major`\n",
-    "readmeFilename": "README.md"
+    "readme": "paypal-sdk-constants\n--------------------\n\n[![build status][build-badge]][build]\n[![npm version][version-badge]][package]\n[![apache license][license-badge]][license]\n\n[build-badge]: https://img.shields.io/github/workflow/status/paypal/paypal-sdk-constants/build?logo=github&style=flat-square\n[build]: https://github.com/paypal/paypal-sdk-constants/actions?query=workflow%3Abuild\n[version-badge]: https://img.shields.io/npm/v/@paypal/sdk-constants.svg?style=flat-square\n[package]: https://www.npmjs.com/package/@paypal/sdk-constants\n[license-badge]: https://img.shields.io/npm/l/@paypal/sdk-constants.svg?style=flat-square\n[license]: https://github.com/paypal/paypal-sdk-constants/blob/master/LICENSE\n\nConstants for paypal sdk.\n\nQuick Start\n-----------\n\n#### Getting Started\n\n- Fork the module\n- Run setup: `npm run setup`\n- Start editing code in `./src` and writing tests in `./tests`\n- `npm run build`\n\n#### Building\n\n```bash\nnpm run build\n```\n\n#### Publishing\n\n- Publish your code: `npm run release` to add a patch\n  - Or `npm run release:path`, `npm run release:minor`, `npm run release:major`\n",
+    "readmeFilename": "README.md",
+    "license": "Apache-2.0"
 }

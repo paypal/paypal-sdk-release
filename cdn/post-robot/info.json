@@ -1,10 +1,10 @@
 {
     "_id": "post-robot",
-    "_rev": "242-e5740dd91bb4f18a85ede8072e1e05f0",
+    "_rev": "243-394bccfb11e5ec9be48e00ad1ba21b46",
     "name": "post-robot",
     "description": "Simple postMessage based server.",
     "dist-tags": {
-        "latest": "10.0.41"
+        "latest": "10.0.42"
     },
     "versions": {
         "2.0.3": {
@@ -26310,6 +26310,113 @@
                 "tmp": "tmp/post-robot_10.0.41_1601681450713_0.8996304865120937"
             },
             "_hasShrinkwrap": false
+        },
+        "10.0.42": {
+            "name": "post-robot",
+            "version": "10.0.42",
+            "description": "Simple postMessage based server.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js",
+                "flow-typed": "rm -rf flow-typed && flow-typed install",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --config-file ./node_modules/grumbler-scripts/config/.babelrc-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --display-optimization-bailout --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack -- $@",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug",
+                "changelog": "auto-changelog"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/post-robot.git"
+            },
+            "keywords": [
+                "cross-domain",
+                "cross domain",
+                "xdm",
+                "iframe",
+                "postmessage",
+                "krakenjs",
+                "kraken"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "auto-changelog": {
+                "output": "CHANGELOG.md",
+                "template": "compact",
+                "unreleased": false,
+                "commitLimit": 10,
+                "backfillLimit": 10,
+                "ignoreCommitPattern": "Dist"
+            },
+            "devDependencies": {
+                "auto-changelog": "^1.11.0",
+                "flow-bin": "^0.135.0",
+                "grumbler-scripts": "^3",
+                "mocha": "^4"
+            },
+            "dependencies": {
+                "belter": "^1.0.41",
+                "cross-domain-safe-weakmap": "^1.0.1",
+                "cross-domain-utils": "^2.0.0",
+                "universal-serialize": "^1.0.4",
+                "zalgo-promise": "^1.0.3"
+            },
+            "contributors": [
+                {
+                    "name": "Daniel Brain",
+                    "email": "dbrain@paypal.com"
+                }
+            ],
+            "gitHead": "7deb5efa9bf2ad2ed740ca62443e6476f4788447",
+            "bugs": {
+                "url": "https://github.com/krakenjs/post-robot/issues"
+            },
+            "homepage": "https://github.com/krakenjs/post-robot#readme",
+            "_id": "post-robot@10.0.42",
+            "_npmVersion": "6.4.1",
+            "_nodeVersion": "10.13.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-fuIuJblIbiAUJVKvttYZ1ZABhvrtAJgxZZ/TsWzzAdQGzkXOaewwgvFiGOSZRr0DywRaQs0Wvgxa7bFCYh8pfg==",
+                "shasum": "0371d2147ba465271c7362c492e0b5b332850de5",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/post-robot/tarballs/10.0.42.tgz",
+                "fileCount": 94,
+                "unpackedSize": 1641648,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfwvrMCRA9TVsSAnZWagAALswQAJwao2CFGIeWdXHbOwBO\nr3Qc4/cCsTcBp/LXLGLLSFn8WeNXQ/819z79aaX3UuJv2uaJy8f/Cv5Iy+tp\np9GnuNMBQT7dggTrJdI0F+3gqxc4wmdGOVNz5GSNzyzq6tH/fFUPvobcm9th\nVTpAXW5vnYQQxfqZUvQFugfALLeiJXAH4QPxAHYyoqLwRBUG0f4RTS5fGpXG\nBOlPSPFtkC8SPxvvYXkBifyu+1bcB8f7k20PBn1Thjgd13pcvGD45KqLjv+k\nftovSRMgjGxRKtoR9ZT0wFPXV0nlYTyBgRmPSIpHRAlNZNnC5l5wLAiUn1yN\nsyjLjq5muI8QWfCtRHepvvUw/O0IGMHkI0/yVaEWnK+ybK0BtN8OJBUs+wHo\n6zptfs88++1ygxCZe54whWqMKt3j9ZB/0SZAuaEfpY8CPNzDz82vRJH7Q5Dm\nvnsLeR2yL0m05OvK+cEzPEE5fZX3dK9SQu0cQfAHbT1lGrH+gSOjnWdt930M\nR6TSFoDIj/YngbUjL3P/63K4hlQrB0ccTFIifIiO+F9FlPXKh2cEr6GaQtpB\n6djD9WOUhO1A1SahQIXc6yYrkVbhbs0scchkOKFwll+QbghbkaIGpPsxovNs\ngxLaip6FfOXMUoMCn4Tq0c156PIyC355/zWzTEZY4qh8h5nOzn4Mylg6wv2Y\n36mA\r\n=LYdq\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "directories": {},
+            "maintainers": [
+                {
+                    "name": "mstuart",
+                    "email": "stuartmark@gmail.com"
+                },
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/post-robot_10.0.42_1606613707524_0.22614167539591357"
+            },
+            "_hasShrinkwrap": false
         }
     },
     "readme": "# post-robot [:]-\\\\-<\n\nCross domain post-messaging on the client side, using a simple listener/client pattern.\n\nSend a message to another window, and:\n\n- [Get a response](#simple-listener-and-sender-with-error-handling) from the window you messaged\n- [Pass functions](#functions) to another window, across different domains\n- [Handle any errors](#simple-listener-and-sender-with-error-handling) that prevented your message from getting through\n- Don't worry about serializing your messages; [just send javascript objects](#simple-listener-and-sender-with-error-handling)\n- Use [promises](#listener-with-promise-response) or [async/await](#async--await) to wait for responses from windows you message\n- Set up a [secure message channel](#secure-message-channel) between two windows on a certain domain\n- Send messages between a [parent and a popup window](#parent-to-popup-messaging) in IE\n\n## Serialization\n\npost-robot will serialize and deserialize the following data types in messages:\n\n- Objects, arrays, strings, numbers, booleans, null\n  - Note: this includes any JSON-serializable types\n- Functions\n  - Note: the function passed will be a [reference to the original function](#functions), and the deserialized function will always return a `Promise` - specifically a [`ZalgoPromise`](https://github.com/krakenjs/zalgo-promise)\n- Promises\n  - Note: deserialized promises will be instances of [`ZalgoPromise`](https://github.com/krakenjs/zalgo-promise)\n- Error objects\n  - e.g. `new Error(\"This error will self-destruct in 10, 9, 8...\")`\n- Regex objects\n  - e.g. `/[a-zA-Z0-9]*/`\n\n## Simple listener and sender\n\n```javascript\n// Set up a listener\n\npostRobot.on('getUser', function(event) {\n\n    // Have it return some data to the calling window\n\n    return {\n        id:   1234,\n        name: 'Zippy the Pinhead',\n\n        // Yep, we're even returning a function to the other window!\n\n        logout: function() {\n            return $currentUser.logout();\n        }\n    };\n});\n```\n\n```javascript\n// Call the listener, on a different window, on a different domain\n\npostRobot.send(someWindow, 'getUser', { id: 1337 }).then(function(event) {\n    var user = event.data;\n\n    console.log(event.source, event.origin, 'Got user:', user);\n\n    // Call the user.logout function from the other window!\n\n    user.logout();\n\n}).catch(function(err) {\n\n    // Handle any errors that stopped our call from going through\n\n    console.error(err);\n});\n```\n\n## Listener with promise response\n\n```javascript\npostRobot.on('getUser', function(event) {\n\n    return getUser(event.data.id).then(function(user) {\n        return {\n            name: user.name\n        };\n    });\n});\n```\n\n## One-off listener\n\n```javascript\npostRobot.once('getUser', function(event) {\n\n    return {\n        name: 'Noggin the Nog'\n    };\n});\n```\n\n## Cancelling a listener\n\n```javascript\nvar listener = postRobot.on('getUser', function(event) {\n    return {\n        id:   event.data.id,\n        name: 'Zippy the Pinhead'\n    };\n});\n\nlistener.cancel();\n```\n\n## Listen for messages from a specific window\n\n```javascript\npostRobot.on('getUser', { window: window.parent }, function(event) {\n\n    return {\n        name: 'Guybrush Threepwood'\n    };\n});\n```\n\n## Listen for messages from a specific domain\n\n```javascript\npostRobot.on('getUser', { domain: 'http://zombo.com' }, function(event) {\n\n    return {\n        name: 'Manny Calavera'\n    };\n});\n```\n\n## Set a timeout for a response\n\n```javascript\npostRobot.send(someWindow, 'getUser', { id: 1337 }, { timeout: 5000 }).then(function(event) {\n    console.log(event.source, event.origin, 'Got user:', event.data.name);\n\n}).catch(function(err) {\n    console.error(err);\n});\n```\n\n## Send a message to a specific domain\n\n```javascript\npostRobot.send(someWindow, 'getUser', { id: 1337 }, { domain: 'http://zombo.com' }).then(function(event) {\n    console.log(event.source, event.origin, 'Got user:', event.data.name);\n});\n```\n\n## Async / Await\n\n```javascript\npostRobot.on('getUser', async ({ source, origin, data }) => {\n\n    let user = await getUser(data.id);\n\n    return {\n        id:   data.id,\n        name: user.name\n    };\n});\n```\n\n```javascript\ntry {\n    let { source, origin, data } = await postRobot.send(someWindow, `getUser`, { id: 1337 });\n    console.log(source, origin, 'Got user:', data.name);\n\n} catch (err) {\n    console.error(err);\n}\n```\n\n## Secure Message Channel\n\nFor security reasons, it is recommended that you always explicitly specify the window and domain you want to listen\nto and send messages to. This creates a secure message channel that only works between two windows on the specified domain:\n\n```javascript\npostRobot.on('getUser', { window: childWindow, domain: 'http://zombo.com' }, function(event) {\n    return {\n        id:   event.data.id,\n        name: 'Frodo'\n    };\n});\n```\n\n```javascript\npostRobot.send(someWindow, 'getUser', { id: 1337 }, { domain: 'http://zombo.com' }).then(function(event) {\n    console.log(event.source, event.origin, 'Got user:', event.data.name);\n\n}).catch(function(err) {\n    console.error(err);\n});\n```\n\n## Functions\n\nPost robot lets you send across functions in your data payload, fairly seamlessly.\n\nFor example:\n\n```javascript\npostRobot.on('getUser', function(event) {\n    return {\n        id:     event.data.id,\n        name:   'Nogbad the Bad',\n\n        logout: function() {\n            currentUser.logout();\n        }\n    };\n});\n```\n\n```javascript\npostRobot.send(myWindow, 'getUser', { id: 1337 }).then(function(event) {\n    var user = event.data;\n\n    user.logout().then(function() {\n        console.log('User was logged out');\n    });\n});\n```\n\nThe function `user.logout()` will be called on the **original** window. Post Robot transparently messages back to the\noriginal window, calls the function that was passed, then messages back with the result of the function.\n\nBecause this uses post-messaging behind the scenes and is therefore always async, `user.logout()` will **always** return a promise, and must be `.then`'d or `await`ed.\n\n\n## Parent to popup messaging\n\nUnfortunately, IE blocks direct post messaging between a parent window and a popup, on different domains.\n\nIn order to use post-robot in IE9+ with popup windows, you will need to set up an invisible 'bridge' iframe on your parent page:\n\n```\n   [ Parent page ]\n\n+---------------------+          [ Popup ]\n|        xx.com       |\n|                     |      +--------------+\n|  +---------------+  |      |    yy.com    |\n|  |    [iframe]   |  |      |              |\n|  |               |  |      |              |\n|  | yy.com/bridge |  |      |              |\n|  |               |  |      |              |\n|  |               |  |      |              |\n|  |               |  |      |              |\n|  |               |  |      +--------------+\n|  +---------------+  |\n|                     |\n+---------------------+\n```\n\n\na. Use the special `ie` build of post-robot: `dist/post-robot.ie.js`.\n\nb. Create a bridge path on the domain of your popup, for example `http://yy.com/bridge.html`, and include post-robot:\n\n```html\n<script src=\"http://yy.com/js/post-robot.ie.js\"></script>\n```\n\nc. In the parent page on `xx.com` which opens the popup, include the following javascript:\n\n```html\n<script>\n    postRobot.bridge.openBridge('http://yy.com/bridge.html');\n</script>\n```\n\nNow `xx.com` and `yy.com` can communicate freely using post-robot, in IE.\n",
@@ -26324,7 +26431,7 @@
         }
     ],
     "time": {
-        "modified": "2020-10-02T23:30:54.183Z",
+        "modified": "2020-11-29T01:35:10.022Z",
         "created": "2016-05-28T01:21:56.733Z",
         "2.0.3": "2016-05-28T01:21:56.733Z",
         "2.0.4": "2016-05-29T03:54:25.045Z",
@@ -26566,7 +26673,8 @@
         "10.0.38": "2020-08-03T01:08:38.205Z",
         "10.0.39": "2020-08-11T03:24:17.156Z",
         "10.0.40": "2020-09-30T02:42:46.621Z",
-        "10.0.41": "2020-10-02T23:30:50.959Z"
+        "10.0.41": "2020-10-02T23:30:50.959Z",
+        "10.0.42": "2020-11-29T01:35:07.666Z"
     },
     "repository": {
         "type": "git",

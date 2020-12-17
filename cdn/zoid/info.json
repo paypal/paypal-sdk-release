@@ -1,9 +1,9 @@
 {
     "_id": "zoid",
-    "_rev": "123-c44a98d7a765e9afbd94e1706be9243a",
+    "_rev": "124-deba7137f4f4022f63103cb845003e0c",
     "name": "zoid",
     "dist-tags": {
-        "latest": "9.0.62"
+        "latest": "9.0.63"
     },
     "versions": {
         "1.0.0": {
@@ -11284,12 +11284,112 @@
                 "tmp": "tmp/zoid_9.0.62_1601848111084_0.662550229991854"
             },
             "_hasShrinkwrap": false
+        },
+        "9.0.63": {
+            "name": "zoid",
+            "version": "9.0.63",
+            "description": "Cross domain components.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "demo": "serve . -l 1337",
+                "lint": "eslint --ext .js --ext .jsx src/ test/ *.js",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "clear-dist": "rm -rf dist/*;",
+                "build": "npm run test && npm run babel && npm run clear-dist && npm run webpack -- $@",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/zoid.git"
+            },
+            "keywords": [
+                "cross-domain",
+                "cross domain",
+                "components",
+                "component",
+                "krakenjs",
+                "kraken"
+            ],
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 41",
+                "firefox >= 43",
+                "safari >= 8",
+                "opera >= 23"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "0.135.0",
+                "grumbler-scripts": "^3",
+                "jsx-pragmatic": "^2",
+                "mocha": "^4",
+                "serve": "^10.0.0"
+            },
+            "dependencies": {
+                "belter": "^1.0.123",
+                "cross-domain-utils": "^2.0.33",
+                "post-robot": "^10",
+                "zalgo-promise": "^1.0.45"
+            },
+            "gitHead": "3281f76f97a10939bd38fd881eb513692be4aac6",
+            "bugs": {
+                "url": "https://github.com/krakenjs/zoid/issues"
+            },
+            "homepage": "https://github.com/krakenjs/zoid#readme",
+            "_id": "zoid@9.0.63",
+            "_npmVersion": "6.4.1",
+            "_nodeVersion": "10.13.0",
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "dist": {
+                "integrity": "sha512-c9OccNUlOV9KuTKJJRhCU3B5SRHObTTiPAUayKkBQ0/qZugfh59MDW+zkFDR8IZN+c7NB/R90FCIpAfBp8+U/g==",
+                "shasum": "87ca9585c11788a33db4de6a515cef8a02faf63c",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/zoid/tarballs/9.0.63.tgz",
+                "fileCount": 44,
+                "unpackedSize": 3098551,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJf0DL6CRA9TVsSAnZWagAATRkP/2WOhPLS7x/FtTKqXFIz\n0R08gIfzCjW17fFzMR2AlhvuSPD9aKi9la+LLVKgmplGmW/64uHYoViFkU1o\nDfg7NUYPJ8dHNkZZbUe4PQp1FLgN5n9NN3RV9asWt4FdhMkCo+j57THLcKye\nrtQZZiXqfQ7xdBCN+KbFZo9nechQEOHLDhuYeOllB3EbUYtD0gG11L1w1LAK\nI2w5MvHYGkzhc+x/RLQUaxKOI6/VzB23IGrtWMA7bd8XwoEpNYOebr06n0V2\ndnZ3BB2Toi7u3MdTni25isRstqmSeknDWbEXwJAQGx3bv9aqEVqAVkyl2mun\nJ57x8C3oko73q5Hac8wUUA2+wnxLWycc/Shq5NAqvBtPAc5e9CEX5/RtGpIN\nW86PlU1Q4+SmYQC94fyN9rB9Y/J1vt0rSHRolhWd5BKFxvxTQXsiL33tRMgW\nx4yM0/kdlsO/zSZfVMjh5DoPGL0qxKsg6aT6OoRdhksenSiwTYPolJ96CcWv\nila5CND6CFJs1IFNGaOzkkxNUGNZv2cw3QjlgHuaM0iBPJDBioIH98/yMdzj\nBAmjQM19s1e67xrZT9eUI+11nLHMXZDDRpjJNqmoKxgQ4x4t0IjjHnCsnJ7w\nC1d3V8HgffWk3viTp7nG+CZiUW72+Yc8tctQG6o4tEK5XSK45QHdIG2Wb95V\nhyRy\r\n=IbOI\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "directories": {},
+            "maintainers": [
+                {
+                    "name": "mstuart",
+                    "email": "stuartmark@gmail.com"
+                },
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/zoid_9.0.63_1607480057666_0.832037865500675"
+            },
+            "_hasShrinkwrap": false
         }
     },
     "time": {
         "created": "2018-05-17T00:16:28.328Z",
         "1.0.0": "2018-05-17T00:16:28.383Z",
-        "modified": "2020-10-04T21:48:33.706Z",
+        "modified": "2020-12-09T02:14:20.178Z",
         "6.0.61": "2018-05-30T20:58:34.990Z",
         "6.0.62": "2018-05-31T19:40:24.307Z",
         "6.0.63": "2018-05-31T19:50:30.822Z",
@@ -11407,7 +11507,8 @@
         "9.0.59": "2020-09-30T02:43:49.443Z",
         "9.0.60": "2020-09-30T19:27:21.239Z",
         "9.0.61": "2020-10-02T23:45:00.442Z",
-        "9.0.62": "2020-10-04T21:48:31.264Z"
+        "9.0.62": "2020-10-04T21:48:31.264Z",
+        "9.0.63": "2020-12-09T02:14:17.898Z"
     },
     "maintainers": [
         {
