@@ -1,9 +1,16 @@
 PayPal Braintree Client SDK
 ---------------------------
 
-[![npm version](https://img.shields.io/npm/v/@paypal/sdk-release.svg?style=flat-square)](https://www.npmjs.com/package/@paypal/sdk-release) [![build status](https://img.shields.io/travis/paypal/paypal-sdk-release/master.svg?style=flat-square)](https://travis-ci.org/paypal/paypal-sdk-release)
+[![build status][build-badge]][build]
+[![npm version][version-badge]][package]
+[![apache license][license-badge]][license]
 
-[![dependencies Status](https://david-dm.org/paypal/paypal-sdk-release/status.svg)](https://david-dm.org/paypal/paypal-sdk-release) [![devDependencies Status](https://david-dm.org/paypal/paypal-sdk-release/dev-status.svg)](https://david-dm.org/paypal/paypal-sdk-release?type=dev)
+[build-badge]: https://img.shields.io/github/workflow/status/paypal/paypal-sdk-release/build?logo=github&style=flat-square
+[build]: https://github.com/paypal/paypal-sdk-release/actions?query=workflow%3Abuild
+[version-badge]: https://img.shields.io/npm/v/@paypal/sdk-release.svg?style=flat-square
+[package]: https://www.npmjs.com/package/@paypal/sdk-release
+[license-badge]: https://img.shields.io/github/license/paypal/paypal-sdk-release.svg?style=flat-square
+[license]: https://github.com/paypal/paypal-sdk-release/blob/master/LICENSE
 
 Wrapper module to test and release combined client SDK modules for PayPal and Braintree.
 
