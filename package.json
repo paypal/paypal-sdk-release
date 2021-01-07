@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "validate-components": "babel-node test/validate-components",
+    "validate-components-for-publish": "babel-node test/validate-components-for-publish",
     "validate-flat": "babel-node test/validate-flat",
     "cdnify": "grabthar-cdnify --recursive --cdn='https://www.paypalobjects.com'",
     "reinstall": "rm -f ./package-lock.json && rm -rf ./node_modules && npm install && git checkout package-lock.json && git checkout package.json",
@@ -20,7 +21,8 @@
     "activate": "CDN='https://www.paypalobjects.com' grabthar-activate",
     "flatten": "grabthar-flatten",
     "full-release": "npm run upgrade && npm run release && npm run activate",
-    "postinstall": "npm_config_registry=https://npm.paypal.com npm install @paypalcorp/web --no-save --proxy='null' --https-proxy='null' || echo 'Unable to install cdnx cli tools'"
+    "postinstall": "npm_config_registry=https://npm.paypal.com npm install @paypalcorp/web --no-save --proxy='null' --https-proxy='null' || echo 'Unable to install cdnx cli tools'",
+    "prepublishOnly": "npm run validate-components-for-publish"
   },
   "files": [
     "package-lock.json",
