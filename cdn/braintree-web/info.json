@@ -1,10 +1,10 @@
 {
     "_id": "braintree-web",
-    "_rev": "200-33b3c25da1f8cac20efd9b8fa3d0604c",
+    "_rev": "201-dc115bb58344b03491266de6f3418a12",
     "name": "braintree-web",
     "description": "A suite of tools for integrating Braintree in the browser",
     "dist-tags": {
-        "latest": "3.70.0",
+        "latest": "3.71.0",
         "beta": "3.0.0-beta.12",
         "hotfix": "2.15.7",
         "legacy": "2.32.1",
@@ -10891,6 +10891,94 @@
                 "tmp": "tmp/braintree-web_3.70.0_1608668103895_0.3183053543498886"
             },
             "_hasShrinkwrap": false
+        },
+        "3.71.0": {
+            "name": "braintree-web",
+            "version": "3.71.0",
+            "license": "MIT",
+            "main": "index.js",
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/braintree-web.git"
+            },
+            "dependencies": {
+                "@braintree/asset-loader": "0.4.4",
+                "@braintree/browser-detection": "1.11.0",
+                "@braintree/class-list": "0.2.0",
+                "@braintree/event-emitter": "0.4.1",
+                "@braintree/extended-promise": "0.4.1",
+                "@braintree/iframer": "1.1.0",
+                "@braintree/sanitize-url": "5.0.0",
+                "@braintree/uuid": "0.1.0",
+                "@braintree/wrap-promise": "2.1.0",
+                "card-validator": "8.1.0",
+                "credit-card-type": "9.1.0",
+                "framebus": "5.0.0",
+                "inject-stylesheet": "4.0.0",
+                "promise-polyfill": "8.2.0",
+                "restricted-input": "3.0.3"
+            },
+            "browser": {
+                "american-express": "./dist/browser/american-express.js",
+                "apple-pay": "./dist/browser/apple-pay.js",
+                "client": "./dist/browser/client.js",
+                "data-collector": "./dist/browser/data-collector.js",
+                "google-payment": "./dist/browser/google-payment.js",
+                "hosted-fields": "./dist/browser/hosted-fields.js",
+                "local-payment": "./dist/browser/local-payment.js",
+                "masterpass": "./dist/browser/masterpass.js",
+                "payment-request": "./dist/browser/payment-request.js",
+                "paypal": "./dist/browser/paypal.js",
+                "paypal-checkout": "./dist/browser/paypal-checkout.js",
+                "preferred-payment-methods": "./dist/browser/preferred-payment-methods.js",
+                "three-d-secure": "./dist/browser/three-d-secure.js",
+                "unionpay": "./dist/browser/unionpay.js",
+                "us-bank-account": "./dist/browser/us-bank-account.js",
+                "vault-manager": "./dist/browser/vault-manager.js",
+                "venmo": "./dist/browser/venmo.js",
+                "visa-checkout": "./dist/browser/visa-checkout.js",
+                "./index.js": "./dist/browser/index.js"
+            },
+            "description": "A suite of tools for integrating Braintree in the browser",
+            "keywords": [
+                "braintree",
+                "payments"
+            ],
+            "author": {
+                "name": "braintree",
+                "email": "code@getbraintree.com"
+            },
+            "homepage": "https://github.com/braintree/braintree-web",
+            "bugs": {
+                "url": "https://github.com/braintree/braintree-web/issues"
+            },
+            "_id": "braintree-web@3.71.0",
+            "_nodeVersion": "12.14.0",
+            "_npmVersion": "6.13.4",
+            "dist": {
+                "integrity": "sha512-1HH5sR49khET+zia3A/JP8Jn+8OlAKo0ps7ambub15NY8To88oPZ9XXAL0Qi13aObWEU8NF3jvPyBmmI952GZg==",
+                "shasum": "bf918b241414995ef7b2e7825d218933320b5e00",
+                "tarball": "https://registry.npmjs.org/braintree-web/-/braintree-web-3.71.0.tgz",
+                "fileCount": 181,
+                "unpackedSize": 3073392,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJf/x56CRA9TVsSAnZWagAASFcP/2R6fmb5W1BNgMMuRue0\nrOzWPO0QOc8wPXj8ROvVqhIhS64WDNHll0VfiDxgekD0ypDQauj3nksCtCz3\nDUcUAn+hruZqti9I1prR53SJJUIP6DS1QYMRT46aGpsaEFh3wAV4W1U0M3CL\nYzMl75tXgfITAXK7TBG7fWGbgv01zXlIyHi1XPxN9KOwgZ88sAQnoRCMQufw\nrnoZMM0shBGPNkJayCXcH5VOPEIqlr2mrcmV1zz3/cw9ZSzBXwUswaIxaOFb\nmJoLh/Lzsj8sz15zu1j3e6ggSGv0m1TveYIoW7yQJ+j03WpyMBgdrMtQUsHO\nKSFsh5PRYxvPsqjNlvfhN3BYfk2PBtHUpaQ2lsbCN+r4wSZm6/QQw29eeIB8\nPPdbX4bIlenu/ttHA6uobImiEru/oEe70bXROuAUIlMMNfa5rSc8+Yth4U0v\nUrRn8/jh2xQeJPqJgOGhODMK1ey/QNjkr6KjWKrNfdTlaRn9768UICdP6qXN\n85F2QhTi/tYwjncUUrOQs/slgqB+pQe1S5tRMj5MMi2KPVwvM0ySS5L/vc1P\nTYcqTv3oTlkNevNc32zOKqV+wpEvGNwy86y6oDekB6dCtAYeCp4WN33D45oL\n4OwVsn7ypu+bZwTBgPMVSov6iK+06bgw6QOiBlEbH2X6HiMcsHJns+WsFbNS\nT/w6\r\n=3aIP\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "_npmUser": {
+                "name": "braintree",
+                "email": "team-sdk@getbraintree.com"
+            },
+            "directories": {},
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "team-sdk@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/braintree-web_3.71.0_1610555002061_0.8985332465010558"
+            },
+            "_hasShrinkwrap": false
         }
     },
     "readme": "braintree-web\n=============\n\nA suite of tools for integrating Braintree in the browser.\n\nThis is the repo to submit issues if you have any problems or questions about a Braintree JavaScript integration.\n\nFor a ready-made payment UI, see [Braintree Web Drop-in](https://github.com/braintree/braintree-web-drop-in).\n\nInstall\n=======\n\n```\nnpm install braintree-web\n```\n\n```\nbower install braintree-web\n```\n\nUsage\n=====\n\nFor more thorough documentation, visit [the JavaScript client SDK docs](https://developers.braintreepayments.com/guides/client-sdk/javascript/v3).\n\nIf you are upgrading from version 2.x, take a look at our [migration guide](https://developers.braintreepayments.com/guides/client-sdk/migration/javascript/v3).\n\n#### Hosted Fields integration\n\n```html\n<form action=\"/\" id=\"my-sample-form\">\n  <input type=\"hidden\" name=\"payment_method_nonce\">\n  <label for=\"card-number\">Card Number</label>\n  <div id=\"card-number\"></div>\n\n  <label for=\"cvv\">CVV</label>\n  <div id=\"cvv\"></div>\n\n  <label for=\"expiration-date\">Expiration Date</label>\n  <div id=\"expiration-date\"></div>\n\n  <input id=\"my-submit\" type=\"submit\" value=\"Pay\" disabled/>\n</form>\n```\n\n```javascript\nvar submitBtn = document.getElementById('my-submit');\nvar form = document.getElementById('my-sample-form');\n\nbraintree.client.create({\n  authorization: CLIENT_AUTHORIZATION\n}, clientDidCreate);\n\nfunction clientDidCreate(err, client) {\n  braintree.hostedFields.create({\n    client: client,\n    styles: {\n      'input': {\n        'font-size': '16pt',\n        'color': '#3A3A3A'\n      },\n\n      '.number': {\n        'font-family': 'monospace'\n      },\n\n      '.valid': {\n        'color': 'green'\n      }\n    },\n    fields: {\n      number: {\n        selector: '#card-number'\n      },\n      cvv: {\n        selector: '#cvv'\n      },\n      expirationDate: {\n        selector: '#expiration-date'\n      }\n    }\n  }, hostedFieldsDidCreate);\n}\n\nfunction hostedFieldsDidCreate(err, hostedFields) {\n  submitBtn.addEventListener('click', submitHandler.bind(null, hostedFields));\n  submitBtn.removeAttribute('disabled');\n}\n\nfunction submitHandler(hostedFields, event) {\n  event.preventDefault();\n  submitBtn.setAttribute('disabled', 'disabled');\n\n  hostedFields.tokenize(function (err, payload) {\n    if (err) {\n      submitBtn.removeAttribute('disabled');\n      console.error(err);\n    } else {\n      form['payment_method_nonce'].value = payload.nonce;\n      form.submit();\n    }\n  });\n}\n```\n\n#### Advanced integration\n\nTo be eligible for the easiest level of PCI compliance (SAQ A), payment fields cannot be hosted on your checkout page. For an alternative to the following, use Hosted Fields.\n\n```javascript\nbraintree.client.create({\n  authorization: CLIENT_AUTHORIZATION\n}, function (err, client) {\n  client.request({\n    endpoint: 'payment_methods/credit_cards',\n    method: 'post',\n    data: {\n      creditCard: {\n        number: '4111111111111111',\n        expirationDate: '10/20',\n        cvv: '123',\n        billingAddress: {\n          postalCode: '12345'\n        }\n      }\n    }\n  }, function (err, response) {\n    // Send response.creditCards[0].nonce to your server\n  });\n});\n```\n\nFor more examples, [see the reference](https://braintree.github.io/braintree-web/current/Client.html#request).\n\n#### Promises\n\nAll the asynchronous methods will return a `Promise` if no callback is provided.\n\n```js\nvar submitBtn = document.getElementById('my-submit');\nvar yourStylesConfig = { /* your Hosted Fields `styles` config */ };\nvar yourFieldsConfig = { /* your Hosted Hields `fields` config */ };\n\nbraintree.client.create({authorization: CLIENT_AUTHORIZATION}).then(function (client) {\n  return braintree.hostedFields.create({\n    client: client,\n    styles: yourStylesConfig,\n    fields: yourFieldsConfig\n  });\n}).then(function (hostedFields) {\n  submitBtn.addEventListener('click', function (event) {\n    event.preventDefault();\n    submitBtn.setAttribute('disabled', 'disabled');\n\n    hostedFields.tokenize().then(function (payload) {\n      // send payload.nonce to your server\n    }).catch(function (err) {\n      submitBtn.removeAttribute('disabled');\n      console.error(err);\n    });\n  });\n});\n```\n\nReleases\n========\n\nSubscribe to this repo to be notified when SDK releases go out.\n\nLicense\n=======\n\nThe Braintree JavaScript SDK is open source and available under the MIT license. See the [LICENSE](LICENSE) file for more info.\n",
@@ -10901,7 +10989,7 @@
         }
     ],
     "time": {
-        "modified": "2020-12-22T20:15:06.573Z",
+        "modified": "2021-01-13T16:23:24.975Z",
         "created": "2014-11-14T21:19:52.548Z",
         "2.3.3": "2014-11-14T21:19:52.548Z",
         "2.5.0": "2015-02-17T23:52:18.772Z",
@@ -11086,7 +11174,8 @@
         "3.67.0": "2020-09-29T19:29:45.409Z",
         "3.68.0": "2020-10-13T16:20:44.371Z",
         "3.69.0": "2020-11-05T20:29:15.507Z",
-        "3.70.0": "2020-12-22T20:15:04.331Z"
+        "3.70.0": "2020-12-22T20:15:04.331Z",
+        "3.71.0": "2021-01-13T16:23:22.647Z"
     },
     "homepage": "https://github.com/braintree/braintree-web",
     "keywords": [
