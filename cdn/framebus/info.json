@@ -1,10 +1,10 @@
 {
     "_id": "framebus",
-    "_rev": "23-a31cf5219902c7cad0a42c553a3fa3ec",
+    "_rev": "24-980a2091134c0573e5e002127c6e86a6",
     "name": "framebus",
     "description": "Framebus allows you to easily send messages across frames (and iframes) with a simple bus.",
     "dist-tags": {
-        "latest": "5.0.0",
+        "latest": "5.1.0",
         "v5-beta": "5.0.0-rc.1"
     },
     "versions": {
@@ -1707,9 +1707,108 @@
                 "tmp": "tmp/framebus_5.0.0_1604353493495_0.3527815613947167"
             },
             "_hasShrinkwrap": false
+        },
+        "5.1.0": {
+            "name": "framebus",
+            "description": "Framebus allows you to easily send messages across frames (and iframes) with a simple bus.",
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/framebus.git"
+            },
+            "homepage": "https://github.com/braintree/framebus",
+            "version": "5.1.0",
+            "main": "dist/index.js",
+            "scripts": {
+                "prepublishOnly": "npm run build",
+                "prebuild": "prettier --write .",
+                "build": "tsc --declaration",
+                "lint": "eslint --ext js,ts .",
+                "pretest": "npm run lint",
+                "test:unit": "jest spec/unit/",
+                "pretest:functional": "gulp functional:prep",
+                "test:functional": "wdio wdio.conf.js",
+                "test": "npm run test:unit && npm run test:functional",
+                "prestart": "npm run pretest:functional",
+                "start": "./bin/www"
+            },
+            "license": "MIT",
+            "author": {
+                "name": "braintree",
+                "email": "code@getbraintree.com"
+            },
+            "dependencies": {
+                "@braintree/uuid": "^0.1.0"
+            },
+            "devDependencies": {
+                "@types/jest": "^26.0.19",
+                "@wdio/cli": "^6.11.3",
+                "@wdio/local-runner": "^6.11.3",
+                "@wdio/mocha-framework": "^6.11.0",
+                "@wdio/spec-reporter": "^6.11.0",
+                "@wdio/sync": "^6.11.0",
+                "async": "^3.2.0",
+                "browserify": "^17.0.0",
+                "chromedriver": "^87.0.5",
+                "del": "^6.0.0",
+                "ejs": "^3.1.5",
+                "eslint": "^7.17.0",
+                "eslint-config-braintree": "5.0.0-typescript-prep-rc.19",
+                "express": "^4.10.4",
+                "gulp": "^4.0.2",
+                "gulp-concat": "^2.4.2",
+                "gulp-remove-code": "^3.0.4",
+                "gulp-size": "^3.0.0",
+                "gulp-streamify": "^1.0.2",
+                "gulp-uglify": "^3.0.2",
+                "jest": "^26.6.3",
+                "morgan": "^1.10.0",
+                "prettier": "^2.2.1",
+                "ts-jest": "^26.4.4",
+                "tsify": "^5.0.2",
+                "typescript": "^4.1.3",
+                "vinyl-buffer": "^1.0.1",
+                "vinyl-source-stream": "^2.0.0",
+                "wdio-chromedriver-service": "^6.0.4"
+            },
+            "jest": {
+                "preset": "ts-jest",
+                "restoreMocks": true,
+                "resetMocks": true
+            },
+            "gitHead": "f4fb96df2ca06a1c0ea9028b351a36217e79c2a1",
+            "bugs": {
+                "url": "https://github.com/braintree/framebus/issues"
+            },
+            "_id": "framebus@5.1.0",
+            "_nodeVersion": "14.15.4",
+            "_npmVersion": "6.14.10",
+            "dist": {
+                "integrity": "sha512-h8vgBMmLIU+1y8Zh/NzwSlwWaBO3UT/ZPDk0/CqwEdEdMsjjUN7Pzn7/JV3O8g84TYu6xkf7fgXIoYBRYDx4/w==",
+                "shasum": "3a22a390c7eab194664f8e68f9b0d7d21762c404",
+                "tarball": "https://registry.npmjs.org/framebus/-/framebus-5.1.0.tgz",
+                "fileCount": 34,
+                "unpackedSize": 33926,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgEbyNCRA9TVsSAnZWagAAvpYQAIW9cDyotBz1FfZW+gKJ\nu+vAxAyoqv6ebbClnVYOLcfYsQdlydhubFQyf6blMsYk/SFCY8sk4qtmGU5G\ntsOkCCGn4/rXkdXhEyTMIBctdKZRtBZJnIlk31MPKT65uZA2YKues7NUy1Rx\ncv3uimTZdih49nOgDh8l70FfSL9rZ6H0pfDc+fXf7ow4jp4kz4SfPDlnTEA/\noJ3fVKYmHN9WyO+QeLnAgrFf7YwUtP3FAzT3e+d/tw77zZy+q1Kfbj26FFB5\nrq89SW/ggs8qUqXSIRMBYVW4FIEu2ih4j+5BdPri+bHDRW7BkN6w69iUUBT/\nvA4uCqq1b+6GCwA6lPdes0QWi3wXZLbMt/pCY5BRVTESZ7uFMCAgJp/6lKHI\nvLE25OFQH+G+LqKhD6kgmesWqhfJlZ3gZwFa0Yq8LSvAj1MSpaKGQcReTPZR\nY6nhDcuXqNI/AsfVkhA1NMFWXJSrVmMqj6gLzJobI5heff+x8MxpjI8V26gy\nHcrLE81kpZF5l36XofPv63AaPv4EW9fqqH93DVZaqW+madsUGESMc1j4ruOa\nIB62EPuvu+MAAEHr4jRISkRxCxc76fW7hf6vaKB3nNrP2vaLdd8Wg7cslld/\nTDcWv3lR73JWBjKRbIx/invxBi6rgnXaQaO/mHKSXKXZHB8MctVhR2SzNMa+\n+bTQ\r\n=8cKs\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "_npmUser": {
+                "name": "braintree",
+                "email": "team-sdk@getbraintree.com"
+            },
+            "directories": {},
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "team-sdk@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/framebus_5.1.0_1611775116862_0.6798688785788669"
+            },
+            "_hasShrinkwrap": false
         }
     },
-    "readme": "# Framebus [![Build Status](https://travis-ci.org/braintree/framebus.svg)](https://travis-ci.org/braintree/framebus) [![npm version](https://badge.fury.io/js/framebus.svg)](http://badge.fury.io/js/framebus)\n\nFramebus allows you to easily send messages across frames (and iframes) with a simple bus.\n\nIn one frame:\n\n```js\nvar Framebus = require(\"framebus\");\nvar bus = new Framebus();\n\nbus.emit(\"message\", {\n  from: \"Ron\",\n  contents: \"they named it...San Diago\",\n});\n```\n\nIn another frame:\n\n```js\nvar Framebus = require(\"framebus\");\nvar bus = new Framebus();\n\nbus.on(\"message\", function (data) {\n  console.log(data.from + \" said: \" + data.contents);\n});\n```\n\nThe Framebus class takes a configuration object, where all the params are optional.\n\n```js\ntype FramebusOptions = {\n  origin?: string, // default: \"*\"\n  channel?: string, // no default\n  verifyDomain?: (url: string) => boolean, // no default\n};\n```\n\nThe `origin` sets the framebus instance to only operate on the chosen origin.\n\nThe `channel` namespaces the events called with `on` and `emit` so you can have multiple bus instances on the page and have them only communicate with busses with the same channel value.\n\nIf a `verifyDomain` is passed, then the `on` listener will only fire if the domain of the origin of the post message matches the `location.href` value of page or the function passed for `verifyDomain` returns `true`.\n\n```js\nvar bus = new Framebus({\n  verifyDomain: function (url) {\n    // only return true if the domain of the url matches exactly\n    url.indexOf(\"https://my-domain\") === 0;\n  },\n});\n```\n\n## API\n\n#### `target(options: FramebusOptions): framebus`\n\n**returns**: a chainable instance of framebus that operates on the chosen origin.\n\nThis method is used in conjuction with `emit`, `on`, and `off` to restrict their results to the given origin. By default, an origin of `'*'` is used.\n\n```javascript\nframebus\n  .target({\n    origin: \"https://example.com\",\n  })\n  .on(\"my cool event\", function () {});\n// will ignore all incoming 'my cool event' NOT from 'https://example.com'\n```\n\n| Argument  | Type            | Description                        |\n| --------- | --------------- | ---------------------------------- |\n| `options` | FramebusOptions | See above section for more details |\n\n#### `emit('event', data? , callback?): boolean`\n\n**returns**: `true` if the event was successfully published, `false` otherwise\n\n| Argument         | Type     | Description                                          |\n| ---------------- | -------- | ---------------------------------------------------- |\n| `event`          | String   | The name of the event                                |\n| `data`           | Object   | The data to give to subscribers                      |\n| `callback(data)` | Function | Give subscribers a function for easy, direct replies |\n\n#### `on('event', fn): boolean`\n\n**returns**: `true` if the subscriber was successfully added, `false` otherwise\n\nUnless already bound to a scope, the listener will be executed with `this` set\nto the `MessageEvent` received over postMessage.\n\n| Argument               | Type     | Description                                                 |\n| ---------------------- | -------- | ----------------------------------------------------------- |\n| `event`                | String   | The name of the event                                       |\n| `fn(data?, callback?)` | Function | Event handler. Arguments are from the `emit` invocation     |\n| ↳ `this`               | scope    | The `MessageEvent` object from the underlying `postMessage` |\n\n#### `off('event', fn): boolean`\n\n**returns**: `true` if the subscriber was successfully removed, `false` otherwise\n\n| Argument | Type     | Description                      |\n| -------- | -------- | -------------------------------- |\n| `event`  | String   | The name of the event            |\n| `fn`     | Function | The function that was subscribed |\n\n#### `include(popup): boolean`\n\n**returns**: `true` if the popup was successfully included, `false` otherwise\n\n```javascript\nvar popup = window.open(\"https://example.com\");\n\nframebus.include(popup);\nframebus.emit(\"hello popup and friends!\");\n```\n\n| Argument | Type   | Description                                  |\n| -------- | ------ | -------------------------------------------- |\n| `popup`  | Window | The popup refrence returned by `window.open` |\n\n#### `teardown(): void`\n\nCalls `off` on all listeners used for this bus instance and makes subsequent calls to all methods `noop`.\n\n```javascript\nbus.on(\"event-name\", handler);\n\n// event-name listener is torn down\nbus.teardown();\n\n// these now do nothing\nbus.on(\"event-name\", handler);\nbus.emit(\"event-name\", data);\nbus.off(\"event-name\", handler);\n```\n\n## Pitfalls\n\nThese are some things to keep in mind while using **framebus** to handle your\nevent delegation\n\n### Cross-site scripting (XSS)\n\n**framebus** allows convenient event delegation across iframe borders. By\ndefault it will broadcast events to all iframes on the page, regardless of\norigin. Use the optional `target()` method when you know the exact domain of\nthe iframes you are communicating with. This will protect your event data from\nmalicious domains.\n\n### Data is serialized as JSON\n\n**framebus** operates over `postMessage` using `JSON.parse` and `JSON.stringify`\nto facilitate message data passing. Keep in mind that not all JavaScript objects\nserialize cleanly into and out of JSON, such as `undefined`.\n\n### Asynchronicity\n\nEven when the subscriber and publisher are within the same frame, events go\nthrough `postMessage`. Keep in mind that `postMessage` is an asynchronous\nprotocol and that publication and subscription handling occur on separate\niterations of the [event\nloop (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/EventLoop#Event_loop).\n\n### Published callback functions are an abstraction\n\nWhen you specify a `callback` while using `emit`, the function is not actually\ngiven to the subscriber. The subscriber receives a one-time-use function that is\ngenerated locally by the subscriber's **framebus**. This one-time-use callback function\nis pre-configured to publish an event back to the event origin's domain using a\n[UUID](http://tools.ietf.org/html/rfc4122) as the event name. The events occur\nas follows:\n\n1. `http://emitter.example.com` publishes an event with a function as the event data\n\n   ```javascript\n   var callback = function (data) {\n     console.log(\"Got back %s as a reply!\", data);\n   };\n\n   framebus.emit(\"Marco!\", callback, \"http://listener.example.com\");\n   ```\n\n1. The **framebus** on `http://emitter.example.com` generates a UUID as an event name\n   and adds the `callback` as a subscriber to this event.\n1. The **framebus** on `http://listener.example.com` sees that a special callback\n   event is in the event payload. A one-time-use function is created locally and\n   given to subscribers of `'Marco!'` as the event data.\n1. The subscriber on `http://listener.example.com` uses the local one-time-use\n   callback function to send data back to the emitter's origin\n\n   ```javascript\n   framebus\n     .target(\"http://emitter.example.com\")\n     .on(\"Marco!\", function (callback) {\n       callback(\"Polo!\");\n     });\n   ```\n\n1. The one-time-use function on `http://listener.example.com` publishes an event\n   as the UUID generated in **step 2** to the origin that emitted the event.\n1. Back on `http://emitter.example.com`, the `callback` is called and\n   unsubscribed from the special UUID event afterward.\n\n## Development and contributing\n\nSee [**CONTRIBUTING.md**](CONTRIBUTING.md)\n",
+    "readme": "# Framebus [![Build Status](https://github.com/braintree/framebus/workflows/Unit%20Tests/badge.svg)](https://github.com/braintree/framebus/actions?query=workflow%3A%22Unit+Tests%22) [![Build Status](https://github.com/braintree/framebus/workflows/Functional%20Tests/badge.svg)](https://github.com/braintree/framebus/actions?query=workflow%3A%22Functional+Tests%22) [![npm version](https://badge.fury.io/js/framebus.svg)](http://badge.fury.io/js/framebus)\n\nFramebus allows you to easily send messages across frames (and iframes) with a simple bus.\n\nIn one frame:\n\n```js\nvar Framebus = require(\"framebus\");\nvar bus = new Framebus();\n\nbus.emit(\"message\", {\n  from: \"Ron\",\n  contents: \"they named it...San Diago\",\n});\n```\n\nIn another frame:\n\n```js\nvar Framebus = require(\"framebus\");\nvar bus = new Framebus();\n\nbus.on(\"message\", function (data) {\n  console.log(data.from + \" said: \" + data.contents);\n});\n```\n\nThe Framebus class takes a configuration object, where all the params are optional.\n\n```js\ntype FramebusOptions = {\n  origin?: string, // default: \"*\"\n  channel?: string, // no default\n  verifyDomain?: (url: string) => boolean, // no default\n};\n```\n\nThe `origin` sets the framebus instance to only operate on the chosen origin.\n\nThe `channel` namespaces the events called with `on` and `emit` so you can have multiple bus instances on the page and have them only communicate with busses with the same channel value.\n\nIf a `verifyDomain` is passed, then the `on` listener will only fire if the domain of the origin of the post message matches the `location.href` value of page or the function passed for `verifyDomain` returns `true`.\n\n```js\nvar bus = new Framebus({\n  verifyDomain: function (url) {\n    // only return true if the domain of the url matches exactly\n    url.indexOf(\"https://my-domain\") === 0;\n  },\n});\n```\n\n## API\n\n#### `target(options: FramebusOptions): framebus`\n\n**returns**: a chainable instance of framebus that operates on the chosen origin.\n\nThis method is used in conjuction with `emit`, `on`, and `off` to restrict their results to the given origin. By default, an origin of `'*'` is used.\n\n```javascript\nframebus\n  .target({\n    origin: \"https://example.com\",\n  })\n  .on(\"my cool event\", function () {});\n// will ignore all incoming 'my cool event' NOT from 'https://example.com'\n```\n\n| Argument  | Type            | Description                        |\n| --------- | --------------- | ---------------------------------- |\n| `options` | FramebusOptions | See above section for more details |\n\n#### `emit('event', data?, callback?): boolean`\n\n**returns**: `true` if the event was successfully published, `false` otherwise\n\n| Argument         | Type     | Description                                          |\n| ---------------- | -------- | ---------------------------------------------------- |\n| `event`          | String   | The name of the event                                |\n| `data`           | Object   | The data to give to subscribers                      |\n| `callback(data)` | Function | Give subscribers a function for easy, direct replies |\n\n#### `emitAsPromise('event', data?): Promise`\n\n**returns**: A promise that resolves when the emitted event is responded to the first time. It will reject if the event could not be succesfully published.\n\n| Argument | Type   | Description                     |\n| -------- | ------ | ------------------------------- |\n| `event`  | String | The name of the event           |\n| `data`   | Object | The data to give to subscribers |\n\nUsing this method assumes the browser context you are using supports Promises. If it does not, set a polyfill for the Framebus class with `setPromise`\n\n```js\n// or however you want to polyfill the promise\nconst PolyfilledPromise = require(\"promise-polyfill\");\n\nFramebus.setPromise(PolyfilledPromise);\n```\n\n#### `on('event', fn): boolean`\n\n**returns**: `true` if the subscriber was successfully added, `false` otherwise\n\nUnless already bound to a scope, the listener will be executed with `this` set\nto the `MessageEvent` received over postMessage.\n\n| Argument               | Type     | Description                                                 |\n| ---------------------- | -------- | ----------------------------------------------------------- |\n| `event`                | String   | The name of the event                                       |\n| `fn(data?, callback?)` | Function | Event handler. Arguments are from the `emit` invocation     |\n| ↳ `this`               | scope    | The `MessageEvent` object from the underlying `postMessage` |\n\n#### `off('event', fn): boolean`\n\n**returns**: `true` if the subscriber was successfully removed, `false` otherwise\n\n| Argument | Type     | Description                      |\n| -------- | -------- | -------------------------------- |\n| `event`  | String   | The name of the event            |\n| `fn`     | Function | The function that was subscribed |\n\n#### `include(popup): boolean`\n\n**returns**: `true` if the popup was successfully included, `false` otherwise\n\n```javascript\nvar popup = window.open(\"https://example.com\");\n\nframebus.include(popup);\nframebus.emit(\"hello popup and friends!\");\n```\n\n| Argument | Type   | Description                                  |\n| -------- | ------ | -------------------------------------------- |\n| `popup`  | Window | The popup refrence returned by `window.open` |\n\n#### `teardown(): void`\n\nCalls `off` on all listeners used for this bus instance and makes subsequent calls to all methods `noop`.\n\n```javascript\nbus.on(\"event-name\", handler);\n\n// event-name listener is torn down\nbus.teardown();\n\n// these now do nothing\nbus.on(\"event-name\", handler);\nbus.emit(\"event-name\", data);\nbus.off(\"event-name\", handler);\n```\n\n## Pitfalls\n\nThese are some things to keep in mind while using **framebus** to handle your\nevent delegation\n\n### Cross-site scripting (XSS)\n\n**framebus** allows convenient event delegation across iframe borders. By\ndefault it will broadcast events to all iframes on the page, regardless of\norigin. Use the optional `target()` method when you know the exact domain of\nthe iframes you are communicating with. This will protect your event data from\nmalicious domains.\n\n### Data is serialized as JSON\n\n**framebus** operates over `postMessage` using `JSON.parse` and `JSON.stringify`\nto facilitate message data passing. Keep in mind that not all JavaScript objects\nserialize cleanly into and out of JSON, such as `undefined`.\n\n### Asynchronicity\n\nEven when the subscriber and publisher are within the same frame, events go\nthrough `postMessage`. Keep in mind that `postMessage` is an asynchronous\nprotocol and that publication and subscription handling occur on separate\niterations of the [event\nloop (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/EventLoop#Event_loop).\n\n### Published callback functions are an abstraction\n\nWhen you specify a `callback` while using `emit`, the function is not actually\ngiven to the subscriber. The subscriber receives a one-time-use function that is\ngenerated locally by the subscriber's **framebus**. This one-time-use callback function\nis pre-configured to publish an event back to the event origin's domain using a\n[UUID](http://tools.ietf.org/html/rfc4122) as the event name. The events occur\nas follows:\n\n1. `http://emitter.example.com` publishes an event with a function as the event data\n\n   ```javascript\n   var callback = function (data) {\n     console.log(\"Got back %s as a reply!\", data);\n   };\n\n   framebus.emit(\"Marco!\", callback, \"http://listener.example.com\");\n   ```\n\n1. The **framebus** on `http://emitter.example.com` generates a UUID as an event name\n   and adds the `callback` as a subscriber to this event.\n1. The **framebus** on `http://listener.example.com` sees that a special callback\n   event is in the event payload. A one-time-use function is created locally and\n   given to subscribers of `'Marco!'` as the event data.\n1. The subscriber on `http://listener.example.com` uses the local one-time-use\n   callback function to send data back to the emitter's origin\n\n   ```javascript\n   framebus\n     .target(\"http://emitter.example.com\")\n     .on(\"Marco!\", function (callback) {\n       callback(\"Polo!\");\n     });\n   ```\n\n1. The one-time-use function on `http://listener.example.com` publishes an event\n   as the UUID generated in **step 2** to the origin that emitted the event.\n1. Back on `http://emitter.example.com`, the `callback` is called and\n   unsubscribed from the special UUID event afterward.\n\n## Development and contributing\n\nSee [**CONTRIBUTING.md**](CONTRIBUTING.md)\n",
     "maintainers": [
         {
             "name": "braintree",
@@ -1717,7 +1816,7 @@
         }
     ],
     "time": {
-        "modified": "2020-11-02T21:44:56.045Z",
+        "modified": "2021-01-27T19:18:39.367Z",
         "created": "2015-04-16T18:23:10.251Z",
         "1.0.0": "2015-04-16T18:23:10.251Z",
         "2.0.0": "2015-06-22T22:28:09.734Z",
@@ -1739,7 +1838,8 @@
         "4.0.4": "2020-10-01T15:15:31.995Z",
         "4.0.5": "2020-10-26T18:43:11.924Z",
         "5.0.0-rc.1": "2020-10-31T02:09:37.086Z",
-        "5.0.0": "2020-11-02T21:44:53.676Z"
+        "5.0.0": "2020-11-02T21:44:53.676Z",
+        "5.1.0": "2021-01-27T19:18:37.063Z"
     },
     "homepage": "https://github.com/braintree/framebus",
     "repository": {
