@@ -1,9 +1,9 @@
 {
     "_id": "@paypal/checkout-components",
-    "_rev": "180-f1cb4413a86ac8498e45e317788f531c",
+    "_rev": "181-2d5c4fec250a13a7f49572b2838be275",
     "name": "@paypal/checkout-components",
     "dist-tags": {
-        "latest": "5.0.136"
+        "latest": "5.0.137"
     },
     "versions": {
         "4.1.37": {
@@ -24131,12 +24131,243 @@
                 "tmp": "tmp/checkout-components_5.0.136_1611713230958_0.09656608149202395"
             },
             "_hasShrinkwrap": false
+        },
+        "5.0.137": {
+            "name": "@paypal/checkout-components",
+            "version": "5.0.137",
+            "description": "PayPal Checkout components, for integrating checkout products.",
+            "main": "index.js",
+            "scripts": {
+                "dev": "babel-node $(npm bin)/webpack-dev-server --config webpack.config.dev.js --port 9001 --host localhost.paypal.com --open-page demo/dev/index.htm --https --hot=false --inline=false",
+                "lint": "eslint --ext .js --ext .jsx src/ test/ *.js",
+                "flow-typed": "rm -rf flow-typed && flow-typed install",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node $(npm bin)/karma start",
+                "test": "if [ ! $SKIP_TEST ]; then npm run lint && npm run flow-typed && npm run flow && npm run jest-ssr && npm run karma && npm run jest-screenshot && npm run check-size; fi;",
+                "webpack": "babel-node $(npm bin)/webpack --progress",
+                "webpack-size": "babel-node $(npm bin)/webpack --progress --config webpack.config.size && echo && echo Final bundle size: $( npm run -s get-size );",
+                "build": "npm run test && npm run webpack",
+                "release": "./scripts/publish.sh",
+                "release:patch": "./scripts/publish.sh patch",
+                "release:minor": "./scripts/publish.sh minor",
+                "release:major": "./scripts/publish.sh major",
+                "preversion": "./scripts/preversion.sh",
+                "version": "./scripts/version.sh",
+                "postversion": "./scripts/postversion.sh",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug",
+                "demo": "serve ./demo -l 1337",
+                "eslint-find-rules": "eslint-find-rules --current .eslintrc.js --unused --plugin",
+                "jest-screenshot": "jest test/screenshot --env=node --no-cache",
+                "jest-ssr": "jest test/ssr --env=node --no-cache",
+                "jest-e2e": "rm -f ./test/e2e/screenshots/*.png && jest test/e2e",
+                "get-size": "gzip -9 < dist/size.min.js | wc -c",
+                "check-size": "npm run webpack-size && if [ $(npm run -s get-size) -ge 65000 ]; then echo 'Bundle size greater than 65k'; exit 1; else npm run delete-size; fi;",
+                "delete-size": "rm dist/size.* dist/report.html"
+            },
+            "browserslist": [
+                "IE >= 9",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 5",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/paypal/paypal-checkout-components.git"
+            },
+            "homepage": "https://developer.paypal.com/",
+            "keywords": [
+                "cross-domain",
+                "cross domain",
+                "components",
+                "component",
+                "krakenjs",
+                "kraken"
+            ],
+            "license": "Apache-2.0",
+            "devDependencies": {
+                "babel-core": "^7.0.0-bridge.0",
+                "conventional-changelog-cli": "^2.0.34",
+                "flow-bin": "0.135.0",
+                "fs-extra": "^9.0.1",
+                "grumbler-scripts": "^3.0.70",
+                "imagemagick": "^0.1.3",
+                "imgur": "^0.3.1",
+                "karma": "^5.2.3",
+                "karma-coverage": "^2.0.3",
+                "memory-fs": "^0.5.0",
+                "mocha": "^4.1.0",
+                "mocketeer": "^0.3.1",
+                "pixelmatch": "^5.2.1",
+                "pngjs": "^6.0.0",
+                "puppeteer": "^1.20.0",
+                "serve": "^11.3.2",
+                "sync-browser-mocks": "^2.0.8"
+            },
+            "dependencies": {
+                "@paypal/common-components": "^1.0.10",
+                "@paypal/funding-components": "^1.0.17",
+                "@paypal/sdk-client": "^4.0.123",
+                "@paypal/sdk-constants": "^1.0.57",
+                "@paypal/sdk-logos": "^1.0.26",
+                "belter": "^1.0.2",
+                "cross-domain-utils": "^2.0.1",
+                "jsx-pragmatic": "^2",
+                "post-robot": "^10.0.0",
+                "zalgo-promise": "^1.0.10",
+                "zoid": "^9.0.0"
+            },
+            "gitHead": "3760c9492d41d65ded2a06dabb0a7758bd507db8",
+            "bugs": {
+                "url": "https://github.com/paypal/paypal-checkout-components/issues"
+            },
+            "_id": "@paypal/checkout-components@5.0.137",
+            "_nodeVersion": "12.18.2",
+            "_npmVersion": "6.14.5",
+            "dist": {
+                "integrity": "sha512-SV5UKatnLrxFeNKSAKbkoiYuktZu9H6bQR4s+on2PAQt0NgZn/ipb9Xul5YsgUFr7ohVF5frMePSQ1Zi0ztvTQ==",
+                "shasum": "8db58abe114508852388d4fd9db4e62967d5ec95",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/checkout-components/tarballs/5.0.137.tgz",
+                "fileCount": 156,
+                "unpackedSize": 956298,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgEzikCRA9TVsSAnZWagAAJWsP/AnSBjwBImnal+u/YKyj\nNmaDJI0uC2hKh7MYarVqQ6XQXmuFwgfUgBUajx5aOVahGoMjFqWboF3M7m64\nFpAnyUv8RyYnkgO12xiM0HDtZS8YkHVIRjaY7oHCoZVTmbRDHuAZmBFwQEso\nxql/dskkJr2eyauDzdrpV3k1Ln5ggnzb72AvCdMxSMUM+AY5IHOGDsxHQV8O\nQvSHVjGo9OSNsG5BEDxpwHHS/vQsOzMhb6mBIQGosUYXAUEztY9QGtG8NxBL\nzpFYbA3QUdIhVA0JajneCLH31CQjOAuUH760x1vx5FPOtKw1/FI8iAxFSwnz\np8qHZnNwZ6Ef2HxEieV8OpUYVL9Iag8/7mCz0F4TsqH87rXZCuufThtZuVEW\n6YaDl3/DWm/3ZasmQUy/8v3Ox0JbL3vTu7oUkR8ejtMSsueBKjEccCFGDdDv\nWAoVDVjPAbm1zu7l2qb4WSag+phtji/yLhKOfVQRRIBOXHlBQjCO0ny6qgQ/\nAPBVymCDYHSPQ5CUu06JVJILXFL9Be63pNSg1A/arwceGGFbYdZgD2yFLiV7\n3WqO8SPlRRACg5PZ9Yt2XI23dshtAcGoetiStHwAVN986foeo8JKt4cqRlLI\nb9EG0oV8aF4N2FHyvxvUVF9QLF58/p+Nt/RvwxdUyTrvhWqsZM3lab9DCZoX\nQlyk\r\n=DXkq\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "directories": {},
+            "maintainers": [
+                {
+                    "name": "shrutikapoor08",
+                    "email": "shruti.kapoor08@gmail.com"
+                },
+                {
+                    "name": "paypal-user",
+                    "email": "DL-PP-NODEJS-SDK@paypal.com"
+                },
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                },
+                {
+                    "name": "bladebarringer",
+                    "email": "blade@crookedneighbor.com"
+                },
+                {
+                    "name": "braintree",
+                    "email": "team-sdk@getbraintree.com"
+                },
+                {
+                    "name": "rajarampadmanathan",
+                    "email": "prajarameee@gmail.com"
+                },
+                {
+                    "name": "joshbeam",
+                    "email": "joshua.a.beam@gmail.com"
+                },
+                {
+                    "name": "bryanjenningz",
+                    "email": "bryanjenningz@gmail.com"
+                },
+                {
+                    "name": "zhillb",
+                    "email": "zach@zacharyhill.xyz"
+                },
+                {
+                    "name": "weihou",
+                    "email": "weihou@paypal.com"
+                },
+                {
+                    "name": "seavenly",
+                    "email": "nschott@paypal.com"
+                },
+                {
+                    "name": "tifzhou",
+                    "email": "tifzhou@paypal.com"
+                },
+                {
+                    "name": "rygilbert_paypal",
+                    "email": "rygilbert@paypal.com"
+                },
+                {
+                    "name": "rpalanikumar",
+                    "email": "rpalanikumar@paypal.com"
+                },
+                {
+                    "name": "songz",
+                    "email": "song@zheng.club"
+                },
+                {
+                    "name": "merlinpatt",
+                    "email": "merlinpatt@gmail.com"
+                },
+                {
+                    "name": "jfurman",
+                    "email": "mpscqw@gmail.com"
+                },
+                {
+                    "name": "ravishekhar00",
+                    "email": "ravi_shekhar00@yahoo.com"
+                },
+                {
+                    "name": "visheei94",
+                    "email": "vishakha94@outlook.com"
+                },
+                {
+                    "name": "gregjopa",
+                    "email": "grjopa@gmail.com"
+                },
+                {
+                    "name": "mstuart",
+                    "email": "stuartmark@gmail.com"
+                },
+                {
+                    "name": "antre",
+                    "email": "antre@paypal.com"
+                },
+                {
+                    "name": "mnicpt",
+                    "email": "mnicpt@gmail.com"
+                },
+                {
+                    "name": "elizabethmv",
+                    "email": "lizzyadeline@gmail.com"
+                },
+                {
+                    "name": "nbierdeman",
+                    "email": "nbierdeman@paypal.com"
+                },
+                {
+                    "name": "briceshatzer",
+                    "email": "brice.shatzer@gmail.com"
+                },
+                {
+                    "name": "shrkapoor",
+                    "email": "shrkapoor@paypal.com"
+                },
+                {
+                    "name": "amyegan",
+                    "email": "amyegan@paypal.com"
+                },
+                {
+                    "name": "chetanjk",
+                    "email": "chetan.jk@gmail.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/checkout-components_5.0.137_1611872419864_0.6163896949885668"
+            },
+            "_hasShrinkwrap": false
         }
     },
     "time": {
         "created": "2018-12-11T23:08:28.613Z",
         "4.1.37": "2018-12-11T23:08:28.896Z",
-        "modified": "2021-01-27T02:07:13.655Z",
+        "modified": "2021-01-28T22:20:22.526Z",
         "4.1.38": "2018-12-13T23:47:57.129Z",
         "4.1.39": "2018-12-14T00:44:27.016Z",
         "4.1.40": "2019-01-10T18:28:14.984Z",
@@ -24280,7 +24511,8 @@
         "5.0.133": "2021-01-06T21:01:25.796Z",
         "5.0.134": "2021-01-12T16:13:17.771Z",
         "5.0.135": "2021-01-13T17:11:37.787Z",
-        "5.0.136": "2021-01-27T02:07:11.159Z"
+        "5.0.136": "2021-01-27T02:07:11.159Z",
+        "5.0.137": "2021-01-28T22:20:20.081Z"
     },
     "maintainers": [
         {
