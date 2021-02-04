@@ -1,6 +1,6 @@
 {
     "_id": "@paypal/identity-components",
-    "_rev": "22-f998c537a4965ef4c277344fafa23da3",
+    "_rev": "23-5d7bb3d5b8a4556189450ac66d54bc01",
     "name": "@paypal/identity-components",
     "dist-tags": {
         "latest": "5.0.3"
@@ -666,12 +666,16 @@
     "time": {
         "created": "2020-02-21T22:32:23.013Z",
         "5.0.0": "2020-02-21T22:32:23.317Z",
-        "modified": "2021-01-06T21:33:31.142Z",
+        "modified": "2021-02-04T18:11:10.195Z",
         "5.0.1": "2020-03-10T18:38:09.163Z",
         "5.0.2": "2020-03-20T20:07:57.594Z",
         "5.0.3": "2020-03-31T19:28:32.661Z"
     },
     "maintainers": [
+        {
+            "email": "ryank@remotevisioninc.com",
+            "name": "remotevision"
+        },
         {
             "email": "shruti.kapoor08@gmail.com",
             "name": "shrutikapoor08"
