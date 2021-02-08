@@ -1,14 +1,14 @@
 {
     "_id": "@paypal/sdk-release",
-    "_rev": "1278-7dcff392d09ef8888ca11d30bf30c396",
+    "_rev": "1283-75415e1adcb22dd62f5a302b42d58f31",
     "name": "@paypal/sdk-release",
     "dist-tags": {
         "latest": "5.0.199",
-        "active-test": "5.0.199",
-        "active-local": "5.0.199",
-        "active-stage": "5.0.199",
-        "active-sandbox": "5.0.199",
-        "active-production": "5.0.199",
+        "active-test": "5.0.198",
+        "active-local": "5.0.198",
+        "active-stage": "5.0.198",
+        "active-sandbox": "5.0.198",
+        "active-production": "5.0.198",
         "noop": "5.0.147"
     },
     "versions": {
@@ -37830,7 +37830,7 @@
     "time": {
         "created": "2018-12-12T00:58:06.226Z",
         "1.0.95": "2018-12-12T00:58:06.565Z",
-        "modified": "2021-02-08T17:29:59.486Z",
+        "modified": "2021-02-08T20:01:12.597Z",
         "1.0.96": "2018-12-14T00:02:55.955Z",
         "1.0.97": "2018-12-14T00:48:39.328Z",
         "1.0.98": "2018-12-14T02:01:48.346Z",
