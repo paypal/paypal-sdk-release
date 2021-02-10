@@ -1,9 +1,10 @@
 {
     "_id": "@paypal/checkout-components",
-    "_rev": "185-24cd8cf4408c243e2dfebf8f5007e5c7",
+    "_rev": "186-79920ea167e79632c6a6f84a7deb7fc5",
     "name": "@paypal/checkout-components",
     "dist-tags": {
-        "latest": "5.0.140"
+        "latest": "5.0.140",
+        "alpha": "5.0.140-alpha.1"
     },
     "versions": {
         "4.1.37": {
@@ -25063,12 +25064,249 @@
                 "tmp": "tmp/checkout-components_5.0.140_1612818497806_0.6955109800108936"
             },
             "_hasShrinkwrap": false
+        },
+        "5.0.140-alpha.1": {
+            "name": "@paypal/checkout-components",
+            "version": "5.0.140-alpha.1",
+            "description": "PayPal Checkout components, for integrating checkout products.",
+            "main": "index.js",
+            "scripts": {
+                "dev": "babel-node $(npm bin)/webpack-dev-server --config webpack.config.dev.js --port 9001 --host localhost.paypal.com --open-page demo/dev/index.htm --https --hot=false --inline=false",
+                "lint": "eslint --ext .js --ext .jsx src/ test/ *.js",
+                "flow-typed": "rm -rf flow-typed && flow-typed install",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node $(npm bin)/karma start",
+                "test": "if [ ! $SKIP_TEST ]; then npm run lint && npm run flow-typed && npm run flow && npm run jest-ssr && npm run karma && npm run jest-screenshot && npm run check-size; fi;",
+                "webpack": "babel-node $(npm bin)/webpack --progress",
+                "webpack-size": "babel-node $(npm bin)/webpack --progress --config webpack.config.size && echo && echo Final bundle size: $( npm run -s get-size );",
+                "build": "npm run test && npm run webpack",
+                "release": "./scripts/publish.sh",
+                "release:patch": "./scripts/publish.sh patch",
+                "release:minor": "./scripts/publish.sh minor",
+                "release:major": "./scripts/publish.sh major",
+                "preversion": "./scripts/preversion.sh",
+                "version": "./scripts/version.sh",
+                "postversion": "./scripts/postversion.sh",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug",
+                "demo": "serve ./demo -l 1337",
+                "eslint-find-rules": "eslint-find-rules --current .eslintrc.js --unused --plugin",
+                "jest-screenshot": "jest test/screenshot --env=node --no-cache",
+                "jest-ssr": "jest test/ssr --env=node --no-cache",
+                "jest-e2e": "rm -f ./test/e2e/screenshots/*.png && jest test/e2e",
+                "get-size": "gzip -9 < dist/size.min.js | wc -c",
+                "check-size": "npm run webpack-size && if [ $(npm run -s get-size) -ge 65000 ]; then echo 'Bundle size greater than 65k'; exit 1; else npm run delete-size; fi;",
+                "delete-size": "rm dist/size.* dist/report.html"
+            },
+            "browserslist": [
+                "IE >= 9",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 5",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/paypal/paypal-checkout-components.git"
+            },
+            "homepage": "https://developer.paypal.com/",
+            "keywords": [
+                "cross-domain",
+                "cross domain",
+                "components",
+                "component",
+                "krakenjs",
+                "kraken"
+            ],
+            "license": "Apache-2.0",
+            "readmeFilename": "README.md",
+            "devDependencies": {
+                "babel-core": "^7.0.0-bridge.0",
+                "conventional-changelog-cli": "^2.0.34",
+                "flow-bin": "0.135.0",
+                "fs-extra": "^9.0.1",
+                "grumbler-scripts": "^3.0.70",
+                "imagemagick": "^0.1.3",
+                "imgur": "^0.3.1",
+                "karma": "^5.2.3",
+                "karma-coverage": "^2.0.3",
+                "memory-fs": "^0.5.0",
+                "mocha": "^4.1.0",
+                "mocketeer": "^0.3.1",
+                "pixelmatch": "^5.2.1",
+                "pngjs": "^6.0.0",
+                "puppeteer": "^1.20.0",
+                "serve": "^11.3.2",
+                "sync-browser-mocks": "^2.0.8"
+            },
+            "dependencies": {
+                "@paypal/common-components": "^1.0.10",
+                "@paypal/funding-components": "^1.0.17",
+                "@paypal/sdk-client": "^4.0.123",
+                "@paypal/sdk-constants": "^1.0.57",
+                "@paypal/sdk-logos": "^1.0.26",
+                "belter": "^1.0.2",
+                "cross-domain-utils": "^2.0.1",
+                "jsx-pragmatic": "^2",
+                "post-robot": "^10.0.0",
+                "zalgo-promise": "^1.0.10",
+                "zoid": "^9.0.0"
+            },
+            "readme": "PayPal Checkout\n---------------\n\n[![build status][build-badge]][build]\n[![code coverage][coverage-badge]][coverage]\n[![npm version][version-badge]][package]\n[![apache license][license-badge]][license]\n\n[build-badge]: https://img.shields.io/github/workflow/status/paypal/paypal-checkout-components/build?logo=github&style=flat-square\n[build]: https://github.com/paypal/paypal-checkout-components/actions?query=workflow%3Abuild\n[coverage-badge]: https://img.shields.io/codecov/c/github/paypal/paypal-checkout-components.svg?style=flat-square\n[coverage]: https://codecov.io/github/paypal/paypal-checkout-components/\n[version-badge]: https://img.shields.io/npm/v/@paypal/checkout-components.svg?style=flat-square\n[package]: https://www.npmjs.com/package/@paypal/checkout-components\n[license-badge]: https://img.shields.io/npm/l/@paypal/checkout-components.svg?style=flat-square\n[license]: https://github.com/paypal/paypal-checkout-components/blob/master/LICENSE\n\nA set of components allowing easy integration of PayPal Buttons and PayPal Checkout into your site, powered by\n[zoid](https://github.com/krakenjs/zoid).\n\n## Dev Docs\n\nSee [**developer.paypal.com/docs/checkout**](https://developer.paypal.com/docs/checkout/)\n\n-----\n\n## Development\n\nPlease feel free to follow the [Contribution Guidelines](./CONTRIBUTING.md) to contribute to this repository. PRs are welcome, but for major changes please raise an issue first.\n\n### Quick Setup\n\nSet up your env:\n\n```bash\nnpm install\n```\n\nRun tests:\n\n```bash\nnpm test\n```\n\nRun in dev mode:\n\n```bash\nnpm run dev\n```\n\n## Test Tasks\n```\nnpm test\n```\n\n| Flags  | Description |\n| ------------- | ------------- |\n| --clear-cache | Clear Babel Loader and PhantomJS cache |\n| --debug | Debug mode.  PhantomJS, Karma, and CheckoutJS  |\n| --quick | Fastest testing.  Minimal output, no coverage |\n| --browser | Choose Browser |\n\n## Releasing\n\nThis package is published weekly, **Every Wednesday**. Please [view our Changelog](CHANGELOG.md) to stay updated with bug fixes and new features.\n",
+            "gitHead": "d4a71c48f8b000c87793c1401c12143c104b8587",
+            "bugs": {
+                "url": "https://github.com/paypal/paypal-checkout-components/issues"
+            },
+            "_id": "@paypal/checkout-components@5.0.140-alpha.1",
+            "_nodeVersion": "12.20.1",
+            "_npmVersion": "6.14.10",
+            "dist": {
+                "integrity": "sha512-gqzHoBMOq5HqSlx4o43t397NSMJAUKmUfrhmJ2ztw0V2T/HRKXhn27n3Bce6EJ3TffP6ZiQY55amIzxRPOcaqA==",
+                "shasum": "b62c2db05f611fbf30da32ea0e297849ab9dd9f4",
+                "tarball": "https://registry.npmjs.org/@paypal/checkout-components/-/checkout-components-5.0.140-alpha.1.tgz",
+                "fileCount": 156,
+                "unpackedSize": 960345,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgIgQhCRA9TVsSAnZWagAA2DAQAKISs2UGPN3kcCvCcxC+\n+sI7BZywv69wCcIWjLU67R/glJpinWjhrHD/5QRGpqaHyTKdk8pM1xWFB/nJ\nYJ9dwK9JxQHGx4kDMTsm0Fhxyc+1fFw9i+65dmdKo2pTtBfrQT5QuSsMwlf8\nR6uDz0pq1fz2hrEQg+ve8tyD6W6KVYgmBa1v7H4ujlJZx8MlJO1sjR8kzAI5\n+T0cjGpFZnXXildl6vEeMThLq8QOffpHrpkfpqkbdGHk2HWOORZ0YYE6HXXz\nXyjAc9jJW+lHve++a3J65sR/IZ66QgkBjAgJBJGmeAcaBailos+SYQCk6abG\nHGiITMtyqWng8LpAJp6XdrFZgqyf4aU+85N4O5EUJ18P3a0csglFHTKR4+bC\n9Zb/hRHrZ3L7xOaX5GitMiATWoJq4uuCP+K2J0xyOXw2r8T+vJE5Q3iUfX3H\nUE/ttfAqbwCFJ+lOxLOwomce2ylF8bB83t0siZ3Ox/F3IHqoEenpEtsKtYTT\ntF5PV2mneYXotfSiohpFXIV9pmaUI8VE/TLQM5Wpkf+WH0xDGve4rZqrurrJ\nI33SJCDRXVBbkgMRr8h05Jj+c3QYLiuCEdQDyMWIm2F7F9s9sXRdxmkEoQJN\n9KonjR33bYE/8xdIizPvJdMS6MIyG7/agt8rzkJYhuU4TaccCi/0uli/L20F\nQIKP\r\n=wKZE\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "_npmUser": {
+                "name": "gregjopa",
+                "email": "grjopa@gmail.com"
+            },
+            "directories": {},
+            "maintainers": [
+                {
+                    "name": "remotevision",
+                    "email": "ryank@remotevisioninc.com"
+                },
+                {
+                    "name": "shrutikapoor08",
+                    "email": "shruti.kapoor08@gmail.com"
+                },
+                {
+                    "name": "paypal-user",
+                    "email": "DL-PP-NODEJS-SDK@paypal.com"
+                },
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                },
+                {
+                    "name": "bladebarringer",
+                    "email": "blade@crookedneighbor.com"
+                },
+                {
+                    "name": "braintree",
+                    "email": "team-sdk@getbraintree.com"
+                },
+                {
+                    "name": "rajarampadmanathan",
+                    "email": "prajarameee@gmail.com"
+                },
+                {
+                    "name": "joshbeam",
+                    "email": "joshua.a.beam@gmail.com"
+                },
+                {
+                    "name": "bryanjenningz",
+                    "email": "bryanjenningz@gmail.com"
+                },
+                {
+                    "name": "zhillb",
+                    "email": "zach@zacharyhill.xyz"
+                },
+                {
+                    "name": "weihou",
+                    "email": "weihou@paypal.com"
+                },
+                {
+                    "name": "seavenly",
+                    "email": "nschott@paypal.com"
+                },
+                {
+                    "name": "tifzhou",
+                    "email": "tifzhou@paypal.com"
+                },
+                {
+                    "name": "rygilbert_paypal",
+                    "email": "rygilbert@paypal.com"
+                },
+                {
+                    "name": "rpalanikumar",
+                    "email": "rpalanikumar@paypal.com"
+                },
+                {
+                    "name": "songz",
+                    "email": "song@zheng.club"
+                },
+                {
+                    "name": "merlinpatt",
+                    "email": "merlinpatt@gmail.com"
+                },
+                {
+                    "name": "jfurman",
+                    "email": "mpscqw@gmail.com"
+                },
+                {
+                    "name": "ravishekhar00",
+                    "email": "ravi_shekhar00@yahoo.com"
+                },
+                {
+                    "name": "visheei94",
+                    "email": "vishakha94@outlook.com"
+                },
+                {
+                    "name": "gregjopa",
+                    "email": "grjopa@gmail.com"
+                },
+                {
+                    "name": "mstuart",
+                    "email": "stuartmark@gmail.com"
+                },
+                {
+                    "name": "antre",
+                    "email": "antre@paypal.com"
+                },
+                {
+                    "name": "mnicpt",
+                    "email": "mnicpt@gmail.com"
+                },
+                {
+                    "name": "elizabethmv",
+                    "email": "lizzyadeline@gmail.com"
+                },
+                {
+                    "name": "nbierdeman",
+                    "email": "nbierdeman@paypal.com"
+                },
+                {
+                    "name": "briceshatzer",
+                    "email": "brice.shatzer@gmail.com"
+                },
+                {
+                    "name": "shrkapoor",
+                    "email": "shrkapoor@paypal.com"
+                },
+                {
+                    "name": "amyegan",
+                    "email": "amyegan@paypal.com"
+                },
+                {
+                    "name": "chetanjk",
+                    "email": "chetan.jk@gmail.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/checkout-components_5.0.140-alpha.1_1612842016629_0.18212062598114986"
+            },
+            "_hasShrinkwrap": false
         }
     },
     "time": {
         "created": "2018-12-11T23:08:28.613Z",
         "4.1.37": "2018-12-11T23:08:28.896Z",
-        "modified": "2021-02-08T21:08:20.537Z",
+        "modified": "2021-02-09T03:40:19.416Z",
         "4.1.38": "2018-12-13T23:47:57.129Z",
         "4.1.39": "2018-12-14T00:44:27.016Z",
         "4.1.40": "2019-01-10T18:28:14.984Z",
@@ -25216,7 +25454,8 @@
         "5.0.137": "2021-01-28T22:20:20.081Z",
         "5.0.138": "2021-02-03T02:46:54.680Z",
         "5.0.139": "2021-02-05T16:08:06.631Z",
-        "5.0.140": "2021-02-08T21:08:17.996Z"
+        "5.0.140": "2021-02-08T21:08:17.996Z",
+        "5.0.140-alpha.1": "2021-02-09T03:40:16.885Z"
     },
     "maintainers": [
         {
@@ -25355,8 +25594,8 @@
         "url": "git://github.com/paypal/paypal-checkout-components.git"
     },
     "license": "Apache-2.0",
-    "readme": "PayPal Checkout\n---------------\n\n[![build status][build-badge]][build]\n[![code coverage][coverage-badge]][coverage]\n[![npm version][version-badge]][package]\n[![apache license][license-badge]][license]\n\n[build-badge]: https://img.shields.io/github/workflow/status/paypal/paypal-checkout-components/build?logo=github&style=flat-square\n[build]: https://github.com/paypal/paypal-checkout-components/actions?query=workflow%3Abuild\n[coverage-badge]: https://img.shields.io/codecov/c/github/paypal/paypal-checkout-components.svg?style=flat-square\n[coverage]: https://codecov.io/github/paypal/paypal-checkout-components/\n[version-badge]: https://img.shields.io/npm/v/@paypal/checkout-components.svg?style=flat-square\n[package]: https://www.npmjs.com/package/@paypal/checkout-components\n[license-badge]: https://img.shields.io/npm/l/@paypal/checkout-components.svg?style=flat-square\n[license]: https://github.com/paypal/paypal-checkout-components/blob/master/LICENSE\n\nA set of components allowing easy integration of PayPal Buttons and PayPal Checkout into your site, powered by\n[zoid](https://github.com/krakenjs/zoid).\n\n## Dev Docs\n\nSee [**developer.paypal.com/docs/checkout**](https://developer.paypal.com/docs/checkout/)\n\n-----\n\n## Development\n\nPlease feel free to follow the [Contribution Guidelines](./CONTRIBUTING.md) to contribute to this repository. PRs are welcome, but for major changes please raise an issue first.\n\n### Quick Setup\n\nSet up your env:\n\n```bash\nnpm install\n```\n\nRun tests:\n\n```bash\nnpm test\n```\n\nRun in dev mode:\n\n```bash\nnpm run dev\n```\n\n## Test Tasks\n```\nnpm test\n```\n\n| Flags  | Description |\n| ------------- | ------------- |\n| --clear-cache | Clear Babel Loader and PhantomJS cache |\n| --debug | Debug mode.  PhantomJS, Karma, and CheckoutJS  |\n| --quick | Fastest testing.  Minimal output, no coverage |\n| --browser | Choose Browser |\n\n## Releasing\n\nThis package is published weekly, **Every Wednesday**. Please [view our Changelog](CHANGELOG.md) to stay updated with bug fixes and new features.\n",
-    "readmeFilename": "README.md",
+    "readme": "",
+    "readmeFilename": "",
     "bugs": {
         "url": "https://github.com/paypal/paypal-checkout-components/issues"
     }
