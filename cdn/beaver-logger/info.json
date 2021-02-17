@@ -1,9 +1,9 @@
 {
     "_id": "beaver-logger",
-    "_rev": "67-c6d4ec48a89926f1ce7927fc09c962dc",
+    "_rev": "68-1ce26871dbc9b5208a9e143b89bd72d0",
     "name": "beaver-logger",
     "time": {
-        "modified": "2021-01-25T21:13:30.146Z",
+        "modified": "2021-02-17T00:18:57.563Z",
         "created": "2016-05-28T00:53:50.814Z",
         "1.0.0": "2016-05-28T00:53:50.814Z",
         "1.0.5": "2016-05-28T01:18:14.967Z",
@@ -68,7 +68,8 @@
         "4.0.20": "2020-09-28T17:42:22.744Z",
         "4.0.21": "2020-10-02T23:12:57.112Z",
         "4.0.22": "2021-01-22T18:54:40.962Z",
-        "4.0.23": "2021-01-25T21:13:27.770Z"
+        "4.0.23": "2021-01-25T21:13:27.770Z",
+        "4.0.24": "2021-02-17T00:18:55.207Z"
     },
     "maintainers": [
         {
@@ -85,7 +86,7 @@
         }
     ],
     "dist-tags": {
-        "latest": "4.0.23"
+        "latest": "4.0.24"
     },
     "description": "Client side logger.",
     "readme": "beaver-logger\n------------\n\nFront-end logger, which will:\n\n- Buffer your front-end logs and periodically send them to the server side\n- Automatically flush logs for any errors or warnings\n\nThis is a great tool to use if you want to do logging on the client side in the same way you do on the server, without worrying about sending off a million beacons. You can quickly get an idea of what's going on on your client, including error cases, page transitions, or anything else you care to log!\n\nOverview\n---------\n\n## Setup\n\n```javascript\nvar $logger = beaver.Logger({\n    url: '/my/logger/url'\n});\n```\n\n## Basic logging\n\n### `$logger.info(<event>, <payload>);`\n\nQueues a log. Options are `debug`, `info`, `warn`, `error`.\n\nFor example:\n\n`$logger.error('something_went_wrong', { error: err.toString() })`\n\n### `$logger.track(<payload>);`\n\nCall this to attach general tracking information to the current page. This is useful if the data is not associated with a specific event, and will be sent to the server the next time the logs are flushed.\n\n## Advanced\n\n### `$logger.addMetaBuilder(<function>);`\n\nAttach a method which is called and will attach general information to the logging payload whenever the logs are flushed\n\n```javascript\n$logger.addMetaBuilder(function() {\n    return {\n        current_page: getMyCurrentPage()\n    };\n});\n```\n\n### `$logger.addPayloadBuilder(<function>);`\n\nAttach a method which is called and will attach values to **each individual log's payload** whenever the logs are flushed\n\n```javascript\n$logger.addPayloadBuilder(function() {\n    return {\n        performance_ts: window.performance.now()\n    };\n});\n```\n\n### `$logger.addTrackingBuilder(<function>);`\n\nAttach a method which is called and will attach values to **each individual log's tracking** whenever the logs are flushed\n\n```javascript\n$logger.addTrackingBuilder(function() {\n    return {\n        pageLoadTime: getPageLoadTime()\n    };\n});\n```\n\n### `$logger.addHeaderBuilder(<function>);`\n\nAttach a method which is called and will attach values to **each individual log requests' headers** whenever the logs are flushed\n\n```javascript\n$logger.addHeaderBuilder(function() {\n    return {\n        'x-csrf-token': getCSRFToken()\n    };\n});\n```\n\n### `$logger.flush();`\n\nFlushes the logs to the server side. Recommended you don't call this manually, as it will happen automatically after a configured interval.\n\n\nInstalling\n----------\n\n- Install via npm\n\n`npm install --save beaver-logger`\n\n- Include in your project\n\n```html\n<script src=\"/js/beaver-logger.min.js\"></script>\n```\n\nor\n\n```javascript\nlet $logger = require('beaver-logger');\n```\n\n\nConfiguration\n-------------\n\nFull configuration options:\n\n```javascript\nvar $logger = beaver.Logger({\n\n    // Url to send logs to\n    url: '/my/logger/url',\n\n    // Prefix to prepend to all events\n    prefix: 'myapp',\n\n    // Log level to display in the browser console\n    logLevel: beaver.LOG_LEVEL.WARN,\n\n    // Interval to flush logs to server\n    flushInterval: 60 * 1000,\n\n    // Use sendBeacon if supported rather than XHR to send logs; defaults to false\n    enableSendBeacon: true,\n});\n```\n\nServer Side\n-----------\n\nbeaver-logger includes a small node endpoint which will automatically accept the logs sent from the client side. You can mount this really easily:\n\n```javascript\nlet beaverLogger = require('beaver-logger/server');\n\nmyapp.use(beaverLogger.expressEndpoint({\n\n    // URI to recieve logs at\n    uri: '/api/log',\n\n    // Custom logger (optional, by default logs to console)\n    logger: myLogger,\n\n    // Enable cross-origin requests to your logging endpoint\n    enableCors: false\n}))\n```\n\nOr if you're using kraken, you can add this in your `config.json` as a middleware:\n\n```json\n      \"beaver-logger\": {\n          \"priority\": 106,\n          \"module\": {\n              \"name\": \"beaver-logger/server\",\n              \"method\": \"expressEndpoint\",\n              \"arguments\": [\n                  {\n                      \"uri\": \"/api/log\",\n                      \"logger\": \"require:my-custom-logger-module\"\n                  }\n              ]\n          }\n      }\n```\n\nCustom backend logger\n---------------------\n\nSetting up a custom logger is really easy, if you need to transmit these logs to some backend logging service rather than just logging them to your server console:\n\n```javascript\nmodule.exports = {\n\n    log: function(req, level, event, payload) {\n\n        logSocket.send(JSON.stringify({\n            level: level,\n            event: event,\n            payload: payload\n        }));\n    }\n}\n```\n\n\nData Flow\n---------\n\n![Flow](/flow.png?raw=true)\n",
@@ -8428,6 +8429,134 @@
             "_npmOperationalInternal": {
                 "host": "s3://npm-registry-packages",
                 "tmp": "tmp/beaver-logger_4.0.23_1611609207592_0.3186145592596661"
+            },
+            "_hasShrinkwrap": false
+        },
+        "4.0.24": {
+            "name": "beaver-logger",
+            "version": "4.0.24",
+            "description": "Client side logger.",
+            "main": "dist/beaver-logger.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ server/ test/ *.js",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install && flow-typed install express@4",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "babel-server": "babel ./server/*.js --ignore=node_modules --out-dir ./server",
+                "babel-server-test": "babel ./server/*.js --ignore=node_modules --out-dir ./demo/beaver-logger",
+                "webpack": "babel-node --config-file ./node_modules/grumbler-scripts/config/.babelrc-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --display-optimization-bailout --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "prepublishOnly": "npm run babel-server",
+                "postpublish": "git checkout server"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/beaver-logger.git"
+            },
+            "keywords": [
+                "logging",
+                "logger",
+                "log",
+                "krakenjs",
+                "kraken"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "0.135.0",
+                "grumbler-scripts": "^3",
+                "mocha": "^3.5.3",
+                "sync-browser-mocks": "^1.0.44"
+            },
+            "dependencies": {
+                "belter": "^1.0.17",
+                "zalgo-promise": "^1.0.26"
+            },
+            "contributors": [
+                {
+                    "name": "Daniel Brain",
+                    "email": "dbrain@paypal.com"
+                },
+                {
+                    "name": "Praveen Gorthy",
+                    "email": "vgorthy@paypal.com"
+                },
+                {
+                    "name": "Joel Chen",
+                    "email": "joechen@paypal.com"
+                },
+                {
+                    "name": "Meng Shi",
+                    "email": "menshi@paypal.com"
+                },
+                {
+                    "name": "Mark Stuart",
+                    "email": "marstuart@paypal.com"
+                },
+                {
+                    "name": "Abilash Badri",
+                    "email": "abadri@paypal.com"
+                },
+                {
+                    "name": "Alfredo Barco",
+                    "email": "abarco@paypal.com"
+                },
+                {
+                    "name": "Stephen Westhafer",
+                    "email": "swesthafer@paypal.com"
+                }
+            ],
+            "gitHead": "d54d328fcaedf9619e3bd31e2e642a6fe0f8858b",
+            "bugs": {
+                "url": "https://github.com/krakenjs/beaver-logger/issues"
+            },
+            "homepage": "https://github.com/krakenjs/beaver-logger#readme",
+            "_id": "beaver-logger@4.0.24",
+            "_nodeVersion": "12.18.2",
+            "_npmVersion": "6.14.5",
+            "dist": {
+                "integrity": "sha512-35zOJ92EFcHpz9EdyhQi80Xrru7Zu6+b/N8MhSZrPjgmhyvCdR1GsiQ08xdPOHCrCp5BNY+o0Fzdq/b6x0vBhw==",
+                "shasum": "35bf8a2e5a5e422f27e707b41dd6c664b876d837",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/beaver-logger/tarballs/4.0.24.tgz",
+                "fileCount": 28,
+                "unpackedSize": 976791,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgLGDvCRA9TVsSAnZWagAA8qsQAJPwthn2RuTylLphM353\ncWWyONXP64gtokH5lKKY9bWKNZtZIWFw/cqKTtgy98alxoyBYeuY/svk5fLS\nXL0orQ9ofR+R0dBI1ZM4aGqByMiuSuEgvRAghx2VtrgRaofdymBi+uRzD8gG\nXWDOGPymws3hV6TvBPh4QECs0kxGuNqtdBaKOled/Mq0ug0C4m5ygzGREAgQ\nJX4yVriZifvGxgDzQfwTKeN2aJNo7glYuAF5wkiwGGwDoHK57AmIAQFU6bhj\n6Qx/ZXOyocaAY5mTWdjnZzDxeA4dYLKhgCwxb/e3HohZ2hiZpvfH+u5MDb1Y\n5Ny9ECxgsq+aEgIQ3eEVwqW5x8pGHXWE1VhJ6I7VrPyYn2sAOKQVU9DbMICj\nxEA/5IXnYmN/3HpykNrvLweHHXi3oGPdno98FJXvPiSy6c+6mFO66R/2cFrs\njMGOp92Vy5zXAlRd1UrdYcDcf1E3KtMTEyCqZNK7S73NSoMi3+ghOWXSTJC6\nb50ls0zQpYLxkTfswQdlUGXaP//9fCp8E1/sCxoNwWaao1v7nl0J+ththSFy\n1Y848jSO9hX0oaB+Objv7+7IocE1srm6Yb7NgiM2NTgrD9EjdyUxw8q/UTQI\nVAFhYPhubQpbIAF6cCC5aDn63EPKW1VnUAPjSXvLaclpuWCtl7eYXsnhlIfd\ndXB6\r\n=8nLY\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "_npmUser": {
+                "name": "bluepnume",
+                "email": "daniel@bluesuncorp.co.uk"
+            },
+            "directories": {},
+            "maintainers": [
+                {
+                    "name": "mstuart",
+                    "email": "stuartmark@gmail.com"
+                },
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                },
+                {
+                    "name": "mnicpt",
+                    "email": "mnicpt@gmail.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/beaver-logger_4.0.24_1613521135010_0.5509788142975589"
             },
             "_hasShrinkwrap": false
         }
