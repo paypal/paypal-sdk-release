@@ -8,6 +8,1508 @@
         "v5-beta": "5.0.0-rc.1"
     },
     "versions": {
+        "1.0.0": {
+            "name": "framebus",
+            "description": "Framebus allows you to easily send messages across frames (and iframes) with a simple bus.",
+            "repository": {
+                "type": "git",
+                "url": "git@github.com:braintree/framebus"
+            },
+            "homepage": "https://github.com/braintree/framebus",
+            "version": "1.0.0",
+            "main": "dist/framebus.js",
+            "browser": "dist/framebus.js",
+            "files": [
+                "dist/framebus.js",
+                "dist/framebus.min.js"
+            ],
+            "scripts": {
+                "test": "gulp test",
+                "start": "./bin/www"
+            },
+            "license": "MIT",
+            "author": {
+                "name": "braintree",
+                "email": "code@getbraintree.com"
+            },
+            "devDependencies": {
+                "async": "^0.9.0",
+                "chai": "^1.9.1",
+                "del": "^1.1.0",
+                "ejs": "^1.0.0",
+                "express": "^4.10.4",
+                "gulp": "^3.8.0",
+                "gulp-concat": "^2.4.2",
+                "gulp-eslint": "^0.5.0",
+                "gulp-mocha": "^0.4.1",
+                "gulp-remove-code": "^1.0.1",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^0.3.0",
+                "morgan": "^1.5.0",
+                "node-static": "^0.7.6",
+                "phantomjs": "1.9.11",
+                "selenium-standalone": "2.43.1-5",
+                "sinon": "^1.10.2",
+                "sinon-chai": "^2.5.0",
+                "vinyl-source-stream": "^1.0.0",
+                "wd-sync": "^1.2.5"
+            },
+            "gitHead": "794fbff40f1df49eaaed394d4278d1a5ac38a71d",
+            "bugs": {
+                "url": "https://github.com/braintree/framebus/issues"
+            },
+            "_id": "framebus@1.0.0",
+            "_shasum": "1bae741bec9246e163e5f231b2bcb9d2c4175e49",
+            "_from": ".",
+            "_npmVersion": "2.5.1",
+            "_nodeVersion": "0.12.0",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "1bae741bec9246e163e5f231b2bcb9d2c4175e49",
+                "tarball": "https://registry.npmjs.org/framebus/-/framebus-1.0.0.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "directories": {}
+        },
+        "2.0.0": {
+            "name": "framebus",
+            "description": "Framebus allows you to easily send messages across frames (and iframes) with a simple bus.",
+            "repository": {
+                "type": "git",
+                "url": "git@github.com:braintree/framebus"
+            },
+            "homepage": "https://github.com/braintree/framebus",
+            "version": "2.0.0",
+            "main": "dist/framebus.js",
+            "browser": "dist/framebus.js",
+            "files": [
+                "dist/framebus.js",
+                "dist/framebus.min.js"
+            ],
+            "scripts": {
+                "test": "xvfb-run --server-num=99 gulp test",
+                "start": "./bin/www"
+            },
+            "license": "MIT",
+            "author": {
+                "name": "braintree",
+                "email": "code@getbraintree.com"
+            },
+            "devDependencies": {
+                "async": "^0.9.0",
+                "chai": "^1.9.1",
+                "del": "^1.1.0",
+                "ejs": "^1.0.0",
+                "express": "^4.10.4",
+                "gulp": "^3.8.0",
+                "gulp-concat": "^2.4.2",
+                "gulp-eslint": "^0.5.0",
+                "gulp-mocha": "^0.4.1",
+                "gulp-remove-code": "^1.0.1",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^0.3.0",
+                "morgan": "^1.5.0",
+                "node-static": "^0.7.6",
+                "phantomjs": "1.9.11",
+                "selenium-standalone": "2.43.1-5",
+                "sinon": "^1.10.2",
+                "sinon-chai": "^2.5.0",
+                "vinyl-source-stream": "^1.0.0",
+                "wd-sync": "^1.2.5"
+            },
+            "gitHead": "81950e47d984d9cc0f0a376fa0798320eff70ca6",
+            "bugs": {
+                "url": "https://github.com/braintree/framebus/issues"
+            },
+            "_id": "framebus@2.0.0",
+            "_shasum": "8fbc346abb5115c20f86edccfd92fecaad6eb9c1",
+            "_from": ".",
+            "_npmVersion": "1.4.28",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "code@getbraintree.com"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "dist": {
+                "shasum": "8fbc346abb5115c20f86edccfd92fecaad6eb9c1",
+                "tarball": "https://registry.npmjs.org/framebus/-/framebus-2.0.0.tgz"
+            },
+            "directories": {}
+        },
+        "2.0.1": {
+            "name": "framebus",
+            "description": "Framebus allows you to easily send messages across frames (and iframes) with a simple bus.",
+            "repository": {
+                "type": "git",
+                "url": "git@github.com:braintree/framebus"
+            },
+            "homepage": "https://github.com/braintree/framebus",
+            "version": "2.0.1",
+            "main": "dist/framebus.js",
+            "browser": "dist/framebus.js",
+            "files": [
+                "dist/framebus.js",
+                "dist/framebus.min.js"
+            ],
+            "scripts": {
+                "test": "xvfb-run --server-num=99 gulp test",
+                "start": "./bin/www"
+            },
+            "license": "MIT",
+            "author": {
+                "name": "braintree",
+                "email": "code@getbraintree.com"
+            },
+            "devDependencies": {
+                "async": "^0.9.0",
+                "chai": "^1.9.1",
+                "del": "^1.1.0",
+                "ejs": "^1.0.0",
+                "express": "^4.10.4",
+                "gulp": "^3.8.0",
+                "gulp-concat": "^2.4.2",
+                "gulp-eslint": "^0.5.0",
+                "gulp-mocha": "^0.4.1",
+                "gulp-remove-code": "^1.0.1",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^0.3.0",
+                "morgan": "^1.5.0",
+                "node-static": "^0.7.6",
+                "phantomjs": "1.9.11",
+                "selenium-standalone": "2.43.1-5",
+                "sinon": "^1.10.2",
+                "sinon-chai": "^2.5.0",
+                "vinyl-source-stream": "^1.0.0",
+                "wd-sync": "^1.2.5"
+            },
+            "gitHead": "cba7f476ec1cb1f3d5b3ea69ccf6068f8729ac3e",
+            "bugs": {
+                "url": "https://github.com/braintree/framebus/issues"
+            },
+            "_id": "framebus@2.0.1",
+            "_shasum": "f922f3ded995e4beed602ae3bb5bf37249f0dcb1",
+            "_from": ".",
+            "_npmVersion": "1.4.28",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "code@getbraintree.com"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "dist": {
+                "shasum": "f922f3ded995e4beed602ae3bb5bf37249f0dcb1",
+                "tarball": "https://registry.npmjs.org/framebus/-/framebus-2.0.1.tgz"
+            },
+            "directories": {}
+        },
+        "2.0.3": {
+            "name": "framebus",
+            "description": "Framebus allows you to easily send messages across frames (and iframes) with a simple bus.",
+            "repository": {
+                "type": "git",
+                "url": "git@github.com:braintree/framebus"
+            },
+            "homepage": "https://github.com/braintree/framebus",
+            "version": "2.0.3",
+            "main": "dist/framebus.js",
+            "browser": "dist/framebus.js",
+            "files": [
+                "dist/framebus.js",
+                "dist/framebus.min.js"
+            ],
+            "scripts": {
+                "test": "xvfb-run --server-num=99 gulp test",
+                "start": "./bin/www"
+            },
+            "license": "MIT",
+            "author": {
+                "name": "braintree",
+                "email": "code@getbraintree.com"
+            },
+            "devDependencies": {
+                "async": "^0.9.0",
+                "chai": "^1.9.1",
+                "del": "^1.1.0",
+                "ejs": "^1.0.0",
+                "express": "^4.10.4",
+                "gulp": "^3.8.0",
+                "gulp-concat": "^2.4.2",
+                "gulp-eslint": "^0.5.0",
+                "gulp-mocha": "^0.4.1",
+                "gulp-remove-code": "^1.0.1",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^0.3.0",
+                "morgan": "^1.5.0",
+                "node-static": "^0.7.6",
+                "phantomjs": "1.9.11",
+                "selenium-standalone": "2.43.1-5",
+                "sinon": "^1.10.2",
+                "sinon-chai": "^2.5.0",
+                "vinyl-source-stream": "^1.0.0",
+                "wd-sync": "^1.2.5"
+            },
+            "gitHead": "5a17aee5825f8c30b0e8d91ff29dd9b8324427b7",
+            "bugs": {
+                "url": "https://github.com/braintree/framebus/issues"
+            },
+            "_id": "framebus@2.0.3",
+            "_shasum": "9efbdb4688560ebf26ff8518790a8d81500e97f0",
+            "_from": ".",
+            "_npmVersion": "1.4.28",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "dist": {
+                "shasum": "9efbdb4688560ebf26ff8518790a8d81500e97f0",
+                "tarball": "https://registry.npmjs.org/framebus/-/framebus-2.0.3.tgz"
+            },
+            "directories": {}
+        },
+        "2.0.4": {
+            "name": "framebus",
+            "description": "Framebus allows you to easily send messages across frames (and iframes) with a simple bus.",
+            "repository": {
+                "type": "git",
+                "url": "git@github.com:braintree/framebus"
+            },
+            "homepage": "https://github.com/braintree/framebus",
+            "version": "2.0.4",
+            "main": "dist/framebus.js",
+            "browser": "dist/framebus.js",
+            "files": [
+                "dist/framebus.js",
+                "dist/framebus.min.js"
+            ],
+            "scripts": {
+                "test": "xvfb-run --server-num=99 gulp test",
+                "start": "./bin/www"
+            },
+            "license": "MIT",
+            "author": {
+                "name": "braintree",
+                "email": "code@getbraintree.com"
+            },
+            "devDependencies": {
+                "async": "^0.9.0",
+                "chai": "^1.9.1",
+                "del": "^1.1.0",
+                "ejs": "^1.0.0",
+                "express": "^4.10.4",
+                "gulp": "^3.8.0",
+                "gulp-concat": "^2.4.2",
+                "gulp-eslint": "^0.5.0",
+                "gulp-mocha": "^0.4.1",
+                "gulp-remove-code": "^1.0.1",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^0.3.0",
+                "morgan": "^1.5.0",
+                "node-static": "^0.7.6",
+                "phantomjs": "1.9.11",
+                "selenium-standalone": "2.43.1-5",
+                "sinon": "^1.10.2",
+                "sinon-chai": "^2.5.0",
+                "vinyl-source-stream": "^1.0.0",
+                "wd-sync": "^1.2.5"
+            },
+            "gitHead": "17f834b915a5c8dc966644413991378dfc323c7f",
+            "bugs": {
+                "url": "https://github.com/braintree/framebus/issues"
+            },
+            "_id": "framebus@2.0.4",
+            "_shasum": "093bfb21c745069a02af2b3587645d731274e54c",
+            "_from": ".",
+            "_npmVersion": "2.1.3",
+            "_nodeVersion": "0.10.26",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "dist": {
+                "shasum": "093bfb21c745069a02af2b3587645d731274e54c",
+                "tarball": "https://registry.npmjs.org/framebus/-/framebus-2.0.4.tgz"
+            },
+            "directories": {}
+        },
+        "2.0.5": {
+            "name": "framebus",
+            "description": "Framebus allows you to easily send messages across frames (and iframes) with a simple bus.",
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/framebus.git"
+            },
+            "homepage": "https://github.com/braintree/framebus",
+            "version": "2.0.5",
+            "main": "dist/framebus.js",
+            "browser": "dist/framebus.js",
+            "files": [
+                "dist/framebus.js",
+                "dist/framebus.min.js"
+            ],
+            "scripts": {
+                "lint": "eslint .",
+                "test": "npm run lint && xvfb-run --server-num=99 gulp test",
+                "start": "./bin/www"
+            },
+            "license": "MIT",
+            "author": {
+                "name": "braintree",
+                "email": "code@getbraintree.com"
+            },
+            "devDependencies": {
+                "async": "^0.9.0",
+                "chai": "^1.9.1",
+                "del": "^1.1.0",
+                "ejs": "^1.0.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.0",
+                "express": "^4.10.4",
+                "gulp": "^3.8.0",
+                "gulp-concat": "^2.4.2",
+                "gulp-mocha": "^0.4.1",
+                "gulp-remove-code": "^1.0.1",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^0.3.0",
+                "morgan": "^1.5.0",
+                "node-static": "^0.7.6",
+                "phantomjs": "1.9.11",
+                "selenium-standalone": "2.43.1-5",
+                "sinon": "^1.10.2",
+                "sinon-chai": "^2.5.0",
+                "vinyl-source-stream": "^1.0.0",
+                "wd-sync": "^1.2.5"
+            },
+            "gitHead": "7ef74c1b1f0a98f493050bb2d030a6d817716fb0",
+            "bugs": {
+                "url": "https://github.com/braintree/framebus/issues"
+            },
+            "_id": "framebus@2.0.5",
+            "_shasum": "13f014d024907442b404ae20ed92d3f198ab8364",
+            "_from": ".",
+            "_npmVersion": "2.15.1",
+            "_nodeVersion": "4.4.3",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "dist": {
+                "shasum": "13f014d024907442b404ae20ed92d3f198ab8364",
+                "tarball": "https://registry.npmjs.org/framebus/-/framebus-2.0.5.tgz"
+            },
+            "_npmOperationalInternal": {
+                "host": "packages-16-east.internal.npmjs.com",
+                "tmp": "tmp/framebus-2.0.5.tgz_1461878780867_0.3225375001784414"
+            },
+            "directories": {}
+        },
+        "2.0.6": {
+            "name": "framebus",
+            "description": "Framebus allows you to easily send messages across frames (and iframes) with a simple bus.",
+            "repository": {
+                "type": "git",
+                "url": "git@github.com:braintree/framebus"
+            },
+            "homepage": "https://github.com/braintree/framebus",
+            "version": "2.0.6",
+            "main": "dist/framebus.js",
+            "browser": "dist/framebus.js",
+            "files": [
+                "dist/framebus.js",
+                "dist/framebus.min.js"
+            ],
+            "scripts": {
+                "lint": "eslint .",
+                "test": "npm run lint && xvfb-run -a --server-num=99 gulp test",
+                "start": "./bin/www"
+            },
+            "license": "MIT",
+            "author": {
+                "name": "braintree",
+                "email": "code@getbraintree.com"
+            },
+            "devDependencies": {
+                "async": "^0.9.0",
+                "chai": "^1.9.1",
+                "del": "^1.1.0",
+                "ejs": "^1.0.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.0",
+                "express": "^4.10.4",
+                "gulp": "^3.8.0",
+                "gulp-concat": "^2.4.2",
+                "gulp-mocha": "^0.4.1",
+                "gulp-remove-code": "^1.0.1",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^0.3.0",
+                "morgan": "^1.5.0",
+                "node-static": "^0.7.6",
+                "phantomjs": "1.9.11",
+                "selenium-standalone": "2.43.1-5",
+                "sinon": "^1.10.2",
+                "sinon-chai": "^2.5.0",
+                "vinyl-source-stream": "^1.0.0",
+                "wd-sync": "^1.2.5"
+            },
+            "gitHead": "4c155d56b268e59c6f7c8d81dcc876da77eae3c7",
+            "bugs": {
+                "url": "https://github.com/braintree/framebus/issues"
+            },
+            "_id": "framebus@2.0.6",
+            "_shasum": "fd82cf9ca86fb64858c44b4365efb13524926d6b",
+            "_from": ".",
+            "_npmVersion": "2.5.1",
+            "_nodeVersion": "0.12.0",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "fd82cf9ca86fb64858c44b4365efb13524926d6b",
+                "tarball": "https://registry.npmjs.org/framebus/-/framebus-2.0.6.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "packages-12-west.internal.npmjs.com",
+                "tmp": "tmp/framebus-2.0.6.tgz_1466093435809_0.01582603110000491"
+            },
+            "deprecated": "Critical bug preventing CommonJS imports",
+            "directories": {}
+        },
+        "2.0.7": {
+            "name": "framebus",
+            "description": "Framebus allows you to easily send messages across frames (and iframes) with a simple bus.",
+            "repository": {
+                "type": "git",
+                "url": "git@github.com:braintree/framebus"
+            },
+            "homepage": "https://github.com/braintree/framebus",
+            "version": "2.0.7",
+            "main": "dist/framebus.js",
+            "browser": "dist/framebus.js",
+            "files": [
+                "dist/framebus.js",
+                "dist/framebus.min.js"
+            ],
+            "scripts": {
+                "lint": "eslint .",
+                "test": "npm run lint && xvfb-run -a --server-num=99 gulp test",
+                "start": "./bin/www"
+            },
+            "license": "MIT",
+            "author": {
+                "name": "braintree",
+                "email": "code@getbraintree.com"
+            },
+            "devDependencies": {
+                "async": "^0.9.0",
+                "chai": "^1.9.1",
+                "del": "^1.1.0",
+                "ejs": "^1.0.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.0",
+                "express": "^4.10.4",
+                "gulp": "^3.8.0",
+                "gulp-concat": "^2.4.2",
+                "gulp-mocha": "^0.4.1",
+                "gulp-remove-code": "^1.0.1",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^0.3.0",
+                "morgan": "^1.5.0",
+                "node-static": "^0.7.6",
+                "phantomjs": "1.9.11",
+                "selenium-standalone": "2.43.1-5",
+                "sinon": "^1.10.2",
+                "sinon-chai": "^2.5.0",
+                "vinyl-source-stream": "^1.0.0",
+                "wd-sync": "^1.2.5"
+            },
+            "gitHead": "09eeb98ee6a8496705b02f76ab4b7cd160b5f47b",
+            "bugs": {
+                "url": "https://github.com/braintree/framebus/issues"
+            },
+            "_id": "framebus@2.0.7",
+            "_shasum": "e345249b9d8c081998466d222dedac5fad5ae0c8",
+            "_from": ".",
+            "_npmVersion": "2.5.1",
+            "_nodeVersion": "0.12.0",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "e345249b9d8c081998466d222dedac5fad5ae0c8",
+                "tarball": "https://registry.npmjs.org/framebus/-/framebus-2.0.7.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "packages-16-east.internal.npmjs.com",
+                "tmp": "tmp/framebus-2.0.7.tgz_1466098837352_0.07259017112664878"
+            },
+            "directories": {}
+        },
+        "2.0.8": {
+            "name": "framebus",
+            "description": "Framebus allows you to easily send messages across frames (and iframes) with a simple bus.",
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/framebus.git"
+            },
+            "homepage": "https://github.com/braintree/framebus",
+            "version": "2.0.8",
+            "main": "dist/framebus.js",
+            "browser": "dist/framebus.js",
+            "files": [
+                "dist/framebus.js",
+                "dist/framebus.min.js"
+            ],
+            "scripts": {
+                "lint": "eslint .",
+                "test": "npm run lint && xvfb-run -a --server-num=99 gulp test",
+                "start": "./bin/www"
+            },
+            "license": "MIT",
+            "author": {
+                "name": "braintree",
+                "email": "code@getbraintree.com"
+            },
+            "devDependencies": {
+                "async": "^0.9.0",
+                "chai": "^1.9.1",
+                "del": "^1.1.0",
+                "ejs": "^1.0.0",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.0",
+                "express": "^4.10.4",
+                "gulp": "^3.8.0",
+                "gulp-concat": "^2.4.2",
+                "gulp-mocha": "^0.4.1",
+                "gulp-remove-code": "^1.0.1",
+                "gulp-rename": "^1.2.0",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^0.3.0",
+                "morgan": "^1.5.0",
+                "node-static": "^0.7.6",
+                "phantomjs": "1.9.20",
+                "selenium-standalone": "2.43.1-5",
+                "sinon": "^1.10.2",
+                "sinon-chai": "^2.5.0",
+                "vinyl-source-stream": "^1.0.0",
+                "wd-sync": "^1.2.5"
+            },
+            "gitHead": "48902e4b17e983566c60508b708c2b436995f3e3",
+            "bugs": {
+                "url": "https://github.com/braintree/framebus/issues"
+            },
+            "_id": "framebus@2.0.8",
+            "_shasum": "01c7ee5f765beb3f9a2e0390ca0b7088b2bf76d3",
+            "_from": ".",
+            "_npmVersion": "2.14.12",
+            "_nodeVersion": "4.3.1",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "01c7ee5f765beb3f9a2e0390ca0b7088b2bf76d3",
+                "tarball": "https://registry.npmjs.org/framebus/-/framebus-2.0.8.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "packages-12-west.internal.npmjs.com",
+                "tmp": "tmp/framebus-2.0.8.tgz_1486659202768_0.2526619618292898"
+            },
+            "directories": {}
+        },
+        "3.0.0": {
+            "name": "framebus",
+            "description": "Framebus allows you to easily send messages across frames (and iframes) with a simple bus.",
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/framebus.git"
+            },
+            "homepage": "https://github.com/braintree/framebus",
+            "version": "3.0.0",
+            "main": "lib/framebus.js",
+            "files": [
+                "lib/framebus.js"
+            ],
+            "scripts": {
+                "lint": "eslint .",
+                "test": "npm run lint && xvfb-run -a --server-num=99 gulp test",
+                "start": "./bin/www"
+            },
+            "license": "MIT",
+            "author": {
+                "name": "braintree",
+                "email": "code@getbraintree.com"
+            },
+            "devDependencies": {
+                "async": "^0.9.0",
+                "browserify": "^16.1.1",
+                "chai": "^1.9.1",
+                "del": "^1.1.0",
+                "ejs": "~>2.5.5",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.0",
+                "express": "^4.10.4",
+                "gulp": "^3.8.0",
+                "gulp-concat": "^2.4.2",
+                "gulp-mocha": "^0.4.1",
+                "gulp-remove-code": "^1.0.1",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^0.3.0",
+                "morgan": "^1.5.0",
+                "phantomjs": "1.9.20",
+                "selenium-standalone": "2.43.1-5",
+                "sinon": "^1.10.2",
+                "sinon-chai": "^2.5.0",
+                "vinyl-buffer": "^1.0.1",
+                "vinyl-source-stream": "^1.1.2",
+                "wd-sync": "^1.2.5"
+            },
+            "gitHead": "3a1b2f661eb1152cc1ca5bc45297ed5adc866036",
+            "bugs": {
+                "url": "https://github.com/braintree/framebus/issues"
+            },
+            "_id": "framebus@3.0.0",
+            "_shasum": "d1a0547bb0641cb5ce92222448891a88ad0478c9",
+            "_from": ".",
+            "_npmVersion": "3.10.10",
+            "_nodeVersion": "6.13.1",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "d1a0547bb0641cb5ce92222448891a88ad0478c9",
+                "tarball": "https://registry.npmjs.org/framebus/-/framebus-3.0.0.tgz",
+                "fileCount": 5,
+                "unpackedSize": 17255
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/framebus_3.0.0_1521840155494_0.3968922531455443"
+            },
+            "_hasShrinkwrap": false
+        },
+        "3.0.1": {
+            "name": "framebus",
+            "description": "Framebus allows you to easily send messages across frames (and iframes) with a simple bus.",
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/framebus.git"
+            },
+            "homepage": "https://github.com/braintree/framebus",
+            "version": "3.0.1",
+            "main": "lib/framebus.js",
+            "files": [
+                "lib/framebus.js"
+            ],
+            "scripts": {
+                "lint": "eslint .",
+                "test": "npm run lint && xvfb-run -a --server-num=99 gulp test",
+                "start": "./bin/www"
+            },
+            "license": "MIT",
+            "author": {
+                "name": "braintree",
+                "email": "code@getbraintree.com"
+            },
+            "devDependencies": {
+                "async": "^0.9.0",
+                "browserify": "^16.1.1",
+                "chai": "^1.9.1",
+                "del": "^1.1.0",
+                "ejs": "~>2.5.5",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.0",
+                "express": "^4.10.4",
+                "gulp": "^3.8.0",
+                "gulp-concat": "^2.4.2",
+                "gulp-mocha": "^0.4.1",
+                "gulp-remove-code": "^1.0.1",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^0.3.0",
+                "morgan": "^1.5.0",
+                "phantomjs": "1.9.20",
+                "selenium-standalone": "2.43.1-5",
+                "sinon": "^1.10.2",
+                "sinon-chai": "^2.5.0",
+                "vinyl-buffer": "^1.0.1",
+                "vinyl-source-stream": "^1.1.2",
+                "wd-sync": "^1.2.5"
+            },
+            "gitHead": "d58a55b9725899cc20692b81910089e55ca51315",
+            "bugs": {
+                "url": "https://github.com/braintree/framebus/issues"
+            },
+            "_id": "framebus@3.0.1",
+            "_shasum": "dbabc3b08e39bf33d248e9af754bd8ffb05cfcce",
+            "_from": ".",
+            "_npmVersion": "3.10.10",
+            "_nodeVersion": "6.14.1",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "dbabc3b08e39bf33d248e9af754bd8ffb05cfcce",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/framebus/tarballs/3.0.1.tgz",
+                "fileCount": 5,
+                "unpackedSize": 17821,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJa5z0kCRA9TVsSAnZWagAAKZkP/RhZbM26nbtEnWTvJhf6\nEMvMjtR6pThAoeUdaIGKS/l4Hd7Pf7zzwM6I418S3FnDA3tbOztJ+R0XQuRd\n+rPXlBKZ7k/BbJXnNFpB7ZumJZduqiUUQ/IlSEhin8/ylQgdJh2GcNgeQ0CZ\nXUmUxbmnPC/e6CulqlJcGSVfKHkrml6rdEN6DFuhUTdrAAnQGx7ZCVAX6DJu\nYbcfid9j5dR3HalVaqvtYcB9+vXLcY+yU83xd7ilECz60JPY5Lr0KSvaeVHD\nQM+dwEguW8kgmDbHUxKZAt0HdSuBkjphejR8IV4Tup8J9SotjwcjTOxN5Jf8\nVSJgWNR4Yk6M/FcDs6epKISE7c6ujGGqCKZ3Zn1yMXWfRodSz7xWicL0s/sR\nimdhiBR89rEfBJfhFG6TFCp0GeQzc3mOkvl/f4YsY+1BL1TP3jsLTROhBds6\nZYLzPyWQFskIlOJMwnKOL5NwurDk8eHuUqkiVz/hpVASo4DSlt5XcT+sT0Im\no+cV1OhH3p5cONt47vORWRf/VGzm4h3lD7YSD8bvLCSz2sLqIzK2jPrLRO6Y\nsWCUPT/Ju4jEZy05hPrg2M1g8CvhRVb10nw53Kv6cSkDglZFPwSo8DPsx5TY\nLI0QLil9uGaaIoNEESuiG6ikxsF19c8Sxnu0K4XNFxPJIBxlvHJW5hiL7fbm\nu4r8\r\n=UHU+\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/framebus_3.0.1_1525103907225_0.5125504498848557"
+            },
+            "_hasShrinkwrap": false
+        },
+        "3.0.2": {
+            "name": "framebus",
+            "description": "Framebus allows you to easily send messages across frames (and iframes) with a simple bus.",
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/framebus.git"
+            },
+            "homepage": "https://github.com/braintree/framebus",
+            "version": "3.0.2",
+            "main": "lib/framebus.js",
+            "scripts": {
+                "lint": "eslint .",
+                "test": "npm run lint && xvfb-run -a --server-num=99 gulp test",
+                "start": "./bin/www"
+            },
+            "license": "MIT",
+            "author": {
+                "name": "braintree",
+                "email": "code@getbraintree.com"
+            },
+            "devDependencies": {
+                "async": "^0.9.0",
+                "browserify": "^16.1.1",
+                "chai": "^1.9.1",
+                "del": "^1.1.0",
+                "ejs": "~>2.5.5",
+                "eslint": "2.7.0",
+                "eslint-config-braintree": "1.0.0",
+                "express": "^4.10.4",
+                "gulp": "^3.8.0",
+                "gulp-concat": "^2.4.2",
+                "gulp-mocha": "^0.4.1",
+                "gulp-remove-code": "^1.0.1",
+                "gulp-size": "^1.1.0",
+                "gulp-streamify": "0.0.5",
+                "gulp-uglify": "^0.3.0",
+                "morgan": "^1.5.0",
+                "phantomjs": "1.9.20",
+                "selenium-standalone": "2.43.1-5",
+                "sinon": "^1.10.2",
+                "sinon-chai": "^2.5.0",
+                "vinyl-buffer": "^1.0.1",
+                "vinyl-source-stream": "^1.1.2",
+                "wd-sync": "^1.2.5"
+            },
+            "gitHead": "81f006a17899e882021663477f77be542f05af2f",
+            "bugs": {
+                "url": "https://github.com/braintree/framebus/issues"
+            },
+            "_id": "framebus@3.0.2",
+            "_npmVersion": "6.4.1",
+            "_nodeVersion": "8.14.0",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "integrity": "sha512-OqhYkhgRYlpKZoSl5EA3whKh8O8omFPCzf7MGzFqC6CtrT8lg7evNgU6QdjC3uY3ATq5saMDiY5HJ8KGiGDYCA==",
+                "shasum": "0c99c70cb507522aae6ed485e1317fc913873a8a",
+                "tarball": "https://registry.npmjs.org/framebus/-/framebus-3.0.2.tgz",
+                "fileCount": 5,
+                "unpackedSize": 17990,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcCCQdCRA9TVsSAnZWagAAOqcP/2s5jAuHBuTSO1RWLRCy\n5TUSO4kvLMIWSB348rQwRXa4awW3IUWVNFjhATGXjC6rqo5laNvMM4CbcpeT\nFacaHugo1iNgc37VL5+0oJtXn/ZEYNJa8qRArvSUJqj150wg3uB41QsWUQnN\n/fUv6OdNuG6M97Av1rOy5XYvArWXyPskbSKKF75worKsrXEUh9jo8i4SU4eQ\nU4sijsynhdAUzi0FEAwOoJG6+jmG71jLCh+quA5nlmoTr5fq3igrZcHuKV2w\n7c5xWg3VI6XyGMyZqyoDX5WTNmXKBEAFpJdhCrNERldSHPAX5UgmVKm1U6+4\n227rbw0edxadWMicLuqa0X4ytjcpYPTFqbNRsosuWHFiooqPGaJMHywPsnx6\naljbdeDA/+wCO3zRRe3ChIT1egbxKv+uHx1A58Aa4M0eOZ+DnYNxr3dpaIno\nkK0ScXyoGUvBNayhZdW/XlQcVybYutHCR11e6Il738o+xawAh83/+QAFe5Kn\nfBUdIDG+tJBtCiPylw5u4HpJHCD+NyMCzgWV7hKT6Uf4L0PYJpAidBKz3S/m\nEBwtZXrRk600lCnxE5GiPLAP7j2+Kdq+PSR/4kUun/MMXOw9AyCzituCfO1j\nSr6WKDsYFGhYtZ1HT+G4/OrOo843GHWp7tmC4yuc9WN7zSOzA3cjMdk3iCne\n6r0X\r\n=IjKb\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/framebus_3.0.2_1544037404286_0.434033970486976"
+            },
+            "_hasShrinkwrap": false
+        },
+        "4.0.0": {
+            "name": "framebus",
+            "description": "Framebus allows you to easily send messages across frames (and iframes) with a simple bus.",
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/framebus.git"
+            },
+            "homepage": "https://github.com/braintree/framebus",
+            "version": "4.0.0",
+            "main": "dist/index.js",
+            "scripts": {
+                "prepublishOnly": "npm run build",
+                "prebuild": "prettier --write .",
+                "build": "tsc --declaration",
+                "lint": "eslint --ext js,ts .",
+                "pretest": "npm run lint",
+                "test:unit": "jest spec/unit/",
+                "pretest:functional": "gulp functional:prep",
+                "test:functional": "wdio wdio.conf.js",
+                "test": "npm run test:unit && npm run test:functional",
+                "start": "./bin/www"
+            },
+            "license": "MIT",
+            "author": {
+                "name": "braintree",
+                "email": "code@getbraintree.com"
+            },
+            "devDependencies": {
+                "@types/jest": "^25.2.3",
+                "@wdio/cli": "^6.1.12",
+                "@wdio/local-runner": "^6.1.12",
+                "@wdio/mocha-framework": "^6.1.8",
+                "@wdio/spec-reporter": "^6.1.12",
+                "@wdio/sync": "^6.1.8",
+                "async": "^3.2.0",
+                "browserify": "^16.5.1",
+                "chromedriver": "^81.0.0",
+                "del": "^5.1.0",
+                "ejs": "^3.1.3",
+                "eslint": "^6.8.0",
+                "eslint-config-braintree": "5.0.0-typescript-prep-rc.17",
+                "express": "^4.10.4",
+                "gulp": "^4.0.2",
+                "gulp-concat": "^2.4.2",
+                "gulp-remove-code": "^3.0.4",
+                "gulp-size": "^3.0.0",
+                "gulp-streamify": "^1.0.2",
+                "gulp-uglify": "^3.0.2",
+                "jest": "^26.0.1",
+                "morgan": "^1.10.0",
+                "prettier": "^2.0.5",
+                "ts-jest": "^26.0.0",
+                "tsify": "^4.0.1",
+                "typescript": "^3.9.2",
+                "vinyl-buffer": "^1.0.1",
+                "vinyl-source-stream": "^2.0.0",
+                "wdio-chromedriver-service": "^6.0.3"
+            },
+            "jest": {
+                "preset": "ts-jest",
+                "setupFilesAfterEnv": [
+                    "./spec/unit/helpers.ts"
+                ]
+            },
+            "gitHead": "214f89a167f2eaa47bd341b713420c9160808c39",
+            "bugs": {
+                "url": "https://github.com/braintree/framebus/issues"
+            },
+            "_id": "framebus@4.0.0",
+            "_nodeVersion": "12.14.0",
+            "_npmVersion": "6.13.4",
+            "dist": {
+                "integrity": "sha512-qqt+6v3ar5pRSM+J4ok4AMjxbUv4vy27K6kmWBJcDqt1f0b02lvi5U2EMw5/teK41d8CM3+18GAfkFCuD0k3Ww==",
+                "shasum": "d7042f7a38f2076c4f1ad19fead1d31c04ba401d",
+                "tarball": "https://registry.npmjs.org/framebus/-/framebus-4.0.0.tgz",
+                "fileCount": 36,
+                "unpackedSize": 26448,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJewvTiCRA9TVsSAnZWagAAm6wP+QHFvxHDqPjR6YIk9a/j\newm1w9XPggj7B8XBa4dPhChWz1WZGQjRbqaSdk1Vl4Z2QNVVEGyOb7ibClmP\nsLkQYObbkj/jEWsarDJl6q+gta/O/KterEhM2yDFEUH919f4WrDV/REP5aWv\nQbZZbvqezphgFbifk+pv+eiGFHeRlKPQrh5kV64pIWMpGUlLrIyZmK3ZDaPD\nhfomQpCKi9d7gDJDj63ieDupjQtgN2JnP3oaeTSEUf9TUScT6KSkOjnW4oTZ\nQdcXAcg21SJ8Q1tR5L3l2AxL9guVnXOBFAg9/kOEPqzw7ozjQUUKI6TCui81\nrQlE4fjobTf1m4WesxDtReN5rJak+Jn6X8uCxizIHJQbLymNl+U3RFEIV9rF\nQUgkfrJsKMXwZoMHoTp8ll+poY+vN0npN9nofmLx2D0KV29lGeBh9iTqIptL\nFMCcs/OQvUkp0Kxev/W8Qp9Hr0dg3NwwGljSIwMY/GVDg+02XJQXtfr3u118\n8ZGtzHqW2QOAYn6edsvIoxq9wGef6ESmK9KyAi3VioP2DNgmbGJwyXZPCswq\n5vV3pAVjuPbbeVXrs64WB2xk3fVerNv8E+K0okLXUsB57jk2Bjn66gElf1r3\n47fhbkBGRqm37z7gW05EXKbtsfzj2aNq9ArGMHk0bhOKx7yuGdPmi06lY2kk\nBISl\r\n=Rr1i\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmUser": {
+                "name": "braintree",
+                "email": "team-sdk@getbraintree.com"
+            },
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/framebus_4.0.0_1589834977635_0.6017086698129781"
+            },
+            "_hasShrinkwrap": false
+        },
+        "4.0.1": {
+            "name": "framebus",
+            "description": "Framebus allows you to easily send messages across frames (and iframes) with a simple bus.",
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/framebus.git"
+            },
+            "homepage": "https://github.com/braintree/framebus",
+            "version": "4.0.1",
+            "main": "dist/index.js",
+            "scripts": {
+                "prepublishOnly": "npm run build",
+                "prebuild": "prettier --write .",
+                "build": "tsc --declaration",
+                "lint": "eslint --ext js,ts .",
+                "pretest": "npm run lint",
+                "test:unit": "jest spec/unit/",
+                "pretest:functional": "gulp functional:prep",
+                "test:functional": "wdio wdio.conf.js",
+                "test": "npm run test:unit && npm run test:functional",
+                "start": "./bin/www"
+            },
+            "license": "MIT",
+            "author": {
+                "name": "braintree",
+                "email": "code@getbraintree.com"
+            },
+            "devDependencies": {
+                "@types/jest": "^26.0.0",
+                "@wdio/cli": "^6.1.17",
+                "@wdio/local-runner": "^6.1.17",
+                "@wdio/mocha-framework": "^6.1.17",
+                "@wdio/spec-reporter": "^6.1.14",
+                "@wdio/sync": "^6.1.14",
+                "async": "^3.2.0",
+                "browserify": "^16.5.1",
+                "chromedriver": "^83.0.0",
+                "del": "^5.1.0",
+                "ejs": "^3.1.3",
+                "eslint": "^6.8.0",
+                "eslint-config-braintree": "5.0.0-typescript-prep-rc.17",
+                "express": "^4.10.4",
+                "gulp": "^4.0.2",
+                "gulp-concat": "^2.4.2",
+                "gulp-remove-code": "^3.0.4",
+                "gulp-size": "^3.0.0",
+                "gulp-streamify": "^1.0.2",
+                "gulp-uglify": "^3.0.2",
+                "jest": "^26.0.1",
+                "morgan": "^1.10.0",
+                "prettier": "^2.0.5",
+                "ts-jest": "^26.1.0",
+                "tsify": "^4.0.2",
+                "typescript": "^3.9.5",
+                "vinyl-buffer": "^1.0.1",
+                "vinyl-source-stream": "^2.0.0",
+                "wdio-chromedriver-service": "^6.0.3"
+            },
+            "jest": {
+                "preset": "ts-jest",
+                "setupFilesAfterEnv": [
+                    "./spec/unit/helpers.ts"
+                ]
+            },
+            "gitHead": "20d32d566c3dca9dd8cc4fc83e6599a5853c2839",
+            "bugs": {
+                "url": "https://github.com/braintree/framebus/issues"
+            },
+            "_id": "framebus@4.0.1",
+            "_nodeVersion": "12.14.0",
+            "_npmVersion": "6.13.4",
+            "dist": {
+                "integrity": "sha512-DCa3iGTCBHPHCxGbtCSZwxK4kAFF3zqWqEy7CHdbVqoaxDfcpIW0IP6SMdwFUSq1znvMWhn7B8ZM0gS9Np55rw==",
+                "shasum": "e563d712b466350cc69b35d33820aed911cd961e",
+                "tarball": "https://registry.npmjs.org/framebus/-/framebus-4.0.1.tgz",
+                "fileCount": 36,
+                "unpackedSize": 26566,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJe43SaCRA9TVsSAnZWagAAW2wQAJpxV/Q9IPucD44DL5LV\nl8AOa+hNVhSonFSoyWY+DSDAM4/1MdcyKYLZlGTQMLpDsJp+mGksEL2R5R+u\nsjBCucZJfB1h9Nh4Z+TSPbDzRSYLHqu9xl7YFEMjn3MV6AP6wgUqLjA/Ibyn\n0UtMOdrMjD31WjjPUDpH+G355x6TYNSH9cqXhvKnWoSFHzSBgSh/z177VCuN\nvUmquILQG66uzyRLnGOYeKfpLgbjBm0+7iRtS4EpaPBV/yqDBmWs1ZAhfwbA\nLA0mBJ892bjpI2W8jCqzkLwbHLQS8TgmSgxDmFVcTsO1/JfcA1OUMWEOPysA\nACAT/QMV7UAm5kYSctYYGndQKUgFrfUVqkyFEEb49OQRgI5PlgrzvrCeRKgH\nLr3Bpc/fRH86t1pmRIjBBRC58ilM+3lPwz4der4Z1WEPaOmAypMH/fVDm2Hv\n4hoe8qH9oeWB1wwuA1sHLMtRBZXUEoCkrEld7V4rtc+Pw/8dILaDePxDBDY2\nGBIAneHuY9h7fjland/RLsB8oUFukp4OaGOsUrTMGldmrQx055k03zq57JqB\nOTAJ5X9QbBBGjxRXfxUE8x+twVfm6yTX0D6Llw+rjYcQRl+b9dGzEBe7P75i\n7jUo1OD6VbcFo+U5JjH25QcU/C0Xl5iH/t44pIuLyCdaRVzvzb/P/k4F1lMG\nmGtI\r\n=l9cu\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmUser": {
+                "name": "braintree",
+                "email": "team-sdk@getbraintree.com"
+            },
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/framebus_4.0.1_1591964826016_0.7625573728315069"
+            },
+            "_hasShrinkwrap": false
+        },
+        "4.0.2": {
+            "name": "framebus",
+            "description": "Framebus allows you to easily send messages across frames (and iframes) with a simple bus.",
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/framebus.git"
+            },
+            "homepage": "https://github.com/braintree/framebus",
+            "version": "4.0.2",
+            "main": "dist/index.js",
+            "scripts": {
+                "prepublishOnly": "npm run build",
+                "prebuild": "prettier --write .",
+                "build": "tsc --declaration",
+                "lint": "eslint --ext js,ts .",
+                "pretest": "npm run lint",
+                "test:unit": "jest spec/unit/",
+                "pretest:functional": "gulp functional:prep",
+                "test:functional": "wdio wdio.conf.js",
+                "test": "npm run test:unit && npm run test:functional",
+                "start": "./bin/www"
+            },
+            "license": "MIT",
+            "author": {
+                "name": "braintree",
+                "email": "code@getbraintree.com"
+            },
+            "devDependencies": {
+                "@types/jest": "^26.0.0",
+                "@wdio/cli": "^6.1.17",
+                "@wdio/local-runner": "^6.1.17",
+                "@wdio/mocha-framework": "^6.1.17",
+                "@wdio/spec-reporter": "^6.1.14",
+                "@wdio/sync": "^6.1.14",
+                "async": "^3.2.0",
+                "browserify": "^16.5.1",
+                "chromedriver": "^83.0.0",
+                "del": "^5.1.0",
+                "ejs": "^3.1.3",
+                "eslint": "^6.8.0",
+                "eslint-config-braintree": "5.0.0-typescript-prep-rc.17",
+                "express": "^4.10.4",
+                "gulp": "^4.0.2",
+                "gulp-concat": "^2.4.2",
+                "gulp-remove-code": "^3.0.4",
+                "gulp-size": "^3.0.0",
+                "gulp-streamify": "^1.0.2",
+                "gulp-uglify": "^3.0.2",
+                "jest": "^26.0.1",
+                "morgan": "^1.10.0",
+                "prettier": "^2.0.5",
+                "ts-jest": "^26.1.0",
+                "tsify": "^4.0.2",
+                "typescript": "^3.9.5",
+                "vinyl-buffer": "^1.0.1",
+                "vinyl-source-stream": "^2.0.0",
+                "wdio-chromedriver-service": "^6.0.3"
+            },
+            "jest": {
+                "preset": "ts-jest",
+                "setupFilesAfterEnv": [
+                    "./spec/unit/helpers.ts"
+                ]
+            },
+            "gitHead": "c28abbc3bde43389e82b50d734bdf1db78fde8f4",
+            "bugs": {
+                "url": "https://github.com/braintree/framebus/issues"
+            },
+            "_id": "framebus@4.0.2",
+            "_nodeVersion": "12.14.0",
+            "_npmVersion": "6.13.4",
+            "dist": {
+                "integrity": "sha512-dgw5CLt70mRejHP5afc32/5MCN1Clx4EVqWlaUf1scRpsVWBHpD2nfGvn3uIRXoix16aG8XT6CM8I8P9BbhPEA==",
+                "shasum": "adaf3827f9aab8849ad62f610d2c1e8bd14aec72",
+                "tarball": "https://registry.npmjs.org/framebus/-/framebus-4.0.2.tgz",
+                "fileCount": 36,
+                "unpackedSize": 25469,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJe+k9jCRA9TVsSAnZWagAALo0P/0HVa5Ladgswdibuctwc\nioBQkHhM27zfHFb1Teua61c3zd9nOcstwkVLcUQiK3XDYyvlhp0f8nBHgemz\nu8u6gZ47OA9COr/C960d3mFKgWya/k2yjvdQW5S8q+v53ORVjEaViXk8Ia4L\nUN8k5227jz5A1XSOY1q80Exuo+S4g8JLhn3DIASo9yi76EmQKsrtM9sCTMNG\nB49IHjp3COYfWweQmxYdPuWVnnAdDD/O4V3jOhFQcp6Zhcia6uW46uY5CohC\nWUNm7pQ21fQmoiemq2lBZ7CuF/AHbUmcKPVN8XpuKG5QFrRt0GDfySMh4GdL\nN0JfyG3fBo64GHhlF67s+PQTHGGoMU8wjVS0dO5CiV4HqEVltUXyq55arSaW\n6bcRXKasMBJPwfPZb5hmbPDtyLsgzcy6p2cGsu1AS2w+g8lBWIT3p06J6Deu\nMWS0JBbI9USyGumqxHqEQfn8Am6683uXb5rKXgrpRr+kFavi7QJAMn72MUsU\n1sMQ8NOrF1JwKghvXaZQROlD6P3+8xCWixjQPpSK7ZXWxTWQwkmxDvtJ+bul\nEEZAstAl+AYSE1GN2yFABGN7zZapC4Yj526bmgaUn9HngetQckDyon/yPwX6\n2cq2D17zUoryXyyoatz11h2I6oxkd6uohzp57QSOSrfzfaKbTs/6EEOBIov8\n91eK\r\n=DQaU\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmUser": {
+                "name": "braintree",
+                "email": "team-sdk@getbraintree.com"
+            },
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/framebus_4.0.2_1593462627184_0.454533370209522"
+            },
+            "_hasShrinkwrap": false
+        },
+        "4.0.3": {
+            "name": "framebus",
+            "description": "Framebus allows you to easily send messages across frames (and iframes) with a simple bus.",
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/framebus.git"
+            },
+            "homepage": "https://github.com/braintree/framebus",
+            "version": "4.0.3",
+            "main": "dist/index.js",
+            "scripts": {
+                "prepublishOnly": "npm run build",
+                "prebuild": "prettier --write .",
+                "build": "tsc --declaration",
+                "lint": "eslint --ext js,ts .",
+                "pretest": "npm run lint",
+                "test:unit": "jest spec/unit/",
+                "pretest:functional": "gulp functional:prep",
+                "test:functional": "wdio wdio.conf.js",
+                "test": "npm run test:unit && npm run test:functional",
+                "start": "./bin/www"
+            },
+            "license": "MIT",
+            "author": {
+                "name": "braintree",
+                "email": "code@getbraintree.com"
+            },
+            "dependencies": {
+                "@braintree/uuid": "^0.1.0"
+            },
+            "devDependencies": {
+                "@types/jest": "^26.0.5",
+                "@wdio/cli": "^6.3.4",
+                "@wdio/local-runner": "^6.3.4",
+                "@wdio/mocha-framework": "^6.3.0",
+                "@wdio/spec-reporter": "^6.3.0",
+                "@wdio/sync": "^6.3.3",
+                "async": "^3.2.0",
+                "browserify": "^16.5.1",
+                "chromedriver": "^84.0.0",
+                "del": "^5.1.0",
+                "ejs": "^3.1.3",
+                "eslint": "^7.5.0",
+                "eslint-config-braintree": "5.0.0-typescript-prep-rc.17",
+                "express": "^4.10.4",
+                "gulp": "^4.0.2",
+                "gulp-concat": "^2.4.2",
+                "gulp-remove-code": "^3.0.4",
+                "gulp-size": "^3.0.0",
+                "gulp-streamify": "^1.0.2",
+                "gulp-uglify": "^3.0.2",
+                "jest": "^26.1.0",
+                "morgan": "^1.10.0",
+                "prettier": "^2.0.5",
+                "ts-jest": "^26.1.3",
+                "tsify": "^4.0.2",
+                "typescript": "^3.9.7",
+                "vinyl-buffer": "^1.0.1",
+                "vinyl-source-stream": "^2.0.0",
+                "wdio-chromedriver-service": "^6.0.3"
+            },
+            "jest": {
+                "preset": "ts-jest",
+                "setupFilesAfterEnv": [
+                    "./spec/unit/helpers.ts"
+                ]
+            },
+            "gitHead": "fd117db75bae296774917fdf85e2f1083ee307e9",
+            "bugs": {
+                "url": "https://github.com/braintree/framebus/issues"
+            },
+            "_id": "framebus@4.0.3",
+            "_nodeVersion": "12.14.0",
+            "_npmVersion": "6.13.4",
+            "dist": {
+                "integrity": "sha512-wWyLakmRvTMurKyWm4HJeZ3ilk6AlFTnOXhVR8t5M7EeuSgrUJq1QbELGKh60XVTEsMS6Gpd2oPVWBlpvPqTCA==",
+                "shasum": "37d79b6fd0c28f9d6c0383a136e2f09fd73250dd",
+                "tarball": "https://registry.npmjs.org/framebus/-/framebus-4.0.3.tgz",
+                "fileCount": 34,
+                "unpackedSize": 25807,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfdfHRCRA9TVsSAnZWagAAxq4P/3WSdq9vxD12PuUZu9my\n7DP9gqRzkvrc84v4T+LxM0ULBIK+m999obhaFiV76MHuA7O2fLWALYyk1rqY\neHa7BMPaL1vqmFZKhKz2/Iw1C+q59LCjNg/P7MQoBydLruzmRWhbqjOrd4vG\nn1UyY42j50XcNp2CfkoA3KtzYZd50a5gZWsCHBzvxYwh9EwcS4RFbT7kUSM1\njHrklOHQYr/6ViziHP1RGoEHjDw5CUvJiEqcJ8NI5S/y1a9UiPyIvxrGCfRx\n3r5QBon48H1rkUm6WU7Qesvm6tlb/GUPOIhRCxMI4rff+fKk/lCbnrhOjc0o\nRluBIllVq3tZcwNNm85gLJVrfuT8AGydNgT6Fs+Tepa1TKZdRET4F3GGuLoq\nxrvjeI62wzedN+RHZGRrAD5NaOAmtBaPT5JYfieo3QjhXJPOot2uuUHhdmbZ\nYx/eiSddwyAXZQDZUIH8nbKouJajgqlRhxIPDW2PIxfzkoCDaZ2/7IDSRGXJ\n7NyVaPJBVUbZbOyNHktM9MYRbrjAvqVEr9/Sjm8unAjy/k5xrgtD2sUGSW8F\nq9QTHIbkUNdG6YEoper/snhGGewNGf3MqMrV18+LgnM6M4znHMA2bVT/FEwN\ncaUYK4XhZlL80gIYBYCKyc2+1UHKjsTdH/8ASvpF1A/2a2n5PkXoWZxkXSqu\nwL+g\r\n=BCti\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "team-sdk@getbraintree.com"
+                }
+            ],
+            "_npmUser": {
+                "name": "braintree",
+                "email": "team-sdk@getbraintree.com"
+            },
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/framebus_4.0.3_1601565137481_0.46641065883457733"
+            },
+            "_hasShrinkwrap": false
+        },
+        "4.0.4": {
+            "name": "framebus",
+            "description": "Framebus allows you to easily send messages across frames (and iframes) with a simple bus.",
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/framebus.git"
+            },
+            "homepage": "https://github.com/braintree/framebus",
+            "version": "4.0.4",
+            "main": "dist/index.js",
+            "scripts": {
+                "prepublishOnly": "npm run build",
+                "prebuild": "prettier --write .",
+                "build": "tsc --declaration",
+                "lint": "eslint --ext js,ts .",
+                "pretest": "npm run lint",
+                "test:unit": "jest spec/unit/",
+                "pretest:functional": "gulp functional:prep",
+                "test:functional": "wdio wdio.conf.js",
+                "test": "npm run test:unit && npm run test:functional",
+                "start": "./bin/www"
+            },
+            "license": "MIT",
+            "author": {
+                "name": "braintree",
+                "email": "code@getbraintree.com"
+            },
+            "dependencies": {
+                "@braintree/uuid": "^0.1.0"
+            },
+            "devDependencies": {
+                "@types/jest": "^26.0.14",
+                "@wdio/cli": "^6.5.2",
+                "@wdio/local-runner": "^6.5.2",
+                "@wdio/mocha-framework": "^6.5.0",
+                "@wdio/spec-reporter": "^6.4.7",
+                "@wdio/sync": "^6.5.0",
+                "async": "^3.2.0",
+                "browserify": "^16.5.2",
+                "chromedriver": "^85.0.1",
+                "del": "^6.0.0",
+                "ejs": "^3.1.5",
+                "eslint": "^7.10.0",
+                "eslint-config-braintree": "5.0.0-typescript-prep-rc.19",
+                "express": "^4.10.4",
+                "gulp": "^4.0.2",
+                "gulp-concat": "^2.4.2",
+                "gulp-remove-code": "^3.0.4",
+                "gulp-size": "^3.0.0",
+                "gulp-streamify": "^1.0.2",
+                "gulp-uglify": "^3.0.2",
+                "jest": "^26.4.2",
+                "morgan": "^1.10.0",
+                "prettier": "^2.1.2",
+                "ts-jest": "^26.4.1",
+                "tsify": "^5.0.2",
+                "typescript": "^4.0.3",
+                "vinyl-buffer": "^1.0.1",
+                "vinyl-source-stream": "^2.0.0",
+                "wdio-chromedriver-service": "^6.0.4"
+            },
+            "jest": {
+                "preset": "ts-jest",
+                "setupFilesAfterEnv": [
+                    "./spec/unit/helpers.ts"
+                ]
+            },
+            "gitHead": "b98e64c513ffca188468b5aa1f857d8003da43f4",
+            "bugs": {
+                "url": "https://github.com/braintree/framebus/issues"
+            },
+            "_id": "framebus@4.0.4",
+            "_nodeVersion": "12.14.0",
+            "_npmVersion": "6.13.4",
+            "dist": {
+                "integrity": "sha512-2QssyHaq7KpErcrU+jVYBPfRU4NIoisV3R30Vv5AP6+QpdCMfu3S3uZH/DpwrDVzYkfb5f9w63ZTcnPq7VXXiw==",
+                "shasum": "9f91a52bc8fd7cd9bcb2f8856a3ee6afcff5eadc",
+                "tarball": "https://registry.npmjs.org/framebus/-/framebus-4.0.4.tgz",
+                "fileCount": 34,
+                "unpackedSize": 25846,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfdfKUCRA9TVsSAnZWagAA0dAP/RN4+qp54DDLdHNxImBw\nqs16lJ8SVP1MEf3kSvvT1ARfKhkw80Yp8WJFF/OzwXt51DU1Q8MzuKR9lnmX\n2OloVR4qjmhV1ewYPVh2hDppT5YzsAmoaZDKYifN9HyhSPDC6quE0PbIHd4b\nkixME5x37aUb+yVpOSVIZE4C9tn9ZboInGUaFuazX53izioMxUmretBuwcxn\n2mFshRuFfvn5U9ka92gcl6nR6HYaTt1JdFd8xbwWiRw2Z2tWVb1fP0BAt1uU\nTwA3YVa+IWIaM0yDjMZ3gTuHdnEmSHp/lBwN7HBjHwIvVlu98yI4kGmBDJLP\nnDveyXeW/30J66L7GP4QCwgv2MCDZn5+qgJAD8jIaAxvdWcnPItqrAp/GWTk\nSMrWKhQiSnCmu0tEPjsGcxwt9c+T1bVeXBo1p8v/p8NmM9DirOeGYryVi+cT\nz5lrQCa8Z+fLRIYVAX4LNfDWklsSIU1RDglRHYWECBE2RLNlXKfNbPsEOvN1\n+HMfDFH5NqmdQA2EPgiYCh8MHqcDiJD4a4/0KQCy8tbi1qeVkU8+wQ45PsJC\n2TLVXZ5P958lWtzsFtRfjzeO8W4LbBl+Hj1YlXiqztFNvauuh4DY0KdHEpGN\nHOo8ZD1FHAjGLXXZldzADhMxSiMhM8pP8tLkoGtwVlK+apSExFIJKHiWF+i3\ndKYG\r\n=GVsf\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "team-sdk@getbraintree.com"
+                }
+            ],
+            "_npmUser": {
+                "name": "braintree",
+                "email": "team-sdk@getbraintree.com"
+            },
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/framebus_4.0.4_1601565331849_0.21301250163778884"
+            },
+            "_hasShrinkwrap": false
+        },
+        "4.0.5": {
+            "name": "framebus",
+            "description": "Framebus allows you to easily send messages across frames (and iframes) with a simple bus.",
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/framebus.git"
+            },
+            "homepage": "https://github.com/braintree/framebus",
+            "version": "4.0.5",
+            "main": "dist/index.js",
+            "scripts": {
+                "prepublishOnly": "npm run build",
+                "prebuild": "prettier --write .",
+                "build": "tsc --declaration",
+                "lint": "eslint --ext js,ts .",
+                "pretest": "npm run lint",
+                "test:unit": "jest spec/unit/",
+                "pretest:functional": "gulp functional:prep",
+                "test:functional": "wdio wdio.conf.js",
+                "test": "npm run test:unit && npm run test:functional",
+                "start": "./bin/www"
+            },
+            "license": "MIT",
+            "author": {
+                "name": "braintree",
+                "email": "code@getbraintree.com"
+            },
+            "dependencies": {
+                "@braintree/uuid": "^0.1.0"
+            },
+            "devDependencies": {
+                "@types/jest": "^26.0.14",
+                "@wdio/cli": "^6.5.2",
+                "@wdio/local-runner": "^6.5.2",
+                "@wdio/mocha-framework": "^6.5.0",
+                "@wdio/spec-reporter": "^6.4.7",
+                "@wdio/sync": "^6.5.0",
+                "async": "^3.2.0",
+                "browserify": "^16.5.2",
+                "chromedriver": "^85.0.1",
+                "del": "^6.0.0",
+                "ejs": "^3.1.5",
+                "eslint": "^7.10.0",
+                "eslint-config-braintree": "5.0.0-typescript-prep-rc.19",
+                "express": "^4.10.4",
+                "gulp": "^4.0.2",
+                "gulp-concat": "^2.4.2",
+                "gulp-remove-code": "^3.0.4",
+                "gulp-size": "^3.0.0",
+                "gulp-streamify": "^1.0.2",
+                "gulp-uglify": "^3.0.2",
+                "jest": "^26.4.2",
+                "morgan": "^1.10.0",
+                "prettier": "^2.1.2",
+                "ts-jest": "^26.4.1",
+                "tsify": "^5.0.2",
+                "typescript": "^4.0.3",
+                "vinyl-buffer": "^1.0.1",
+                "vinyl-source-stream": "^2.0.0",
+                "wdio-chromedriver-service": "^6.0.4"
+            },
+            "jest": {
+                "preset": "ts-jest",
+                "setupFilesAfterEnv": [
+                    "./spec/unit/helpers.ts"
+                ]
+            },
+            "gitHead": "5b756b446fff0e53968a2b98c936155c9afde337",
+            "bugs": {
+                "url": "https://github.com/braintree/framebus/issues"
+            },
+            "_id": "framebus@4.0.5",
+            "_nodeVersion": "12.14.0",
+            "_npmVersion": "6.13.4",
+            "dist": {
+                "integrity": "sha512-fVmyLbiYUWW2HA5HL8++BR74mT9XXWEDy+vCirgcZsFVzyAMPnby8SMXo35ba3lNQk+8wwJ8etOeK9I03qsIxg==",
+                "shasum": "c08fe758ad21879f23681d0029e1e86c74f2ef6c",
+                "tarball": "https://registry.npmjs.org/framebus/-/framebus-4.0.5.tgz",
+                "fileCount": 34,
+                "unpackedSize": 25656,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJflxjACRA9TVsSAnZWagAA71gP/3+rfrsjMfw0mW74SgMt\nlNT8+l5LfT9e0803J9wCsuBY9HGokjF5eiqemQmAW+FLuvevfeeaMZtaIyXz\n+BiGe4hTH9ZBz3DbRlvqFAvTi7I9u3yp/lnkY6wx1TASoe/g9X6ytNYxtaHZ\nGT1xymmN7yQ0Tqpy/7cy6I3hbrl/Z3GEBBSMj9HWzWn/zccuI8TCnUSRLRiX\n9XzvUOW7Td7nEnq0GC3MJQjki1O4sWZIl1go4AdlC5zY8yPg6PLoNymSW+l6\n6qgEtR2p9dIx0/YGubXz3f7anRbxtdPXo9W64S4cl2lCYHiJY7AF/+sQL58k\n8Kh6OUH87UxLERZQ4uYfU8MhKrfQIeBnIBufNOHaQf7+lQzwOvtgWBb6IHw/\nZ6COMEyVrDiZupRyX28bT5ZYAMX6g8RQEbcQZ6ga06efZyk1SvPdvfFBhqtN\n48LK8YWAIEv1u3t0UytmQaEs5WSKaTxz8nXxaXHbpAKVZq2ch25UZ5uho2s6\ncloycwE/OQGat4Tpub1C9u1uP0ns1zEbFMHvvGkKNPJ44Gs9EPMnvqI3Y23f\nRgIuUHrZ4ebZl0DCVcTFyVzJ4mtAS+iy4UA8HSnbsl+LiCXyHMaEhhX3C7/7\nlCComJzWe1UXUIpfNWP1sJYsMXPK7HNyXmsmz5mI4Im/hNsQnIyxpdRIi57M\nRhHD\r\n=k7xB\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "team-sdk@getbraintree.com"
+                }
+            ],
+            "_npmUser": {
+                "name": "braintree",
+                "email": "team-sdk@getbraintree.com"
+            },
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/framebus_4.0.5_1603737791763_0.3307718952846701"
+            },
+            "_hasShrinkwrap": false
+        },
         "5.0.0-rc.1": {
             "name": "framebus",
             "description": "Framebus allows you to easily send messages across frames (and iframes) with a simple bus.",
@@ -105,6 +1607,302 @@
             "_npmOperationalInternal": {
                 "host": "s3://npm-registry-packages",
                 "tmp": "tmp/framebus_5.0.0-rc.1_1604110176919_0.06913653653159857"
+            },
+            "_hasShrinkwrap": false
+        },
+        "5.0.0": {
+            "name": "framebus",
+            "description": "Framebus allows you to easily send messages across frames (and iframes) with a simple bus.",
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/framebus.git"
+            },
+            "homepage": "https://github.com/braintree/framebus",
+            "version": "5.0.0",
+            "main": "dist/index.js",
+            "scripts": {
+                "prepublishOnly": "npm run build",
+                "prebuild": "prettier --write .",
+                "build": "tsc --declaration",
+                "lint": "eslint --ext js,ts .",
+                "pretest": "npm run lint",
+                "test:unit": "jest spec/unit/",
+                "pretest:functional": "gulp functional:prep",
+                "test:functional": "wdio wdio.conf.js",
+                "test": "npm run test:unit && npm run test:functional",
+                "start": "./bin/www"
+            },
+            "license": "MIT",
+            "author": {
+                "name": "braintree",
+                "email": "code@getbraintree.com"
+            },
+            "dependencies": {
+                "@braintree/uuid": "^0.1.0"
+            },
+            "devDependencies": {
+                "@types/jest": "^26.0.14",
+                "@wdio/cli": "^6.5.2",
+                "@wdio/local-runner": "^6.5.2",
+                "@wdio/mocha-framework": "^6.5.0",
+                "@wdio/spec-reporter": "^6.4.7",
+                "@wdio/sync": "^6.5.0",
+                "async": "^3.2.0",
+                "browserify": "^16.5.2",
+                "chromedriver": "^85.0.1",
+                "del": "^6.0.0",
+                "ejs": "^3.1.5",
+                "eslint": "^7.10.0",
+                "eslint-config-braintree": "5.0.0-typescript-prep-rc.19",
+                "express": "^4.10.4",
+                "gulp": "^4.0.2",
+                "gulp-concat": "^2.4.2",
+                "gulp-remove-code": "^3.0.4",
+                "gulp-size": "^3.0.0",
+                "gulp-streamify": "^1.0.2",
+                "gulp-uglify": "^3.0.2",
+                "jest": "^26.4.2",
+                "morgan": "^1.10.0",
+                "prettier": "^2.1.2",
+                "ts-jest": "^26.4.1",
+                "tsify": "^5.0.2",
+                "typescript": "^4.0.3",
+                "vinyl-buffer": "^1.0.1",
+                "vinyl-source-stream": "^2.0.0",
+                "wdio-chromedriver-service": "^6.0.4"
+            },
+            "jest": {
+                "preset": "ts-jest",
+                "restoreMocks": true,
+                "resetMocks": true
+            },
+            "gitHead": "3463a36562fe32519918fcbaaa66f60946f7e417",
+            "bugs": {
+                "url": "https://github.com/braintree/framebus/issues"
+            },
+            "_id": "framebus@5.0.0",
+            "_nodeVersion": "12.14.0",
+            "_npmVersion": "6.13.4",
+            "dist": {
+                "integrity": "sha512-UJZhlBzSg3vhcuiOoJVDlhcWHABfR8goZ7Nkc4DwVOkCoflrcnHTGfxFqPQSb48aXv5XiMTk/dEs5+fZj30QFw==",
+                "shasum": "12cc44e18c3916701f49c58715ea4c219823b93c",
+                "tarball": "https://registry.npmjs.org/framebus/-/framebus-5.0.0.tgz",
+                "fileCount": 34,
+                "unpackedSize": 31778,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfoH3WCRA9TVsSAnZWagAAVJUP/2U8PUYXH+xuIuF38vgt\n3wVlD4x4Uh4MbWi2h1x2ZN7OKERM5XJHi6ivXo1CFjmO4X3Nilo73oWiBLOP\nKr/600yQNwn9smkIf12xSK7dxGwBalB4AJd7RNu43VmqG8N/3QilzB1eLTAY\nMCaM6DWgNa7lZZ2VabCCO5j+uOba+3De0Yl2yhFglgyXhkN9QX7g/1n16Taw\ntzZhK4+OuXIDzwVwGvx77+ywikhVCiAHbJRk/YNPL/q927PAPtrk5FdeX8F4\nLyzsuhslDCDZY1CLjKtnVwGbX93SpUDFIWpmkTAIQ3zeTi0RJMuX2d3cw3gz\nw8NJKlaEPyuAc9km64Ms5mZtmE83mWwXJn01yBB1S3iTQamItrPhiJKfAO2n\nqPSNyN2PXiaPl581eYpyxaPmzQ9yWFmJst9R1bPAORHk5gJNTbuAI45UPW9z\nc3Y4TAJre8nSoms54iXngf1mFjvqBCSdysfKEUUj7YI+dcn+1gL3JVemvJiu\nUPl7K60hhiSc6f134DlYWXMzXLuzp3mvJabpJYUMtuXn/PXmukIn3wM2O33V\nEeqd9E9ZJmkyXdU1zXuTbFgjNbH68VepudkHRUoHOaelsTLDLMoWtTgX7aeh\nXytEIn/IiA8ILCOWYhTIQqfy4NssR3BVSZAUCMdA+wVkmYWkXD3DnhdCPhPU\nBMkK\r\n=HiuQ\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "team-sdk@getbraintree.com"
+                }
+            ],
+            "_npmUser": {
+                "name": "braintree",
+                "email": "team-sdk@getbraintree.com"
+            },
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/framebus_5.0.0_1604353493495_0.3527815613947167"
+            },
+            "_hasShrinkwrap": false
+        },
+        "5.1.0": {
+            "name": "framebus",
+            "description": "Framebus allows you to easily send messages across frames (and iframes) with a simple bus.",
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/framebus.git"
+            },
+            "homepage": "https://github.com/braintree/framebus",
+            "version": "5.1.0",
+            "main": "dist/index.js",
+            "scripts": {
+                "prepublishOnly": "npm run build",
+                "prebuild": "prettier --write .",
+                "build": "tsc --declaration",
+                "lint": "eslint --ext js,ts .",
+                "pretest": "npm run lint",
+                "test:unit": "jest spec/unit/",
+                "pretest:functional": "gulp functional:prep",
+                "test:functional": "wdio wdio.conf.js",
+                "test": "npm run test:unit && npm run test:functional",
+                "prestart": "npm run pretest:functional",
+                "start": "./bin/www"
+            },
+            "license": "MIT",
+            "author": {
+                "name": "braintree",
+                "email": "code@getbraintree.com"
+            },
+            "dependencies": {
+                "@braintree/uuid": "^0.1.0"
+            },
+            "devDependencies": {
+                "@types/jest": "^26.0.19",
+                "@wdio/cli": "^6.11.3",
+                "@wdio/local-runner": "^6.11.3",
+                "@wdio/mocha-framework": "^6.11.0",
+                "@wdio/spec-reporter": "^6.11.0",
+                "@wdio/sync": "^6.11.0",
+                "async": "^3.2.0",
+                "browserify": "^17.0.0",
+                "chromedriver": "^87.0.5",
+                "del": "^6.0.0",
+                "ejs": "^3.1.5",
+                "eslint": "^7.17.0",
+                "eslint-config-braintree": "5.0.0-typescript-prep-rc.19",
+                "express": "^4.10.4",
+                "gulp": "^4.0.2",
+                "gulp-concat": "^2.4.2",
+                "gulp-remove-code": "^3.0.4",
+                "gulp-size": "^3.0.0",
+                "gulp-streamify": "^1.0.2",
+                "gulp-uglify": "^3.0.2",
+                "jest": "^26.6.3",
+                "morgan": "^1.10.0",
+                "prettier": "^2.2.1",
+                "ts-jest": "^26.4.4",
+                "tsify": "^5.0.2",
+                "typescript": "^4.1.3",
+                "vinyl-buffer": "^1.0.1",
+                "vinyl-source-stream": "^2.0.0",
+                "wdio-chromedriver-service": "^6.0.4"
+            },
+            "jest": {
+                "preset": "ts-jest",
+                "restoreMocks": true,
+                "resetMocks": true
+            },
+            "gitHead": "f4fb96df2ca06a1c0ea9028b351a36217e79c2a1",
+            "bugs": {
+                "url": "https://github.com/braintree/framebus/issues"
+            },
+            "_id": "framebus@5.1.0",
+            "_nodeVersion": "14.15.4",
+            "_npmVersion": "6.14.10",
+            "dist": {
+                "integrity": "sha512-h8vgBMmLIU+1y8Zh/NzwSlwWaBO3UT/ZPDk0/CqwEdEdMsjjUN7Pzn7/JV3O8g84TYu6xkf7fgXIoYBRYDx4/w==",
+                "shasum": "3a22a390c7eab194664f8e68f9b0d7d21762c404",
+                "tarball": "https://registry.npmjs.org/framebus/-/framebus-5.1.0.tgz",
+                "fileCount": 34,
+                "unpackedSize": 33926,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgEbyNCRA9TVsSAnZWagAAvpYQAIW9cDyotBz1FfZW+gKJ\nu+vAxAyoqv6ebbClnVYOLcfYsQdlydhubFQyf6blMsYk/SFCY8sk4qtmGU5G\ntsOkCCGn4/rXkdXhEyTMIBctdKZRtBZJnIlk31MPKT65uZA2YKues7NUy1Rx\ncv3uimTZdih49nOgDh8l70FfSL9rZ6H0pfDc+fXf7ow4jp4kz4SfPDlnTEA/\noJ3fVKYmHN9WyO+QeLnAgrFf7YwUtP3FAzT3e+d/tw77zZy+q1Kfbj26FFB5\nrq89SW/ggs8qUqXSIRMBYVW4FIEu2ih4j+5BdPri+bHDRW7BkN6w69iUUBT/\nvA4uCqq1b+6GCwA6lPdes0QWi3wXZLbMt/pCY5BRVTESZ7uFMCAgJp/6lKHI\nvLE25OFQH+G+LqKhD6kgmesWqhfJlZ3gZwFa0Yq8LSvAj1MSpaKGQcReTPZR\nY6nhDcuXqNI/AsfVkhA1NMFWXJSrVmMqj6gLzJobI5heff+x8MxpjI8V26gy\nHcrLE81kpZF5l36XofPv63AaPv4EW9fqqH93DVZaqW+madsUGESMc1j4ruOa\nIB62EPuvu+MAAEHr4jRISkRxCxc76fW7hf6vaKB3nNrP2vaLdd8Wg7cslld/\nTDcWv3lR73JWBjKRbIx/invxBi6rgnXaQaO/mHKSXKXZHB8MctVhR2SzNMa+\n+bTQ\r\n=8cKs\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "_npmUser": {
+                "name": "braintree",
+                "email": "team-sdk@getbraintree.com"
+            },
+            "directories": {},
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "team-sdk@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/framebus_5.1.0_1611775116862_0.6798688785788669"
+            },
+            "_hasShrinkwrap": false
+        },
+        "5.1.1": {
+            "name": "framebus",
+            "description": "Framebus allows you to easily send messages across frames (and iframes) with a simple bus.",
+            "repository": {
+                "type": "git",
+                "url": "git+ssh://git@github.com/braintree/framebus.git"
+            },
+            "homepage": "https://github.com/braintree/framebus",
+            "version": "5.1.1",
+            "main": "dist/index.js",
+            "scripts": {
+                "prepublishOnly": "npm run build",
+                "prebuild": "prettier --write .",
+                "build": "tsc --declaration",
+                "lint": "eslint --ext js,ts .",
+                "pretest": "npm run lint",
+                "test:unit": "jest spec/unit/",
+                "pretest:functional": "gulp functional:prep",
+                "test:functional": "wdio wdio.conf.js",
+                "test": "npm run test:unit && npm run test:functional",
+                "prestart": "npm run pretest:functional",
+                "start": "./bin/www"
+            },
+            "license": "MIT",
+            "author": {
+                "name": "braintree",
+                "email": "code@getbraintree.com"
+            },
+            "dependencies": {
+                "@braintree/uuid": "^0.1.0"
+            },
+            "devDependencies": {
+                "@types/jest": "^26.0.19",
+                "@wdio/cli": "^6.11.3",
+                "@wdio/local-runner": "^6.11.3",
+                "@wdio/mocha-framework": "^6.11.0",
+                "@wdio/spec-reporter": "^6.11.0",
+                "@wdio/sync": "^6.11.0",
+                "async": "^3.2.0",
+                "browserify": "^17.0.0",
+                "chromedriver": "^87.0.5",
+                "del": "^6.0.0",
+                "ejs": "^3.1.5",
+                "eslint": "^7.17.0",
+                "eslint-config-braintree": "5.0.0-typescript-prep-rc.19",
+                "express": "^4.10.4",
+                "gulp": "^4.0.2",
+                "gulp-concat": "^2.4.2",
+                "gulp-remove-code": "^3.0.4",
+                "gulp-size": "^3.0.0",
+                "gulp-streamify": "^1.0.2",
+                "gulp-uglify": "^3.0.2",
+                "jest": "^26.6.3",
+                "morgan": "^1.10.0",
+                "prettier": "^2.2.1",
+                "ts-jest": "^26.4.4",
+                "tsify": "^5.0.2",
+                "typescript": "^4.1.3",
+                "vinyl-buffer": "^1.0.1",
+                "vinyl-source-stream": "^2.0.0",
+                "wdio-chromedriver-service": "^6.0.4"
+            },
+            "jest": {
+                "preset": "ts-jest",
+                "restoreMocks": true,
+                "resetMocks": true
+            },
+            "gitHead": "3f64377975d7850dbe48c9292dd8672c21081cb3",
+            "bugs": {
+                "url": "https://github.com/braintree/framebus/issues"
+            },
+            "_id": "framebus@5.1.1",
+            "_nodeVersion": "14.15.4",
+            "_npmVersion": "6.14.10",
+            "dist": {
+                "integrity": "sha512-WHhaOahXDVMFVIE5xXxp5dSyXtGPVVRM2ZjAf5kN6Zd/9cdwpcfuOsLH222Qtd/LtXkpi+gsVv9p19jRR1Tn7A==",
+                "shasum": "54d102129f681b049df7d1e15969627f460d243a",
+                "tarball": "https://registry.npmjs.org/framebus/-/framebus-5.1.1.tgz",
+                "fileCount": 34,
+                "unpackedSize": 34090,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgLTJnCRA9TVsSAnZWagAAaMgP/1qOkvYC9+hs1BB5vAo0\nzIb6UvLc+Lnrptb/4y1tOxQQI85QcpWu5Beqm2UYJ5iP2Vlf758dbS6HZsWh\n2jf1OgZXYI811/WZHqRVWlxyZy15sIXFUZXrYBHy1aWhQRUJEcL7qg0ZmIYa\nfxMcyGmA1H0nNsPLueZI5J1IHgVjBO2mgazDV/7m6Rr4RCifzKKDQO0+MJj6\nwRXHgekz74eaIL/r88wMiZDHSoknHdTO94Z/KMSO8aEKdVKexUsX0iIkx0ET\n+pWwzB5Xv5xhFMb/fQ9GH4sbfcdPdIRGsix4rkQNMs6Rcm1nbEV72ismfjeU\n/JgNJIpkaWJ72350mzjrjD8kv5VLFoN2uljy5p5VIkpyL4NoWg6MRqsBpgM7\nEcascIczIplvMoQayPAEt1i3JmnK8nzRWwXYnGqriBHZIAUlqihlAtcPxZAW\nytBgMQ6qEOEmB4ZmFKegn6RD1wWnQtANN3YywB+X0pVng5b59Qt0w6KixQjr\nBFAmhGJmhuXBXCTd7EC9HxtK7fPCYI52MCJzfFpjrdUSK/zg9FMpvYtJZOGN\nmGdzd2iJLI45bRRhC+BrFrfS9/8miuZi6LPOWxnPudkFjWWR59hK9DhUKFlX\nVjySs+RMcK9QU0cRULEAzoMFhqoxLnvUyMh3EhWwKo8g9hl7/+gbamntlsyR\nuYi8\r\n=RCCu\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "_npmUser": {
+                "name": "braintree",
+                "email": "team-sdk@getbraintree.com"
+            },
+            "directories": {},
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "team-sdk@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/framebus_5.1.1_1613574758874_0.30664622902557714"
             },
             "_hasShrinkwrap": false
         },

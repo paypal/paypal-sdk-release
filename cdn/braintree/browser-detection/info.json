@@ -7,6 +7,514 @@
         "latest": "1.11.0"
     },
     "versions": {
+        "1.4.1": {
+            "name": "@braintree/browser-detection",
+            "version": "1.4.1",
+            "description": "A small lib to detect browser compatibility for braintree products",
+            "main": "browser-detection.js",
+            "files": [
+                "*.js"
+            ],
+            "dependencies": {},
+            "devDependencies": {
+                "chai": "^3.5.0",
+                "eslint": "^2.7.0",
+                "eslint-config-braintree": "^1.0.2",
+                "mocha": "^3.2.0"
+            },
+            "scripts": {
+                "lint": "eslint .",
+                "pretest": "npm run lint",
+                "test": "mocha"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+https://github.com/braintree/browser-detection.git"
+            },
+            "keywords": [],
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com"
+            },
+            "license": "MIT",
+            "bugs": {
+                "url": "https://github.com/braintree/browser-detection/issues"
+            },
+            "homepage": "https://github.com/braintree/browser-detection#readme",
+            "gitHead": "e31018c674ee5ada66037d43937ba732e6804e00",
+            "_id": "@braintree/browser-detection@1.4.1",
+            "_shasum": "30b8655dd79bc1d125324a8a69d5a8f8adb20bb3",
+            "_from": ".",
+            "_npmVersion": "3.10.10",
+            "_nodeVersion": "6.10.3",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "30b8655dd79bc1d125324a8a69d5a8f8adb20bb3",
+                "tarball": "https://registry.npmjs.org/@braintree/browser-detection/-/browser-detection-1.4.1.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/browser-detection-1.4.1.tgz_1496344196686_0.03284253412857652"
+            },
+            "directories": {}
+        },
+        "1.5.0": {
+            "name": "@braintree/browser-detection",
+            "version": "1.5.0",
+            "description": "A small lib to detect browser compatibility for braintree products",
+            "main": "browser-detection.js",
+            "files": [
+                "*.js"
+            ],
+            "dependencies": {},
+            "devDependencies": {
+                "chai": "^3.5.0",
+                "eslint": "^2.7.0",
+                "eslint-config-braintree": "^1.0.2",
+                "mocha": "^3.2.0"
+            },
+            "scripts": {
+                "lint": "eslint .",
+                "pretest": "npm run lint",
+                "test": "mocha"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+https://github.com/braintree/browser-detection.git"
+            },
+            "keywords": [],
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com"
+            },
+            "license": "MIT",
+            "bugs": {
+                "url": "https://github.com/braintree/browser-detection/issues"
+            },
+            "homepage": "https://github.com/braintree/browser-detection#readme",
+            "gitHead": "a4e581963293238f8ce6da5ef8bd6d385a7ff3aa",
+            "_id": "@braintree/browser-detection@1.5.0",
+            "_shasum": "410875a82ca849f39f39a15126720fa9e56c1406",
+            "_from": ".",
+            "_npmVersion": "2.14.12",
+            "_nodeVersion": "4.3.1",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "410875a82ca849f39f39a15126720fa9e56c1406",
+                "tarball": "https://registry.npmjs.org/@braintree/browser-detection/-/browser-detection-1.5.0.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/browser-detection-1.5.0.tgz_1499091977326_0.7734001860953867"
+            },
+            "directories": {}
+        },
+        "1.6.0": {
+            "name": "@braintree/browser-detection",
+            "version": "1.6.0",
+            "description": "A small lib to detect browser compatibility for braintree products",
+            "main": "browser-detection.js",
+            "files": [
+                "*.js"
+            ],
+            "dependencies": {},
+            "devDependencies": {
+                "chai": "^3.5.0",
+                "eslint": "^2.7.0",
+                "eslint-config-braintree": "^1.0.2",
+                "mocha": "^3.2.0"
+            },
+            "scripts": {
+                "lint": "eslint .",
+                "pretest": "npm run lint",
+                "test": "mocha"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+https://github.com/braintree/browser-detection.git"
+            },
+            "keywords": [],
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com"
+            },
+            "license": "MIT",
+            "bugs": {
+                "url": "https://github.com/braintree/browser-detection/issues"
+            },
+            "homepage": "https://github.com/braintree/browser-detection#readme",
+            "gitHead": "630cd165d9360d05abbeef64a896958940c42915",
+            "_id": "@braintree/browser-detection@1.6.0",
+            "_shasum": "92b382db04a7ce8915c75e5350e5a77fc111edb4",
+            "_from": ".",
+            "_npmVersion": "2.14.12",
+            "_nodeVersion": "4.3.1",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "92b382db04a7ce8915c75e5350e5a77fc111edb4",
+                "tarball": "https://registry.npmjs.org/@braintree/browser-detection/-/browser-detection-1.6.0.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/browser-detection-1.6.0.tgz_1500999143918_0.3064575500320643"
+            },
+            "directories": {}
+        },
+        "1.7.0": {
+            "name": "@braintree/browser-detection",
+            "version": "1.7.0",
+            "description": "A small lib to detect browser compatibility for braintree products",
+            "main": "browser-detection.js",
+            "files": [
+                "*.js"
+            ],
+            "dependencies": {},
+            "devDependencies": {
+                "chai": "^3.5.0",
+                "eslint": "^2.7.0",
+                "eslint-config-braintree": "^1.0.2",
+                "mocha": "^3.2.0"
+            },
+            "scripts": {
+                "lint": "eslint .",
+                "pretest": "npm run lint",
+                "test": "mocha"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+https://github.com/braintree/browser-detection.git"
+            },
+            "keywords": [],
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com"
+            },
+            "license": "MIT",
+            "bugs": {
+                "url": "https://github.com/braintree/browser-detection/issues"
+            },
+            "homepage": "https://github.com/braintree/browser-detection#readme",
+            "gitHead": "fd9270a59e4a3736f94ae671794967bec1d806b7",
+            "_id": "@braintree/browser-detection@1.7.0",
+            "_shasum": "895ba64b700c3f36cab5c54591caf71a41171dd8",
+            "_from": ".",
+            "_npmVersion": "3.10.10",
+            "_nodeVersion": "6.11.4",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs@getbraintree.com"
+            },
+            "dist": {
+                "shasum": "895ba64b700c3f36cab5c54591caf71a41171dd8",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/braintree/browser-detection/tarballs/1.7.0.tgz"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/browser-detection-1.7.0.tgz_1508365365964_0.45171403232961893"
+            },
+            "directories": {}
+        },
+        "1.8.0": {
+            "name": "@braintree/browser-detection",
+            "version": "1.8.0",
+            "description": "A small lib to detect browser compatibility for braintree products",
+            "main": "browser-detection.js",
+            "dependencies": {},
+            "devDependencies": {
+                "chai": "^4.2.0",
+                "eslint": "^5.16.0",
+                "eslint-config-braintree": "^2.0.0",
+                "mocha": "^6.1.4"
+            },
+            "scripts": {
+                "lint": "eslint .",
+                "pretest": "npm run lint",
+                "test": "mocha",
+                "version": "./version"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+https://github.com/braintree/browser-detection.git"
+            },
+            "keywords": [],
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com"
+            },
+            "license": "MIT",
+            "bugs": {
+                "url": "https://github.com/braintree/browser-detection/issues"
+            },
+            "homepage": "https://github.com/braintree/browser-detection#readme",
+            "gitHead": "1999d1ca7f08017f373dfe0b8d3c16707468f1b1",
+            "_id": "@braintree/browser-detection@1.8.0",
+            "_nodeVersion": "10.16.0",
+            "_npmVersion": "6.9.0",
+            "dist": {
+                "integrity": "sha512-NDu5QsxeviAEa+X/yU5/905T/wKYHnhkhyil8gOyIBW7WRaQBSgPwXlb0GO3UxtUQ+JN6hG3jfr3xeVx3FRRTw==",
+                "shasum": "938a8553f43d832dbd0c896210f0aa73947ec241",
+                "tarball": "https://registry.npmjs.org/@braintree/browser-detection/-/browser-detection-1.8.0.tgz",
+                "fileCount": 23,
+                "unpackedSize": 11532,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdS22XCRA9TVsSAnZWagAAsooP/1fE+j3ObowAVjc6DviS\ngr4AzQskiFD7sJCrjMr1rnQ3xprHW9ZrDmjc79rgaSmDWfCRcjHP/TcI2cD/\nlXdsDRsth6+qDPmRkE8QMSNnGmQZnTOnHN54y9PZgSCksZjLentmZompAXHh\nFJPSq+e2GPCuad2nyETsfweJj4zhw5psLb4KhsGU+uD0t0ZX3arlKDufVw9y\nYk4MfRXdQDnRc/boIpjzlw7lZvXHRZv+Lh9ntVlDJ3b3/dUGJPL8lO0qIWXu\nRinAya3EshKOaLX2Baw8k+xMxjDApfmledarYQzvWnoygFtT0aiKEtB/Xx8M\nK7XRja/Di32dY4p16WhFm7B1sEqmxSie0RjKLNYL6SUYmQdyZLi5WSDApB5x\nZNeYHdi+mAGI71yK9ytP5vhOY8BPtuBQ10zMI6+Comz4/xTHR45KJ5vDPGVj\nbCL9dkXE1t2rADarH84iEvStmF8yQRqpz84LYg3jeR89odxEH3w76C+h8iYj\nv7X5nPQwGUQeBEBJGkf0LQsOBvFSeciZLXi4hp23JlnS5lo6AY7x+uDpTfGK\n2Hqo4OS8S5QyED2Usr+HtXUE1xBk9IfmY277pZDrye99MHSc762HtBvNnqfi\nRCs+FxnAdHKa+UF5OOfC1dPOppVQip/jvpfTcyB3ZGVMZpE1joNB6NQG0MOD\nuVsp\r\n=2sFB\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs+npm@getbraintree.com"
+            },
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/browser-detection_1.8.0_1565224343138_0.4809596422250637"
+            },
+            "_hasShrinkwrap": false
+        },
+        "1.9.0": {
+            "name": "@braintree/browser-detection",
+            "version": "1.9.0",
+            "description": "A small lib to detect browser compatibility for braintree products",
+            "main": "browser-detection.js",
+            "dependencies": {},
+            "devDependencies": {
+                "chai": "^4.2.0",
+                "eslint": "^6.2.2",
+                "eslint-config-braintree": "^4.0.0",
+                "mocha": "^6.2.0"
+            },
+            "scripts": {
+                "lint": "eslint .",
+                "pretest": "npm run lint",
+                "test": "mocha",
+                "version": "./version"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+https://github.com/braintree/browser-detection.git"
+            },
+            "keywords": [],
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com"
+            },
+            "license": "MIT",
+            "bugs": {
+                "url": "https://github.com/braintree/browser-detection/issues"
+            },
+            "homepage": "https://github.com/braintree/browser-detection#readme",
+            "gitHead": "0824167c0d34e84a9bfee9871eb03b683ec8839a",
+            "_id": "@braintree/browser-detection@1.9.0",
+            "_npmVersion": "6.4.1",
+            "_nodeVersion": "10.13.0",
+            "_npmUser": {
+                "name": "braintree",
+                "email": "devs+npm@getbraintree.com"
+            },
+            "dist": {
+                "integrity": "sha512-EEj6I9vRuxfvWRo4se5b13BP2nBVOJS9qoMKjFLJAMW+84/xgCaN6pYbZH8G6rDXhPUdkzqUPEGB3n+VdNFjTQ==",
+                "shasum": "bbaca6965a0685d0d91fd6e9194db034857d1d46",
+                "tarball": "https://registry.npmjs.org/@braintree/browser-detection/-/browser-detection-1.9.0.tgz",
+                "fileCount": 24,
+                "unpackedSize": 11987,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdgj3sCRA9TVsSAnZWagAAwk8P/2EsEvznfJgOcggF40m+\nV2FRI9YbiUFmKHIp/qNKdJD6cNPz0SynO2K0rHs7zjIrLf9y2GMUfwfQDYFk\nMmi+x7MplAhs0psdwRZlxibpmDTI5mZ3kzXxRvr0pg10eXX50Dt2E9Ndd+3P\ntKESsQgnPbbtmpEBNPkw4jWpf0akIhFnG3kdTCxlzidsbAXDnF7fnPBAXZw8\nK784hd6N8YJR/ty0S+pB6KJrt7gsf03nXJV205qaN3mvxAh1VO9NRNCpUBPE\nvU3rp8I9loiv7Dx83MiqKGwNtnLCJgp+NLdQfmKnyEFALWh7gB+M9DPBOXw+\nCoNcERRmon9WkfFRFw4EPnspu5+wkzp2kHETdX+yxVJBcF8zxG3SjBGyaX5T\nRyDxOieEtG6QdQLMJSuHcWLPf0c21cKzszrud5U2IFav0ib3lsTC9b0stXt3\n4+gUXC3abmqz7oj8kIbszFbbD6TasUvLZ9geRlSLHRKXhKjA3WYnOxKV8gmb\nphMNafhhl4lXfY2mJn5N//C4m5y63EjGIG8CDr9Eu4mf3Cy02ZLnNm+OvoP/\nCrF3awedXHeFQEbrxfumCZGcLZ326OY+Az2wShPbjvTLC+SDAvVBEYkIHaXo\nrxD5uzW+i2dfX2ryK9gGe5iyfZJWHOhwORV1wKXvNT9Up+ofH2BRpUZVxgjV\n653/\r\n=t4q3\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/browser-detection_1.9.0_1568816620026_0.776496333191828"
+            },
+            "_hasShrinkwrap": false
+        },
+        "1.10.0": {
+            "name": "@braintree/browser-detection",
+            "version": "1.10.0",
+            "description": "A small lib to detect browser compatibility for braintree products",
+            "main": "dist/browser-detection.js",
+            "types": "dist/browser-detection.d.ts",
+            "dependencies": {},
+            "devDependencies": {
+                "@types/jest": "^25.2.1",
+                "@types/node": "^13.11.0",
+                "eslint": "^6.8.0",
+                "eslint-config-braintree": "^5.0.0-typescript-prep-rc.17",
+                "jest": "^25.3.0",
+                "prettier": "^2.0.4",
+                "ts-jest": "^25.3.1",
+                "typescript": "^3.8.3"
+            },
+            "scripts": {
+                "prepublishOnly": "npm run build",
+                "prebuild": "prettier --write .",
+                "build": "tsc --declaration",
+                "lint": "eslint --ext js,ts .",
+                "posttest": "npm run lint",
+                "pretest": "npm run build",
+                "test": "jest",
+                "version": "./version"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+https://github.com/braintree/browser-detection.git"
+            },
+            "keywords": [],
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com"
+            },
+            "license": "MIT",
+            "bugs": {
+                "url": "https://github.com/braintree/browser-detection/issues"
+            },
+            "homepage": "https://github.com/braintree/browser-detection#readme",
+            "jest": {
+                "preset": "ts-jest"
+            },
+            "gitHead": "419b21087f1f29ce907039af0b22ab48de8d3225",
+            "_id": "@braintree/browser-detection@1.10.0",
+            "_nodeVersion": "12.18.2",
+            "_npmVersion": "6.14.5",
+            "dist": {
+                "integrity": "sha512-79maqUyksx4LFK4/7KVLgegHHGry363KfaoXtK4WAhoCjmxKbJsnjX7Yp1GSmK+FVcahaQfkFbO0K927UeAE+w==",
+                "shasum": "065c63e526e874b28d9957423be04b7788fd68ee",
+                "tarball": "https://registry.npmjs.org/@braintree/browser-detection/-/browser-detection-1.10.0.tgz",
+                "fileCount": 43,
+                "unpackedSize": 13732,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfCNjcCRA9TVsSAnZWagAAqIgP/jlIWS8UO7lZn/nmBuRZ\noWpNa2bseJKqvAkyDRGxjB9DnlAq0LZyNgIKe3uSTv03MxES6zktz/edbfLe\noxfoa9VDgOYEaDKLfPuCZT/bJ41UgsL4CG3V2228TlPmtXPrbqy6kgmT73kb\nBNjM0nSGFcxWpyW9XayougxBT1wlh88s9jUoAL0FoG7DUBe65UhioeyQ3kjb\nHby2nxWc0k1sxKt5EY73ngVKXFSb/9TAYkdXrADVH5prO7oLUl/ak5ngyD/E\nix1CyfKL1IyjAPLEYpZsyervmv5jbWH5hISYMrN66lQyHY0OibpOLWG9tMLr\nqovsWrq5D9siieyUxoTkJ1l0W1693Ug8h+hiZd85iwBKW4aVMC3f5So6Eo6y\ni2Paq6Izgj2s9yFy9AUFSHb8PKpdJmrPo2Jf7rl3F7viqqeLiPFp2z5e2miO\nsDVx3PUy03FeZprwwa6cUDiN4ssIGemSrNMbYi6M+U6phXCjbc2v44eUOUbw\nQ1SPixIVwZmSB0b94buSQRrRLj28fZpfwgd8Q9Ltg/gqVtVUg3yJ3HjuOgsp\niL3onzC40VLeXxEEfhc9SEOicevnxYY7B8AVcxqbe394oFRWbYeZ2m5l99sr\n0QiRBf7JvVqGUuIlAoYOj3CU/mbplViymUvp0OSTPIIjZ2Z/n8W3VmXXv7eZ\n8uGp\r\n=hoya\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "devs@getbraintree.com"
+                }
+            ],
+            "_npmUser": {
+                "name": "braintree",
+                "email": "team-sdk@getbraintree.com"
+            },
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/browser-detection_1.10.0_1594415324402_0.13531324913711607"
+            },
+            "_hasShrinkwrap": false
+        },
+        "1.10.1": {
+            "name": "@braintree/browser-detection",
+            "version": "1.10.1",
+            "description": "A small lib to detect browser compatibility for braintree products",
+            "main": "dist/browser-detection.js",
+            "types": "dist/browser-detection.d.ts",
+            "dependencies": {},
+            "devDependencies": {
+                "@types/jest": "^26.0.13",
+                "@types/node": "^14.10.1",
+                "eslint": "^7.8.1",
+                "eslint-config-braintree": "^5.0.0-typescript-prep-rc.18",
+                "jest": "^26.4.2",
+                "prettier": "^2.1.1",
+                "ts-jest": "^26.3.0",
+                "typescript": "^3.9.7"
+            },
+            "scripts": {
+                "prepublishOnly": "npm run build",
+                "prebuild": "prettier --write .",
+                "build": "tsc --declaration",
+                "lint": "eslint --ext js,ts .",
+                "posttest": "npm run lint",
+                "pretest": "npm run build",
+                "test": "jest",
+                "version": "./version"
+            },
+            "repository": {
+                "type": "git",
+                "url": "git+https://github.com/braintree/browser-detection.git"
+            },
+            "keywords": [],
+            "author": {
+                "name": "Braintree",
+                "email": "code@getbraintree.com"
+            },
+            "license": "MIT",
+            "bugs": {
+                "url": "https://github.com/braintree/browser-detection/issues"
+            },
+            "homepage": "https://github.com/braintree/browser-detection#readme",
+            "jest": {
+                "preset": "ts-jest"
+            },
+            "gitHead": "c64b4396daa576d680f1dcc5bace8b7de7976c9d",
+            "_id": "@braintree/browser-detection@1.10.1",
+            "_nodeVersion": "12.14.0",
+            "_npmVersion": "6.13.4",
+            "dist": {
+                "integrity": "sha512-V8zE0iMtSvKWQGRJRLQdG+7Y5g+KPFlY9NTKnTGBf4M0711yfjcTrSksVXkNKcvoU+ER9WjnM7RNg16IyyG5tg==",
+                "shasum": "12b5f209e43f61ba014982201af27cd80c0cf17d",
+                "tarball": "https://registry.npmjs.org/@braintree/browser-detection/-/browser-detection-1.10.1.tgz",
+                "fileCount": 63,
+                "unpackedSize": 17019,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJfjc24CRA9TVsSAnZWagAA6CUP/imPoFj2EI75O6mvIpDu\nLXsj/dbQWKVrIewiwgG3R1B+p5moGlKpPP80Qvh65+ZSQsryzX/sZeg87tSr\nRN0gzXi5wNqHC6NPWsLurqke7J9cpZGvG6HFshI5j4odotiZNrCD1iLvqKqf\nTJEH+K1wWhF8g/Gu5lWK/6WQmkbe5lzXPvnxCfLEa8LO6g/zXiLtU/zWnuJK\n2K3D6OR9YzC7i+jdnaj9DKfePjKKiR5dodvhivcXqhGipC4yg/w9sqs+lfz5\nMPl6OvIxRGgKHDC6+8wW8XZpD+3as78Yy2Jhf1gbi25Njutw0Tra4Rkot6sI\nSlxxXNIVG4NdpIk88Ss+jIqaHkqkkKGamOLoIABt5Ieur6O4Orzi0lalQn3v\nZNQsYwDUxQS3qHdOGwBTsPyv+o3hQlF9y3wc/KBNI8/fF2hOXVcuG7l7F+H6\nM2yuT/dLCp3Gc3qqBwp+evXNXPgG+6bqCypVDIrun+R4F0JvH3BTx1npDuH5\nLEHPif/qZVzZauu8scJpvqFH7+YiIxwWg+mmmmSnQr5/tbTQPVtLGn/PBHPT\nGgLXj7dnV5izcd4+6i0VJ0G50EMMvsYuGfHqAxompTeTENCITBs10EkNXLuB\n/v98V90k99KriL0EdqjngvkZDqCARj4V5rWr40wLQZDbgPamn3r84ee2P2Ei\nXYii\r\n=WTQC\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "maintainers": [
+                {
+                    "name": "braintree",
+                    "email": "team-sdk@getbraintree.com"
+                }
+            ],
+            "_npmUser": {
+                "name": "braintree",
+                "email": "team-sdk@getbraintree.com"
+            },
+            "directories": {},
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/browser-detection_1.10.1_1603128760394_0.678649129499745"
+            },
+            "_hasShrinkwrap": false
+        },
         "1.11.0": {
             "name": "@braintree/browser-detection",
             "version": "1.11.0",
