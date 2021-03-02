@@ -7,63 +7,6 @@
         "latest": "1.1.0"
     },
     "versions": {
-        "1.0.3": {
-            "name": "@braintree/iframer",
-            "version": "1.0.3",
-            "description": "A utility to consistently create iframes",
-            "main": "index.js",
-            "license": "MIT",
-            "scripts": {
-                "test": "./node_modules/karma/bin/karma start config/karma.js --single-run"
-            },
-            "repository": {
-                "type": "git",
-                "url": "git+ssh://git@github.com/braintree/iframer.git"
-            },
-            "devDependencies": {
-                "browserify": "^9.0.8",
-                "chai": "^2.2.0",
-                "karma": "^0.12.31",
-                "karma-browserify": "^4.1.2",
-                "karma-chai": "^0.1.0",
-                "karma-chai-sinon": "^0.1.4",
-                "karma-mocha": "^1.1.1",
-                "karma-phantomjs-launcher": "^1.0.0",
-                "phantomjs-prebuilt": "^2.1.7",
-                "mocha": "^3.0.0",
-                "sinon": "^1.14.1",
-                "sinon-chai": "^2.7.0"
-            },
-            "gitHead": "94e8945347c8409c8ac35ec139302c54a5d2cd6b",
-            "bugs": {
-                "url": "https://github.com/braintree/iframer/issues"
-            },
-            "homepage": "https://github.com/braintree/iframer#readme",
-            "_id": "@braintree/iframer@1.0.3",
-            "_shasum": "21dd1fd4cebd4154aeab1efa4d5b0d5f4384364e",
-            "_from": ".",
-            "_npmVersion": "3.10.10",
-            "_nodeVersion": "6.10.3",
-            "_npmUser": {
-                "name": "braintree",
-                "email": "devs@getbraintree.com"
-            },
-            "dist": {
-                "shasum": "21dd1fd4cebd4154aeab1efa4d5b0d5f4384364e",
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/braintree/iframer/tarballs/1.0.3.tgz"
-            },
-            "maintainers": [
-                {
-                    "name": "braintree",
-                    "email": "devs@getbraintree.com"
-                }
-            ],
-            "_npmOperationalInternal": {
-                "host": "s3://npm-registry-packages",
-                "tmp": "tmp/iframer-1.0.3.tgz_1496344550056_0.5985557995736599"
-            },
-            "directories": {}
-        },
         "1.1.0": {
             "name": "@braintree/iframer",
             "version": "1.1.0",
