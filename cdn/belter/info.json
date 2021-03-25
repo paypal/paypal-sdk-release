@@ -1,9 +1,9 @@
 {
     "_id": "belter",
-    "_rev": "152-392c607debf81a1e160920e9d2768cf1",
+    "_rev": "153-96510947e894f80b32e7dfaac32f3283",
     "name": "belter",
     "dist-tags": {
-        "latest": "1.0.160"
+        "latest": "1.0.161"
     },
     "versions": {
         "1.0.2": {
@@ -13392,12 +13392,102 @@
                 "tmp": "tmp/belter_1.0.160_1615925213319_0.08303969761178287"
             },
             "_hasShrinkwrap": false
+        },
+        "1.0.161": {
+            "name": "belter",
+            "version": "1.0.161",
+            "description": "Utilities.",
+            "main": "index.js",
+            "scripts": {
+                "setup": "npm install && npm run flow-typed",
+                "lint": "eslint src/ test/ *.js",
+                "flow-typed": "flow-typed install",
+                "flow": "flow",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "babel": "babel src/ --out-dir dist/module",
+                "webpack": "babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/webpack --progress",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run karma",
+                "build": "npm run test && npm run babel && npm run webpack",
+                "release": "./publish.sh",
+                "release:patch": "./publish.sh patch",
+                "release:minor": "./publish.sh minor",
+                "release:major": "./publish.sh major",
+                "clean": "rimraf dist coverage",
+                "reinstall": "rimraf flow-typed && rimraf node_modules && npm install && flow-typed install",
+                "debug": "cross-env NODE_ENV=debug"
+            },
+            "browserslist": [
+                "IE >= 11",
+                "chrome >= 41",
+                "firefox >= 43",
+                "safari >= 8",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/belter.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "licenses": [
+                {
+                    "type": "Apache 2.0",
+                    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+                }
+            ],
+            "devDependencies": {
+                "flow-bin": "0.135.0",
+                "grumbler-scripts": "^3",
+                "mocha": "^4"
+            },
+            "dependencies": {
+                "cross-domain-safe-weakmap": "^1",
+                "cross-domain-utils": "^2",
+                "zalgo-promise": "^1"
+            },
+            "gitHead": "3c0211f3036644a9a9a1c69f9c2ede1e2f73632b",
+            "bugs": {
+                "url": "https://github.com/krakenjs/belter/issues"
+            },
+            "homepage": "https://github.com/krakenjs/belter#readme",
+            "_id": "belter@1.0.161",
+            "_nodeVersion": "12.18.3",
+            "_npmVersion": "6.14.6",
+            "dist": {
+                "integrity": "sha512-T21b2GE0ff8TnrdAxqg53P+osOxylmu+rQldEzekf58904foOx4mhu4wbY5ZzlyZpeeNXiK8vk10wKQv1J6Lww==",
+                "shasum": "52538a0d849ebf7d17e09eccb46f92bb7384a0cd",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/belter/tarballs/1.0.161.tgz",
+                "fileCount": 36,
+                "unpackedSize": 600717,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgWl3HCRA9TVsSAnZWagAAVRkP/2vIeqmtYnFQiFu4dGhL\nVIj7j11qMooBuk6Gz2EhrfXKOgiPUojBqBk68Vj+j2DynhYQNF4T7KWjhHfp\nlJ/pviyHRk8SkrIrMnMIKthDD/qnrvNnz3Ucr/rkBiXof53Y4VK3QUbgJ3kQ\nIele3+YS+3C2gx8jQK7lb0ZWoucumDMSZgZMCr8NNZmcFWjEEF+VQxhSieuf\neFJ4s8Ro5MiW6vja/6qwTF3kzIOK6MWL1evramOc9w4SlBOOS/N5C4P6FWh8\nWAUsuYf8Ci8sJvSVsRyJpm76em9hRa99j2387IKw+In9zbA6AmL9DxHThc9N\nHGkrdtXNO9P8qgLeOUxgxjtS0zaEsjqY3cXdwSd5LtoEdr8Q4vRLxHgXWsNw\nH3szpd5h7uV/XvWmv9oSBN9c5fPEVfKTL8QQU2lBFmXLaF+DxR/5MA4rPLio\nFg3KwWS7/9fckkjRU6/uG0IggC4QzfXdfydZF5PC9fNzLmze+6fSIzWEkM1k\nelTUZmtciQMLfJ9ObJjQTDsp+QldBrLAxVpsn2A8g/UyVGb+vSOln+VDWN/H\nsfUYldnJ6nI2j2SErzUNKoCRIysYes/MUh4gL4v9YdYtHiJNlp148NXfRFoH\nfuUQv128XwmafV8TE6vtY0My1aRkhRz5NBERSd4614lS0bnhy5VlurhOBfyz\nKv5o\r\n=7Fmt\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "_npmUser": {
+                "name": "mnicpt",
+                "email": "mnicpt@gmail.com"
+            },
+            "directories": {},
+            "maintainers": [
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                },
+                {
+                    "name": "mnicpt",
+                    "email": "mnicpt@gmail.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/belter_1.0.161_1616534982627_0.8734857988212477"
+            },
+            "_hasShrinkwrap": false
         }
     },
     "time": {
         "created": "2018-07-30T23:48:02.061Z",
         "1.0.2": "2018-07-30T23:48:02.140Z",
-        "modified": "2021-03-16T20:06:56.354Z",
+        "modified": "2021-03-23T21:29:46.775Z",
         "1.0.3": "2018-07-30T23:58:54.397Z",
         "1.0.4": "2018-07-31T00:12:13.145Z",
         "1.0.5": "2018-07-31T00:29:19.669Z",
@@ -13549,7 +13639,8 @@
         "1.0.157": "2021-03-05T20:02:38.542Z",
         "1.0.158": "2021-03-08T18:22:40.273Z",
         "1.0.159": "2021-03-09T00:25:11.000Z",
-        "1.0.160": "2021-03-16T20:06:53.563Z"
+        "1.0.160": "2021-03-16T20:06:53.563Z",
+        "1.0.161": "2021-03-23T21:29:42.858Z"
     },
     "maintainers": [
         {
