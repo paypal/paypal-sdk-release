@@ -1,9 +1,9 @@
 {
     "_id": "@paypal/sdk-release",
-    "_rev": "1382-53f55bf5efbdb5d6035601219567ae1b",
+    "_rev": "1383-1b25a007bb8c0d451b1b76942d2a28ea",
     "name": "@paypal/sdk-release",
     "dist-tags": {
-        "latest": "5.0.215",
+        "latest": "5.0.216",
         "active-test": "5.0.215",
         "active-local": "5.0.215",
         "active-stage": "5.0.215",
@@ -42391,12 +42391,252 @@
                 "tmp": "tmp/sdk-release_5.0.215_1616782816047_0.8678018282475191"
             },
             "_hasShrinkwrap": false
+        },
+        "5.0.216": {
+            "name": "@paypal/sdk-release",
+            "version": "5.0.216",
+            "description": "Unified SDK wrapper module for tests, shared build config, and deploy.",
+            "main": "index.js",
+            "scripts": {
+                "validate-components": "babel-node test/validate-components",
+                "validate-components-for-publish": "babel-node test/validate-components-for-publish",
+                "validate-flat": "babel-node test/validate-flat",
+                "cdnify": "grabthar-cdnify --recursive --cdn='https://www.paypalobjects.com'",
+                "reinstall": "rm -f ./package-lock.json && rm -rf ./node_modules && npm install && git checkout package-lock.json && git checkout package.json",
+                "flow-typed": "rm -rf ./flow-typed && flow-typed install",
+                "lint": "eslint test/ *.js",
+                "flow": "flow check",
+                "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
+                "test": "npm run lint && npm run flow-typed && npm run flow && npm run validate-components && npm run validate-flat",
+                "add": "grabthar-add",
+                "upgrade": "grabthar-upgrade",
+                "remove": "grabthar-remove",
+                "release": "grabthar-release && npm run cdnify",
+                "activate": "CDN='https://www.paypalobjects.com' grabthar-activate",
+                "flatten": "grabthar-flatten",
+                "full-release": "npm run upgrade && npm run release && npm run activate",
+                "postinstall": "npm_config_registry=https://npm.paypal.com npm install @paypalcorp/web --no-save --proxy='null' --https-proxy='null' || echo 'Unable to install cdnx cli tools'",
+                "prepublishOnly": "npm run validate-components-for-publish"
+            },
+            "engines": {
+                "node": ">=12",
+                "npm": ">=6"
+            },
+            "config": {
+                "engine-strict": true
+            },
+            "browserslist": [
+                "IE >= 9",
+                "chrome >= 27",
+                "firefox >= 30",
+                "safari >= 5",
+                "opera >= 23"
+            ],
+            "repository": {
+                "type": "git",
+                "url": "git://github.com/krakenjs/grumbler.git"
+            },
+            "keywords": [
+                "template"
+            ],
+            "license": "Apache-2.0",
+            "devDependencies": {
+                "grabthar-release": "^1",
+                "flow-bin": "0.135.0",
+                "grumbler-scripts": "^3",
+                "flowgen": "1.11.0"
+            },
+            "dependencies": {
+                "@braintree/browser-detection": "1.7.0",
+                "@braintree/iframer": "1.0.3",
+                "@braintree/sanitize-url": "2.1.0",
+                "@braintree/wrap-promise": "1.1.1",
+                "@paypal/card-components": "1.0.48",
+                "@paypal/checkout-components": "5.0.152",
+                "@paypal/common-components": "1.0.16",
+                "@paypal/example-components": "1.0.27",
+                "@paypal/funding-components": "1.0.22",
+                "@paypal/identity-components": "5.0.4",
+                "@paypal/messaging-components": "1.20.1",
+                "@paypal/muse-components": "1.3.50",
+                "@paypal/sdk-client": "4.0.149",
+                "@paypal/sdk-constants": "1.0.96",
+                "@paypal/sdk-logos": "1.0.37",
+                "beaver-logger": "4.0.28",
+                "belter": "1.0.163",
+                "bowser": "2.11.0",
+                "braintree-web": "3.33.0",
+                "card-validator": "4.3.0",
+                "core-js-pure": "3.9.1",
+                "credit-card-type": "6.3.0",
+                "cross-domain-safe-weakmap": "1.0.28",
+                "cross-domain-utils": "2.0.34",
+                "framebus": "3.0.1",
+                "hi-base32": "0.5.1",
+                "inject-stylesheet": "1.0.0",
+                "jsx-pragmatic": "2.0.20",
+                "post-robot": "10.0.42",
+                "promise-polyfill": "7.0.2",
+                "restricted-input": "1.2.7",
+                "universal-serialize": "1.0.8",
+                "whatwg-fetch": "3.6.2",
+                "zalgo-promise": "1.0.46",
+                "zoid": "9.0.63"
+            },
+            "gitHead": "7f63d0644df682ab8297cbf0d2e2afb92b82a49a",
+            "bugs": {
+                "url": "https://github.com/krakenjs/grumbler/issues"
+            },
+            "homepage": "https://github.com/krakenjs/grumbler#readme",
+            "_id": "@paypal/sdk-release@5.0.216",
+            "_nodeVersion": "12.20.2",
+            "_npmVersion": "6.14.12",
+            "dist": {
+                "integrity": "sha512-2/WJs7q5w4wr35pOrRmg82KbCOrQ+TpflMPKAXJWEl7hIlMSi1gSiKnnIHEOzja85VLmtLBqyTEtIXYTgbYQeQ==",
+                "shasum": "c5a0c71d5e02c85a3d9ba4febb51c3d4d1347ae8",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/sdk-release/tarballs/5.0.216.tgz",
+                "fileCount": 5,
+                "unpackedSize": 29080,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgYg98CRA9TVsSAnZWagAAAtwP+QGDQ8lwYmWE4g1BnzPy\nPqns9y7voHlPA1nK0cUZofCcS7QGHUWUNWpqIveSMO4WpDhdtHW1rycXEpX+\n+Mshe+Of6iKMuVv/m8MeWadUx7vKyiMus1ZYxqhEmxjO+Pw59YcGKq/w1YdR\n4IEHHm98K8hD0cvgi1dl2rR+gXKfolVEiGZy7TlLq374js21oLlQFQaQj6dw\nK0Sm+O2bGKZty3w6XtE2DjLeRoVQwnS20pqXd+BpFNmu+E3pOKFTydkBpX8x\nYVmZwxh4AAcigOWvjj4FepZxIFr9G37daNdyi4u049yQEe6K9nhMHqEucPFT\nL6SGxzO4Gb1/ZHvHc2lJPk2bDAEJk+eUGzjZc0hBWWKbi9Buekym3vvyFraG\ngvo636qwH3MVrQzf3o0QEJ6xKrNH1KSvPgLxOqkXn0DfVDjmrqNT6dppPT8O\n3ZL9K8zztSUbzXnYqsuUDmwxjXVafoyfZ/khEWi+uu4BZ7/m1DVlZtGMqjxL\nglrb/omRa9dJTDnCPv1e4n3E09dcfa0i3De6TLzG2bV5BbGY7BVd1Afy8CmB\nuT1nYLkVrm/76N1gQ5A+trIQlZcOQe+Cuy3pJSJZ4UdgT1E1HAJdj74nB5YO\nsJQ4O8EBEk2S6Ike6uQMtlPEStGi45Hah4mJsfLQoka8/YP6X7+mjy9ugl5e\nEIw/\r\n=v+tR\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "_npmUser": {
+                "name": "gregjopa",
+                "email": "grjopa@gmail.com"
+            },
+            "directories": {},
+            "maintainers": [
+                {
+                    "name": "remotevision",
+                    "email": "ryank@remotevisioninc.com"
+                },
+                {
+                    "name": "shrutikapoor08",
+                    "email": "shruti.kapoor08@gmail.com"
+                },
+                {
+                    "name": "paypal-user",
+                    "email": "DL-PP-NODEJS-SDK@paypal.com"
+                },
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                },
+                {
+                    "name": "bladebarringer",
+                    "email": "blade@crookedneighbor.com"
+                },
+                {
+                    "name": "braintree",
+                    "email": "team-sdk@getbraintree.com"
+                },
+                {
+                    "name": "rajarampadmanathan",
+                    "email": "prajarameee@gmail.com"
+                },
+                {
+                    "name": "joshbeam",
+                    "email": "joshua.a.beam@gmail.com"
+                },
+                {
+                    "name": "bryanjenningz",
+                    "email": "bryanjenningz@gmail.com"
+                },
+                {
+                    "name": "zhillb",
+                    "email": "zach@zacharyhill.xyz"
+                },
+                {
+                    "name": "weihou",
+                    "email": "weihou@paypal.com"
+                },
+                {
+                    "name": "seavenly",
+                    "email": "nschott@paypal.com"
+                },
+                {
+                    "name": "tifzhou",
+                    "email": "tifzhou@paypal.com"
+                },
+                {
+                    "name": "rygilbert_paypal",
+                    "email": "rygilbert@paypal.com"
+                },
+                {
+                    "name": "rpalanikumar",
+                    "email": "rpalanikumar@paypal.com"
+                },
+                {
+                    "name": "songz",
+                    "email": "song@zheng.club"
+                },
+                {
+                    "name": "merlinpatt",
+                    "email": "merlinpatt@gmail.com"
+                },
+                {
+                    "name": "jfurman",
+                    "email": "mpscqw@gmail.com"
+                },
+                {
+                    "name": "ravishekhar00",
+                    "email": "ravi_shekhar00@yahoo.com"
+                },
+                {
+                    "name": "visheei94",
+                    "email": "vishakha94@outlook.com"
+                },
+                {
+                    "name": "gregjopa",
+                    "email": "grjopa@gmail.com"
+                },
+                {
+                    "name": "mstuart",
+                    "email": "stuartmark@gmail.com"
+                },
+                {
+                    "name": "antre",
+                    "email": "antre@paypal.com"
+                },
+                {
+                    "name": "mnicpt",
+                    "email": "mnicpt@gmail.com"
+                },
+                {
+                    "name": "elizabethmv",
+                    "email": "lizzyadeline@gmail.com"
+                },
+                {
+                    "name": "nbierdeman",
+                    "email": "nbierdeman@paypal.com"
+                },
+                {
+                    "name": "briceshatzer",
+                    "email": "brice.shatzer@gmail.com"
+                },
+                {
+                    "name": "shrkapoor",
+                    "email": "shrkapoor@paypal.com"
+                },
+                {
+                    "name": "amyegan",
+                    "email": "amyegan@paypal.com"
+                },
+                {
+                    "name": "chetanjk",
+                    "email": "chetan.jk@gmail.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/sdk-release_5.0.216_1617039227842_0.4918605053548821"
+            },
+            "_hasShrinkwrap": false
         }
     },
     "time": {
         "created": "2018-12-12T00:58:06.226Z",
         "1.0.95": "2018-12-12T00:58:06.565Z",
-        "modified": "2021-03-26T19:24:08.339Z",
+        "modified": "2021-03-29T17:33:51.840Z",
         "1.0.96": "2018-12-14T00:02:55.955Z",
         "1.0.97": "2018-12-14T00:48:39.328Z",
         "1.0.98": "2018-12-14T02:01:48.346Z",
@@ -42623,7 +42863,8 @@
         "5.0.212": "2021-03-23T19:40:35.669Z",
         "5.0.213": "2021-03-25T20:08:58.745Z",
         "5.0.214": "2021-03-26T01:55:06.322Z",
-        "5.0.215": "2021-03-26T18:20:16.187Z"
+        "5.0.215": "2021-03-26T18:20:16.187Z",
+        "5.0.216": "2021-03-29T17:33:47.969Z"
     },
     "maintainers": [
         {

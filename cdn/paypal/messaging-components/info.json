@@ -1,9 +1,9 @@
 {
     "_id": "@paypal/messaging-components",
-    "_rev": "96-37226fc7624e645f38c998df9a289ecd",
+    "_rev": "97-773aecef9948dd26222ca4778004b5d2",
     "name": "@paypal/messaging-components",
     "dist-tags": {
-        "latest": "1.20.0",
+        "latest": "1.20.1",
         "alpha": "1.17.2-alpha.1"
     },
     "versions": {
@@ -12301,12 +12301,251 @@
                 "tmp": "tmp/messaging-components_1.20.0_1615399891458_0.867396700338481"
             },
             "_hasShrinkwrap": false
+        },
+        "1.20.1": {
+            "name": "@paypal/messaging-components",
+            "version": "1.20.1",
+            "description": "PayPal messaging library for integrating PayPal Credit messaging on merchant websites",
+            "homepage": "https://github.com/paypal/paypal-messaging-components",
+            "repository": {
+                "type": "git",
+                "url": "git+https://github.com/paypal/paypal-messaging-components.git"
+            },
+            "main": "dist/messaging.js",
+            "module": "src/index.js",
+            "scripts": {
+                "build": "./scripts/semantic-release/assets.sh",
+                "build:stage": "webpack --env.NODE_ENV=stage",
+                "build:sandbox": "webpack --env.NODE_ENV=sandbox",
+                "build:production": "webpack --env.NODE_ENV=production",
+                "build:analyze": "webpack --env.analyze",
+                "build:demo": "webpack --env.demo",
+                "dev": "webpack-dev-server --config webpack.config.dev.js --env.NODE_ENV=local --env.TARGET=sdk",
+                "dev:standalone": "webpack-dev-server --config webpack.config.dev.js --env.TARGET=standalone --env.NODE_ENV=local",
+                "dev:stage": "webpack-dev-server --config webpack.config.dev.js --env.TARGET=standalone --env.NODE_ENV=stage",
+                "dev:sandbox": "webpack-dev-server --config webpack.config.dev.js --env.TARGET=standalone --env.NODE_ENV=sandbox",
+                "dev:production": "webpack-dev-server --config webpack.config.dev.js --env.TARGET=standalone --env.NODE_ENV=production",
+                "lint": "eslint . --ext .js,.jsx",
+                "preinstall": "rm -rf node_modules",
+                "start": "npm run dev",
+                "test": "jest --verbose",
+                "test:func": "jest --detectOpenHandles --runInBand --verbose --config tests/functional/jest.allFunctional.config.js",
+                "test:func:nosnaps": "jest --detectOpenHandles --runInBand --verbose --config tests/functional/jest.noSnapshots.config.js",
+                "test:func:ciupdate": "jest --verbose --config tests/functional/jest.allFunctional.config.js --updateSnapshot",
+                "test:func:update": "sed -i '' -e 's/DIRTY_SNAPSHOTS=0$/DIRTY_SNAPSHOTS=1/g' .travis.yml"
+            },
+            "dependencies": {
+                "@paypal/sdk-client": "^4.0.80",
+                "@paypal/sdk-constants": "^1.0.75",
+                "@paypal/sdk-logos": "^1.0.26",
+                "beaver-logger": "^4.0.14",
+                "belter": "^1.0.112",
+                "core-js-pure": "^3.0.1",
+                "jsx-pragmatic": "^2.0.7",
+                "post-robot": "^10.0.29",
+                "zalgo-promise": "^1.0.38",
+                "zoid": "^9.0.46"
+            },
+            "devDependencies": {
+                "@babel/register": "^7.10.4",
+                "@babel/runtime": "7.12.18",
+                "@semantic-release/changelog": "^3.0.4",
+                "@semantic-release/exec": "^3.3.6",
+                "@semantic-release/git": "^7.0.16",
+                "@testing-library/dom": "^6.2.0",
+                "@testing-library/jest-dom": "^4.1.0",
+                "@testing-library/preact": "^2.0.0",
+                "@testing-library/preact-hooks": "^1.0.6",
+                "babel-eslint": "^10.0.1",
+                "babel-jest": "^25.1.0",
+                "babel-plugin-module-resolver": "^4.0.0",
+                "eslint": "^6.8.0",
+                "eslint-config-airbnb": "^18.0.1",
+                "eslint-config-airbnb-base": "^14.0.0",
+                "eslint-config-prettier": "^6.9.0",
+                "eslint-import-resolver-babel-module": "^5.1.2",
+                "eslint-import-resolver-jest": "^3.0.0",
+                "eslint-plugin-import": "^2.20.0",
+                "eslint-plugin-jsx-a11y": "^6.2.3",
+                "eslint-plugin-prettier": "^3.1.2",
+                "eslint-plugin-react": "^7.17.0",
+                "eslint-plugin-react-hooks": "^1.7.0",
+                "got": "^9.6.0",
+                "grumbler-scripts": "^3.0.46",
+                "husky": "^2.3.0",
+                "imgur": "^0.3.1",
+                "jest": "^26.1.0",
+                "jest-environment-jsdom-sixteen": "^1.0.3",
+                "jest-environment-puppeteer": "^4.3.0",
+                "jest-html-reporter": "^3.3.0",
+                "jest-image-snapshot": "^4.2.0",
+                "lint-staged": "^8.0.4",
+                "preact": "^10.1.1",
+                "preact-render-to-string": "^5.1.9",
+                "prettier": "^1.14.3",
+                "prettier-eslint": "^9.0.1",
+                "puppeteer": "^2.0.0",
+                "qs": "^6.9.3",
+                "webpack": "^4.32.0",
+                "webpack-dev-server": "^3.4.1"
+            },
+            "sideEffects": false,
+            "publishConfig": {
+                "access": "public"
+            },
+            "gitHead": "9180ca0b0a52fe44a62af7ac0b63b6c78b9ee0d9",
+            "bugs": {
+                "url": "https://github.com/paypal/paypal-messaging-components/issues"
+            },
+            "_id": "@paypal/messaging-components@1.20.1",
+            "_nodeVersion": "12.21.0",
+            "_npmVersion": "6.14.11",
+            "dist": {
+                "integrity": "sha512-tiqeCzRN2Cpnk7jNRUjSNo17EfrnPT269b6gMyfrZMX/iA/MZDh1RkImpEHQXwiyv8h4KiPB6a4m8mEfvzO3Dw==",
+                "shasum": "31bb5306325f117437b1674dc8165a78e79d0038",
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/messaging-components/tarballs/1.20.1.tgz",
+                "fileCount": 634,
+                "unpackedSize": 30792909,
+                "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJgYfkeCRA9TVsSAnZWagAAhYYP/3YfVP0r8oilUVLKRIB0\nBDB2Q8xM/wABoAsexv65mFpLLqIDXI1B5cB2FaCdr2OhutQDqcFant1Iz+6g\nN2wirJiiqTwidQ5pBcs9fQgWz0Xxl+cbDsjdEr3L4KVTV/2JTSQjopFC/HlT\nIpWGy+MkgUu5m8XwH5GxqGvD+5yy2tAeMntTfLRgYctoAYNJ/xhWk2ym8uO/\ny6NDr651iY6G9rBeJtthAaj/1EHc6AYrmnQ6MpV3wY1jLI18PZhWxKH4PtmE\n5mwck+GfPOMgYS7rB30NO71jCdmnjq2q8MY4bXKjvA2tVuPbV8+VVlnox4Ko\nwxVfIrN3ThEP3mEmeVxqPIJwylzIryqsp5ehJ/Fth3YzPBfREwiDlWYtwHpa\nXT15qobTvdWyKYNRwh0oWztV0lyCGnAfbwmewznWVuWWs59Zx/Gp2elm4spy\nCi6c59ivO2H0Ek0K6/68ysTLWNYv4cw4PqUYM4/wkBrq77E/N2eUdN+U85mV\n3g2B4g32yWte/o2SCidRS2eKNquU59rgkzKf2EgKxnqe5SlcSEmrd9lyxDBM\nV2ZcIDEyYoWvVV4ExQjSx4EGnkZHiG0M26wUyT6DPFAtezio8JmnP5pFvoox\nLGXRyodNsyebG5gl/riTnrBhisBDqGvnWWVX+BrB9lsm2BQLX3aF0vshnpeX\n27BV\r\n=TmHb\r\n-----END PGP SIGNATURE-----\r\n"
+            },
+            "_npmUser": {
+                "name": "seavenly",
+                "email": "nschott@paypal.com"
+            },
+            "directories": {},
+            "maintainers": [
+                {
+                    "name": "remotevision",
+                    "email": "ryank@remotevisioninc.com"
+                },
+                {
+                    "name": "shrutikapoor08",
+                    "email": "shruti.kapoor08@gmail.com"
+                },
+                {
+                    "name": "paypal-user",
+                    "email": "DL-PP-NODEJS-SDK@paypal.com"
+                },
+                {
+                    "name": "bluepnume",
+                    "email": "daniel@bluesuncorp.co.uk"
+                },
+                {
+                    "name": "bladebarringer",
+                    "email": "blade@crookedneighbor.com"
+                },
+                {
+                    "name": "braintree",
+                    "email": "team-sdk@getbraintree.com"
+                },
+                {
+                    "name": "rajarampadmanathan",
+                    "email": "prajarameee@gmail.com"
+                },
+                {
+                    "name": "joshbeam",
+                    "email": "joshua.a.beam@gmail.com"
+                },
+                {
+                    "name": "bryanjenningz",
+                    "email": "bryanjenningz@gmail.com"
+                },
+                {
+                    "name": "zhillb",
+                    "email": "zach@zacharyhill.xyz"
+                },
+                {
+                    "name": "weihou",
+                    "email": "weihou@paypal.com"
+                },
+                {
+                    "name": "seavenly",
+                    "email": "nschott@paypal.com"
+                },
+                {
+                    "name": "tifzhou",
+                    "email": "tifzhou@paypal.com"
+                },
+                {
+                    "name": "rygilbert_paypal",
+                    "email": "rygilbert@paypal.com"
+                },
+                {
+                    "name": "rpalanikumar",
+                    "email": "rpalanikumar@paypal.com"
+                },
+                {
+                    "name": "songz",
+                    "email": "song@zheng.club"
+                },
+                {
+                    "name": "merlinpatt",
+                    "email": "merlinpatt@gmail.com"
+                },
+                {
+                    "name": "jfurman",
+                    "email": "mpscqw@gmail.com"
+                },
+                {
+                    "name": "ravishekhar00",
+                    "email": "ravi_shekhar00@yahoo.com"
+                },
+                {
+                    "name": "visheei94",
+                    "email": "vishakha94@outlook.com"
+                },
+                {
+                    "name": "gregjopa",
+                    "email": "grjopa@gmail.com"
+                },
+                {
+                    "name": "mstuart",
+                    "email": "stuartmark@gmail.com"
+                },
+                {
+                    "name": "antre",
+                    "email": "antre@paypal.com"
+                },
+                {
+                    "name": "mnicpt",
+                    "email": "mnicpt@gmail.com"
+                },
+                {
+                    "name": "elizabethmv",
+                    "email": "lizzyadeline@gmail.com"
+                },
+                {
+                    "name": "nbierdeman",
+                    "email": "nbierdeman@paypal.com"
+                },
+                {
+                    "name": "briceshatzer",
+                    "email": "brice.shatzer@gmail.com"
+                },
+                {
+                    "name": "shrkapoor",
+                    "email": "shrkapoor@paypal.com"
+                },
+                {
+                    "name": "amyegan",
+                    "email": "amyegan@paypal.com"
+                },
+                {
+                    "name": "chetanjk",
+                    "email": "chetan.jk@gmail.com"
+                }
+            ],
+            "_npmOperationalInternal": {
+                "host": "s3://npm-registry-packages",
+                "tmp": "tmp/messaging-components_1.20.1_1617033501894_0.9829581941585208"
+            },
+            "_hasShrinkwrap": false
         }
     },
     "time": {
         "created": "2019-06-06T18:15:09.196Z",
         "0.3.7": "2019-06-06T18:15:09.614Z",
-        "modified": "2021-03-10T18:11:35.498Z",
+        "modified": "2021-03-29T15:58:25.169Z",
         "0.4.1": "2019-07-11T14:54:16.194Z",
         "0.4.2": "2019-07-11T15:24:02.044Z",
         "1.0.0": "2019-07-11T17:27:01.292Z",
@@ -12374,7 +12613,8 @@
         "1.18.0": "2021-02-17T19:22:20.152Z",
         "1.17.2-alpha.1": "2021-02-18T14:16:56.120Z",
         "1.19.0": "2021-02-24T17:22:46.185Z",
-        "1.20.0": "2021-03-10T18:11:33.104Z"
+        "1.20.0": "2021-03-10T18:11:33.104Z",
+        "1.20.1": "2021-03-29T15:58:22.281Z"
     },
     "maintainers": [
         {
@@ -12507,6 +12747,6 @@
     "bugs": {
         "url": "https://github.com/paypal/paypal-messaging-components/issues"
     },
-    "readme": "# PayPal Credit Messaging\n\n---\n\n[![Build Status](https://travis-ci.org/paypal/paypal-messaging-components.svg?branch=master)](https://travis-ci.org/paypal/paypal-messaging-components) [![dependencies Status](https://david-dm.org/paypal/paypal-messaging-components/status.svg)](https://david-dm.org/paypal/paypal-messaging-components) [![devDependencies Status](https://david-dm.org/paypal/paypal-messaging-components/dev-status.svg)](https://david-dm.org/paypal/paypal-messaging-components?type=dev)\n\nA messaging component allowing easy integration of PayPal Credit Messages onto your site.\n\n## Dev Docs\n\nSee **[developer.paypal.com/docs/business/pay-later/integrate/](https://developer.paypal.com/docs/business/pay-later/integrate/)**\n\n---\n\n## Development\n\nPlease feel free to follow the [Contribution Guidelines](./CONTRIBUTING.md) to contribute to this repository. PRs are welcome, but for major changes please raise an issue first.\n\n### Quick Setup\n\nSet up your env:\n\n```bash\nnpm install\n```\n\nRun tests:\n\n```bash\nnpm test\n```\n\nRun in dev mode:\n\n```bash\nnpm start\n```\n\n## Testing\n\n### Functional\n\nTo run functional tests, first run `npm run dev:snapshot` in one command line instance and `npm run test:func` in a second command line instance. The `dev:snapshot` command creates static pages that the functional tests are run on.\n\n## Releasing\n\nThis package is published weekly, **Every Wednesday**. Please [view our Changelog](CHANGELOG.md) to stay updated with bug fixes and new features.\n",
+    "readme": "# PayPal Credit Messaging\n\n---\n\n[![Build Status](https://travis-ci.org/paypal/paypal-messaging-components.svg?branch=master)](https://travis-ci.org/paypal/paypal-messaging-components) [![dependencies Status](https://david-dm.org/paypal/paypal-messaging-components/status.svg)](https://david-dm.org/paypal/paypal-messaging-components) [![devDependencies Status](https://david-dm.org/paypal/paypal-messaging-components/dev-status.svg)](https://david-dm.org/paypal/paypal-messaging-components?type=dev)\n\nA messaging component allowing easy integration of PayPal Credit Messages onto your site.\n\n## Dev Docs\n\nSee **[developer.paypal.com/docs/business/pay-later/integrate/](https://developer.paypal.com/docs/business/pay-later/integrate/)**\n\n---\n\n## Development\n\nPlease feel free to follow the [Contribution Guidelines](./CONTRIBUTING.md) to contribute to this repository. PRs are welcome, but for major changes please raise an issue first.\n\n### Quick Setup\n\nSet up your env:\n\n```bash\nnpm install\n```\n\nRun tests:\n\n```bash\nnpm test\n```\n\nRun in dev mode:\n\n```bash\nnpm start\n```\n\n## Testing\n\n### Functional\n\nTo run functional tests, first run `npm run dev:standalone` in one command line instance and `npm run test:func` in a second command line instance. The `dev:standalone` command creates static pages that the functional tests are run on.\n\n## Releasing\n\nThis package is published weekly, **Every Wednesday**. Please [view our Changelog](CHANGELOG.md) to stay updated with bug fixes and new features.\n",
     "readmeFilename": "README.md"
 }
