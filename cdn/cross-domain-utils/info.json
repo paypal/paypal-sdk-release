@@ -1,5 +1,8 @@
 {
     "name": "cross-domain-utils",
+    "dist-tags": {
+        "latest": "2.0.34"
+    },
     "versions": {
         "2.0.33": {
             "dependencies": {
@@ -17,8 +20,5 @@
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/cross-domain-utils/tarballs/2.0.34.tgz"
             }
         }
-    },
-    "dist-tags": {
-        "latest": "2.0.34"
     }
 }

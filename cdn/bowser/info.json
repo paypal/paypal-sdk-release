@@ -1,5 +1,8 @@
 {
     "name": "bowser",
+    "dist-tags": {
+        "latest": "2.11.0"
+    },
     "versions": {
         "1.9.4": {
             "dist": {
@@ -11,8 +14,5 @@
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/bowser/tarballs/2.11.0.tgz"
             }
         }
-    },
-    "dist-tags": {
-        "latest": "2.11.0"
     }
 }

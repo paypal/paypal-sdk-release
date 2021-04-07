@@ -1,5 +1,8 @@
 {
     "name": "@paypal/identity-components",
+    "dist-tags": {
+        "latest": "5.0.4"
+    },
     "versions": {
         "5.0.3": {
             "dependencies": {
@@ -37,8 +40,5 @@
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/identity-components/tarballs/5.0.4.tgz"
             }
         }
-    },
-    "dist-tags": {
-        "latest": "5.0.4"
     }
 }

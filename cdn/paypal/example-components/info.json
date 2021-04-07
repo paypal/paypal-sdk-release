@@ -1,5 +1,8 @@
 {
     "name": "@paypal/example-components",
+    "dist-tags": {
+        "latest": "1.0.27"
+    },
     "versions": {
         "1.0.27": {
             "dependencies": {
@@ -9,8 +12,5 @@
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/example-components/tarballs/1.0.27.tgz"
             }
         }
-    },
-    "dist-tags": {
-        "latest": "1.0.27"
     }
 }

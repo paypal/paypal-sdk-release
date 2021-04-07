@@ -1,13 +1,13 @@
 {
     "name": "@paypal/risk-data-collector",
+    "dist-tags": {
+        "latest": "1.0.6"
+    },
     "versions": {
         "1.0.6": {
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/risk-data-collector/tarballs/1.0.6.tgz"
             }
         }
-    },
-    "dist-tags": {
-        "latest": "1.0.6"
     }
 }

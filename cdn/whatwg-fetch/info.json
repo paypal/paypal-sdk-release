@@ -1,5 +1,8 @@
 {
     "name": "whatwg-fetch",
+    "dist-tags": {
+        "latest": "3.6.2"
+    },
     "versions": {
         "3.2.0": {
             "dist": {
@@ -11,8 +14,5 @@
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/whatwg-fetch/tarballs/3.6.2.tgz"
             }
         }
-    },
-    "dist-tags": {
-        "latest": "3.6.2"
     }
 }

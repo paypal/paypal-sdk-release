@@ -1,13 +1,13 @@
 {
     "name": "inject-stylesheet",
+    "dist-tags": {
+        "latest": "4.0.0"
+    },
     "versions": {
         "1.0.0": {
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/inject-stylesheet/tarballs/1.0.0.tgz"
             }
         }
-    },
-    "dist-tags": {
-        "latest": "4.0.0"
     }
 }

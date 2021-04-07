@@ -1,5 +1,8 @@
 {
     "name": "zoid",
+    "dist-tags": {
+        "latest": "9.0.63"
+    },
     "versions": {
         "9.0.47": {
             "dependencies": {
@@ -23,8 +26,5 @@
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/zoid/tarballs/9.0.63.tgz"
             }
         }
-    },
-    "dist-tags": {
-        "latest": "9.0.63"
     }
 }

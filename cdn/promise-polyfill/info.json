@@ -1,5 +1,9 @@
 {
     "name": "promise-polyfill",
+    "dist-tags": {
+        "latest": "8.2.0",
+        "beta": "8.0.0"
+    },
     "versions": {
         "7.0.2": {
             "dependencies": {},
@@ -7,9 +11,5 @@
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/promise-polyfill/tarballs/7.0.2.tgz"
             }
         }
-    },
-    "dist-tags": {
-        "latest": "8.2.0",
-        "beta": "8.0.0"
     }
 }

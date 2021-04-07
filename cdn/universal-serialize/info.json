@@ -1,13 +1,13 @@
 {
     "name": "universal-serialize",
+    "dist-tags": {
+        "latest": "1.0.8"
+    },
     "versions": {
         "1.0.8": {
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/universal-serialize/tarballs/1.0.8.tgz"
             }
         }
-    },
-    "dist-tags": {
-        "latest": "1.0.8"
     }
 }

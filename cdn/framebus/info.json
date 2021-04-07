@@ -1,14 +1,14 @@
 {
     "name": "framebus",
+    "dist-tags": {
+        "latest": "5.1.2",
+        "v5-beta": "5.0.0-rc.1"
+    },
     "versions": {
         "3.0.1": {
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/framebus/tarballs/3.0.1.tgz"
             }
         }
-    },
-    "dist-tags": {
-        "latest": "5.1.2",
-        "v5-beta": "5.0.0-rc.1"
     }
 }

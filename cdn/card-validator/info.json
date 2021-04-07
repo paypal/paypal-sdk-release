@@ -1,5 +1,8 @@
 {
     "name": "card-validator",
+    "dist-tags": {
+        "latest": "8.1.0"
+    },
     "versions": {
         "4.3.0": {
             "dependencies": {
@@ -9,8 +12,5 @@
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/card-validator/tarballs/4.3.0.tgz"
             }
         }
-    },
-    "dist-tags": {
-        "latest": "8.1.0"
     }
 }

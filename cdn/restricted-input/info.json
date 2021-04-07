@@ -1,5 +1,8 @@
 {
     "name": "restricted-input",
+    "dist-tags": {
+        "latest": "3.0.3"
+    },
     "versions": {
         "1.2.7": {
             "dependencies": {
@@ -9,8 +12,5 @@
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/restricted-input/tarballs/1.2.7.tgz"
             }
         }
-    },
-    "dist-tags": {
-        "latest": "3.0.3"
     }
 }

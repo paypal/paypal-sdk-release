@@ -1,5 +1,13 @@
 {
     "name": "braintree-web",
+    "dist-tags": {
+        "latest": "3.76.2",
+        "beta": "3.0.0-beta.12",
+        "hotfix": "2.15.7",
+        "legacy": "2.32.1",
+        "repkg": "3.8.0-repkg.1",
+        "3ds-2.0-beta": "3.46.0-beta-3ds.8"
+    },
     "versions": {
         "3.33.0": {
             "dependencies": {
@@ -18,13 +26,5 @@
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/braintree-web/tarballs/3.33.0.tgz"
             }
         }
-    },
-    "dist-tags": {
-        "latest": "3.76.1",
-        "beta": "3.0.0-beta.12",
-        "hotfix": "2.15.7",
-        "legacy": "2.32.1",
-        "repkg": "3.8.0-repkg.1",
-        "3ds-2.0-beta": "3.46.0-beta-3ds.8"
     }
 }

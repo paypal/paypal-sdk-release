@@ -1,5 +1,8 @@
 {
     "name": "@paypal/funding-components",
+    "dist-tags": {
+        "latest": "1.0.22"
+    },
     "versions": {
         "1.0.17": {
             "dependencies": {
@@ -23,8 +26,5 @@
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/funding-components/tarballs/1.0.22.tgz"
             }
         }
-    },
-    "dist-tags": {
-        "latest": "1.0.22"
     }
 }

@@ -1,5 +1,8 @@
 {
     "name": "@paypal/sdk-client",
+    "dist-tags": {
+        "latest": "4.0.149"
+    },
     "versions": {
         "4.0.125": {
             "dependencies": {
@@ -27,8 +30,5 @@
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/sdk-client/tarballs/4.0.149.tgz"
             }
         }
-    },
-    "dist-tags": {
-        "latest": "4.0.149"
     }
 }

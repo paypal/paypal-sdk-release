@@ -1,13 +1,13 @@
 {
     "name": "credit-card-type",
+    "dist-tags": {
+        "latest": "9.1.0"
+    },
     "versions": {
         "6.3.0": {
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/credit-card-type/tarballs/6.3.0.tgz"
             }
         }
-    },
-    "dist-tags": {
-        "latest": "9.1.0"
     }
 }

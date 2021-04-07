@@ -1,5 +1,8 @@
 {
     "name": "cross-domain-safe-weakmap",
+    "dist-tags": {
+        "latest": "1.0.28"
+    },
     "versions": {
         "1.0.27": {
             "dependencies": {
@@ -17,8 +20,5 @@
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/cross-domain-safe-weakmap/tarballs/1.0.28.tgz"
             }
         }
-    },
-    "dist-tags": {
-        "latest": "1.0.28"
     }
 }

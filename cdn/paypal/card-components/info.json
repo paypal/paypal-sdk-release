@@ -1,5 +1,8 @@
 {
     "name": "@paypal/card-components",
+    "dist-tags": {
+        "latest": "1.0.48"
+    },
     "versions": {
         "1.0.45": {
             "dependencies": {
@@ -29,8 +32,5 @@
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/card-components/tarballs/1.0.48.tgz"
             }
         }
-    },
-    "dist-tags": {
-        "latest": "1.0.48"
     }
 }

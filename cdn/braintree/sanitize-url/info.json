@@ -1,13 +1,13 @@
 {
     "name": "@braintree/sanitize-url",
+    "dist-tags": {
+        "latest": "5.0.0"
+    },
     "versions": {
         "2.1.0": {
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/braintree/sanitize-url/tarballs/2.1.0.tgz"
             }
         }
-    },
-    "dist-tags": {
-        "latest": "5.0.0"
     }
 }

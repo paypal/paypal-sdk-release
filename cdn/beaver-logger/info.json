@@ -1,5 +1,8 @@
 {
     "name": "beaver-logger",
+    "dist-tags": {
+        "latest": "4.0.28"
+    },
     "versions": {
         "4.0.15": {
             "dependencies": {
@@ -19,8 +22,5 @@
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/beaver-logger/tarballs/4.0.28.tgz"
             }
         }
-    },
-    "dist-tags": {
-        "latest": "4.0.28"
     }
 }

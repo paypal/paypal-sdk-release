@@ -1,5 +1,8 @@
 {
     "name": "@braintree/browser-detection",
+    "dist-tags": {
+        "latest": "1.11.1"
+    },
     "versions": {
         "1.7.0": {
             "dependencies": {},
@@ -7,8 +10,5 @@
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/braintree/browser-detection/tarballs/1.7.0.tgz"
             }
         }
-    },
-    "dist-tags": {
-        "latest": "1.11.0"
     }
 }
