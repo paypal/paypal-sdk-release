@@ -14,16 +14,6 @@
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/sdk-constants/tarballs/1.0.60.tgz"
             }
         },
-        "1.0.96": {
-            "dependencies": {
-                "cross-domain-utils": "^2.0.10",
-                "hi-base32": "^0.5.0",
-                "zalgo-promise": "^1.0.28"
-            },
-            "dist": {
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/sdk-constants/tarballs/1.0.96.tgz"
-            }
-        },
         "1.0.100": {
             "dependencies": {
                 "cross-domain-utils": "^2.0.10",
