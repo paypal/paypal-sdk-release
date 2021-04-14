@@ -1,7 +1,7 @@
 {
     "name": "@paypal/sdk-constants",
     "dist-tags": {
-        "latest": "1.0.100"
+        "latest": "1.0.101"
     },
     "versions": {
         "1.0.60": {
