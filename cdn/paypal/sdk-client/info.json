@@ -17,7 +17,7 @@
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/sdk-client/tarballs/4.0.125.tgz"
             }
         },
-        "4.0.150": {
+        "4.0.149": {
             "dependencies": {
                 "@paypal/sdk-constants": "^1.0.94",
                 "beaver-logger": "^4.0.0",
@@ -27,7 +27,7 @@
                 "zalgo-promise": "^1.0.46"
             },
             "dist": {
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/sdk-client/tarballs/4.0.150.tgz"
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/sdk-client/tarballs/4.0.149.tgz"
             }
         },
         "4.0.152": {

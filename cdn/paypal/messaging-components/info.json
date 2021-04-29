@@ -20,7 +20,7 @@
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/messaging-components/tarballs/1.12.1.tgz"
             }
         },
-        "1.21.2": {
+        "1.21.0": {
             "dependencies": {
                 "@paypal/sdk-client": "^4.0.80",
                 "@paypal/sdk-constants": "^1.0.75",
@@ -34,7 +34,7 @@
                 "zoid": "^9.0.46"
             },
             "dist": {
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/messaging-components/tarballs/1.21.2.tgz"
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/messaging-components/tarballs/1.21.0.tgz"
             }
         },
         "1.21.3": {

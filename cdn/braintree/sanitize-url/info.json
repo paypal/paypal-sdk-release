@@ -1,7 +1,7 @@
 {
     "name": "@braintree/sanitize-url",
     "dist-tags": {
-        "latest": "5.0.0"
+        "latest": "5.0.1"
     },
     "versions": {
         "2.1.0": {
