@@ -1,7 +1,7 @@
 {
     "name": "core-js-pure",
     "dist-tags": {
-        "latest": "3.11.3",
+        "latest": "3.12.1",
         "alpha": "3.0.0-alpha.4",
         "beta": "3.0.0-beta.20"
     },
@@ -16,9 +16,9 @@
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/core-js-pure/tarballs/3.11.1.tgz"
             }
         },
-        "3.11.3": {
+        "3.12.1": {
             "dist": {
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/core-js-pure/tarballs/3.11.3.tgz"
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/core-js-pure/tarballs/3.12.1.tgz"
             }
         }
     }
