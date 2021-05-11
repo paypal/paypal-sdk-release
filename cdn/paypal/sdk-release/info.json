@@ -1,10 +1,10 @@
 {
     "name": "@paypal/sdk-release",
     "dist-tags": {
-        "latest": "5.0.226",
-        "active-test": "5.0.226",
-        "active-local": "5.0.226",
-        "active-stage": "5.0.226",
+        "latest": "5.0.227",
+        "active-test": "5.0.227",
+        "active-local": "5.0.227",
+        "active-stage": "5.0.227",
         "active-sandbox": "5.0.226",
         "active-production": "5.0.226",
         "noop": "5.0.147"
@@ -93,6 +93,48 @@
             },
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/sdk-release/tarballs/5.0.226.tgz"
+            }
+        },
+        "5.0.227": {
+            "dependencies": {
+                "@braintree/browser-detection": "1.7.0",
+                "@braintree/iframer": "1.0.3",
+                "@braintree/sanitize-url": "2.1.0",
+                "@braintree/wrap-promise": "1.1.1",
+                "@paypal/card-components": "1.0.48",
+                "@paypal/checkout-components": "5.0.155",
+                "@paypal/common-components": "1.0.17",
+                "@paypal/example-components": "1.0.27",
+                "@paypal/funding-components": "1.0.22",
+                "@paypal/identity-components": "5.0.4",
+                "@paypal/messaging-components": "1.22.1",
+                "@paypal/muse-components": "1.3.50",
+                "@paypal/sdk-client": "4.0.152",
+                "@paypal/sdk-constants": "1.0.102",
+                "@paypal/sdk-logos": "1.0.37",
+                "beaver-logger": "4.0.28",
+                "belter": "1.0.165",
+                "bowser": "2.11.0",
+                "braintree-web": "3.33.0",
+                "card-validator": "4.3.0",
+                "core-js-pure": "3.12.1",
+                "credit-card-type": "6.3.0",
+                "cross-domain-safe-weakmap": "1.0.28",
+                "cross-domain-utils": "2.0.34",
+                "framebus": "3.0.1",
+                "hi-base32": "0.5.1",
+                "inject-stylesheet": "1.0.0",
+                "jsx-pragmatic": "2.0.20",
+                "post-robot": "10.0.42",
+                "promise-polyfill": "7.0.2",
+                "restricted-input": "1.2.7",
+                "universal-serialize": "1.0.8",
+                "whatwg-fetch": "3.6.2",
+                "zalgo-promise": "1.0.46",
+                "zoid": "9.0.65"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/sdk-release/tarballs/5.0.227.tgz"
             }
         }
     }
