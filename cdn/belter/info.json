@@ -1,7 +1,7 @@
 {
     "name": "belter",
     "dist-tags": {
-        "latest": "1.0.165"
+        "latest": "1.0.166"
     },
     "versions": {
         "1.0.122": {
@@ -22,6 +22,16 @@
             },
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/belter/tarballs/1.0.165.tgz"
+            }
+        },
+        "1.0.166": {
+            "dependencies": {
+                "cross-domain-safe-weakmap": "^1",
+                "cross-domain-utils": "^2",
+                "zalgo-promise": "^1"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/belter/tarballs/1.0.166.tgz"
             }
         }
     }
