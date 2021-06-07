@@ -17,19 +17,6 @@
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/sdk-client/tarballs/4.0.125.tgz"
             }
         },
-        "4.0.153": {
-            "dependencies": {
-                "@paypal/sdk-constants": "^1.0.94",
-                "beaver-logger": "^4.0.0",
-                "belter": "^1.0.146",
-                "bowser": "^2.0.0",
-                "jsx-pragmatic": "^2",
-                "zalgo-promise": "^1.0.46"
-            },
-            "dist": {
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/sdk-client/tarballs/4.0.153.tgz"
-            }
-        },
         "4.0.154": {
             "dependencies": {
                 "@paypal/sdk-constants": "^1.0.94",

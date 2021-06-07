@@ -1,7 +1,7 @@
 {
     "name": "@paypal/checkout-components",
     "dist-tags": {
-        "latest": "5.0.160",
+        "latest": "5.0.161",
         "alpha": "5.0.155-alpha.1"
     },
     "versions": {
@@ -24,24 +24,6 @@
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/checkout-components/tarballs/5.0.101.tgz"
             }
         },
-        "5.0.158": {
-            "dependencies": {
-                "@paypal/common-components": "^1.0.10",
-                "@paypal/funding-components": "^1.0.17",
-                "@paypal/sdk-client": "^4.0.151",
-                "@paypal/sdk-constants": "^1.0.57",
-                "@paypal/sdk-logos": "^1.0.26",
-                "belter": "^1.0.2",
-                "cross-domain-utils": "^2.0.1",
-                "jsx-pragmatic": "^2",
-                "post-robot": "^10.0.0",
-                "zalgo-promise": "^1.0.10",
-                "zoid": "^9.0.0"
-            },
-            "dist": {
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/checkout-components/tarballs/5.0.158.tgz"
-            }
-        },
         "5.0.160": {
             "dependencies": {
                 "@paypal/common-components": "^1.0.10",
@@ -58,6 +40,24 @@
             },
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/checkout-components/tarballs/5.0.160.tgz"
+            }
+        },
+        "5.0.161": {
+            "dependencies": {
+                "@paypal/common-components": "^1.0.10",
+                "@paypal/funding-components": "^1.0.17",
+                "@paypal/sdk-client": "^4.0.151",
+                "@paypal/sdk-constants": "^1.0.57",
+                "@paypal/sdk-logos": "^1.0.26",
+                "belter": "^1.0.2",
+                "cross-domain-utils": "^2.0.1",
+                "jsx-pragmatic": "^2",
+                "post-robot": "^10.0.0",
+                "zalgo-promise": "^1.0.10",
+                "zoid": "^9.0.0"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/checkout-components/tarballs/5.0.161.tgz"
             }
         }
     }
