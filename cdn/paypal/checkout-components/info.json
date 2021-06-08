@@ -1,7 +1,7 @@
 {
     "name": "@paypal/checkout-components",
     "dist-tags": {
-        "latest": "5.0.161",
+        "latest": "5.0.162",
         "alpha": "5.0.155-alpha.1"
     },
     "versions": {
@@ -42,12 +42,12 @@
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/checkout-components/tarballs/5.0.160.tgz"
             }
         },
-        "5.0.161": {
+        "5.0.162": {
             "dependencies": {
                 "@paypal/common-components": "^1.0.10",
                 "@paypal/funding-components": "^1.0.17",
                 "@paypal/sdk-client": "^4.0.151",
-                "@paypal/sdk-constants": "^1.0.57",
+                "@paypal/sdk-constants": "^1.0.105",
                 "@paypal/sdk-logos": "^1.0.26",
                 "belter": "^1.0.2",
                 "cross-domain-utils": "^2.0.1",
@@ -57,7 +57,7 @@
                 "zoid": "^9.0.0"
             },
             "dist": {
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/checkout-components/tarballs/5.0.161.tgz"
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/checkout-components/tarballs/5.0.162.tgz"
             }
         }
     }
