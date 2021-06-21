@@ -30,8 +30,11 @@ jobs:
         with:
           useLockFile: false
 
-      - name: ▶️ Upgrade dependencies
-        run: npm run upgrade -- ${{ github.event.inputs.filter }}
+      - name: Print inputs
+      - run: echo "Filter: ${{ github.event.inputs.filter }}"
 
-      - name: ▶️ Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4
+      # - name: ▶️ Upgrade dependencies
+      #   run: npm run upgrade -- ${{ github.event.inputs.filter }}
+
+      # - name: ▶️ Commit changes
+      #   uses: stefanzweifel/git-auto-commit-action@v4
