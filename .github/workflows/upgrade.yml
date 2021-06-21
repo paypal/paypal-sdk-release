@@ -26,16 +26,12 @@ jobs:
           node-version: ${{ matrix.node }}
 
       - name: 📥 Download deps
-        uses: bahmutov/npm-install@v1
-        with:
-          useLockFile: false
+        run: npm run reinstall
 
-      - name: Print inputs
+      - name: Configure git user
         run: |
-          echo "Filter: ${{ github.event.inputs.filter }}"
+          git config --global user.email ${{ github.actor }}@users.noreply.github.com
+          git config --global user.name ${{ github.actor }}
 
-      - name: ▶️ Upgrade dependencies
+      - name: 🍏 Upgrade dependencies
         run: npm run upgrade -- ${{ github.event.inputs.filter }}
-
-      - name: ▶️ Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4
