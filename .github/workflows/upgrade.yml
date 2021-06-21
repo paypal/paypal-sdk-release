@@ -1,4 +1,4 @@
-name: release
+name: upgrade
 on:
   # manually run this action using the GitHub UI
   # https://github.blog/changelog/2020-07-06-github-actions-manual-triggers-with-workflow_dispatch/
@@ -34,8 +34,8 @@ jobs:
         run: |
           echo "Filter: ${{ github.event.inputs.filter }}"
 
-      # - name: ▶️ Upgrade dependencies
-      #   run: npm run upgrade -- ${{ github.event.inputs.filter }}
+      - name: ▶️ Upgrade dependencies
+        run: npm run upgrade -- ${{ github.event.inputs.filter }}
 
-      # - name: ▶️ Commit changes
-      #   uses: stefanzweifel/git-auto-commit-action@v4
+      - name: ▶️ Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
