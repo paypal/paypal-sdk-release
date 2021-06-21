@@ -1,0 +1,37 @@
+name: release
+on:
+  # manually run this action using the GitHub UI
+  # https://github.blog/changelog/2020-07-06-github-actions-manual-triggers-with-workflow_dispatch/
+  workflow_dispatch:
+    inputs:
+      filter:
+        description: Optional argument for "npm run upgrade"
+        required: false
+        default: ''
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [14]
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: ⎔ Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: 📥 Download deps
+        uses: bahmutov/npm-install@v1
+        with:
+          useLockFile: false
+
+      - name: ▶️ Upgrade dependencies
+        run: npm run upgrade -- ${{ github.event.inputs.filter }}
+
+      - name: ▶️ Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
