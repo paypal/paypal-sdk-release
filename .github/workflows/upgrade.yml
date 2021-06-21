@@ -31,7 +31,7 @@ jobs:
           useLockFile: false
 
       - name: Print inputs
-      - run: echo "Filter: ${{ github.event.inputs.filter }}"
+        run: echo "Filter: ${{ github.event.inputs.filter }}"
 
       # - name: ▶️ Upgrade dependencies
       #   run: npm run upgrade -- ${{ github.event.inputs.filter }}
