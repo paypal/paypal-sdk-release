@@ -1,7 +1,7 @@
 {
     "name": "@paypal/common-components",
     "dist-tags": {
-        "latest": "1.0.18"
+        "latest": "1.0.19"
     },
     "versions": {
         "1.0.10": {
@@ -32,6 +32,21 @@
             },
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/common-components/tarballs/1.0.18.tgz"
+            }
+        },
+        "1.0.19": {
+            "dependencies": {
+                "@paypal/sdk-client": "^4.0.0",
+                "@paypal/sdk-constants": "^1.0.1",
+                "@paypal/sdk-logos": "^1.0.1",
+                "belter": "^1.0.2",
+                "jsx-pragmatic": "^2",
+                "post-robot": "^10.0.0",
+                "zalgo-promise": "^1.0.10",
+                "zoid": "^9.0.0"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/common-components/tarballs/1.0.19.tgz"
             }
         }
     }
