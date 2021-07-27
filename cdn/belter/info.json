@@ -14,16 +14,6 @@
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/belter/tarballs/1.0.122.tgz"
             }
         },
-        "1.0.170": {
-            "dependencies": {
-                "cross-domain-safe-weakmap": "^1",
-                "cross-domain-utils": "^2",
-                "zalgo-promise": "^1"
-            },
-            "dist": {
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/belter/tarballs/1.0.170.tgz"
-            }
-        },
         "1.0.173": {
             "dependencies": {
                 "cross-domain-safe-weakmap": "^1",
