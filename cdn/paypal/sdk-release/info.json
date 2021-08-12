@@ -1,10 +1,10 @@
 {
     "name": "@paypal/sdk-release",
     "dist-tags": {
-        "latest": "5.0.246",
+        "latest": "5.0.247",
         "active-test": "5.0.245",
         "active-local": "5.0.245",
-        "active-stage": "5.0.245",
+        "active-stage": "5.0.247",
         "active-sandbox": "5.0.245",
         "active-production": "5.0.245",
         "noop": "5.0.147"
@@ -95,19 +95,19 @@
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/sdk-release/tarballs/5.0.245.tgz"
             }
         },
-        "5.0.246": {
+        "5.0.247": {
             "dependencies": {
                 "@braintree/browser-detection": "1.7.0",
                 "@braintree/iframer": "1.0.3",
                 "@braintree/sanitize-url": "2.1.0",
                 "@braintree/wrap-promise": "1.1.1",
                 "@paypal/card-components": "1.0.48",
-                "@paypal/checkout-components": "5.0.174",
+                "@paypal/checkout-components": "5.0.175",
                 "@paypal/common-components": "1.0.20",
                 "@paypal/example-components": "1.0.27",
                 "@paypal/funding-components": "1.0.22",
                 "@paypal/identity-components": "5.0.4",
-                "@paypal/messaging-components": "1.26.0",
+                "@paypal/messaging-components": "1.26.1",
                 "@paypal/muse-components": "1.3.59",
                 "@paypal/sdk-client": "4.0.158",
                 "@paypal/sdk-constants": "1.0.107",
@@ -134,7 +134,7 @@
                 "zoid": "9.0.71"
             },
             "dist": {
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/sdk-release/tarballs/5.0.246.tgz"
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/sdk-release/tarballs/5.0.247.tgz"
             }
         }
     }
