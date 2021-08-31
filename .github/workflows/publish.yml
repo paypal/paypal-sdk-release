@@ -21,9 +21,11 @@ jobs:
           ref: ${{ github.head_ref }}
 
       - name: ⎔ Setup node
-        uses: actions/setup-node@v1
+        # sets up the .npmrc file to publish to npm
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node }}
+          registry-url: 'https://registry.npmjs.org'
 
       - name: 📥 Download deps
         run: npm run reinstall
@@ -34,8 +36,6 @@ jobs:
           git config --global user.name ${{ github.actor }}
 
       - name: Publish to npm
-        run: |
-            echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-            npm run release -- ${{ github.event.inputs.version }}
+        run: npm run release -- ${{ github.event.inputs.version }}
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
