@@ -13,15 +13,6 @@
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/beaver-logger/tarballs/4.0.15.tgz"
             }
         },
-        "4.0.28": {
-            "dependencies": {
-                "belter": "^1.0.17",
-                "zalgo-promise": "^1.0.26"
-            },
-            "dist": {
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/beaver-logger/tarballs/4.0.28.tgz"
-            }
-        },
         "4.0.29": {
             "dependencies": {
                 "belter": "^1.0.17",
