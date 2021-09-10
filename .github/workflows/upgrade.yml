@@ -11,9 +11,6 @@ on:
 jobs:
   main:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node: [14]
     steps:
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v2
@@ -21,9 +18,9 @@ jobs:
           ref: ${{ github.head_ref }}
 
       - name: ⎔ Setup node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
-          node-version: ${{ matrix.node }}
+          node-version: '14'
 
       - name: 📥 Download deps
         run: npm run reinstall
