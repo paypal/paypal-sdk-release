@@ -15,17 +15,6 @@
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/zoid/tarballs/9.0.47.tgz"
             }
         },
-        "9.0.75": {
-            "dependencies": {
-                "belter": "^1.0.123",
-                "cross-domain-utils": "^2.0.33",
-                "post-robot": "^10",
-                "zalgo-promise": "^1.0.45"
-            },
-            "dist": {
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/zoid/tarballs/9.0.75.tgz"
-            }
-        },
         "9.0.76": {
             "dependencies": {
                 "belter": "^1.0.123",
