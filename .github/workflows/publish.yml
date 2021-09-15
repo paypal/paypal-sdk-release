@@ -1,8 +1,7 @@
 name: publish to npm
-on:
-  # manually run this action using the GitHub UI
-  # https://github.blog/changelog/2020-07-06-github-actions-manual-triggers-with-workflow_dispatch/
-  workflow_dispatch:
+# manually run this action using the GitHub UI
+# https://github.blog/changelog/2020-07-06-github-actions-manual-triggers-with-workflow_dispatch/
+on: workflow_dispatch
 jobs:
   main:
     runs-on: ubuntu-latest
