@@ -20,24 +20,6 @@
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/messaging-components/tarballs/1.12.1.tgz"
             }
         },
-        "1.26.2": {
-            "dependencies": {
-                "@paypal/common-components": "^1.0.18",
-                "@paypal/sdk-client": "^4.0.80",
-                "@paypal/sdk-constants": "^1.0.75",
-                "@paypal/sdk-logos": "^1.0.26",
-                "beaver-logger": "^4.0.14",
-                "belter": "^1.0.112",
-                "core-js-pure": "^3.0.1",
-                "jsx-pragmatic": "^2.0.7",
-                "post-robot": "^10.0.29",
-                "zalgo-promise": "^1.0.38",
-                "zoid": "^9.0.46"
-            },
-            "dist": {
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/messaging-components/tarballs/1.26.2.tgz"
-            }
-        },
         "1.26.4": {
             "dependencies": {
                 "@paypal/common-components": "^1.0.18",
