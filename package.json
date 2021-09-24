@@ -66,7 +66,7 @@
     "@paypal/example-components": "1.0.27",
     "@paypal/funding-components": "1.0.22",
     "@paypal/identity-components": "5.0.4",
-    "@paypal/messaging-components": "1.26.4",
+    "@paypal/messaging-components": "1.26.2",
     "@paypal/muse-components": "1.3.62",
     "@paypal/sdk-client": "4.0.158"
   }
