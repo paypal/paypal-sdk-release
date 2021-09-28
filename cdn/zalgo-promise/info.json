@@ -1,7 +1,7 @@
 {
     "name": "zalgo-promise",
     "dist-tags": {
-        "latest": "1.0.47"
+        "latest": "1.0.48"
     },
     "versions": {
         "1.0.44": {
@@ -14,6 +14,12 @@
             "dependencies": {},
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/zalgo-promise/tarballs/1.0.47.tgz"
+            }
+        },
+        "1.0.48": {
+            "dependencies": {},
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/zalgo-promise/tarballs/1.0.48.tgz"
             }
         }
     }
