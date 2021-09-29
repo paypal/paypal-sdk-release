@@ -1,7 +1,7 @@
 {
     "name": "beaver-logger",
     "dist-tags": {
-        "latest": "4.0.31"
+        "latest": "4.0.32"
     },
     "versions": {
         "4.0.15": {
