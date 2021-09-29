@@ -10,6 +10,12 @@
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/zalgo-promise/tarballs/1.0.44.tgz"
             }
         },
+        "1.0.47": {
+            "dependencies": {},
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/zalgo-promise/tarballs/1.0.47.tgz"
+            }
+        },
         "1.0.48": {
             "dependencies": {},
             "dist": {
