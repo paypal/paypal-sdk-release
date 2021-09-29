@@ -2,7 +2,7 @@
     "name": "@paypal/identity-components",
     "dist-tags": {
         "latest": "5.0.4",
-        "alpha": "5.0.4-alpha4"
+        "alpha": "5.0.4-alpha5"
     },
     "versions": {
         "5.0.3": {
