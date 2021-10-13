@@ -1,7 +1,7 @@
 {
     "name": "jsx-pragmatic",
     "dist-tags": {
-        "latest": "2.0.20"
+        "latest": "2.0.22"
     },
     "versions": {
         "2.0.12": {
@@ -12,6 +12,11 @@
         "2.0.20": {
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/jsx-pragmatic/tarballs/2.0.20.tgz"
+            }
+        },
+        "2.0.22": {
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/jsx-pragmatic/tarballs/2.0.22.tgz"
             }
         }
     }
