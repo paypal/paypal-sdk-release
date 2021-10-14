@@ -1,7 +1,7 @@
 {
     "name": "@paypal/messaging-components",
     "dist-tags": {
-        "latest": "1.26.5",
+        "latest": "1.26.6",
         "alpha": "1.17.2-alpha.1"
     },
     "versions": {
@@ -36,6 +36,24 @@
             },
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/messaging-components/tarballs/1.26.5.tgz"
+            }
+        },
+        "1.26.6": {
+            "dependencies": {
+                "@paypal/common-components": "^1.0.18",
+                "@paypal/sdk-client": "^4.0.80",
+                "@paypal/sdk-constants": "^1.0.75",
+                "@paypal/sdk-logos": "^1.0.26",
+                "beaver-logger": "^4.0.14",
+                "belter": "^1.0.112",
+                "core-js-pure": "^3.0.1",
+                "jsx-pragmatic": "^2.0.7",
+                "post-robot": "^10.0.29",
+                "zalgo-promise": "^1.0.38",
+                "zoid": "^9.0.46"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/messaging-components/tarballs/1.26.6.tgz"
             }
         }
     }
