@@ -1,7 +1,7 @@
 {
     "name": "promise-polyfill",
     "dist-tags": {
-        "latest": "8.2.0",
+        "latest": "8.2.1",
         "beta": "8.0.0"
     },
     "versions": {
