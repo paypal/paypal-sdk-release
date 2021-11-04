@@ -1,0 +1,40 @@
+<!-- Use this index.html file to help validate sdk bundles on CDNX before they are deployed -->
+<!DOCTYPE html>
+<body>
+    <h1>Venmo Desktop Test Page</h1>
+    <div id="paypal-button-container"></div>
+
+    <!-- Use this script tag for bundle 1. Make sure to include version number at the end -->
+    <!-- <script src="https://localhost.paypal.com:8443/sdk/js?client-id=alc_client1&debug=true&cdn-registry=https://uideploy--staticcontent--BUNDLE_ID_GOES_HERE--ghe.preview.dev.paypalinc.com/js-sdk-release&version=VERSION_GOES_HERE"></script> -->
+
+    <!-- Use this script tag for bundle 2 -->
+    <!-- <script src="https://localhost.paypal.com:8443/sdk/js?client-id=alc_client1&debug=true&cdn-registry=https://uideploy--staticcontent--BUNDLE_ID_GOES_HERE--ghe.preview.dev.paypalinc.com/js-sdk-release"></script> -->
+
+    <script>
+        paypal
+            .Buttons({
+                createOrder: function (data, actions) {
+                    return actions.order.create({
+                        purchase_units: [
+                            {
+                                amount: {
+                                    value: "0.01",
+                                },
+                            },
+                        ],
+                    });
+                },
+                onApprove: function (data, actions) {
+                    return actions.order.capture().then(function (details) {
+                        alert(
+                            "Transaction completed by " +
+                                details.payer.name.given_name +
+                                "!"
+                        );
+                    });
+                },
+                // enableNativeCheckout: true
+            })
+            .render("#paypal-button-container");
+    </script>
+</body>
