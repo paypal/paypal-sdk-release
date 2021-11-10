@@ -18,7 +18,11 @@
             },
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/messaging-components/tarballs/1.12.1.tgz"
-            }
+            },
+            "repository": {
+                "url": "git+https://github.com/paypal/paypal-messaging-components.git"
+            },
+            "gitHead": "5c0ac5b77f0983f38ccacad3d3496a6d416bbeea"
         },
         "1.27.1": {
             "dependencies": {
@@ -36,7 +40,11 @@
             },
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/messaging-components/tarballs/1.27.1.tgz"
-            }
+            },
+            "repository": {
+                "url": "git+https://github.com/paypal/paypal-messaging-components.git"
+            },
+            "gitHead": "f0cd8d1e9b6dce5ad4602ad559e3f4f4824f10d5"
         }
     }
 }

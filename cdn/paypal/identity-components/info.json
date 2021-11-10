@@ -21,7 +21,11 @@
             },
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/identity-components/tarballs/5.0.3.tgz"
-            }
+            },
+            "repository": {
+                "url": "git://github.paypal.com/paypal/paypal-auth.git"
+            },
+            "gitHead": "82b8fc554e7d6293379cea4e7b6d4f57aa41eba6"
         },
         "5.0.8": {
             "dependencies": {
@@ -39,7 +43,11 @@
             },
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/identity-components/tarballs/5.0.8.tgz"
-            }
+            },
+            "repository": {
+                "url": "git://github.paypal.com/paypal/paypal-auth.git"
+            },
+            "gitHead": "ef76f409d82aa63e496655682b63e157928a465d"
         }
     }
 }

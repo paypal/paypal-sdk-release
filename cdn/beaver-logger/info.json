@@ -11,7 +11,11 @@
             },
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/beaver-logger/tarballs/4.0.15.tgz"
-            }
+            },
+            "repository": {
+                "url": "git://github.com/krakenjs/beaver-logger.git"
+            },
+            "gitHead": "80458ac6a5caa18ab1db6765316d79f658332895"
         },
         "4.0.32": {
             "dependencies": {
@@ -21,7 +25,11 @@
             },
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/beaver-logger/tarballs/4.0.32.tgz"
-            }
+            },
+            "repository": {
+                "url": "git://github.com/krakenjs/beaver-logger.git"
+            },
+            "gitHead": "49d26f6d7f82d24cd506ffd671bf298d09658182"
         }
     }
 }

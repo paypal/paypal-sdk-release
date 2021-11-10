@@ -14,7 +14,11 @@
             },
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/post-robot/tarballs/10.0.37.tgz"
-            }
+            },
+            "repository": {
+                "url": "git://github.com/krakenjs/post-robot.git"
+            },
+            "gitHead": "547b143553604aec3394c5a917fc64b7f46c1858"
         },
         "10.0.44": {
             "dependencies": {
@@ -26,7 +30,11 @@
             },
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/post-robot/tarballs/10.0.44.tgz"
-            }
+            },
+            "repository": {
+                "url": "git://github.com/krakenjs/post-robot.git"
+            },
+            "gitHead": "5fa3ea5051773963c7cb64eef88e5c2871a55caa"
         }
     }
 }

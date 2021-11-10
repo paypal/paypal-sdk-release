@@ -12,7 +12,11 @@
             },
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/belter/tarballs/1.0.122.tgz"
-            }
+            },
+            "repository": {
+                "url": "git://github.com/krakenjs/belter.git"
+            },
+            "gitHead": "cdddc4f8ddb172d29db9e7e1ad1eeeacfb93e215"
         },
         "1.0.177": {
             "dependencies": {
@@ -22,7 +26,11 @@
             },
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/belter/tarballs/1.0.177.tgz"
-            }
+            },
+            "repository": {
+                "url": "git://github.com/krakenjs/belter.git"
+            },
+            "gitHead": "947f2d080062c21a8ee51a7d9dee9dc70ab5ea79"
         }
     }
 }

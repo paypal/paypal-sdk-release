@@ -8,7 +8,11 @@
         "3.0.1": {
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/framebus/tarballs/3.0.1.tgz"
-            }
+            },
+            "repository": {
+                "url": "git+ssh://git@github.com/braintree/framebus.git"
+            },
+            "gitHead": "d58a55b9725899cc20692b81910089e55ca51315"
         }
     }
 }

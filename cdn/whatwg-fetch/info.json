@@ -7,12 +7,20 @@
         "3.2.0": {
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/whatwg-fetch/tarballs/3.2.0.tgz"
-            }
+            },
+            "repository": {
+                "url": "git+https://github.com/github/fetch.git"
+            },
+            "gitHead": "fdd09e278b1cf4625a876fc0edabcec391051850"
         },
         "3.6.2": {
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/whatwg-fetch/tarballs/3.6.2.tgz"
-            }
+            },
+            "repository": {
+                "url": "git+https://github.com/github/fetch.git"
+            },
+            "gitHead": "8f48ca686f9564bf52704e0e4b410ca970b17031"
         }
     }
 }

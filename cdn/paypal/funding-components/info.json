@@ -13,7 +13,11 @@
             },
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/funding-components/tarballs/1.0.17.tgz"
-            }
+            },
+            "repository": {
+                "url": "git://github.com/paypal/paypal-sdk-client.git"
+            },
+            "gitHead": "e2fa90c0fa1580be5c97b1bddcf957138381afac"
         },
         "1.0.22": {
             "dependencies": {
@@ -24,7 +28,11 @@
             },
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/funding-components/tarballs/1.0.22.tgz"
-            }
+            },
+            "repository": {
+                "url": "git://github.com/paypal/paypal-sdk-client.git"
+            },
+            "gitHead": "c6df70ecf6c97cf31ececd254772974b747a658f"
         }
     }
 }

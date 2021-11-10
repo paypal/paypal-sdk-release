@@ -12,7 +12,11 @@
             },
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/sdk-constants/tarballs/1.0.60.tgz"
-            }
+            },
+            "repository": {
+                "url": "git://github.com/paypal/paypal-sdk-constants.git"
+            },
+            "gitHead": "3a691d8881ea8d4619a47a215ee66bf1d1784897"
         },
         "1.0.110": {
             "dependencies": {
@@ -22,7 +26,11 @@
             },
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/sdk-constants/tarballs/1.0.110.tgz"
-            }
+            },
+            "repository": {
+                "url": "git://github.com/paypal/paypal-sdk-constants.git"
+            },
+            "gitHead": "7d705d7bdacda41935aee905a063071834d06a9d"
         }
     }
 }

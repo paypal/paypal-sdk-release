@@ -13,7 +13,11 @@
             },
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/zoid/tarballs/9.0.47.tgz"
-            }
+            },
+            "repository": {
+                "url": "git://github.com/krakenjs/zoid.git"
+            },
+            "gitHead": "d9c5375c0a68dd1f0f3b975251b3151be1b4ec39"
         },
         "9.0.82": {
             "dependencies": {
@@ -24,7 +28,11 @@
             },
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/zoid/tarballs/9.0.82.tgz"
-            }
+            },
+            "repository": {
+                "url": "git://github.com/krakenjs/zoid.git"
+            },
+            "gitHead": "1e74033adc3b38663a14ad2d091d61c44f841613"
         }
     }
 }

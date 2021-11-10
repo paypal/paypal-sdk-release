@@ -7,12 +7,20 @@
         "2.0.12": {
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/jsx-pragmatic/tarballs/2.0.12.tgz"
-            }
+            },
+            "repository": {
+                "url": "git://github.com/krakenjs/jsx-pragmatic.git"
+            },
+            "gitHead": "531cd8181edbc4d3c69143a4a79e0de8866321e3"
         },
         "2.0.22": {
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/jsx-pragmatic/tarballs/2.0.22.tgz"
-            }
+            },
+            "repository": {
+                "url": "git://github.com/krakenjs/jsx-pragmatic.git"
+            },
+            "gitHead": "e89cc056064b9d7467953ff532602c35b4197f5f"
         }
     }
 }

@@ -24,6 +24,9 @@
             },
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/braintree-web/tarballs/3.33.0.tgz"
+            },
+            "repository": {
+                "url": "git+ssh://git@github.com/braintree/braintree-web.git"
             }
         }
     }

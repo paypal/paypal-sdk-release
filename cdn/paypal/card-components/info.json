@@ -16,7 +16,11 @@
             },
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/card-components/tarballs/1.0.45.tgz"
-            }
+            },
+            "repository": {
+                "url": "git+https://github.com/paypal/paypal-braintree-hosted-fields-component.git"
+            },
+            "gitHead": "03c65f0e60f12e7a7249f7df6efdb3bc492486d7"
         },
         "1.0.48": {
             "dependencies": {
@@ -30,7 +34,11 @@
             },
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/card-components/tarballs/1.0.48.tgz"
-            }
+            },
+            "repository": {
+                "url": "git+https://github.com/paypal/paypal-card-components.git"
+            },
+            "gitHead": "7a6cc02a19abb56f21aa559d6dc62876e1433c72"
         }
     }
 }
