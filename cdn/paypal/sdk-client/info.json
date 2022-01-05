@@ -22,23 +22,6 @@
             },
             "gitHead": "56b6f87ea40c69ff4f5766eea7268cfc4bfe4ed0"
         },
-        "4.0.161": {
-            "dependencies": {
-                "@paypal/sdk-constants": "^1.0.94",
-                "beaver-logger": "^4.0.0",
-                "belter": "^1.0.146",
-                "bowser": "^2.0.0",
-                "jsx-pragmatic": "^2",
-                "zalgo-promise": "^1.0.46"
-            },
-            "dist": {
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/sdk-client/tarballs/4.0.161.tgz"
-            },
-            "repository": {
-                "url": "git://github.com/paypal/paypal-sdk-client.git"
-            },
-            "gitHead": "e278e0b73918aaf23f3bbe6f524dad35963a40b1"
-        },
         "4.0.162": {
             "dependencies": {
                 "@paypal/sdk-constants": "^1.0.94",
