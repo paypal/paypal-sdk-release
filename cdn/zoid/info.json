@@ -1,7 +1,7 @@
 {
     "name": "zoid",
     "dist-tags": {
-        "latest": "9.0.82"
+        "latest": "9.0.85"
     },
     "versions": {
         "9.0.47": {
@@ -33,6 +33,21 @@
                 "url": "git://github.com/krakenjs/zoid.git"
             },
             "gitHead": "1e74033adc3b38663a14ad2d091d61c44f841613"
+        },
+        "9.0.85": {
+            "dependencies": {
+                "belter": "^1.0.123",
+                "cross-domain-utils": "^2.0.33",
+                "post-robot": "^10",
+                "zalgo-promise": "^1.0.45"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/zoid/tarballs/9.0.85.tgz"
+            },
+            "repository": {
+                "url": "git://github.com/krakenjs/zoid.git"
+            },
+            "gitHead": "6d1f0e6f2f0203db8f5cf979f19f6c34ce8db922"
         }
     }
 }
