@@ -2,6 +2,7 @@
 .*/dist/module
 .*/node_modules/npm
 .*/node_modules/npmi
+.*/node_modules/resolve
 [include]
 [libs]
 flow-typed
