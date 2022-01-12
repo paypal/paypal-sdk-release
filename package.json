@@ -56,7 +56,7 @@
   "devDependencies": {
     "grabthar-release": "^1",
     "flow-bin": "0.135.0",
-    "grumbler-scripts": "^3",
+    "grumbler-scripts": "^5",
     "flowgen": "1.11.0"
   },
   "dependencies": {
