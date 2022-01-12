@@ -1,7 +1,7 @@
 {
     "name": "@paypal/card-components",
     "dist-tags": {
-        "latest": "1.0.50"
+        "latest": "1.0.51"
     },
     "versions": {
         "1.0.45": {
@@ -39,6 +39,24 @@
                 "url": "git+https://github.com/paypal/paypal-card-components.git"
             },
             "gitHead": "0150316193b8e01278aac4abe26716a0ae4f8d2d"
+        },
+        "1.0.51": {
+            "dependencies": {
+                "@paypal/sdk-client": "^4.0.117",
+                "@paypal/sdk-constants": "^1.0.8",
+                "belter": "^1.0.44",
+                "braintree-web": "3.33.0",
+                "jsx-pragmatic": "^2",
+                "zalgo-promise": "^1.0.34",
+                "zoid": "^9.0.0"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/card-components/tarballs/1.0.51.tgz"
+            },
+            "repository": {
+                "url": "git+https://github.com/paypal/paypal-card-components.git"
+            },
+            "gitHead": "af58db513b6e3b8bb12a7cbc9c61c5f12c155316"
         }
     }
 }
