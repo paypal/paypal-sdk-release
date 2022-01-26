@@ -64,10 +64,10 @@
     "@paypal/checkout-components": "5.0.193",
     "@paypal/common-components": "1.0.23",
     "@paypal/example-components": "1.0.27",
-    "@paypal/funding-components": "1.0.22",
+    "@paypal/funding-components": "1.0.23",
     "@paypal/identity-components": "5.0.8",
     "@paypal/messaging-components": "1.28.0",
-    "@paypal/muse-components": "1.3.71",
-    "@paypal/sdk-client": "4.0.162"
+    "@paypal/muse-components": "1.3.72",
+    "@paypal/sdk-client": "4.0.163"
   }
 }
