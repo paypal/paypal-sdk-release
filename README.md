@@ -10,7 +10,7 @@ PayPal Braintree Client SDK
 [version-badge]: https://img.shields.io/npm/v/@paypal/sdk-release.svg?style=flat-square
 [package]: https://www.npmjs.com/package/@paypal/sdk-release
 [license-badge]: https://img.shields.io/github/license/paypal/paypal-sdk-release.svg?style=flat-square
-[license]: https://github.com/paypal/paypal-sdk-release/blob/master/LICENSE
+[license]: https://github.com/paypal/paypal-sdk-release/blob/main/LICENSE
 
 Wrapper module to test and release combined client SDK modules for PayPal and Braintree.
 
