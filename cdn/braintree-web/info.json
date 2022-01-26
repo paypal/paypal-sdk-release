@@ -1,7 +1,7 @@
 {
     "name": "braintree-web",
     "dist-tags": {
-        "latest": "3.85.1",
+        "latest": "3.85.2",
         "beta": "3.0.0-beta.12",
         "hotfix": "2.15.7",
         "legacy": "2.32.1",
