@@ -1,7 +1,7 @@
 {
     "name": "post-robot",
     "dist-tags": {
-        "latest": "10.0.44"
+        "latest": "10.0.46"
     },
     "versions": {
         "10.0.37": {
@@ -35,6 +35,22 @@
                 "url": "git://github.com/krakenjs/post-robot.git"
             },
             "gitHead": "5fa3ea5051773963c7cb64eef88e5c2871a55caa"
+        },
+        "10.0.46": {
+            "dependencies": {
+                "belter": "^1.0.41",
+                "cross-domain-safe-weakmap": "^1.0.1",
+                "cross-domain-utils": "^2.0.0",
+                "universal-serialize": "^1.0.4",
+                "zalgo-promise": "^1.0.3"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/post-robot/tarballs/10.0.46.tgz"
+            },
+            "repository": {
+                "url": "git://github.com/krakenjs/post-robot.git"
+            },
+            "gitHead": "074e55993be0452522b98d3335fff40b6ef45462"
         }
     }
 }
