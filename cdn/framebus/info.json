@@ -3,7 +3,7 @@
     "dist-tags": {
         "latest": "5.1.2",
         "v5-beta": "5.0.0-rc.1",
-        "v6-beta": "6.0.0-rc.1"
+        "v6-beta": "6.0.0-rc.2"
     },
     "versions": {
         "3.0.1": {
