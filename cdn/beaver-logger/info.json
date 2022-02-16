@@ -1,7 +1,7 @@
 {
     "name": "beaver-logger",
     "dist-tags": {
-        "latest": "4.0.32"
+        "latest": "4.0.34"
     },
     "versions": {
         "4.0.15": {
@@ -30,6 +30,20 @@
                 "url": "git://github.com/krakenjs/beaver-logger.git"
             },
             "gitHead": "49d26f6d7f82d24cd506ffd671bf298d09658182"
+        },
+        "4.0.34": {
+            "dependencies": {
+                "belter": "^1.0.17",
+                "cross-domain-utils": "^2.0.36",
+                "zalgo-promise": "^1.0.26"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/beaver-logger/tarballs/4.0.34.tgz"
+            },
+            "repository": {
+                "url": "git://github.com/krakenjs/beaver-logger.git"
+            },
+            "gitHead": "bfd3be746cbab5bb7ed1b2cb8a22d74486466bf6"
         }
     }
 }
