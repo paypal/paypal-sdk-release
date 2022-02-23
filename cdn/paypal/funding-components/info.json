@@ -1,7 +1,7 @@
 {
     "name": "@paypal/funding-components",
     "dist-tags": {
-        "latest": "1.0.23"
+        "latest": "1.0.25"
     },
     "versions": {
         "1.0.17": {
@@ -33,6 +33,21 @@
                 "url": "git://github.com/paypal/paypal-sdk-client.git"
             },
             "gitHead": "cf92e192187107f82c44255fb587c50b753f4519"
+        },
+        "1.0.25": {
+            "dependencies": {
+                "@paypal/sdk-client": "^4.0.162",
+                "@paypal/sdk-constants": "^1.0.114",
+                "belter": "^1.0.186",
+                "cross-domain-utils": "^2.0.27"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/funding-components/tarballs/1.0.25.tgz"
+            },
+            "repository": {
+                "url": "git://github.com/paypal/paypal-sdk-client.git"
+            },
+            "gitHead": "731e05cb38819c51c250f9b42a482110d1184461"
         }
     }
 }
