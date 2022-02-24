@@ -2,9 +2,9 @@
     "name": "@paypal/sdk-release",
     "dist-tags": {
         "latest": "5.0.285",
-        "active-test": "5.0.285",
-        "active-local": "5.0.285",
-        "active-stage": "5.0.285",
+        "active-test": "5.0.282",
+        "active-local": "5.0.282",
+        "active-stage": "5.0.282",
         "active-sandbox": "5.0.282",
         "active-production": "5.0.282",
         "noop": "5.0.147"
