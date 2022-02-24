@@ -27,28 +27,6 @@
             },
             "gitHead": "82b8fc554e7d6293379cea4e7b6d4f57aa41eba6"
         },
-        "5.0.8": {
-            "dependencies": {
-                "@paypal/common-components": "^1.0.10",
-                "@paypal/funding-components": "^1.0.17",
-                "@paypal/sdk-client": "^4.0.123",
-                "@paypal/sdk-constants": "^1.0.57",
-                "@paypal/sdk-logos": "^1.0.26",
-                "belter": "^1.0.2",
-                "cross-domain-utils": "^2.0.1",
-                "jsx-pragmatic": "^2",
-                "post-robot": "^10.0.0",
-                "zalgo-promise": "^1.0.10",
-                "zoid": "^9.0.0"
-            },
-            "dist": {
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/identity-components/tarballs/5.0.8.tgz"
-            },
-            "repository": {
-                "url": "git://github.paypal.com/paypal/paypal-auth.git"
-            },
-            "gitHead": "ef76f409d82aa63e496655682b63e157928a465d"
-        },
         "5.0.10": {
             "dependencies": {
                 "@paypal/common-components": "^1.0.10",
