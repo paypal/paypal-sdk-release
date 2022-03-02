@@ -1,29 +1,10 @@
 {
     "name": "@paypal/messaging-components",
     "dist-tags": {
-        "latest": "1.30.0",
+        "latest": "1.30.1",
         "alpha": "1.17.2-alpha.1"
     },
     "versions": {
-        "1.12.1": {
-            "dependencies": {
-                "@paypal/sdk-client": "^4.0.80",
-                "@paypal/sdk-logos": "^1.0.26",
-                "belter": "^1.0.112",
-                "core-js-pure": "^3.0.1",
-                "jsx-pragmatic": "^2.0.7",
-                "post-robot": "^10.0.29",
-                "zalgo-promise": "^1.0.38",
-                "zoid": "^9.0.36"
-            },
-            "dist": {
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/messaging-components/tarballs/1.12.1.tgz"
-            },
-            "repository": {
-                "url": "git+https://github.com/paypal/paypal-messaging-components.git"
-            },
-            "gitHead": "5c0ac5b77f0983f38ccacad3d3496a6d416bbeea"
-        },
         "1.30.0": {
             "dependencies": {
                 "@paypal/common-components": "^1.0.18",
@@ -45,6 +26,28 @@
                 "url": "git+https://github.com/paypal/paypal-messaging-components.git"
             },
             "gitHead": "e856a104fbc3e045de23040a1ae739795ac35d63"
+        },
+        "1.30.1": {
+            "dependencies": {
+                "@paypal/common-components": "^1.0.18",
+                "@paypal/sdk-client": "^4.0.80",
+                "@paypal/sdk-constants": "^1.0.75",
+                "@paypal/sdk-logos": "^1.0.26",
+                "beaver-logger": "^4.0.14",
+                "belter": "^1.0.112",
+                "core-js-pure": "^3.0.1",
+                "jsx-pragmatic": "^2.0.7",
+                "post-robot": "^10.0.29",
+                "zalgo-promise": "^1.0.38",
+                "zoid": "^9.0.46"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/messaging-components/tarballs/1.30.1.tgz"
+            },
+            "repository": {
+                "url": "git+https://github.com/paypal/paypal-messaging-components.git"
+            },
+            "gitHead": "a7d10e81d6427b897fa7fafee93780b83744c04d"
         }
     }
 }

@@ -4,15 +4,6 @@
         "latest": "2.11.0"
     },
     "versions": {
-        "1.9.4": {
-            "dist": {
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/bowser/tarballs/1.9.4.tgz"
-            },
-            "repository": {
-                "url": "git+https://github.com/ded/bowser.git"
-            },
-            "gitHead": "1fb99ced0e8834fd9662604bad7e0f0c3eba2786"
-        },
         "2.11.0": {
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/bowser/tarballs/2.11.0.tgz"

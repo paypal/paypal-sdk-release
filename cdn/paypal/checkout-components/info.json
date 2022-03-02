@@ -1,34 +1,11 @@
 {
     "name": "@paypal/checkout-components",
     "dist-tags": {
-        "latest": "5.0.200",
-        "alpha": "5.0.197-alpha.2",
+        "latest": "5.0.201",
+        "alpha": "5.0.201-alpha.0",
         "debug": "5.0.166-qr.debug"
     },
     "versions": {
-        "5.0.101": {
-            "dependencies": {
-                "@paypal/common-components": "^1.0.10",
-                "@paypal/funding-components": "^1.0.17",
-                "@paypal/risk-data-collector": "^1.0.1",
-                "@paypal/sdk-client": "^4.0.123",
-                "@paypal/sdk-constants": "^1.0.57",
-                "@paypal/sdk-logos": "^1.0.26",
-                "belter": "^1.0.2",
-                "cross-domain-utils": "^2.0.1",
-                "jsx-pragmatic": "^2",
-                "post-robot": "^10.0.0",
-                "zalgo-promise": "^1.0.10",
-                "zoid": "^9.0.0"
-            },
-            "dist": {
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/checkout-components/tarballs/5.0.101.tgz"
-            },
-            "repository": {
-                "url": "git://github.com/paypal/paypal-checkout-components.git"
-            },
-            "gitHead": "d60ad0bfc1bc0dfb56bed1a504dfe93b9ab916ba"
-        },
         "5.0.200": {
             "dependencies": {
                 "@paypal/common-components": "^1.0.16",
@@ -50,6 +27,28 @@
                 "url": "git://github.com/paypal/paypal-checkout-components.git"
             },
             "gitHead": "6bc1b830f7171f932800f66ef31b0a48d25d93ed"
+        },
+        "5.0.201": {
+            "dependencies": {
+                "@paypal/common-components": "^1.0.16",
+                "@paypal/funding-components": "^1.0.17",
+                "@paypal/sdk-client": "^4.0.156",
+                "@paypal/sdk-constants": "^1.0.107",
+                "@paypal/sdk-logos": "^1.0.26",
+                "belter": "^1.0.2",
+                "cross-domain-utils": "^2.0.1",
+                "jsx-pragmatic": "^2",
+                "post-robot": "^10.0.0",
+                "zalgo-promise": "^1.0.10",
+                "zoid": "^9.0.0"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/checkout-components/tarballs/5.0.201.tgz"
+            },
+            "repository": {
+                "url": "git://github.com/paypal/paypal-checkout-components.git"
+            },
+            "gitHead": "f4f6edcd5c7761b21860a6d9b572d9d23c90cc63"
         }
     }
 }

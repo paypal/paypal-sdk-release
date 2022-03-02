@@ -4,16 +4,6 @@
         "latest": "1.0.48"
     },
     "versions": {
-        "1.0.44": {
-            "dependencies": {},
-            "dist": {
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/zalgo-promise/tarballs/1.0.44.tgz"
-            },
-            "repository": {
-                "url": "git://github.com/krakenjs/zalgo-promise.git"
-            },
-            "gitHead": "ae73935cad712354265c28070c91387bc1117084"
-        },
         "1.0.48": {
             "dependencies": {},
             "dist": {

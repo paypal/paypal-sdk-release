@@ -4,15 +4,6 @@
         "latest": "0.5.1"
     },
     "versions": {
-        "0.5.0": {
-            "dist": {
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/hi-base32/tarballs/0.5.0.tgz"
-            },
-            "repository": {
-                "url": "git+https://github.com/emn178/hi-base32.git"
-            },
-            "gitHead": "523417423e1fa7bf0c83af6898586e91220c9986"
-        },
         "0.5.1": {
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/hi-base32/tarballs/0.5.1.tgz"

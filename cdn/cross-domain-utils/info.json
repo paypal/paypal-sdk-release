@@ -4,18 +4,6 @@
         "latest": "2.0.38"
     },
     "versions": {
-        "2.0.33": {
-            "dependencies": {
-                "zalgo-promise": "^1.0.11"
-            },
-            "dist": {
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/cross-domain-utils/tarballs/2.0.33.tgz"
-            },
-            "repository": {
-                "url": "git://github.com/krakenjs/cross-domain-utils.git"
-            },
-            "gitHead": "2e0c771fcbb28938c3be0d28df78b1738171c563"
-        },
         "2.0.38": {
             "dependencies": {
                 "zalgo-promise": "^1.0.11"

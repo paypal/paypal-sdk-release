@@ -4,25 +4,6 @@
         "latest": "1.0.23"
     },
     "versions": {
-        "1.0.10": {
-            "dependencies": {
-                "@paypal/sdk-client": "^4.0.0",
-                "@paypal/sdk-constants": "^1.0.1",
-                "@paypal/sdk-logos": "^1.0.1",
-                "belter": "^1.0.2",
-                "jsx-pragmatic": "^2",
-                "post-robot": "^10.0.0",
-                "zalgo-promise": "^1.0.10",
-                "zoid": "^9.0.0"
-            },
-            "dist": {
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/common-components/tarballs/1.0.10.tgz"
-            },
-            "repository": {
-                "url": "git://github.paypal.com/paypal/paypal-checkout.git"
-            },
-            "gitHead": "863356e08f941410a54384b63664dc54aa5e0f53"
-        },
         "1.0.23": {
             "dependencies": {
                 "@paypal/sdk-client": "^4.0.162",

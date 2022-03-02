@@ -4,15 +4,6 @@
         "latest": "1.0.10"
     },
     "versions": {
-        "1.0.8": {
-            "dist": {
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/universal-serialize/tarballs/1.0.8.tgz"
-            },
-            "repository": {
-                "url": "git://github.com/krakenjs/universal-serialize.git"
-            },
-            "gitHead": "c28c79ec5ba690658e25a1cca2161a7eede9937b"
-        },
         "1.0.10": {
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/universal-serialize/tarballs/1.0.10.tgz"

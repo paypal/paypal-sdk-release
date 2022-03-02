@@ -4,18 +4,6 @@
         "latest": "1.0.29"
     },
     "versions": {
-        "1.0.27": {
-            "dependencies": {
-                "cross-domain-utils": "^2.0.0"
-            },
-            "dist": {
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/cross-domain-safe-weakmap/tarballs/1.0.27.tgz"
-            },
-            "repository": {
-                "url": "git://github.com/krakenjs/grumbler.git"
-            },
-            "gitHead": "3cfa4f257100a3b0b326bf00ae83dd87752e66ac"
-        },
         "1.0.29": {
             "dependencies": {
                 "cross-domain-utils": "^2.0.0"

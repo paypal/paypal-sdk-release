@@ -4,24 +4,6 @@
         "latest": "1.0.51"
     },
     "versions": {
-        "1.0.45": {
-            "dependencies": {
-                "@paypal/sdk-client": "^4.0.117",
-                "@paypal/sdk-constants": "^1.0.8",
-                "belter": "^1.0.44",
-                "braintree-web": "3.33.0",
-                "jsx-pragmatic": "^2",
-                "zalgo-promise": "^1.0.34",
-                "zoid": "^9.0.0"
-            },
-            "dist": {
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/card-components/tarballs/1.0.45.tgz"
-            },
-            "repository": {
-                "url": "git+https://github.com/paypal/paypal-braintree-hosted-fields-component.git"
-            },
-            "gitHead": "03c65f0e60f12e7a7249f7df6efdb3bc492486d7"
-        },
         "1.0.51": {
             "dependencies": {
                 "@paypal/sdk-client": "^4.0.117",

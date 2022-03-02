@@ -4,19 +4,6 @@
         "latest": "4.0.34"
     },
     "versions": {
-        "4.0.15": {
-            "dependencies": {
-                "belter": "^1.0.17",
-                "zalgo-promise": "^1.0.26"
-            },
-            "dist": {
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/beaver-logger/tarballs/4.0.15.tgz"
-            },
-            "repository": {
-                "url": "git://github.com/krakenjs/beaver-logger.git"
-            },
-            "gitHead": "80458ac6a5caa18ab1db6765316d79f658332895"
-        },
         "4.0.34": {
             "dependencies": {
                 "belter": "^1.0.17",
