@@ -2,7 +2,7 @@
     "name": "@paypal/sdk-client",
     "dist-tags": {
         "latest": "4.0.165",
-        "alpha": "4.0.156-alpha.1"
+        "alpha": "4.0.166-alpha.2"
     },
     "versions": {
         "4.0.165": {
