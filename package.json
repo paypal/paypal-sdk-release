@@ -19,7 +19,7 @@
     "remove": "grabthar-remove",
     "release": "grabthar-release",
     "postrelease": "npm run cdnify -- --commitonly",
-    "activate": "CDNIFY=false grabthar-activate",
+    "activate": "grabthar-activate --CDNIFY=false",
     "postactivate": "npm run cdnify -- --commitonly",
     "flatten": "grabthar-flatten",
     "full-release": "npm run upgrade && npm run release && npm run activate",
@@ -31,7 +31,7 @@
     "index.js"
   ],
   "engines": {
-    "node": ">=12",
+    "node": ">=14.13.1",
     "npm": ">=6"
   },
   "config": {

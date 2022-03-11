@@ -31,4 +31,4 @@ jobs:
           git config --global user.name ${{ github.actor }}
 
       - name: 🍏 Upgrade dependencies
-        run: npm run upgrade -- ${{ github.event.inputs.filter }}
+        run: npm run upgrade --MODULE=${{ github.event.inputs.filter }}
