@@ -62,12 +62,12 @@
   "dependencies": {
     "@paypal/card-components": "1.0.52",
     "@paypal/checkout-components": "5.0.202",
-    "@paypal/common-components": "1.0.24",
+    "@paypal/common-components": "1.0.25",
     "@paypal/example-components": "1.0.27",
     "@paypal/funding-components": "1.0.25",
     "@paypal/identity-components": "5.0.10",
     "@paypal/messaging-components": "1.31.0",
-    "@paypal/muse-components": "1.3.82",
+    "@paypal/muse-components": "1.3.83",
     "@paypal/sdk-client": "4.0.165"
   }
 }
