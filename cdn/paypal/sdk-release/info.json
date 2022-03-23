@@ -1,10 +1,10 @@
 {
     "name": "@paypal/sdk-release",
     "dist-tags": {
-        "latest": "5.0.290",
-        "active-test": "5.0.290",
-        "active-local": "5.0.290",
-        "active-stage": "5.0.290",
+        "latest": "5.0.291",
+        "active-test": "5.0.291",
+        "active-local": "5.0.291",
+        "active-stage": "5.0.291",
         "active-sandbox": "5.0.289",
         "active-production": "5.0.289"
     },
@@ -55,14 +55,14 @@
             },
             "gitHead": "ce6e8777353e593e196e93e4d79ffb1dca29d0cc"
         },
-        "5.0.290": {
+        "5.0.291": {
             "dependencies": {
                 "@braintree/browser-detection": "1.7.0",
                 "@braintree/iframer": "1.0.3",
                 "@braintree/sanitize-url": "2.1.0",
                 "@braintree/wrap-promise": "1.1.1",
                 "@paypal/card-components": "1.0.52",
-                "@paypal/checkout-components": "5.0.202",
+                "@paypal/checkout-components": "5.0.203",
                 "@paypal/common-components": "1.0.25",
                 "@paypal/example-components": "1.0.27",
                 "@paypal/funding-components": "1.0.25",
@@ -94,12 +94,12 @@
                 "zoid": "9.0.86"
             },
             "dist": {
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/sdk-release/tarballs/5.0.290.tgz"
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/sdk-release/tarballs/5.0.291.tgz"
             },
             "repository": {
                 "url": "git://github.com/paypal/paypal-sdk-release.git"
             },
-            "gitHead": "4e28e144fbef82bc7c4812ad99ba2f965a4d05b8"
+            "gitHead": "ca5921e69e8ad2d3db3d9f26a458240b760748ac"
         }
     }
 }
