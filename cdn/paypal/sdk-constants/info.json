@@ -1,7 +1,7 @@
 {
     "name": "@paypal/sdk-constants",
     "dist-tags": {
-        "latest": "1.0.117",
+        "latest": "1.0.118",
         "alpha": "1.0.11-6.alpha-1"
     },
     "versions": {
@@ -16,6 +16,18 @@
                 "url": "git://github.com/paypal/paypal-sdk-constants.git"
             },
             "gitHead": "c40e6963a1caa772a4e2dd6f7bc9241ddbdf1f70"
+        },
+        "1.0.118": {
+            "dependencies": {
+                "hi-base32": "^0.5.0"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/sdk-constants/tarballs/1.0.118.tgz"
+            },
+            "repository": {
+                "url": "git://github.com/paypal/paypal-sdk-constants.git"
+            },
+            "gitHead": "db36d48b1fd8b1f32bf87cccf0b572e8e0606cf3"
         }
     }
 }
