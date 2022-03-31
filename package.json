@@ -54,7 +54,7 @@
   "license": "Apache-2.0",
   "readmeFilename": "README.md",
   "devDependencies": {
-    "@krakenjs/grabthar-release": "2.0.0",
+    "@krakenjs/grabthar-release": "^2.0.0",
     "flow-bin": "0.135.0",
     "flowgen": "1.11.0",
     "grumbler-scripts": "^5"
