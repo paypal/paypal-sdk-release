@@ -1,0 +1,22 @@
+{
+    "name": "@krakenjs/beaver-logger",
+    "dist-tags": {
+        "latest": "5.0.0"
+    },
+    "versions": {
+        "5.0.0": {
+            "dependencies": {
+                "@krakenjs/belter": "^2.0.0",
+                "@krakenjs/cross-domain-utils": "^3.0.0",
+                "@krakenjs/zalgo-promise": "^2.0.0"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/krakenjs/beaver-logger/tarballs/5.0.0.tgz"
+            },
+            "repository": {
+                "url": "git://github.com/krakenjs/beaver-logger.git"
+            },
+            "gitHead": "eae6360a85843f0b935755a8ef13632110f918cf"
+        }
+    }
+}

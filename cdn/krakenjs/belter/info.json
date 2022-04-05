@@ -1,0 +1,22 @@
+{
+    "name": "@krakenjs/belter",
+    "dist-tags": {
+        "latest": "2.0.1"
+    },
+    "versions": {
+        "2.0.1": {
+            "dependencies": {
+                "@krakenjs/cross-domain-safe-weakmap": "^2.0.2",
+                "@krakenjs/cross-domain-utils": "^3.0.2",
+                "@krakenjs/zalgo-promise": "^2.0.0"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/krakenjs/belter/tarballs/2.0.1.tgz"
+            },
+            "repository": {
+                "url": "git://github.com/krakenjs/belter.git"
+            },
+            "gitHead": "679d32e66e3696cf84a5255263e76c85341f49e1"
+        }
+    }
+}
