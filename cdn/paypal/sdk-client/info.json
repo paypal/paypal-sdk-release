@@ -5,23 +5,6 @@
         "alpha": "4.0.166-alpha.2"
     },
     "versions": {
-        "4.0.165": {
-            "dependencies": {
-                "@paypal/sdk-constants": "^1.0.94",
-                "beaver-logger": "^4.0.0",
-                "belter": "^1.0.146",
-                "bowser": "^2.0.0",
-                "jsx-pragmatic": "^2",
-                "zalgo-promise": "^1.0.46"
-            },
-            "dist": {
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/sdk-client/tarballs/4.0.165.tgz"
-            },
-            "repository": {
-                "url": "git://github.com/paypal/paypal-sdk-client.git"
-            },
-            "gitHead": "fadef2d754976b0598d5f1bbb8ce79d8b5fd6934"
-        },
         "4.0.166": {
             "dependencies": {
                 "@krakenjs/beaver-logger": "^5.0.0",
