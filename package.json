@@ -18,6 +18,7 @@
     "upgrade": "grabthar-upgrade",
     "remove": "grabthar-remove",
     "release": "grabthar-release",
+    "release:dry-run": "grabthar-release --DRY_RUN=true",
     "postrelease": "npm run cdnify -- --commitonly",
     "activate": "grabthar-activate --CDNIFY=false",
     "postactivate": "npm run cdnify -- --commitonly",
