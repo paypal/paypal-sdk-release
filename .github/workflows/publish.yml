@@ -33,7 +33,8 @@ jobs:
           git config --global user.name ${{ github.actor }}
 
       - name: Publish to npm
-        run: npm run release --DRY_RUN=${{ github.event.inputs.dry-run }}
+        run: npm run release
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          DRY_RUN: ${{ github.event.inputs.dry-run }}
