@@ -5,6 +5,20 @@
         "alpha": "1.0.43-alpha.1"
     },
     "versions": {
+        "1.0.44": {
+            "dependencies": {
+                "@paypal/sdk-constants": "^1.0.116",
+                "belter": "^1.0.188",
+                "jsx-pragmatic": "^2"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/sdk-logos/tarballs/1.0.44.tgz"
+            },
+            "repository": {
+                "url": "git://github.com/paypal/paypal-sdk-logos.git"
+            },
+            "gitHead": "c23824d17804256a07b949a515d72002055e68f2"
+        },
         "1.0.45": {
             "dependencies": {
                 "@paypal/sdk-constants": "^1.0.116",
