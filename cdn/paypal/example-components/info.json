@@ -4,18 +4,6 @@
         "latest": "1.0.28"
     },
     "versions": {
-        "1.0.27": {
-            "dependencies": {
-                "@paypal/sdk-client": "^4.0.1"
-            },
-            "dist": {
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/example-components/tarballs/1.0.27.tgz"
-            },
-            "repository": {
-                "url": "git+https://github.com/paypal/paypal-braintree-example-component.git"
-            },
-            "gitHead": "321c50924ea4c7d71015f555a5949a8792899a30"
-        },
         "1.0.28": {
             "dependencies": {
                 "@paypal/sdk-client": "^4.0.166"
