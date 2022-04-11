@@ -56,9 +56,9 @@
   "readmeFilename": "README.md",
   "devDependencies": {
     "@krakenjs/grabthar-release": "^2.0.0",
+    "@krakenjs/grumbler-scripts": "^6.0.2",
     "flow-bin": "0.135.0",
-    "flowgen": "1.11.0",
-    "grumbler-scripts": "^5"
+    "flowgen": "1.11.0"
   },
   "dependencies": {
     "@paypal/card-components": "1.0.54",
