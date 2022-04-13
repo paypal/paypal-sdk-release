@@ -57,6 +57,7 @@
   "devDependencies": {
     "@krakenjs/grabthar-release": "^2.0.0",
     "@krakenjs/grumbler-scripts": "^6.0.2",
+    "eslint": "^8.13.0",
     "flow-bin": "0.135.0",
     "flowgen": "1.11.0"
   },
