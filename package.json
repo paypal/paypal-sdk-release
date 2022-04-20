@@ -24,7 +24,6 @@
     "postactivate": "npm run cdnify -- --commitonly",
     "flatten": "grabthar-flatten",
     "full-release": "npm run upgrade && npm run release && npm run activate",
-    "postinstall": "npm_config_registry=https://npm.paypal.com npm install @paypalcorp/web --no-save --proxy='null' --https-proxy='null' || echo 'Unable to install cdnx cli tools'",
     "prepublishOnly": "npm run validate-components-for-publish"
   },
   "files": [
