@@ -4,21 +4,6 @@
         "latest": "10.1.0"
     },
     "versions": {
-        "10.0.0": {
-            "dependencies": {
-                "@krakenjs/belter": "^2.0.0",
-                "@krakenjs/cross-domain-utils": "^3.0.0",
-                "@krakenjs/post-robot": "^11.0.0",
-                "@krakenjs/zalgo-promise": "^2.0.0"
-            },
-            "dist": {
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/krakenjs/zoid/tarballs/10.0.0.tgz"
-            },
-            "repository": {
-                "url": "git://github.com/krakenjs/zoid.git"
-            },
-            "gitHead": "25c36292cc46bceb3a9e713c81c8f9e313a25431"
-        },
         "10.1.0": {
             "dependencies": {
                 "@krakenjs/belter": "^2.0.0",

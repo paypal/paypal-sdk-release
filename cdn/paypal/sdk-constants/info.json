@@ -5,18 +5,6 @@
         "alpha": "1.0.11-6.alpha-1"
     },
     "versions": {
-        "1.0.119": {
-            "dependencies": {
-                "hi-base32": "^0.5.0"
-            },
-            "dist": {
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/paypal/sdk-constants/tarballs/1.0.119.tgz"
-            },
-            "repository": {
-                "url": "git://github.com/paypal/paypal-sdk-constants.git"
-            },
-            "gitHead": "02a5059031cd929863e240fd9601922d65ead3ba"
-        },
         "1.0.121": {
             "dependencies": {
                 "hi-base32": "^0.5.0"

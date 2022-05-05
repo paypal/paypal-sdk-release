@@ -6,15 +6,6 @@
         "beta": "3.0.0-beta.20"
     },
     "versions": {
-        "3.22.0": {
-            "dist": {
-                "tarball": "https://www.paypalobjects.com/js-sdk-release/core-js-pure/tarballs/3.22.0.tgz"
-            },
-            "repository": {
-                "url": "git+https://github.com/zloirock/core-js.git"
-            },
-            "gitHead": "c5e56b664756455f9715481eca92f4a3a421f475"
-        },
         "3.22.4": {
             "dist": {
                 "tarball": "https://www.paypalobjects.com/js-sdk-release/core-js-pure/tarballs/3.22.4.tgz"
