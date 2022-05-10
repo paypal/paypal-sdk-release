@@ -7,7 +7,7 @@
     "validate-components": "babel-node test/validate-components",
     "validate-components-for-publish": "babel-node test/validate-components-for-publish",
     "validate-flat": "babel-node test/validate-flat",
-    "cdnify": "grabthar-cdnify --recursive --cdn='https://www.paypalobjects.com' --versionsToKeep=3",
+    "cdnify": "grabthar-cdnify --recursive --cdn='https://www.paypalobjects.com' --versionsToKeep=1 --experimental-versioned-cdn",
     "reinstall": "rm -f ./package-lock.json && rm -rf ./node_modules && npm install && git checkout package-lock.json && git checkout package.json",
     "flow-typed": "rm -rf ./flow-typed && flow-typed install",
     "lint": "eslint test/ *.js",
@@ -54,7 +54,7 @@
   "license": "Apache-2.0",
   "readmeFilename": "README.md",
   "devDependencies": {
-    "@krakenjs/grabthar-release": "^2.0.0",
+    "@krakenjs/grabthar-release": "^2.3.0",
     "@krakenjs/grumbler-scripts": "^6.0.2",
     "eslint": "^8.13.0",
     "flow-bin": "0.135.0",
