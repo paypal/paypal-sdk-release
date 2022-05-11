@@ -1,7 +1,7 @@
 {
     "name": "@paypal/checkout-components",
     "dist-tags": {
-        "latest": "5.0.219",
+        "latest": "5.0.220",
         "alpha": "5.0.209-alpha.1",
         "debug": "5.0.166-qr.debug"
     },
