@@ -1,7 +1,7 @@
 {
     "name": "core-js-pure",
     "dist-tags": {
-        "latest": "3.22.4",
+        "latest": "3.22.5",
         "alpha": "3.0.0-alpha.4",
         "beta": "3.0.0-beta.20"
     },
@@ -14,6 +14,15 @@
                 "url": "git+https://github.com/zloirock/core-js.git"
             },
             "gitHead": "6ba79a5aada7286aa44ca9e4029cbb74dd84ffd6"
+        },
+        "3.22.5": {
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/core-js-pure/tarballs/3.22.5.tgz"
+            },
+            "repository": {
+                "url": "git+https://github.com/zloirock/core-js.git"
+            },
+            "gitHead": "f1b4f76cdb9e7359c53126163bd804e2d2cf1f20"
         }
     }
 }
