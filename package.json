@@ -58,7 +58,7 @@
     "flowgen": "1.11.0"
   },
   "dependencies": {
-    "@paypal/applepay-components": "1.0.0",
+    "@paypal/applepay-components": "1.1.0",
     "@paypal/card-components": "1.0.54",
     "@paypal/checkout-components": "5.0.241",
     "@paypal/common-components": "1.0.33",
