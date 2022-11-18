@@ -52,10 +52,13 @@
   "readmeFilename": "README.md",
   "devDependencies": {
     "@krakenjs/grabthar-release": "^3.0.0",
-    "@krakenjs/grumbler-scripts": "^6.0.2",
+    "@krakenjs/grumbler-scripts": "^8.0.4",
+    "cross-env": "^7.0.3",
     "eslint": "^8.13.0",
     "flow-bin": "0.135.0",
-    "flowgen": "1.11.0"
+    "flow-typed": "^3.8.0",
+    "flowgen": "1.11.0",
+    "jest": "^29.3.1"
   },
   "dependencies": {
     "@paypal/applepay-components": "1.4.0",
