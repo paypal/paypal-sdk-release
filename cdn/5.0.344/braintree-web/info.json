@@ -1,0 +1,33 @@
+{
+    "name": "braintree-web",
+    "dist-tags": {
+        "latest": "3.88.5",
+        "beta": "3.0.0-beta.12",
+        "hotfix": "2.15.7",
+        "legacy": "2.32.1",
+        "repkg": "3.8.0-repkg.1",
+        "3ds-2.0-beta": "3.79.2-beta.1"
+    },
+    "versions": {
+        "3.33.0": {
+            "dependencies": {
+                "@braintree/browser-detection": "1.7.0",
+                "@braintree/iframer": "1.0.3",
+                "@braintree/sanitize-url": "2.1.0",
+                "@braintree/wrap-promise": "1.1.1",
+                "card-validator": "4.3.0",
+                "credit-card-type": "6.3.0",
+                "framebus": "3.0.1",
+                "inject-stylesheet": "1.0.0",
+                "promise-polyfill": "7.0.2",
+                "restricted-input": "1.2.7"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.344/braintree-web/tarballs/3.33.0.tgz"
+            },
+            "repository": {
+                "url": "git+ssh://git@github.com/braintree/braintree-web.git"
+            }
+        }
+    }
+}

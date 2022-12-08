@@ -1,0 +1,54 @@
+{
+    "name": "@paypal/checkout-components",
+    "dist-tags": {
+        "latest": "5.0.245",
+        "alpha": "5.0.241-kitty",
+        "debug": "5.0.166-qr.debug"
+    },
+    "versions": {
+        "5.0.226": {
+            "dependencies": {
+                "@krakenjs/belter": "^2.0.0",
+                "@krakenjs/cross-domain-utils": "^3.0.0",
+                "@krakenjs/jsx-pragmatic": "^3",
+                "@krakenjs/post-robot": "^11.0.0",
+                "@krakenjs/zalgo-promise": "^2.0.0",
+                "@krakenjs/zoid": "^10.0.0",
+                "@paypal/common-components": "^1.0.27",
+                "@paypal/funding-components": "^1.0.27",
+                "@paypal/sdk-client": "^4.0.166",
+                "@paypal/sdk-constants": "^1.0.119",
+                "@paypal/sdk-logos": "^1.0.45"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.344/paypal/checkout-components/tarballs/5.0.226.tgz"
+            },
+            "repository": {
+                "url": "git://github.com/paypal/paypal-checkout-components.git"
+            },
+            "gitHead": "8e4f0db73c5adf25b8a2404d5748047f83fd0242"
+        },
+        "5.0.245": {
+            "dependencies": {
+                "@krakenjs/belter": "^2.0.0",
+                "@krakenjs/cross-domain-utils": "^3.0.0",
+                "@krakenjs/jsx-pragmatic": "^3",
+                "@krakenjs/post-robot": "^11.0.0",
+                "@krakenjs/zalgo-promise": "^2.0.0",
+                "@krakenjs/zoid": "^10.0.0",
+                "@paypal/common-components": "^1.0.34",
+                "@paypal/funding-components": "^1.0.30",
+                "@paypal/sdk-client": "^4.0.166",
+                "@paypal/sdk-constants": "^1.0.127",
+                "@paypal/sdk-logos": "^2.0.2"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.344/paypal/checkout-components/tarballs/5.0.245.tgz"
+            },
+            "repository": {
+                "url": "git+https://github.com/paypal/paypal-checkout-components.git"
+            },
+            "gitHead": "169cea9d43c98f71a5ff7ff8eea100b3e177830a"
+        }
+    }
+}

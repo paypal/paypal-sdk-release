@@ -1,0 +1,19 @@
+{
+    "name": "@krakenjs/cross-domain-utils",
+    "dist-tags": {
+        "beta": "2.0.38-beta.5",
+        "latest": "3.0.2",
+        "alpha": "4.0.0-typescript.1"
+    },
+    "versions": {
+        "3.0.2": {
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.344/krakenjs/cross-domain-utils/tarballs/3.0.2.tgz"
+            },
+            "repository": {
+                "url": "git://github.com/krakenjs/cross-domain-utils.git"
+            },
+            "gitHead": "9d6fe6c3eada3efee73fe578437b10165de5c7ac"
+        }
+    }
+}
