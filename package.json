@@ -63,13 +63,13 @@
   "dependencies": {
     "@paypal/applepay-components": "1.4.0",
     "@paypal/card-components": "1.0.54",
-    "@paypal/checkout-components": "5.0.248",
-    "@paypal/common-components": "1.0.34",
+    "@paypal/checkout-components": "5.0.249",
+    "@paypal/common-components": "1.0.35",
     "@paypal/example-components": "1.0.28",
-    "@paypal/funding-components": "1.0.30",
+    "@paypal/funding-components": "1.0.31",
     "@paypal/identity-components": "5.0.13",
     "@paypal/legal-components": "1.2.2",
-    "@paypal/messaging-components": "1.39.3",
+    "@paypal/messaging-components": "1.39.4",
     "@paypal/muse-components": "1.3.88",
     "@paypal/sdk-client": "4.0.169"
   }
