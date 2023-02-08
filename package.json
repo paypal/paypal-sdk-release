@@ -22,7 +22,7 @@
     "postrelease": "npm run cdnify -- --commitonly",
     "flatten": "grabthar-flatten",
     "prepublishOnly": "npm run validate-components-for-publish",
-    "cdn-check": "babel-node ./scripts/cdnCheck.js"
+    "cdn-check": "babel-node ./scripts/sdk-logos-cdn-check.js"
   },
   "files": [
     "package-lock.json",
