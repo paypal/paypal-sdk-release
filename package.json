@@ -62,9 +62,9 @@
     "jest": "^29.3.1"
   },
   "dependencies": {
-    "@paypal/applepay-components": "1.4.0",
+    "@paypal/applepay-components": "1.5.0",
     "@paypal/card-components": "1.0.54",
-    "@paypal/checkout-components": "5.0.255",
+    "@paypal/checkout-components": "5.0.256",
     "@paypal/common-components": "1.0.35",
     "@paypal/example-components": "1.0.28",
     "@paypal/funding-components": "1.0.31",
