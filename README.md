@@ -1,5 +1,4 @@
-PayPal Braintree Client SDK
----------------------------
+## PayPal Braintree Client SDK
 
 [![build status][build-badge]][build]
 [![npm version][version-badge]][package]
