@@ -10,8 +10,10 @@
     "cdnify": "grabthar-cdnify --recursive --cdn='https://www.paypalobjects.com'",
     "reinstall": "rm -f ./package-lock.json && rm -rf ./node_modules && npm install && git checkout package-lock.json && git checkout package.json",
     "flow-typed": "rm -rf ./flow-typed && flow-typed install",
-    "lint": "eslint test/ *.js",
+    "lint": "npm run format:check && eslint test/ *.js",
     "flow": "flow check",
+    "format": "npx prettier --write --ignore-unknown .",
+    "format:check": "npx prettier --check .",
     "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
     "test": "npm run lint && npm run flow-typed && npm run flow && npm run validate-components && npm run validate-flat",
     "add": "grabthar-add",
@@ -20,9 +22,13 @@
     "release": "grabthar-release",
     "release:dry-run": "DRY_RUN=true grabthar-release",
     "postrelease": "npm run cdnify -- --commitonly",
+    "prepare": "husky install",
     "flatten": "grabthar-flatten",
     "prepublishOnly": "npm run validate-components-for-publish",
     "cdn-check": "babel-node ./scripts/sdk-logos-cdn-check.js"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   },
   "files": [
     "package-lock.json",
@@ -59,7 +65,10 @@
     "flow-bin": "0.135.0",
     "flow-typed": "^3.8.0",
     "flowgen": "1.11.0",
-    "jest": "^29.3.1"
+    "husky": "^8.0.3",
+    "jest": "^29.3.1",
+    "lint-staged": "^13.2.0",
+    "prettier": "2.8.4"
   },
   "dependencies": {
     "@paypal/applepay-components": "1.5.0",
