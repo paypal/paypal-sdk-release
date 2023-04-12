@@ -73,7 +73,7 @@
   "dependencies": {
     "@paypal/applepay-components": "1.5.0",
     "@paypal/card-components": "1.0.54",
-    "@paypal/checkout-components": "5.0.264",
+    "@paypal/checkout-components": "5.0.265",
     "@paypal/common-components": "1.0.35",
     "@paypal/example-components": "1.0.28",
     "@paypal/funding-components": "1.0.32",
