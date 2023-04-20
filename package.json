@@ -71,6 +71,7 @@
     "prettier": "2.8.4"
   },
   "dependencies": {
+    "@paypal/googlepay-components": "1.1.1",
     "@paypal/applepay-components": "1.5.0",
     "@paypal/card-components": "1.0.54",
     "@paypal/checkout-components": "5.0.265",
