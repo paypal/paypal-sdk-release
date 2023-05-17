@@ -82,6 +82,6 @@
     "@paypal/legal-components": "1.2.2",
     "@paypal/messaging-components": "1.41.0",
     "@paypal/muse-components": "1.3.91",
-    "@paypal/sdk-client": "4.0.169"
+    "@paypal/sdk-client": "4.0.170"
   }
 }
