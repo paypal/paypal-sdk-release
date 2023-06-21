@@ -27,9 +27,6 @@
     "prepublishOnly": "npm run validate-components-for-publish",
     "cdn-check": "babel-node ./scripts/sdk-logos-cdn-check.js"
   },
-  "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
-  },
   "files": [
     "package-lock.json",
     "index.js"
