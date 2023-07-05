@@ -72,7 +72,7 @@
     "@paypal/applepay-components": "1.5.0",
     "@paypal/card-components": "1.0.55",
     "@paypal/checkout-components": "5.0.276",
-    "@paypal/common-components": "1.0.38",
+    "@paypal/common-components": "1.0.39",
     "@paypal/example-components": "1.0.28",
     "@paypal/funding-components": "1.0.32",
     "@paypal/identity-components": "5.0.14",
