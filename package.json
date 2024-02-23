@@ -52,6 +52,7 @@
   "keywords": [
     "template"
   ],
+  "type": "module",
   "license": "Apache-2.0",
   "readmeFilename": "README.md",
   "devDependencies": {
