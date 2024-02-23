@@ -1,0 +1,10 @@
+{
+  "versions": {
+    "5.0.422": {
+      "dependencies": {
+        "@krakenjs/belter": "2.3.0",
+        "@paypal/checkout-components": "5.0.296"
+      }
+    }
+  }
+}

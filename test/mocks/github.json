@@ -1,0 +1,24 @@
+{
+  "commits": [
+    {
+      "commit": {
+        "author": {
+          "name": "Alice"
+        },
+        "message": "A pull request (#42)",
+        "url": "https://api.github.com/repos/paypal/paypal-checkout-components/git/commits/069589f0aa12e8e519a7c1e6f64ad297f57a46c2"
+      },
+      "html_url": "https://github.com/paypal/paypal-checkout-components/commit/069589f0aa12e8e519a7c1e6f64ad297f57a46c2"
+    },
+    {
+      "commit": {
+        "author": {
+          "name": "Bob"
+        },
+        "message": "Not a pull request",
+        "url": "https://api.github.com/repos/paypal/paypal-checkout-components/git/commits/069589f0aa12e8e519a7c1e6f64ad297f57a46c2"
+      },
+      "html_url": "https://github.com/paypal/paypal-checkout-components/commit/069589f0aa12e8e519a7c1e6f64ad297f57a46c2"
+    }
+  ]
+}

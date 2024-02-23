@@ -7,14 +7,14 @@ const prev = latest
   .map((e, i) => (i === 2 ? --e : e))
   .join(".");
 
-const dependencies = async (version) => {
+export const getDependencies = async (version) => {
   const url = `https://www.paypalobjects.com/js-sdk-release/${version}/paypal/sdk-release/info.json`;
   const response = await fetch(url);
   const data = await response.json();
   return data.versions[version].dependencies;
 };
 
-const compareUrl = (dependency, previous, current) => {
+export const compareUrl = (dependency, previous, current) => {
   let githubPath = dependency.replace("@", "");
   if (dependency.match("paypal")) {
     githubPath = githubPath.replace("paypal/", "paypal/paypal-");
@@ -25,7 +25,7 @@ const compareUrl = (dependency, previous, current) => {
   };
 };
 
-const getDiff = async (apiUrl) => {
+export const getDiff = async (apiUrl) => {
   const response = await fetch(apiUrl);
   const data = await response.json();
   return data.commits
@@ -37,9 +37,9 @@ const getDiff = async (apiUrl) => {
     }));
 };
 
-const main = async () => {
-  const currentDependencies = await dependencies(latest);
-  const previousDependencies = await dependencies(prev);
+export const getDependencyDiffs = async (previousVersion, currentVersion) => {
+  const currentDependencies = await getDependencies(currentVersion);
+  const previousDependencies = await getDependencies(previousVersion);
   const diff = {};
   for (let dependency in currentDependencies) {
     const previous = previousDependencies[dependency];
@@ -51,18 +51,24 @@ const main = async () => {
   for (let dependency in diff) {
     diff[dependency].changes = await getDiff(diff[dependency].api);
   }
+  return diff;
+};
 
+export const asciiDependencyDiff = (dependency, compareUrl) => {
+  const [_, from, to] = compareUrl.match(/\/(v[0-9\.]+)\.\.\.(v[0-9\.]+)/);
+  return `${dependency.padEnd(30, " ")}${from} -> ${to}`;
+};
+
+export const main = async () => {
+  const diff = await getDependencyDiffs(prev, latest);
   console.log("\n");
   console.log("```");
   for (let dep in diff) {
-    const [_, from, to] = diff[dep].api.match(/\/(v[0-9\.]+)\.\.\.(v[0-9\.]+)/);
-    console.log(`${dep.padEnd(30, " ")}${from} -> ${to}`);
+    console.log(asciiDependencyDiff(dep, diff[dep].api));
   }
   console.log("```");
   console.log("");
-  console.log(
-    `<https://github.com/paypal/paypal-sdk-release/compare/${prev}...${latest}>`
-  );
+  console.log(`<${compareUrl("@paypal/sdk-release", prev, latest).html}>`);
   console.log("\n**Contributors**\n");
 
   for (let dep in diff) {
@@ -75,10 +81,12 @@ const main = async () => {
   console.log("\n");
 };
 
-main().catch((e) => {
-  console.log("❌ Something went wrong!");
-  console.log(
-    "You'll need to manually create the changelog notes from the diff in package-lock.json"
-  );
-  console.log(e);
-});
+if (!module.parent) {
+  main().catch((e) => {
+    console.log("❌ Something went wrong!");
+    console.log(
+      "You'll need to manually create the changelog notes from the diff in package-lock.json"
+    );
+    console.log(e);
+  });
+}
