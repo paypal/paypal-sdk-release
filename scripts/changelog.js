@@ -64,7 +64,7 @@ const main = async () => {
   console.log("```");
   console.log("");
   console.log(
-    `<https://github.com/paypal/sdk-release/compare/${prev}...${latest}>`
+    `<https://github.com/paypal/paypal-sdk-release/compare/${prev}...${latest}>`
   );
   console.log("\n**Contributors**\n");
 
