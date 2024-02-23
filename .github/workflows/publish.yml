@@ -37,3 +37,6 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: 🪵 Generate changelog notes
+        run: node scripts/changelog.js

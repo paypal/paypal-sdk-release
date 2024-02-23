@@ -31,6 +31,3 @@ jobs:
 
       - name: ▶️ Run tests
         run: npm test
-
-      - name: 🪵 Generate changelog notes
-        run: node scripts/changelog.js
