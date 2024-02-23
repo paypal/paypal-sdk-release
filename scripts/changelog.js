@@ -1,10 +1,7 @@
 const fetch = require("node-fetch");
 const fs = require("fs");
-const { execSync } = require("child_process");
 
-const latest = execSync("npm dist-tags @paypal/sdk-release")
-  .toString()
-  .match(/latest: (.*)/)[1];
+const latest = JSON.parse(fs.readFileSync("./package.json", "utf-8")).version;
 const prev = latest
   .split(".")
   .map((e, i) => (i === 2 ? --e : e))
