@@ -55,6 +55,7 @@ const getDiff = async (apiUrl) => {
     diff[dependency].changes = await getDiff(diff[dependency].api);
   }
 
+  console.log("\n");
   console.log("```");
   for (let dep in diff) {
     const [_, from, to] = diff[dep].api.match(/\/(v[0-9\.]+)\.\.\.(v[0-9\.]+)/);
