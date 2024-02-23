@@ -65,11 +65,9 @@ const getDiff = async (apiUrl) => {
   console.log(
     `<https://github.com/paypal/sdk-release/compare/${prev}...${latest}>`
   );
-  console.log("");
-  console.log("**Contributors**");
-  console.log("");
+  console.log("\n**Contributors**\n");
 
-  for (dep in diff) {
+  for (let dep in diff) {
     console.log(`<${diff[dep].html}>`);
     diff[dep].changes.forEach((change) => {
       console.log(` - [${change.message}](${change.htmlUrl}) ${change.author}`);
