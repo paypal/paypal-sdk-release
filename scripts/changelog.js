@@ -40,7 +40,7 @@ const getDiff = async (apiUrl) => {
     }));
 };
 
-(async () => {
+const main = async () => {
   const currentDependencies = await dependencies(latest);
   const previousDependencies = await dependencies(prev);
   const diff = {};
@@ -75,4 +75,13 @@ const getDiff = async (apiUrl) => {
     });
     console.log("");
   }
-})();
+  console.log("\n");
+};
+
+main().catch((e) => {
+  console.log("❌ Something went wrong!");
+  console.log(
+    "You'll need to manually create the changelog notes from the diff in package-lock.json"
+  );
+  console.log(e);
+});
