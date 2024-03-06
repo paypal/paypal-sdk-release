@@ -3,6 +3,7 @@
 .*/node_modules/npm
 .*/node_modules/npmi
 .*/node_modules/resolve
+.*/node_modules/es-abstract
 [include]
 [libs]
 flow-typed
