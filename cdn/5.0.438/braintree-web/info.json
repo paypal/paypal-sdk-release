@@ -1,0 +1,49 @@
+{
+    "name": "braintree-web",
+    "dist-tags": {
+        "latest": "3.102.0",
+        "beta": "3.0.0-beta.12",
+        "hotfix": "2.15.7",
+        "legacy": "2.32.1",
+        "repkg": "3.8.0-repkg.1",
+        "3ds-2.0-beta": "3.79.2-beta.1",
+        "3ds-fields-beta-1": "3.93.0-beta-3ds.1",
+        "connect-alpha.1": "3.95.0-connect-alpha.1",
+        "connect-alpha.2": "3.95.0-connect-alpha.2",
+        "connect-alpha.4": "3.95.0-connect-alpha.4",
+        "connect-alpha.6": "3.95.0-connect-alpha.6",
+        "connect-alpha.7": "3.95.0-connect-alpha.7",
+        "alpha": "3.95.0-connect-alpha.8",
+        "connect-alpha.10": "3.95.0-connect-alpha.10",
+        "connect-alpha.11": "3.95.0-connect-alpha.11",
+        "connect-alpha.12": "3.95.0-connect-alpha.12",
+        "connect-alpha.13": "3.97.0-connect-alpha.13",
+        "connect-rc.1": "3.97.1-connect-rc.1",
+        "connect-rc.2": "3.97.3-connect-rc.2",
+        "connect-alpha.6.1": "3.97.3-connect-alpha.6.1",
+        "connect-alpha.6.2": "3.97.3-connect-alpha.6.2",
+        "connect-alpha.6.3": "3.97.4-connect-alpha.6.3"
+    },
+    "versions": {
+        "3.33.0": {
+            "dependencies": {
+                "@braintree/browser-detection": "1.7.0",
+                "@braintree/iframer": "1.0.3",
+                "@braintree/sanitize-url": "2.1.0",
+                "@braintree/wrap-promise": "1.1.1",
+                "card-validator": "4.3.0",
+                "credit-card-type": "6.3.0",
+                "framebus": "3.0.1",
+                "inject-stylesheet": "1.0.0",
+                "promise-polyfill": "7.0.2",
+                "restricted-input": "1.2.7"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.438/braintree-web/tarballs/3.33.0.tgz"
+            },
+            "repository": {
+                "url": "git+ssh://git@github.com/braintree/braintree-web.git"
+            }
+        }
+    }
+}
