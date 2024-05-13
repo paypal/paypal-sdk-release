@@ -13,7 +13,7 @@
     "format": "prettier --write --ignore-unknown .",
     "format:check": "prettier --check .",
     "karma": "cross-env NODE_ENV=test babel-node --plugins=transform-es2015-modules-commonjs ./node_modules/.bin/karma start",
-    "test": "npm run lint && npm run && npm run validate-components && npm run validate-flat",
+    "test": "npm run lint && npm run validate-components && npm run validate-flat",
     "add": "grabthar-add",
     "upgrade": "grabthar-upgrade",
     "remove": "grabthar-remove",
