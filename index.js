@@ -2,10 +2,6 @@
 
 import { setupSDK } from "@paypal/sdk-client/src";
 
-export default (
-  namespace,
-  verison,
-  components
-) => {
+export default (namespace, verison, components) => {
   return setupSDK(components);
 };
