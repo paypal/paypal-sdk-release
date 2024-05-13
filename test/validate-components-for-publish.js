@@ -1,5 +1,3 @@
-/* @flow */
-
 import pkg from "../package.json";
 import pkgLock from "../package-lock.json";
 

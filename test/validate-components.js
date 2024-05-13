@@ -1,5 +1,3 @@
-/* @flow */
-
 import { join } from "path";
 
 import { exists } from "fs-extra";
@@ -11,7 +9,7 @@ const NODE_MODULES = "node_modules";
 
 const BABELRC_NAMES = [".babelrc", ".babelrc.json", ".babelrc.js"];
 
-async function validateComponents(): Promise<void> {
+async function validateComponents() {
   for (const dependencyName of Object.keys(pkg.dependencies)) {
     const dependencyPath = join(NODE_MODULES, dependencyName);
 
@@ -23,7 +21,6 @@ async function validateComponents(): Promise<void> {
       throw new Error(`Expected ${dependencyName} to have ${SDK_JS}`);
     }
 
-    // $FlowFixMe
     const componentMeta = require(join(dependencyName, SDK_JS)); // eslint-disable-line security/detect-non-literal-require
 
     const moduleNames = Object.keys(componentMeta);

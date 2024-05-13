@@ -1,13 +1,11 @@
-/* @flow */
 /* eslint import/no-default-export: off */
 
-import { setupSDK, type SetupComponent } from "@paypal/sdk-client/src";
+import { setupSDK } from "@paypal/sdk-client/src";
 
 export default (
-  namespace: string,
-  verison: string,
-  components: $ReadOnlyArray<SetupComponent<mixed>>
-  // $FlowFixMe
+  namespace,
+  verison,
+  components
 ) => {
   return setupSDK(components);
 };
