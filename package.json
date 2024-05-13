@@ -56,7 +56,7 @@
   "readmeFilename": "README.md",
   "devDependencies": {
     "@krakenjs/grabthar-release": "^3.0.0",
-    "@krakenjs/grumbler-scripts": "^8.0.4",
+    "@krakenjs/grumbler-scripts": "8.1.5",
     "cross-env": "^7.0.3",
     "eslint": "^8.13.0",
     "flow-bin": "0.135.0",
