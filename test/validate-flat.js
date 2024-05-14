@@ -1,5 +1,3 @@
-/* @flow */
-
 import pkgLock from "../package-lock.json";
 
 for (const depName of Object.keys(pkgLock.dependencies)) {

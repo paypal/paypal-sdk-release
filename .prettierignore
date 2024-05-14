@@ -1,7 +1,6 @@
 build
 dist
 coverage
-flow-typed
 CHANGELOG.md
 node_modules
 cdn
