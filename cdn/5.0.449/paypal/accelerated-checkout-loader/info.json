@@ -1,0 +1,20 @@
+{
+    "name": "@paypal/accelerated-checkout-loader",
+    "dist-tags": {
+        "latest": "1.0.1"
+    },
+    "versions": {
+        "1.0.1": {
+            "dependencies": {
+                "@braintree/asset-loader": "2.0.0",
+                "envify": "^4.1.0",
+                "typescript": "^4.6.4"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.449/paypal/accelerated-checkout-loader/tarballs/1.0.1.tgz"
+            },
+            "repository": {},
+            "gitHead": "1f61e02c6be9c955e38ee9c056c38138b1d54ee0"
+        }
+    }
+}
