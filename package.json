@@ -65,9 +65,9 @@
   },
   "dependencies": {
     "@paypal/googlepay-components": "1.2.3",
-    "@paypal/applepay-components": "1.7.0",
+    "@paypal/applepay-components": "1.8.0",
     "@paypal/card-components": "1.0.56",
-    "@paypal/checkout-components": "5.0.343",
+    "@paypal/checkout-components": "5.0.344",
     "@paypal/common-components": "1.0.50",
     "@paypal/example-components": "1.0.28",
     "@paypal/funding-components": "1.0.32",
@@ -75,6 +75,6 @@
     "@paypal/legal-components": "1.2.2",
     "@paypal/messaging-components": "1.64.12",
     "@paypal/muse-components": "1.3.93",
-    "@paypal/sdk-client": "4.0.194"
+    "@paypal/sdk-client": "4.0.195"
   }
 }
