@@ -1,0 +1,19 @@
+{
+    "name": "axe-core",
+    "dist-tags": {
+        "patch": "4.0.3",
+        "latest": "4.10.2",
+        "next": "4.10.2-canary.11de515"
+    },
+    "versions": {
+        "4.10.2": {
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.467/axe-core/tarballs/4.10.2.tgz"
+            },
+            "repository": {
+                "url": "git+https://github.com/dequelabs/axe-core.git"
+            },
+            "gitHead": "4e226c1c02a3c1fed61fa7a2ecdc8209e75ea6a5"
+        }
+    }
+}
