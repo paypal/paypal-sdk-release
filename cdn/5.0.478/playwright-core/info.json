@@ -1,0 +1,20 @@
+{
+    "name": "playwright-core",
+    "dist-tags": {
+        "rc": "1.18.0-rc1",
+        "latest": "1.51.1",
+        "beta": "1.51.1-beta-1742374234000",
+        "next": "1.52.0-alpha-2025-04-02"
+    },
+    "versions": {
+        "1.51.1": {
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.478/playwright-core/tarballs/1.51.1.tgz"
+            },
+            "repository": {
+                "url": "git+https://github.com/microsoft/playwright.git"
+            },
+            "gitHead": "0ad26b38902449d9347536c97a34cc5dedbec729"
+        }
+    }
+}
