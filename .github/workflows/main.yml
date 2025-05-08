@@ -25,6 +25,8 @@ jobs:
         uses: bahmutov/npm-install@v1
         with:
           useLockFile: false
+          useRollingCache: true
+          install-command: npm i --ddd
 
       - name: ▶️ Run tests
         run: npm test
