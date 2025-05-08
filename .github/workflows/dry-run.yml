@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: ⬇️ Checkout repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           ref: ${{ github.head_ref }}
 
@@ -16,7 +16,7 @@ jobs:
 
       - name: ⎔ Setup node
         # sets up the .npmrc file to publish to npm
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NVMRC }}
           registry-url: "https://registry.npmjs.org"

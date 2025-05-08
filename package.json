@@ -30,8 +30,8 @@
     "index.js"
   ],
   "engines": {
-    "node": ">=14.13.1",
-    "npm": ">=6"
+    "node": ">=20",
+    "npm": ">=10"
   },
   "config": {
     "engine-strict": true
