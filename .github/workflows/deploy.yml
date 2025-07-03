@@ -10,7 +10,7 @@ on:
         default: ""
   # run every Wednesday at 8 AM CST
   schedule:
-    - cron: "0 1 * * 3"
+    - cron: "0 13 * * 3"
 jobs:
   main:
     runs-on: ubuntu-latest
