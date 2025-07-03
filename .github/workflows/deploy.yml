@@ -8,6 +8,9 @@ on:
         description: Optional argument for "npm run upgrade"
         required: false
         default: ""
+  # run every Wednesday at 8 AM CST
+  schedule:
+    - cron: "0 13 * * 3"
 jobs:
   main:
     runs-on: ubuntu-latest
