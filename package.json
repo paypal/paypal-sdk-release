@@ -1,6 +1,6 @@
 {
   "name": "@paypal/sdk-release",
-  "version": "5.0.502",
+  "version": "5.0.503",
   "description": "Unified SDK wrapper module for tests, shared build config, and deploy.",
   "main": "index.js",
   "scripts": {
