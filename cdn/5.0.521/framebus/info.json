@@ -1,0 +1,19 @@
+{
+    "name": "framebus",
+    "dist-tags": {
+        "v5-beta": "5.0.0-rc.1",
+        "v6-beta": "6.0.0-rc.3",
+        "latest": "6.0.3"
+    },
+    "versions": {
+        "3.0.1": {
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/framebus/tarballs/3.0.1.tgz"
+            },
+            "repository": {
+                "url": "git+ssh://git@github.com/braintree/framebus.git"
+            },
+            "gitHead": "d58a55b9725899cc20692b81910089e55ca51315"
+        }
+    }
+}

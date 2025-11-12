@@ -1,0 +1,26 @@
+{
+    "name": "bowser",
+    "dist-tags": {
+        "latest": "2.12.1"
+    },
+    "versions": {
+        "2.11.0": {
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/bowser/tarballs/2.11.0.tgz"
+            },
+            "repository": {
+                "url": "git+https://github.com/lancedikson/bowser.git"
+            },
+            "gitHead": "e188e8aa73b8522a46137d576b9bb4ff20801e68"
+        },
+        "2.12.1": {
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/bowser/tarballs/2.12.1.tgz"
+            },
+            "repository": {
+                "url": "git+https://github.com/lancedikson/bowser.git"
+            },
+            "gitHead": "5bfd3e9e6cd5d52a07c8e3ef489b95072ccbe8e5"
+        }
+    }
+}

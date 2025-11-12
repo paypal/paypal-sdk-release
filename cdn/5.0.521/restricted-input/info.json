@@ -1,0 +1,20 @@
+{
+    "name": "restricted-input",
+    "dist-tags": {
+        "latest": "4.1.4"
+    },
+    "versions": {
+        "1.2.7": {
+            "dependencies": {
+                "@braintree/browser-detection": "^1.5.0"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/restricted-input/tarballs/1.2.7.tgz"
+            },
+            "repository": {
+                "url": "git://github.com/braintree/restricted-input.git"
+            },
+            "gitHead": "806d27a488119b0c8671ae8db609892c2be55382"
+        }
+    }
+}

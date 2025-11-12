@@ -1,0 +1,19 @@
+{
+    "name": "@krakenjs/zalgo-promise",
+    "dist-tags": {
+        "latest": "2.0.1",
+        "alpha": "3.0.0-typescript.1"
+    },
+    "versions": {
+        "2.0.1": {
+            "dependencies": {},
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/krakenjs/zalgo-promise/tarballs/2.0.1.tgz"
+            },
+            "repository": {
+                "url": "git://github.com/krakenjs/zalgo-promise.git"
+            },
+            "gitHead": "d7adfce27faf059d30713b67213c0d49c2ab854c"
+        }
+    }
+}

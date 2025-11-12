@@ -1,0 +1,18 @@
+{
+    "name": "esprima",
+    "dist-tags": {
+        "latest": "4.0.1",
+        "1.1.0": "1.1.0"
+    },
+    "versions": {
+        "4.0.1": {
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/esprima/tarballs/4.0.1.tgz"
+            },
+            "repository": {
+                "url": "git+https://github.com/jquery/esprima.git"
+            },
+            "gitHead": "0ed4b8afdf2abd416f738977672c6232836f410a"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "name": "@krakenjs/universal-serialize",
+    "dist-tags": {
+        "latest": "2.0.0",
+        "alpha": "3.0.0-typescript.3"
+    },
+    "versions": {
+        "2.0.0": {
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/krakenjs/universal-serialize/tarballs/2.0.0.tgz"
+            },
+            "repository": {
+                "url": "git://github.com/krakenjs/universal-serialize.git"
+            },
+            "gitHead": "b8e9cda37b443ce5c173f0e687f1512c2e9c8df9"
+        }
+    }
+}

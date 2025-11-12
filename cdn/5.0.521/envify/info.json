@@ -1,0 +1,21 @@
+{
+    "name": "envify",
+    "dist-tags": {
+        "latest": "4.1.0"
+    },
+    "versions": {
+        "4.1.0": {
+            "dependencies": {
+                "esprima": "^4.0.0",
+                "through": "~2.3.4"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/envify/tarballs/4.1.0.tgz"
+            },
+            "repository": {
+                "url": "git://github.com/hughsk/envify.git"
+            },
+            "gitHead": "5b4b52d40225f36ac5065434dcfce91c19c4d632"
+        }
+    }
+}

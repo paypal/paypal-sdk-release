@@ -1,0 +1,19 @@
+{
+    "name": "promise-polyfill",
+    "dist-tags": {
+        "latest": "8.3.0",
+        "beta": "8.0.0"
+    },
+    "versions": {
+        "7.0.2": {
+            "dependencies": {},
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/promise-polyfill/tarballs/7.0.2.tgz"
+            },
+            "repository": {
+                "url": "git+https://taylorhakes@github.com/taylorhakes/promise-polyfill.git"
+            },
+            "gitHead": "12601b2f0358e1bde0c8cc1233d11dc311d561f9"
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "name": "@braintree/browser-detection",
+    "dist-tags": {
+        "latest": "2.1.0"
+    },
+    "versions": {
+        "1.7.0": {
+            "dependencies": {},
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/braintree/browser-detection/tarballs/1.7.0.tgz"
+            },
+            "repository": {
+                "url": "git+https://github.com/braintree/browser-detection.git"
+            },
+            "gitHead": "fd9270a59e4a3736f94ae671794967bec1d806b7"
+        }
+    }
+}

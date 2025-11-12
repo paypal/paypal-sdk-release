@@ -1,0 +1,38 @@
+{
+    "name": "@paypal/sdk-logos",
+    "dist-tags": {
+        "alpha": "2.2.13-alpha-6e83cc4.0",
+        "alpha-ec62205": "2.2.18-alpha-ec62205.0",
+        "latest": "2.2.17-alpha-3b4f8af.0"
+    },
+    "versions": {
+        "1.0.46": {
+            "dependencies": {
+                "@krakenjs/belter": "^2.0.0",
+                "@paypal/sdk-constants": "^1.0.116",
+                "@krakenjs/jsx-pragmatic": "^3.0.0"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/paypal/sdk-logos/tarballs/1.0.46.tgz"
+            },
+            "repository": {
+                "url": "git://github.com/paypal/paypal-sdk-logos.git"
+            },
+            "gitHead": "b283b86172c8b6da5eeab303e9e926ee93bd2d63"
+        },
+        "2.3.2": {
+            "dependencies": {
+                "@krakenjs/belter": "^2.0.0",
+                "@paypal/sdk-constants": "^1.0.128",
+                "@krakenjs/jsx-pragmatic": "^3.0.0"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/paypal/sdk-logos/tarballs/2.3.2.tgz"
+            },
+            "repository": {
+                "url": "git://github.com/paypal/paypal-sdk-logos.git"
+            },
+            "gitHead": "25fd5b0a2853a06b45c9dc6d1de25e51ab096358"
+        }
+    }
+}

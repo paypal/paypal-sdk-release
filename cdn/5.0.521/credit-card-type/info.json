@@ -1,0 +1,17 @@
+{
+    "name": "credit-card-type",
+    "dist-tags": {
+        "latest": "10.1.0"
+    },
+    "versions": {
+        "6.3.0": {
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/credit-card-type/tarballs/6.3.0.tgz"
+            },
+            "repository": {
+                "url": "git+ssh://git@github.com/braintree/credit-card-type.git"
+            },
+            "gitHead": "020373e89f76cd068604f5b209956cd6549c9e73"
+        }
+    }
+}

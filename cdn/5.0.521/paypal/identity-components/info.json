@@ -1,0 +1,53 @@
+{
+    "name": "@paypal/identity-components",
+    "dist-tags": {
+        "alpha": "5.0.11-alpha.1",
+        "latest": "5.0.14"
+    },
+    "versions": {
+        "5.0.11": {
+            "dependencies": {
+                "@krakenjs/zoid": "^10.0.0",
+                "@krakenjs/belter": "^2.0.0",
+                "@paypal/sdk-logos": "^1.0.45",
+                "@paypal/sdk-client": "^4.0.166",
+                "@krakenjs/post-robot": "^11.0.0",
+                "@paypal/sdk-constants": "^1.0.57",
+                "@krakenjs/jsx-pragmatic": "^3.0.0",
+                "@krakenjs/zalgo-promise": "^2.0.0",
+                "@paypal/common-components": "^1.0.27",
+                "@paypal/funding-components": "^1.0.27",
+                "@krakenjs/cross-domain-utils": "^3.0.0"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/paypal/identity-components/tarballs/5.0.11.tgz"
+            },
+            "repository": {
+                "url": "git://github.paypal.com/paypal/paypal-auth.git"
+            },
+            "gitHead": "e6021fd7a8b43ff36713b721c8d1e2feeb93cc1a"
+        },
+        "5.0.14": {
+            "dependencies": {
+                "@krakenjs/zoid": "^10.0.0",
+                "@krakenjs/belter": "^2.0.0",
+                "@paypal/sdk-logos": "^2.0.0",
+                "@paypal/sdk-client": "^4.0.166",
+                "@krakenjs/post-robot": "^11.0.0",
+                "@paypal/sdk-constants": "^1.0.57",
+                "@krakenjs/jsx-pragmatic": "^3.0.0",
+                "@krakenjs/zalgo-promise": "^2.0.0",
+                "@paypal/common-components": "^1.0.33",
+                "@paypal/funding-components": "^1.0.27",
+                "@krakenjs/cross-domain-utils": "^3.0.0"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/paypal/identity-components/tarballs/5.0.14.tgz"
+            },
+            "repository": {
+                "url": "git://github.com/paypal/paypal-identity-components.git"
+            },
+            "gitHead": "3b68172d91439f29b62fba94abfe20545b7b755e"
+        }
+    }
+}

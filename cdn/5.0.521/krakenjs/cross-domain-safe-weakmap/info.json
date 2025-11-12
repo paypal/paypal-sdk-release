@@ -1,0 +1,21 @@
+{
+    "name": "@krakenjs/cross-domain-safe-weakmap",
+    "dist-tags": {
+        "latest": "2.0.3",
+        "alpha": "3.0.0-typescript.1"
+    },
+    "versions": {
+        "2.0.3": {
+            "dependencies": {
+                "@krakenjs/cross-domain-utils": "^3.0.2"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/krakenjs/cross-domain-safe-weakmap/tarballs/2.0.3.tgz"
+            },
+            "repository": {
+                "url": "git://github.com/krakenjs/grumbler.git"
+            },
+            "gitHead": "a97b8aa259d92809c022919571490a0137a791b4"
+        }
+    }
+}

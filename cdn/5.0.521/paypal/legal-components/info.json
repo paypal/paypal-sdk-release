@@ -1,0 +1,21 @@
+{
+    "name": "@paypal/legal-components",
+    "dist-tags": {
+        "alpha": "1.0.0",
+        "latest": "1.2.2"
+    },
+    "versions": {
+        "1.2.2": {
+            "dependencies": {
+                "@paypal/sdk-client": "^4.0.166"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/paypal/legal-components/tarballs/1.2.2.tgz"
+            },
+            "repository": {
+                "url": "git+https://github.com/paypal/paypal-legal-components.git"
+            },
+            "gitHead": "c2364cd8ee27243b9fa0e98814f654399fd7ade1"
+        }
+    }
+}

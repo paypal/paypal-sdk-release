@@ -1,0 +1,17 @@
+{
+    "name": "@braintree/iframer",
+    "dist-tags": {
+        "latest": "2.0.1"
+    },
+    "versions": {
+        "1.0.3": {
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/braintree/iframer/tarballs/1.0.3.tgz"
+            },
+            "repository": {
+                "url": "git+ssh://git@github.com/braintree/iframer.git"
+            },
+            "gitHead": "94e8945347c8409c8ac35ec139302c54a5d2cd6b"
+        }
+    }
+}

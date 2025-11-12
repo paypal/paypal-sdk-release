@@ -1,0 +1,47 @@
+{
+    "name": "@paypal/common-components",
+    "dist-tags": {
+        "alpha": "1.0.40-alpha.1",
+        "latest": "1.0.57"
+    },
+    "versions": {
+        "1.0.31": {
+            "dependencies": {
+                "@krakenjs/zoid": "^10.0.0",
+                "@krakenjs/belter": "^2.0.0",
+                "@paypal/sdk-logos": "^1.0.45",
+                "@paypal/sdk-client": "^4.0.166",
+                "@krakenjs/post-robot": "^11.0.0",
+                "@paypal/sdk-constants": "^1.0.114",
+                "@krakenjs/jsx-pragmatic": "^3.0.0",
+                "@krakenjs/zalgo-promise": "^2.0.0"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/paypal/common-components/tarballs/1.0.31.tgz"
+            },
+            "repository": {
+                "url": "git://github.paypal.com/paypal/paypal-checkout.git"
+            },
+            "gitHead": "f253def31a7beefa1d92b38aadc07727b92b410a"
+        },
+        "1.0.57": {
+            "dependencies": {
+                "@krakenjs/zoid": "^10.0.0",
+                "@krakenjs/belter": "^2.0.0",
+                "@paypal/sdk-logos": "^2.2.12",
+                "@paypal/sdk-client": "^4.0.166",
+                "@krakenjs/post-robot": "^11.0.0",
+                "@paypal/sdk-constants": "^1.0.128",
+                "@krakenjs/jsx-pragmatic": "^3.0.0",
+                "@krakenjs/zalgo-promise": "^2.0.0"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/paypal/common-components/tarballs/1.0.57.tgz"
+            },
+            "repository": {
+                "url": "git://github.paypal.com/paypal/paypal-checkout.git"
+            },
+            "gitHead": "427c763329e93392134b0c3e20a0d511989530aa"
+        }
+    }
+}

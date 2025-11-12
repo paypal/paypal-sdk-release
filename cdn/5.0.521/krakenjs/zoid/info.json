@@ -1,0 +1,39 @@
+{
+    "name": "@krakenjs/zoid",
+    "dist-tags": {
+        "alpha": "10.2.4",
+        "latest": "10.4.0"
+    },
+    "versions": {
+        "10.1.0": {
+            "dependencies": {
+                "@krakenjs/belter": "^2.0.0",
+                "@krakenjs/post-robot": "^11.0.0",
+                "@krakenjs/zalgo-promise": "^2.0.0",
+                "@krakenjs/cross-domain-utils": "^3.0.0"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/krakenjs/zoid/tarballs/10.1.0.tgz"
+            },
+            "repository": {
+                "url": "git://github.com/krakenjs/zoid.git"
+            },
+            "gitHead": "2f1ea97635fe1741747f9136b1cb2d908116b6da"
+        },
+        "10.4.0": {
+            "dependencies": {
+                "@krakenjs/belter": "^2.0.0",
+                "@krakenjs/post-robot": "^11.0.0",
+                "@krakenjs/zalgo-promise": "^2.0.0",
+                "@krakenjs/cross-domain-utils": "^3.0.0"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/krakenjs/zoid/tarballs/10.4.0.tgz"
+            },
+            "repository": {
+                "url": "git://github.com/krakenjs/zoid.git"
+            },
+            "gitHead": "78c90fd6421cabd7dcc891ac1a8cb94f5391eca7"
+        }
+    }
+}

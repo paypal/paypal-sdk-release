@@ -1,0 +1,17 @@
+{
+    "name": "through",
+    "dist-tags": {
+        "latest": "2.3.8"
+    },
+    "versions": {
+        "2.3.8": {
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/through/tarballs/2.3.8.tgz"
+            },
+            "repository": {
+                "url": "git+https://github.com/dominictarr/through.git"
+            },
+            "gitHead": "2c5a6f9a0cc54da759b6e10964f2081c358e49dc"
+        }
+    }
+}

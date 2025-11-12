@@ -1,0 +1,39 @@
+{
+    "name": "@paypal/muse-components",
+    "dist-tags": {
+        "alpha": "1.3.75-alpha.2",
+        "latest": "1.3.95"
+    },
+    "versions": {
+        "1.3.85": {
+            "dependencies": {
+                "whatwg-fetch": "^3.0.0",
+                "@krakenjs/belter": "^2.0.1",
+                "@paypal/sdk-client": "^4.0.166"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/paypal/muse-components/tarballs/1.3.85.tgz"
+            },
+            "repository": {
+                "url": "git+https://github.com/paypal/paypal-muse-components.git"
+            },
+            "gitHead": "b6a5d1c058687904febd55b804e79758a11bc618"
+        },
+        "1.3.95": {
+            "dependencies": {
+                "whatwg-fetch": "^3.0.0",
+                "@krakenjs/zoid": "^10.0.0",
+                "@krakenjs/belter": "^2.0.1",
+                "@paypal/sdk-client": "^4.0.166",
+                "@krakenjs/post-robot": "^11.0.0"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/paypal/muse-components/tarballs/1.3.95.tgz"
+            },
+            "repository": {
+                "url": "git+https://github.com/paypal/paypal-muse-components.git"
+            },
+            "gitHead": "7d3f0fbafa605110499fde63c5380c2b68974cad"
+        }
+    }
+}

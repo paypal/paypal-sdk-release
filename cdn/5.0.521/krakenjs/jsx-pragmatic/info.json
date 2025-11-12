@@ -1,0 +1,26 @@
+{
+    "name": "@krakenjs/jsx-pragmatic",
+    "dist-tags": {
+        "latest": "3.1.1"
+    },
+    "versions": {
+        "3.0.0": {
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/krakenjs/jsx-pragmatic/tarballs/3.0.0.tgz"
+            },
+            "repository": {
+                "url": "git://github.com/krakenjs/jsx-pragmatic.git"
+            },
+            "gitHead": "d66e4cb9176b4c5f47df1fe6ec1b5a70ee1d2d30"
+        },
+        "3.1.1": {
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/krakenjs/jsx-pragmatic/tarballs/3.1.1.tgz"
+            },
+            "repository": {
+                "url": "git://github.com/krakenjs/jsx-pragmatic.git"
+            },
+            "gitHead": "ab52ef01fb0ed1cef90d6a3ac9cb010f681b7d41"
+        }
+    }
+}

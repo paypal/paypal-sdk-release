@@ -1,0 +1,17 @@
+{
+    "name": "hi-base32",
+    "dist-tags": {
+        "latest": "0.5.1"
+    },
+    "versions": {
+        "0.5.1": {
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/hi-base32/tarballs/0.5.1.tgz"
+            },
+            "repository": {
+                "url": "git+https://github.com/emn178/hi-base32.git"
+            },
+            "gitHead": "59a75692f5d17441f8e1dc9dc914cfa033dc63e7"
+        }
+    }
+}

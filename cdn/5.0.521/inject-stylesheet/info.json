@@ -1,0 +1,17 @@
+{
+    "name": "inject-stylesheet",
+    "dist-tags": {
+        "latest": "6.0.2"
+    },
+    "versions": {
+        "1.0.0": {
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/inject-stylesheet/tarballs/1.0.0.tgz"
+            },
+            "repository": {
+                "url": "git+https://github.com/braintree/inject-stylesheet.git"
+            },
+            "gitHead": "a97224d2f5fb8b18b353befa3bda28759b3f2f27"
+        }
+    }
+}

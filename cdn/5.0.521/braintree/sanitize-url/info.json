@@ -1,0 +1,17 @@
+{
+    "name": "@braintree/sanitize-url",
+    "dist-tags": {
+        "latest": "7.1.1"
+    },
+    "versions": {
+        "2.1.0": {
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/braintree/sanitize-url/tarballs/2.1.0.tgz"
+            },
+            "repository": {
+                "url": "git+https://github.com/braintree/sanitize-url.git"
+            },
+            "gitHead": "73fcd986813dde6f5b77a279ff73edc6152abe51"
+        }
+    }
+}

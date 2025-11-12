@@ -1,0 +1,22 @@
+{
+    "name": "typescript",
+    "dist-tags": {
+        "dev": "3.9.4",
+        "tag-for-publishing-older-releases": "4.1.6",
+        "insiders": "4.6.2-insiders.20220225",
+        "beta": "5.9.0-beta",
+        "rc": "5.9.1-rc",
+        "latest": "5.9.3",
+        "next": "6.0.0-dev.20251112"
+    },
+    "versions": {
+        "4.9.5": {
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/typescript/tarballs/4.9.5.tgz"
+            },
+            "repository": {
+                "url": "git+https://github.com/Microsoft/TypeScript.git"
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+{
+    "name": "@paypal/sdk-client",
+    "dist-tags": {
+        "alpha": "4.0.195-alpha.0",
+        "latest": "4.0.202"
+    },
+    "versions": {
+        "4.0.167": {
+            "dependencies": {
+                "bowser": "^2.0.0",
+                "@krakenjs/belter": "^2.0.0",
+                "@paypal/sdk-constants": "^1.0.94",
+                "@krakenjs/beaver-logger": "^5.0.0",
+                "@krakenjs/jsx-pragmatic": "^3.0.0",
+                "@krakenjs/zalgo-promise": "^2.0.0",
+                "@krakenjs/cross-domain-utils": "^3.0.2"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/paypal/sdk-client/tarballs/4.0.167.tgz"
+            },
+            "repository": {
+                "url": "git://github.com/paypal/paypal-sdk-client.git"
+            },
+            "gitHead": "d6d402b5c1afea6aa623a2231a5700a21e96c6db"
+        },
+        "4.0.202": {
+            "dependencies": {
+                "bowser": "^2.0.0",
+                "@krakenjs/belter": "^2.0.0",
+                "@paypal/sdk-constants": "^1.0.148",
+                "@krakenjs/beaver-logger": "^5.0.0",
+                "@krakenjs/jsx-pragmatic": "^3.0.0",
+                "@krakenjs/zalgo-promise": "^2.0.0",
+                "@krakenjs/cross-domain-utils": "^3.0.2"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/paypal/sdk-client/tarballs/4.0.202.tgz"
+            },
+            "repository": {
+                "url": "git://github.com/paypal/paypal-sdk-client.git"
+            },
+            "gitHead": "8fdde71f83b129d212a1e9946592e4365edbdde4"
+        }
+    }
+}

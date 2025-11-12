@@ -1,0 +1,24 @@
+{
+    "name": "@krakenjs/post-robot",
+    "dist-tags": {
+        "latest": "11.0.0"
+    },
+    "versions": {
+        "11.0.0": {
+            "dependencies": {
+                "@krakenjs/belter": "^2.0.0",
+                "@krakenjs/zalgo-promise": "^2.0.0",
+                "@krakenjs/cross-domain-utils": "^3.0.0",
+                "@krakenjs/universal-serialize": "^2.0.0",
+                "@krakenjs/cross-domain-safe-weakmap": "^2.0.0"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/krakenjs/post-robot/tarballs/11.0.0.tgz"
+            },
+            "repository": {
+                "url": "git://github.com/krakenjs/post-robot.git"
+            },
+            "gitHead": "16ad589783f016edea7fc8ab6f28fc5d5525f246"
+        }
+    }
+}

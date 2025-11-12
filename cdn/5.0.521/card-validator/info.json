@@ -1,0 +1,20 @@
+{
+    "name": "card-validator",
+    "dist-tags": {
+        "latest": "10.0.3"
+    },
+    "versions": {
+        "4.3.0": {
+            "dependencies": {
+                "credit-card-type": "^6.2.0"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/card-validator/tarballs/4.3.0.tgz"
+            },
+            "repository": {
+                "url": "git+ssh://git@github.com/braintree/card-validator.git"
+            },
+            "gitHead": "7f4a9dbb11e520a331919910dc306b358c1709cb"
+        }
+    }
+}

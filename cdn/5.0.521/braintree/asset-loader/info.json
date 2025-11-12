@@ -1,0 +1,19 @@
+{
+    "name": "@braintree/asset-loader",
+    "dist-tags": {
+        "beta.1-1.0.0": "1.0.0-beta.1",
+        "latest": "2.0.3"
+    },
+    "versions": {
+        "2.0.0": {
+            "dependencies": {},
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.521/braintree/asset-loader/tarballs/2.0.0.tgz"
+            },
+            "repository": {
+                "url": "git+https://github.com/braintree/asset-loader.git"
+            },
+            "gitHead": "196a285a23e34e732f53eb3c4153986d7405436d"
+        }
+    }
+}
