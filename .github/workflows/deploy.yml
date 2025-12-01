@@ -38,7 +38,15 @@ jobs:
           git config --global user.name ${{ github.actor }}
 
       - name: 🍏 Upgrade dependencies
-        run: npm run upgrade -- --MODULE=${{ github.event.inputs.filter }}
+        env:
+          FILTER: ${{ github.event.inputs.filter }}
+        shell: bash {0}
+        run: |
+          if [[ -n "$FILTER" && ! "$FILTER" =~ ^@paypal/ ]]; then
+            echo "Error: Only @paypal packages are allowed."
+            exit 1
+          fi
+          npm run upgrade -- --MODULE="${FILTER}"
 
       - name: Publish to npm
         run: npm run release
