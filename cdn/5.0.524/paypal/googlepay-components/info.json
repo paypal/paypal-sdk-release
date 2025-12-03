@@ -1,0 +1,25 @@
+{
+    "name": "@paypal/googlepay-components",
+    "dist-tags": {
+        "latest": "1.3.3"
+    },
+    "versions": {
+        "1.3.3": {
+            "dependencies": {
+                "@krakenjs/zoid": "^10.0.0",
+                "@paypal/sdk-client": "^4.0.166",
+                "@krakenjs/post-robot": "^11.0.0",
+                "@paypal/sdk-constants": "^1.0.129",
+                "@krakenjs/zalgo-promise": "^2.0.0",
+                "@paypal/common-components": "^1.0.35"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.524/paypal/googlepay-components/tarballs/1.3.3.tgz"
+            },
+            "repository": {
+                "url": "git+https://github.com/paypal/paypal-googlepay-component.git"
+            },
+            "gitHead": "db9f89193c3d41b9895c6b4f91b210f77344fc57"
+        }
+    }
+}
