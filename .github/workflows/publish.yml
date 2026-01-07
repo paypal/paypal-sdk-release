@@ -38,3 +38,6 @@ jobs:
           # actions/setup-node uses this NODE_AUTH_TOKEN environment variable for npm publishing
           # https://docs.github.com/en/actions/tutorials/publish-packages/publish-nodejs-packages
           NODE_AUTH_TOKEN: ${{ secrets.PAYPAL_SDK_NPM_AUTH_TOKEN }}
+          # grabthar-release uses NPM_TOKEN as the environment variable to pass through to the npm CLI
+          # https://github.com/krakenjs/grabthar-release/blob/main/scripts/validate-npm.mjs
+          NPM_TOKEN: ${{ secrets.PAYPAL_SDK_NPM_AUTH_TOKEN }}
