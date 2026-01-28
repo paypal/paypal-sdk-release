@@ -1,6 +1,6 @@
 {
   "name": "@paypal/sdk-release",
-  "version": "5.0.523",
+  "version": "5.0.529",
   "description": "Unified SDK wrapper module for tests, shared build config, and deploy.",
   "main": "index.js",
   "scripts": {
@@ -64,16 +64,16 @@
     "prettier": "2.8.4"
   },
   "dependencies": {
-    "@paypal/googlepay-components": "1.3.1",
+    "@paypal/googlepay-components": "1.3.4",
     "@paypal/applepay-components": "1.8.0",
     "@paypal/card-components": "1.0.56",
-    "@paypal/checkout-components": "5.0.397",
+    "@paypal/checkout-components": "5.0.402",
     "@paypal/common-components": "1.0.57",
     "@paypal/example-components": "1.0.28",
     "@paypal/funding-components": "1.0.32",
     "@paypal/identity-components": "5.0.14",
     "@paypal/legal-components": "1.2.2",
-    "@paypal/messaging-components": "1.75.0",
+    "@paypal/messaging-components": "1.76.1",
     "@paypal/muse-components": "1.3.95",
     "@paypal/sdk-client": "4.0.202"
   }
