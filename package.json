@@ -67,7 +67,7 @@
     "@paypal/googlepay-components": "1.3.4",
     "@paypal/applepay-components": "1.8.0",
     "@paypal/card-components": "1.0.56",
-    "@paypal/checkout-components": "5.0.403",
+    "@paypal/checkout-components": "5.0.404",
     "@paypal/common-components": "1.0.57",
     "@paypal/example-components": "1.0.28",
     "@paypal/funding-components": "1.0.32",
