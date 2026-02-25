@@ -73,7 +73,7 @@
     "@paypal/funding-components": "1.0.32",
     "@paypal/identity-components": "5.0.14",
     "@paypal/legal-components": "1.2.2",
-    "@paypal/messaging-components": "1.77.1",
+    "@paypal/messaging-components": "1.78.0",
     "@paypal/muse-components": "1.3.95",
     "@paypal/sdk-client": "4.0.202"
   }
