@@ -1,4 +1,7 @@
 name: build
+
+[![build](https://github.com/paypal/paypal-sdk-release/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/paypal/paypal-sdk-release/actions/workflows/main.yml)
+
 on:
   # run on push but only for the main branch
   push:
