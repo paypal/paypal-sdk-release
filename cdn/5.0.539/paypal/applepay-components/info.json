@@ -1,0 +1,21 @@
+{
+    "name": "@paypal/applepay-components",
+    "dist-tags": {
+        "alpha": "1.0.0",
+        "latest": "1.8.2"
+    },
+    "versions": {
+        "1.8.2": {
+            "dependencies": {
+                "@paypal/sdk-client": "^4.0.166"
+            },
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.539/paypal/applepay-components/tarballs/1.8.2.tgz"
+            },
+            "repository": {
+                "url": "git+https://github.com/paypal/paypal-applepay-components.git"
+            },
+            "gitHead": "258fa156e4bb33f569e865e0f8dc9881f833ef11"
+        }
+    }
+}
