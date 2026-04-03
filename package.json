@@ -63,10 +63,8 @@
     "lint-staged": "^13.2.0",
     "prettier": "2.8.4"
   },
-  "overrides": {
-    "@krakenjs/zoid": "10.5.0"
-  },
   "dependencies": {
+    "@krakenjs/zoid": "10.5.0",
     "@paypal/googlepay-components": "1.3.4",
     "@paypal/applepay-components": "1.8.0",
     "@paypal/card-components": "1.0.56",
