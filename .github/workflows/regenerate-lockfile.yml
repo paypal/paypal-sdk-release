@@ -35,5 +35,5 @@ jobs:
         run: |
           git add package-lock.json
           git diff --cached --quiet && echo "No changes" && exit 0
-          git commit -m "regenerate package-lock.json with registry.npmjs.org URLs"
+          git commit -m "regenerate package-lock.json"
           git push
