@@ -2,6 +2,8 @@ name: Regenerate package-lock.json
 on: workflow_dispatch
 jobs:
   main:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
       - name: ⬇️ Checkout repo
