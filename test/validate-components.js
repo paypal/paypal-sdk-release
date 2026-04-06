@@ -14,7 +14,7 @@ async function validateComponents() {
     if (!dependencyName.includes("@paypal")) {
       continue;
     }
-    
+
     const dependencyPath = join(NODE_MODULES, dependencyName);
 
     if (!(await exists(join(dependencyPath, SDK_JS)))) {
