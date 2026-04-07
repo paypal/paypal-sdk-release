@@ -64,9 +64,9 @@
     "prettier": "2.8.4"
   },
   "dependencies": {
-    "@krakenjs/zoid": "10.5.0",
-    "@paypal/googlepay-components": "1.3.4",
-    "@paypal/applepay-components": "1.8.0",
+    "@krakenjs/zoid": "10.5.2",
+    "@paypal/googlepay-components": "1.3.5",
+    "@paypal/applepay-components": "1.8.2",
     "@paypal/card-components": "1.0.56",
     "@paypal/checkout-components": "5.0.409",
     "@paypal/common-components": "1.0.57",
@@ -75,7 +75,7 @@
     "@paypal/identity-components": "5.0.14",
     "@paypal/legal-components": "1.2.2",
     "@paypal/messaging-components": "1.80.0",
-    "@paypal/muse-components": "1.3.95",
-    "@paypal/sdk-client": "4.0.202"
+    "@paypal/muse-components": "1.3.98",
+    "@paypal/sdk-client": "4.0.204"
   }
 }
