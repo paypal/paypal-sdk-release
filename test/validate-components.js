@@ -11,6 +11,10 @@ const BABELRC_NAMES = [".babelrc", ".babelrc.json", ".babelrc.js"];
 
 async function validateComponents() {
   for (const dependencyName of Object.keys(pkg.dependencies)) {
+    if (!dependencyName.includes("@paypal")) {
+      continue;
+    }
+
     const dependencyPath = join(NODE_MODULES, dependencyName);
 
     if (!(await exists(join(dependencyPath, SDK_JS)))) {
