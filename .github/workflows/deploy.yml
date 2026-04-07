@@ -29,8 +29,8 @@ jobs:
           node-version: ${{ env.NVMRC }}
           registry-url: "https://registry.npmjs.org"
 
-      - name: 📥 Install grabthar CLI
-        run: npm install @krakenjs/grabthar-release
+      - name: 📥 Download dependencies
+        run: npm run reinstall
 
       - name: Configure git user
         run: |
