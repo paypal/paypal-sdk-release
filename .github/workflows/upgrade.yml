@@ -42,4 +42,4 @@ jobs:
             echo "Error: Only @paypal packages are allowed."
             exit 1
           fi
-          npm run upgrade -- --MODULE="${FILTER}"
+          npm run upgrade -- --MODULE="${FILTER}" --REJECT="@krakenjs/zoid"
