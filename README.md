@@ -34,6 +34,16 @@ npm run upgrade @paypal/checkout-components
 npm run upgrade @paypal/card-components
 ```
 
+### Rejecting specific packages during upgrade
+
+Use `--REJECT` to exclude a package from being upgraded. This is useful when a package version needs to be pinned.
+
+```bash
+npm run upgrade -- --REJECT="@krakenjs/zoid"
+```
+
+To apply this via the GitHub Actions workflow, add `--REJECT="<package>"` to the `npm run upgrade` command in `.github/workflows/upgrade.yml`.
+
 ### Removing specific components
 
 ```bash
