@@ -1,0 +1,17 @@
+{
+    "name": "wicg-inert",
+    "dist-tags": {
+        "latest": "3.1.3"
+    },
+    "versions": {
+        "3.1.3": {
+            "dist": {
+                "tarball": "https://www.paypalobjects.com/js-sdk-release/5.0.578/wicg-inert/tarballs/3.1.3.tgz"
+            },
+            "repository": {
+                "url": "git+https://github.com/WICG/inert.git"
+            },
+            "gitHead": "9f876a8846ebb00ece87cc50f9e331fc79823557"
+        }
+    }
+}
